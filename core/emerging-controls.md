@@ -22,6 +22,14 @@ The core principles hold. Implementation must evolve.
 
 ---
 
+## Overview Map
+
+![Emerging Controls Tube Map](../images/emerging-tube-map.svg)
+
+The map shows how emerging controls connect. Solid lines indicate established or emerging patterns; dashed lines indicate conceptual/research-stage controls. Interchanges mark integration points between control domains.
+
+---
+
 ## Proposed Architecture
 
 ![Emerging Controls Architecture](../images/emerging-architecture.svg)

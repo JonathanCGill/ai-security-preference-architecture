@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" width="1100" height="700">
+  <style>
+    .station-name { font: 9px Arial, sans-serif; fill: #1e293b; }
+    .station-name-bold { font: bold 9px Arial, sans-serif; fill: #1e293b; }
+    .interchange-name { font: bold 10px Arial, sans-serif; fill: #1e293b; }
+    .line-label { font: bold 11px Arial, sans-serif; }
+    .title { font: bold 22px Arial, sans-serif; fill: #1e293b; }
+    .subtitle { font: 11px Arial, sans-serif; fill: #64748b; }
+    .legend-text { font: 9px Arial, sans-serif; fill: #1e293b; }
+    .status-badge { font: bold 9px Arial, sans-serif; fill: #b45309; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="1100" height="700" fill="#f5f5f0"/>
+  
+  <!-- Title -->
+  <text x="550" y="35" text-anchor="middle" class="title">EMERGING CONTROLS MAP</text>
+  <text x="550" y="55" text-anchor="middle" class="subtitle">Theoretical Extensions — Multimodal, Reasoning, State, Streaming, Multi-Agent</text>
+  
+  <!-- Status badge -->
+  <rect x="470" y="62" width="160" height="18" rx="9" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="550" y="75" text-anchor="middle" class="status-badge">STATUS: THEORETICAL</text>
+  
+  <!-- ============================================ -->
+  <!-- MULTIMODAL LINE (Purple) - Input processing -->
+  <!-- ============================================ -->
+  <path d="M 60 160 H 180 L 220 200 H 380 L 420 240 H 520" 
+        stroke="#8b5cf6" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Multimodal stations -->
+  <circle cx="60" cy="160" r="5" fill="#8b5cf6"/>
+  <circle cx="60" cy="160" r="2" fill="#f5f5f0"/>
+  <text x="60" y="145" text-anchor="middle" class="station-name">Text</text>
+  <text x="60" y="178" text-anchor="middle" class="station-name">Guardrails</text>
+  
+  <circle cx="120" cy="160" r="5" fill="#8b5cf6"/>
+  <circle cx="120" cy="160" r="2" fill="#f5f5f0"/>
+  <text x="120" y="145" text-anchor="middle" class="station-name">Image</text>
+  <text x="120" y="178" text-anchor="middle" class="station-name">OCR+Class</text>
+  
+  <circle cx="180" cy="160" r="5" fill="#8b5cf6"/>
+  <circle cx="180" cy="160" r="2" fill="#f5f5f0"/>
+  <text x="180" y="145" text-anchor="middle" class="station-name">Audio</text>
+  <text x="180" y="178" text-anchor="middle" class="station-name">STT+Class</text>
+  
+  <circle cx="260" cy="200" r="5" fill="#8b5cf6"/>
+  <circle cx="260" cy="200" r="2" fill="#f5f5f0"/>
+  <text x="260" y="185" text-anchor="middle" class="station-name">Video</text>
+  <text x="260" y="218" text-anchor="middle" class="station-name">Frame+Audio</text>
+  
+  <circle cx="340" cy="200" r="5" fill="#8b5cf6"/>
+  <circle cx="340" cy="200" r="2" fill="#f5f5f0"/>
+  <text x="340" y="185" text-anchor="middle" class="station-name">Cross-Modal</text>
+  <text x="340" y="218" text-anchor="middle" class="station-name">(Research)</text>
+  
+  <!-- INPUT UNIFIED - INTERCHANGE -->
+  <circle cx="460" cy="240" r="10" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="460" cy="240" r="5" fill="#1e293b"/>
+  <text x="460" y="220" text-anchor="middle" class="interchange-name">INPUT</text>
+  <text x="460" y="268" text-anchor="middle" class="interchange-name">UNIFIED</text>
+  
+  <!-- ============================================ -->
+  <!-- MODEL LINE (Blue) - Through the middle -->
+  <!-- ============================================ -->
+  <path d="M 520 240 H 620 L 660 280 H 780" 
+        stroke="#3b82f6" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="560" cy="240" r="5" fill="#3b82f6"/>
+  <circle cx="560" cy="240" r="2" fill="#f5f5f0"/>
+  <text x="560" y="225" text-anchor="middle" class="station-name">Reasoning</text>
+  <text x="560" y="258" text-anchor="middle" class="station-name">Capture</text>
+  
+  <circle cx="620" cy="240" r="5" fill="#3b82f6"/>
+  <circle cx="620" cy="240" r="2" fill="#f5f5f0"/>
+  <text x="620" y="225" text-anchor="middle" class="station-name">Stream</text>
+  <text x="620" y="258" text-anchor="middle" class="station-name">Monitor</text>
+  
+  <!-- PRIMARY AI - INTERCHANGE -->
+  <circle cx="700" cy="280" r="10" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="700" cy="280" r="5" fill="#1e293b"/>
+  <text x="700" y="265" text-anchor="middle" class="interchange-name">PRIMARY</text>
+  <text x="700" y="308" text-anchor="middle" class="interchange-name">AI</text>
+  
+  <circle cx="780" cy="280" r="5" fill="#3b82f6"/>
+  <circle cx="780" cy="280" r="2" fill="#f5f5f0"/>
+  <text x="780" y="265" text-anchor="middle" class="station-name">State</text>
+  <text x="780" y="298" text-anchor="middle" class="station-name">Tracker</text>
+  
+  <!-- ============================================ -->
+  <!-- OUTPUT LINE (Green) - Output processing -->
+  <!-- ============================================ -->
+  <path d="M 700 340 V 380 L 740 420 H 900 L 940 460 H 1040" 
+        stroke="#22c55e" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="700" cy="380" r="5" fill="#22c55e"/>
+  <circle cx="700" cy="380" r="2" fill="#f5f5f0"/>
+  <text x="720" y="370" class="station-name">Text Out</text>
+  
+  <circle cx="780" cy="420" r="5" fill="#22c55e"/>
+  <circle cx="780" cy="420" r="2" fill="#f5f5f0"/>
+  <text x="780" y="405" text-anchor="middle" class="station-name">Image Out</text>
+  <text x="780" y="438" text-anchor="middle" class="station-name">Synthetic Det.</text>
+  
+  <circle cx="860" cy="420" r="5" fill="#22c55e"/>
+  <circle cx="860" cy="420" r="2" fill="#f5f5f0"/>
+  <text x="860" y="405" text-anchor="middle" class="station-name">Audio Out</text>
+  <text x="860" y="438" text-anchor="middle" class="station-name">Synthetic Det.</text>
+  
+  <!-- OUTPUT UNIFIED - INTERCHANGE -->
+  <circle cx="940" cy="460" r="10" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="940" cy="460" r="5" fill="#1e293b"/>
+  <text x="940" y="445" text-anchor="middle" class="interchange-name">OUTPUT</text>
+  <text x="940" y="488" text-anchor="middle" class="interchange-name">UNIFIED</text>
+  
+  <circle cx="1040" cy="460" r="5" fill="#22c55e"/>
+  <circle cx="1040" cy="460" r="2" fill="#f5f5f0"/>
+  <text x="1040" y="445" text-anchor="middle" class="station-name">Response</text>
+  
+  <!-- ============================================ -->
+  <!-- STREAMING LINE (Orange) - Interrupt path -->
+  <!-- ============================================ -->
+  <path d="M 620 240 L 620 320 L 700 380" 
+        stroke="#f59e0b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12,6"/>
+  
+  <circle cx="620" cy="320" r="5" fill="#f59e0b"/>
+  <circle cx="620" cy="320" r="2" fill="#f5f5f0"/>
+  <text x="580" y="325" text-anchor="middle" class="station-name">Confidence</text>
+  <text x="580" y="338" text-anchor="middle" class="station-name">Check</text>
+  
+  <!-- Interrupt branch -->
+  <path d="M 620 320 L 520 380 L 520 460" 
+        stroke="#ef4444" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8,4"/>
+  
+  <circle cx="520" cy="380" r="5" fill="#ef4444"/>
+  <circle cx="520" cy="380" r="2" fill="#f5f5f0"/>
+  <text x="480" y="375" text-anchor="middle" class="station-name">Interrupt</text>
+  <text x="480" y="388" text-anchor="middle" class="station-name">Trigger</text>
+  
+  <circle cx="520" cy="460" r="5" fill="#ef4444"/>
+  <circle cx="520" cy="460" r="2" fill="#f5f5f0"/>
+  <text x="480" y="455" text-anchor="middle" class="station-name">"Let me</text>
+  <text x="480" y="468" text-anchor="middle" class="station-name">rephrase..."</text>
+  
+  <!-- ============================================ -->
+  <!-- STATE LINE (Cyan) - State governance -->
+  <!-- ============================================ -->
+  <path d="M 780 280 L 780 340 L 860 340 L 860 540 L 700 540" 
+        stroke="#06b6d4" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12,6"/>
+  
+  <circle cx="860" cy="340" r="5" fill="#06b6d4"/>
+  <circle cx="860" cy="340" r="2" fill="#f5f5f0"/>
+  <text x="900" y="335" class="station-name">State</text>
+  <text x="900" y="348" class="station-name">Checkpoint</text>
+  
+  <circle cx="860" cy="440" r="5" fill="#06b6d4"/>
+  <circle cx="860" cy="440" r="2" fill="#f5f5f0"/>
+  <text x="900" y="435" class="station-name">State</text>
+  <text x="900" y="448" class="station-name">Validation</text>
+  
+  <circle cx="860" cy="540" r="5" fill="#06b6d4"/>
+  <circle cx="860" cy="540" r="2" fill="#f5f5f0"/>
+  <text x="900" y="535" class="station-name">State</text>
+  <text x="900" y="548" class="station-name">Expiration</text>
+  
+  <circle cx="780" cy="540" r="5" fill="#06b6d4"/>
+  <circle cx="780" cy="540" r="2" fill="#f5f5f0"/>
+  <text x="780" y="560" text-anchor="middle" class="station-name">Rollback</text>
+  
+  <circle cx="700" cy="540" r="5" fill="#06b6d4"/>
+  <circle cx="700" cy="540" r="2" fill="#f5f5f0"/>
+  <text x="700" y="560" text-anchor="middle" class="station-name">RAG Scan</text>
+  
+  <!-- ============================================ -->
+  <!-- JUDGE LINE (Amber) - Multi-mode judge -->
+  <!-- ============================================ -->
+  <path d="M 940 460 L 940 540 L 700 540 L 700 600 H 300" 
+        stroke="#d97706" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- LOGGING - INTERCHANGE -->
+  <circle cx="940" cy="540" r="10" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="940" cy="540" r="5" fill="#1e293b"/>
+  <text x="980" y="535" class="interchange-name">FULL</text>
+  <text x="980" y="548" class="interchange-name">LOGGING</text>
+  
+  <!-- JUDGE MODES - INTERCHANGE -->
+  <circle cx="700" cy="600" r="10" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="700" cy="600" r="5" fill="#1e293b"/>
+  <text x="700" y="585" text-anchor="middle" class="interchange-name">UNIFIED</text>
+  <text x="700" y="628" text-anchor="middle" class="interchange-name">JUDGE</text>
+  
+  <circle cx="580" cy="600" r="5" fill="#d97706"/>
+  <circle cx="580" cy="600" r="2" fill="#f5f5f0"/>
+  <text x="580" y="585" text-anchor="middle" class="station-name">Transaction</text>
+  <text x="580" y="618" text-anchor="middle" class="station-name">Mode</text>
+  
+  <circle cx="480" cy="600" r="5" fill="#d97706"/>
+  <circle cx="480" cy="600" r="2" fill="#f5f5f0"/>
+  <text x="480" y="585" text-anchor="middle" class="station-name">Reasoning</text>
+  <text x="480" y="618" text-anchor="middle" class="station-name">Mode</text>
+  
+  <circle cx="380" cy="600" r="5" fill="#d97706"/>
+  <circle cx="380" cy="600" r="2" fill="#f5f5f0"/>
+  <text x="380" y="585" text-anchor="middle" class="station-name">Longitudinal</text>
+  <text x="380" y="618" text-anchor="middle" class="station-name">Mode</text>
+  
+  <circle cx="300" cy="600" r="5" fill="#d97706"/>
+  <circle cx="300" cy="600" r="2" fill="#f5f5f0"/>
+  <text x="300" y="585" text-anchor="middle" class="station-name">System</text>
+  <text x="300" y="618" text-anchor="middle" class="station-name">Mode</text>
+  
+  <!-- HITL terminus -->
+  <path d="M 300 600 L 200 600 L 160 560" 
+        stroke="#d97706" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="200" cy="600" r="5" fill="#d97706"/>
+  <circle cx="200" cy="600" r="2" fill="#f5f5f0"/>
+  <text x="200" y="618" text-anchor="middle" class="station-name">Findings</text>
+  
+  <!-- HITL - terminus -->
+  <rect x="130" y="530" width="60" height="40" rx="6" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <text x="160" y="555" text-anchor="middle" class="interchange-name">HITL</text>
+  
+  <!-- ============================================ -->
+  <!-- MULTI-AGENT LINE (Pink) - Agent coordination -->
+  <!-- ============================================ -->
+  <path d="M 60 280 H 200 L 240 320 H 400 L 460 380 L 460 240" 
+        stroke="#ec4899" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12,6"/>
+  
+  <circle cx="60" cy="280" r="5" fill="#ec4899"/>
+  <circle cx="60" cy="280" r="2" fill="#f5f5f0"/>
+  <text x="60" y="265" text-anchor="middle" class="station-name">Agent</text>
+  <text x="60" y="298" text-anchor="middle" class="station-name">Identity</text>
+  
+  <circle cx="140" cy="280" r="5" fill="#ec4899"/>
+  <circle cx="140" cy="280" r="2" fill="#f5f5f0"/>
+  <text x="140" y="265" text-anchor="middle" class="station-name">Trust</text>
+  <text x="140" y="298" text-anchor="middle" class="station-name">Matrix</text>
+  
+  <circle cx="200" cy="280" r="5" fill="#ec4899"/>
+  <circle cx="200" cy="280" r="2" fill="#f5f5f0"/>
+  <text x="200" y="265" text-anchor="middle" class="station-name">Delegation</text>
+  <text x="200" y="298" text-anchor="middle" class="station-name">Limits</text>
+  
+  <circle cx="280" cy="320" r="5" fill="#ec4899"/>
+  <circle cx="280" cy="320" r="2" fill="#f5f5f0"/>
+  <text x="280" y="305" text-anchor="middle" class="station-name">Boundary</text>
+  <text x="280" y="338" text-anchor="middle" class="station-name">Validation</text>
+  
+  <circle cx="360" cy="320" r="5" fill="#ec4899"/>
+  <circle cx="360" cy="320" r="2" fill="#f5f5f0"/>
+  <text x="360" y="305" text-anchor="middle" class="station-name">Message</text>
+  <text x="360" y="338" text-anchor="middle" class="station-name">Guardrails</text>
+  
+  <circle cx="460" cy="380" r="5" fill="#ec4899"/>
+  <circle cx="460" cy="380" r="2" fill="#f5f5f0"/>
+  <text x="420" y="385" text-anchor="middle" class="station-name">System</text>
+  <text x="420" y="398" text-anchor="middle" class="station-name">Breaker</text>
+  
+  <!-- ============================================ -->
+  <!-- Legend -->
+  <!-- ============================================ -->
+  <rect x="60" y="640" width="400" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  
+  <!-- Solid line = established/emerging -->
+  <line x1="75" y1="655" x2="115" y2="655" stroke="#22c55e" stroke-width="5"/>
+  <text x="125" y="659" class="legend-text">Established/Emerging</text>
+  
+  <!-- Dashed line = conceptual -->
+  <line x1="75" y1="675" x2="115" y2="675" stroke="#ef4444" stroke-width="5" stroke-dasharray="8,4"/>
+  <text x="125" y="679" class="legend-text">Conceptual/Research</text>
+  
+  <!-- Interchange -->
+  <circle cx="280" cy="655" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="280" cy="655" r="3" fill="#1e293b"/>
+  <text x="295" y="659" class="legend-text">Interchange</text>
+  
+  <!-- Station -->
+  <circle cx="280" cy="675" r="5" fill="#8b5cf6"/>
+  <circle cx="280" cy="675" r="2" fill="#f5f5f0"/>
+  <text x="295" y="679" class="legend-text">Station</text>
+  
+  <!-- Line Legend -->
+  <rect x="480" y="640" width="580" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  
+  <line x1="495" y1="655" x2="515" y2="655" stroke="#8b5cf6" stroke-width="5"/>
+  <text x="520" y="659" class="legend-text">Multimodal</text>
+  
+  <line x1="585" y1="655" x2="605" y2="655" stroke="#3b82f6" stroke-width="5"/>
+  <text x="610" y="659" class="legend-text">Model</text>
+  
+  <line x1="655" y1="655" x2="675" y2="655" stroke="#22c55e" stroke-width="5"/>
+  <text x="680" y="659" class="legend-text">Output</text>
+  
+  <line x1="495" y1="675" x2="515" y2="675" stroke="#f59e0b" stroke-width="5" stroke-dasharray="8,4"/>
+  <text x="520" y="679" class="legend-text">Streaming</text>
+  
+  <line x1="585" y1="675" x2="605" y2="675" stroke="#06b6d4" stroke-width="5" stroke-dasharray="8,4"/>
+  <text x="610" y="679" class="legend-text">State</text>
+  
+  <line x1="655" y1="675" x2="675" y2="675" stroke="#d97706" stroke-width="5"/>
+  <text x="680" y="679" class="legend-text">Judge</text>
+  
+  <line x1="725" y1="655" x2="745" y2="655" stroke="#ec4899" stroke-width="5" stroke-dasharray="8,4"/>
+  <text x="750" y="659" class="legend-text">Multi-Agent</text>
+  
+  <line x1="840" y1="655" x2="860" y2="655" stroke="#ef4444" stroke-width="5" stroke-dasharray="8,4"/>
+  <text x="865" y="659" class="legend-text">Interrupt</text>
+</svg>
