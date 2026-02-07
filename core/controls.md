@@ -114,6 +114,8 @@ The Judge will make mistakes.
 
 Humans review findings, make decisions, remain accountable.
 
+![HITL Architecture](../images/hitl-architecture.svg)
+
 ### Triggers
 
 | Trigger | Response |

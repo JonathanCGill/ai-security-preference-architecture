@@ -28,7 +28,7 @@ This isn't defeatism — it's the foundation of a realistic security posture. AI
 
 ## Bypass Taxonomy
 
-![Bypass Taxonomy](../images/bypass-taxonomy.svg)
+![Bypass Taxonomy](../../images/bypass-taxonomy.svg)
 
 ### Category 1: Guardrail Bypasses
 
@@ -97,7 +97,7 @@ Circumvent human oversight and governance.
 
 No single control stops all bypasses. Layer controls so bypassing one doesn't grant full access.
 
-![Defence in Depth Architecture](../images/defence-in-depth.svg)
+![Defence in Depth Architecture](../../images/defence-in-depth.svg)
 
 **Principle:** An attacker must bypass ALL layers, not just one.
 
@@ -117,7 +117,7 @@ No single control stops all bypasses. Layer controls so bypassing one doesn't gr
 
 **Hardening:**
 
-![Multi-Layer Input Validation](../images/multi-layer-input-validation.svg)
+![Multi-Layer Input Validation](../../images/multi-layer-input-validation.svg)
 
 ### Output Guardrails
 
@@ -208,7 +208,7 @@ Agents are harder to control because they choose their own actions.
 
 **Don't rely on the agent to enforce its own scope.**
 
-![Infrastructure vs Instruction Enforcement](../images/infra-vs-instruction.svg)
+![Infrastructure vs Instruction Enforcement](../../images/infra-vs-instruction.svg)
 
 | Bad | Good |
 |-----|------|
@@ -218,19 +218,19 @@ Agents are harder to control because they choose their own actions.
 
 **Infrastructure-level enforcement:**
 
-![Agent Sandbox](../images/agent-sandbox.svg)
+![Agent Sandbox](../../images/agent-sandbox.svg)
 
 ### Action Validation
 
 Validate every action independently. Don't trust the agent's reasoning.
 
-![Action Validator Flow](../images/action-validator-flow.svg)
+![Action Validator Flow](../../images/action-validator-flow.svg)
 
 ### Tool Output Sanitisation
 
 Tool outputs are injection vectors. The agent asks a tool for information; the tool response may contain malicious instructions.
 
-![Tool Output Sanitiser](../images/tool-output-sanitiser.svg)
+![Tool Output Sanitiser](../../images/tool-output-sanitiser.svg)
 
 ### Approval Workflows
 
@@ -265,7 +265,7 @@ Hard stops that trigger regardless of agent "reasoning":
 
 Users bypass your controlled AI by using uncontrolled alternatives.
 
-> **See also:** [Technical Controls](../implementation/technical-controls.md) for detailed implementation of network, firewall, proxy, and DLP controls.
+> **See also:** [Technical Controls](technical-controls.md) for detailed implementation of network, firewall, proxy, and DLP controls.
 
 | Detection | Prevention |
 |-----------|------------|
@@ -319,7 +319,7 @@ Human oversight only works if humans are actually reviewing.
 
 Inject known-bad cases to verify controls work:
 
-![Canary Testing Programme](../images/canary-testing.svg)
+![Canary Testing Programme](../../images/canary-testing.svg)
 
 ### Configuration Integrity
 
@@ -393,7 +393,7 @@ When a bypass is detected, you need to investigate. Log:
 
 Every bypass is an opportunity to improve:
 
-![Bypass Learning Loop](../images/bypass-learning-loop.svg)
+![Bypass Learning Loop](../../images/bypass-learning-loop.svg)
 
 ---
 

@@ -26,7 +26,7 @@ This operating model integrates:
 
 ## Governance Architecture
 
-![Governance Architecture](../images/governance-architecture.svg)
+![Governance Architecture](../../images/governance-architecture.svg)
 
 ---
 
@@ -88,48 +88,7 @@ The AI governance function operates within the standard three lines model:
 
 ### Organisation Structure
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    BOARD / AUDIT COMMITTEE                   │
-│                   (Ultimate accountability)                  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                  AI GOVERNANCE COMMITTEE                     │
-│         (Cross-functional oversight body)                    │
-│                                                              │
-│  Members: CRO, CTO, CDO, CISO, Legal, Compliance, Ethics    │
-│  Cadence: Monthly                                            │
-│  Authority: CRITICAL tier approvals; policy approval         │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│              AI GOVERNANCE OFFICE (AGO)                      │
-│           (Centralised 2nd line function)                    │
-│                                                              │
-│  Head of AI Governance (reports to CRO or CTO)              │
-│                                                              │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐           │
-│  │   Policy &   │ │   Risk &    │ │  Technical  │           │
-│  │  Standards   │ │  Oversight  │ │  Operations │           │
-│  └─────────────┘ └─────────────┘ └─────────────┘           │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    BUSINESS UNITS                            │
-│              (1st line - own AI systems)                     │
-│                                                              │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐           │
-│  │ BU AI   │ │ BU AI   │ │ BU AI   │ │ BU AI   │           │
-│  │ Owner   │ │ Owner   │ │ Owner   │ │ Owner   │           │
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘           │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
-```
+![Governance Function Structure](../../images/governance-function-structure.svg)
 
 ### AI Governance Office (AGO) Teams
 

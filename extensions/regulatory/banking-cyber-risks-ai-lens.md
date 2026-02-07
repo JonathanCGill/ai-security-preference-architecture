@@ -321,7 +321,7 @@ AI introduces new compliance obligations that most banks aren't yet equipped to 
 
 AI systems don't generate knowledge from nothing. They consume data from upstream banking systems — and inherit every vulnerability those systems carry. If a feeder system is compromised, the AI is confidently wrong or actively dangerous.
 
-![Banking AI Feeder Systems](../images/banking-ai-feeder-systems.svg)
+![Banking AI Feeder Systems](../../images/banking-ai-feeder-systems.svg)
 
 ### The Banking AI Data Supply Chain
 

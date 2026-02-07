@@ -62,6 +62,10 @@ Operational controls for AI systems in production.
 | [Agentic](agentic.md) | Additional controls for agents |
 | [Checklist](checklist.md) | Implementation tracking |
 
+### Architecture Overview
+
+![Architecture Overview](../images/architecture-overview.svg)
+
 ---
 
 ## Extensions

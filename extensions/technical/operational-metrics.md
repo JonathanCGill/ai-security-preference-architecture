@@ -113,6 +113,8 @@ Every metric should help answer one of these questions:
 
 ### O1. Cost
 
+![Cost-Quality Frontier](../../images/cost-quality-frontier.svg)
+
 | Metric | Definition | Target | Alert Threshold |
 |--------|------------|--------|-----------------|
 | **Cost per interaction** | Total AI cost / interactions | Budget | >120% of budget |

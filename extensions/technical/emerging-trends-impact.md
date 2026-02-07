@@ -43,7 +43,7 @@ The core architecture principle — **Guardrails prevent, Judge detects, Humans 
 
 **Required adaptations:**
 
-![Agentic AI Control Model](../images/agentic-control-model.svg)
+![Agentic AI Control Model](../../images/agentic-control-model.svg)
 
 **New control requirements for agentic AI:**
 
@@ -120,7 +120,7 @@ The core architecture principle — **Guardrails prevent, Judge detects, Humans 
 **Impact: LOW — Already addressed**
 
 The architecture already accommodates reasoning models:
-- [Judge Model Selection Guide](operating-model/05-judge-model-selection.md) covers tiered Judge with reasoning models
+- [Judge Model Selection Guide](03-llm-as-a-judge.md) covers tiered Judge with reasoning models
 - Reasoning models are well-suited to the Judge role
 - Extended thinking provides audit trail
 
@@ -289,7 +289,7 @@ The current architecture assumes discrete interactions that can be evaluated ind
 - Add circuit breakers (hard limits during execution)
 - Shift HITL from "review everything" to "review decisions and exceptions"
 
-> **See [Agentic Controls](../control-framework/04-agentic-controls.md) for the complete control set.**
+> **See [Agentic Controls](04-agentic-controls.md) for the complete control set.**
 
 ---
 
@@ -297,7 +297,7 @@ The current architecture assumes discrete interactions that can be evaluated ind
 
 ### Near-Term (Now)
 
-1. **Implement agentic controls** — See [Agentic Controls](../control-framework/04-agentic-controls.md) for plan approval, circuit breakers, trajectory evaluation
+1. **Implement agentic controls** — See [Agentic Controls](04-agentic-controls.md) for plan approval, circuit breakers, trajectory evaluation
 2. **Monitor multimodal guardrail maturity** — Platform capabilities are evolving rapidly
 3. **Implement trace logging** — Even for non-agentic systems, correlation IDs enable future capabilities
 

@@ -21,6 +21,8 @@ ISO 42001 establishes requirements for an **AI Management System (AIMS)**—a st
 
 ISO 42001 follows the Annex SL high-level structure common to all ISO management systems:
 
+![ISO 42001 PDCA Cycle](../../images/iso-42001-pdca.svg)
+
 | Clause | Title | Focus |
 |--------|-------|-------|
 | 4 | Context of the organisation | Understand internal/external factors affecting AI |
@@ -37,7 +39,7 @@ ISO 42001 follows the Annex SL high-level structure common to all ISO management
 
 ## Governance Operating Model
 
-![AI Governance Operating Model](../images/ai-governance-operating-model.svg)
+![AI Governance Operating Model](../../images/ai-governance-operating-model.svg)
 
 ### Three Lines Model for AI
 
@@ -326,7 +328,7 @@ For HIGH and CRITICAL systems, conduct:
 
 **Governance Dashboard:**
 
-![AI Governance Dashboard](../images/governance-dashboard.svg)
+![AI Governance Dashboard](../../images/governance-dashboard.svg)
 
 **9.2 Internal audit**
 
@@ -392,7 +394,7 @@ Improvement sources:
 
 ### Recommended Architecture
 
-![ISO 42001 Platform Architecture](../images/iso-42001-platform-architecture.svg)
+![ISO 42001 Platform Architecture](../../images/iso-42001-platform-architecture.svg)
 
 ---
 
@@ -600,7 +602,7 @@ ISO 42001 does not explicitly address agentic AI. The framework extends coverage
 
 ### The Operating Model in One Page
 
-![AI Governance Operating Model Summary](../images/iso-42001-operating-model-summary.svg)
+![AI Governance Operating Model Summary](../../images/iso-42001-operating-model-summary.svg)
 
 ---
 

@@ -2,7 +2,7 @@
 
 Network, infrastructure, and platform controls that enforce AI security at the technical layer.
 
-> **See also:** [Bypass Prevention](../docs/bypass-prevention.md) for the full taxonomy of bypass techniques and defence strategies.
+> **See also:** [Bypass Prevention](bypass-prevention.md) for the full taxonomy of bypass techniques and defence strategies.
 
 ---
 
@@ -27,7 +27,7 @@ Technical controls **enforce** security regardless of user behaviour. If the net
 
 ## Control Architecture Overview
 
-![Technical Controls Architecture](../images/technical-controls-architecture.svg)
+![Technical Controls Architecture](../../images/technical-controls-architecture.svg)
 
 ---
 
@@ -104,7 +104,7 @@ api.openai.com      CNAME   ai-gateway.internal.company.com
 
 Isolate AI systems from sensitive data unless explicitly connected.
 
-![Network Zones](../images/network-zones.svg)
+![Network Zones](../../images/network-zones.svg)
 
 **Zero Trust principles for AI:**
 
@@ -155,7 +155,7 @@ BLOCK  *  User-Agent:*Claude*
 
 A dedicated gateway for all AI traffic — the core enforcement point.
 
-![AI Gateway Architecture](../images/ai-gateway-architecture.svg)
+![AI Gateway Architecture](../../images/ai-gateway-architecture.svg)
 
 **Gateway capabilities:**
 
@@ -284,7 +284,7 @@ Prevent sensitive data from leaving via AI channels.
 
 **DLP inspection points:**
 
-![DLP Inspection Points](../images/dlp-inspection-points.svg)
+![DLP Inspection Points](../../images/dlp-inspection-points.svg)
 
 **DLP rules for AI:**
 
@@ -480,7 +480,7 @@ Control SaaS AI usage.
 
 **Sanctioned vs. unsanctioned AI apps:**
 
-![CASB AI App Classification](../images/casb-ai-classification.svg)
+![CASB AI App Classification](../../images/casb-ai-classification.svg)
 
 ---
 

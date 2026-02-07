@@ -8,7 +8,7 @@ This guide explains how to operationalise a centralised AI governance function a
 
 ## Integration Architecture
 
-![Platform Integration](../images/platform-integration.svg)
+![Platform Integration](../../images/platform-integration.svg)
 
 ---
 

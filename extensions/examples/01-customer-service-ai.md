@@ -87,7 +87,7 @@ Based on HIGH risk tier, these controls apply:
 
 ### Control Architecture
 
-![Aria Control Architecture](../images/example-aria-architecture.svg)
+![Aria Control Architecture](../../images/example-aria-architecture.svg)
 
 ```
 Customer Input

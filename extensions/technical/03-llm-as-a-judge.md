@@ -8,7 +8,7 @@ It reviews AI system outputs after the fact to identify red flags, quality issue
 
 Think of it as an auditor, not a gatekeeper.
 
-![Assurance Model](../images/assurance-model-diagram.svg)
+![Assurance Model](../../images/assurance-model-diagram.svg)
 
 ---
 
@@ -28,6 +28,8 @@ Think of it as an auditor, not a gatekeeper.
 
 The Judge operates **after the fact**, reviewing what has already happened:
 
+![Judge Interaction Flow](../../images/judge-interaction-flow.svg)
+
 1. **Transaction occurs** — User interacts with AI system
 2. **Guardrails check inline** — Fast, deterministic, blocks obvious issues
 3. **Primary AI executes** — Generates response
@@ -38,6 +40,12 @@ The Judge operates **after the fact**, reviewing what has already happened:
 8. **Human decides** — Investigate, remediate, update controls, or dismiss
 
 The critical point: the transaction completes before the Judge evaluates. The Judge informs future action; it does not gate current action.
+
+### Two-Tier Architecture
+
+For high-volume systems, use a two-tier approach:
+
+![Two-Tier Judge Architecture](../../images/two-tier-judge.svg)
 
 ---
 
@@ -165,6 +173,10 @@ The Judge is itself an AI system. It requires:
 | **Cost** | Low | Medium-high | High |
 | **Scales** | Yes | Yes (with sampling) | No |
 | **Accountable** | No | No | Yes |
+
+### Choosing a Judge Approach
+
+![Judge Model Decision Tree](../../images/judge-model-decision-tree.svg)
 
 ---
 

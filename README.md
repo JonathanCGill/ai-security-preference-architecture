@@ -2,6 +2,8 @@
 
 Operational controls for enterprise AI systems.
 
+![AI Security Reference Architecture](images/ai-security-tube-map.svg)
+
 ---
 
 ## Start Here

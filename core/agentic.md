@@ -51,20 +51,8 @@ Limit what the agent can access and do — technically, not via prompts.
 Validate every action independently. Don't trust agent reasoning.
 
 **Validation flow:**
-```
-Agent requests action
-        ↓
-┌─────────────────────────────┐
-│ ACTION VALIDATOR            │
-│ 1. In action whitelist?     │
-│ 2. In authorised scope?     │
-│ 3. Approval required?       │
-│ 4. Exceeds thresholds?      │
-│ 5. Log attempt              │
-└─────────────────────────────┘
-        ↓
-   Allow / Block
-```
+
+![Action Validator Flow](../images/action-validator-flow.svg)
 
 ### 3. Tool Output Sanitisation
 

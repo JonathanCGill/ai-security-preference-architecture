@@ -6,7 +6,7 @@ This document defines the control families for AI systems, organised by function
 
 ## Control Model Overview
 
-![Control Layers](../images/control-layers.svg)
+![Control Layers](../../images/control-layers.svg)
 
 AI security controls operate across three layers:
 
@@ -41,7 +41,7 @@ AI security controls operate across three layers:
 | AI.15 | AI System Continuity | BCP for AI systems |
 | AI.16 | AI Intellectual Property | Model and data IP protection |
 
-> **ISO 27001 Alignment:** See [ISO 27001 Alignment](annexes/iso-27001-alignment.md) for detailed mapping.
+> **ISO 27001 Alignment:** See [ISO 27001 Alignment](../regulatory/iso-27001-alignment.md) for detailed mapping.
 
 ---
 
@@ -1073,7 +1073,7 @@ Without full context capture, incident investigation is impossible — you canno
 
 ## AI.13 AI Supplier Management
 
-> **See [ISO 27001 Alignment](annexes/iso-27001-alignment.md) for detailed requirements.**
+> **See [ISO 27001 Alignment](../regulatory/iso-27001-alignment.md) for detailed requirements.**
 
 ### AI.13.1 AI Vendor Assessment
 

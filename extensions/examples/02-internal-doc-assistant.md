@@ -320,7 +320,7 @@ Department: {department}
 
 Simple escalation—no dedicated AI incident process:
 
-![DocBot Escalation Flow](../images/example-docbot-escalation.svg)
+![DocBot Escalation Flow](../../images/example-docbot-escalation.svg)
 
 1. Employee reports issue → IT Help Desk
 2. IT checks logs

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 120" width="650" height="120">
+  <rect width="650" height="120" fill="#f8fafc"/>
+  
+  <!-- Request -->
+  <rect x="12" y="27" width="80" height="35" rx="6" fill="#374151"/>
+  <rect x="10" y="25" width="80" height="35" rx="6" fill="#64748b"/>
+  <text x="50" y="48" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Request</text>
+  
+  <!-- Arrow -->
+  <line x1="90" y1="42" x2="120" y2="42" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="125,42 115,37 115,47" fill="#94a3b8"/>
+  
+  <!-- Judge evaluates -->
+  <rect x="132" y="27" width="110" height="35" rx="6" fill="#1e40af"/>
+  <rect x="130" y="25" width="110" height="35" rx="6" fill="#3b82f6"/>
+  <text x="185" y="48" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Judge evaluates</text>
+  
+  <!-- Arrow -->
+  <line x1="240" y1="42" x2="270" y2="42" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="275,42 265,37 265,47" fill="#94a3b8"/>
+  
+  <!-- Log decision -->
+  <rect x="282" y="27" width="90" height="35" rx="6" fill="#047857"/>
+  <rect x="280" y="25" width="90" height="35" rx="6" fill="#10b981"/>
+  <text x="325" y="48" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Log decision</text>
+  
+  <!-- Arrow -->
+  <line x1="370" y1="42" x2="400" y2="42" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="405,42 395,37 395,47" fill="#94a3b8"/>
+  
+  <!-- Forward to model -->
+  <rect x="412" y="27" width="120" height="35" rx="6" fill="#5b21b6"/>
+  <rect x="410" y="25" width="120" height="35" rx="6" fill="#8b5cf6"/>
+  <text x="470" y="43" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Forward to model</text>
+  <text x="470" y="54" font-family="Arial, sans-serif" font-size="8" fill="#ede9fe" text-anchor="middle">(anyway)</text>
+  
+  <!-- Arrow down from log -->
+  <line x1="325" y1="60" x2="325" y2="85" stroke="#f59e0b" stroke-width="2"/>
+  <polygon points="325,90 320,80 330,80" fill="#f59e0b"/>
+  
+  <!-- Compare to outcomes -->
+  <rect x="252" y="92" width="150" height="25" rx="4" fill="#b45309"/>
+  <rect x="250" y="90" width="150" height="25" rx="4" fill="#f59e0b"/>
+  <text x="325" y="107" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Compare to outcomes</text>
+  
+  <!-- Label -->
+  <text x="580" y="47" font-family="Arial, sans-serif" font-size="9" fill="#64748b" font-style="italic">Shadow Mode</text>
+</svg>

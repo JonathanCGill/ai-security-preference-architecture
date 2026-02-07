@@ -95,7 +95,7 @@ Rationale: CreditAssist directly influences decisions that affect consumers' acc
 
 ## Step 2: Control Architecture
 
-![CreditAssist Control Architecture](../images/example-credit-architecture.svg)
+![CreditAssist Control Architecture](../../images/example-credit-architecture.svg)
 
 ```
 Loan Application

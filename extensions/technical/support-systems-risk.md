@@ -2,7 +2,7 @@
 
 **The things most likely to break your AI aren't AI problems.**
 
-![Support Systems Iceberg](../images/support-systems-iceberg.svg)
+![Support Systems Iceberg](../../images/support-systems-iceberg.svg)
 
 ---
 
@@ -324,7 +324,7 @@ AI costs are variable, opaque, and can spike without warning.
 
 ## Risk Heat Map
 
-![Support Systems Risk Heat Map](../images/support-systems-risk-heatmap.svg)
+![Support Systems Risk Heat Map](../../images/support-systems-risk-heatmap.svg)
 
 | Category | Probability | Impact | Attention It Gets |
 |----------|------------|--------|-------------------|

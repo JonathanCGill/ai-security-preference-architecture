@@ -1,5 +1,7 @@
 # Implementation Checklist
 
+![Implementation Architecture](../images/implementation-architecture.svg)
+
 ---
 
 ## Phase 1: Foundation
