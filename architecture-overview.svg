@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-light" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="650" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">AI Security Reference Architecture</text>
+  <text x="450" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Layered controls: Guardrails prevent, Judge detects, Humans decide</text>
+  
+  <!-- Layer Labels - Left Side -->
+  <text x="25" y="145" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#64748b" transform="rotate(-90, 25, 145)">INLINE</text>
+  <text x="25" y="380" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#64748b" transform="rotate(-90, 25, 380)">ASYNC</text>
+  <text x="25" y="565" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#64748b" transform="rotate(-90, 25, 565)">GOVERNANCE</text>
+  
+  <!-- Horizontal dividers -->
+  <line x1="50" y1="270" x2="870" y2="270" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="8,4"/>
+  <line x1="50" y1="480" x2="870" y2="480" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="8,4"/>
+  
+  <!-- === INLINE LAYER === -->
+  
+  <!-- User -->
+  <rect x="70" y="120" width="100" height="60" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="120" y="145" font-family="Arial, sans-serif" font-size="12" fill="#4338ca" text-anchor="middle">User /</text>
+  <text x="120" y="162" font-family="Arial, sans-serif" font-size="12" fill="#4338ca" text-anchor="middle">Application</text>
+  
+  <!-- Arrow to Input Guardrails -->
+  <line x1="170" y1="150" x2="210" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Input Guardrails -->
+  <rect x="220" y="100" width="140" height="100" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="290" y="125" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">Input Guardrails</text>
+  <line x1="235" y1="135" x2="345" y2="135" stroke="#86efac" stroke-width="1"/>
+  <text x="290" y="155" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Prompt injection</text>
+  <text x="290" y="170" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Input validation</text>
+  <text x="290" y="185" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Rate limiting</text>
+  
+  <!-- Arrow to Primary AI -->
+  <line x1="360" y1="150" x2="400" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Primary AI -->
+  <rect x="410" y="105" width="130" height="90" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="475" y="135" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">Primary AI</text>
+  <line x1="425" y1="145" x2="525" y2="145" stroke="#93c5fd" stroke-width="1"/>
+  <text x="475" y="165" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">LLM / Agent /</text>
+  <text x="475" y="180" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">ML Model</text>
+  
+  <!-- Arrow to Output Guardrails -->
+  <line x1="540" y1="150" x2="580" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Output Guardrails -->
+  <rect x="590" y="100" width="140" height="100" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="660" y="125" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">Output Guardrails</text>
+  <line x1="605" y1="135" x2="715" y2="135" stroke="#86efac" stroke-width="1"/>
+  <text x="660" y="155" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• PII filtering</text>
+  <text x="660" y="170" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Content filtering</text>
+  <text x="660" y="185" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Format validation</text>
+  
+  <!-- Arrow to Response -->
+  <line x1="730" y1="150" x2="770" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Response -->
+  <rect x="780" y="120" width="90" height="60" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="825" y="155" font-family="Arial, sans-serif" font-size="12" fill="#4338ca" text-anchor="middle">Response</text>
+  
+  <!-- Logging - Below main flow -->
+  <rect x="410" y="215" width="130" height="40" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="475" y="240" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Logging</text>
+  
+  <!-- Arrow from Primary AI to Logging -->
+  <line x1="475" y1="195" x2="475" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+  
+  <!-- === ASYNC LAYER === -->
+  
+  <!-- LLM Judge -->
+  <rect x="180" y="310" width="240" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="300" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">LLM-as-Judge</text>
+  <text x="300" y="358" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">(Assurance, not control)</text>
+  <line x1="195" y1="368" x2="405" y2="368" stroke="#fcd34d" stroke-width="1"/>
+  <text x="210" y="390" font-family="Arial, sans-serif" font-size="10" fill="#78350f">• Policy compliance check</text>
+  <text x="210" y="408" font-family="Arial, sans-serif" font-size="10" fill="#78350f">• Quality evaluation</text>
+  <text x="210" y="426" font-family="Arial, sans-serif" font-size="10" fill="#78350f">• Anomaly detection</text>
+  <text x="210" y="444" font-family="Arial, sans-serif" font-size="10" fill="#78350f">• Pattern analysis</text>
+  
+  <!-- Arrow from Logging to Judge -->
+  <path d="M 475 255 L 475 290 L 380 290 L 380 305" stroke="#94a3b8" stroke-width="1.5" fill="none" marker-end="url(#arrow-light)"/>
+  <text x="430" y="283" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">async</text>
+  
+  <!-- Findings -->
+  <rect x="480" y="340" width="140" height="80" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="550" y="370" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b91c1c" text-anchor="middle">Findings</text>
+  <line x1="495" y1="380" x2="605" y2="380" stroke="#fecaca" stroke-width="1"/>
+  <text x="550" y="400" font-family="Arial, sans-serif" font-size="10" fill="#991b1b" text-anchor="middle">Red flags surfaced</text>
+  <text x="550" y="415" font-family="Arial, sans-serif" font-size="10" fill="#991b1b" text-anchor="middle">for human review</text>
+  
+  <!-- Arrow from Judge to Findings -->
+  <line x1="420" y1="380" x2="475" y2="380" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Human Oversight -->
+  <rect x="680" y="310" width="170" height="140" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+  <text x="765" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#166534" text-anchor="middle">Human Oversight</text>
+  <line x1="695" y1="350" x2="835" y2="350" stroke="#86efac" stroke-width="1"/>
+  <text x="765" y="375" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Review findings</text>
+  <text x="765" y="393" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Investigate issues</text>
+  <text x="765" y="411" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">• Decide action</text>
+  <text x="765" y="435" font-family="Arial, sans-serif" font-size="11" fill="#166534" text-anchor="middle" font-weight="bold">Remains accountable</text>
+  
+  <!-- Arrow from Findings to Human -->
+  <line x1="620" y1="380" x2="675" y2="380" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Feedback arrow from Human to Guardrails -->
+  <path d="M 765 310 L 765 285 L 290 285 L 290 205" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow-light)"/>
+  <text x="525" y="278" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">feedback: tune guardrails</text>
+  
+  <!-- === GOVERNANCE LAYER === -->
+  
+  <!-- Risk Tiering -->
+  <rect x="100" y="510" width="160" height="70" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="180" y="535" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Risk Tiering</text>
+  <text x="180" y="555" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Critical / High /</text>
+  <text x="180" y="570" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Medium / Low</text>
+  
+  <!-- Policy -->
+  <rect x="290" y="510" width="160" height="70" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="370" y="535" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Policy Framework</text>
+  <text x="370" y="555" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Acceptable use,</text>
+  <text x="370" y="570" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">escalation paths</text>
+  
+  <!-- Standards -->
+  <rect x="480" y="510" width="160" height="70" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="560" y="535" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Standards Alignment</text>
+  <text x="560" y="555" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">ISO 42001, NIST AI RMF</text>
+  <text x="560" y="570" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">EU AI Act, SR 11-7</text>
+  
+  <!-- Model Risk -->
+  <rect x="670" y="510" width="160" height="70" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="750" y="535" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Model Risk Mgmt</text>
+  <text x="750" y="555" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Validation, monitoring,</text>
+  <text x="750" y="570" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">inventory</text>
+  
+  <!-- Key Message Box -->
+  <rect x="200" y="605" width="500" height="35" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="627" font-family="Arial, sans-serif" font-size="12" fill="#1e40af" text-anchor="middle" font-weight="bold">Guardrails prevent (inline) • Judge detects (async) • Humans decide (accountable)</text>
+</svg>
