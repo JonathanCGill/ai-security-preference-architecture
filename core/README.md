@@ -61,6 +61,7 @@ Operational controls for AI systems in production.
 | [Controls](controls.md) | Guardrails, Judge, HITL implementation |
 | [Agentic](agentic.md) | Additional controls for agents |
 | [Checklist](checklist.md) | Implementation tracking |
+| [Emerging Controls](emerging-controls.md) | Theoretical extensions for multimodal, reasoning, streaming, multi-agent *(speculative)* |
 
 ### Architecture Overview
 
