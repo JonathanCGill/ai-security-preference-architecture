@@ -48,6 +48,10 @@ AI assists. Humans own outcomes. Why accountability can't be delegated to algori
 
 How the pattern applies — or doesn't — to emerging AI capabilities.
 
+**[The Verification Gap](the-verification-gap.md)** (1,400 words)
+
+Why current safety approaches can't confirm ground truth — and what independent verification methods are emerging to fill the gap.
+
 **[Multimodal AI Breaks Your Text-Based Guardrails](multimodal-breaks-guardrails.md)** (950 words)
 
 Images, audio, and video create attack surfaces your current controls can't see.

@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="dependentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fee2e2"/>
+      <stop offset="100%" style="stop-color:#fecaca"/>
+    </linearGradient>
+    <linearGradient id="partialGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+    <linearGradient id="independentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d1fae5"/>
+      <stop offset="100%" style="stop-color:#a7f3d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">The Verification Gap</text>
+  <text x="450" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Independence from LLM Reasoning vs. Verification Effectiveness</text>
+  
+  <!-- Independence Spectrum Bar -->
+  <rect x="50" y="75" width="800" height="30" rx="15" fill="#e2e8f0"/>
+  <rect x="50" y="75" width="266" height="30" rx="15" fill="url(#dependentGrad)"/>
+  <rect x="316" y="75" width="268" height="30" fill="url(#partialGrad)"/>
+  <rect x="584" y="75" width="266" height="30" rx="15" fill="url(#independentGrad)"/>
+  
+  <text x="183" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#991b1b">LLM-DEPENDENT</text>
+  <text x="450" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#92400e">PARTIALLY INDEPENDENT</text>
+  <text x="717" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#166534">FULLY INDEPENDENT</text>
+  
+  <!-- Section: LLM-Dependent -->
+  <g transform="translate(50, 130)">
+    <!-- Self-Assessment Box -->
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#fff" stroke="#fca5a5" stroke-width="2" filter="url(#shadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Self-Assessment</text>
+    <text x="60" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">"Am I correct?"</text>
+    <line x1="10" y1="52" x2="110" y2="52" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">⚠ Same blindspots</text>
+    <text x="60" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">⚠ No external check</text>
+    <!-- Risk Rating -->
+    <text x="60" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#991b1b">●○○○○</text>
+    
+    <!-- LLM-as-Judge Box -->
+    <rect x="140" y="0" width="120" height="100" rx="8" fill="#fff" stroke="#fca5a5" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">LLM-as-Judge</text>
+    <text x="200" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">~80% accuracy</text>
+    <line x1="150" y1="52" x2="250" y2="52" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">⚠ Same vulnerabilities</text>
+    <text x="200" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">⚠ Correlated errors</text>
+    <!-- Risk Rating -->
+    <text x="200" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#991b1b">●●○○○</text>
+  </g>
+  
+  <!-- Section: Partially Independent -->
+  <g transform="translate(320, 130)">
+    <!-- Self-Consistency Box -->
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#fff" stroke="#fbbf24" stroke-width="2" filter="url(#shadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Self-Consistency</text>
+    <text x="60" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">~80% accuracy</text>
+    <line x1="10" y1="52" x2="110" y2="52" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">⚠ 5x latency/cost</text>
+    <text x="60" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">⚠ Misses confident errors</text>
+    <!-- Risk Rating -->
+    <text x="60" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#92400e">●●●○○</text>
+    
+    <!-- RAG Grounding Box -->
+    <rect x="140" y="0" width="120" height="100" rx="8" fill="#fff" stroke="#fbbf24" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">RAG Grounding</text>
+    <text x="200" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Context-dependent</text>
+    <line x1="150" y1="52" x2="250" y2="52" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">⚠ Retrieval can fail</text>
+    <text x="200" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">⚠ LLM interprets context</text>
+    <!-- Risk Rating -->
+    <text x="200" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#92400e">●●●○○</text>
+  </g>
+  
+  <!-- Section: Fully Independent -->
+  <g transform="translate(590, 130)">
+    <!-- Formal Verification Box -->
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#fff" stroke="#34d399" stroke-width="2" filter="url(#shadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Formal Verify</text>
+    <text x="60" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">~99% accuracy</text>
+    <line x1="10" y1="52" x2="110" y2="52" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#059669">✓ Math-based proof</text>
+    <text x="60" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">⚠ Narrow coverage</text>
+    <!-- Risk Rating -->
+    <text x="60" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#166534">●●●●○</text>
+    
+    <!-- Knowledge Graph Box -->
+    <rect x="140" y="0" width="120" height="100" rx="8" fill="#fff" stroke="#34d399" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Knowledge Graph</text>
+    <text x="200" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">~92% accuracy</text>
+    <line x1="150" y1="52" x2="250" y2="52" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#059669">✓ Structured facts</text>
+    <text x="200" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">⚠ Limited to KG content</text>
+    <!-- Risk Rating -->
+    <text x="200" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#166534">●●●●○</text>
+  </g>
+  
+  <!-- Flow Diagram Section -->
+  <text x="450" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#1e293b">Typical Pipeline vs. Verified Pipeline</text>
+  
+  <!-- Bad Pipeline -->
+  <g transform="translate(50, 290)">
+    <text x="0" y="15" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#dc2626">✗ Standard (Correlated Failures)</text>
+    
+    <rect x="0" y="25" width="70" height="35" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="35" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#1e40af">Input</text>
+    
+    <line x1="70" y1="42" x2="100" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="100" y="25" width="80" height="35" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="140" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#991b1b">Guardrails</text>
+    
+    <line x1="180" y1="42" x2="210" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="210" y="25" width="70" height="35" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="245" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#92400e">LLM</text>
+    
+    <line x1="280" y1="42" x2="310" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="310" y="25" width="80" height="35" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="350" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#991b1b">LLM Judge</text>
+    
+    <line x1="390" y1="42" x2="420" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="420" y="25" width="70" height="35" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="455" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#1e40af">Output</text>
+    
+    <!-- Problem callouts -->
+    <text x="140" y="75" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">Pattern-based</text>
+    <text x="350" y="75" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">LLM-based</text>
+    
+    <!-- Bracket showing "All rely on LLM reasoning" -->
+    <path d="M 100 80 L 100 90 L 390 90 L 390 80" fill="none" stroke="#dc2626" stroke-width="1"/>
+    <text x="245" y="103" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">Same blindspots — confident hallucinations pass all checks</text>
+  </g>
+  
+  <!-- Good Pipeline -->
+  <g transform="translate(50, 410)">
+    <text x="0" y="15" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#059669">✓ With Independent Verification</text>
+    
+    <rect x="0" y="25" width="60" height="35" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="30" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#1e40af">Input</text>
+    
+    <line x1="60" y1="42" x2="85" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="85" y="25" width="70" height="35" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="120" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#92400e">Guardrails</text>
+    
+    <line x1="155" y1="42" x2="180" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="180" y="25" width="60" height="35" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="210" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#92400e">LLM</text>
+    
+    <line x1="240" y1="42" x2="265" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Claim Router -->
+    <rect x="265" y="20" width="80" height="45" rx="4" fill="#f3e8ff" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="305" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#7c3aed">Claim</text>
+    <text x="305" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#7c3aed">Router</text>
+    
+    <!-- Branch to different verifiers -->
+    <line x1="345" y1="32" x2="380" y2="15" stroke="#64748b" stroke-width="1"/>
+    <line x1="345" y1="42" x2="380" y2="42" stroke="#64748b" stroke-width="1"/>
+    <line x1="345" y1="52" x2="380" y2="70" stroke="#64748b" stroke-width="1"/>
+    
+    <!-- Formal Verify -->
+    <rect x="380" y="0" width="85" height="30" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+    <text x="422" y="12" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#166534">Formal Verify</text>
+    <text x="422" y="23" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" fill="#166534">Policy claims</text>
+    
+    <!-- KG Lookup -->
+    <rect x="380" y="35" width="85" height="30" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+    <text x="422" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#166534">KG Lookup</text>
+    <text x="422" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" fill="#166534">Factual claims</text>
+    
+    <!-- API/Calculator -->
+    <rect x="380" y="70" width="85" height="30" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+    <text x="422" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#166534">External API</text>
+    <text x="422" y="93" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" fill="#166534">Math/data claims</text>
+    
+    <!-- Merge -->
+    <line x1="465" y1="15" x2="495" y2="42" stroke="#64748b" stroke-width="1"/>
+    <line x1="465" y1="50" x2="495" y2="42" stroke="#64748b" stroke-width="1"/>
+    <line x1="465" y1="85" x2="495" y2="42" stroke="#64748b" stroke-width="1"/>
+    
+    <!-- Human Review for failures -->
+    <rect x="495" y="27" width="80" height="35" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="535" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#92400e">Aggregate</text>
+    <text x="535" y="53" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#92400e">+ Flag</text>
+    
+    <line x1="575" y1="42" x2="605" y2="42" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="605" y="25" width="60" height="35" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="635" y="47" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#1e40af">Output</text>
+    
+    <!-- Human Review callout -->
+    <line x1="535" y1="62" x2="535" y2="85" stroke="#64748b" stroke-width="1" stroke-dasharray="3"/>
+    <rect x="480" y="85" width="110" height="25" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="1"/>
+    <text x="535" y="101" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#c2410c">Human review if flagged</text>
+  </g>
+  
+  <!-- Risk Rating Legend -->
+  <g transform="translate(530, 290)">
+    <rect x="0" y="0" width="320" height="115" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+    <text x="160" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Risk Rating (Effectiveness)</text>
+    
+    <text x="15" y="40" font-family="system-ui, sans-serif" font-size="9" fill="#1e293b">●○○○○</text>
+    <text x="65" y="40" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Minimal — shares LLM vulnerabilities</text>
+    
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="9" fill="#1e293b">●●○○○</text>
+    <text x="65" y="55" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Low — some independence, limited</text>
+    
+    <text x="15" y="70" font-family="system-ui, sans-serif" font-size="9" fill="#1e293b">●●●○○</text>
+    <text x="65" y="70" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Moderate — partial independence</text>
+    
+    <text x="15" y="85" font-family="system-ui, sans-serif" font-size="9" fill="#1e293b">●●●●○</text>
+    <text x="65" y="85" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">High — independent, narrow coverage</text>
+    
+    <text x="15" y="100" font-family="system-ui, sans-serif" font-size="9" fill="#1e293b">●●●●●</text>
+    <text x="65" y="100" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Full — independent + broad coverage</text>
+    
+    <text x="160" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">(No current approach achieves ●●●●●)</text>
+  </g>
+  
+  <!-- Bottom Key Insight -->
+  <rect x="50" y="540" width="800" height="65" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="450" y="562" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#92400e">Key Insight</text>
+  <text x="450" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#78350f">Defense in depth only works when defenses have different failure modes.</text>
+  <text x="450" y="595" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#78350f">Stacking LLM-based checks creates correlated failures. Independent verification breaks the correlation.</text>
+  
+  <!-- Coverage Tradeoff Note -->
+  <rect x="50" y="615" width="800" height="75" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="450" y="635" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">The Coverage Problem</text>
+  
+  <g transform="translate(70, 645)">
+    <rect x="0" y="0" width="180" height="35" rx="4" fill="#d1fae5"/>
+    <text x="90" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#166534">High Independence</text>
+    <text x="90" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#166534">Formal, KG, APIs</text>
+  </g>
+  
+  <g transform="translate(270, 645)">
+    <text x="45" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#64748b">→</text>
+  </g>
+  
+  <g transform="translate(330, 645)">
+    <rect x="0" y="0" width="180" height="35" rx="4" fill="#fee2e2"/>
+    <text x="90" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#991b1b">Narrow Coverage</text>
+    <text x="90" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#991b1b">Only verified claims covered</text>
+  </g>
+  
+  <g transform="translate(530, 645)">
+    <text x="45" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#64748b">→</text>
+  </g>
+  
+  <g transform="translate(590, 645)">
+    <rect x="0" y="0" width="240" height="35" rx="4" fill="#f3e8ff"/>
+    <text x="120" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#7c3aed">Solution: Route by claim type</text>
+    <text x="120" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">Match verification to claim characteristics</text>
+  </g>
+</svg>
