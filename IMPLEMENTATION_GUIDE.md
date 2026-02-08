@@ -25,7 +25,7 @@ pip install openai redis pydantic
 ```
 
 ```python
-from ai_controls import SecureAIService
+from service import SecureAIService
 
 service = SecureAIService(openai_api_key="sk-...")
 result = await service.process("What's the weather?")
@@ -275,7 +275,7 @@ class OutputGuardrails:
                 "[CARD REDACTED]"
             ),
             "email": (
-                r"\b([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,})\b",
+                r"\b([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})\b",
                 "[EMAIL REDACTED]"
             ),
             "phone": (
@@ -650,7 +650,10 @@ class ReviewQueue:
         data["status"] = item.status.value
         data["judge_result"] = json.dumps(item.judge_result) if item.judge_result else ""
         data["guardrail_metadata"] = json.dumps(item.guardrail_metadata) if item.guardrail_metadata else ""
-        
+
+        # Remove None values — redis-py raises DataError on None
+        data = {k: v for k, v in data.items() if v is not None}
+
         # Store item
         self.redis.hset(f"{self.items_prefix}{item.id}", mapping=data)
         
@@ -710,12 +713,16 @@ class ReviewQueue:
         data = self.redis.hgetall(f"{self.items_prefix}{item_id}")
         if not data:
             return None
-        
+
         data["priority"] = Priority(int(data.get("priority", 3)))
         data["status"] = Status(data.get("status", "pending"))
         data["judge_result"] = json.loads(data["judge_result"]) if data.get("judge_result") else None
         data["guardrail_metadata"] = json.loads(data["guardrail_metadata"]) if data.get("guardrail_metadata") else None
-        
+
+        # Keys omitted during add() (were None) — restore as None
+        for key in ("assigned_to", "reviewed_at", "reviewer_decision", "reviewer_notes"):
+            data.setdefault(key, None)
+
         return ReviewItem(**data)
 
 
@@ -749,7 +756,11 @@ class InMemoryReviewQueue:
         item = self.items[item_id]
         item.reviewer_decision = decision
         item.reviewer_notes = notes
-        item.status = Status.APPROVED if decision == "approve" else Status.REJECTED
+        item.status = {
+            "approve": Status.APPROVED,
+            "reject": Status.REJECTED,
+            "escalate": Status.ESCALATED
+        }.get(decision, Status.APPROVED)
         return True
     
     def count(self) -> int:
