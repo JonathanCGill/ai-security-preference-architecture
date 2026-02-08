@@ -282,4 +282,4 @@ Use this template to document AI systems in your inventory (AI.3.1, AI.3.2).
 
 ---
 
-*Template Version: 1.0 | AI Security Blueprint*
+*Template Version: 1.0 | Enterprise AI Security Framework*

@@ -584,4 +584,4 @@ Centralised AI governance across multiple platforms requires:
 
 ---
 
-*This document is part of the AI Security Blueprint — Discussion Draft*
+*This document is part of the Enterprise AI Security Framework — Discussion Draft*

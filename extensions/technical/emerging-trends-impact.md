@@ -1,4 +1,4 @@
-# Emerging AI Trends — Impact on AI Security Blueprint
+# Emerging AI Trends — Impact on Enterprise AI Security Framework
 
 This document assesses how emerging AI trends affect the reference architecture and identifies required adaptations.
 
@@ -327,4 +327,4 @@ The framework should be treated as a **living document** that evolves with the t
 
 ---
 
-*AI Security Blueprint — Discussion Draft*
+*Enterprise AI Security Framework — Discussion Draft*

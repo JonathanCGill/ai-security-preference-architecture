@@ -207,9 +207,9 @@ Human oversight complements this model but should not be mistaken for absolute p
 
 ---
 
-## Implications for This Blueprint
+## Implications for This Framework
 
-Everything in this Blueprint assumes you've already answered "yes" to the fundamental question: AI is the right tool for this problem.
+Everything in this Framework assumes you've already answered "yes" to the fundamental question: AI is the right tool for this problem.
 
 If you haven't done that design work, no amount of guardrails, judges, or human oversight will make a bad architectural choice safe.
 

@@ -1,6 +1,6 @@
 # Adopters
 
-Organisations and individuals using or adapting the AI Security Blueprint.
+Organisations and individuals using or adapting the Enterprise AI Security Framework.
 
 ---
 
@@ -84,4 +84,4 @@ Listing here doesn't imply endorsement of the framework by the organisation, nor
 
 ---
 
-*AI Security Blueprint — Adopters*
+*Enterprise AI Security Framework — Adopters*

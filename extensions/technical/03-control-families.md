@@ -1271,4 +1271,4 @@ The behaviour of AI systems is shaped by training data you don't control and lik
 
 ---
 
-*This document is part of the AI Security Blueprint — Discussion Draft*
+*This document is part of the Enterprise AI Security Framework — Discussion Draft*

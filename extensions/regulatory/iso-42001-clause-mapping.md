@@ -446,4 +446,4 @@ The framework's technical controls directly support ISO 42001 compliance:
 
 ---
 
-*This document is part of the AI Security Blueprint — Discussion Draft*
+*This document is part of the Enterprise AI Security Framework — Discussion Draft*

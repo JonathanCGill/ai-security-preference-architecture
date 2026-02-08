@@ -606,4 +606,4 @@ ISO 42001 does not explicitly address agentic AI. The framework extends coverage
 
 ---
 
-*This document is part of the AI Security Blueprint — Discussion Draft*
+*This document is part of the Enterprise AI Security Framework — Discussion Draft*

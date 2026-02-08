@@ -141,4 +141,4 @@ The framework provides structure. Multimodal fills in that structure with uncert
 
 ---
 
-*From the [AI Security Blueprint](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*

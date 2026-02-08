@@ -1,6 +1,6 @@
 # ISO 27001:2022 Alignment
 
-This document maps the AI Security Blueprint to ISO 27001:2022 information security requirements.
+This document maps the Enterprise AI Security Framework to ISO 27001:2022 information security requirements.
 
 ---
 
@@ -476,4 +476,4 @@ AI systems are information systems. ISO 27001 controls apply. The AI framework a
 
 ---
 
-*AI Security Blueprint — Discussion Draft*
+*Enterprise AI Security Framework — Discussion Draft*

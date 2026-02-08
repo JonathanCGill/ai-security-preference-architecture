@@ -1,8 +1,8 @@
-# AI Security Blueprint
+# Enterprise AI Security Framework
 
 A practical guide to implementing behavioral controls for AI systems.
 
-![AI Security Blueprint](images/ai-security-tube-map.svg)
+![Enterprise AI Security Framework](images/ai-security-tube-map.svg)
 
 ---
 
@@ -26,7 +26,7 @@ You can't fully test an AI system before deployment. So how do you know it's wor
 >
 > The most effective way to reduce AI risk is to not use AI where it doesn't belong. Before guardrails, judges, or human oversight — ask whether AI is the right tool for this problem. Design thinking should precede technology selection.
 
-Everything in this Blueprint assumes you've already answered "yes" to that fundamental question.
+Everything in this Framework assumes you've already answered "yes" to that fundamental question.
 
 ---
 
@@ -79,7 +79,9 @@ This pattern already exists in production. What's been missing is a clear explan
 
 A practical synthesis: how to understand the pattern, select appropriate controls, and implement them proportionate to risk.
 
-**[→ Quick Start](QUICK_START.md)** — Implement basic controls in 30 minutes.
+**[→ Implementation Guide](IMPLEMENTATION_GUIDE.md)** — Working code. Copy, adapt, ship.
+
+**[→ Quick Start](QUICK_START.md)** — Conceptual overview in 30 minutes.
 
 ---
 

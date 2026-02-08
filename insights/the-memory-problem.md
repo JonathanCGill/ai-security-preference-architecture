@@ -183,4 +183,4 @@ We're early in that evolution.
 
 ---
 
-*From the [AI Security Blueprint](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*

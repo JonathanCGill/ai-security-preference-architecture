@@ -400,4 +400,4 @@ For each AI system, document:
 
 ---
 
-*AI Security Blueprint — Discussion Draft*
+*Enterprise AI Security Framework — Discussion Draft*

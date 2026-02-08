@@ -387,4 +387,4 @@ This template is a starting point. Your threat model needs to reflect:
 
 ---
 
-*AI Security Blueprint — Threat Modelling Template*
+*Enterprise AI Security Framework — Threat Modelling Template*

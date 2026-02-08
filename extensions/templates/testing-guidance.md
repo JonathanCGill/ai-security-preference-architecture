@@ -411,4 +411,4 @@ How you implement these tests will vary. The need to test them will not.
 
 ---
 
-*AI Security Blueprint — Testing Guidance*
+*Enterprise AI Security Framework — Testing Guidance*

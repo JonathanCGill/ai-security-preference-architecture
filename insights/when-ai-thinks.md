@@ -135,4 +135,4 @@ The framework needs to evolve to handle systems that think — even when we can'
 
 ---
 
-*From the [AI Security Blueprint](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*

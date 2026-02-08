@@ -412,4 +412,4 @@ This is appropriate because:
 
 ---
 
-*This worked example is part of the AI Security Blueprint — Discussion Draft*
+*This worked example is part of the Enterprise AI Security Framework — Discussion Draft*

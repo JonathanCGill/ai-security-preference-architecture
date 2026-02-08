@@ -159,4 +159,4 @@ Because when the regulator calls, "the AI did it" isn't an answer.
 
 ---
 
-*From the [AI Security Blueprint](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*

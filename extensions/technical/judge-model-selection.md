@@ -264,4 +264,4 @@ Key research informing these recommendations:
 
 ---
 
-*AI Security Blueprint — Judge Model Selection*
+*Enterprise AI Security Framework — Judge Model Selection*

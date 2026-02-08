@@ -256,4 +256,4 @@ Treat inter-agent messages as untrusted: **Agent A → Guardrails → Agent B**
 
 ---
 
-*AI Security Blueprint — Theoretical Extensions*
+*Enterprise AI Security Framework — Theoretical Extensions*

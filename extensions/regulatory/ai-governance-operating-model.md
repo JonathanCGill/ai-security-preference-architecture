@@ -801,4 +801,4 @@ A centralised AI governance function aligned with ISO 42001:
 
 ---
 
-*This document is part of the AI Security Blueprint — Discussion Draft*
+*This document is part of the Enterprise AI Security Framework — Discussion Draft*

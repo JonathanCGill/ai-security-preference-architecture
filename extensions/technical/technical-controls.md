@@ -673,4 +673,4 @@ index=ai_gateway status=403
 
 ---
 
-*AI Security Blueprint — Technical Controls*
+*Enterprise AI Security Framework — Technical Controls*

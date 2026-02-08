@@ -185,4 +185,4 @@ Build for imperfect control. Design for fast recovery.
 
 ---
 
-*From the [AI Security Blueprint](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/jonathancgill/ai-security-blueprint) — operational controls for enterprise AI systems.*

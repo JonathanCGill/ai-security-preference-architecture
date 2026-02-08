@@ -64,7 +64,7 @@ A reference guide to production-ready guardrail, evaluation, and safety solution
 
 The AI security industry has converged on a common pattern: **layered runtime controls** combining fast filtering (guardrails), deeper evaluation (LLM-as-judge), and human oversight. This guide catalogs the major solutions implementing this pattern, with honest assessments of capabilities, limitations, and appropriate use cases.
 
-> This page exists to give credit where it's due and help practitioners select appropriate tools. The Blueprint synthesizes and explains the pattern these solutions implement.
+> This page exists to give credit where it's due and help practitioners select appropriate tools. The Framework synthesizes and explains the pattern these solutions implement.
 
 ---
 

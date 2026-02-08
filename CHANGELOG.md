@@ -16,6 +16,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.6.0] - 2026-02-08
+
+### Changed
+- **Renamed: AI Security Blueprint → Enterprise AI Security Framework**
+  - Better reflects the content scope (governance, compliance, org structure)
+  - "Blueprint" implied buildable artifacts; "Framework" is accurate
+  
+### Added
+- **IMPLEMENTATION_GUIDE.md** — New practical guide with working code
+  - Input guardrails (regex + Bedrock + NeMo examples)
+  - Output guardrails (PII, forbidden phrases, structured validation)
+  - LLM-as-Judge (prompts, sampling strategies, async processing)
+  - Human-in-the-loop queue (Redis implementation, FastAPI endpoints)
+  - Telemetry and logging (structured logs, Prometheus metrics)
+  - Complete request flow example
+  - Test suite templates (unit tests, red team inputs)
+  - ~1,500 lines of copy-paste-ready Python
+
+### Rationale
+Reality check revealed the framework was thought leadership, not a buildable blueprint. Now there are two clear paths:
+- **Implementors**: Start with IMPLEMENTATION_GUIDE.md (code)
+- **Architects/Governance**: Use the full Framework (strategy)
+
+---
+
 ## [0.5.0] - 2026-02-07
 
 ### Changed

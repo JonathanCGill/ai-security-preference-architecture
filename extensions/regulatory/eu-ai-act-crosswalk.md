@@ -1,6 +1,6 @@
 # EU AI Act Crosswalk
 
-This document maps the AI Security Blueprint controls to EU AI Act requirements.
+This document maps the Enterprise AI Security Framework controls to EU AI Act requirements.
 
 ---
 
@@ -335,4 +335,4 @@ This crosswalk provides guidance, not legal advice. Key limitations:
 
 ---
 
-*This document is part of the AI Security Blueprint — Discussion Draft*
+*This document is part of the Enterprise AI Security Framework — Discussion Draft*

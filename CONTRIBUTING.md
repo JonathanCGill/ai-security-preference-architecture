@@ -1,4 +1,4 @@
-# Contributing to AI Security Blueprint
+# Contributing to Enterprise AI Security Framework
 
 Thank you for your interest in contributing to this project. This document provides guidelines for contributions.
 

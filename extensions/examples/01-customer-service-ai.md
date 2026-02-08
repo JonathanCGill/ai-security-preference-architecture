@@ -656,4 +656,4 @@ Aria demonstrates HIGH-tier implementation with proper control separation:
 
 ---
 
-*This worked example is part of the AI Security Blueprint — Discussion Draft*
+*This worked example is part of the Enterprise AI Security Framework — Discussion Draft*

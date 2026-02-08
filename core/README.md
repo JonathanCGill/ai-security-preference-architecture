@@ -1,4 +1,4 @@
-# AI Security Blueprint — Core
+# Enterprise AI Security Framework — Core
 
 Implementing behavioral controls for AI systems in production.
 

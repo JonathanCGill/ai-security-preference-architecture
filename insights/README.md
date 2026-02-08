@@ -90,7 +90,7 @@ Real-time AI breaks the inspect-then-deliver model.
 
 ## Using These Articles
 
-**Share freely:** These articles are from the [AI Security Blueprint](../README.md), licensed Apache 2.0. They synthesize an emerging industry pattern — share, adapt, and build on them.
+**Share freely:** These articles are from the [Enterprise AI Security Framework](../README.md), licensed Apache 2.0. They synthesize an emerging industry pattern — share, adapt, and build on them.
 
 **Adaptation:** Change examples to your industry. Add your experience. The pattern is stable; implementation details vary.
 

@@ -251,4 +251,4 @@ The pattern — Guardrails, Judge, Human Oversight — gives you predictable, pr
 
 ---
 
-*AI Security Blueprint — Quick Start Guide*
+*Enterprise AI Security Framework — Quick Start Guide*

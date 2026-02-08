@@ -2,7 +2,7 @@
 
 ## Overview
 
-The AI Security Blueprint is maintained as an open-source project. This document describes how the project is governed.
+The Enterprise AI Security Framework is maintained as an open-source project. This document describes how the project is governed.
 
 ## Roles
 
@@ -69,4 +69,4 @@ Changes to this governance document follow the "Significant Changes" process.
 
 ---
 
-*AI Security Blueprint*
+*Enterprise AI Security Framework*

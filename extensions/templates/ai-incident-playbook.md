@@ -446,4 +446,4 @@ FOLLOW-UP ACTIONS
 
 ---
 
-*AI Security Blueprint — Incident Response Playbook*
+*Enterprise AI Security Framework — Incident Response Playbook*
