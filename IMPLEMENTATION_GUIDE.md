@@ -6,18 +6,14 @@ This guide points you to resources for implementing AI security controls. We don
 
 ## The Pattern
 
-```
-User Input → [Input Guardrails] → LLM → [Output Guardrails] → Response
-                    ↓                          ↓
-                 [Block]                 [Judge Queue]
-                                              ↓
-                                       [Human Review]
-```
+![AI Security Control Pattern](images/control-pattern.svg)
 
-**Input Guardrails**: Block malicious inputs before they reach the LLM.  
-**Output Guardrails**: Validate/sanitize responses before delivery.  
-**Judge**: Async LLM evaluation of sampled interactions.  
-**Human Review**: Queue for edge cases and flagged content.
+| Component | Purpose |
+|-----------|---------|
+| **Input Guardrails** | Block malicious inputs before they reach the LLM |
+| **Output Guardrails** | Validate and sanitize responses before delivery |
+| **Judge Queue** | Async LLM evaluation of sampled interactions |
+| **Human Review** | Final decision on edge cases and flagged content |
 
 ---
 
