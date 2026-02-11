@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" width="1100" height="500">
   <defs>
     <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
@@ -9,40 +8,29 @@
     </marker>
   </defs>
   
-  <style>
-    .title { font: bold 16px Inter, system-ui, sans-serif; fill: #1e293b; }
-    .subtitle { font: 11px Inter, system-ui, sans-serif; fill: #64748b; }
-    .stage-num { font: bold 14px Inter, system-ui, sans-serif; fill: white; }
-    .stage-title { font: bold 10px Inter, system-ui, sans-serif; fill: #1e293b; }
-    .stage-detail { font: 9px Inter, system-ui, sans-serif; fill: #64748b; }
-    .alert-title { font: bold 9px Inter, system-ui, sans-serif; fill: #dc2626; }
-    .alert-item { font: 8px Inter, system-ui, sans-serif; fill: #7f1d1d; }
-    .timing-label { font: bold 9px Inter, system-ui, sans-serif; fill: white; }
-  </style>
-  
   <!-- Background -->
   <rect width="1100" height="500" fill="#f8fafc"/>
   
   <!-- Title -->
-  <text x="550" y="28" text-anchor="middle" class="title">Seven-Stage Event Chain</text>
-  <text x="550" y="44" text-anchor="middle" class="subtitle">Each stage generates events and alerts for complete audit trail</text>
+  <text x="550" y="28" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">Seven-Stage Event Chain</text>
+  <text x="550" y="44" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#64748b">Each stage generates events and alerts for complete audit trail</text>
   
   <!-- Stage 1 -->
   <g transform="translate(30, 70)">
     <rect width="130" height="160" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
     <circle cx="20" cy="20" r="14" fill="#3b82f6"/>
-    <text x="20" y="25" text-anchor="middle" class="stage-num">1</text>
-    <text x="70" y="20" text-anchor="middle" class="stage-title">Transaction</text>
-    <text x="70" y="32" text-anchor="middle" class="stage-title">Enters Pipeline</text>
+    <text x="20" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="bold" fill="white">1</text>
+    <text x="70" y="20" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Transaction</text>
+    <text x="70" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Enters Pipeline</text>
     
-    <text x="10" y="55" class="stage-detail">• Rules engines</text>
-    <text x="10" y="68" class="stage-detail">• Behavioural analytics</text>
-    <text x="10" y="81" class="stage-detail">• Sanctions screening</text>
+    <text x="10" y="55" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Rules engines</text>
+    <text x="10" y="68" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Behavioural analytics</text>
+    <text x="10" y="81" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Sanctions screening</text>
     
     <rect x="5" y="95" width="120" height="55" rx="4" fill="#fef2f2"/>
-    <text x="65" y="110" text-anchor="middle" class="alert-title">ALERTS</text>
-    <text x="10" y="125" class="alert-item">• Risk score spike</text>
-    <text x="10" y="138" class="alert-item">• Rule cascade anomaly</text>
+    <text x="65" y="110" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">ALERTS</text>
+    <text x="10" y="125" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Risk score spike</text>
+    <text x="10" y="138" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Rule cascade anomaly</text>
   </g>
   
   <!-- Arrow -->
@@ -52,18 +40,18 @@
   <g transform="translate(185, 70)">
     <rect width="120" height="160" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
     <circle cx="20" cy="20" r="14" fill="#3b82f6"/>
-    <text x="20" y="25" text-anchor="middle" class="stage-num">2</text>
-    <text x="65" y="20" text-anchor="middle" class="stage-title">Case</text>
-    <text x="65" y="32" text-anchor="middle" class="stage-title">Creation</text>
+    <text x="20" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="bold" fill="white">2</text>
+    <text x="65" y="20" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Case</text>
+    <text x="65" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Creation</text>
     
-    <text x="10" y="55" class="stage-detail">• case_id assigned</text>
-    <text x="10" y="68" class="stage-detail">• Metadata captured</text>
-    <text x="10" y="81" class="stage-detail">• Snapshot attached</text>
+    <text x="10" y="55" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• case_id assigned</text>
+    <text x="10" y="68" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Metadata captured</text>
+    <text x="10" y="81" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Snapshot attached</text>
     
     <rect x="5" y="95" width="110" height="55" rx="4" fill="#fef2f2"/>
-    <text x="60" y="110" text-anchor="middle" class="alert-title">ALERTS</text>
-    <text x="10" y="125" class="alert-item">• Repeated flags</text>
-    <text x="10" y="138" class="alert-item">• Signal conflicts</text>
+    <text x="60" y="110" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">ALERTS</text>
+    <text x="10" y="125" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Repeated flags</text>
+    <text x="10" y="138" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Signal conflicts</text>
   </g>
   
   <!-- Arrow -->
@@ -73,18 +61,18 @@
   <g transform="translate(330, 70)">
     <rect width="130" height="160" rx="8" fill="white" stroke="#8b5cf6" stroke-width="3"/>
     <circle cx="20" cy="20" r="14" fill="#8b5cf6"/>
-    <text x="20" y="25" text-anchor="middle" class="stage-num">3</text>
-    <text x="70" y="20" text-anchor="middle" class="stage-title">AI Enrichment</text>
-    <text x="70" y="32" text-anchor="middle" class="stage-title" style="fill:#8b5cf6">★ SENTINEL AI</text>
+    <text x="20" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="bold" fill="white">3</text>
+    <text x="70" y="20" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">AI Enrichment</text>
+    <text x="70" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#8b5cf6">★ SENTINEL AI</text>
     
-    <text x="10" y="55" class="stage-detail">• Context aggregation</text>
-    <text x="10" y="68" class="stage-detail">• Narrative summary</text>
-    <text x="10" y="81" class="stage-detail">• Triage recommendation</text>
+    <text x="10" y="55" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Context aggregation</text>
+    <text x="10" y="68" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Narrative summary</text>
+    <text x="10" y="81" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Triage recommendation</text>
     
     <rect x="5" y="95" width="120" height="55" rx="4" fill="#fef2f2"/>
-    <text x="65" y="110" text-anchor="middle" class="alert-title">ALERTS</text>
-    <text x="10" y="125" class="alert-item">• Decision conflict</text>
-    <text x="10" y="138" class="alert-item">• Uncertainty spike</text>
+    <text x="65" y="110" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">ALERTS</text>
+    <text x="10" y="125" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Decision conflict</text>
+    <text x="10" y="138" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Uncertainty spike</text>
   </g>
   
   <!-- Arrow -->
@@ -94,18 +82,18 @@
   <g transform="translate(485, 70)">
     <rect width="120" height="160" rx="8" fill="white" stroke="#22c55e" stroke-width="2"/>
     <circle cx="20" cy="20" r="14" fill="#22c55e"/>
-    <text x="20" y="25" text-anchor="middle" class="stage-num">4</text>
-    <text x="65" y="20" text-anchor="middle" class="stage-title">Guardrail</text>
-    <text x="65" y="32" text-anchor="middle" class="stage-title">Enforcement</text>
+    <text x="20" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="bold" fill="white">4</text>
+    <text x="65" y="20" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Guardrail</text>
+    <text x="65" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Enforcement</text>
     
-    <text x="10" y="55" class="stage-detail">• No fraud override</text>
-    <text x="10" y="68" class="stage-detail">• No sanctions suppress</text>
-    <text x="10" y="81" class="stage-detail">• Schema validation</text>
+    <text x="10" y="55" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• No fraud override</text>
+    <text x="10" y="68" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• No sanctions suppress</text>
+    <text x="10" y="81" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Schema validation</text>
     
     <rect x="5" y="95" width="110" height="55" rx="4" fill="#fef2f2"/>
-    <text x="60" y="110" text-anchor="middle" class="alert-title">ALERTS</text>
-    <text x="10" y="125" class="alert-item">• Override attempt</text>
-    <text x="10" y="138" class="alert-item">• Policy violation</text>
+    <text x="60" y="110" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">ALERTS</text>
+    <text x="10" y="125" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Override attempt</text>
+    <text x="10" y="138" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Policy violation</text>
   </g>
   
   <!-- Arrow -->
@@ -115,18 +103,18 @@
   <g transform="translate(630, 70)">
     <rect width="130" height="160" rx="8" fill="white" stroke="#f59e0b" stroke-width="2"/>
     <circle cx="20" cy="20" r="14" fill="#f59e0b"/>
-    <text x="20" y="25" text-anchor="middle" class="stage-num">5</text>
-    <text x="70" y="20" text-anchor="middle" class="stage-title">Human</text>
-    <text x="70" y="32" text-anchor="middle" class="stage-title">Analyst Review</text>
+    <text x="20" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="bold" fill="white">5</text>
+    <text x="70" y="20" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Human</text>
+    <text x="70" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Analyst Review</text>
     
-    <text x="10" y="55" class="stage-detail">• View all signals</text>
-    <text x="10" y="68" class="stage-detail">• Decide: block/allow</text>
-    <text x="10" y="81" class="stage-detail">• Can override AI</text>
+    <text x="10" y="55" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• View all signals</text>
+    <text x="10" y="68" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Decide: block/allow</text>
+    <text x="10" y="81" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Can override AI</text>
     
     <rect x="5" y="95" width="120" height="55" rx="4" fill="#fef2f2"/>
-    <text x="65" y="110" text-anchor="middle" class="alert-title">ALERTS</text>
-    <text x="10" y="125" class="alert-item">• High override rate</text>
-    <text x="10" y="138" class="alert-item">• SLA breach</text>
+    <text x="65" y="110" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">ALERTS</text>
+    <text x="10" y="125" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• High override rate</text>
+    <text x="10" y="138" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• SLA breach</text>
   </g>
   
   <!-- Arrow -->
@@ -136,18 +124,18 @@
   <g transform="translate(785, 70)">
     <rect width="120" height="160" rx="8" fill="white" stroke="#64748b" stroke-width="2"/>
     <circle cx="20" cy="20" r="14" fill="#64748b"/>
-    <text x="20" y="25" text-anchor="middle" class="stage-num">6</text>
-    <text x="65" y="20" text-anchor="middle" class="stage-title">Enforcement</text>
-    <text x="65" y="32" text-anchor="middle" class="stage-title">& Downstream</text>
+    <text x="20" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="bold" fill="white">6</text>
+    <text x="65" y="20" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Enforcement</text>
+    <text x="65" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">&amp; Downstream</text>
     
-    <text x="10" y="55" class="stage-detail">• Payment processor</text>
-    <text x="10" y="68" class="stage-detail">• Account controls</text>
-    <text x="10" y="81" class="stage-detail">• Notifications</text>
+    <text x="10" y="55" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Payment processor</text>
+    <text x="10" y="68" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Account controls</text>
+    <text x="10" y="81" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Notifications</text>
     
     <rect x="5" y="95" width="110" height="55" rx="4" fill="#fef2f2"/>
-    <text x="60" y="110" text-anchor="middle" class="alert-title">ALERTS</text>
-    <text x="10" y="125" class="alert-item">• Enforcement fail</text>
-    <text x="10" y="138" class="alert-item">• Reconciliation error</text>
+    <text x="60" y="110" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">ALERTS</text>
+    <text x="10" y="125" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Enforcement fail</text>
+    <text x="10" y="138" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Reconciliation error</text>
   </g>
   
   <!-- Arrow -->
@@ -157,33 +145,33 @@
   <g transform="translate(930, 70)">
     <rect width="130" height="160" rx="8" fill="white" stroke="#0d9488" stroke-width="2"/>
     <circle cx="20" cy="20" r="14" fill="#0d9488"/>
-    <text x="20" y="25" text-anchor="middle" class="stage-num">7</text>
-    <text x="70" y="20" text-anchor="middle" class="stage-title">Post-Event</text>
-    <text x="70" y="32" text-anchor="middle" class="stage-title">Assurance</text>
+    <text x="20" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="bold" fill="white">7</text>
+    <text x="70" y="20" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Post-Event</text>
+    <text x="70" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Assurance</text>
     
-    <text x="10" y="55" class="stage-detail">• Judge evaluation</text>
-    <text x="10" y="68" class="stage-detail">• Drift analysis</text>
-    <text x="10" y="81" class="stage-detail">• Typology learning</text>
+    <text x="10" y="55" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Judge evaluation</text>
+    <text x="10" y="68" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Drift analysis</text>
+    <text x="10" y="81" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#64748b">• Typology learning</text>
     
     <rect x="5" y="95" width="120" height="55" rx="4" fill="#fef2f2"/>
-    <text x="65" y="110" text-anchor="middle" class="alert-title">ALERTS</text>
-    <text x="10" y="125" class="alert-item">• Drift cluster</text>
-    <text x="10" y="138" class="alert-item">• Systematic bias</text>
+    <text x="65" y="110" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">ALERTS</text>
+    <text x="10" y="125" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Drift cluster</text>
+    <text x="10" y="138" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#7f1d1d">• Systematic bias</text>
   </g>
   
   <!-- Timing bands at bottom -->
   <rect x="30" y="260" width="285" height="30" rx="4" fill="#3b82f6"/>
-  <text x="172" y="280" text-anchor="middle" class="timing-label">INLINE (ms) — Fraud engines dominate</text>
+  <text x="172" y="280" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="white">INLINE (ms) — Fraud engines dominate</text>
   
   <rect x="330" y="260" width="275" height="30" rx="4" fill="#8b5cf6"/>
-  <text x="467" y="280" text-anchor="middle" class="timing-label">NEAR-RT (sec) — AI enrichment</text>
+  <text x="467" y="280" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="white">NEAR-RT (sec) — AI enrichment</text>
   
   <rect x="630" y="260" width="430" height="30" rx="4" fill="#f59e0b"/>
-  <text x="845" y="280" text-anchor="middle" class="timing-label">HUMAN + NEARLINE (min+) — Decision & learning</text>
+  <text x="845" y="280" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="white">HUMAN + NEARLINE (min+) — Decision &amp; learning</text>
   
   <!-- Alert aggregation -->
   <rect x="30" y="310" width="1030" height="80" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
-  <text x="550" y="335" text-anchor="middle" class="stage-title">All Alerts Flow to Central Aggregation</text>
+  <text x="550" y="335" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">All Alerts Flow to Central Aggregation</text>
   
   <!-- Alert flow arrows -->
   <g transform="translate(0, 50)">
@@ -198,18 +186,18 @@
   
   <!-- Aggregation outputs -->
   <rect x="150" y="350" width="150" height="30" rx="4" fill="white" stroke="#64748b"/>
-  <text x="225" y="370" text-anchor="middle" class="stage-detail" style="font-weight:bold">Per-Case Timeline</text>
+  <text x="225" y="370" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#64748b">Per-Case Timeline</text>
   
   <rect x="400" y="350" width="150" height="30" rx="4" fill="white" stroke="#64748b"/>
-  <text x="475" y="370" text-anchor="middle" class="stage-detail" style="font-weight:bold">Cross-Case Analytics</text>
+  <text x="475" y="370" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#64748b">Cross-Case Analytics</text>
   
   <rect x="650" y="350" width="150" height="30" rx="4" fill="white" stroke="#64748b"/>
-  <text x="725" y="370" text-anchor="middle" class="stage-detail" style="font-weight:bold">ML Anomaly Detection</text>
+  <text x="725" y="370" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#64748b">ML Anomaly Detection</text>
   
   <rect x="900" y="350" width="150" height="30" rx="4" fill="white" stroke="#64748b"/>
-  <text x="975" y="370" text-anchor="middle" class="stage-detail" style="font-weight:bold">Circuit Breakers</text>
+  <text x="975" y="370" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#64748b">Circuit Breakers</text>
   
   <!-- Key insight -->
   <rect x="250" y="410" width="600" height="35" rx="6" fill="#fef3c7" stroke="#f59e0b"/>
-  <text x="550" y="433" text-anchor="middle" class="stage-detail" style="font-weight:bold">Every stage emits events. Aggregation builds the full story and detects patterns.</text>
+  <text x="550" y="433" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="bold" fill="#64748b">Every stage emits events. Aggregation builds the full story and detects patterns.</text>
 </svg>
