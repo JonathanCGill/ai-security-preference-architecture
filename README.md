@@ -45,7 +45,7 @@ Every control in this framework has a defined failure mode. The [PACE resilience
 
 | If you want to... | Go here |
 | --- | --- |
-| Get the whole framework on one page | [Cheat Sheet](CHEATSHEET.md) / [Decision Poster](images/decision-poster.svg) |
+| Get the whole framework on one page | [Cheat Sheet](CHEATSHEET.md) / [Decision Poster](decision-poster.html) |
 | Deploy low-risk AI fast | [Fast Lane](FAST-LANE.md) |
 | Understand the concepts in 30 minutes | [Quick Start](QUICK_START.md) |
 | Implement controls with working code | [Implementation Guide](IMPLEMENTATION_GUIDE.md) |
@@ -76,7 +76,7 @@ The essential documents for understanding and implementing the pattern.
 | Document | Purpose |
 | --- | --- |
 | [Cheat Sheet](CHEATSHEET.md) | The entire framework on one page — classify, control, fail posture, test |
-| [Decision Poster](images/decision-poster.svg) | Visual one-page reference — print it, stick it on a wall |
+| [Decision Poster](decision-poster.html) | Visual one-page reference — open in browser, print it, stick it on a wall |
 | [Fast Lane](FAST-LANE.md) | Pre-approved minimal controls for low-risk AI — deploy without a bespoke security assessment |
 | [Risk Tiers](core/risk-tiers.md) | Classify your AI system, determine control and resilience requirements |
 | [Controls](core/controls.md) | Guardrails, Judge, and Human Oversight implementation with per-layer fail postures |
