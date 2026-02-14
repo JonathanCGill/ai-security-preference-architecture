@@ -25,7 +25,7 @@ Tier 1 is not a permanent state. It is designed to build the operational evidenc
 
 ## Architecture at Tier 1
 
-![Tier 1 Architecture](/diagrams/tier-1-architecture.svg)
+![Tier 1 Architecture](../images/tier-1-architecture.svg)
 
 Key architectural constraints at Tier 1:
 
@@ -210,7 +210,7 @@ Degraded mode orchestration is unnecessary at Tier 1 because the system is alrea
 
 Not all OWASP risks require active technical controls at Tier 1. The human-in-the-loop for all write operations provides a compensating control for several risks that would otherwise require automated mitigation.
 
-![Tier 1 OWASP Coverage](/diagrams/tier-1-owasp-coverage.svg)
+![Tier 1 OWASP Coverage](../images/tier-1-owasp-coverage.svg)
 
 **Critical note on ASI09:** At Tier 1, the human operator is the primary control for most risks. This means ASI09 (Human-Agent Trust Exploitation) is the most dangerous risk at this tier. Agents producing confident, well-reasoned explanations can lead the human operator to approve harmful actions through authority bias. Mitigations: ensure the human reviewer has domain expertise, rotate reviewers to prevent trust complacency, and establish a "challenge by default" review culture where the operator's role is to find reasons NOT to approve, not reasons to approve.
 
@@ -234,7 +234,7 @@ Tier 1 requires direct human involvement in operations. The staffing model refle
 
 Tier 1 costs are dominated by human labour, not infrastructure.
 
-![Tier 1 Cost Indicators](/diagrams/tier-1-cost.svg)
+![Tier 1 Cost Indicators](../images/tier-1-cost.svg)
 
 The dominant cost is the Agent Operator. This is the intentional trade-off at Tier 1: you are paying for human oversight in exchange for lower technical control complexity. As the system matures and moves to Tier 2, the operator role shifts from approving every action to managing exceptions.
 

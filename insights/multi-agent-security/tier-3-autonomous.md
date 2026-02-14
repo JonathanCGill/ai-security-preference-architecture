@@ -30,7 +30,7 @@ Examples of Tier 3 candidates: high-frequency trading support agents, 24/7 secur
 
 ## Architecture at Tier 3
 
-![Tier 3 Architecture](/diagrams/tier-3-architecture.svg)
+![Tier 3 Architecture](../images/tier-3-architecture.svg)
 
 Key architectural changes from Tier 2:
 
@@ -200,7 +200,7 @@ All agents active and operating autonomously within pre-approved task categories
 
 Tier 3 provides comprehensive coverage across all 20 OWASP risks. The few gaps remaining at Tier 2 are addressed.
 
-![Tier 3 OWASP Coverage](/diagrams/tier-3-owasp-coverage.svg)
+![Tier 3 OWASP Coverage](../images/tier-3-owasp-coverage.svg)
 
 **ASI09 at Tier 3:** The combination of multi-model cross-validation (disagreement triggers human review), independent observability agent (provides an untainted perspective), and automated compliance evidence (creates a paper trail that can be audited independently of the operator's judgment) closes the ASI09 gap. The human is no longer the sole target for trust exploitation because multiple automated systems cross-check each other.
 
@@ -259,7 +259,7 @@ Tier 3 paradoxically requires the most skilled staff despite having the least pe
 
 Tier 3 costs are heavily weighted toward skilled labour and infrastructure sophistication.
 
-![Tier 3 Cost Indicators](/diagrams/tier-3-cost.svg)
+![Tier 3 Cost Indicators](../images/tier-3-cost.svg)
 
 ---
 

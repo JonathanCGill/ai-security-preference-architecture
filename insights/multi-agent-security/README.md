@@ -19,7 +19,7 @@ It is designed for enterprise security architects, AI platform engineers, and go
 
 ## Architecture Overview
 
-![MASO Architecture](diagrams/maso-architecture.svg)
+![MASO Architecture](images/maso-architecture.svg)
 
 The MASO framework operates on a **three-layer defence model** inherited from the parent framework, adapted for multi-agent dynamics:
 
@@ -35,7 +35,7 @@ The critical addition for multi-agent systems is the **Secure Inter-Agent Messag
 
 ## PACE Resilience for Multi-Agent Operations
 
-![PACE Multi-Agent Cycle](diagrams/pace-multi-agent-cycle.svg)
+![PACE Multi-Agent Cycle](images/pace-multi-agent-cycle.svg)
 
 The [PACE methodology](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) (Primary, Alternate, Contingency, Emergency) from the parent framework is extended to handle the unique failure modes of multi-agent orchestration.
 
@@ -75,7 +75,7 @@ Transition authority: CISO or incident commander.
 
 ## OWASP Risk Coverage
 
-![OWASP Dual Mapping](diagrams/owasp-dual-mapping.svg)
+![OWASP Dual Mapping](images/owasp-dual-mapping.svg)
 
 The MASO framework maps controls against both OWASP threat taxonomies relevant to multi-agent systems.
 
@@ -238,7 +238,7 @@ It extends the parent framework by addressing:
 ```
 insights/multi-agent-security/
 ├── README.md                           # This document
-├── diagrams/
+├── images/
 │   ├── maso-architecture.svg           # Three-layer architecture with agent grid
 │   ├── pace-multi-agent-cycle.svg      # PACE resilience phases for agents
 │   └── owasp-dual-mapping.svg          # LLM Top 10 + Agentic Top 10 mapping
