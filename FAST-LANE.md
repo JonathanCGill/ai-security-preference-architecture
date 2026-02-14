@@ -1,4 +1,4 @@
-# Secure AI Fast Lane
+F# Secure AI Fast Lane
 
 *Pre-approved controls for low-risk AI. If your deployment qualifies, security has already said yes.*
 
@@ -18,7 +18,7 @@ The Fast Lane is the framework's answer. It defines a set of **qualification cri
 
 All four must be true. If any one fails, the deployment takes the standard path through [Risk Tiers](core/risk-tiers.md).
 
-![Fast Lane Qualification Gate](../images/fast-lane-qualification.svg)
+![Fast Lane Qualification Gate](/images/fast-lane-qualification.svg)
 
 | # | Criterion | What It Means | Why It Matters |
 |---|---|---|---|
