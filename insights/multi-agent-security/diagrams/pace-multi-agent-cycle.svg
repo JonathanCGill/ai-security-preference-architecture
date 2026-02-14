@@ -1,121 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
   <defs>
     <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0e1a"/>
-      <stop offset="100%" style="stop-color:#1a1e3a"/>
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
     </linearGradient>
-    <filter id="gl2">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="sh2">
-      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
-    </filter>
   </defs>
 
   <rect width="1200" height="800" fill="url(#bg2)"/>
 
   <!-- Title -->
-  <text x="600" y="40" text-anchor="middle" fill="#fff" font-size="20" font-weight="700" letter-spacing="2">PACE RESILIENCE MODEL FOR MULTI-AGENT OPERATIONS</text>
-  <text x="600" y="62" text-anchor="middle" fill="#ff6b35" font-size="12" letter-spacing="2">ADAPTED FROM ENTERPRISE AI SECURITY CONTROLS FRAMEWORK</text>
+  <text x="600" y="40" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">PACE RESILIENCE MODEL FOR MULTI-AGENT OPERATIONS</text>
+  <text x="600" y="62" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="2">ADAPTED FROM ENTERPRISE AI SECURITY CONTROLS FRAMEWORK</text>
   <line x1="250" y1="74" x2="950" y2="74" stroke="#ff6b35" stroke-width="0.8" opacity="0.4"/>
 
   <!-- Central hub -->
-  <circle cx="600" cy="400" r="80" fill="#0d1225" stroke="#ff6b35" stroke-width="2.5" filter="url(#sh2)"/>
+  <circle cx="600" cy="400" r="80" fill="#0d1225" stroke="#ff6b35" stroke-width="2.5"/>
   <circle cx="600" cy="400" r="60" fill="none" stroke="#ff6b35" stroke-width="0.5" opacity="0.3"/>
-  <text x="600" y="388" text-anchor="middle" fill="#ff6b35" font-size="22" font-weight="700">PACE</text>
-  <text x="600" y="408" text-anchor="middle" fill="#aab" font-size="10">AGENT</text>
-  <text x="600" y="422" text-anchor="middle" fill="#aab" font-size="10">RESILIENCE</text>
+  <text x="600" y="388" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="700">PACE</text>
+  <text x="600" y="408" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">AGENT</text>
+  <text x="600" y="422" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">RESILIENCE</text>
 
-  <!-- Curved arrows between phases -->
-  <path d="M 600 310 A 100 100 0 0 1 690 400" fill="none" stroke="#ff6b35" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowP)"/>
+  <!-- Arcs -->
+  <path d="M 600 310 A 100 100 0 0 1 690 400" fill="none" stroke="#ff6b35" stroke-width="1.5" opacity="0.3"/>
   <path d="M 690 400 A 100 100 0 0 1 600 490" fill="none" stroke="#00c9ff" stroke-width="1.5" opacity="0.3"/>
   <path d="M 600 490 A 100 100 0 0 1 510 400" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.3"/>
   <path d="M 510 400 A 100 100 0 0 1 600 310" fill="none" stroke="#f5576c" stroke-width="1.5" opacity="0.3"/>
 
-  <!-- PRIMARY Phase - Top -->
-  <g transform="translate(420,90)">
-    <rect width="360" height="160" rx="12" fill="#0d1225" stroke="#ff6b35" stroke-width="2" filter="url(#sh2)"/>
-    <rect width="360" height="5" rx="3" fill="#ff6b35"/>
-    <text x="180" y="35" text-anchor="middle" fill="#ff6b35" font-size="18" font-weight="700" letter-spacing="1">P — PRIMARY</text>
-    <text x="180" y="55" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">Normal Multi-Agent Operations</text>
-    <line x1="30" y1="65" x2="330" y2="65" stroke="#333" stroke-width="0.5"/>
-    <text x="30" y="85" fill="#8899aa" font-size="10">• Full agent roster active with designated roles</text>
-    <text x="30" y="102" fill="#8899aa" font-size="10">• All three security layers operational</text>
-    <text x="30" y="119" fill="#8899aa" font-size="10">• Inter-agent communication validated &amp; signed</text>
-    <text x="30" y="136" fill="#8899aa" font-size="10">• Behavioural baselines actively monitored</text>
-    <text x="30" y="153" fill="#8899aa" font-size="10">• Tool permissions at standard scoped levels</text>
-  </g>
+  <!-- PRIMARY - Top -->
+  <rect x="420" y="90" width="360" height="160" rx="12" fill="#0d1225" stroke="#ff6b35" stroke-width="2"/>
+  <rect x="420" y="90" width="360" height="5" rx="3" fill="#ff6b35"/>
+  <text x="600" y="125" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">P — PRIMARY</text>
+  <text x="600" y="145" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">Normal Multi-Agent Operations</text>
+  <line x1="450" y1="155" x2="750" y2="155" stroke="#333333" stroke-width="0.5"/>
+  <text x="450" y="175" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Full agent roster active with designated roles</text>
+  <text x="450" y="192" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· All three security layers operational</text>
+  <text x="450" y="209" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Inter-agent communication validated and signed</text>
+  <text x="450" y="226" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Behavioural baselines actively monitored</text>
+  <text x="450" y="243" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Tool permissions at standard scoped levels</text>
 
-  <!-- ALTERNATE Phase - Right -->
-  <g transform="translate(820,260)">
-    <rect width="340" height="170" rx="12" fill="#0d1225" stroke="#00c9ff" stroke-width="2" filter="url(#sh2)"/>
-    <rect width="340" height="5" rx="3" fill="#00c9ff"/>
-    <text x="170" y="35" text-anchor="middle" fill="#00c9ff" font-size="18" font-weight="700" letter-spacing="1">A — ALTERNATE</text>
-    <text x="170" y="55" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">Agent Failover &amp; Substitution</text>
-    <line x1="25" y1="65" x2="315" y2="65" stroke="#333" stroke-width="0.5"/>
-    <text x="25" y="85" fill="#8899aa" font-size="10">• Compromised agent isolated, backup activated</text>
-    <text x="25" y="102" fill="#8899aa" font-size="10">• Alternate model provider substitution</text>
-    <text x="25" y="119" fill="#8899aa" font-size="10">• Tool permissions tightened to read-only</text>
-    <text x="25" y="136" fill="#8899aa" font-size="10">• Enhanced monitoring on remaining agents</text>
-    <text x="25" y="153" fill="#8899aa" font-size="10">• Human-in-the-loop for all write operations</text>
-  </g>
+  <!-- ALTERNATE - Right -->
+  <rect x="820" y="260" width="340" height="170" rx="12" fill="#0d1225" stroke="#00c9ff" stroke-width="2"/>
+  <rect x="820" y="260" width="340" height="5" rx="3" fill="#00c9ff"/>
+  <text x="990" y="295" text-anchor="middle" fill="#00c9ff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">A — ALTERNATE</text>
+  <text x="990" y="315" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">Agent Failover and Substitution</text>
+  <line x1="845" y1="325" x2="1135" y2="325" stroke="#333333" stroke-width="0.5"/>
+  <text x="845" y="345" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Compromised agent isolated, backup activated</text>
+  <text x="845" y="362" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Alternate model provider substitution</text>
+  <text x="845" y="379" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Tool permissions tightened to read-only</text>
+  <text x="845" y="396" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Enhanced monitoring on remaining agents</text>
+  <text x="845" y="413" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Human-in-the-loop for all write operations</text>
 
-  <!-- CONTINGENCY Phase - Bottom -->
-  <g transform="translate(420,540)">
-    <rect width="360" height="170" rx="12" fill="#0d1225" stroke="#ffd700" stroke-width="2" filter="url(#sh2)"/>
-    <rect width="360" height="5" rx="3" fill="#ffd700"/>
-    <text x="180" y="35" text-anchor="middle" fill="#ffd700" font-size="18" font-weight="700" letter-spacing="1">C — CONTINGENCY</text>
-    <text x="180" y="55" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">Degraded Mode — Single Agent + Manual</text>
-    <line x1="30" y1="65" x2="330" y2="65" stroke="#333" stroke-width="0.5"/>
-    <text x="30" y="85" fill="#8899aa" font-size="10">• Multi-agent orchestration suspended</text>
-    <text x="30" y="102" fill="#8899aa" font-size="10">• Single validated agent in supervised mode</text>
-    <text x="30" y="119" fill="#8899aa" font-size="10">• All actions require human pre-approval</text>
-    <text x="30" y="136" fill="#8899aa" font-size="10">• Inter-agent comms channel disabled</text>
-    <text x="30" y="153" fill="#8899aa" font-size="10">• Forensic capture of all state &amp; context</text>
-  </g>
+  <!-- CONTINGENCY - Bottom -->
+  <rect x="420" y="540" width="360" height="170" rx="12" fill="#0d1225" stroke="#ffd700" stroke-width="2"/>
+  <rect x="420" y="540" width="360" height="5" rx="3" fill="#ffd700"/>
+  <text x="600" y="575" text-anchor="middle" fill="#ffd700" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">C — CONTINGENCY</text>
+  <text x="600" y="595" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">Degraded Mode — Single Agent + Manual</text>
+  <line x1="450" y1="605" x2="750" y2="605" stroke="#333333" stroke-width="0.5"/>
+  <text x="450" y="625" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Multi-agent orchestration suspended</text>
+  <text x="450" y="642" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Single validated agent in supervised mode</text>
+  <text x="450" y="659" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· All actions require human pre-approval</text>
+  <text x="450" y="676" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Inter-agent comms channel disabled</text>
+  <text x="450" y="693" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Forensic capture of all state and context</text>
 
-  <!-- EMERGENCY Phase - Left -->
-  <g transform="translate(40,260)">
-    <rect width="340" height="170" rx="12" fill="#0d1225" stroke="#f5576c" stroke-width="2" filter="url(#sh2)"/>
-    <rect width="340" height="5" rx="3" fill="#f5576c"/>
-    <text x="170" y="35" text-anchor="middle" fill="#f5576c" font-size="18" font-weight="700" letter-spacing="1">E — EMERGENCY</text>
-    <text x="170" y="55" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">Full Shutdown &amp; Containment</text>
-    <line x1="25" y1="65" x2="315" y2="65" stroke="#333" stroke-width="0.5"/>
-    <text x="25" y="85" fill="#8899aa" font-size="10">• All agents terminated immediately</text>
-    <text x="25" y="102" fill="#8899aa" font-size="10">• Tool access revoked across all scopes</text>
-    <text x="25" y="119" fill="#8899aa" font-size="10">• Memory/context snapshots preserved</text>
-    <text x="25" y="136" fill="#8899aa" font-size="10">• Incident response team engaged</text>
-    <text x="25" y="153" fill="#8899aa" font-size="10">• Full rollback of agent actions initiated</text>
-  </g>
+  <!-- EMERGENCY - Left -->
+  <rect x="40" y="260" width="340" height="170" rx="12" fill="#0d1225" stroke="#f5576c" stroke-width="2"/>
+  <rect x="40" y="260" width="340" height="5" rx="3" fill="#f5576c"/>
+  <text x="210" y="295" text-anchor="middle" fill="#f5576c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">E — EMERGENCY</text>
+  <text x="210" y="315" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">Full Shutdown and Containment</text>
+  <line x1="65" y1="325" x2="355" y2="325" stroke="#333333" stroke-width="0.5"/>
+  <text x="65" y="345" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· All agents terminated immediately</text>
+  <text x="65" y="362" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Tool access revoked across all scopes</text>
+  <text x="65" y="379" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Memory/context snapshots preserved</text>
+  <text x="65" y="396" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Incident response team engaged</text>
+  <text x="65" y="413" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">· Full rollback of agent actions initiated</text>
 
-  <!-- Transition Triggers -->
-  <!-- P→A -->
-  <g transform="translate(770,195)">
-    <rect width="130" height="50" rx="20" fill="#0a0e1a" stroke="#00c9ff" stroke-width="1" opacity="0.8"/>
-    <text x="65" y="22" text-anchor="middle" fill="#00c9ff" font-size="9" font-weight="600">TRIGGER: Agent</text>
-    <text x="65" y="36" text-anchor="middle" fill="#00c9ff" font-size="9" font-weight="600">anomaly detected</text>
-  </g>
-  <!-- A→C -->
-  <g transform="translate(870,470)">
-    <rect width="130" height="50" rx="20" fill="#0a0e1a" stroke="#ffd700" stroke-width="1" opacity="0.8"/>
-    <text x="65" y="22" text-anchor="middle" fill="#ffd700" font-size="9" font-weight="600">TRIGGER: Multiple</text>
-    <text x="65" y="36" text-anchor="middle" fill="#ffd700" font-size="9" font-weight="600">agents compromised</text>
-  </g>
-  <!-- C→E -->
-  <g transform="translate(200,540)">
-    <rect width="140" height="50" rx="20" fill="#0a0e1a" stroke="#f5576c" stroke-width="1" opacity="0.8"/>
-    <text x="70" y="22" text-anchor="middle" fill="#f5576c" font-size="9" font-weight="600">TRIGGER: Cascading</text>
-    <text x="70" y="36" text-anchor="middle" fill="#f5576c" font-size="9" font-weight="600">failure / data exfil</text>
-  </g>
-  <!-- E→P (recovery) -->
-  <g transform="translate(100,175)">
-    <rect width="140" height="50" rx="20" fill="#0a0e1a" stroke="#92fe9d" stroke-width="1" opacity="0.8"/>
-    <text x="70" y="22" text-anchor="middle" fill="#92fe9d" font-size="9" font-weight="600">RECOVERY: Root</text>
-    <text x="70" y="36" text-anchor="middle" fill="#92fe9d" font-size="9" font-weight="600">cause resolved</text>
-  </g>
+  <!-- Transition triggers -->
+  <rect x="770" y="195" width="130" height="50" rx="20" fill="#0a0e1a" stroke="#00c9ff" stroke-width="1" opacity="0.8"/>
+  <text x="835" y="217" text-anchor="middle" fill="#00c9ff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">TRIGGER: Agent</text>
+  <text x="835" y="231" text-anchor="middle" fill="#00c9ff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">anomaly detected</text>
+
+  <rect x="870" y="470" width="130" height="50" rx="20" fill="#0a0e1a" stroke="#ffd700" stroke-width="1" opacity="0.8"/>
+  <text x="935" y="492" text-anchor="middle" fill="#ffd700" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">TRIGGER: Multiple</text>
+  <text x="935" y="506" text-anchor="middle" fill="#ffd700" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">agents compromised</text>
+
+  <rect x="200" y="540" width="140" height="50" rx="20" fill="#0a0e1a" stroke="#f5576c" stroke-width="1" opacity="0.8"/>
+  <text x="270" y="562" text-anchor="middle" fill="#f5576c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">TRIGGER: Cascading</text>
+  <text x="270" y="576" text-anchor="middle" fill="#f5576c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">failure / data exfil</text>
+
+  <rect x="100" y="175" width="140" height="50" rx="20" fill="#0a0e1a" stroke="#92fe9d" stroke-width="1" opacity="0.8"/>
+  <text x="170" y="197" text-anchor="middle" fill="#92fe9d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">RECOVERY: Root</text>
+  <text x="170" y="211" text-anchor="middle" fill="#92fe9d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600">cause resolved</text>
 
   <!-- Footer -->
-  <rect x="40" y="740" width="1120" height="40" rx="4" fill="#0a0e1a" stroke="#333" stroke-width="0.5"/>
-  <text x="600" y="765" text-anchor="middle" fill="#667" font-size="10">Each PACE transition is logged to the immutable audit trail · Transition authority escalates: P→A (automated) · A→C (security team) · C→E (CISO/incident commander) · E→P (post-incident review)</text>
+  <rect x="40" y="740" width="1120" height="40" rx="4" fill="#0a0e1a" stroke="#333333" stroke-width="0.5"/>
+  <text x="600" y="765" text-anchor="middle" fill="#667777" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">Each PACE transition is logged to the immutable audit trail · Transition authority: P to A (automated) · A to C (security team) · C to E (CISO) · E to P (post-incident review)</text>
 </svg>

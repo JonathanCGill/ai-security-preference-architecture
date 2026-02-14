@@ -1,44 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0e1a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#1a1e3a;stop-opacity:1"/>
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
     </linearGradient>
     <linearGradient id="paceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ff6b35"/>
-      <stop offset="100%" style="stop-color:#ff9a5c"/>
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ff9a5c"/>
     </linearGradient>
-    <linearGradient id="guardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#00c9ff"/>
-      <stop offset="100%" style="stop-color:#0078d4"/>
-    </linearGradient>
-    <linearGradient id="judgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#92fe9d"/>
-      <stop offset="100%" style="stop-color:#00c853"/>
-    </linearGradient>
-    <linearGradient id="humanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f093fb"/>
-      <stop offset="100%" style="stop-color:#f5576c"/>
-    </linearGradient>
-    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#4facfe"/>
-      <stop offset="100%" style="stop-color:#00f2fe"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
-    </filter>
   </defs>
 
-  <!-- Background -->
   <rect width="1200" height="900" fill="url(#bgGrad)"/>
 
-  <!-- Grid pattern -->
-  <g opacity="0.05" stroke="#fff" stroke-width="0.5">
-    <line x1="0" y1="0" x2="1200" y2="0" y1="100" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/>
+  <!-- Grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/>
     <line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/>
     <line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/>
     <line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/>
@@ -48,174 +24,145 @@
   </g>
 
   <!-- Title -->
-  <text x="600" y="45" text-anchor="middle" fill="#fff" font-size="22" font-weight="700" letter-spacing="2">MULTI-AGENT SECURITY OPERATIONS (MASO) FRAMEWORK</text>
-  <text x="600" y="68" text-anchor="middle" fill="#ff6b35" font-size="13" font-weight="500" letter-spacing="3">PACE-DRIVEN CONTAINMENT ARCHITECTURE — THREE-LAYER DEFENCE MODEL</text>
+  <text x="600" y="45" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">MULTI-AGENT SECURITY OPERATIONS (MASO) FRAMEWORK</text>
+  <text x="600" y="68" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="500" letter-spacing="3">PACE-DRIVEN CONTAINMENT ARCHITECTURE — THREE-LAYER DEFENCE MODEL</text>
   <line x1="200" y1="80" x2="1000" y2="80" stroke="#ff6b35" stroke-width="1" opacity="0.5"/>
 
-  <!-- LAYER 1: Human Oversight (outermost) -->
-  <rect x="40" y="95" width="1120" height="790" rx="16" fill="none" stroke="url(#humanGrad)" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.7"/>
+  <!-- LAYER 3: Human Oversight -->
+  <rect x="40" y="95" width="1120" height="790" rx="16" fill="none" stroke="#f093fb" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.7"/>
   <rect x="42" y="97" width="180" height="28" rx="4" fill="#f5576c" opacity="0.15"/>
-  <text x="52" y="116" fill="#f093fb" font-size="12" font-weight="700" letter-spacing="1.5">LAYER 3: HUMAN OVERSIGHT</text>
+  <text x="52" y="116" fill="#f093fb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">LAYER 3: HUMAN OVERSIGHT</text>
 
-  <!-- LAYER 2: LLM-as-Judge (middle) -->
-  <rect x="70" y="135" width="1060" height="720" rx="12" fill="none" stroke="url(#judgeGrad)" stroke-width="2" stroke-dasharray="6,3" opacity="0.6"/>
+  <!-- LAYER 2: LLM-as-Judge -->
+  <rect x="70" y="135" width="1060" height="720" rx="12" fill="none" stroke="#92fe9d" stroke-width="2" stroke-dasharray="6,3" opacity="0.6"/>
   <rect x="72" y="137" width="200" height="28" rx="4" fill="#00c853" opacity="0.15"/>
-  <text x="82" y="156" fill="#92fe9d" font-size="12" font-weight="700" letter-spacing="1.5">LAYER 2: LLM-AS-JUDGE EVAL</text>
+  <text x="82" y="156" fill="#92fe9d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">LAYER 2: LLM-AS-JUDGE EVAL</text>
 
-  <!-- LAYER 3: Guardrails (innermost) -->
-  <rect x="100" y="175" width="1000" height="650" rx="10" fill="none" stroke="url(#guardGrad)" stroke-width="2" opacity="0.5"/>
+  <!-- LAYER 1: Guardrails -->
+  <rect x="100" y="175" width="1000" height="650" rx="10" fill="none" stroke="#00c9ff" stroke-width="2" opacity="0.5"/>
   <rect x="102" y="177" width="170" height="28" rx="4" fill="#0078d4" opacity="0.15"/>
-  <text x="112" y="196" fill="#00c9ff" font-size="12" font-weight="700" letter-spacing="1.5">LAYER 1: GUARDRAILS</text>
+  <text x="112" y="196" fill="#00c9ff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">LAYER 1: GUARDRAILS</text>
 
-  <!-- PACE Ribbon across top -->
-  <rect x="350" y="100" width="500" height="30" rx="15" fill="url(#paceGrad)" opacity="0.9" filter="url(#shadow)"/>
-  <text x="600" y="120" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" letter-spacing="2">P · A · C · E    RESILIENCE METHODOLOGY</text>
+  <!-- PACE Ribbon -->
+  <rect x="350" y="100" width="500" height="30" rx="15" fill="url(#paceGrad)" opacity="0.9"/>
+  <text x="600" y="120" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2">P · A · C · E    RESILIENCE METHODOLOGY</text>
 
   <!-- Orchestrator -->
-  <rect x="420" y="210" width="360" height="80" rx="8" fill="#1a1e3a" stroke="#ff6b35" stroke-width="2" filter="url(#shadow)"/>
-  <rect x="420" y="210" width="360" height="4" rx="2" fill="url(#paceGrad)"/>
-  <text x="600" y="245" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">AGENT ORCHESTRATOR</text>
-  <text x="600" y="268" text-anchor="middle" fill="#aab" font-size="11">Task Decomposition · Routing · State Management · Kill Switch</text>
+  <rect x="420" y="210" width="360" height="80" rx="8" fill="#1a1e3a" stroke="#ff6b35" stroke-width="2"/>
+  <rect x="420" y="210" width="360" height="4" rx="2" fill="#ff6b35"/>
+  <text x="600" y="245" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700">AGENT ORCHESTRATOR</text>
+  <text x="600" y="268" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11">Task Decomposition · Routing · State Management · Kill Switch</text>
 
-  <!-- PACE boxes under orchestrator -->
-  <g transform="translate(135,310)">
-    <rect width="115" height="50" rx="6" fill="#1a1e3a" stroke="#ff6b35" stroke-width="1.5"/>
-    <text x="57" y="22" text-anchor="middle" fill="#ff6b35" font-size="13" font-weight="700">PRIMARY</text>
-    <text x="57" y="38" text-anchor="middle" fill="#aab" font-size="9">Execute Task</text>
-  </g>
-  <g transform="translate(280,310)">
-    <rect width="115" height="50" rx="6" fill="#1a1e3a" stroke="#ff9a5c" stroke-width="1.5"/>
-    <text x="57" y="22" text-anchor="middle" fill="#ff9a5c" font-size="13" font-weight="700">ALTERNATE</text>
-    <text x="57" y="38" text-anchor="middle" fill="#aab" font-size="9">Failover Path</text>
-  </g>
-  <g transform="translate(425,310)">
-    <rect width="115" height="50" rx="6" fill="#1a1e3a" stroke="#ffd700" stroke-width="1.5"/>
-    <text x="57" y="22" text-anchor="middle" fill="#ffd700" font-size="13" font-weight="700">CONTINGENCY</text>
-    <text x="57" y="38" text-anchor="middle" fill="#aab" font-size="9">Degraded Mode</text>
-  </g>
-  <g transform="translate(570,310)">
-    <rect width="115" height="50" rx="6" fill="#1a1e3a" stroke="#f5576c" stroke-width="1.5"/>
-    <text x="57" y="22" text-anchor="middle" fill="#f5576c" font-size="13" font-weight="700">EMERGENCY</text>
-    <text x="57" y="38" text-anchor="middle" fill="#aab" font-size="9">Kill · Isolate · Alert</text>
-  </g>
+  <!-- PACE boxes -->
+  <rect x="135" y="310" width="115" height="50" rx="6" fill="#1a1e3a" stroke="#ff6b35" stroke-width="1.5"/>
+  <text x="192" y="332" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">PRIMARY</text>
+  <text x="192" y="348" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Execute Task</text>
 
-  <!-- Connector lines from orchestrator to PACE -->
+  <rect x="280" y="310" width="115" height="50" rx="6" fill="#1a1e3a" stroke="#ff9a5c" stroke-width="1.5"/>
+  <text x="337" y="332" text-anchor="middle" fill="#ff9a5c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">ALTERNATE</text>
+  <text x="337" y="348" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Failover Path</text>
+
+  <rect x="425" y="310" width="115" height="50" rx="6" fill="#1a1e3a" stroke="#ffd700" stroke-width="1.5"/>
+  <text x="482" y="332" text-anchor="middle" fill="#ffd700" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">CONTINGENCY</text>
+  <text x="482" y="348" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Degraded Mode</text>
+
+  <rect x="570" y="310" width="115" height="50" rx="6" fill="#1a1e3a" stroke="#f5576c" stroke-width="1.5"/>
+  <text x="627" y="332" text-anchor="middle" fill="#f5576c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">EMERGENCY</text>
+  <text x="627" y="348" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Kill · Isolate · Alert</text>
+
+  <!-- Connector lines -->
   <line x1="500" y1="290" x2="192" y2="310" stroke="#ff6b35" stroke-width="1" opacity="0.4"/>
   <line x1="540" y1="290" x2="337" y2="310" stroke="#ff9a5c" stroke-width="1" opacity="0.4"/>
   <line x1="600" y1="290" x2="482" y2="310" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
   <line x1="660" y1="290" x2="627" y2="310" stroke="#f5576c" stroke-width="1" opacity="0.4"/>
 
-  <!-- Inter-Agent Secure Bus -->
+  <!-- Secure Bus -->
   <rect x="730" y="310" width="340" height="50" rx="6" fill="#1a1e3a" stroke="#00c9ff" stroke-width="1.5"/>
-  <text x="900" y="333" text-anchor="middle" fill="#00c9ff" font-size="12" font-weight="700">SECURE INTER-AGENT MESSAGE BUS</text>
-  <text x="900" y="350" text-anchor="middle" fill="#aab" font-size="9">Signed · Validated · Rate-Limited · Sandboxed</text>
+  <text x="900" y="333" text-anchor="middle" fill="#00c9ff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700">SECURE INTER-AGENT MESSAGE BUS</text>
+  <text x="900" y="350" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Signed · Validated · Rate-Limited · Sandboxed</text>
 
-  <!-- Agent Grid -->
-  <!-- Agent 1 -->
-  <g transform="translate(125,395)">
-    <rect width="200" height="130" rx="8" fill="#0d1225" stroke="url(#agentGrad)" stroke-width="1.5" filter="url(#shadow)"/>
-    <rect width="200" height="4" rx="2" fill="url(#agentGrad)"/>
-    <text x="100" y="30" text-anchor="middle" fill="#4facfe" font-size="13" font-weight="700">AGENT A: ANALYST</text>
-    <text x="100" y="50" text-anchor="middle" fill="#8899aa" font-size="10">Model: Claude Sonnet</text>
-    <rect x="10" y="60" width="180" height="22" rx="4" fill="#0078d4" opacity="0.15"/>
-    <text x="100" y="76" text-anchor="middle" fill="#00c9ff" font-size="9">Scope: READ-ONLY · Data Analysis</text>
-    <rect x="10" y="88" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
-    <text x="100" y="104" text-anchor="middle" fill="#92fe9d" font-size="9">Tools: SQL Query · Report Gen</text>
-    <circle cx="180" cy="120" r="6" fill="none" stroke="#92fe9d" stroke-width="1.5"/>
-    <text x="180" y="124" text-anchor="middle" fill="#92fe9d" font-size="8">✓</text>
-  </g>
+  <!-- Agent A -->
+  <rect x="125" y="395" width="200" height="130" rx="8" fill="#0d1225" stroke="#4facfe" stroke-width="1.5"/>
+  <rect x="125" y="395" width="200" height="4" rx="2" fill="#4facfe"/>
+  <text x="225" y="425" text-anchor="middle" fill="#4facfe" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">AGENT A: ANALYST</text>
+  <text x="225" y="445" text-anchor="middle" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">Model: Claude Sonnet</text>
+  <rect x="135" y="455" width="180" height="22" rx="4" fill="#0078d4" opacity="0.15"/>
+  <text x="225" y="471" text-anchor="middle" fill="#00c9ff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Scope: READ-ONLY · Data Analysis</text>
+  <rect x="135" y="483" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
+  <text x="225" y="499" text-anchor="middle" fill="#92fe9d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Tools: SQL Query · Report Gen</text>
 
-  <!-- Agent 2 -->
-  <g transform="translate(365,395)">
-    <rect width="200" height="130" rx="8" fill="#0d1225" stroke="url(#agentGrad)" stroke-width="1.5" filter="url(#shadow)"/>
-    <rect width="200" height="4" rx="2" fill="url(#agentGrad)"/>
-    <text x="100" y="30" text-anchor="middle" fill="#4facfe" font-size="13" font-weight="700">AGENT B: EXECUTOR</text>
-    <text x="100" y="50" text-anchor="middle" fill="#8899aa" font-size="10">Model: GPT-4o</text>
-    <rect x="10" y="60" width="180" height="22" rx="4" fill="#f5576c" opacity="0.15"/>
-    <text x="100" y="76" text-anchor="middle" fill="#f093fb" font-size="9">Scope: WRITE · Approval Required</text>
-    <rect x="10" y="88" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
-    <text x="100" y="104" text-anchor="middle" fill="#92fe9d" font-size="9">Tools: API Call · Deploy · Rollback</text>
-    <circle cx="180" cy="120" r="6" fill="none" stroke="#ffd700" stroke-width="1.5"/>
-    <text x="180" y="124" text-anchor="middle" fill="#ffd700" font-size="8">!</text>
-  </g>
+  <!-- Agent B -->
+  <rect x="365" y="395" width="200" height="130" rx="8" fill="#0d1225" stroke="#4facfe" stroke-width="1.5"/>
+  <rect x="365" y="395" width="200" height="4" rx="2" fill="#4facfe"/>
+  <text x="465" y="425" text-anchor="middle" fill="#4facfe" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">AGENT B: EXECUTOR</text>
+  <text x="465" y="445" text-anchor="middle" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">Model: GPT-4o</text>
+  <rect x="375" y="455" width="180" height="22" rx="4" fill="#f5576c" opacity="0.15"/>
+  <text x="465" y="471" text-anchor="middle" fill="#f093fb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Scope: WRITE · Approval Required</text>
+  <rect x="375" y="483" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
+  <text x="465" y="499" text-anchor="middle" fill="#92fe9d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Tools: API Call · Deploy · Rollback</text>
 
-  <!-- Agent 3 -->
-  <g transform="translate(605,395)">
-    <rect width="200" height="130" rx="8" fill="#0d1225" stroke="url(#agentGrad)" stroke-width="1.5" filter="url(#shadow)"/>
-    <rect width="200" height="4" rx="2" fill="url(#agentGrad)"/>
-    <text x="100" y="30" text-anchor="middle" fill="#4facfe" font-size="13" font-weight="700">AGENT C: VALIDATOR</text>
-    <text x="100" y="50" text-anchor="middle" fill="#8899aa" font-size="10">Model: Gemini Pro</text>
-    <rect x="10" y="60" width="180" height="22" rx="4" fill="#0078d4" opacity="0.15"/>
-    <text x="100" y="76" text-anchor="middle" fill="#00c9ff" font-size="9">Scope: READ · Cross-Check</text>
-    <rect x="10" y="88" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
-    <text x="100" y="104" text-anchor="middle" fill="#92fe9d" font-size="9">Tools: Test Suite · Diff · Audit Log</text>
-    <circle cx="180" cy="120" r="6" fill="none" stroke="#92fe9d" stroke-width="1.5"/>
-    <text x="180" y="124" text-anchor="middle" fill="#92fe9d" font-size="8">✓</text>
-  </g>
+  <!-- Agent C -->
+  <rect x="605" y="395" width="200" height="130" rx="8" fill="#0d1225" stroke="#4facfe" stroke-width="1.5"/>
+  <rect x="605" y="395" width="200" height="4" rx="2" fill="#4facfe"/>
+  <text x="705" y="425" text-anchor="middle" fill="#4facfe" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">AGENT C: VALIDATOR</text>
+  <text x="705" y="445" text-anchor="middle" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">Model: Gemini Pro</text>
+  <rect x="615" y="455" width="180" height="22" rx="4" fill="#0078d4" opacity="0.15"/>
+  <text x="705" y="471" text-anchor="middle" fill="#00c9ff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Scope: READ · Cross-Check</text>
+  <rect x="615" y="483" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
+  <text x="705" y="499" text-anchor="middle" fill="#92fe9d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Tools: Test Suite · Diff · Audit Log</text>
 
-  <!-- Agent 4 -->
-  <g transform="translate(845,395)">
-    <rect width="200" height="130" rx="8" fill="#0d1225" stroke="#f5576c" stroke-width="1.5" filter="url(#shadow)"/>
-    <rect width="200" height="4" rx="2" fill="#f5576c"/>
-    <text x="100" y="30" text-anchor="middle" fill="#f5576c" font-size="13" font-weight="700">AGENT D: MONITOR</text>
-    <text x="100" y="50" text-anchor="middle" fill="#8899aa" font-size="10">Model: LLM-as-Judge</text>
-    <rect x="10" y="60" width="180" height="22" rx="4" fill="#f5576c" opacity="0.15"/>
-    <text x="100" y="76" text-anchor="middle" fill="#f093fb" font-size="9">Scope: OBSERVE · INTERVENE</text>
-    <rect x="10" y="88" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
-    <text x="100" y="104" text-anchor="middle" fill="#92fe9d" font-size="9">Tools: Anomaly Det · Kill Switch</text>
-    <circle cx="180" cy="120" r="6" fill="none" stroke="#f5576c" stroke-width="1.5"/>
-    <text x="180" y="124" text-anchor="middle" fill="#f5576c" font-size="8">⚡</text>
-  </g>
+  <!-- Agent D -->
+  <rect x="845" y="395" width="200" height="130" rx="8" fill="#0d1225" stroke="#f5576c" stroke-width="1.5"/>
+  <rect x="845" y="395" width="200" height="4" rx="2" fill="#f5576c"/>
+  <text x="945" y="425" text-anchor="middle" fill="#f5576c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">AGENT D: MONITOR</text>
+  <text x="945" y="445" text-anchor="middle" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">Model: LLM-as-Judge</text>
+  <rect x="855" y="455" width="180" height="22" rx="4" fill="#f5576c" opacity="0.15"/>
+  <text x="945" y="471" text-anchor="middle" fill="#f093fb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Scope: OBSERVE · INTERVENE</text>
+  <rect x="855" y="483" width="180" height="22" rx="4" fill="#00c853" opacity="0.1"/>
+  <text x="945" y="499" text-anchor="middle" fill="#92fe9d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Tools: Anomaly Det · Kill Switch</text>
 
-  <!-- Tool Sandbox Layer -->
-  <rect x="125" y="555" width="950" height="75" rx="8" fill="#0d1225" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="600" y="580" text-anchor="middle" fill="#ffd700" font-size="14" font-weight="700">TOOL SANDBOX &amp; PERMISSION BOUNDARY</text>
-  <text x="600" y="600" text-anchor="middle" fill="#aab" font-size="10">Least Privilege · Scoped Credentials · Signed Tool Manifests · Execution Timeout · Output Validation</text>
-  <text x="600" y="618" text-anchor="middle" fill="#8899aa" font-size="9">Each agent's tool access is independently permissioned, monitored, and revocable in real-time</text>
-
-  <!-- External Systems -->
-  <g transform="translate(125,660)">
-    <rect width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555" stroke-width="1"/>
-    <text x="87" y="25" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">APIs &amp; Services</text>
-    <text x="87" y="42" text-anchor="middle" fill="#667" font-size="9">Rate-Limited · Monitored</text>
-  </g>
-  <g transform="translate(330,660)">
-    <rect width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555" stroke-width="1"/>
-    <text x="87" y="25" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">Databases</text>
-    <text x="87" y="42" text-anchor="middle" fill="#667" font-size="9">RBAC · Query Audit</text>
-  </g>
-  <g transform="translate(535,660)">
-    <rect width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555" stroke-width="1"/>
-    <text x="87" y="25" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">File Systems</text>
-    <text x="87" y="42" text-anchor="middle" fill="#667" font-size="9">Sandboxed · Signed</text>
-  </g>
-  <g transform="translate(740,660)">
-    <rect width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555" stroke-width="1"/>
-    <text x="87" y="25" text-anchor="middle" fill="#aab" font-size="11" font-weight="600">Code Execution</text>
-    <text x="87" y="42" text-anchor="middle" fill="#667" font-size="9">Isolated · Time-Boxed</text>
-  </g>
-
-  <!-- Audit & Telemetry Strip -->
-  <rect x="125" y="740" width="950" height="55" rx="8" fill="#1a0e1a" stroke="#f093fb" stroke-width="1" opacity="0.8"/>
-  <text x="600" y="763" text-anchor="middle" fill="#f093fb" font-size="13" font-weight="700">IMMUTABLE AUDIT LOG · BEHAVIOURAL TELEMETRY · SIEM INTEGRATION</text>
-  <text x="600" y="782" text-anchor="middle" fill="#8899aa" font-size="10">Full decision chain · Tool invocations · Inter-agent comms · Anomaly scores · PACE state transitions</text>
-
-  <!-- Connection lines between agents and message bus -->
+  <!-- Agent-to-bus connections -->
   <line x1="325" y1="460" x2="730" y2="335" stroke="#00c9ff" stroke-width="0.8" opacity="0.3"/>
   <line x1="565" y1="460" x2="800" y2="360" stroke="#00c9ff" stroke-width="0.8" opacity="0.3"/>
   <line x1="805" y1="460" x2="870" y2="360" stroke="#00c9ff" stroke-width="0.8" opacity="0.3"/>
   <line x1="945" y1="460" x2="950" y2="360" stroke="#f5576c" stroke-width="0.8" opacity="0.3"/>
 
+  <!-- Tool Sandbox -->
+  <rect x="125" y="555" width="950" height="75" rx="8" fill="#0d1225" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="600" y="580" text-anchor="middle" fill="#ffd700" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700">TOOL SANDBOX &amp; PERMISSION BOUNDARY</text>
+  <text x="600" y="600" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">Least Privilege · Scoped Credentials · Signed Tool Manifests · Execution Timeout · Output Validation</text>
+  <text x="600" y="618" text-anchor="middle" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Each agent tool access is independently permissioned, monitored, and revocable in real-time</text>
+
+  <!-- External Systems -->
+  <rect x="125" y="660" width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555555" stroke-width="1"/>
+  <text x="212" y="685" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">APIs &amp; Services</text>
+  <text x="212" y="702" text-anchor="middle" fill="#667777" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Rate-Limited · Monitored</text>
+
+  <rect x="330" y="660" width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555555" stroke-width="1"/>
+  <text x="417" y="685" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">Databases</text>
+  <text x="417" y="702" text-anchor="middle" fill="#667777" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">RBAC · Query Audit</text>
+
+  <rect x="535" y="660" width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555555" stroke-width="1"/>
+  <text x="622" y="685" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">File Systems</text>
+  <text x="622" y="702" text-anchor="middle" fill="#667777" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Sandboxed · Signed</text>
+
+  <rect x="740" y="660" width="175" height="55" rx="6" fill="#1a1e3a" stroke="#555555" stroke-width="1"/>
+  <text x="827" y="685" text-anchor="middle" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600">Code Execution</text>
+  <text x="827" y="702" text-anchor="middle" fill="#667777" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Isolated · Time-Boxed</text>
+
+  <!-- Audit Strip -->
+  <rect x="125" y="740" width="950" height="55" rx="8" fill="#1a0e1a" stroke="#f093fb" stroke-width="1" opacity="0.8"/>
+  <text x="600" y="763" text-anchor="middle" fill="#f093fb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700">IMMUTABLE AUDIT LOG · BEHAVIOURAL TELEMETRY · SIEM INTEGRATION</text>
+  <text x="600" y="782" text-anchor="middle" fill="#889999" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10">Full decision chain · Tool invocations · Inter-agent comms · Anomaly scores · PACE state transitions</text>
+
   <!-- Legend -->
-  <g transform="translate(125,830)">
-    <rect width="950" height="40" rx="4" fill="#0a0e1a" stroke="#333" stroke-width="0.5"/>
-    <circle cx="25" cy="20" r="5" fill="#ff6b35"/><text x="38" y="24" fill="#aab" font-size="9">PACE Controls</text>
-    <circle cx="150" cy="20" r="5" fill="#00c9ff"/><text x="163" y="24" fill="#aab" font-size="9">L1: Guardrails</text>
-    <circle cx="260" cy="20" r="5" fill="#92fe9d"/><text x="273" y="24" fill="#aab" font-size="9">L2: LLM-as-Judge</text>
-    <circle cx="390" cy="20" r="5" fill="#f093fb"/><text x="403" y="24" fill="#aab" font-size="9">L3: Human Oversight</text>
-    <circle cx="530" cy="20" r="5" fill="#ffd700"/><text x="543" y="24" fill="#aab" font-size="9">Tool Sandbox</text>
-    <circle cx="640" cy="20" r="5" fill="#4facfe"/><text x="653" y="24" fill="#aab" font-size="9">Task Agents</text>
-    <circle cx="740" cy="20" r="5" fill="#f5576c"/><text x="753" y="24" fill="#aab" font-size="9">Security Agent</text>
-    <text x="880" y="24" fill="#555" font-size="8">v1.0 · Jonathan Gill · 2026</text>
-  </g>
+  <rect x="125" y="830" width="950" height="40" rx="4" fill="#0a0e1a" stroke="#333333" stroke-width="0.5"/>
+  <circle cx="150" cy="850" r="5" fill="#ff6b35"/><text x="163" y="854" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">PACE Controls</text>
+  <circle cx="270" cy="850" r="5" fill="#00c9ff"/><text x="283" y="854" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">L1: Guardrails</text>
+  <circle cx="380" cy="850" r="5" fill="#92fe9d"/><text x="393" y="854" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">L2: LLM-as-Judge</text>
+  <circle cx="510" cy="850" r="5" fill="#f093fb"/><text x="523" y="854" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">L3: Human Oversight</text>
+  <circle cx="650" cy="850" r="5" fill="#ffd700"/><text x="663" y="854" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Tool Sandbox</text>
+  <circle cx="760" cy="850" r="5" fill="#4facfe"/><text x="773" y="854" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Task Agents</text>
+  <circle cx="860" cy="850" r="5" fill="#f5576c"/><text x="873" y="854" fill="#aaaabb" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9">Security Agent</text>
+  <text x="1000" y="854" fill="#555555" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="8">v1.0 · Jonathan Gill · 2026</text>
 </svg>
