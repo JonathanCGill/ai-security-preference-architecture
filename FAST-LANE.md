@@ -1,4 +1,4 @@
-F# Secure AI Fast Lane
+# Secure AI Fast Lane
 
 *Pre-approved controls for low-risk AI. If your deployment qualifies, security has already said yes.*
 
