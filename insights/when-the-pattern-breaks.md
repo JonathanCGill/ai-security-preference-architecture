@@ -12,7 +12,7 @@ The three-layer pattern assumes a simple topology:
 
 One input. One model. One output. Clear trust boundaries. The guardrails know what "input" and "output" mean. The judge evaluates a single response. The human reviews a discrete decision.
 
-This works. The data confirms it (see [What's Working](/insights/what-works.md)).
+This works. The data confirms it (see [What's Working](what-works.md)).
 
 The question is what happens when the topology changes.
 

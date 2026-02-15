@@ -1,6 +1,6 @@
 # What Scales: Security Patterns With Viable Scaling Properties
 
-> The previous document ([When the Pattern Breaks](/insights/when-the-pattern-breaks.md)) identified where the guardrail → judge → human pattern fails in complex multi-agent systems. This document asks the harder question: what *does* scale, and what fundamental constraints mean some things never will?
+> The previous document ([When the Pattern Breaks](when-the-pattern-breaks.md)) identified where the guardrail → judge → human pattern fails in complex multi-agent systems. This document asks the harder question: what *does* scale, and what fundamental constraints mean some things never will?
 
 ---
 
@@ -168,7 +168,7 @@ OWASP's ASI01 (Agent Goal Hijack) is the agentic equivalent of prompt injection 
 
 For **systems this framework already covers** (single-agent, Stage 1-2): the three-layer pattern works. Keep using it.
 
-For **multi-agent orchestration** (Stage 3, 3-10 agents): augment the three-layer pattern with system-level invariants, trust zones, and cryptographic identity. The framework's existing [Agentic controls](/core/agentic.md) provide a starting point; the architectural patterns above extend them.
+For **multi-agent orchestration** (Stage 3, 3-10 agents): augment the three-layer pattern with system-level invariants, trust zones, and cryptographic identity. The framework's existing [Agentic controls](../core/agentic.md) provide a starting point; the architectural patterns above extend them.
 
 For **autonomous multi-agent systems** (Stage 4+): the three-layer pattern is foundation, not solution. The scaling architecture described here is the emerging direction. Implement it incrementally:
 

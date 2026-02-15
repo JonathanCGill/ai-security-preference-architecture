@@ -1,6 +1,6 @@
 # The Intent Layer: Post-Execution Semantic Evaluation for Multi-Agent Systems
 
-> The [technical controls that scale](/insights/what-scales.md) — invariants, identity, budget caps, trust zones — constrain *mechanics*. They govern what agents **can** do. They do not evaluate whether what was **done** was coherent, appropriate, or aligned with the stated objective. That is a semantic problem, and it requires a different kind of control.
+> The [technical controls that scale](what-scales.md) — invariants, identity, budget caps, trust zones — constrain *mechanics*. They govern what agents **can** do. They do not evaluate whether what was **done** was coherent, appropriate, or aligned with the stated objective. That is a semantic problem, and it requires a different kind of control.
 
 [![Multi-Agent Security Architecture](../images/multi-agent-security-architecture.svg)](../images/multi-agent-security-architecture.svg)
 
@@ -47,7 +47,7 @@ The research calls this an **Intent Specification (ISpec)** — a formal schema 
 
 ### Phase 2: Execute with Technical Controls
 
-The multi-agent workflow runs with the full stack of technical controls described in [What Scales](/insights/what-scales.md):
+The multi-agent workflow runs with the full stack of technical controls described in [What Scales](what-scales.md):
 
 - System-level invariants enforced by Policy Decision Point
 - Cryptographic identity and signed messages
@@ -235,7 +235,7 @@ In every case, the pattern is the same: **declare intent → execute with contro
 
 For organisations adopting this pattern:
 
-**1. Start with the audit log.** If you're not logging every agent action, tool call, and inter-agent message, you have nothing for the judge to evaluate. This is prerequisite infrastructure. (See [What Scales](/insights/what-scales.md) — audit logs are O(N), cheap, and immediately useful.)
+**1. Start with the audit log.** If you're not logging every agent action, tool call, and inter-agent message, you have nothing for the judge to evaluate. This is prerequisite infrastructure. (See [What Scales](what-scales.md) — audit logs are O(N), cheap, and immediately useful.)
 
 **2. Define intent specifications for your highest-risk workflows first.** Don't try to specify intent for every workflow. Start with the ones where a wrong answer causes material harm — financial recommendations, medical analysis, legal document generation, customer-facing decisions.
 

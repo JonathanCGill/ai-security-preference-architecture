@@ -96,7 +96,7 @@ The three-layer pattern monitors output quality. RAG security requires controlli
 
 ## The Controls
 
-See [RAG Security Controls](/extensions/technical/rag-security.md) for implementation guidance.
+See [RAG Security Controls](../extensions/technical/rag-security.md) for implementation guidance.
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

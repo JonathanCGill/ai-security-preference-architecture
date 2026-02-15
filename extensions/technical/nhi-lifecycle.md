@@ -86,7 +86,7 @@ agent_policy:
 
 | What to Monitor | Why |
 |----------------|-----|
-| **API call patterns** | Detect anomalous behaviour (see [Anomaly Detection Ops](/extensions/technical/anomaly-detection-ops.md)) |
+| **API call patterns** | Detect anomalous behaviour (see [Anomaly Detection Ops](anomaly-detection-ops.md)) |
 | **Permission usage** | Are all granted permissions being used? Remove unused ones |
 | **Credential access** | When and from where are credentials being retrieved? |
 | **Tool invocations** | Which tools is the agent calling? Are they all on the allowlist? |

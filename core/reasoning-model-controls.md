@@ -1,6 +1,6 @@
 # Reasoning Model Controls
 
-> Addendum for [Emerging Controls](/core/emerging-controls.md) — practical guidance for reasoning models.
+> Addendum for [Emerging Controls](emerging-controls.md) — practical guidance for reasoning models.
 >
 > *This document uses the simplified three-tier system (Tier 1/2/3). See [Risk Tiers — Simplified Tier Mapping](risk-tiers.md#simplified-tier-mapping) for the mapping to LOW/MEDIUM/HIGH/CRITICAL.*
 

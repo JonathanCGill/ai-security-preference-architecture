@@ -107,7 +107,7 @@ Persistent memory scoped to user, with explicit controls.
 Shared embeddings or knowledge that multiple users access (e.g., company FAQ, product documentation).
 
 - Shared content must be read-only for end users
-- Ingestion pipeline is controlled (see [RAG Security](/extensions/technical/rag-security.md))
+- Ingestion pipeline is controlled (see [RAG Security](../extensions/technical/rag-security.md))
 - User-specific context is never written to shared stores
 ---
 

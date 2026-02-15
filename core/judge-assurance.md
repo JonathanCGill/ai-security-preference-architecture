@@ -96,7 +96,7 @@ When the Judge is unavailable, degraded, or untrusted:
 | Judge API timeout | Apply guardrails only + increase human review sample |
 | Judge accuracy below threshold | Increase human review to 100% for affected risk tier |
 | Judge model deprecated by provider | Switch to backup judge model (you should have one) |
-| Judge cost exceeds budget | Sample-based evaluation (see [Cost and Latency](/extensions/technical/cost-and-latency.md)) |
+| Judge cost exceeds budget | Sample-based evaluation (see [Cost and Latency](../extensions/technical/cost-and-latency.md)) |
 
 **Never fail open.** If the Judge can't evaluate, tighten other controls. Don't skip evaluation.
 
@@ -117,7 +117,7 @@ When the Judge is unavailable, degraded, or untrusted:
 
 Even with all these controls, you cannot prove the Judge is correct. You can only measure its accuracy against human judgment, track its consistency over time, and react when it drifts.
 
-This is the same epistemic limitation identified in [The Verification Gap](/insights/the-verification-gap.md). The Judge doesn't solve it — it manages it. Judge Assurance ensures you know how well it's managing.
+This is the same epistemic limitation identified in [The Verification Gap](../insights/the-verification-gap.md). The Judge doesn't solve it — it manages it. Judge Assurance ensures you know how well it's managing.
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

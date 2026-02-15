@@ -4,7 +4,7 @@
 
 ## The Gap
 
-The framework describes [Behavioral Anomaly Detection](/insights/behavioral-anomaly-detection.md) as a concept: aggregate signals to detect drift from normal. The [Operational Metrics](/extensions/technical/operational-metrics.md) extension describes what to measure.
+The framework describes [Behavioral Anomaly Detection](../../insights/behavioral-anomaly-detection.md) as a concept: aggregate signals to detect drift from normal. The [Operational Metrics](operational-metrics.md) extension describes what to measure.
 
 This document bridges the gap: how to turn collected metrics into anomaly detection that feeds your SOC.
 
@@ -127,7 +127,7 @@ Anomaly detection will generate false positives. Plan for this:
 
 ### Minimum Viable Implementation
 
-1. **Week 1:** Emit structured AI logs to your existing SIEM (see [SOC Integration](/extensions/technical/soc-integration.md))
+1. **Week 1:** Emit structured AI logs to your existing SIEM (see [SOC Integration](soc-integration.md))
 2. **Week 2–3:** Collect baseline metrics (2-week minimum)
 3. **Week 4:** Implement 3–5 highest-value detection rules (start with user-level volume anomalies and system-level block rate)
 4. **Week 5–8:** Tune thresholds based on false positive rate

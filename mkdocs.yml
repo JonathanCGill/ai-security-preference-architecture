@@ -1,0 +1,246 @@
+site_name: Enterprise AI Security Framework
+site_url: https://jonathancgill.github.io/enterprise-ai-security-controls-framework/
+site_description: >-
+  Runtime behavioural security for AI systems — from single-model
+  deployments to autonomous multi-agent orchestration.
+site_author: Jonathan Gill
+
+repo_url: https://github.com/JonathanCGill/enterprise-ai-security-controls-framework
+repo_name: JonathanCGill/enterprise-ai-security-controls-framework
+edit_uri: edit/main/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/JonathanCGill
+      name: Jonathan Gill on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jonathancgill/
+      name: Jonathan Gill on LinkedIn
+
+copyright: Copyright &copy; 2026 Jonathan Gill &mdash; MIT License
+
+nav:
+  - Home: README.md
+
+  - Guide:
+    - Tube Map: TUBE-MAP.md
+    - Framework Map: FRAMEWORK-MAP.md
+    - Cheat Sheet: CHEATSHEET.md
+    - Decision Poster: DECISION-POSTER.md
+    - Quick Start: QUICK_START.md
+    - Implementation Guide: IMPLEMENTATION_GUIDE.md
+    - Fast Lane: FAST-LANE.md
+    - PACE Resilience: PACE-RESILIENCE.md
+
+  - Foundation:
+    - foundations/README.md
+    - Core:
+      - core/README.md
+      - Risk Tiers: core/risk-tiers.md
+      - Controls: core/controls.md
+      - Implementation Checklist: core/checklist.md
+      - Judge Assurance: core/judge-assurance.md
+      - When the Judge Can Be Fooled: core/when-the-judge-can-be-fooled.md
+      - Agentic AI Controls: core/agentic.md
+      - Emerging Controls: core/emerging-controls.md
+      - Memory & Context: core/memory-and-context.md
+      - Multi-Agent Controls: core/multi-agent-controls.md
+      - Multimodal Controls: core/multimodal-controls.md
+      - Reasoning Model Controls: core/reasoning-model-controls.md
+      - Streaming Controls: core/streaming-controls.md
+      - Open-Weight Models: core/open-weight-models-shift-the-burden.md
+      - Oversight Readiness: core/oversight-readiness-problem.md
+      - Future Considerations: core/future-considerations.md
+    - PACE Integration:
+      - Control Layer Resilience: core/pace-controls-section.md
+      - PACE Checklist: core/pace-checklist-section.md
+      - PACE for Agentic AI: core/pace-agentic-section.md
+
+  - MASO:
+    - maso/README.md
+    - Control Domains:
+      - Prompt, Goal & Epistemic Integrity: maso/controls/prompt-goal-and-epistemic-integrity.md
+      - Identity & Access: maso/controls/identity-and-access.md
+      - Data Protection: maso/controls/data-protection.md
+      - Execution Control: maso/controls/execution-control.md
+      - Observability: maso/controls/observability.md
+      - Supply Chain: maso/controls/supply-chain.md
+      - Emergent Risk Register: maso/controls/risk-register.md
+    - Implementation Tiers:
+      - Tier 1 - Supervised: maso/implementation/tier-1-supervised.md
+      - Tier 2 - Managed: maso/implementation/tier-2-managed.md
+      - Tier 3 - Autonomous: maso/implementation/tier-3-autonomous.md
+    - Threat Intelligence:
+      - Incident Tracker: maso/threat-intelligence/incident-tracker.md
+      - Emerging Threats: maso/threat-intelligence/emerging-threats.md
+      - Red Team Playbook: maso/red-team/red-team-playbook.md
+    - Integration & Examples:
+      - Integration Guide: maso/integration/integration-guide.md
+      - Worked Examples: maso/examples/worked-examples.md
+
+  - Infrastructure:
+    - infrastructure/README.md
+    - Controls:
+      - Identity & Access: infrastructure/controls/identity-and-access.md
+      - Logging & Observability: infrastructure/controls/logging-and-observability.md
+      - Network & Segmentation: infrastructure/controls/network-and-segmentation.md
+      - Data Protection: infrastructure/controls/data-protection.md
+      - Secrets & Credentials: infrastructure/controls/secrets-and-credentials.md
+      - Incident Response: infrastructure/controls/incident-response.md
+      - Session & Scope: infrastructure/controls/session-and-scope.md
+    - Agentic Patterns:
+      - Sandbox Patterns: infrastructure/agentic/sandbox-patterns.md
+      - Delegation Chains: infrastructure/agentic/delegation-chains.md
+      - Tool Access Controls: infrastructure/agentic/tool-access-controls.md
+      - Supply Chain: infrastructure/agentic/supply-chain.md
+    - Standards Mappings:
+      - Controls to Three Layers: infrastructure/mappings/controls-to-three-layers.md
+      - OWASP LLM Top 10: infrastructure/mappings/owasp-llm-top10.md
+      - NIST AI RMF: infrastructure/mappings/nist-ai-rmf.md
+      - ISO 42001 Annex A: infrastructure/mappings/iso42001-annex-a.md
+      - NIST SP 800-218A: infrastructure/mappings/nist-sp800-218a.md
+      - CSF 2.0: infrastructure/mappings/csf-2.0.md
+    - Platform Patterns:
+      - AWS Bedrock: infrastructure/reference/platform-patterns/aws-bedrock.md
+      - Azure AI: infrastructure/reference/platform-patterns/azure-ai.md
+      - Databricks: infrastructure/reference/platform-patterns/databricks.md
+
+  - Insights:
+    - insights/README.md
+    - Fundamentals:
+      - The First Control: insights/the-first-control.md
+      - Why Guardrails Aren't Enough: insights/why-guardrails-arent-enough.md
+      - The Judge Detects, Not Decides: insights/judge-detects-not-decides.md
+      - Infrastructure Beats Instructions: insights/infrastructure-beats-instructions.md
+      - Risk Tier Is Use Case: insights/risk-tier-is-use-case.md
+      - Humans Remain Accountable: insights/humans-remain-accountable.md
+    - Emerging Challenges:
+      - The Verification Gap: insights/the-verification-gap.md
+      - Behavioral Anomaly Detection: insights/behavioral-anomaly-detection.md
+      - Multimodal Breaks Guardrails: insights/multimodal-breaks-guardrails.md
+      - When AI Thinks: insights/when-ai-thinks.md
+      - When Agents Talk to Agents: insights/when-agents-talk-to-agents.md
+      - The Memory Problem: insights/the-memory-problem.md
+      - Validating Unfinished Output: insights/you-cant-validate-unfinished.md
+    - Operational Gaps:
+      - The Supply Chain Problem: insights/the-supply-chain-problem.md
+      - RAG Is Your Biggest Attack Surface: insights/rag-is-your-biggest-attack-surface.md
+    - Analysis:
+      - State of Reality: insights/state-of-reality.md
+      - Risk Stories: insights/risk-stories.md
+      - What Scales: insights/what-scales.md
+      - What Works: insights/what-works.md
+      - The Intent Layer: insights/the-intent-layer.md
+      - When the Pattern Breaks: insights/when-the-pattern-breaks.md
+      - Open-Weight Models: insights/open-weight-models-shift-the-burden.md
+      - PACE Resilience: insights/PACE-RESILIENCE.md
+
+  - Extensions:
+    - Regulatory:
+      - extensions/regulatory/README.md
+      - EU AI Act Crosswalk: extensions/regulatory/eu-ai-act-crosswalk.md
+      - ISO 27001 Alignment: extensions/regulatory/iso-27001-alignment.md
+      - ISO 42001 Alignment: extensions/regulatory/iso-42001-alignment.md
+      - ISO 42001 Clause Mapping: extensions/regulatory/iso-42001-clause-mapping.md
+      - AI Governance Operating Model: extensions/regulatory/ai-governance-operating-model.md
+      - Banking Cyber Risks: extensions/regulatory/banking-cyber-risks-ai-lens.md
+      - Platform Integration Guide: extensions/regulatory/platform-integration-guide.md
+    - Technical:
+      - extensions/technical/README.md
+      - Control Selection Guide: extensions/technical/control-selection-guide.md
+      - Control Families: extensions/technical/03-control-families.md
+      - LLM-as-Judge: extensions/technical/03-llm-as-a-judge.md
+      - Agentic Controls: extensions/technical/04-agentic-controls.md
+      - Judge Model Selection: extensions/technical/judge-model-selection.md
+      - RAG Security: extensions/technical/rag-security.md
+      - Anomaly Detection Ops: extensions/technical/anomaly-detection-ops.md
+      - Bypass Prevention: extensions/technical/bypass-prevention.md
+      - Cost & Latency: extensions/technical/cost-and-latency.md
+      - Current Solutions: extensions/technical/current-solutions.md
+      - Emerging Trends: extensions/technical/emerging-trends-impact.md
+      - NHI Lifecycle: extensions/technical/nhi-lifecycle.md
+      - Novel AI Risks: extensions/technical/novel-ai-risks.md
+      - Operational Metrics: extensions/technical/operational-metrics.md
+      - SOC Integration: extensions/technical/soc-integration.md
+      - Supply Chain: extensions/technical/supply-chain.md
+      - Support Systems Risk: extensions/technical/support-systems-risk.md
+      - Technical Controls: extensions/technical/technical-controls.md
+    - Templates:
+      - extensions/templates/README.md
+      - AI Incident Playbook: extensions/templates/ai-incident-playbook.md
+      - Threat Model Template: extensions/templates/threat-model-template.md
+      - Judge Prompt Examples: extensions/templates/judge-prompt-examples.md
+      - Model Card Template: extensions/templates/model-card-template.md
+      - Vendor Assessment: extensions/templates/vendor-assessment-questionnaire.md
+      - Data Retention: extensions/templates/data-retention-guidance.md
+      - Testing Guidance: extensions/templates/testing-guidance.md
+    - Worked Examples:
+      - extensions/examples/README.md
+      - Customer Service AI: extensions/examples/01-customer-service-ai.md
+      - Internal Doc Assistant: extensions/examples/02-internal-doc-assistant.md
+      - Credit Decision Support: extensions/examples/03-credit-decision-support.md
+      - High-Volume Communications: extensions/examples/04-high-volume-customer-communications.md
+      - Fraud Analytics: extensions/examples/05-fraud-analytics.md
+
+  - Community:
+    - Contributing: CONTRIBUTING.md
+    - Code of Conduct: CODE_OF_CONDUCT.md
+    - Governance: GOVERNANCE.md
+    - Security: SECURITY.md
+    - Adopters: ADOPTERS.md
+    - Citation: CITATION.md
+    - Changelog: CHANGELOG.md
