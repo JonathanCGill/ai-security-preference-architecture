@@ -31,6 +31,8 @@ The industry is converging on an answer: **runtime behavioural monitoring.** Ins
 
 **Guardrails prevent. Judge detects. Humans decide. Circuit breakers contain.**
 
+But security controls alone aren't enough — you also need to know what happens when they fail. The framework pairs every control layer with a **[PACE resilience architecture](PACE-RESILIENCE.md)** (Primary, Alternate, Contingency, Emergency). When a layer degrades, the system doesn't fail silently — it transitions to a predetermined safe state. Full stack operational → backup activated → supervised-only mode → full stop. Every tier has a plan. Every plan has been defined before the incident, not during it.
+
 This pattern already exists in production at major platforms — NVIDIA NeMo, AWS Bedrock, Azure AI, LangChain, Guardrails AI, and others. The **[Foundation Framework](foundations/)** provides the complete implementation: risk classification, 80 infrastructure controls, PACE resilience methodology, regulatory mappings, and a fast lane for low-risk deployments.
 
 For single-model AI systems, this is the answer. **→ [Start here](foundations/)**
@@ -82,7 +84,7 @@ The **[MASO Framework](maso/)** extends the foundation into multi-agent orchestr
 
 ### What Makes MASO Different
 
-**Epistemic security.** MASO is the first framework to treat information-processing failures between agents as a first-class security concern. Groupthink, correlated errors, synthetic corroboration, semantic drift, and uncertainty stripping — these aren't adversarial attacks. They're emergent properties of multi-agent interaction. They produce failures that look like success. MASO has formal controls, test criteria, and maturity indicators for all of them.
+**Epistemic security.** Most AI security frameworks focus on adversarial attacks — injection, exfiltration, jailbreaks. MASO also addresses the non-adversarial failures that emerge from multi-agent interaction itself: groupthink, correlated errors, synthetic corroboration, semantic drift, and uncertainty stripping. These aren't attacks. They're emergent properties of agents working together. They produce failures that look like success. We haven't found another framework that treats these as a formal control domain with test criteria and maturity indicators — though others may be working on similar ideas.
 
 **PACE resilience for agent orchestration.** Every control has a defined failure mode. Every tier has a structured degradation path from full autonomy to full stop. The system doesn't just detect problems — it has a predetermined response at every phase: Primary → Alternate → Contingency → Emergency.
 
@@ -156,6 +158,22 @@ His current focus is AI security governance: designing control architectures tha
 
 - GitHub: [@JonathanCGill](https://github.com/JonathanCGill)
 - LinkedIn: [Jonathan Gill](https://www.linkedin.com/in/jonathancgill/)
+
+---
+
+## Disclaimer
+
+This framework is provided as-is under the [MIT License](LICENSE). It reflects one practitioner's synthesis of industry patterns, regulatory requirements, and operational experience — not a certification, audit standard, or guarantee of security.
+
+If you adopt any part of this framework, you are responsible for validating that it works in your environment, against your threat model, and within your regulatory obligations. No framework substitutes for professional security assessment of your specific deployment.
+
+---
+
+## How This Was Made
+
+This framework was written with the help of AI — primarily Claude and ChatGPT. The architecture, control design, risk analysis, editorial decisions, and professional judgment are mine. The AI helped with drafting, structuring, research synthesis, and generating the volume of detailed content across 30+ documents that would have taken one person months to write manually.
+
+This is a framework about securing AI systems, written with the assistance of AI systems. I think that's appropriate. The output has been reviewed, edited, and validated against real-world implementation experience. But I'm not going to pretend a human typed every word, because that would be dishonest — and honesty about AI use is kind of the point.
 
 ---
 
