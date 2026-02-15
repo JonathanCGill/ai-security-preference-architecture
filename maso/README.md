@@ -35,7 +35,7 @@ The critical addition for multi-agent systems is the **Secure Inter-Agent Messag
 
 ## PACE Resilience for Multi-Agent Operations
 
-![PACE Multi-Agent Cycle](/images/pace-multi-agent-cycle.svg)
+![PACE Multi-Agent Cycle](images/pace-multi-agent-cycle.svg)
 
 The [PACE methodology](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) (Primary, Alternate, Contingency, Emergency) from the parent framework is extended to handle the unique failure modes of multi-agent orchestration.
 
@@ -75,7 +75,7 @@ Transition authority: CISO or incident commander.
 
 ## OWASP Risk Coverage
 
-![OWASP Dual Mapping](/images/owasp-dual-mapping.svg)
+![OWASP Dual Mapping](images/owasp-dual-mapping.svg)
 
 The MASO framework maps controls against both OWASP threat taxonomies relevant to multi-agent systems.
 
@@ -137,6 +137,12 @@ Every control in MASO is grounded in observed or demonstrated attack patterns. T
 - **Behavioural slow drift** — Gradual, imperceptible changes in agent behaviour that evade threshold-based anomaly detection, requiring baseline comparison over longer time windows.
 
 ---
+
+### Visual Navigation
+
+![MASO Tube Map](images/maso-tube-map.svg)
+
+Six coloured lines represent the six control domains. Stations are key controls. Zones are implementation tiers. Interchanges mark where domains share control points (Judge Gate, PACE Bridge, Agent Registry). River PACE flows through the centre, mapping resilience phases to tier progression.
 
 ## MASO Control Domains
 
@@ -245,6 +251,7 @@ It extends the parent framework into multi-agent territory by addressing:
 maso/
 ├── README.md                           # This document
 ├── images/
+│   ├── maso-tube-map.svg               # London Underground-style control map
 │   ├── maso-architecture.svg           # Three-layer architecture with agent grid
 │   ├── pace-multi-agent-cycle.svg      # PACE resilience phases for agents
 │   ├── owasp-dual-mapping.svg          # LLM Top 10 + Agentic Top 10 mapping
