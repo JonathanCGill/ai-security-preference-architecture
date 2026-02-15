@@ -19,7 +19,7 @@ It is designed for enterprise security architects, AI platform engineers, and go
 
 ## Architecture Overview
 
-![MASO Architecture](/images/maso-architecture.svg)
+![MASO Architecture](images/maso-architecture.svg)
 
 The MASO framework operates on a **three-layer defence model** inherited from the parent framework, adapted for multi-agent dynamics:
 
@@ -35,7 +35,7 @@ The critical addition for multi-agent systems is the **Secure Inter-Agent Messag
 
 ## PACE Resilience for Multi-Agent Operations
 
-![PACE Multi-Agent Cycle](/images/pace-multi-agent-cycle.svg)
+![PACE Multi-Agent Cycle](images/pace-multi-agent-cycle.svg)
 
 The [PACE methodology](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) (Primary, Alternate, Contingency, Emergency) from the parent framework is extended to handle the unique failure modes of multi-agent orchestration.
 
@@ -75,7 +75,7 @@ Transition authority: CISO or incident commander.
 
 ## OWASP Risk Coverage
 
-![OWASP Dual Mapping](/images/owasp-dual-mapping.svg)
+![OWASP Dual Mapping](images/owasp-dual-mapping.svg)
 
 The MASO framework maps controls against both OWASP threat taxonomies relevant to multi-agent systems.
 
@@ -142,31 +142,31 @@ Every control in MASO is grounded in observed or demonstrated attack patterns. T
 
 The framework organises controls into five domains, each mapping to specific OWASP risks:
 
-### 1. Identity & Access
+### 1. [Identity & Access](controls/identity-and-access.md)
 
 Every agent must have a unique Non-Human Identity (NHI). No shared credentials. No inherited permissions from the orchestrator. Short-lived, scoped credentials that are rotated automatically. Zero-trust mutual authentication on the inter-agent message bus.
 
 *Covers: ASI03, ASI07, LLM06*
 
-### 2. Data Protection
+### 2. [Data Protection](controls/data-protection.md)
 
 Cross-agent data fencing prevents uncontrolled data flow between agents operating at different classification levels. Output DLP scanning at the message bus catches sensitive data in inter-agent communications. RAG integrity validation ensures the knowledge base hasn't been tampered with. Memory poisoning detection flags inconsistencies between stored context and expected agent state.
 
 *Covers: LLM02, LLM04, ASI06, LLM08*
 
-### 3. Execution Control
+### 3. [Execution Control](controls/execution-control.md)
 
 Every tool invocation runs in a sandboxed environment with strict parameter allow-lists. Code execution is isolated per agent with filesystem, network, and process scope containment. Blast radius caps limit the damage any single agent can do before circuit breakers engage. PACE escalation is triggered automatically when error rates exceed defined thresholds.
 
 *Covers: ASI02, ASI05, ASI08, LLM05*
 
-### 4. Observability
+### 4. [Observability](controls/observability.md)
 
 Immutable decision chain logs capture the full reasoning and action history of every agent. Behavioural drift detection compares current agent behaviour against established baselines. Per-agent anomaly scoring feeds into the PACE escalation logic. SIEM and SOAR integration enables correlation with broader security operations.
 
 *Covers: ASI09, ASI10, LLM09, LLM10*
 
-### 5. Supply Chain
+### 5. [Supply Chain](controls/supply-chain.md)
 
 Model provenance tracking and AIBOM generation for every model in the agent system. MCP server vetting with signed manifests and runtime integrity checks. A2A trust chain validation for inter-agent protocol endpoints. Continuous scanning of the agent toolchain for known vulnerabilities and poisoned components.
 
@@ -270,12 +270,11 @@ maso/
 
 ## What's Next
 
-The framework skeleton and implementation tiers are complete. The following subsections will be developed:
+The framework core, implementation tiers, and control domain specifications are complete. The following subsections will be developed:
 
-1. **Detailed control specifications** for each of the five MASO domains, with implementation guidance, testing criteria, and maturity indicators.
-2. **Worked examples** for financial services, healthcare, and critical infrastructure use cases — consistent with the parent framework's sector-specific approach.
-3. **Red team playbook** for multi-agent systems — test scenarios mapped to each OWASP risk.
-4. **Integration guide** for common agent orchestration frameworks (LangGraph, AutoGen, CrewAI, AWS Bedrock Agents).
+1. **Worked examples** for financial services, healthcare, and critical infrastructure use cases — consistent with the parent framework's sector-specific approach.
+2. **Red team playbook** for multi-agent systems — test scenarios mapped to each OWASP risk.
+3. **Integration guide** for common agent orchestration frameworks (LangGraph, AutoGen, CrewAI, AWS Bedrock Agents).
 
 ---
 
