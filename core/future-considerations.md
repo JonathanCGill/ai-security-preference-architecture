@@ -26,7 +26,7 @@ Organisations deploying self-hosted open-weight models inherit control responsib
 
 ### Adversarial Robustness of the Judge Layer
 
-The Judge layer is itself an LLM, and LLMs are susceptible to manipulation. The Bengio report documents models distinguishing between evaluation and deployment contexts — a capability that, if directed at the Judge, could undermine the entire detection layer. The Judge needs its own threat model. See [When the Judge Can Be Fooled](../insights/when-the-judge-can-be-fooled.md) for analysis and mitigations.
+The Judge layer is itself an LLM, and LLMs are susceptible to manipulation. The Bengio report documents models distinguishing between evaluation and deployment contexts — a capability that, if directed at the Judge, could undermine the entire detection layer. The Judge needs its own threat model. See [When the Judge Can Be Fooled](when-the-judge-can-be-fooled.md) for analysis and mitigations.
 
 ### Small Model and Edge Deployments
 

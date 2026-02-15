@@ -4,7 +4,7 @@
 
 ## The Gap
 
-The framework describes [Behavioral Anomaly Detection](/insights/behavioral-anomaly-detection.md) as a concept: aggregate signals to detect drift from normal. The [Metrics](/extensions/technical/metrics.md) extension describes what to measure.
+The framework describes [Behavioral Anomaly Detection](/insights/behavioral-anomaly-detection.md) as a concept: aggregate signals to detect drift from normal. The [Operational Metrics](/extensions/technical/operational-metrics.md) extension describes what to measure.
 
 This document bridges the gap: how to turn collected metrics into anomaly detection that feeds your SOC.
 
@@ -138,6 +138,6 @@ Anomaly detection will generate false positives. Plan for this:
 ## Related
 
 - [Behavioral Anomaly Detection](/insights/behavioral-anomaly-detection.md) — The concept
-- [Metrics](/extensions/technical/metrics.md) — What to collect
+- [Operational Metrics](/extensions/technical/operational-metrics.md) — What to collect
 - [SOC Integration](/extensions/technical/soc-integration.md) — Where alerts go
 - [Judge Assurance](/core/judge-assurance.md) — Model-level anomaly detection

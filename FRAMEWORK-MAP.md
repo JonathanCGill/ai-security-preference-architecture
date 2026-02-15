@@ -169,7 +169,7 @@ For multi-agent monitoring, the [MASO Observability domain](maso/controls/observ
 | [The Memory Problem](insights/the-memory-problem.md) | Persistent memory risks |
 | [Can't Validate Unfinished](insights/you-cant-validate-unfinished.md) | Streaming validation |
 | [Open-Weight Models](insights/open-weight-models-shift-the-burden.md) | Self-hosted control burden |
-| [When the Judge Can Be Fooled](insights/when-the-judge-can-be-fooled.md) | Judge threat model |
+| [When the Judge Can Be Fooled](core/when-the-judge-can-be-fooled.md) | Judge threat model |
 
 ### Extensions & Infrastructure
 
@@ -179,7 +179,7 @@ For multi-agent monitoring, the [MASO Observability domain](maso/controls/observ
 | [Regulatory Mapping](extensions/regulatory/) | ISO 42001, EU AI Act |
 | [Technical Extensions](extensions/technical/) | Bypass prevention, metrics, SOC integration |
 | [Templates](extensions/templates/) | Threat models, testing guidance, playbooks |
-| [Worked Examples](extensions/worked-examples/) | Per-tier implementation walkthroughs |
+| [Worked Examples](extensions/examples/) | Per-tier implementation walkthroughs |
 
 ---
 

@@ -174,4 +174,4 @@ That's what the [Enterprise AI Security Framework](../README.md) provides — a 
 
 ---
 
-*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-framework) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) — operational controls for enterprise AI systems.*

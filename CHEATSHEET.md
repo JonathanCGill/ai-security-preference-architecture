@@ -121,4 +121,4 @@ If you can answer all six, you're ready. If you can't, you're not.
 
 ---
 
-*Full framework: [github.com/JonathanCGill/enterprise-ai-security](https://github.com/JonathanCGill/enterprise-ai-security) · MIT License*
+*Full framework: [github.com/JonathanCGill/enterprise-ai-security-controls-framework](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) · MIT License*

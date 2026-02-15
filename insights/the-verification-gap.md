@@ -264,4 +264,4 @@ The question isn't "which verification method should we use?" It's "which verifi
 
 ---
 
-*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-framework) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) — operational controls for enterprise AI systems.*

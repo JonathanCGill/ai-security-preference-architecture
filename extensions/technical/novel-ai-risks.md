@@ -17,7 +17,7 @@ Not every risk associated with AI is a novel risk. Many are traditional cyber or
 | DDoS → service overwhelmed | Inference cost attack → AI processes expensive requests without crashing |
 | Bad input → application error | Adversarial input → AI makes confidently wrong decision on crafted data |
 
-**The traditional risks still apply.** They're covered in [Banking Cyber Risks: The AI Lens](banking-cyber-risks-ai-lens.md) and [Support Systems Risk](support-systems-risk.md). This document is about what's different.
+**The traditional risks still apply.** They're covered in [Banking Cyber Risks: The AI Lens](../regulatory/banking-cyber-risks-ai-lens.md) and [Support Systems Risk](support-systems-risk.md). This document is about what's different.
 
 ---
 

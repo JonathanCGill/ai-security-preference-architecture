@@ -17,7 +17,7 @@ You can't enforce behavioural security controls on infrastructure you don't cont
 - **What's the blast radius if it fails?** → [Network & Segmentation](controls/network-and-segmentation.md)
 - **Where does sensitive data go?** → [Data Protection](controls/data-protection.md)
 - **How are credentials managed?** → [Secrets & Credentials](controls/secrets-and-credentials.md)
-- **Can you trust the model?** → [Supply Chain](controls/supply-chain.md)
+- **Can you trust the model?** → [Supply Chain](agentic/supply-chain.md)
 - **What happens when things break?** → [Incident Response](controls/incident-response.md)
 
 ---
@@ -121,7 +121,7 @@ Context window isolation, short-lived tokens, centralised vault, credential scan
 | SEC-07 | Protect model endpoint credentials | All |
 | SEC-08 | Scan code and config for embedded credentials | All |
 
-### [Supply Chain](controls/supply-chain.md) — 8 controls
+### [Supply Chain](agentic/supply-chain.md) — 8 controls
 
 Model provenance, risk assessment, RAG data integrity, fine-tuning security, tool supply chain, safety model integrity, AI-BOM, and vulnerability monitoring.
 
@@ -168,7 +168,7 @@ Additional controls for systems where AI agents invoke tools, generate code, del
 | TOOL-05 | Rate-limit tool invocations per agent and per tool |
 | TOOL-06 | Log every tool invocation with full context |
 
-### [Session & Scope](agentic/session-and-scope.md) — 5 controls
+### [Session & Scope](controls/session-and-scope.md) — 5 controls
 
 | Control | Purpose |
 |---------|---------|
@@ -266,4 +266,4 @@ Feedback, corrections, and extensions welcome. This is a living framework.
 
 ## License
 
-[MIT](LICENSE) — Use it, adapt it, build on it.
+[MIT](../LICENSE) — Use it, adapt it, build on it.

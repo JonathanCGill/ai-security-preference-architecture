@@ -6,7 +6,7 @@
 
 ## The Problem
 
-[The Judge Detects. It Doesn't Decide.](judge-detects-not-decides.md) explains why asynchronous LLM evaluation is a critical layer in the three-layer pattern. The Judge catches what guardrails miss — the unknown-bad, the subtly inappropriate, the contextually wrong.
+[The Judge Detects. It Doesn't Decide.](../insights/judge-detects-not-decides.md) explains why asynchronous LLM evaluation is a critical layer in the three-layer pattern. The Judge catches what guardrails miss — the unknown-bad, the subtly inappropriate, the contextually wrong.
 
 But this only works if the Judge's evaluations are reliable.
 
@@ -61,7 +61,7 @@ None of these are complete solutions. They reduce the attack surface — which i
 | **Model independence** | Use a different model (ideally from a different provider) for Judge evaluation. A model can't game an evaluation system it doesn't know exists and hasn't been optimised against. |
 | **Structured evaluation criteria** | Define Judge evaluation as specific, measurable checks rather than open-ended quality assessment. "Does this output contain PII?" is harder to game than "Is this output appropriate?" |
 | **Evaluation prompt hardening** | Apply the same prompt injection defences to the Judge prompt that you apply to the primary system. The Judge is an LLM endpoint — treat it as one. |
-| **Statistical monitoring** | Track Judge pass/fail rates over time. A sudden shift in approval rates — in either direction — may indicate gaming or drift. [Behavioral Anomaly Detection](behavioral-anomaly-detection.md) applies here. |
+| **Statistical monitoring** | Track Judge pass/fail rates over time. A sudden shift in approval rates — in either direction — may indicate gaming or drift. [Behavioral Anomaly Detection](../insights/behavioral-anomaly-detection.md) applies here. |
 | **Rotating evaluation strategies** | Periodically change evaluation criteria, prompts, or models. Prevents the primary model from being optimised (through fine-tuning or prompt engineering) to pass a static evaluation. |
 | **Domain-specific Judges** | For high-risk domains, use Judges fine-tuned or prompted with domain expertise. A general-purpose Judge evaluating medical advice is a known weak point. |
 | **Human calibration** | Regularly sample Judge evaluations and compare them to human assessment. Measure agreement rates. Adjust when they diverge. This is the Human Oversight layer doing its job. |
@@ -92,4 +92,4 @@ For **agentic systems**: Judge evaluation of tool calls and action sequences is 
 
 ---
 
-*Related: [The Judge Detects. It Doesn't Decide.](judge-detects-not-decides.md) · [Behavioral Anomaly Detection](behavioral-anomaly-detection.md) · [Why Your AI Guardrails Aren't Enough](why-guardrails-arent-enough.md)*
+*Related: [The Judge Detects. It Doesn't Decide.](../insights/judge-detects-not-decides.md) · [Behavioral Anomaly Detection](../insights/behavioral-anomaly-detection.md) · [Why Your AI Guardrails Aren't Enough](../insights/why-guardrails-arent-enough.md)*

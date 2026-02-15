@@ -233,5 +233,5 @@ For each alert category, create a runbook in your existing ITSM (ServiceNow, Pag
 
 - [Controls](/core/controls.md) — The control layers generating these events
 - [Behavioral Anomaly Detection](/insights/behavioral-anomaly-detection.md) — Anomaly signals feeding the SOC
-- [Metrics](/extensions/technical/metrics.md) — What to measure
-- [Incident Playbook](/extensions/templates/incident-playbook.md) — When alerts become incidents
+- [Operational Metrics](/extensions/technical/operational-metrics.md) — What to measure
+- [AI Incident Playbook](/extensions/templates/ai-incident-playbook.md) — When alerts become incidents

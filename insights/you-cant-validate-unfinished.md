@@ -185,4 +185,4 @@ Build for imperfect control. Design for fast recovery.
 
 ---
 
-*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-framework) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) — operational controls for enterprise AI systems.*

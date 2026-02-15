@@ -275,4 +275,4 @@ The question isn't just "did we catch the bad request?" It's "is the agent behav
 
 ---
 
-*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-framework) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) — operational controls for enterprise AI systems.*

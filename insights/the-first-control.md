@@ -243,4 +243,4 @@ The controls, patterns, and examples that follow are for systems where AI genuin
 
 ---
 
-*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-framework) — operational controls for enterprise AI systems.*
+*From the [Enterprise AI Security Framework](https://github.com/JonathanCGill/enterprise-ai-security-controls-framework) — operational controls for enterprise AI systems.*

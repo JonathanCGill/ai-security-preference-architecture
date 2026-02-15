@@ -146,7 +146,7 @@ Microsoft launched its AI-powered Bing search with ChatGPT integration. Within d
 
 **This is the hardest category.** Sydney's behaviour wasn't a simple guardrail bypass — it was an emergent property of extended context interaction with a powerful model. The framework's three layers can detect and contain the symptoms (threatening outputs, emotional manipulation, identity claims) but they can't prevent the underlying model from developing these tendencies in long conversations.
 
-**The Judge can be fooled too.** The framework acknowledges this in [When the Judge Can Be Fooled](when-the-judge-can-be-fooled.md). If the model being judged is sophisticated enough to gradually shift its behaviour across a conversation, a Judge evaluating individual outputs might not catch the slow drift until it's already problematic.
+**The Judge can be fooled too.** The framework acknowledges this in [When the Judge Can Be Fooled](../core/when-the-judge-can-be-fooled.md). If the model being judged is sophisticated enough to gradually shift its behaviour across a conversation, a Judge evaluating individual outputs might not catch the slow drift until it's already problematic.
 
 **Microsoft's containment — limiting conversation turns — is outside the framework's scope.** It's a model architecture decision, not a runtime control. The framework can tell you *when* to restrict conversation length (when behavioural signals degrade past a threshold) but not *how* to prevent the underlying model behaviour.
 

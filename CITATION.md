@@ -6,7 +6,7 @@ If you use, reference, or build upon this framework in academic papers, industry
 
 ## Plain Text
 
-> Gill, J. (2025). *Enterprise AI Security Framework: Runtime Behavioral Controls for Generative and Agentic AI Systems*. GitHub. https://github.com/JonathanCGill/enterprise-ai-security-framework
+> Gill, J. (2025). *Enterprise AI Security Framework: Runtime Behavioral Controls for Generative and Agentic AI Systems*. GitHub. https://github.com/JonathanCGill/enterprise-ai-security-controls-framework
 
 ---
 
@@ -18,7 +18,7 @@ If you use, reference, or build upon this framework in academic papers, industry
   title        = {Enterprise {AI} Security Framework: Runtime Behavioral Controls for Generative and Agentic {AI} Systems},
   year         = {2025},
   publisher    = {GitHub},
-  howpublished = {\url{https://github.com/JonathanCGill/enterprise-ai-security-framework}},
+  howpublished = {\url{https://github.com/JonathanCGill/enterprise-ai-security-controls-framework}},
   note         = {Open-source framework. MIT License.}
 }
 ```
@@ -33,13 +33,13 @@ This repository includes a [`CITATION.cff`](CITATION.cff) file for automated cit
 
 ## APA
 
-Gill, J. (2025). *Enterprise AI Security Framework: Runtime behavioral controls for generative and agentic AI systems*. GitHub. https://github.com/JonathanCGill/enterprise-ai-security-framework
+Gill, J. (2025). *Enterprise AI Security Framework: Runtime behavioral controls for generative and agentic AI systems*. GitHub. https://github.com/JonathanCGill/enterprise-ai-security-controls-framework
 
 ---
 
 ## IEEE
 
-J. Gill, "Enterprise AI Security Framework: Runtime Behavioral Controls for Generative and Agentic AI Systems," 2025. [Online]. Available: https://github.com/JonathanCGill/enterprise-ai-security-framework
+J. Gill, "Enterprise AI Security Framework: Runtime Behavioral Controls for Generative and Agentic AI Systems," 2025. [Online]. Available: https://github.com/JonathanCGill/enterprise-ai-security-controls-framework
 
 ---
 

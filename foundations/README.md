@@ -146,7 +146,7 @@ When AI agents collaborate, delegate tasks, and take autonomous actions across t
 | [Technical](../extensions/technical/) | Bypass prevention, metrics |
 | [Industry Solutions](../extensions/technical/current-solutions.md) | Guardrails, evaluators, and safety model reference |
 | [Templates](../extensions/templates/) | Risk assessment templates, implementation plans |
-| [Worked Examples](../extensions/worked-examples/) | Per-tier implementation walkthroughs |
+| [Worked Examples](../extensions/examples/) | Per-tier implementation walkthroughs |
 
 ---
 
@@ -175,7 +175,7 @@ When AI agents collaborate, delegate tasks, and take autonomous actions across t
 | [The Memory Problem](../insights/the-memory-problem.md) | Long context and persistent memory introduce novel risks |
 | [You Can't Validate What Hasn't Finished](../insights/you-cant-validate-unfinished.md) | Real-time streaming challenges existing validation |
 | [Open-Weight Models Shift the Burden](../insights/open-weight-models-shift-the-burden.md) | Self-hosted models inherit the provider's control responsibilities |
-| [When the Judge Can Be Fooled](../insights/when-the-judge-can-be-fooled.md) | The Judge layer needs its own threat model |
+| [When the Judge Can Be Fooled](../core/when-the-judge-can-be-fooled.md) | The Judge layer needs its own threat model |
 
 ---
 

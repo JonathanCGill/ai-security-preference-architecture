@@ -6,7 +6,7 @@
 
 ## The Deployment Model Changes the Control Surface
 
-This framework classifies AI systems by use case, not by technology. That's deliberate — [Risk Tier Is Use Case, Not Technology](risk-tier-is-use-case.md) explains why.
+This framework classifies AI systems by use case, not by technology. That's deliberate — [Risk Tier Is Use Case, Not Technology](../insights/risk-tier-is-use-case.md) explains why.
 
 But there's a second dimension that matters: **how the model is deployed.**
 
@@ -58,7 +58,7 @@ Organisations deploying open-weight models should apply these additional control
 | Control | Rationale |
 | --- | --- |
 | **Safeguard validation on deployment** | Verify safety behaviours after any fine-tuning, quantisation, or format conversion. Don't assume base-model safety properties survive. |
-| **Independent guardrail layer** | Deploy guardrails as a separate service, not as prompt instructions in the model. [Infrastructure Beats Instructions](infrastructure-beats-instructions.md) applies with extra force here. |
+| **Independent guardrail layer** | Deploy guardrails as a separate service, not as prompt instructions in the model. [Infrastructure Beats Instructions](../insights/infrastructure-beats-instructions.md) applies with extra force here. |
 | **Model provenance tracking** | Document the exact model version, source, and any modifications. Open-weight supply chains are opaque — know what you're running. |
 | **Periodic re-evaluation** | No provider is pushing safety patches to your deployment. Schedule regular red-teaming and evaluation cycles. |
 | **Egress controls and sandboxing** | Self-hosted models with tool access need network-level restrictions. The model can't phone home for safety updates — your infrastructure must enforce boundaries. |
@@ -86,4 +86,4 @@ Desktop-scale and edge deployments of small models introduce additional consider
 
 ---
 
-*Related: [Infrastructure Beats Instructions](infrastructure-beats-instructions.md) · [Risk Tier Is Use Case, Not Technology](risk-tier-is-use-case.md) · [Controls](../core/controls.md)*
+*Related: [Infrastructure Beats Instructions](../insights/infrastructure-beats-instructions.md) · [Risk Tier Is Use Case, Not Technology](../insights/risk-tier-is-use-case.md) · [Controls](controls.md)*
