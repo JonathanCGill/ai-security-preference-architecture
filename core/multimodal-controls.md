@@ -114,6 +114,7 @@ For these, the control is: **risk-accept with monitoring, or don't deploy that m
 | Image generation | Output content classification, increased human review |
 | Audio (transcription/voice) | Transcription + text guardrails, audio quality validation |
 | Video | Treat as research/Tier 3 — high human oversight |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

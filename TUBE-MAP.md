@@ -67,6 +67,7 @@ The **PACE resilience sidebar** on the right shows that resilience planning runs
 | [Root README](README.md) | Full framework overview |
 | [Foundation](foundations/) | Single-agent security framework |
 | [MASO](maso/) | Multi-agent security operations |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

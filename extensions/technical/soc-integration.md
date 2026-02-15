@@ -226,6 +226,7 @@ For each alert category, create a runbook in your existing ITSM (ServiceNow, Pag
 | Prompt Attack | SOC L2 + AI Security | Incident auto-created at High severity |
 | Agent Boundary Violation | AI Platform Team + SOC L2 | Incident auto-created |
 | Model Drift | AI Platform Team | Alert to AI team, no SOC ticket |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

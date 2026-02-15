@@ -65,6 +65,7 @@ Be honest about what you can't do:
 | **Tier 1** | Use reasoning models freely; output-only evaluation sufficient |
 | **Tier 2** | Output-focused evaluation with periodic behavioral testing |
 | **Tier 3** | If traces are accessible: sample-based trace monitoring. If not: enhanced output evaluation + adversarial testing. Consider whether a reasoning model is necessary — a non-reasoning model with stronger output controls may be more governable |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

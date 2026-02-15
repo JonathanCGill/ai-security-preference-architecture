@@ -397,6 +397,7 @@ For each AI system, document:
 | 10. Deferred controls justified | ☐ |
 | 11. Review schedule established | ☐ |
 | 12. Sign-off obtained | ☐ |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

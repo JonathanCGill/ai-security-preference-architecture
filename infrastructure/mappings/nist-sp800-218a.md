@@ -104,6 +104,7 @@ The control IDs referenced above use the domain prefix scheme from this framewor
 | SS | Session & Scope |
 | DC | Delegation Chains |
 | SB | Sandbox Patterns |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

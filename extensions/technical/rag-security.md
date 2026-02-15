@@ -136,6 +136,7 @@ Retrieved content becomes part of the LLM prompt. If it contains adversarial ins
 | Users from different access levels query the same RAG system | +1 tier for access control complexity |
 | RAG corpus is updated from external sources | +1 tier for ingestion risk |
 | RAG corpus is user-generated (support tickets, emails) | +1 tier for content poisoning risk |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

@@ -434,6 +434,7 @@ Use this for each production AI system:
 | **Vendor** | |
 | Exit plan documented? | ☐ |
 | Alternative evaluated? | ☐ |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

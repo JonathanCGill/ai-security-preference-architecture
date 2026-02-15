@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-indigo" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="620" fill="#f8fafc"/>
+
+  <text x="450" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">AGO Centralised Control Plane</text>
+
+  <!-- Outer container -->
+  <rect x="40" y="45" width="820" height="555" rx="8" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3" opacity="0.4"/>
+  <text x="60" y="66" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6366f1" letter-spacing="1" opacity="0.6">CONTROL PLANE</text>
+
+  <!-- Policy & Standards -->
+  <rect x="80" y="80" width="740" height="100" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="450" y="105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">POLICY &amp; STANDARDS</text>
+  <line x1="100" y1="115" x2="800" y2="115" stroke="#a5b4fc" stroke-width="1"/>
+
+  <text x="220" y="140" font-family="Arial, sans-serif" font-size="10" fill="#4338ca" text-anchor="middle">Guardrail specifications</text>
+  <circle cx="140" cy="136" r="3" fill="#6366f1"/>
+
+  <text x="450" y="140" font-family="Arial, sans-serif" font-size="10" fill="#4338ca" text-anchor="middle">Judge evaluation criteria</text>
+  <circle cx="365" cy="136" r="3" fill="#6366f1"/>
+
+  <text x="220" y="165" font-family="Arial, sans-serif" font-size="10" fill="#4338ca" text-anchor="middle">HITL requirements</text>
+  <circle cx="140" cy="161" r="3" fill="#6366f1"/>
+
+  <text x="450" y="165" font-family="Arial, sans-serif" font-size="10" fill="#4338ca" text-anchor="middle">Risk classification matrix</text>
+  <circle cx="365" cy="161" r="3" fill="#6366f1"/>
+
+  <!-- Down arrows from Policy to Platforms -->
+  <line x1="250" y1="180" x2="250" y2="220" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="180" x2="450" y2="220" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="650" y1="180" x2="650" y2="220" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Platform boxes -->
+  <!-- Bedrock -->
+  <rect x="120" y="225" width="220" height="80" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="230" y="253" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">AWS Bedrock</text>
+  <text x="230" y="273" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">Guardrail policies</text>
+  <text x="230" y="290" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Central account configuration</text>
+
+  <!-- Databricks -->
+  <rect x="360" y="225" width="180" height="80" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="450" y="253" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Databricks</text>
+  <text x="450" y="273" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">AI Gateway policies</text>
+  <text x="450" y="290" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Unity Catalog governance</text>
+
+  <!-- Foundry -->
+  <rect x="560" y="225" width="220" height="80" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="670" y="253" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Palantir Foundry</text>
+  <text x="670" y="273" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">AIP governance</text>
+  <text x="670" y="290" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Ontology-level controls</text>
+
+  <!-- Converging arrows from Platforms to Logging -->
+  <line x1="230" y1="305" x2="230" y2="340" stroke="#475569" stroke-width="1.5"/>
+  <line x1="450" y1="305" x2="450" y2="340" stroke="#475569" stroke-width="1.5"/>
+  <line x1="670" y1="305" x2="670" y2="340" stroke="#475569" stroke-width="1.5"/>
+  <line x1="230" y1="340" x2="450" y2="340" stroke="#475569" stroke-width="1.5"/>
+  <line x1="670" y1="340" x2="450" y2="340" stroke="#475569" stroke-width="1.5"/>
+  <line x1="450" y1="340" x2="450" y2="365" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Centralised Logging & Monitoring -->
+  <rect x="80" y="370" width="740" height="100" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="450" y="395" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">CENTRALISED LOGGING &amp; MONITORING</text>
+  <line x1="100" y1="405" x2="800" y2="405" stroke="#86efac" stroke-width="1"/>
+
+  <text x="220" y="430" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">Aggregated inference logs</text>
+  <circle cx="140" cy="426" r="3" fill="#22c55e"/>
+
+  <text x="450" y="430" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">Judge findings</text>
+  <circle cx="395" cy="426" r="3" fill="#22c55e"/>
+
+  <text x="700" y="430" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">Control metrics</text>
+  <circle cx="645" cy="426" r="3" fill="#22c55e"/>
+
+  <text x="450" y="455" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">Incident data</text>
+  <circle cx="395" cy="451" r="3" fill="#22c55e"/>
+
+  <!-- Down arrow from Logging to HITL -->
+  <line x1="450" y1="470" x2="450" y2="500" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- HITL Workflow System -->
+  <rect x="80" y="505" width="740" height="80" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="450" y="530" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">HITL WORKFLOW SYSTEM</text>
+  <line x1="100" y1="540" x2="800" y2="540" stroke="#93c5fd" stroke-width="1"/>
+
+  <text x="200" y="565" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">Queue management</text>
+  <circle cx="130" cy="561" r="3" fill="#3b82f6"/>
+
+  <text x="380" y="565" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">Review interface</text>
+  <circle cx="320" cy="561" r="3" fill="#3b82f6"/>
+
+  <text x="540" y="565" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">Decision capture</text>
+  <circle cx="475" cy="561" r="3" fill="#3b82f6"/>
+
+  <text x="710" y="565" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">Feedback loop</text>
+  <circle cx="655" cy="561" r="3" fill="#3b82f6"/>
+
+  <!-- Feedback loop arrow (right side) -->
+  <path d="M 830 560 L 855 560 L 855 140 L 830 140" stroke="#6366f1" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow-indigo)"/>
+  <text x="845" y="355" font-family="Arial, sans-serif" font-size="9" fill="#6366f1" font-style="italic" transform="rotate(90, 845, 355)">Feedback → Policy updates</text>
+</svg>

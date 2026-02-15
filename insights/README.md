@@ -43,6 +43,7 @@ Blind spots in most enterprise AI security programmes.
 |---|---------|-----------------|----------|
 | 14 | [The Supply Chain Problem](the-supply-chain-problem.md) | You don't control the model you deploy | [Supply Chain Controls](../extensions/technical/supply-chain.md) |
 | 15 | [RAG Is Your Biggest Attack Surface](rag-is-your-biggest-attack-surface.md) | Retrieval pipelines bypass your existing access controls | [RAG Security](../extensions/technical/rag-security.md) |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

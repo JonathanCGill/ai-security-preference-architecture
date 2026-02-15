@@ -611,6 +611,7 @@ Judge outputs include confidence. Use this to route findings:
 | >0.9 | Trust finding, route per severity |
 | 0.7-0.9 | Trust finding, flag for spot-check |
 | <0.7 | Require human review of Judge finding |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

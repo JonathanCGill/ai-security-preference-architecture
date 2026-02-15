@@ -621,47 +621,7 @@ When nonconformity identified:
 
 ### Centralised Control Plane
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                 AGO CONTROL PLANE                            │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              POLICY & STANDARDS                      │   │
-│  │  • Guardrail specifications                          │   │
-│  │  • Judge evaluation criteria                         │   │
-│  │  • HITL requirements                                 │   │
-│  │  • Risk classification matrix                        │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                          │                                   │
-│            ┌─────────────┼─────────────┐                    │
-│            ▼             ▼             ▼                    │
-│     ┌───────────┐ ┌───────────┐ ┌───────────┐              │
-│     │  Bedrock  │ │ Databricks│ │  Foundry  │              │
-│     │ Guardrails│ │ AI Gateway│ │ AIP Gov   │              │
-│     └─────┬─────┘ └─────┬─────┘ └─────┬─────┘              │
-│           │             │             │                     │
-│           └─────────────┼─────────────┘                     │
-│                         ▼                                    │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │           CENTRALISED LOGGING & MONITORING           │   │
-│  │  • Aggregated inference logs                         │   │
-│  │  • Judge findings                                    │   │
-│  │  • Control metrics                                   │   │
-│  │  • Incident data                                     │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                         │                                    │
-│                         ▼                                    │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              HITL WORKFLOW SYSTEM                    │   │
-│  │  • Queue management                                  │   │
-│  │  • Review interface                                  │   │
-│  │  • Decision capture                                  │   │
-│  │  • Feedback loop                                     │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
-```
+![AGO Centralised Control Plane](../../images/centralised-control-plane.svg)
 
 ### Multi-Platform Scenario
 

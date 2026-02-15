@@ -170,6 +170,7 @@ The OWASP Agentic Top 10, AWS's Agentic AI Security Scoping Matrix, and emerging
 | [Amazon Q CVE-2025-8217 (July 2025)](https://labs.lares.com/owasp-agentic-top-10/) | Compromised agent extension with destructive capability |
 | [KPMG AI Pulse Q4 2025](https://kpmg.com/us/en/media/news/q4-ai-pulse.html) | 80% of leaders cite cybersecurity as top barrier to agentic AI; 65% cite system complexity |
 | [Obsidian Security: 2025 AI Agent Landscape](https://www.obsidiansecurity.com/blog/ai-agent-market-landscape) | 90% of agents over-permissioned; agents move 16x more data than humans |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

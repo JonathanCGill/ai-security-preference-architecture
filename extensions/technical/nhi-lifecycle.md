@@ -134,6 +134,7 @@ agent_policy:
 | **AWS** | IAM roles for agents; use STS for short-lived credentials; scope with IAM policies |
 | **Google Cloud** | Workload Identity Federation; service accounts with IAM conditions |
 | **Kubernetes** | Service accounts + RBAC; SPIFFE/SPIRE for workload identity |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*

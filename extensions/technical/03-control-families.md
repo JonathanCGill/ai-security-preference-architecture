@@ -1272,6 +1272,7 @@ The behaviour of AI systems is shaped by training data you don't control and lik
 | AI.9 Human Oversight | 8.4 | GOVERN | Art. 14 |
 | AI.11 Logging | 9.1 | MEASURE | Art. 12 |
 | AI.12 Incident Response | 10.1 | MANAGE | Art. 9 |
+
 ---
 
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*
