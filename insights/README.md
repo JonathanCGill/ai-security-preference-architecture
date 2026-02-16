@@ -46,4 +46,14 @@ Blind spots in most enterprise AI security programmes.
 
 ---
 
+## Research & Evidence
+
+What the peer-reviewed literature says about runtime AI security controls.
+
+| # | Article | One-Line Summary |
+|---|---------|-----------------|
+| 16 | [The Evidence Gap](the-evidence-gap.md) | What research actually supports — and where the science hasn't caught up to the architecture |
+
+---
+
 *Enterprise AI Security Controls Framework, 2026 (Jonathan Gill).*
