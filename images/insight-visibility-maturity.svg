@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <rect width="900" height="420" fill="#f8fafc"/>
+
+  <text x="450" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">AI Visibility Maturity Model</text>
+  <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Four levels from reactive discovery to sustained governance</text>
+
+  <!-- Level 1: Discovery -->
+  <rect x="30" y="80" width="200" height="310" rx="10" fill="white" stroke="#93c5fd" stroke-width="2"/>
+  <rect x="30" y="80" width="200" height="40" rx="10" fill="#3b82f6"/>
+  <rect x="30" y="110" width="200" height="10" fill="#3b82f6"/>
+  <text x="130" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Level 1</text>
+
+  <text x="130" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#1e40af">Discovery</text>
+  <text x="130" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Know What Exists</text>
+
+  <line x1="50" y1="175" x2="210" y2="175" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="45" y="195" font-family="Arial, sans-serif" font-size="9" fill="#475569">SaaS AI tools</text>
+  <text x="45" y="212" font-family="Arial, sans-serif" font-size="9" fill="#475569">Embedded AI features</text>
+  <text x="45" y="229" font-family="Arial, sans-serif" font-size="9" fill="#475569">API integrations</text>
+  <text x="45" y="246" font-family="Arial, sans-serif" font-size="9" fill="#475569">Internal AI systems</text>
+  <text x="45" y="263" font-family="Arial, sans-serif" font-size="9" fill="#475569">AI agents</text>
+
+  <line x1="50" y1="278" x2="210" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="45" y="290" width="170" height="30" rx="4" fill="#dbeafe"/>
+  <text x="130" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">Methods</text>
+
+  <text x="45" y="338" font-family="Arial, sans-serif" font-size="8" fill="#64748b">SSO/CASB logs, network</text>
+  <text x="45" y="350" font-family="Arial, sans-serif" font-size="8" fill="#64748b">monitoring, code scanning,</text>
+  <text x="45" y="362" font-family="Arial, sans-serif" font-size="8" fill="#64748b">API gateway analysis,</text>
+  <text x="45" y="374" font-family="Arial, sans-serif" font-size="8" fill="#64748b">agent discovery platforms</text>
+
+  <!-- Arrow 1->2 -->
+  <line x1="230" y1="200" x2="250" y2="200" stroke="#64748b" stroke-width="2"/>
+  <polygon points="250,200 244,196 244,204" fill="#64748b"/>
+
+  <!-- Level 2: Classification -->
+  <rect x="250" y="80" width="200" height="310" rx="10" fill="white" stroke="#86efac" stroke-width="2"/>
+  <rect x="250" y="80" width="200" height="40" rx="10" fill="#22c55e"/>
+  <rect x="250" y="110" width="200" height="10" fill="#22c55e"/>
+  <text x="350" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Level 2</text>
+
+  <text x="350" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#166534">Classification</text>
+  <text x="350" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Know What It Does</text>
+
+  <line x1="270" y1="175" x2="430" y2="175" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="265" y="195" font-family="Arial, sans-serif" font-size="9" fill="#475569">Risk tier assignment</text>
+  <text x="265" y="212" font-family="Arial, sans-serif" font-size="9" fill="#475569">Data sensitivity mapping</text>
+  <text x="265" y="229" font-family="Arial, sans-serif" font-size="9" fill="#475569">Autonomy level assessment</text>
+  <text x="265" y="246" font-family="Arial, sans-serif" font-size="9" fill="#475569">Regulatory scope mapping</text>
+  <text x="265" y="263" font-family="Arial, sans-serif" font-size="9" fill="#475569">Owner designation</text>
+
+  <line x1="270" y1="278" x2="430" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="265" y="290" width="170" height="30" rx="4" fill="#dcfce7"/>
+  <text x="350" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534">Enables</text>
+
+  <text x="265" y="338" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Prioritised controls,</text>
+  <text x="265" y="350" font-family="Arial, sans-serif" font-size="8" fill="#64748b">risk-proportionate investment,</text>
+  <text x="265" y="362" font-family="Arial, sans-serif" font-size="8" fill="#64748b">regulatory compliance</text>
+  <text x="265" y="374" font-family="Arial, sans-serif" font-size="8" fill="#64748b">readiness, audit preparedness</text>
+
+  <!-- Arrow 2->3 -->
+  <line x1="450" y1="200" x2="470" y2="200" stroke="#64748b" stroke-width="2"/>
+  <polygon points="470,200 464,196 464,204" fill="#64748b"/>
+
+  <!-- Level 3: Monitoring -->
+  <rect x="470" y="80" width="200" height="310" rx="10" fill="white" stroke="#fbbf24" stroke-width="2"/>
+  <rect x="470" y="80" width="200" height="40" rx="10" fill="#f59e0b"/>
+  <rect x="470" y="110" width="200" height="10" fill="#f59e0b"/>
+  <text x="570" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Level 3</text>
+
+  <text x="570" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#92400e">Monitoring</text>
+  <text x="570" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Know How It Behaves</text>
+
+  <line x1="490" y1="175" x2="650" y2="175" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="485" y="195" font-family="Arial, sans-serif" font-size="9" fill="#475569">Usage patterns</text>
+  <text x="485" y="212" font-family="Arial, sans-serif" font-size="9" fill="#475569">Behavioural drift detection</text>
+  <text x="485" y="229" font-family="Arial, sans-serif" font-size="9" fill="#475569">Policy adherence tracking</text>
+  <text x="485" y="246" font-family="Arial, sans-serif" font-size="9" fill="#475569">New AI introduction alerts</text>
+  <text x="485" y="263" font-family="Arial, sans-serif" font-size="9" fill="#475569">Performance baselines</text>
+
+  <line x1="490" y1="278" x2="650" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="485" y="290" width="170" height="30" rx="4" fill="#fef3c7"/>
+  <text x="570" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#92400e">Infrastructure</text>
+
+  <text x="485" y="338" font-family="Arial, sans-serif" font-size="8" fill="#64748b">AI observability platforms,</text>
+  <text x="485" y="350" font-family="Arial, sans-serif" font-size="8" fill="#64748b">model registries, runtime</text>
+  <text x="485" y="362" font-family="Arial, sans-serif" font-size="8" fill="#64748b">inspection, automated</text>
+  <text x="485" y="374" font-family="Arial, sans-serif" font-size="8" fill="#64748b">anomaly detection</text>
+
+  <!-- Arrow 3->4 -->
+  <line x1="670" y1="200" x2="690" y2="200" stroke="#64748b" stroke-width="2"/>
+  <polygon points="690,200 684,196 684,204" fill="#64748b"/>
+
+  <!-- Level 4: Governance -->
+  <rect x="690" y="80" width="200" height="310" rx="10" fill="white" stroke="#c084fc" stroke-width="2"/>
+  <rect x="690" y="80" width="200" height="40" rx="10" fill="#7c3aed"/>
+  <rect x="690" y="110" width="200" height="10" fill="#7c3aed"/>
+  <text x="790" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Level 4</text>
+
+  <text x="790" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#6b21a8">Governance</text>
+  <text x="790" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Know It's Controlled</text>
+
+  <line x1="710" y1="175" x2="870" y2="175" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="705" y="195" font-family="Arial, sans-serif" font-size="9" fill="#475569">Live AI register</text>
+  <text x="705" y="212" font-family="Arial, sans-serif" font-size="9" fill="#475569">Automated compliance</text>
+  <text x="705" y="229" font-family="Arial, sans-serif" font-size="9" fill="#475569">Risk-based alerting</text>
+  <text x="705" y="246" font-family="Arial, sans-serif" font-size="9" fill="#475569">Board-level reporting</text>
+  <text x="705" y="263" font-family="Arial, sans-serif" font-size="9" fill="#475569">Defined owners + accountability</text>
+
+  <line x1="710" y1="278" x2="870" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="705" y="290" width="170" height="30" rx="4" fill="#f3e8ff"/>
+  <text x="790" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6b21a8">Outcome</text>
+
+  <text x="705" y="338" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Evidence-based decisions,</text>
+  <text x="705" y="350" font-family="Arial, sans-serif" font-size="8" fill="#64748b">measurable improvement,</text>
+  <text x="705" y="362" font-family="Arial, sans-serif" font-size="8" fill="#64748b">regulatory readiness,</text>
+  <text x="705" y="374" font-family="Arial, sans-serif" font-size="8" fill="#64748b">sustained oversight</text>
+
+  <!-- Bottom bar -->
+  <rect x="30" y="400" width="860" height="3" rx="1.5" fill="#e2e8f0"/>
+  <text x="450" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">Most organisations are at Level 0 (no systematic AI discovery). Only ~20% have reached Level 1. (Gartner, 2024)</text>
+</svg>

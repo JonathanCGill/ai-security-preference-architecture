@@ -43,6 +43,7 @@ Blind spots in most enterprise AI security programmes.
 |---|---------|-----------------|----------|
 | 14 | [The Supply Chain Problem](the-supply-chain-problem.md) | You don't control the model you deploy | [Supply Chain Controls](../extensions/technical/supply-chain.md) |
 | 15 | [RAG Is Your Biggest Attack Surface](rag-is-your-biggest-attack-surface.md) | Retrieval pipelines bypass your existing access controls | [RAG Security](../extensions/technical/rag-security.md) |
+| 16 | [The Visibility Problem](the-visibility-problem.md) | You can't govern AI you don't know is running — shadow AI, inventories, and governance KPIs | [Operational Metrics](../extensions/technical/operational-metrics.md) |
 
 ---
 
@@ -52,7 +53,7 @@ What the peer-reviewed literature says about runtime AI security controls.
 
 | # | Article | One-Line Summary |
 |---|---------|-----------------|
-| 16 | [The Evidence Gap](the-evidence-gap.md) | What research actually supports — and where the science hasn't caught up to the architecture |
+| 17 | [The Evidence Gap](the-evidence-gap.md) | What research actually supports — and where the science hasn't caught up to the architecture |
 
 ---
 
