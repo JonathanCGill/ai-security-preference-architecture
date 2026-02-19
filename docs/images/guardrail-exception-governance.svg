@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Segoe UI,Helvetica,Arial,sans-serif">
+  <!-- Background -->
+  <rect width="800" height="520" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e">Guardrail Exception Governance</text>
+
+  <!-- Step 1: Request -->
+  <rect x="30" y="60" width="160" height="60" rx="8" fill="#e3f2fd"/>
+  <text x="110" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">1. REQUEST</text>
+  <text x="110" y="100" text-anchor="middle" font-size="9" fill="#333333">Team identifies blocking</text>
+  <text x="110" y="112" text-anchor="middle" font-size="9" fill="#333333">guardrail for use case</text>
+
+  <!-- Arrow -->
+  <line x1="190" y1="90" x2="230" y2="90" stroke="#666666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 2: Classify -->
+  <polygon points="330,55 420,90 330,125 240,90" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="330" y="87" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">2. CLASSIFY</text>
+  <text x="330" y="101" text-anchor="middle" font-size="9" fill="#e65100">Which class?</text>
+
+  <!-- Branch: Security (up-left) — DENIED -->
+  <line x1="330" y1="55" x2="330" y2="20" stroke="#b71c1c" stroke-width="2"/>
+  <line x1="330" y1="20" x2="560" y2="20" stroke="#b71c1c" stroke-width="2" marker-end="url(#arr-red)"/>
+
+  <rect x="560" y="5" width="210" height="40" rx="8" fill="#ffebee"/>
+  <text x="665" y="22" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">SECURITY GUARDRAIL</text>
+  <text x="665" y="37" text-anchor="middle" font-size="10" fill="#b71c1c">Request denied. Find another way.</text>
+
+  <text x="440" y="15" text-anchor="middle" font-size="9" font-weight="bold" fill="#b71c1c">Security class</text>
+
+  <!-- Branch: Data Protection (right) -->
+  <line x1="420" y1="90" x2="470" y2="90" stroke="#1b5e20" stroke-width="2" marker-end="url(#arr-green)"/>
+  <text x="445" y="83" text-anchor="middle" font-size="9" font-weight="bold" fill="#1b5e20">Data class</text>
+
+  <!-- Step 3: Risk Assessment -->
+  <rect x="470" y="65" width="160" height="55" rx="8" fill="#e8f5e9"/>
+  <text x="550" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">3. RISK ASSESS</text>
+  <text x="550" y="100" text-anchor="middle" font-size="9" fill="#333333">What data is exposed?</text>
+  <text x="550" y="112" text-anchor="middle" font-size="9" fill="#333333">To whom? Under what conditions?</text>
+
+  <!-- Arrow down -->
+  <line x1="550" y1="120" x2="550" y2="155" stroke="#666666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Data Owner Decision -->
+  <polygon points="550,160 650,195 550,230 450,195" fill="#e8f5e9" stroke="#1b5e20" stroke-width="2"/>
+  <text x="550" y="190" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">4. DATA</text>
+  <text x="550" y="204" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">OWNER</text>
+  <text x="550" y="218" text-anchor="middle" font-size="9" fill="#1b5e20">decides</text>
+
+  <!-- Reject branch -->
+  <line x1="650" y1="195" x2="710" y2="195" stroke="#b71c1c" stroke-width="2" marker-end="url(#arr-red)"/>
+  <rect x="710" y="178" width="70" height="34" rx="6" fill="#ffebee"/>
+  <text x="745" y="199" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">DENIED</text>
+
+  <!-- Accept branch -->
+  <line x1="550" y1="230" x2="550" y2="265" stroke="#1b5e20" stroke-width="2" marker-end="url(#arr-green)"/>
+  <text x="575" y="252" font-size="9" font-weight="bold" fill="#1b5e20">Accepted</text>
+
+  <!-- Step 5: Implement with compensating controls -->
+  <rect x="430" y="265" width="240" height="55" rx="8" fill="#e0f2f1"/>
+  <text x="550" y="287" text-anchor="middle" font-size="11" font-weight="bold" fill="#00695c">5. IMPLEMENT + COMPENSATE</text>
+  <text x="550" y="302" text-anchor="middle" font-size="9" fill="#333333">Scoped exception + compensating controls</text>
+  <text x="550" y="314" text-anchor="middle" font-size="9" fill="#333333">100% Judge sampling, enhanced HITL, logging</text>
+
+  <!-- Arrow down -->
+  <line x1="550" y1="320" x2="550" y2="350" stroke="#666666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 6: Monitor -->
+  <rect x="430" y="350" width="240" height="45" rx="8" fill="#f3e5f5"/>
+  <text x="550" y="370" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a148c">6. ENHANCED MONITORING</text>
+  <text x="550" y="386" text-anchor="middle" font-size="9" fill="#333333">Increased Judge sampling + human review</text>
+
+  <!-- Arrow down -->
+  <line x1="550" y1="395" x2="550" y2="425" stroke="#666666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 7: Review (loop) -->
+  <rect x="430" y="425" width="240" height="45" rx="8" fill="#fff8e1"/>
+  <text x="550" y="445" text-anchor="middle" font-size="11" font-weight="bold" fill="#f57f17">7. REVIEW (90 days max)</text>
+  <text x="550" y="461" text-anchor="middle" font-size="9" fill="#333333">Renew, retire, or improve guardrail</text>
+
+  <!-- Loop arrow back from review to request -->
+  <path d="M 430 447 L 60 447 L 60 120" stroke="#999999" stroke-width="1.5" stroke-dasharray="5,4" fill="none" marker-end="url(#arr-grey)"/>
+  <text x="100" y="440" font-size="9" fill="#999999">Renew cycle</text>
+
+  <!-- Key Principles box -->
+  <rect x="30" y="155" width="190" height="170" rx="8" fill="#f5f5f5"/>
+  <rect x="30" y="155" width="190" height="4" fill="#666666"/>
+  <text x="125" y="178" text-anchor="middle" font-size="11" font-weight="bold" fill="#333333">KEY PRINCIPLES</text>
+  <text x="42" y="198" font-size="9" fill="#333333">Security guardrails: no exceptions</text>
+  <text x="42" y="214" font-size="9" fill="#333333">Data owner decides, not IT</text>
+  <text x="42" y="230" font-size="9" fill="#333333">Exceptions are scoped + time-limited</text>
+  <text x="42" y="246" font-size="9" fill="#333333">Compensating controls required</text>
+  <text x="42" y="262" font-size="9" fill="#333333">No permanent exceptions</text>
+  <text x="42" y="278" font-size="9" fill="#333333">90-day max review cycle</text>
+  <text x="42" y="294" font-size="9" fill="#333333">Improve guardrail, don't disable it</text>
+  <text x="42" y="310" font-size="9" fill="#333333">All exceptions tracked in dashboard</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+    <marker id="arr-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#b71c1c"/>
+    </marker>
+    <marker id="arr-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1b5e20"/>
+    </marker>
+    <marker id="arr-grey" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#999999"/>
+    </marker>
+  </defs>
+</svg>

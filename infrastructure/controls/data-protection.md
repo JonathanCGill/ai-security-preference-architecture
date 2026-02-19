@@ -87,6 +87,8 @@ Automated PII detection must be applied to model inputs and outputs as part of t
 
 ### Detection Methods
 
+> For international PII patterns (national identifiers across jurisdictions), detection layering approach, and RAG ingestion filtering, see **[Practical Guardrails](../../insights/practical-guardrails.md)**.
+
 | Method | Strengths | Limitations |
 |--------|-----------|-------------|
 | **Regex patterns** | Fast, deterministic, good for structured PII (SSN, card numbers, phone) | Misses unstructured PII (names in context, addresses) |

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="Segoe UI,Helvetica,Arial,sans-serif">
+  <!-- Background -->
+  <rect width="900" height="620" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">Guardrail Architecture — Five Enforcement Points</text>
+
+  <!-- RAG Ingestion (top left) -->
+  <rect x="30" y="60" width="250" height="130" rx="8" fill="#fff3e0"/>
+  <rect x="30" y="60" width="250" height="30" rx="8" fill="#e65100"/>
+  <rect x="30" y="82" width="250" height="8" fill="#fff3e0"/>
+  <text x="155" y="81" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFFFFF">1. RAG INGESTION FILTER</text>
+  <text x="45" y="112" font-size="10" fill="#333333">PII scan + redact/tokenise</text>
+  <text x="45" y="126" font-size="10" fill="#333333">Secrets scan + block</text>
+  <text x="45" y="140" font-size="10" fill="#333333">Classification check</text>
+  <text x="45" y="154" font-size="10" fill="#333333">Adversarial content scan</text>
+  <text x="45" y="168" font-size="10" fill="#333333">Source authentication</text>
+
+  <!-- Arrow from RAG ingestion to Vector Store -->
+  <line x1="280" y1="125" x2="320" y2="125" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Vector Store -->
+  <rect x="320" y="85" width="120" height="80" rx="8" fill="#e8eaf6"/>
+  <text x="380" y="120" text-anchor="middle" font-size="11" font-weight="bold" fill="#283593">Vector</text>
+  <text x="380" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#283593">Store</text>
+  <text x="380" y="152" text-anchor="middle" font-size="9" fill="#666666">Pre-filtered</text>
+
+  <!-- Main pipeline - User Input -->
+  <rect x="30" y="240" width="120" height="50" rx="8" fill="#e3f2fd"/>
+  <text x="90" y="262" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">USER</text>
+  <text x="90" y="277" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">INPUT</text>
+
+  <!-- Arrow -->
+  <line x1="150" y1="265" x2="185" y2="265" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Input Guardrail -->
+  <rect x="185" y="220" width="140" height="130" rx="8" fill="#fce4ec"/>
+  <rect x="185" y="220" width="140" height="30" rx="8" fill="#b71c1c"/>
+  <rect x="185" y="242" width="140" height="8" fill="#fce4ec"/>
+  <text x="255" y="241" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFFFFF">2. INPUT GUARD</text>
+  <text x="200" y="270" font-size="9" fill="#333333">Injection detection</text>
+  <text x="200" y="283" font-size="9" fill="#333333">Jailbreak detection</text>
+  <text x="200" y="296" font-size="9" fill="#333333">Encoding detection</text>
+  <text x="200" y="309" font-size="9" fill="#333333">PII detection</text>
+  <text x="200" y="322" font-size="9" fill="#333333">Secrets detection</text>
+  <text x="200" y="335" font-size="9" fill="#333333">Rate limiting</text>
+
+  <!-- Arrow -->
+  <line x1="325" y1="265" x2="360" y2="265" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- RAG Retrieval Guard -->
+  <rect x="360" y="220" width="140" height="100" rx="8" fill="#fff3e0"/>
+  <rect x="360" y="220" width="140" height="30" rx="8" fill="#e65100"/>
+  <rect x="360" y="242" width="140" height="8" fill="#fff3e0"/>
+  <text x="430" y="241" text-anchor="middle" font-size="11" font-weight="bold" fill="#FFFFFF">3. RETRIEVAL GUARD</text>
+  <text x="375" y="270" font-size="9" fill="#333333">Access control check</text>
+  <text x="375" y="283" font-size="9" fill="#333333">Content sanitisation</text>
+  <text x="375" y="296" font-size="9" fill="#333333">Injection scanning</text>
+  <text x="375" y="309" font-size="9" fill="#333333">PII filtering</text>
+
+  <!-- Arrow from vector store to retrieval guard -->
+  <line x1="380" y1="165" x2="410" y2="220" stroke="#999999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <!-- Arrow to model -->
+  <line x1="500" y1="265" x2="535" y2="265" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- AI Model -->
+  <rect x="535" y="235" width="110" height="60" rx="8" fill="#e8eaf6"/>
+  <text x="590" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#283593">AI MODEL</text>
+  <text x="590" y="280" text-anchor="middle" font-size="9" fill="#666666">Processing</text>
+
+  <!-- Arrow from model to output -->
+  <line x1="645" y1="265" x2="680" y2="265" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Output Guardrail -->
+  <rect x="680" y="220" width="140" height="130" rx="8" fill="#e8f5e9"/>
+  <rect x="680" y="220" width="140" height="30" rx="8" fill="#1b5e20"/>
+  <rect x="680" y="242" width="140" height="8" fill="#e8f5e9"/>
+  <text x="750" y="241" text-anchor="middle" font-size="11" font-weight="bold" fill="#FFFFFF">4. OUTPUT GUARD</text>
+  <text x="695" y="270" font-size="9" fill="#333333">PII detection</text>
+  <text x="695" y="283" font-size="9" fill="#333333">Secrets detection</text>
+  <text x="695" y="296" font-size="9" fill="#333333">Content filtering</text>
+  <text x="695" y="309" font-size="9" fill="#333333">Classification check</text>
+  <text x="695" y="322" font-size="9" fill="#333333">Grounding check</text>
+  <text x="695" y="335" font-size="9" fill="#333333">Format validation</text>
+
+  <!-- Tool Results Guard (below model) -->
+  <rect x="490" y="370" width="140" height="100" rx="8" fill="#f3e5f5"/>
+  <rect x="490" y="370" width="140" height="30" rx="8" fill="#4a148c"/>
+  <rect x="490" y="392" width="140" height="8" fill="#f3e5f5"/>
+  <text x="560" y="391" text-anchor="middle" font-size="11" font-weight="bold" fill="#FFFFFF">5. TOOL GUARD</text>
+  <text x="505" y="420" font-size="9" fill="#333333">Tool output sanitisation</text>
+  <text x="505" y="433" font-size="9" fill="#333333">PII filtering</text>
+  <text x="505" y="446" font-size="9" fill="#333333">Injection scanning</text>
+  <text x="505" y="459" font-size="9" fill="#333333">Data scope check</text>
+
+  <!-- Arrow from tools to model -->
+  <line x1="560" y1="370" x2="575" y2="295" stroke="#999999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <!-- External Tools box -->
+  <rect x="490" y="500" width="140" height="40" rx="8" fill="#eceff1"/>
+  <text x="560" y="525" text-anchor="middle" font-size="11" font-weight="bold" fill="#37474f">External Tools</text>
+  <line x1="560" y1="500" x2="560" y2="470" stroke="#999999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <!-- Alerting bar at bottom -->
+  <rect x="30" y="560" width="840" height="45" rx="8" fill="#fff8e1"/>
+  <rect x="30" y="560" width="840" height="4" fill="#f57f17"/>
+  <text x="450" y="582" text-anchor="middle" font-size="12" font-weight="bold" fill="#f57f17">ALERTING: Every guardrail trigger generates an alert</text>
+  <text x="450" y="596" text-anchor="middle" font-size="10" fill="#666666">PII detected | Secrets found | Injection attempt | Rate limit hit | Classification violation | Bypass detected</text>
+
+  <!-- Judge + Human review box (right side) -->
+  <rect x="680" y="380" width="190" height="100" rx="8" fill="#e0f2f1"/>
+  <rect x="680" y="380" width="190" height="4" fill="#00695c"/>
+  <text x="775" y="404" text-anchor="middle" font-size="11" font-weight="bold" fill="#00695c">JUDGE + HUMAN REVIEW</text>
+  <text x="695" y="422" font-size="9" fill="#333333">Judge checks for contextual PII</text>
+  <text x="695" y="435" font-size="9" fill="#333333">Judge checks for implied sensitive data</text>
+  <text x="695" y="448" font-size="9" fill="#333333">Judge checks for aggregation risk</text>
+  <text x="695" y="461" font-size="9" fill="#333333">Humans verify data protection</text>
+  <text x="695" y="474" font-size="9" fill="#333333">Humans escalate leaks found</text>
+
+  <!-- Arrow from output to Judge -->
+  <line x1="750" y1="350" x2="775" y2="380" stroke="#00695c" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow2)"/>
+
+  <!-- Class labels on left -->
+  <rect x="30" y="395" width="180" height="55" rx="6" fill="#ffebee"/>
+  <text x="120" y="414" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">SECURITY GUARDRAILS</text>
+  <text x="120" y="428" text-anchor="middle" font-size="9" fill="#b71c1c">Always on. No exceptions.</text>
+  <text x="120" y="442" text-anchor="middle" font-size="9" fill="#b71c1c">Cannot be disabled.</text>
+
+  <rect x="30" y="460" width="180" height="55" rx="6" fill="#e8f5e9"/>
+  <text x="120" y="479" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">DATA PROTECTION GUARDRAILS</text>
+  <text x="120" y="493" text-anchor="middle" font-size="9" fill="#1b5e20">Always on by default.</text>
+  <text x="120" y="507" text-anchor="middle" font-size="9" fill="#1b5e20">Exceptions require data owner approval.</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00695c"/>
+    </marker>
+  </defs>
+</svg>

@@ -41,6 +41,8 @@ Guardrails catch **known patterns**. They miss:
 
 This is why the Judge provides the second layer.
 
+> For practical implementation guidance — international PII detection, RAG ingestion filtering, secrets scanning, alerting design, and guardrail exception governance — see **[Practical Guardrails](../insights/practical-guardrails.md)**.
+
 ---
 
 ## 2. LLM-as-Judge
