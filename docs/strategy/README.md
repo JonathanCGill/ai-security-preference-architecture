@@ -31,13 +31,14 @@ Read in order, or jump to what's relevant.
 |---|---------|-----------------|
 | 1 | [Business Alignment](business-alignment.md) | How to match AI investments to business problems — and why most mismatches are strategic, not technical |
 | 2 | [Use Case Filter](use-case-filter.md) | Is AI the right solution? A structured decision flow with five exits — from rules engines to agentic AI |
-| 3 | [Data Reality](data-reality.md) | Your data determines your strategy more than your ambition does |
-| 4 | [Human Factors](human-factors.md) | Skills, time, learning capacity, and the organisational readiness nobody wants to audit |
-| 5 | [Progression](progression.md) | Moving from low-risk to high-risk AI — and why skipping steps is the most common strategic failure |
-| 6 | [Framework Tensions](framework-tensions.md) | Where this framework supports strategy, where it's silent, and where it actively constrains strategic choices |
-| 7 | [Use Case Definition](use-case-definition.md) | What makes a good use case from a security and governance perspective — and how to translate one into a risk profile |
-| 8 | [From Idea to Production](idea-to-production.md) | The complete lifecycle: strategy to use case to tool selection to risk tiering to deployment to ongoing governance |
-| 9 | [The Thread](the-thread.md) | How strategy, use case definition, solution filtering, security design, and continuous monitoring connect into a single lifecycle with a return loop |
+| 3 | [Platform and Patterns](platform-and-patterns.md) | Approved platforms, trusted models, proven patterns — why standardisation is the force multiplier for AI governance |
+| 4 | [Data Reality](data-reality.md) | Your data determines your strategy more than your ambition does |
+| 5 | [Human Factors](human-factors.md) | Skills, time, learning capacity, and the organisational readiness nobody wants to audit |
+| 6 | [Progression](progression.md) | Moving from low-risk to high-risk AI — and why skipping steps is the most common strategic failure |
+| 7 | [Framework Tensions](framework-tensions.md) | Where this framework supports strategy, where it's silent, and where it actively constrains strategic choices |
+| 8 | [Use Case Definition](use-case-definition.md) | What makes a good use case from a security and governance perspective — and how to translate one into a risk profile |
+| 9 | [From Idea to Production](idea-to-production.md) | The complete lifecycle: strategy to use case to tool selection to risk tiering to deployment to ongoing governance |
+| 10 | [The Thread](the-thread.md) | How strategy, use case definition, solution filtering, security design, and continuous monitoring connect into a single lifecycle with a return loop |
 
 ---
 

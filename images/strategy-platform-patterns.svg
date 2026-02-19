@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <marker id="ppFwd" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="700" fill="#f8fafc"/>
+
+  <text x="450" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Platform and Patterns</text>
+  <text x="450" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Five layers of standardisation &#x2014; from approved platforms to consistent operations</text>
+
+  <!-- Entry: Use Case Filter output -->
+  <rect x="310" y="78" width="280" height="36" rx="6" fill="#1e293b"/>
+  <text x="450" y="101" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Use Case Filter says: "AI &#x2014; this kind"</text>
+  <line x1="450" y1="114" x2="450" y2="138" stroke="#475569" stroke-width="2" marker-end="url(#ppFwd)"/>
+
+  <!-- Layer 1: Approved Platforms -->
+  <rect x="60" y="144" width="780" height="80" rx="10" fill="#10b981" opacity="0.9"/>
+  <text x="90" y="172" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white">Layer 1: Approved Platforms</text>
+  <text x="90" y="192" font-family="Arial, sans-serif" font-size="11" fill="white" opacity="0.9">Evaluated, configured, hardened infrastructure with verified control integration</text>
+
+  <rect x="480" y="155" width="110" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="535" y="173" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">AWS Bedrock</text>
+  <rect x="600" y="155" width="110" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="655" y="173" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Databricks</text>
+  <rect x="720" y="155" width="110" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="775" y="173" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Foundry</text>
+
+  <text x="600" y="210" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Guardrails &#x2022; Judge &#x2022; HITL &#x2022; Logging &#x2022; IAM &#x2022; Incident Response</text>
+
+  <line x1="450" y1="224" x2="450" y2="244" stroke="#475569" stroke-width="2" marker-end="url(#ppFwd)"/>
+
+  <!-- Layer 2: Trusted Models -->
+  <rect x="60" y="250" width="780" height="80" rx="10" fill="#0ea5e9" opacity="0.9"/>
+  <text x="90" y="278" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white">Layer 2: Trusted Models</text>
+  <text x="90" y="298" font-family="Arial, sans-serif" font-size="11" fill="white" opacity="0.9">Benchmarked, security-reviewed, with defined Judge pairings and guardrail baselines</text>
+
+  <rect x="480" y="261" width="76" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="518" y="279" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Primary</text>
+  <rect x="564" y="261" width="76" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="602" y="279" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Judge</text>
+  <rect x="648" y="261" width="76" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="686" y="279" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Embedding</text>
+  <rect x="732" y="261" width="76" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="770" y="279" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Fallback</text>
+
+  <text x="640" y="316" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Model cards &#x2022; Judge pairings &#x2022; Cost profiles &#x2022; Lifecycle management</text>
+
+  <line x1="450" y1="330" x2="450" y2="350" stroke="#475569" stroke-width="2" marker-end="url(#ppFwd)"/>
+
+  <!-- Layer 3: Proven Patterns -->
+  <rect x="60" y="356" width="780" height="80" rx="10" fill="#f59e0b" opacity="0.9"/>
+  <text x="90" y="384" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#1e293b">Layer 3: Proven Patterns</text>
+  <text x="90" y="404" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" opacity="0.8">Security-reviewed reference architectures with templated controls</text>
+
+  <rect x="460" y="367" width="64" height="26" rx="5" fill="white" opacity="0.3"/>
+  <text x="492" y="385" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">RAG</text>
+  <rect x="532" y="367" width="64" height="26" rx="5" fill="white" opacity="0.3"/>
+  <text x="564" y="385" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">Chat</text>
+  <rect x="604" y="367" width="64" height="26" rx="5" fill="white" opacity="0.3"/>
+  <text x="636" y="385" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">DocProc</text>
+  <rect x="676" y="367" width="64" height="26" rx="5" fill="white" opacity="0.3"/>
+  <text x="708" y="385" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">Classify</text>
+  <rect x="748" y="367" width="80" height="26" rx="5" fill="white" opacity="0.3"/>
+  <text x="788" y="385" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">Agentic</text>
+
+  <text x="630" y="422" font-family="Arial, sans-serif" font-size="9" fill="#1e293b" text-anchor="middle">Guardrail templates &#x2022; Judge config &#x2022; HITL design &#x2022; PACE spec &#x2022; Cost model</text>
+
+  <line x1="450" y1="436" x2="450" y2="456" stroke="#475569" stroke-width="2" marker-end="url(#ppFwd)"/>
+
+  <!-- Layer 4: Standardised Data Access -->
+  <rect x="60" y="462" width="780" height="80" rx="10" fill="#6366f1" opacity="0.9"/>
+  <text x="90" y="490" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white">Layer 4: Standardised Data Access</text>
+  <text x="90" y="510" font-family="Arial, sans-serif" font-size="11" fill="white" opacity="0.9">Approved connectors with identity propagation, audit trails, and PII handling</text>
+
+  <rect x="480" y="473" width="100" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="530" y="491" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Knowledge Base</text>
+  <rect x="588" y="473" width="100" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="638" y="491" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Customer Data</text>
+  <rect x="696" y="473" width="100" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="746" y="491" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">External Data</text>
+
+  <text x="630" y="528" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Access control &#x2022; Identity propagation &#x2022; PII redaction &#x2022; Change detection</text>
+
+  <line x1="450" y1="542" x2="450" y2="562" stroke="#475569" stroke-width="2" marker-end="url(#ppFwd)"/>
+
+  <!-- Layer 5: Consistent Operations -->
+  <rect x="60" y="568" width="780" height="80" rx="10" fill="#7c3aed" opacity="0.9"/>
+  <text x="90" y="596" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white">Layer 5: Consistent Operations</text>
+  <text x="90" y="616" font-family="Arial, sans-serif" font-size="11" fill="white" opacity="0.9">Familiar logs, standard dashboards, shared playbooks, portable expertise</text>
+
+  <rect x="460" y="579" width="72" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="496" y="597" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Logging</text>
+  <rect x="540" y="579" width="84" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="582" y="597" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Monitoring</text>
+  <rect x="632" y="579" width="72" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="668" y="597" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Incident</text>
+  <rect x="712" y="579" width="60" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="742" y="597" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">HITL</text>
+  <rect x="780" y="579" width="52" height="26" rx="5" fill="white" opacity="0.25"/>
+  <text x="806" y="597" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">PACE</text>
+
+  <text x="640" y="634" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">One schema &#x2022; Standard dashboards &#x2022; Pattern-based runbooks &#x2022; Shared expertise</text>
+
+  <!-- Bottom summary -->
+  <rect x="60" y="664" width="780" height="28" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="450" y="683" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Teams get freedom to solve novel business problems. They don't get freedom to invent novel infrastructure.</text>
+</svg>
