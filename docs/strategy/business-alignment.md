@@ -18,6 +18,73 @@ The framework's [first control](../insights/the-first-control.md) makes this poi
 
 ---
 
+## What Already Exists
+
+Business-IT alignment is not a new problem. Decades of models, maturity assessments, and strategy tools already exist — and AI strategy should build on them, not ignore them. This section covers what's out there, what works, and how to use it without drowning in frameworks.
+
+### The Foundational Theory
+
+**Henderson & Venkatraman's Strategic Alignment Model (SAM, 1993)** is where all of this starts. It maps four domains — business strategy, IT strategy, organisational infrastructure, and IT infrastructure — and shows that alignment can flow in multiple directions. Business strategy can drive IT (the traditional view), but IT capabilities can also reshape business strategy. This second direction matters for AI: a new capability like large language models doesn't just serve existing strategy — it enables strategies that weren't previously possible.
+
+SAM is conceptual, not operational. You won't run it as a workshop exercise. But the insight that **alignment is bidirectional** — business shapes AI strategy, and AI capabilities reshape business strategy — is the single most important idea in this space. Organisations that treat AI strategy as purely top-down ("here's our business strategy, now find AI use cases") miss the opportunities that only become visible when you understand what AI can actually do.
+
+**Luftman's Strategic Alignment Maturity Model (SAMM)** makes SAM practical. It scores alignment across six dimensions — communications, value measurement, governance, partnership, technology scope, and skills — at five maturity levels. Unlike most alignment models, SAMM is survey-based and produces actionable results: you get a score, you see which dimensions are weak, and you build a plan. It's still actively used — recent studies in healthcare (2024) and government (2025) used it to diagnose alignment gaps, consistently finding that governance and communications are the weakest dimensions.
+
+If you want to know how well your organisation aligns IT to business strategy *before* layering AI on top, SAMM is a good starting point. There's no point building an AI strategy on an IT-business alignment that doesn't work.
+
+### Strategy Execution Tools
+
+These are the day-to-day tools practitioners use to connect strategy to action. None are AI-specific, but all are used to manage AI initiatives in practice:
+
+| Tool | What It Does | AI Strategy Use |
+|------|-------------|-----------------|
+| **Balanced Scorecard (BSC)** | Translates strategy into objectives across four perspectives: Financial, Customer, Internal Process, Learning & Growth. Strategy Maps show the cause-and-effect chain between them. | Maps AI investments to business outcomes across all four perspectives — not just cost savings. Forces you to articulate *how* an AI investment leads to a financial result. |
+| **OKRs** | Cascades objectives and measurable key results from company level to teams. Quarterly cycle. | Bridges strategy and execution — company-level OKR ("reduce customer churn by 15%") cascades to AI team OKR ("deploy churn prediction model with 80% accuracy by Q2"). |
+| **TOGAF** | Enterprise architecture framework. Aligns IT infrastructure with business needs through a structured development method. | Being extended with AI architecture phases — business architecture identifies where AI fits, data architecture ensures governance, technology architecture maps the platform. |
+| **SAFe Lean Portfolio Management** | Connects strategy to execution at scale through value stream funding, portfolio Kanban, and lean business cases. | Provides the portfolio governance layer — how AI initiatives compete for funding, how they're prioritised against non-AI work, and how progress is tracked. |
+| **Value Stream Mapping** | Maps information and material flow through a process to identify waste and improvement opportunities. | Reveals where AI creates the most impact *before* you invest. The Lean Enterprise Institute calls it "your missing AI superpower" — and they're right. |
+
+**BSC and OKRs are complementary, not competing.** BSC frames the strategic picture; OKRs drive quarterly execution against it. Most mature organisations use both — BSC for "what does success look like across all dimensions" and OKRs for "what are we doing this quarter to get there."
+
+### AI-Specific Alignment Models
+
+The consulting firms and standards bodies have produced AI-specific frameworks. The useful ones share a common message: **start with the business strategy, not the technology.**
+
+**McKinsey's "Rewired" framework (2023)** identifies six dimensions for AI transformation: strategy, talent, operating model, technology, data, and adoption/scaling. The key finding is that organisations must be competent across *all six* — weakness in any one undermines the rest. Their 2025 survey found that only 6% of organisations qualify as "AI high performers." The gap wasn't technology. It was talent, operating model, and scaling.
+
+**Gartner's AI Strategy & Roadmap** emphasises bidirectional alignment — changes in business strategy should update the AI strategy, and AI capabilities should inform business strategy. They also provide an AI Maturity Model across seven pillars (strategy, product, governance, engineering, data, operating models, culture) with five levels. Their sobering finding: only 1 in 5 AI initiatives achieves ROI.
+
+**Deloitte's AI Strategy & Governance** framework starts from three principles: begin with the business "north star," develop an enterprise-wide AI strategy (not disconnected use cases), and balance efficiency targets with value-creation targets. Their 2026 survey found that organisations with an enterprise-wide AI strategy are 3x more likely to report transformative results.
+
+### AI Governance and Maturity Standards
+
+For organisations that need formal governance structures:
+
+| Standard | What It Provides |
+|----------|-----------------|
+| **NIST AI Risk Management Framework (AI RMF)** | Four functions — Govern, Map, Measure, Manage — for AI risk management. The primary voluntary standard in the U.S. Updated for generative AI in 2024. |
+| **ISO/IEC 42001:2023** | The first certifiable AI management system standard. PDCA cycle. Aligns with ISO 27001 (security) and ISO 27701 (privacy), so organisations with existing certifications can fold AI governance into their audit cadence. |
+| **MITRE AI Maturity Model** | Six pillars, 20 dimensions, five readiness levels. Particularly strong in government and defence contexts. Provides a structured self-assessment for AI readiness. |
+
+These are governance tools, not strategy tools. They help you manage AI responsibly — they don't tell you which AI to build. But if your organisation lacks AI governance, these are where to start, and they connect to the strategic layer through risk appetite and capability assessment.
+
+### How These Fit Together
+
+These frameworks are **complementary, not competing.** A mature organisation might use:
+
+1. **BSC + OKRs** to frame business strategy and drive execution
+2. **TOGAF or SAFe LPM** to connect strategy to architecture and portfolio management
+3. **McKinsey Rewired or Gartner AI Roadmap** to structure the AI transformation programme
+4. **Gartner or MITRE AI Maturity Model** to assess readiness and track progress
+5. **NIST AI RMF or ISO/IEC 42001** for governance infrastructure
+6. **Value Stream Mapping** to find where AI creates genuine value
+
+Most organisations don't need all of these. The point is that **strategic alignment is a solved problem at the model level.** The hard part isn't finding the right framework — it's doing the honest assessment work the frameworks require.
+
+Which brings us to this framework's contribution. The models above tell you how to align strategy. They don't tell you how to evaluate whether a specific AI initiative is the right thing to build, given your actual constraints. That's what the four questions below are for.
+
+---
+
 ## The Alignment Model
 
 ![Business-AI Alignment Model](../images/strategy-alignment-model.svg)
