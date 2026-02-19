@@ -30,12 +30,13 @@ Read in order, or jump to what's relevant.
 | # | Article | One-Line Summary |
 |---|---------|-----------------|
 | 1 | [Business Alignment](business-alignment.md) | How to match AI investments to business problems — and why most mismatches are strategic, not technical |
-| 2 | [Data Reality](data-reality.md) | Your data determines your strategy more than your ambition does |
-| 3 | [Human Factors](human-factors.md) | Skills, time, learning capacity, and the organisational readiness nobody wants to audit |
-| 4 | [Progression](progression.md) | Moving from low-risk to high-risk AI — and why skipping steps is the most common strategic failure |
-| 5 | [Framework Tensions](framework-tensions.md) | Where this framework supports strategy, where it's silent, and where it actively constrains strategic choices |
-| 6 | [Use Case Definition](use-case-definition.md) | What makes a good use case from a security and governance perspective — and how to translate one into a risk profile |
-| 7 | [From Idea to Production](idea-to-production.md) | The complete lifecycle: strategy to use case to tool selection to risk tiering to deployment to ongoing governance |
+| 2 | [Use Case Filter](use-case-filter.md) | Is AI the right solution? A structured decision flow with five exits — from rules engines to agentic AI |
+| 3 | [Data Reality](data-reality.md) | Your data determines your strategy more than your ambition does |
+| 4 | [Human Factors](human-factors.md) | Skills, time, learning capacity, and the organisational readiness nobody wants to audit |
+| 5 | [Progression](progression.md) | Moving from low-risk to high-risk AI — and why skipping steps is the most common strategic failure |
+| 6 | [Framework Tensions](framework-tensions.md) | Where this framework supports strategy, where it's silent, and where it actively constrains strategic choices |
+| 7 | [Use Case Definition](use-case-definition.md) | What makes a good use case from a security and governance perspective — and how to translate one into a risk profile |
+| 8 | [From Idea to Production](idea-to-production.md) | The complete lifecycle: strategy to use case to tool selection to risk tiering to deployment to ongoing governance |
 
 ---
 
