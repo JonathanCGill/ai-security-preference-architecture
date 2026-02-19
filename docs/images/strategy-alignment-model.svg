@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+  <defs>
+    <linearGradient id="q1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="q2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    <linearGradient id="q3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="q4Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <marker id="arrowRight" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="400" fill="#f8fafc"/>
+
+  <text x="450" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Business-AI Alignment Model</text>
+  <text x="450" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Four questions, in order &#x2014; each filters before the next</text>
+
+  <!-- Question 1 -->
+  <rect x="30" y="85" width="195" height="200" rx="10" fill="url(#q1Grad)"/>
+  <text x="127" y="112" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="rgba(255,255,255,0.3)" text-anchor="middle">1</text>
+  <text x="127" y="140" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">What business</text>
+  <text x="127" y="157" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">problem are</text>
+  <text x="127" y="174" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">we solving?</text>
+  <rect x="45" y="190" width="165" height="80" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="127" y="212" font-family="Arial, sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">Reveals whether there's</text>
+  <text x="127" y="227" font-family="Arial, sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">a real problem, or a</text>
+  <text x="127" y="242" font-family="Arial, sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">technology looking</text>
+  <text x="127" y="257" font-family="Arial, sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">for a purpose</text>
+
+  <!-- Arrow 1-2 -->
+  <line x1="230" y1="185" x2="253" y2="185" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowRight)"/>
+
+  <!-- Question 2 -->
+  <rect x="258" y="85" width="195" height="200" rx="10" fill="url(#q2Grad)"/>
+  <text x="355" y="112" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="rgba(255,255,255,0.3)" text-anchor="middle">2</text>
+  <text x="355" y="140" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Does AI provide</text>
+  <text x="355" y="157" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">a genuine</text>
+  <text x="355" y="174" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">advantage?</text>
+  <rect x="273" y="190" width="165" height="80" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="355" y="212" font-family="Arial, sans-serif" font-size="10" fill="#e0f2fe" text-anchor="middle">Reveals whether AI is</text>
+  <text x="355" y="227" font-family="Arial, sans-serif" font-size="10" fill="#e0f2fe" text-anchor="middle">the right tool, or just</text>
+  <text x="355" y="242" font-family="Arial, sans-serif" font-size="10" fill="#e0f2fe" text-anchor="middle">the fashionable one</text>
+
+  <!-- Arrow 2-3 -->
+  <line x1="458" y1="185" x2="481" y2="185" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowRight)"/>
+
+  <!-- Question 3 -->
+  <rect x="486" y="85" width="195" height="200" rx="10" fill="url(#q3Grad)"/>
+  <text x="583" y="112" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="rgba(255,255,255,0.3)" text-anchor="middle">3</text>
+  <text x="583" y="140" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Can we</text>
+  <text x="583" y="157" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">deliver it?</text>
+  <rect x="501" y="190" width="165" height="80" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="583" y="212" font-family="Arial, sans-serif" font-size="10" fill="#fefce8" text-anchor="middle">Reveals whether the</text>
+  <text x="583" y="227" font-family="Arial, sans-serif" font-size="10" fill="#fefce8" text-anchor="middle">plan is feasible, or</text>
+  <text x="583" y="242" font-family="Arial, sans-serif" font-size="10" fill="#fefce8" text-anchor="middle">aspirational</text>
+
+  <!-- Arrow 3-4 -->
+  <line x1="686" y1="185" x2="709" y2="185" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowRight)"/>
+
+  <!-- Question 4 -->
+  <rect x="714" y="85" width="160" height="200" rx="10" fill="url(#q4Grad)"/>
+  <text x="794" y="112" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="rgba(255,255,255,0.3)" text-anchor="middle">4</text>
+  <text x="794" y="140" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Can we operate</text>
+  <text x="794" y="157" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">it safely?</text>
+  <rect x="729" y="190" width="130" height="80" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="794" y="212" font-family="Arial, sans-serif" font-size="10" fill="#d1fae5" text-anchor="middle">Reveals whether we</text>
+  <text x="794" y="227" font-family="Arial, sans-serif" font-size="10" fill="#d1fae5" text-anchor="middle">can sustain it, not</text>
+  <text x="794" y="242" font-family="Arial, sans-serif" font-size="10" fill="#d1fae5" text-anchor="middle">just launch it</text>
+
+  <!-- Filter-out labels -->
+  <text x="127" y="315" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">No real problem?</text>
+  <text x="127" y="330" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">STOP</text>
+
+  <text x="355" y="315" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Non-AI is better?</text>
+  <text x="355" y="330" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">USE ALTERNATIVE</text>
+
+  <text x="583" y="315" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Can't build it?</text>
+  <text x="583" y="330" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">BUILD READINESS FIRST</text>
+
+  <text x="794" y="315" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">All four pass?</text>
+  <text x="794" y="330" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">PROCEED</text>
+
+  <!-- Bottom note -->
+  <rect x="150" y="355" width="600" height="30" rx="6" fill="#f1f5f9"/>
+  <text x="450" y="375" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Most organisations skip questions 2&#x2013;4 and discover constraints during implementation</text>
+</svg>

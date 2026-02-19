@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="500" viewBox="0 0 850 500">
+  <defs>
+    <linearGradient id="userZone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiZone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dataZone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="firewallGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="425" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">Network Segmentation for AI</text>
+  
+  <!-- User Zone -->
+  <rect x="40" y="60" width="220" height="260" rx="12" fill="url(#userZone)" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+  <text x="150" y="90" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">USER ZONE</text>
+  
+  <rect x="60" y="110" width="180" height="50" rx="8" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="135" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">Endpoints</text>
+  <text x="150" y="150" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Laptops, Desktops</text>
+  
+  <rect x="60" y="170" width="180" height="50" rx="8" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="195" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">Browsers</text>
+  <text x="150" y="210" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Web Applications</text>
+  
+  <rect x="60" y="230" width="180" height="50" rx="8" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="255" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">Mobile</text>
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">MDM Controlled</text>
+  
+  <!-- AI Zone -->
+  <rect x="315" y="60" width="220" height="260" rx="12" fill="url(#aiZone)" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="425" y="90" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">AI ZONE</text>
+  
+  <rect x="335" y="110" width="180" height="50" rx="8" fill="white" stroke="#22c55e" stroke-width="1"/>
+  <text x="425" y="135" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">AI Gateway</text>
+  <text x="425" y="150" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Central Control Point</text>
+  
+  <rect x="335" y="170" width="180" height="50" rx="8" fill="white" stroke="#22c55e" stroke-width="1"/>
+  <text x="425" y="195" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">AI Models</text>
+  <text x="425" y="210" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Approved Platforms</text>
+  
+  <rect x="335" y="230" width="180" height="50" rx="8" fill="white" stroke="#22c55e" stroke-width="1"/>
+  <text x="425" y="255" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">AI Agents</text>
+  <text x="425" y="270" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Sandboxed</text>
+  
+  <!-- Data Zone -->
+  <rect x="590" y="60" width="220" height="260" rx="12" fill="url(#dataZone)" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <text x="700" y="90" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#a16207">DATA ZONE</text>
+  
+  <rect x="610" y="110" width="180" height="50" rx="8" fill="white" stroke="#eab308" stroke-width="1"/>
+  <text x="700" y="135" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#a16207">Databases</text>
+  <text x="700" y="150" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Customer, Business</text>
+  
+  <rect x="610" y="170" width="180" height="50" rx="8" fill="white" stroke="#eab308" stroke-width="1"/>
+  <text x="700" y="195" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#a16207">Data Lakes</text>
+  <text x="700" y="210" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Analytics, ML</text>
+  
+  <rect x="610" y="230" width="180" height="50" rx="8" fill="white" stroke="#eab308" stroke-width="1"/>
+  <text x="700" y="255" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#a16207">RAG Stores</text>
+  <text x="700" y="270" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Vector DBs</text>
+  
+  <!-- Arrows between zones -->
+  <path d="M260 190 L290 190" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <path d="M290 190 L315 190" stroke="#16a34a" stroke-width="2"/>
+  
+  <path d="M535 190 L560 190" stroke="#16a34a" stroke-width="2"/>
+  <path d="M560 190 L590 190" stroke="#ca8a04" stroke-width="2"/>
+  
+  <!-- Firewall bar -->
+  <rect x="40" y="340" width="770" height="60" rx="8" fill="url(#firewallGrad)" filter="url(#shadow)"/>
+  <text x="425" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">FIREWALL / MICRO-SEGMENTATION</text>
+  
+  <!-- Rules -->
+  <rect x="60" y="410" width="230" height="70" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="175" y="435" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">User → AI</text>
+  <text x="175" y="455" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f1d1d">✓ Allowed (via gateway only)</text>
+  <text x="175" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#22c55e">PERMIT</text>
+  
+  <rect x="310" y="410" width="230" height="70" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="425" y="435" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">AI → Data</text>
+  <text x="425" y="455" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f1d1d">✓ Allowed (specific APIs only)</text>
+  <text x="425" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#22c55e">PERMIT</text>
+  
+  <rect x="560" y="410" width="230" height="70" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="675" y="435" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">User → Data (direct)</text>
+  <text x="675" y="455" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f1d1d">✗ Denied (must go through AI/apps)</text>
+  <text x="675" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">DENY</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  
+</svg>

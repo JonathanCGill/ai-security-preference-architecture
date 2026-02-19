@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#6d28d9"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="780" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="550" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">Platform Services Architecture</text>
+  <text x="550" y="60" text-anchor="middle" font-size="13" fill="#64748b">The platform makes compliance the path of least resistance</text>
+
+  <!-- ==================== DEVELOPER SIDE (LEFT) ==================== -->
+  <rect x="55" y="85" width="250" height="400" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="180" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1.5">DEVELOPER</text>
+
+  <!-- AI System box -->
+  <rect x="80" y="125" width="200" height="55" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="180" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">AI System Code</text>
+  <text x="180" y="166" text-anchor="middle" font-size="10" fill="#64748b">Application logic + prompts</text>
+
+  <!-- Declaration file -->
+  <rect x="80" y="195" width="200" height="45" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="180" y="215" text-anchor="middle" font-size="11" font-weight="600" fill="#1e40af">ai-declaration.yaml</text>
+  <text x="180" y="230" text-anchor="middle" font-size="9" fill="#64748b">Version-controlled in repo</text>
+
+  <!-- SDK Call -->
+  <rect x="80" y="260" width="200" height="65" rx="6" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.5"/>
+  <text x="180" y="282" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Platform SDK Call</text>
+  <text x="180" y="300" text-anchor="middle" font-size="10" fill="#bfdbfe">platform.generate(</text>
+  <text x="180" y="314" text-anchor="middle" font-size="10" fill="#bfdbfe">  prompt, system_id)</text>
+
+  <!-- One line difference note -->
+  <rect x="80" y="338" width="200" height="34" rx="4" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="180" y="353" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">One-line migration</text>
+  <text x="180" y="366" text-anchor="middle" font-size="9" fill="#15803d">Same as calling model directly</text>
+
+  <!-- Developer sees dashboard -->
+  <rect x="80" y="390" width="200" height="45" rx="6" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="180" y="410" text-anchor="middle" font-size="11" font-weight="600" fill="#6d28d9">Findings Dashboard</text>
+  <text x="180" y="425" text-anchor="middle" font-size="9" fill="#64748b">Quality metrics + action items</text>
+
+  <!-- Developer receives findings -->
+  <rect x="80" y="448" width="200" height="25" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="180" y="465" text-anchor="middle" font-size="9" fill="#64748b">Slack / ticketing alerts for findings</text>
+
+  <!-- ==================== PLATFORM (CENTRE) ==================== -->
+  <rect x="345" y="85" width="410" height="600" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <path d="M353,85 L747,85 Q755,85 755,93 L755,117 L345,117 L345,93 Q345,85 353,85 Z" fill="#1e40af"/>
+  <text x="550" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI PLATFORM</text>
+
+  <!-- Arrow: SDK call into platform -->
+  <line x1="280" y1="290" x2="370" y2="290" stroke="#1e40af" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="325" y="282" font-size="9" fill="#1e40af">Request</text>
+
+  <!-- Input Guardrails -->
+  <rect x="370" y="135" width="360" height="52" rx="5" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="550" y="152" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Input Guardrails</text>
+  <rect x="632" y="140" width="72" height="16" rx="3" fill="#eff6ff" stroke="#93c5fd" stroke-width="0.5"/>
+  <text x="668" y="151" text-anchor="middle" font-size="8" font-weight="700" fill="#1e40af">ALWAYS ON</text>
+  <text x="550" y="174" text-anchor="middle" font-size="10" fill="#64748b">Injection detection · PII scan · topic restriction · rate limit</text>
+
+  <line x1="550" y1="187" x2="550" y2="210" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Declaration Engine -->
+  <rect x="370" y="210" width="170" height="42" rx="5" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="455" y="228" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">Declaration Engine</text>
+  <text x="455" y="242" text-anchor="middle" font-size="9" fill="#64748b">Tier calc + rule config</text>
+
+  <!-- Arrow: declaration file feeds engine -->
+  <line x1="280" y1="218" x2="370" y2="228" stroke="#6d28d9" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-purple)"/>
+
+  <!-- Model Inference -->
+  <rect x="560" y="210" width="170" height="42" rx="5" fill="#334155" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="645" y="228" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">Model Inference</text>
+  <text x="645" y="242" text-anchor="middle" font-size="9" fill="#94a3b8">AWS / Azure / GCP / self</text>
+
+  <line x1="540" y1="231" x2="560" y2="231" stroke="#334155" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Output Guardrails -->
+  <rect x="370" y="270" width="360" height="42" rx="5" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="550" y="288" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Output Guardrails</text>
+  <text x="550" y="303" text-anchor="middle" font-size="10" fill="#64748b">PII redaction · schema validation · toxicity check</text>
+
+  <line x1="645" y1="252" x2="645" y2="270" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Response arrow back to developer -->
+  <line x1="370" y1="295" x2="280" y2="295" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="325" y="310" font-size="9" fill="#16a34a">Response</text>
+
+  <!-- Logging -->
+  <rect x="370" y="330" width="360" height="36" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="550" y="353" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Interaction Log — every request + response + guardrail actions</text>
+
+  <line x1="550" y1="366" x2="550" y2="390" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Judge Service -->
+  <rect x="370" y="390" width="360" height="72" rx="6" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="550" y="414" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Judge Service</text>
+  <text x="550" y="432" text-anchor="middle" font-size="10" fill="#475569">Sampler → Evaluation → Findings Store</text>
+  <text x="550" y="450" text-anchor="middle" font-size="10" fill="#64748b">Runs on different model family from primary</text>
+
+  <!-- Arrow: findings to developer dashboard -->
+  <line x1="370" y1="426" x2="280" y2="412" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-purple)"/>
+  <text x="310" y="404" font-size="9" fill="#6d28d9">Findings</text>
+
+  <!-- Metrics + Alerting -->
+  <rect x="370" y="480" width="170" height="42" rx="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="455" y="498" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Metrics Engine</text>
+  <text x="455" y="512" text-anchor="middle" font-size="9" fill="#64748b">Trigger rates + quality scores</text>
+
+  <rect x="560" y="480" width="170" height="42" rx="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="645" y="498" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Alert Router</text>
+  <text x="645" y="512" text-anchor="middle" font-size="9" fill="#64748b">Severity → channel</text>
+
+  <line x1="550" y1="462" x2="455" y2="480" stroke="#334155" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="550" y1="462" x2="645" y2="480" stroke="#334155" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Exception Registry -->
+  <rect x="370" y="540" width="360" height="42" rx="5" fill="#fefce8" stroke="#fde047" stroke-width="1.5"/>
+  <text x="550" y="558" text-anchor="middle" font-size="11" font-weight="600" fill="#854d0e">Exception Registry</text>
+  <text x="550" y="573" text-anchor="middle" font-size="10" fill="#a16207">Which systems have which guardrails modified + why</text>
+
+  <!-- Audit Trail -->
+  <rect x="370" y="600" width="360" height="42" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="550" y="618" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Immutable Audit Trail</text>
+  <text x="550" y="633" text-anchor="middle" font-size="10" fill="#64748b">All declarations, changes, findings, exceptions, reviews</text>
+
+  <!-- CI/CD arrow into platform -->
+  <rect x="370" y="660" width="360" height="30" rx="4" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="550" y="680" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">CI/CD Pipeline → registers declaration + configures guardrails on deploy</text>
+
+  <!-- ==================== GOVERNANCE SIDE (RIGHT) ==================== -->
+  <rect x="795" y="85" width="255" height="400" rx="8" fill="#fefce8" stroke="#fde047" stroke-width="1.5"/>
+  <text x="923" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1.5">GOVERNANCE</text>
+
+  <!-- Cross-system dashboard -->
+  <rect x="820" y="125" width="205" height="55" rx="6" fill="#ffffff" stroke="#fde047" stroke-width="1.5"/>
+  <text x="923" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#854d0e">Cross-System Dashboard</text>
+  <text x="923" y="166" text-anchor="middle" font-size="10" fill="#64748b">All systems, tiers, findings</text>
+
+  <!-- Declaration Review -->
+  <rect x="820" y="195" width="205" height="45" rx="6" fill="#ffffff" stroke="#fde047" stroke-width="1.5"/>
+  <text x="923" y="215" text-anchor="middle" font-size="11" font-weight="600" fill="#854d0e">Declaration Review Queue</text>
+  <text x="923" y="230" text-anchor="middle" font-size="9" fill="#64748b">High/Critical new systems</text>
+
+  <!-- Exception Management -->
+  <rect x="820" y="255" width="205" height="45" rx="6" fill="#ffffff" stroke="#fde047" stroke-width="1.5"/>
+  <text x="923" y="275" text-anchor="middle" font-size="11" font-weight="600" fill="#854d0e">Exception Management</text>
+  <text x="923" y="290" text-anchor="middle" font-size="9" fill="#64748b">Review + approve overrides</text>
+
+  <!-- Investigation Tracker -->
+  <rect x="820" y="315" width="205" height="45" rx="6" fill="#ffffff" stroke="#fde047" stroke-width="1.5"/>
+  <text x="923" y="335" text-anchor="middle" font-size="11" font-weight="600" fill="#854d0e">Investigation Tracker</text>
+  <text x="923" y="350" text-anchor="middle" font-size="9" fill="#64748b">Root cause + remediation</text>
+
+  <!-- Chargeback Reports -->
+  <rect x="820" y="375" width="205" height="45" rx="6" fill="#ffffff" stroke="#fde047" stroke-width="1.5"/>
+  <text x="923" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#854d0e">Chargeback Reports</text>
+  <text x="923" y="410" text-anchor="middle" font-size="9" fill="#64748b">Investigation costs by system</text>
+
+  <!-- Regulatory Reports -->
+  <rect x="820" y="435" width="205" height="45" rx="6" fill="#ffffff" stroke="#fde047" stroke-width="1.5"/>
+  <text x="923" y="455" text-anchor="middle" font-size="11" font-weight="600" fill="#854d0e">Regulatory Reporting</text>
+  <text x="923" y="470" text-anchor="middle" font-size="9" fill="#64748b">Audit artefacts + evidence</text>
+
+  <!-- Arrows from platform to governance -->
+  <line x1="755" y1="152" x2="820" y2="152" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-amber)"/>
+  <text x="787" y="145" text-anchor="middle" font-size="7" fill="#d97706">metrics</text>
+  <line x1="755" y1="397" x2="820" y2="397" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-amber)"/>
+  <text x="787" y="390" text-anchor="middle" font-size="7" fill="#d97706">costs</text>
+  <line x1="755" y1="277" x2="820" y2="277" stroke="#d97706" stroke-width="1" stroke-dasharray="5,3" marker-end="url(#arrow-amber)"/>
+  <text x="787" y="270" text-anchor="middle" font-size="7" fill="#d97706">findings</text>
+
+  <!-- ==================== KEY PRINCIPLE ==================== -->
+  <rect x="55" y="710" width="990" height="40" rx="6" fill="#1e40af"/>
+  <text x="550" y="735" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Developer calls the platform SDK → gets guardrails, logging, and quality monitoring for free. No additional code.</text>
+
+  <!-- Footer -->
+  <text x="550" y="773" text-anchor="middle" font-size="11" fill="#94a3b8">AI Security Reference Architecture — Platform Services Architecture</text>
+
+</svg>

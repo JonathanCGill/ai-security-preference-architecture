@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 320" width="750" height="320">
+  <rect width="750" height="320" fill="#f8fafc"/>
+  
+  <text x="375" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">AI Supply Chain Control Points</text>
+  
+  <!-- Model Provider -->
+  <rect x="32" y="57" width="120" height="60" rx="6" fill="#374151"/>
+  <rect x="30" y="55" width="120" height="60" rx="6" fill="#64748b"/>
+  <text x="90" y="80" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Model Provider</text>
+  <text x="90" y="95" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">OpenAI, Anthropic</text>
+  <text x="90" y="106" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Azure, AWS, etc.</text>
+  
+  <!-- Arrow -->
+  <line x1="150" y1="85" x2="185" y2="85" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="190,85 180,80 180,90" fill="#94a3b8"/>
+  
+  <!-- Model Selection Control -->
+  <rect x="197" y="52" width="140" height="70" rx="6" fill="#1e40af"/>
+  <rect x="195" y="50" width="140" height="70" rx="6" fill="#3b82f6"/>
+  <text x="265" y="73" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Model Selection</text>
+  <text x="265" y="88" font-family="Arial, sans-serif" font-size="8" fill="#dbeafe" text-anchor="middle">Evaluation criteria</text>
+  <text x="265" y="100" font-family="Arial, sans-serif" font-size="8" fill="#dbeafe" text-anchor="middle">Approval workflow</text>
+  <text x="265" y="112" font-family="Arial, sans-serif" font-size="8" fill="#dbeafe" text-anchor="middle">Rollback plan</text>
+  
+  <!-- Arrow -->
+  <line x1="335" y1="85" x2="370" y2="85" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="375,85 365,80 365,90" fill="#94a3b8"/>
+  
+  <!-- Prompt Management -->
+  <rect x="382" y="52" width="140" height="70" rx="6" fill="#5b21b6"/>
+  <rect x="380" y="50" width="140" height="70" rx="6" fill="#8b5cf6"/>
+  <text x="450" y="73" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Prompt Management</text>
+  <text x="450" y="88" font-family="Arial, sans-serif" font-size="8" fill="#ede9fe" text-anchor="middle">Version control</text>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="8" fill="#ede9fe" text-anchor="middle">Change review</text>
+  <text x="450" y="112" font-family="Arial, sans-serif" font-size="8" fill="#ede9fe" text-anchor="middle">Golden set testing</text>
+  
+  <!-- Arrow -->
+  <line x1="520" y1="85" x2="555" y2="85" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="560,85 550,80 550,90" fill="#94a3b8"/>
+  
+  <!-- AI System -->
+  <rect x="567" y="57" width="120" height="60" rx="6" fill="#047857"/>
+  <rect x="565" y="55" width="120" height="60" rx="6" fill="#10b981"/>
+  <text x="625" y="80" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">AI System</text>
+  <text x="625" y="95" font-family="Arial, sans-serif" font-size="8" fill="#d1fae5" text-anchor="middle">Production</text>
+  <text x="625" y="106" font-family="Arial, sans-serif" font-size="8" fill="#d1fae5" text-anchor="middle">Deployment</text>
+  
+  <!-- Second row: Tool and Data -->
+  
+  <!-- Tool Providers -->
+  <rect x="32" y="167" width="120" height="60" rx="6" fill="#374151"/>
+  <rect x="30" y="165" width="120" height="60" rx="6" fill="#64748b"/>
+  <text x="90" y="188" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Tool/API</text>
+  <text x="90" y="203" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">External services</text>
+  <text x="90" y="214" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Internal APIs</text>
+  
+  <!-- Arrow -->
+  <line x1="150" y1="195" x2="185" y2="195" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="190,195 180,190 180,200" fill="#94a3b8"/>
+  
+  <!-- Tool Allowlist -->
+  <rect x="197" y="162" width="140" height="70" rx="6" fill="#b45309"/>
+  <rect x="195" y="160" width="140" height="70" rx="6" fill="#f59e0b"/>
+  <text x="265" y="183" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Tool Allowlist</text>
+  <text x="265" y="198" font-family="Arial, sans-serif" font-size="8" fill="#fef3c7" text-anchor="middle">Explicit permissions</text>
+  <text x="265" y="210" font-family="Arial, sans-serif" font-size="8" fill="#fef3c7" text-anchor="middle">Parameter validation</text>
+  <text x="265" y="222" font-family="Arial, sans-serif" font-size="8" fill="#fef3c7" text-anchor="middle">Approval workflow</text>
+  
+  <!-- Arrow to AI System -->
+  <line x1="335" y1="195" x2="560" y2="115" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="565,113 555,108 555,118" fill="#94a3b8"/>
+  
+  <!-- Data Sources -->
+  <rect x="382" y="167" width="140" height="60" rx="6" fill="#374151"/>
+  <rect x="380" y="165" width="140" height="60" rx="6" fill="#64748b"/>
+  <text x="450" y="188" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Data / RAG</text>
+  <text x="450" y="203" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Documents</text>
+  <text x="450" y="214" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Knowledge base</text>
+  
+  <!-- Arrow -->
+  <line x1="520" y1="195" x2="555" y2="195" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="560,195 550,190 550,200" fill="#94a3b8"/>
+  
+  <!-- RAG Ingestion -->
+  <rect x="567" y="162" width="120" height="70" rx="6" fill="#0f2744"/>
+  <rect x="565" y="160" width="120" height="70" rx="6" fill="#1e3a5f"/>
+  <text x="625" y="183" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">RAG Ingestion</text>
+  <text x="625" y="198" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Source validation</text>
+  <text x="625" y="210" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Classification</text>
+  <text x="625" y="222" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Policy check</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="260" width="650" height="50" rx="4" fill="#f1f5f9"/>
+  <text x="70" y="280" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">Supply Chain Controls:</text>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="8" fill="#475569">Model approval + versioning</text>
+  <text x="360" y="280" font-family="Arial, sans-serif" font-size="8" fill="#475569">Prompt change control</text>
+  <text x="500" y="280" font-family="Arial, sans-serif" font-size="8" fill="#475569">Tool allowlists</text>
+  <text x="620" y="280" font-family="Arial, sans-serif" font-size="8" fill="#475569">RAG provenance</text>
+  <text x="70" y="298" font-family="Arial, sans-serif" font-size="8" fill="#64748b" font-style="italic">Every component has provenance tracking and change control for audit compliance</text>
+</svg>

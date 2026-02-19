@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380">
+  <defs>
+    <linearGradient id="noAiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8"/>
+      <stop offset="100%" style="stop-color:#64748b"/>
+    </linearGradient>
+    <linearGradient id="assistGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="supportGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    <linearGradient id="superGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="autoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <marker id="stepArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="380" fill="#f8fafc"/>
+
+  <text x="450" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Strategy Progression Model</text>
+  <text x="450" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Each step builds capability for the next &#x2014; skipping steps is the most common failure</text>
+
+  <!-- Risk arrow along bottom -->
+  <rect x="50" y="340" width="800" height="24" rx="12" fill="#e2e8f0"/>
+  <text x="100" y="356" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Low risk</text>
+  <text x="450" y="356" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Risk, controls, skills required &#x2192;</text>
+  <text x="810" y="356" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">High risk</text>
+
+  <!-- No AI -->
+  <rect x="25" y="80" width="150" height="240" rx="8" fill="url(#noAiGrad)"/>
+  <text x="100" y="108" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">No AI</text>
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="10" fill="#e2e8f0" text-anchor="middle">Manual processes</text>
+  <text x="100" y="148" font-family="Arial, sans-serif" font-size="10" fill="#e2e8f0" text-anchor="middle">Human decides</text>
+  <rect x="40" y="165" width="120" height="50" rx="5" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="9" fill="#e2e8f0" text-anchor="middle">Pre-framework</text>
+  <text x="100" y="200" font-family="Arial, sans-serif" font-size="9" fill="#e2e8f0" text-anchor="middle">No controls needed</text>
+  <rect x="40" y="230" width="120" height="40" rx="5" fill="rgba(255,255,255,0.12)"/>
+  <text x="100" y="248" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Learn: nothing yet</text>
+  <text x="100" y="262" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Build: nothing yet</text>
+
+  <line x1="178" y1="200" x2="196" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#stepArrow)"/>
+
+  <!-- Assisted -->
+  <rect x="200" y="80" width="150" height="240" rx="8" fill="url(#assistGrad)"/>
+  <text x="275" y="108" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Assisted</text>
+  <text x="275" y="130" font-family="Arial, sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">AI drafts, suggests</text>
+  <text x="275" y="148" font-family="Arial, sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">Human decides all</text>
+  <rect x="215" y="165" width="120" height="50" rx="5" fill="rgba(255,255,255,0.15)"/>
+  <text x="275" y="185" font-family="Arial, sans-serif" font-size="9" fill="#e0e7ff" text-anchor="middle">Fast Lane</text>
+  <text x="275" y="200" font-family="Arial, sans-serif" font-size="9" fill="#e0e7ff" text-anchor="middle">Basic guardrails</text>
+  <rect x="215" y="230" width="120" height="40" rx="5" fill="rgba(255,255,255,0.12)"/>
+  <text x="275" y="248" font-family="Arial, sans-serif" font-size="9" fill="#c7d2fe" text-anchor="middle">Learn: deploy + guardrails</text>
+  <text x="275" y="262" font-family="Arial, sans-serif" font-size="9" fill="#c7d2fe" text-anchor="middle">Build: eng + ops skills</text>
+
+  <line x1="353" y1="200" x2="371" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#stepArrow)"/>
+
+  <!-- Supported -->
+  <rect x="375" y="80" width="150" height="240" rx="8" fill="url(#supportGrad)"/>
+  <text x="450" y="108" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Supported</text>
+  <text x="450" y="130" font-family="Arial, sans-serif" font-size="10" fill="#e0f2fe" text-anchor="middle">AI recommends</text>
+  <text x="450" y="148" font-family="Arial, sans-serif" font-size="10" fill="#e0f2fe" text-anchor="middle">Human acts</text>
+  <rect x="390" y="165" width="120" height="50" rx="5" fill="rgba(255,255,255,0.15)"/>
+  <text x="450" y="185" font-family="Arial, sans-serif" font-size="9" fill="#e0f2fe" text-anchor="middle">Tier 1 (LOW/MEDIUM)</text>
+  <text x="450" y="200" font-family="Arial, sans-serif" font-size="9" fill="#e0f2fe" text-anchor="middle">Judge + guardrails</text>
+  <rect x="390" y="230" width="120" height="40" rx="5" fill="rgba(255,255,255,0.12)"/>
+  <text x="450" y="248" font-family="Arial, sans-serif" font-size="9" fill="#bae6fd" text-anchor="middle">Learn: Judge + HITL</text>
+  <text x="450" y="262" font-family="Arial, sans-serif" font-size="9" fill="#bae6fd" text-anchor="middle">Build: governance</text>
+
+  <line x1="528" y1="200" x2="546" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#stepArrow)"/>
+
+  <!-- Supervised -->
+  <rect x="550" y="80" width="150" height="240" rx="8" fill="url(#superGrad)"/>
+  <text x="625" y="108" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Supervised</text>
+  <text x="625" y="130" font-family="Arial, sans-serif" font-size="10" fill="#fefce8" text-anchor="middle">AI acts on routine</text>
+  <text x="625" y="148" font-family="Arial, sans-serif" font-size="10" fill="#fefce8" text-anchor="middle">Human handles complex</text>
+  <rect x="565" y="165" width="120" height="50" rx="5" fill="rgba(255,255,255,0.15)"/>
+  <text x="625" y="185" font-family="Arial, sans-serif" font-size="9" fill="#fefce8" text-anchor="middle">Tier 2 (HIGH)</text>
+  <text x="625" y="200" font-family="Arial, sans-serif" font-size="9" fill="#fefce8" text-anchor="middle">Full control stack</text>
+  <rect x="565" y="230" width="120" height="40" rx="5" fill="rgba(255,255,255,0.12)"/>
+  <text x="625" y="248" font-family="Arial, sans-serif" font-size="9" fill="#fef08a" text-anchor="middle">Learn: scaled oversight</text>
+  <text x="625" y="262" font-family="Arial, sans-serif" font-size="9" fill="#fef08a" text-anchor="middle">Build: maturity</text>
+
+  <line x1="703" y1="200" x2="721" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#stepArrow)"/>
+
+  <!-- Autonomous -->
+  <rect x="725" y="80" width="150" height="240" rx="8" fill="url(#autoGrad)"/>
+  <text x="800" y="108" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Autonomous</text>
+  <text x="800" y="130" font-family="Arial, sans-serif" font-size="10" fill="#fee2e2" text-anchor="middle">AI acts independently</text>
+  <text x="800" y="148" font-family="Arial, sans-serif" font-size="10" fill="#fee2e2" text-anchor="middle">Human oversees</text>
+  <rect x="740" y="165" width="120" height="50" rx="5" fill="rgba(255,255,255,0.15)"/>
+  <text x="800" y="185" font-family="Arial, sans-serif" font-size="9" fill="#fee2e2" text-anchor="middle">Tier 3 (CRITICAL)</text>
+  <text x="800" y="200" font-family="Arial, sans-serif" font-size="9" fill="#fee2e2" text-anchor="middle">Max controls + PACE</text>
+  <rect x="740" y="230" width="120" height="40" rx="5" fill="rgba(255,255,255,0.12)"/>
+  <text x="800" y="248" font-family="Arial, sans-serif" font-size="9" fill="#fca5a5" text-anchor="middle">Requires: all prior</text>
+  <text x="800" y="262" font-family="Arial, sans-serif" font-size="9" fill="#fca5a5" text-anchor="middle">capabilities proven</text>
+</svg>

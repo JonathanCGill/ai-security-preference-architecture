@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <filter id="shadow" x="-1%" y="-1%" width="102%" height="103%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1.5" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="780" fill="#f8f9fa" rx="0"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1100" height="52" fill="#2c3e50"/>
+  <text x="550" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">AI Runtime Behaviour Security — Decision Poster</text>
+  <text x="550" y="42" text-anchor="middle" font-size="10" fill="#bdc3c7">Find your deployment. Get your controls. Know your fail posture. One page.</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: CLASSIFY (left column, top) -->
+  <!-- ============================================ -->
+  <rect x="15" y="62" width="350" height="310" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="15" y="62" width="350" height="26" rx="6" fill="#2c3e50"/>
+  <text x="190" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">STEP 1 — CLASSIFY YOUR DEPLOYMENT</text>
+
+  <!-- Fast Lane -->
+  <rect x="25" y="96" width="330" height="62" rx="4" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="35" y="113" font-size="11" font-weight="bold" fill="#1e8449">FAST LANE</text>
+  <text x="167" y="113" font-size="9" fill="#7f8c8d">All four must be true:</text>
+  <text x="35" y="128" font-size="9" fill="#2c3e50">✓ Internal users only   ✓ Read-only (no write to external systems)</text>
+  <text x="35" y="142" font-size="9" fill="#2c3e50">✓ No regulated data      ✓ Human reviews before acting on output</text>
+  <text x="35" y="155" font-size="8" fill="#27ae60" font-weight="bold">→ Self-certify. Deploy in days. No security review needed.</text>
+
+  <!-- Tier 1 -->
+  <rect x="25" y="164" width="330" height="52" rx="4" fill="#ebf5fb" stroke="#2980b9" stroke-width="1"/>
+  <text x="35" y="180" font-size="11" font-weight="bold" fill="#1a5276">TIER 1 — Low Risk</text>
+  <text x="35" y="194" font-size="9" fill="#2c3e50">Internal tools with write access, OR handles non-regulated data,</text>
+  <text x="35" y="207" font-size="9" fill="#2c3e50">OR output not always reviewed. Internal audience only.</text>
+
+  <!-- Tier 2 -->
+  <rect x="25" y="222" width="330" height="52" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="35" y="238" font-size="11" font-weight="bold" fill="#935116">TIER 2 — Medium Risk</text>
+  <text x="35" y="252" font-size="9" fill="#2c3e50">Customer-facing content or decisions. Human reviews before</text>
+  <text x="35" y="265" font-size="9" fill="#2c3e50">delivery. Decision support, document processing, chatbots.</text>
+
+  <!-- Tier 3 -->
+  <rect x="25" y="280" width="330" height="52" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="35" y="296" font-size="11" font-weight="bold" fill="#922b21">TIER 3 — High Risk</text>
+  <text x="35" y="310" font-size="9" fill="#2c3e50">Regulated decisions, autonomous agents with write access,</text>
+  <text x="35" y="323" font-size="9" fill="#2c3e50">financial / medical / legal domains. Direct business impact.</text>
+
+  <!-- Classification hint -->
+  <text x="190" y="352" text-anchor="middle" font-size="8" fill="#7f8c8d">Same model can be different tiers based on use case.</text>
+  <text x="190" y="364" text-anchor="middle" font-size="8" fill="#7f8c8d">Tier = deployment context, not technology.</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: CONTROLS (center column, top) -->
+  <!-- ============================================ -->
+  <rect x="375" y="62" width="350" height="310" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="375" y="62" width="350" height="26" rx="6" fill="#2c3e50"/>
+  <text x="550" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">STEP 2 — APPLY CONTROLS</text>
+
+  <!-- Control matrix -->
+  <text x="385" y="102" font-size="9" font-weight="bold" fill="#5d6d7e">CONTROL</text>
+  <text x="503" y="102" font-size="8" font-weight="bold" fill="#27ae60">FAST</text>
+  <text x="543" y="102" font-size="8" font-weight="bold" fill="#2980b9">T1</text>
+  <text x="588" y="102" font-size="8" font-weight="bold" fill="#f39c12">T2</text>
+  <text x="633" y="102" font-size="8" font-weight="bold" fill="#e74c3c">T3</text>
+  <line x1="385" y1="107" x2="715" y2="107" stroke="#d5dbdb" stroke-width="0.5"/>
+
+  <!-- Guardrails -->
+  <text x="385" y="122" font-size="9" font-weight="bold" fill="#2c3e50">Guardrails</text>
+  <text x="505" y="122" font-size="10" fill="#27ae60">●</text>
+  <text x="545" y="122" font-size="10" fill="#2980b9">●</text>
+  <text x="590" y="122" font-size="10" fill="#f39c12">●</text>
+  <text x="635" y="122" font-size="10" fill="#e74c3c">●</text>
+  <text x="660" y="122" font-size="8" fill="#7f8c8d">Basic → Full → Hardened</text>
+
+  <!-- LLM-as-Judge -->
+  <text x="385" y="140" font-size="9" font-weight="bold" fill="#2c3e50">LLM-as-Judge</text>
+  <text x="505" y="140" font-size="10" fill="#bdc3c7">○</text>
+  <text x="545" y="140" font-size="10" fill="#2980b9">●</text>
+  <text x="590" y="140" font-size="10" fill="#f39c12">●</text>
+  <text x="635" y="140" font-size="10" fill="#e74c3c">●</text>
+  <text x="660" y="140" font-size="8" fill="#7f8c8d">Sample → 100% → Dual-model</text>
+
+  <!-- Human Oversight -->
+  <text x="385" y="158" font-size="9" font-weight="bold" fill="#2c3e50">Human Oversight</text>
+  <text x="505" y="158" font-size="10" fill="#bdc3c7">○</text>
+  <text x="545" y="158" font-size="10" fill="#bdc3c7">○</text>
+  <text x="590" y="158" font-size="10" fill="#f39c12">●</text>
+  <text x="635" y="158" font-size="10" fill="#e74c3c">●</text>
+  <text x="660" y="158" font-size="8" fill="#7f8c8d">Self-review → Dedicated → Expert</text>
+
+  <!-- Circuit Breaker -->
+  <text x="385" y="176" font-size="9" font-weight="bold" fill="#2c3e50">Circuit Breaker</text>
+  <text x="505" y="176" font-size="10" fill="#27ae60">●</text>
+  <text x="545" y="176" font-size="10" fill="#2980b9">●</text>
+  <text x="590" y="176" font-size="10" fill="#f39c12">●</text>
+  <text x="635" y="176" font-size="10" fill="#e74c3c">●</text>
+  <text x="660" y="176" font-size="8" fill="#7f8c8d">Flag → Flag → Auto → Auto+staff</text>
+
+  <!-- Usage Logging -->
+  <text x="385" y="194" font-size="9" font-weight="bold" fill="#2c3e50">Usage Logging</text>
+  <text x="505" y="194" font-size="10" fill="#27ae60">●</text>
+  <text x="545" y="194" font-size="10" fill="#2980b9">●</text>
+  <text x="590" y="194" font-size="10" fill="#f39c12">●</text>
+  <text x="635" y="194" font-size="10" fill="#e74c3c">●</text>
+  <text x="660" y="194" font-size="8" fill="#7f8c8d">Always required at every tier</text>
+
+  <line x1="385" y1="203" x2="715" y2="203" stroke="#d5dbdb" stroke-width="0.5"/>
+  <text x="505" y="214" font-size="7" fill="#7f8c8d">● Required</text>
+  <text x="560" y="214" font-size="7" fill="#7f8c8d">○ Not required</text>
+
+  <!-- Agentic add-ons -->
+  <rect x="385" y="222" width="330" height="62" rx="4" fill="#f4ecf7" stroke="#8e44ad" stroke-width="1"/>
+  <text x="395" y="238" font-size="10" font-weight="bold" fill="#6c3483">AGENTIC ADD-ONS</text>
+  <text x="395" y="253" font-size="8.5" fill="#2c3e50">If agent has write access or autonomous actions, also require:</text>
+  <text x="395" y="267" font-size="8.5" fill="#2c3e50">Tool permission matrix · Transaction resolution plan · Multi-agent</text>
+  <text x="395" y="279" font-size="8.5" fill="#2c3e50">cascade prevention · 5-phase degradation path (T2/T3)</text>
+
+  <!-- Testing cadence -->
+  <rect x="385" y="290" width="330" height="75" rx="4" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="395" y="306" font-size="10" font-weight="bold" fill="#5d6d7e">TESTING CADENCE</text>
+  <text x="395" y="322" font-size="9" fill="#27ae60" font-weight="bold">Fast Lane:</text>
+  <text x="472" y="322" font-size="9" fill="#2c3e50">Annual — confirm feature flag works</text>
+  <text x="395" y="337" font-size="9" fill="#2980b9" font-weight="bold">Tier 1:</text>
+  <text x="438" y="337" font-size="9" fill="#2c3e50">Annual — each control layer</text>
+  <text x="395" y="352" font-size="9" fill="#f39c12" font-weight="bold">Tier 2:</text>
+  <text x="438" y="352" font-size="9" fill="#2c3e50">Quarterly — controls + semi-annual full walkthrough</text>
+  <text x="395" y="367" font-size="9" fill="#e74c3c" font-weight="bold">Tier 3:</text>
+  <text x="438" y="367" font-size="9" fill="#2c3e50">Monthly — controls + quarterly full walkthrough</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: FAIL POSTURE (right column, top) -->
+  <!-- ============================================ -->
+  <rect x="735" y="62" width="350" height="310" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="735" y="62" width="350" height="26" rx="6" fill="#2c3e50"/>
+  <text x="910" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">STEP 3 — DEFINE FAIL POSTURE</text>
+
+  <text x="745" y="104" font-size="9" fill="#5d6d7e">For each control, decide: when it fails, does the system...</text>
+
+  <!-- Fail-open box -->
+  <rect x="745" y="112" width="155" height="70" rx="4" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="822" y="130" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e8449">FAIL-OPEN</text>
+  <text x="755" y="145" font-size="8.5" fill="#2c3e50">Pass traffic through.</text>
+  <text x="755" y="157" font-size="8.5" fill="#2c3e50">Log everything.</text>
+  <text x="755" y="169" font-size="8.5" fill="#2c3e50">Other layers catch issues.</text>
+
+  <!-- Fail-closed box -->
+  <rect x="915" y="112" width="155" height="70" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="992" y="130" text-anchor="middle" font-size="11" font-weight="bold" fill="#922b21">FAIL-CLOSED</text>
+  <text x="925" y="145" font-size="8.5" fill="#2c3e50">Block AI traffic.</text>
+  <text x="925" y="157" font-size="8.5" fill="#2c3e50">Route to fallback.</text>
+  <text x="925" y="169" font-size="8.5" fill="#2c3e50">Alert immediately.</text>
+
+  <!-- Default by tier -->
+  <text x="745" y="202" font-size="9" font-weight="bold" fill="#5d6d7e">DEFAULT POSTURE BY TIER</text>
+  <line x1="745" y1="208" x2="1075" y2="208" stroke="#d5dbdb" stroke-width="0.5"/>
+
+  <rect x="745" y="214" width="330" height="22" rx="3" fill="#eafaf1"/>
+  <text x="755" y="229" font-size="9" fill="#1e8449" font-weight="bold">Fast Lane / Tier 1</text>
+  <text x="880" y="229" font-size="9" fill="#2c3e50">Fail-open. Fix next business day.</text>
+
+  <rect x="745" y="240" width="330" height="22" rx="3" fill="#fef9e7"/>
+  <text x="755" y="255" font-size="9" fill="#935116" font-weight="bold">Tier 2</text>
+  <text x="800" y="255" font-size="9" fill="#2c3e50">Fail-closed. Automated switchover to fallback.</text>
+
+  <rect x="745" y="266" width="330" height="22" rx="3" fill="#fdedec"/>
+  <text x="755" y="281" font-size="9" fill="#922b21" font-weight="bold">Tier 3</text>
+  <text x="800" y="281" font-size="9" fill="#2c3e50">Fail-closed always. No exceptions. Immediate escalation.</text>
+
+  <!-- Fallback path -->
+  <text x="745" y="308" font-size="9" font-weight="bold" fill="#5d6d7e">NON-AI FALLBACK PATH</text>
+  <line x1="745" y1="314" x2="1075" y2="314" stroke="#d5dbdb" stroke-width="0.5"/>
+  <text x="745" y="330" font-size="8.5" fill="#27ae60" font-weight="bold">Fast Lane:</text>
+  <text x="808" y="330" font-size="8.5" fill="#2c3e50">Manual process (already exists). Feature flag off.</text>
+  <text x="745" y="345" font-size="8.5" fill="#2980b9" font-weight="bold">Tier 1:</text>
+  <text x="785" y="345" font-size="8.5" fill="#2c3e50">Manual process. Documented. Someone knows how.</text>
+  <text x="745" y="360" font-size="8.5" fill="#f39c12" font-weight="bold">Tier 2:</text>
+  <text x="785" y="360" font-size="8.5" fill="#2c3e50">Rule-based / templated. Maintained quarterly. Auto-activate.</text>
+  <text x="745" y="375" font-size="8.5" fill="#e74c3c" font-weight="bold">Tier 3:</text>
+  <text x="785" y="375" font-size="8.5" fill="#2c3e50">Staffed parallel process. Tested monthly. No shared infra.</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PACE QUICK REFERENCE (bottom) -->
+  <!-- ============================================ -->
+  <rect x="15" y="382" width="530" height="175" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="15" y="382" width="530" height="26" rx="6" fill="#2c3e50"/>
+  <text x="280" y="400" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">PACE — WHAT HAPPENS WHEN CONTROLS DEGRADE</text>
+
+  <!-- PACE table -->
+  <text x="30" y="424" font-size="9" font-weight="bold" fill="#5d6d7e">LAYER</text>
+  <text x="160" y="424" font-size="9" font-weight="bold" fill="#5d6d7e">IF DEGRADED (A)</text>
+  <text x="340" y="424" font-size="9" font-weight="bold" fill="#5d6d7e">IF DOWN (C)</text>
+  <line x1="25" y1="430" x2="535" y2="430" stroke="#d5dbdb" stroke-width="0.5"/>
+
+  <!-- Guardrails row -->
+  <rect x="25" y="434" width="120" height="24" rx="2" fill="#ebf5fb"/>
+  <text x="35" y="450" font-size="9" font-weight="bold" fill="#1a5276">Guardrails</text>
+  <text x="160" y="450" font-size="8.5" fill="#2c3e50">Stricter, simpler rule set</text>
+  <text x="340" y="450" font-size="8.5" fill="#2c3e50">Fail posture (open/closed per tier)</text>
+
+  <!-- Judge row -->
+  <rect x="25" y="462" width="120" height="24" rx="2" fill="#eafaf1"/>
+  <text x="35" y="478" font-size="9" font-weight="bold" fill="#1e8449">LLM-as-Judge</text>
+  <text x="160" y="478" font-size="8.5" fill="#2c3e50">Priority eval only (high-risk first)</text>
+  <text x="340" y="478" font-size="8.5" fill="#2c3e50">Outputs held for human review</text>
+
+  <!-- Human row -->
+  <rect x="25" y="490" width="120" height="24" rx="2" fill="#fef9e7"/>
+  <text x="35" y="506" font-size="9" font-weight="bold" fill="#935116">Human Oversight</text>
+  <text x="160" y="506" font-size="8.5" fill="#2c3e50">Secondary reviewer, extend SLA</text>
+  <text x="340" y="506" font-size="8.5" fill="#2c3e50">Throttle AI to match capacity (or stop)</text>
+
+  <!-- Circuit breaker row -->
+  <rect x="25" y="518" width="120" height="24" rx="2" fill="#fdedec"/>
+  <text x="35" y="534" font-size="9" font-weight="bold" fill="#922b21">Circuit Breaker</text>
+  <text x="160" y="534" font-size="8.5" fill="#2c3e50">Manual fallback active</text>
+  <text x="340" y="534" font-size="8.5" fill="#2c3e50">Full stop. Incident response.</text>
+
+  <!-- Critical rule -->
+  <rect x="25" y="546" width="510" height="5" rx="1" fill="#e74c3c"/>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: AGENTIC DEGRADATION (bottom right) -->
+  <!-- ============================================ -->
+  <rect x="555" y="382" width="530" height="175" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="555" y="382" width="530" height="26" rx="6" fill="#8e44ad"/>
+  <text x="820" y="400" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">AGENTIC SYSTEMS — DEGRADATION PATH</text>
+
+  <!-- Five phases in a flow -->
+  <rect x="568" y="418" width="95" height="40" rx="4" fill="#eafaf1" stroke="#27ae60" stroke-width="1"/>
+  <text x="615" y="435" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e8449">NORMAL</text>
+  <text x="615" y="449" text-anchor="middle" font-size="7" fill="#2c3e50">Full autonomy</text>
+
+  <text x="667" y="440" font-size="10" fill="#5d6d7e">→</text>
+
+  <rect x="678" y="418" width="95" height="40" rx="4" fill="#ebf5fb" stroke="#2980b9" stroke-width="1"/>
+  <text x="725" y="435" text-anchor="middle" font-size="9" font-weight="bold" fill="#1a5276">CONSTRAIN</text>
+  <text x="725" y="449" text-anchor="middle" font-size="7" fill="#2c3e50">Read-only tools</text>
+
+  <text x="777" y="440" font-size="10" fill="#5d6d7e">→</text>
+
+  <rect x="788" y="418" width="95" height="40" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="835" y="435" text-anchor="middle" font-size="9" font-weight="bold" fill="#935116">SUPERVISE</text>
+  <text x="835" y="449" text-anchor="middle" font-size="7" fill="#2c3e50">Human approves all</text>
+
+  <text x="887" y="440" font-size="10" fill="#5d6d7e">→</text>
+
+  <rect x="898" y="418" width="80" height="40" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="938" y="435" text-anchor="middle" font-size="9" font-weight="bold" fill="#922b21">BYPASS</text>
+  <text x="938" y="449" text-anchor="middle" font-size="7" fill="#2c3e50">Agent isolated</text>
+
+  <text x="982" y="440" font-size="10" fill="#5d6d7e">→</text>
+
+  <rect x="992" y="418" width="80" height="40" rx="4" fill="#922b21" stroke="#922b21" stroke-width="1"/>
+  <text x="1032" y="435" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">STOP</text>
+  <text x="1032" y="449" text-anchor="middle" font-size="7" fill="#f5b7b1">All terminated</text>
+
+  <!-- Agent pre-deployment checklist -->
+  <text x="568" y="480" font-size="9" font-weight="bold" fill="#6c3483">BEFORE ANY AGENT GOES LIVE</text>
+  <line x1="568" y1="486" x2="1070" y2="486" stroke="#d2b4de" stroke-width="0.5"/>
+  <text x="568" y="500" font-size="8.5" fill="#2c3e50">□ Degradation phases defined with trigger criteria</text>
+  <text x="568" y="514" font-size="8.5" fill="#2c3e50">□ Transaction resolution for every tool (rollback? complete without agent? partial dangerous?)</text>
+  <text x="568" y="528" font-size="8.5" fill="#2c3e50">□ Multi-agent cascade prevention (timeouts, fallback behaviour, no blocking)</text>
+  <text x="568" y="542" font-size="8.5" fill="#2c3e50">□ Non-AI fallback path tested and staffed</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: THE FIVE QUESTIONS (bottom strip) -->
+  <!-- ============================================ -->
+  <rect x="15" y="567" width="1070" height="80" rx="6" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="550" y="589" text-anchor="middle" font-size="12" font-weight="bold" fill="#ecf0f1">THE FIVE QUESTIONS EVERY AI DEPLOYMENT MUST ANSWER BEFORE PRODUCTION</text>
+  <line x1="35" y1="597" x2="1065" y2="597" stroke="#5d6d7e" stroke-width="0.5"/>
+
+  <text x="35" y="616" font-size="10" fill="#ecf0f1" font-weight="bold">1.</text>
+  <text x="52" y="616" font-size="10" fill="#bdc3c7">What tier is this?</text>
+  <text x="250" y="616" font-size="10" fill="#ecf0f1" font-weight="bold">2.</text>
+  <text x="267" y="616" font-size="10" fill="#bdc3c7">What controls does it need?</text>
+  <text x="500" y="616" font-size="10" fill="#ecf0f1" font-weight="bold">3.</text>
+  <text x="517" y="616" font-size="10" fill="#bdc3c7">Fail-open or fail-closed?</text>
+  <text x="730" y="616" font-size="10" fill="#ecf0f1" font-weight="bold">4.</text>
+  <text x="747" y="616" font-size="10" fill="#bdc3c7">What's the fallback path?</text>
+  <text x="940" y="616" font-size="10" fill="#ecf0f1" font-weight="bold">5.</text>
+  <text x="957" y="616" font-size="10" fill="#bdc3c7">Has it been tested?</text>
+
+  <text x="550" y="640" text-anchor="middle" font-size="9" fill="#5d6d7e">If you can answer all five, you're ready. If you can't, you're not.</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: STANDARDS + SCOPE (very bottom) -->
+  <!-- ============================================ -->
+  <rect x="15" y="657" width="530" height="65" rx="6" fill="#fff" stroke="#bdc3c7" stroke-width="1" filter="url(#shadow)"/>
+  <text x="25" y="675" font-size="9" font-weight="bold" fill="#5d6d7e">STANDARDS ALIGNMENT</text>
+  <text x="25" y="691" font-size="8" fill="#2c3e50">ISO 42001 · NIST AI RMF · OWASP LLM Top 10 · OWASP Agentic Top 10 · NIST SP 800-218A · EU AI Act</text>
+  <text x="25" y="707" font-size="8" fill="#7f8c8d">Scope: Custom AI in production. Not: vendor products, model training, pre-deployment testing.</text>
+  <text x="25" y="718" font-size="8" fill="#7f8c8d">This framework starts where NIST SP 800-218A (secure development) ends.</text>
+
+  <rect x="555" y="657" width="530" height="65" rx="6" fill="#fff" stroke="#bdc3c7" stroke-width="1" filter="url(#shadow)"/>
+  <text x="565" y="675" font-size="9" font-weight="bold" fill="#5d6d7e">RESOURCES</text>
+  <text x="565" y="691" font-size="8" fill="#2c3e50">Full framework: github.com/JonathanCGill/ai-runtime-behaviour-security</text>
+  <text x="565" y="705" font-size="8" fill="#2c3e50">Fast Lane: FAST-LANE.md · PACE Methodology: PACE-RESILIENCE.md · Infrastructure: 80 controls / 11 domains</text>
+  <text x="565" y="718" font-size="8" fill="#7f8c8d">MIT License — Use it, adapt it, build on it.</text>
+
+  <!-- Footer -->
+  <text x="550" y="758" text-anchor="middle" font-size="8" fill="#95a5a6">AI Runtime Behaviour Security — Decision Poster v1.0 © Jonathan Gill 2025</text>
+  <text x="550" y="772" text-anchor="middle" font-size="8" fill="#bdc3c7">Guardrails prevent. Judge detects. Humans decide. Circuit breakers contain.</text>
+</svg>

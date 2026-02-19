@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="640" viewBox="0 0 800 640" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="800" height="640" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">CI/CD Pipeline Summary</text>
+  <text x="400" y="48" text-anchor="middle" font-size="12" fill="#64748b">How a code or declaration change flows through the pipeline</text>
+  <rect x="280" y="48" width="240" height="30" rx="15" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="400" y="68" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Code change or declaration change</text>
+  <line x1="400" y1="78" x2="400" y2="95" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="240" y="70" width="320" height="80" rx="8" fill="#ffffff" stroke="#1e40af" stroke-width="1.5"/>
+  <path d="M248,70 L552,70 Q560,70 560,78 L560,94 L240,94 L240,78 Q240,70 248,70 Z" fill="#1e40af"/>
+  <text x="400" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">CI: Validate Declaration</text>
+  <text x="400" y="114" text-anchor="middle" font-size="11" font-weight="400" fill="#475569">Schema check, completeness, tier calculation</text>
+  <text x="400" y="130" text-anchor="middle" font-size="10" font-weight="400" fill="#94a3b8">Result posted as PR comment</text>
+  <line x1="400" y1="150" x2="400" y2="175" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="240" y="180" width="320" height="80" rx="8" fill="#ffffff" stroke="#1e40af" stroke-width="1.5"/>
+  <path d="M248,180 L552,180 Q560,180 560,188 L560,204 L240,204 L240,188 Q240,180 248,180 Z" fill="#1e40af"/>
+  <text x="400" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">CI: Test AI System</text>
+  <text x="400" y="224" text-anchor="middle" font-size="11" font-weight="400" fill="#475569">Guardrail tests, scope tests, regression tests</text>
+  <text x="400" y="240" text-anchor="middle" font-size="10" font-weight="400" fill="#94a3b8">Required for High/Critical; optional for Low/Medium</text>
+  <line x1="400" y1="260" x2="400" y2="285" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="240" y="290" width="320" height="80" rx="8" fill="#ffffff" stroke="#854d0e" stroke-width="1.5"/>
+  <path d="M248,290 L552,290 Q560,290 560,298 L560,314 L240,314 L240,298 Q240,290 248,290 Z" fill="#854d0e"/>
+  <text x="400" y="306" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">CI/CD: Governance Gate</text>
+  <text x="400" y="334" text-anchor="middle" font-size="11" font-weight="400" fill="#475569">Auto-approve (Low/Med, non-material)</text>
+  <text x="400" y="350" text-anchor="middle" font-size="10" font-weight="400" fill="#94a3b8">or require review (High/Critical, new, overrides)</text>
+  <line x1="400" y1="370" x2="400" y2="395" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="240" y="400" width="320" height="80" rx="8" fill="#ffffff" stroke="#166534" stroke-width="1.5"/>
+  <path d="M248,400 L552,400 Q560,400 560,408 L560,424 L240,424 L240,408 Q240,400 248,400 Z" fill="#166534"/>
+  <text x="400" y="416" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">CD: Deploy with Guardrails</text>
+  <text x="400" y="444" text-anchor="middle" font-size="11" font-weight="400" fill="#475569">Register declaration, configure guardrails</text>
+  <text x="400" y="460" text-anchor="middle" font-size="10" font-weight="400" fill="#94a3b8">Deploy app, verify controls active</text>
+  <line x1="400" y1="480" x2="400" y2="505" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="240" y="510" width="320" height="80" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+  <path d="M248,510 L552,510 Q560,510 560,518 L560,534 L240,534 L240,518 Q240,510 248,510 Z" fill="#7c3aed"/>
+  <text x="400" y="526" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Production: Monitor</text>
+  <text x="400" y="554" text-anchor="middle" font-size="11" font-weight="400" fill="#475569">Judge sampling, findings dashboard, alerts</text>
+  <text x="400" y="570" text-anchor="middle" font-size="10" font-weight="400" fill="#94a3b8">Quality gates on next deploy</text>
+  <text x="575" y="110" text-anchor="start" font-size="10" font-weight="400" fill="#94a3b8">2-3 seconds</text>
+  <text x="575" y="220" text-anchor="start" font-size="10" font-weight="400" fill="#94a3b8">30s - 5min</text>
+  <text x="575" y="330" text-anchor="start" font-size="10" font-weight="400" fill="#94a3b8">Auto or 48h SLA</text>
+  <text x="575" y="440" text-anchor="start" font-size="10" font-weight="400" fill="#94a3b8">Standard deploy</text>
+  <text x="575" y="550" text-anchor="start" font-size="10" font-weight="400" fill="#94a3b8">Continuous</text>
+  <text x="430" y="165" text-anchor="start" font-size="10" font-weight="600" fill="#16a34a">Pass</text>
+  <line x1="560" y1="110" x2="600" y2="110" stroke="#334155" stroke-width="1.5"/>
+  <text x="608" y="108" text-anchor="start" font-size="10" font-weight="600" fill="#dc2626">Fail</text>
+  <text x="608" y="122" text-anchor="start" font-size="9" font-weight="400" fill="#94a3b8">Block + feedback</text>
+  <text x="430" y="275" text-anchor="start" font-size="10" font-weight="600" fill="#16a34a">Pass</text>
+  <line x1="560" y1="220" x2="600" y2="220" stroke="#334155" stroke-width="1.5"/>
+  <text x="608" y="218" text-anchor="start" font-size="10" font-weight="600" fill="#dc2626">Fail</text>
+  <text x="608" y="232" text-anchor="start" font-size="9" font-weight="400" fill="#94a3b8">Block + feedback</text>
+  <text x="430" y="385" text-anchor="start" font-size="10" font-weight="600" fill="#16a34a">Pass</text>
+  <line x1="560" y1="330" x2="600" y2="330" stroke="#334155" stroke-width="1.5"/>
+  <text x="608" y="328" text-anchor="start" font-size="10" font-weight="600" fill="#dc2626">Fail</text>
+  <text x="608" y="342" text-anchor="start" font-size="9" font-weight="400" fill="#94a3b8">Block + feedback</text>
+</svg>

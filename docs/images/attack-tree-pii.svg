@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="450" viewBox="0 0 750 450">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="750" height="450" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="375" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Attack Tree: AI PII Disclosure</text>
+  <text x="375" y="48" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Hierarchical attack paths with control mapping</text>
+  
+  <!-- Root node -->
+  <rect x="275" y="65" width="200" height="40" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="375" y="90" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Cause AI to Disclose PII</text>
+  
+  <!-- Branch lines from root -->
+  <line x1="325" y1="105" x2="325" y2="130" stroke="#475569" stroke-width="1.5"/>
+  <line x1="375" y1="105" x2="375" y2="130" stroke="#475569" stroke-width="1.5"/>
+  <line x1="425" y1="105" x2="425" y2="130" stroke="#475569" stroke-width="1.5"/>
+  
+  <line x1="150" y1="130" x2="600" y2="130" stroke="#475569" stroke-width="1.5"/>
+  
+  <line x1="150" y1="130" x2="150" y2="150" stroke="#475569" stroke-width="1.5"/>
+  <line x1="375" y1="130" x2="375" y2="150" stroke="#475569" stroke-width="1.5"/>
+  <line x1="600" y1="130" x2="600" y2="150" stroke="#475569" stroke-width="1.5"/>
+  
+  <!-- Branch 1: Direct Extraction -->
+  <rect x="50" y="155" width="200" height="35" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="150" y="177" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Direct Extraction</text>
+  
+  <!-- Direct sub-nodes -->
+  <line x1="100" y1="190" x2="100" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="150" y1="190" x2="150" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="200" y1="190" x2="200" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  
+  <rect x="30" y="215" width="140" height="55" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="100" y="235" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Ask directly</text>
+  <text x="100" y="250" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">✓ Blocked by</text>
+  <text x="100" y="262" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">guardrails</text>
+  
+  <rect x="80" y="280" width="140" height="55" rx="4" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <text x="150" y="300" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Roleplay scenario</text>
+  <text x="150" y="315" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">⚠ Mitigated by</text>
+  <text x="150" y="327" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">Judge</text>
+  
+  <rect x="130" y="345" width="140" height="55" rx="4" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <text x="200" y="365" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Encoding tricks</text>
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">⚠ Partially</text>
+  <text x="200" y="392" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">blocked</text>
+  
+  <!-- Branch 2: Indirect Extraction -->
+  <rect x="275" y="155" width="200" height="35" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="375" y="177" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Indirect Extraction</text>
+  
+  <!-- Indirect sub-nodes -->
+  <line x1="325" y1="190" x2="325" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="375" y1="190" x2="375" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="425" y1="190" x2="425" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  
+  <rect x="255" y="215" width="140" height="55" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="325" y="235" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">Inject via document</text>
+  <text x="325" y="250" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">✗ Gap: RAG</text>
+  <text x="325" y="262" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">sanitization</text>
+  
+  <rect x="305" y="280" width="140" height="55" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="375" y="300" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">Poison context</text>
+  <text x="375" y="315" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">✗ Gap: Context</text>
+  <text x="375" y="327" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">validation</text>
+  
+  <rect x="355" y="345" width="140" height="55" rx="4" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <text x="425" y="365" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Manipulate tools</text>
+  <text x="425" y="380" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">⚠ Partial: Tool</text>
+  <text x="425" y="392" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">output validation</text>
+  
+  <!-- Branch 3: Inference -->
+  <rect x="500" y="155" width="200" height="35" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="177" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Inference</text>
+  
+  <!-- Inference sub-nodes -->
+  <line x1="550" y1="190" x2="550" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="650" y1="190" x2="650" y2="210" stroke="#94a3b8" stroke-width="1"/>
+  
+  <rect x="480" y="215" width="140" height="55" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="550" y="235" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">Pattern analysis</text>
+  <text x="550" y="250" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">✗ Gap: Cross-</text>
+  <text x="550" y="262" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">session detection</text>
+  
+  <rect x="580" y="280" width="140" height="55" rx="4" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <text x="650" y="300" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Differential queries</text>
+  <text x="650" y="315" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">⚠ Rate limiting</text>
+  <text x="650" y="327" font-family="Arial, sans-serif" font-size="8" fill="#a16207" text-anchor="middle">helps</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="410" width="650" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="65" y="418" width="14" height="14" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="85" y="429" font-family="Arial, sans-serif" font-size="9" fill="#475569">Controlled</text>
+  <rect x="165" y="418" width="14" height="14" rx="2" fill="#fef9c3" stroke="#eab308" stroke-width="1"/>
+  <text x="185" y="429" font-family="Arial, sans-serif" font-size="9" fill="#475569">Partial</text>
+  <rect x="245" y="418" width="14" height="14" rx="2" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+  <text x="265" y="429" font-family="Arial, sans-serif" font-size="9" fill="#475569">Gap (needs mitigation)</text>
+  <text x="450" y="429" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Use attack trees to identify control gaps and prioritize mitigations</text>
+</svg>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="900" height="400" fill="#ffffff"/>
+  <text x="450" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Judge Pipeline</text>
+  <text x="450" y="46" text-anchor="middle" font-size="12" fill="#64748b">From interaction logs to remediated findings</text>
+  <rect x="30" y="60" width="120" height="56" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M38,60 L142,60 Q150,60 150,68 L150,82 L30,82 L30,68 Q30,60 38,60 Z" fill="#64748b"/>
+  <text x="90" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Interaction</text>
+  <text x="90" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b">Logs</text>
+  <rect x="185" y="60" width="120" height="56" rx="8" fill="#ffffff" stroke="#1e40af" stroke-width="1.5"/>
+  <path d="M193,60 L297,60 Q305,60 305,68 L305,82 L185,82 L185,68 Q185,60 193,60 Z" fill="#1e40af"/>
+  <text x="245" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Sampler</text>
+  <text x="245" y="106" text-anchor="start" font-size="10" font-weight="400" fill="#334155"></text>
+  <rect x="340" y="60" width="120" height="56" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+  <path d="M348,60 L452,60 Q460,60 460,68 L460,82 L340,82 L340,68 Q340,60 348,60 Z" fill="#7c3aed"/>
+  <text x="400" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Judge</text>
+  <text x="400" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#7c3aed">Evaluation</text>
+  <rect x="495" y="60" width="120" height="56" rx="8" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <path d="M503,60 L607,60 Q615,60 615,68 L615,82 L495,82 L495,68 Q495,60 503,60 Z" fill="#b45309"/>
+  <text x="555" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Findings</text>
+  <text x="555" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#b45309">Store</text>
+  <rect x="650" y="60" width="120" height="56" rx="8" fill="#ffffff" stroke="#166534" stroke-width="1.5"/>
+  <path d="M658,60 L762,60 Q770,60 770,68 L770,82 L650,82 L650,68 Q650,60 658,60 Z" fill="#166534"/>
+  <text x="710" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Review</text>
+  <text x="710" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">Interface</text>
+  <line x1="155" y1="88" x2="180" y2="88" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="310" y1="88" x2="335" y2="88" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="465" y1="88" x2="490" y2="88" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="620" y1="88" x2="645" y2="88" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="100" y="145" width="280" height="100" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="240" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Sampling Strategy</text>
+  <text x="120" y="183" text-anchor="start" font-size="10" font-weight="600" fill="#334155">• Random:</text>
+  <text x="200" y="183" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">hash(id) % 100 &lt; rate</text>
+  <text x="120" y="205" text-anchor="start" font-size="10" font-weight="600" fill="#334155">• Triggered:</text>
+  <text x="200" y="205" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">guardrail_flagged == true</text>
+  <text x="120" y="227" text-anchor="start" font-size="10" font-weight="600" fill="#334155">• Stratified:</text>
+  <text x="200" y="227" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">per-category counters</text>
+  <line x1="245" y1="116" x2="245" y2="145" stroke="#1e40af" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="510" y="145" width="280" height="130" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="650" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Finding Triage</text>
+  <text x="530" y="183" text-anchor="start" font-size="10" font-weight="600" fill="#166534">• Confirmed:</text>
+  <text x="630" y="183" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">True positive → Remediation action</text>
+  <text x="530" y="207" text-anchor="start" font-size="10" font-weight="600" fill="#b45309">• False positive:</text>
+  <text x="630" y="207" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">Judge was wrong → Calibration log</text>
+  <text x="530" y="231" text-anchor="start" font-size="10" font-weight="600" fill="#991b1b">• Escalate:</text>
+  <text x="630" y="231" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">Specialist review needed</text>
+  <text x="530" y="255" text-anchor="start" font-size="10" font-weight="600" fill="#64748b">• More context:</text>
+  <text x="630" y="255" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">Request additional info</text>
+  <line x1="650" y1="116" x2="650" y2="145" stroke="#166534" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="710" y1="116" x2="710" y2="146" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="660" y="146" width="100" height="30" rx="15" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="710" y="166" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Human Reviewer</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="28" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">AGO Judge Service</text>
+
+  <!-- ==================== CONTAINER ==================== -->
+  <rect x="60" y="45" width="680" height="410" rx="8" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3" opacity="0.4"/>
+  <text x="80" y="66" font-size="10" font-weight="bold" fill="#6366f1" letter-spacing="1" opacity="0.6">AGO JUDGE SERVICE</text>
+
+  <!-- ==================== TOP SECTION: EVALUATION CRITERIA ==================== -->
+  <rect x="100" y="80" width="600" height="175" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="400" y="105" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">EVALUATION CRITERIA</text>
+  <text x="400" y="122" font-size="10" fill="#64748b" text-anchor="middle">Universal criteria defined by AGO</text>
+  <line x1="120" y1="132" x2="680" y2="132" stroke="#a5b4fc" stroke-width="1"/>
+
+  <!-- Bullet items - left column -->
+  <circle cx="130" cy="153" r="3" fill="#6366f1"/>
+  <text x="140" y="157" font-size="10" font-weight="bold" fill="#4338ca">Quality</text>
+  <text x="190" y="157" font-size="10" fill="#4338ca">(accuracy, helpfulness, appropriateness)</text>
+
+  <circle cx="130" cy="175" r="3" fill="#6366f1"/>
+  <text x="140" y="179" font-size="10" font-weight="bold" fill="#4338ca">Policy compliance</text>
+  <text x="255" y="179" font-size="10" fill="#4338ca">(system rules, constraints)</text>
+
+  <circle cx="130" cy="197" r="3" fill="#6366f1"/>
+  <text x="140" y="201" font-size="10" font-weight="bold" fill="#4338ca">Conduct risk</text>
+  <text x="225" y="201" font-size="10" fill="#4338ca">(customer harm, business risk)</text>
+
+  <circle cx="130" cy="219" r="3" fill="#6366f1"/>
+  <text x="140" y="223" font-size="10" font-weight="bold" fill="#4338ca">Anomaly detection</text>
+  <text x="265" y="223" font-size="10" fill="#4338ca">(unusual patterns)</text>
+
+  <circle cx="130" cy="241" r="3" fill="#6366f1"/>
+  <text x="140" y="245" font-size="10" font-weight="bold" fill="#4338ca">Bias indicators</text>
+  <text x="245" y="245" font-size="10" fill="#4338ca">(fairness concerns)</text>
+
+  <!-- ==================== ARROW: CRITERIA TO INFRASTRUCTURE ==================== -->
+  <line x1="400" y1="255" x2="400" y2="290" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="415" y="277" font-size="9" fill="#94a3b8" font-style="italic">criteria inform</text>
+
+  <!-- ==================== BOTTOM SECTION: JUDGE INFRASTRUCTURE ==================== -->
+  <rect x="100" y="295" width="600" height="145" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="320" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">JUDGE INFRASTRUCTURE</text>
+  <text x="400" y="337" font-size="10" fill="#64748b" text-anchor="middle">Deployed by AGO Technical</text>
+  <line x1="120" y1="347" x2="680" y2="347" stroke="#fcd34d" stroke-width="1"/>
+
+  <!-- Bullet items -->
+  <circle cx="130" cy="368" r="3" fill="#f59e0b"/>
+  <text x="140" y="372" font-size="10" font-weight="bold" fill="#b45309">Evaluation model</text>
+  <text x="255" y="372" font-size="10" fill="#92400e">(Claude, GPT-4, etc.)</text>
+
+  <circle cx="130" cy="390" r="3" fill="#f59e0b"/>
+  <text x="140" y="394" font-size="10" font-weight="bold" fill="#b45309">Sampling logic per tier</text>
+
+  <circle cx="130" cy="412" r="3" fill="#f59e0b"/>
+  <text x="140" y="416" font-size="10" font-weight="bold" fill="#b45309">Finding classification</text>
+
+  <circle cx="130" cy="434" r="3" fill="#f59e0b"/>
+  <text x="140" y="438" font-size="10" font-weight="bold" fill="#b45309">Routing to HITL queues</text>
+
+  <!-- Footer -->
+  <text x="400" y="472" font-size="10" fill="#94a3b8" text-anchor="middle">Criteria owned by governance — infrastructure operated by technical — separation of concerns</text>
+</svg>

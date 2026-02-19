@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-light" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="420" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">State Governance</text>
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Conceptual — Managing context and memory as attack surfaces</text>
+  
+  <!-- Status badge -->
+  <rect x="330" y="60" width="140" height="20" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="400" y="74" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#b45309" text-anchor="middle">STATUS: CONCEPTUAL</text>
+  
+  <!-- Timeline -->
+  <line x1="80" y1="150" x2="720" y2="150" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="80" y="140" font-family="Arial, sans-serif" font-size="10" fill="#64748b">T0</text>
+  <text x="720" y="140" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Tn</text>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Time →</text>
+  
+  <!-- State boxes along timeline -->
+  <rect x="100" y="160" width="80" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="140" y="182" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">State</text>
+  <text x="140" y="198" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Clean</text>
+  
+  <rect x="230" y="160" width="80" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="270" y="182" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">State</text>
+  <text x="270" y="198" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">+data</text>
+  
+  <rect x="360" y="160" width="80" height="50" rx="6" fill="#fef9c3" stroke="#eab308" stroke-width="2"/>
+  <text x="400" y="182" font-family="Arial, sans-serif" font-size="10" fill="#a16207" text-anchor="middle">State</text>
+  <text x="400" y="198" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Drift?</text>
+  
+  <rect x="490" y="160" width="80" height="50" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="530" y="182" font-family="Arial, sans-serif" font-size="10" fill="#b91c1c" text-anchor="middle">State</text>
+  <text x="530" y="198" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">Anomaly</text>
+  
+  <rect x="620" y="160" width="80" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="660" y="182" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">State</text>
+  <text x="660" y="198" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Rollback</text>
+  
+  <!-- Checkpoints -->
+  <circle cx="140" cy="150" r="6" fill="#3b82f6"/>
+  <circle cx="270" cy="150" r="6" fill="#3b82f6"/>
+  <circle cx="400" cy="150" r="6" fill="#3b82f6"/>
+  <circle cx="530" cy="150" r="6" fill="#3b82f6"/>
+  <circle cx="660" cy="150" r="6" fill="#3b82f6"/>
+  <text x="400" y="125" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6" text-anchor="middle">Checkpoints</text>
+  
+  <!-- Controls box -->
+  <rect x="80" y="240" width="300" height="160" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="230" y="265" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">State Controls</text>
+  <line x1="95" y1="275" x2="365" y2="275" stroke="#cbd5e1" stroke-width="1"/>
+  
+  <text x="100" y="295" font-family="Arial, sans-serif" font-size="10" fill="#475569">• State logging (checkpoint at intervals)</text>
+  <text x="100" y="315" font-family="Arial, sans-serif" font-size="10" fill="#475569">• State validation (scan for anomalies)</text>
+  <text x="100" y="335" font-family="Arial, sans-serif" font-size="10" fill="#475569">• State expiration (max lifetime, flush)</text>
+  <text x="100" y="355" font-family="Arial, sans-serif" font-size="10" fill="#475569">• State rollback (restore known-good)</text>
+  <text x="100" y="375" font-family="Arial, sans-serif" font-size="10" fill="#475569">• RAG scanning (validate retrieved content)</text>
+  
+  <!-- Longitudinal Judge -->
+  <rect x="420" y="240" width="300" height="160" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="570" y="265" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Longitudinal Judge Mode</text>
+  <line x1="435" y1="275" x2="705" y2="275" stroke="#fcd34d" stroke-width="1"/>
+  
+  <text x="440" y="295" font-family="Arial, sans-serif" font-size="10" fill="#92400e">Evaluates state evolution over time:</text>
+  <text x="440" y="315" font-family="Arial, sans-serif" font-size="10" fill="#92400e">• Drift from baseline</text>
+  <text x="440" y="335" font-family="Arial, sans-serif" font-size="10" fill="#92400e">• Suspicious accumulation patterns</text>
+  <text x="440" y="355" font-family="Arial, sans-serif" font-size="10" fill="#92400e">• Consistency with logged changes</text>
+  <text x="440" y="375" font-family="Arial, sans-serif" font-size="10" fill="#92400e">• Policy adherence over time</text>
+  
+  <!-- Arrow between them -->
+  <line x1="380" y1="320" x2="415" y2="320" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+</svg>

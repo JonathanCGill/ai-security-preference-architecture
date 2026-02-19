@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="880" height="340" fill="#ffffff"/>
+  <text x="440" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Azure Architecture Pattern</text>
+  <text x="440" y="46" text-anchor="middle" font-size="12" fill="#64748b">Azure OpenAI + Content Safety + Functions</text>
+  <rect x="105" y="56" width="110" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.2"/>
+  <text x="160" y="78" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">API Mgmt</text>
+  <line x1="217" y1="74" x2="188" y2="74" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="245" y="56" width="110" height="36" rx="6" fill="#ffffff" stroke="#991b1b" stroke-width="1.2"/>
+  <text x="300" y="78" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Input Guardrails</text>
+  <line x1="357" y1="74" x2="328" y2="74" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="385" y="56" width="110" height="36" rx="6" fill="#ffffff" stroke="#166534" stroke-width="1.2"/>
+  <text x="440" y="78" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Azure OpenAI</text>
+  <line x1="497" y1="74" x2="468" y2="74" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="525" y="56" width="110" height="36" rx="6" fill="#ffffff" stroke="#991b1b" stroke-width="1.2"/>
+  <text x="580" y="78" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Output Guardrails</text>
+  <line x1="637" y1="74" x2="608" y2="74" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="665" y="56" width="110" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.2"/>
+  <text x="720" y="78" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Response</text>
+  <line x1="440" y1="92" x2="440" y2="116" stroke="#334155" stroke-width="1.5"/>
+  <rect x="385" y="121" width="110" height="30" rx="4" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+  <text x="440" y="140" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Log Analytics</text>
+  <line x1="440" y1="151" x2="440" y2="159" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="385" y="159" width="110" height="30" rx="4" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="440" y="178" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Service Bus</text>
+  <line x1="440" y1="189" x2="440" y2="197" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="385" y="197" width="110" height="30" rx="4" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="440" y="216" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Function (Judge)</text>
+  <line x1="440" y1="227" x2="440" y2="235" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="385" y="235" width="110" height="30" rx="4" fill="#ffffff" stroke="#1e40af" stroke-width="1"/>
+  <text x="440" y="254" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Cosmos DB</text>
+  <line x1="440" y1="265" x2="440" y2="273" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="385" y="273" width="110" height="30" rx="4" fill="#ffffff" stroke="#991b1b" stroke-width="1"/>
+  <text x="440" y="292" text-anchor="middle" font-size="9" font-weight="500" fill="#0f172a">Monitor Alert</text>
+  <text x="505" y="140" text-anchor="start" font-size="8" font-weight="400" fill="#94a3b8">Full interaction logging</text>
+  <text x="505" y="178" text-anchor="start" font-size="8" font-weight="400" fill="#94a3b8">N% of interactions</text>
+  <text x="505" y="216" text-anchor="start" font-size="8" font-weight="400" fill="#94a3b8">Different model or external API</text>
+  <text x="505" y="254" text-anchor="start" font-size="8" font-weight="400" fill="#94a3b8">Findings store</text>
+  <text x="505" y="292" text-anchor="start" font-size="8" font-weight="400" fill="#94a3b8">If severity &gt;= High</text>
+  <rect x="30" y="285" width="820" height="40" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="440" y="302" text-anchor="middle" font-size="10" font-weight="400" fill="#64748b">Audit: Immutable Blob Storage (WORM policy) · Log Analytics for query</text>
+</svg>

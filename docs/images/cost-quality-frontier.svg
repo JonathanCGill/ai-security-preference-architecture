@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <style>
+    .title { font: bold 14px Arial, sans-serif; fill: #1e293b; }
+    .axis-label { font: bold 11px Arial, sans-serif; fill: #475569; }
+    .point-label { font: 10px Arial, sans-serif; }
+    .small { font: 9px Arial, sans-serif; fill: #64748b; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" class="title">Cost-Quality Frontier</text>
+  
+  <!-- Axes -->
+  <line x1="70" y1="280" x2="450" y2="280" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="70" y1="280" x2="70" y2="60" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Axis arrows -->
+  <polygon points="450,280 440,275 440,285" fill="#94a3b8"/>
+  <polygon points="70,60 65,70 75,70" fill="#94a3b8"/>
+  
+  <!-- Axis labels -->
+  <text x="260" y="310" text-anchor="middle" class="axis-label">Cost →</text>
+  <text x="30" y="170" text-anchor="middle" class="axis-label" transform="rotate(-90, 30, 170)">Quality →</text>
+  
+  <!-- Grid lines (light) -->
+  <line x1="70" y1="200" x2="450" y2="200" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="70" y1="140" x2="450" y2="140" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="180" y1="60" x2="180" y2="280" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="300" y1="60" x2="300" y2="280" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  
+  <!-- Frontier curve -->
+  <path d="M 100 250 Q 150 220 200 180 Q 280 130 380 100" 
+        stroke="#3b82f6" stroke-width="3" fill="none"/>
+  
+  <!-- Data points -->
+  <!-- Rules only (cheap, low quality) -->
+  <circle cx="100" cy="250" r="10" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+  <text x="100" y="275" text-anchor="middle" class="point-label" fill="#475569">Rules only</text>
+  <text x="100" y="288" text-anchor="middle" class="small">(cheap)</text>
+  
+  <!-- Single standard model -->
+  <circle cx="180" cy="195" r="10" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+  <text x="180" y="220" text-anchor="middle" class="point-label" fill="#b45309">Single standard</text>
+  
+  <!-- Two-tier (recommended) -->
+  <circle cx="270" cy="145" r="14" fill="#22c55e" stroke="#166534" stroke-width="3"/>
+  <text x="270" y="125" text-anchor="middle" class="point-label" font-weight="bold" fill="#166534">Two-tier</text>
+  <text x="270" y="178" text-anchor="middle" class="small" fill="#166534">(recommended)</text>
+  
+  <!-- All reasoning (expensive, high quality) -->
+  <circle cx="400" cy="95" r="10" fill="#ef4444" stroke="#b91c1c" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" class="point-label" fill="#b91c1c">All reasoning</text>
+  <text x="400" y="120" text-anchor="middle" class="small">(expensive)</text>
+  
+  <!-- Shaded region showing efficient frontier -->
+  <path d="M 100 250 Q 150 220 200 180 Q 280 130 380 100 L 450 100 L 450 280 L 100 280 Z" 
+        fill="#dbeafe" fill-opacity="0.3"/>
+  
+  <!-- Legend -->
+  <rect x="320" y="220" width="130" height="55" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="330" y="238" class="small" font-weight="bold" fill="#475569">Efficient frontier</text>
+  <line x1="330" y1="252" x2="360" y2="252" stroke="#3b82f6" stroke-width="3"/>
+  <text x="365" y="256" class="small">Optimal trade-off</text>
+  <rect x="330" y="262" width="15" height="8" fill="#dbeafe" fill-opacity="0.5" stroke="#3b82f6" stroke-width="0.5"/>
+  <text x="350" y="270" class="small">Suboptimal zone</text>
+</svg>

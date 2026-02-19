@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="680" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">Tier Determination</text>
+  <text x="450" y="55" text-anchor="middle" font-size="13" fill="#64748b">Automatic from Intent Declaration — the developer does not choose</text>
+
+  <!-- Start -->
+  <rect x="315" y="78" width="270" height="36" rx="18" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="450" y="101" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Intent Declaration submitted</text>
+  <line x1="450" y1="114" x2="450" y2="145" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Question 1: Critical triggers? -->
+  <polygon points="450,145 590,190 450,235 310,190" fill="#ffffff" stroke="#991b1b" stroke-width="1.5"/>
+  <text x="450" y="184" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Consequential decisions?</text>
+  <text x="450" y="198" text-anchor="middle" font-size="10" fill="#64748b">Credit · medical · legal · safety</text>
+
+  <!-- Yes → Critical -->
+  <line x1="590" y1="190" x2="700" y2="190" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <text x="640" y="182" font-size="10" font-weight="600" fill="#dc2626">Yes</text>
+  <rect x="700" y="168" width="160" height="44" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="780" y="188" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">CRITICAL</text>
+  <text x="780" y="204" text-anchor="middle" font-size="9" fill="#b91c1c">Judge 100% inline + HITL all</text>
+
+  <!-- No → next question -->
+  <line x1="450" y1="235" x2="450" y2="275" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <text x="460" y="260" font-size="10" font-weight="600" fill="#16a34a">No</text>
+
+  <!-- Question 2: High triggers? -->
+  <polygon points="450,275 600,325 450,375 300,325" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="450" y="316" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Any escalation trigger?</text>
+  <text x="450" y="332" text-anchor="middle" font-size="9" fill="#64748b">Customer-facing · PII · regulated</text>
+  <text x="450" y="344" text-anchor="middle" font-size="9" fill="#64748b">agentic · feeds decisions</text>
+
+  <!-- Yes → High -->
+  <line x1="600" y1="325" x2="700" y2="325" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <text x="640" y="317" font-size="10" font-weight="600" fill="#dc2626">Yes</text>
+  <rect x="700" y="303" width="160" height="44" rx="6" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="780" y="323" text-anchor="middle" font-size="14" font-weight="700" fill="#c2410c">HIGH</text>
+  <text x="780" y="339" text-anchor="middle" font-size="9" fill="#ea580c">Judge 20–50% + HITL SLA</text>
+
+  <!-- No → next question -->
+  <line x1="450" y1="375" x2="450" y2="415" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <text x="460" y="400" font-size="10" font-weight="600" fill="#16a34a">No</text>
+
+  <!-- Question 3: Low criteria met? -->
+  <polygon points="450,415 600,460 450,505 300,460" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="450" y="452" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">All Low criteria met?</text>
+  <text x="450" y="468" text-anchor="middle" font-size="9" fill="#64748b">&lt;1K txn · no PII · internal</text>
+  <text x="450" y="480" text-anchor="middle" font-size="9" fill="#64748b">informational · non-agentic</text>
+
+  <!-- Yes → Low -->
+  <line x1="300" y1="460" x2="200" y2="460" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <text x="255" y="452" font-size="10" font-weight="600" fill="#16a34a">Yes</text>
+  <rect x="40" y="438" width="160" height="44" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+  <text x="120" y="458" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">LOW</text>
+  <text x="120" y="474" text-anchor="middle" font-size="9" fill="#15803d">Guardrails + logging only</text>
+
+  <!-- No → Medium -->
+  <line x1="450" y1="505" x2="450" y2="540" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <text x="460" y="528" font-size="10" font-weight="600" fill="#dc2626">No</text>
+  <rect x="370" y="540" width="160" height="44" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="450" y="560" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">MEDIUM</text>
+  <text x="450" y="576" text-anchor="middle" font-size="9" fill="#2563eb">Judge 5–10% + weekly review</text>
+
+  <!-- ==================== CONTROL SUMMARY ==================== -->
+  <rect x="40" y="610" width="820" height="40" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="450" y="628" text-anchor="middle" font-size="11" fill="#475569">Guardrails are on at every tier. The Judge and human oversight scale with risk.</text>
+  <text x="450" y="643" text-anchor="middle" font-size="11" fill="#475569">If the tier is wrong, update the declaration or request an exception — don't work around the controls.</text>
+
+  <!-- Footer -->
+  <text x="450" y="673" text-anchor="middle" font-size="11" fill="#94a3b8">AI Security Reference Architecture — Tier Determination</text>
+
+</svg>

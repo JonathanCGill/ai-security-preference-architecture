@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="620" viewBox="0 0 880 620" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5d6d7e"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#27ae60"/>
+    </marker>
+  </defs>
+
+  <rect width="880" height="620" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="440" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50">Secure AI Fast Lane — Qualification Gate</text>
+  <text x="440" y="50" text-anchor="middle" font-size="11" fill="#7f8c8d">If all gates pass, deploy with minimal controls. Security has already said yes.</text>
+
+  <!-- START -->
+  <rect x="340" y="68" width="200" height="36" rx="18" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="440" y="91" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">New AI Deployment</text>
+
+  <line x1="440" y1="104" x2="440" y2="130" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Gate 1 -->
+  <polygon points="440,130 560,170 440,210 320,170" fill="#fff" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="165" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">Internal users</text>
+  <text x="440" y="178" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">only?</text>
+
+  <!-- Gate 1: No -->
+  <line x1="560" y1="170" x2="720" y2="170" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="630" y="163" font-size="9" font-weight="bold" fill="#e74c3c">No</text>
+  <rect x="723" y="152" width="140" height="36" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="793" y="175" text-anchor="middle" font-size="9" font-weight="bold" fill="#922b21">→ Standard Tier 2/3</text>
+
+  <!-- Gate 1: Yes -->
+  <line x1="440" y1="210" x2="440" y2="240" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <text x="452" y="230" font-size="9" font-weight="bold" fill="#27ae60">Yes</text>
+
+  <!-- Gate 2 -->
+  <polygon points="440,240 580,280 440,320 300,280" fill="#fff" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="272" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">Read-only?</text>
+  <text x="440" y="285" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">No write to external</text>
+  <text x="440" y="298" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">systems?</text>
+
+  <!-- Gate 2: No -->
+  <line x1="580" y1="280" x2="720" y2="280" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="640" y="273" font-size="9" font-weight="bold" fill="#e74c3c">No</text>
+  <rect x="723" y="262" width="140" height="36" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="793" y="285" text-anchor="middle" font-size="9" font-weight="bold" fill="#935116">→ Standard Tier 1+</text>
+
+  <!-- Gate 2: Yes -->
+  <line x1="440" y1="320" x2="440" y2="348" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <text x="452" y="340" font-size="9" font-weight="bold" fill="#27ae60">Yes</text>
+
+  <!-- Gate 3 -->
+  <polygon points="440,348 580,388 440,428 300,388" fill="#fff" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="381" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">No regulated data?</text>
+  <text x="440" y="394" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">(PII, financial,</text>
+  <text x="440" y="407" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">health, legal)</text>
+
+  <!-- Gate 3: No -->
+  <line x1="580" y1="388" x2="720" y2="388" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="640" y="381" font-size="9" font-weight="bold" fill="#e74c3c">No</text>
+  <rect x="723" y="370" width="140" height="36" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="793" y="393" text-anchor="middle" font-size="9" font-weight="bold" fill="#935116">→ Standard Tier 1</text>
+
+  <!-- Gate 3: Yes (no regulated data = yes this gate passes) -->
+  <line x1="440" y1="428" x2="440" y2="456" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <text x="452" y="448" font-size="9" font-weight="bold" fill="#27ae60">Yes</text>
+
+  <!-- Gate 4 -->
+  <polygon points="440,456 580,496 440,536 300,496" fill="#fff" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="489" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">Human always</text>
+  <text x="440" y="502" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">reviews before</text>
+  <text x="440" y="515" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a5276">acting on output?</text>
+
+  <!-- Gate 4: No -->
+  <line x1="580" y1="496" x2="720" y2="496" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="640" y="489" font-size="9" font-weight="bold" fill="#e74c3c">No</text>
+  <rect x="723" y="478" width="140" height="36" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="793" y="501" text-anchor="middle" font-size="9" font-weight="bold" fill="#935116">→ Standard Tier 1</text>
+
+  <!-- Gate 4: Yes -->
+  <line x1="440" y1="536" x2="440" y2="560" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <text x="452" y="552" font-size="9" font-weight="bold" fill="#27ae60">Yes</text>
+
+  <!-- FAST LANE QUALIFIED -->
+  <rect x="300" y="560" width="280" height="44" rx="22" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="440" y="579" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">FAST LANE QUALIFIED</text>
+  <text x="440" y="595" text-anchor="middle" font-size="10" fill="#d5f5e3">Deploy with minimal controls</text>
+
+  <!-- Left annotation -->
+  <rect x="18" y="130" width="240" height="160" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1" filter="url(#shadow)"/>
+  <text x="138" y="152" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e8449">Fast Lane Controls</text>
+  <line x1="30" y1="160" x2="246" y2="160" stroke="#a9dfbf" stroke-width="1"/>
+  <text x="30" y="178" font-size="9" fill="#2c3e50">✓ Basic guardrails (content filter)</text>
+  <text x="30" y="196" font-size="9" fill="#2c3e50">✓ Usage logging (not real-time eval)</text>
+  <text x="30" y="214" font-size="9" fill="#2c3e50">✓ Feature flag to disable</text>
+  <text x="30" y="232" font-size="9" fill="#2c3e50">✗ No Judge required</text>
+  <text x="30" y="250" font-size="9" fill="#2c3e50">✗ No dedicated reviewers</text>
+  <text x="30" y="268" font-size="9" fill="#2c3e50">✗ No resilience document</text>
+  <text x="30" y="283" font-size="9" fill="#7f8c8d">PACE: fail-open, annual test</text>
+
+  <!-- Left annotation: what you skip -->
+  <rect x="18" y="310" width="240" height="100" rx="6" fill="#fff" stroke="#bdc3c7" stroke-width="1" filter="url(#shadow)"/>
+  <text x="138" y="332" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">What You Skip</text>
+  <line x1="30" y1="340" x2="246" y2="340" stroke="#d5dbdb" stroke-width="1"/>
+  <text x="30" y="358" font-size="9" fill="#7f8c8d">LLM-as-Judge evaluation layer</text>
+  <text x="30" y="374" font-size="9" fill="#7f8c8d">Formal PACE resilience document</text>
+  <text x="30" y="390" font-size="9" fill="#7f8c8d">Quarterly testing cadence</text>
+  <text x="30" y="406" font-size="9" fill="#7f8c8d">Dedicated human review queue</text>
+
+  <text x="440" y="615" text-anchor="middle" font-size="9" fill="#95a5a6">AI Runtime Behaviour Security — Fast Lane Qualification © Jonathan Gill 2025</text>
+</svg>

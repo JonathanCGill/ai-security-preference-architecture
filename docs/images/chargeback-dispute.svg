@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" viewBox="0 0 700 260" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="700" height="260" fill="#ffffff"/>
+  <text x="350" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Chargeback Dispute Process</text>
+  <text x="350" y="46" text-anchor="middle" font-size="12" fill="#64748b">Escalation path for disputed chargebacks</text>
+  <rect x="140" y="55" width="420" height="30" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.2"/>
+  <text x="350" y="75" text-anchor="middle" font-size="10" font-weight="500" fill="#0f172a">System owner disputes chargeback</text>
+  <line x1="350" y1="85" x2="350" y2="93" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="140" y="93" width="420" height="30" rx="6" fill="#ffffff" stroke="#854d0e" stroke-width="1.2"/>
+  <text x="350" y="113" text-anchor="middle" font-size="10" font-weight="500" fill="#0f172a">AI governance lead reviews (5 business days)</text>
+  <line x1="350" y1="123" x2="350" y2="131" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="140" y="131" width="420" height="30" rx="6" fill="#ffffff" stroke="#166534" stroke-width="1.2"/>
+  <text x="350" y="151" text-anchor="middle" font-size="10" font-weight="500" fill="#0f172a">Resolved → Adjust or uphold</text>
+  <line x1="350" y1="161" x2="350" y2="169" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="140" y="169" width="420" height="30" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.2"/>
+  <text x="350" y="189" text-anchor="middle" font-size="10" font-weight="500" fill="#0f172a">Unresolved → Escalate to CISO / CRO</text>
+  <line x1="350" y1="199" x2="350" y2="207" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="140" y="207" width="420" height="30" rx="6" fill="#ffffff" stroke="#991b1b" stroke-width="1.2"/>
+  <text x="350" y="227" text-anchor="middle" font-size="10" font-weight="500" fill="#0f172a">Still unresolved → AI risk committee</text>
+</svg>

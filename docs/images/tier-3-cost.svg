@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="380" viewBox="0 0 800 380" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="380" fill="url(#bg)"/>
+
+  <text x="400" y="28" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" letter-spacing="1">TIER 3 — COST INDICATORS (ANNUAL)</text>
+  <text x="400" y="44" text-anchor="middle" fill="#c77dff" font-size="9">SKILLED LABOUR + SOPHISTICATED INFRASTRUCTURE · HIGH-VALUE USE CASES ONLY</text>
+
+  <rect x="30" y="58" width="740" height="24" rx="4" fill="#151a30"/>
+  <text x="50" y="74" fill="#fff" font-size="9" font-weight="700">CATEGORY</text>
+  <text x="380" y="74" fill="#fff" font-size="9" font-weight="700">ESTIMATE</text>
+  <text x="540" y="74" fill="#fff" font-size="9" font-weight="700">NOTES</text>
+
+  <rect x="30" y="84" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="100" fill="#8899aa" font-size="9">AI Security Architect (0.5–1 FTE)</text>
+  <text x="380" y="100" fill="#92fe9d" font-size="9" font-weight="600">$100K–$200K</text>
+  <text x="540" y="100" fill="#667" font-size="9">Senior role; owns control architecture</text>
+
+  <rect x="30" y="108" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="124" fill="#8899aa" font-size="9">AI Security Engineer (1 FTE)</text>
+  <text x="380" y="124" fill="#92fe9d" font-size="9" font-weight="600">$120K–$200K</text>
+  <text x="540" y="124" fill="#667" font-size="9">Dedicated to agent system</text>
+
+  <rect x="30" y="132" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="148" fill="#8899aa" font-size="9">Platform Engineer (0.5–1 FTE)</text>
+  <text x="380" y="148" fill="#92fe9d" font-size="9" font-weight="600">$60K–$120K</text>
+  <text x="540" y="148" fill="#667" font-size="9">Infrastructure-level control management</text>
+
+  <rect x="30" y="156" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="172" fill="#8899aa" font-size="9">Red Team (0.25 FTE or quarterly contract)</text>
+  <text x="380" y="172" fill="#92fe9d" font-size="9" font-weight="600">$40K–$100K</text>
+  <text x="540" y="172" fill="#667" font-size="9">Specialised AI red team capability</text>
+
+  <rect x="30" y="180" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="196" fill="#8899aa" font-size="9">Governance Reviewer (0.25 FTE)</text>
+  <text x="380" y="196" fill="#92fe9d" font-size="9" font-weight="600">$30K–$60K</text>
+  <text x="540" y="196" fill="#667" font-size="9">Portion of existing governance role</text>
+
+  <rect x="30" y="204" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="220" fill="#8899aa" font-size="9">LLM-as-Judge + Cross-validation Models</text>
+  <text x="380" y="220" fill="#92fe9d" font-size="9" font-weight="600">$30K–$150K</text>
+  <text x="540" y="220" fill="#667" font-size="9">Two separate model costs at Tier 3</text>
+
+  <rect x="30" y="228" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="244" fill="#8899aa" font-size="9">Task Agent Model API Costs</text>
+  <text x="380" y="244" fill="#92fe9d" font-size="9" font-weight="600">$50K–$500K+</text>
+  <text x="540" y="244" fill="#667" font-size="9">High volume at Tier 3</text>
+
+  <rect x="30" y="252" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="268" fill="#8899aa" font-size="9">Infrastructure (encrypted bus, NHI, sandboxes, kill switch)</text>
+  <text x="380" y="268" fill="#92fe9d" font-size="9" font-weight="600">$80K–$200K</text>
+  <text x="540" y="268" fill="#667" font-size="9">Significant investment</text>
+
+  <rect x="30" y="276" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="292" fill="#8899aa" font-size="9">Adversarial Testing Programme</text>
+  <text x="380" y="292" fill="#92fe9d" font-size="9" font-weight="600">$20K–$60K</text>
+  <text x="540" y="292" fill="#667" font-size="9">Shadow environment + automated probes</text>
+
+  <!-- Total -->
+  <rect x="30" y="306" width="740" height="28" rx="4" fill="#0d1528" stroke="#c77dff" stroke-width="1"/>
+  <text x="50" y="325" fill="#c77dff" font-size="10" font-weight="700">TOTAL (single agent system)</text>
+  <text x="380" y="325" fill="#c77dff" font-size="10" font-weight="700">$530K–$1.59M</text>
+  <text x="540" y="325" fill="#8899aa" font-size="9">Justified for high-value, high-volume only</text>
+
+  <rect x="30" y="345" width="740" height="28" rx="4" fill="#0a0e1a" stroke="#334" stroke-width="0.5"/>
+  <text x="400" y="360" text-anchor="middle" fill="#667" font-size="8">Cost-effective when autonomous 24/7 operation value exceeds Tier 2 supervision costs. Example: fraud detection at 100K txn/hr</text>
+  <text x="400" y="370" text-anchor="middle" fill="#667" font-size="8">requiring 5 Tier 2 supervisors 24/7 ($1.5M+) vs. Tier 3 automated controls. Not justified for low-volume use cases.</text>
+</svg>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <style>
+    .title { font: bold 14px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .step { font: 11px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .timing { font: bold 11px Inter, system-ui, sans-serif; fill: #64748b; }
+    .total { font: bold 12px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .note { font: 10px Inter, system-ui, sans-serif; fill: #64748b; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" class="title">Message Latency Budget (Tier 4)</text>
+  
+  <!-- Timeline bar -->
+  <rect x="50" y="60" width="500" height="20" rx="4" fill="#e2e8f0"/>
+  
+  <!-- Segments -->
+  <rect x="50" y="60" width="1" height="20" fill="#22c55e"/>
+  <text x="50" y="55" text-anchor="middle" class="timing">0ms</text>
+  
+  <!-- Rate limit: 1ms -->
+  <rect x="51" y="60" width="4" height="20" fill="#22c55e"/>
+  
+  <!-- Schema: 5ms -->
+  <rect x="55" y="60" width="20" height="20" fill="#16a34a"/>
+  
+  <!-- Input guardrails: 50ms -->
+  <rect x="75" y="60" width="45" height="20" fill="#15803d"/>
+  
+  <!-- Retrieval: 200ms -->
+  <rect x="120" y="60" width="90" height="20" fill="#3b82f6"/>
+  
+  <!-- Generation: 800ms -->
+  <rect x="210" y="60" width="250" height="20" fill="#8b5cf6"/>
+  
+  <!-- Output guardrails: 50ms -->
+  <rect x="460" y="60" width="35" height="20" fill="#15803d"/>
+  
+  <!-- DLP: 10ms -->
+  <rect x="495" y="60" width="10" height="20" fill="#22c55e"/>
+  
+  <!-- Decision: 5ms -->
+  <rect x="505" y="60" width="5" height="20" fill="#22c55e"/>
+  
+  <!-- End marker -->
+  <rect x="510" y="60" width="40" height="20" fill="#f59e0b"/>
+  <text x="550" y="55" text-anchor="middle" class="timing">~1,120ms</text>
+  
+  <!-- Legend entries with lines -->
+  <line x1="51" y1="80" x2="51" y2="100" stroke="#64748b" stroke-width="1"/>
+  <text x="55" y="115" class="step">Rate Limit</text>
+  <text x="55" y="128" class="timing">+1ms</text>
+  
+  <line x1="65" y1="80" x2="65" y2="145" stroke="#64748b" stroke-width="1"/>
+  <text x="69" y="160" class="step">Schema</text>
+  <text x="69" y="173" class="timing">+5ms</text>
+  
+  <line x1="110" y1="80" x2="110" y2="190" stroke="#64748b" stroke-width="1"/>
+  <text x="114" y="205" class="step">Input Guardrails</text>
+  <text x="114" y="218" class="timing">+50ms</text>
+  
+  <line x1="165" y1="80" x2="165" y2="235" stroke="#64748b" stroke-width="1"/>
+  <text x="169" y="250" class="step">Retrieval (RAG)</text>
+  <text x="169" y="263" class="timing">+200ms</text>
+  
+  <line x1="335" y1="80" x2="335" y2="280" stroke="#64748b" stroke-width="1"/>
+  <text x="339" y="295" class="step">Generation (LLM)</text>
+  <text x="339" y="308" class="timing">+800ms</text>
+  
+  <line x1="478" y1="80" x2="478" y2="235" stroke="#64748b" stroke-width="1"/>
+  <text x="430" y="250" class="step">Output Guardrails</text>
+  <text x="430" y="263" class="timing">+50ms</text>
+  
+  <line x1="500" y1="80" x2="500" y2="190" stroke="#64748b" stroke-width="1"/>
+  <text x="485" y="205" class="step">DLP</text>
+  <text x="485" y="218" class="timing">+10ms</text>
+  
+  <line x1="508" y1="80" x2="508" y2="145" stroke="#64748b" stroke-width="1"/>
+  <text x="495" y="160" class="step">Decision</text>
+  <text x="495" y="173" class="timing">+5ms</text>
+  
+  <!-- Summary box -->
+  <rect x="50" y="330" width="500" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <text x="70" y="352" class="total">Auto-send path: ~1,120ms total</text>
+  <text x="70" y="368" class="note">Draft-only adds +5ms to queue</text>
+  <text x="70" y="382" class="note">Human review SLA: 15 min standard, 5 min urgent</text>
+  
+  <!-- Color key -->
+  <rect x="350" y="345" width="12" height="12" fill="#22c55e"/>
+  <text x="367" y="355" class="note">Validation</text>
+  
+  <rect x="350" y="362" width="12" height="12" fill="#3b82f6"/>
+  <text x="367" y="372" class="note">Retrieval</text>
+  
+  <rect x="430" y="345" width="12" height="12" fill="#8b5cf6"/>
+  <text x="447" y="355" class="note">Generation</text>
+  
+  <rect x="430" y="362" width="12" height="12" fill="#f59e0b"/>
+  <text x="447" y="372" class="note">Decision</text>
+</svg>

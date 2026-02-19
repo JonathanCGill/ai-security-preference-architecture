@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="428" viewBox="0 0 760 428" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="760" height="428" fill="#ffffff"/>
+  <text x="380" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">RAG Chatbot — Data Flow</text>
+  <text x="380" y="46" text-anchor="middle" font-size="12" fill="#64748b">High tier · Customer-facing · Customer PII</text>
+  <rect x="326.0" y="50" width="108.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="64" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Rate Limiter</text>
+  <line x1="380" y1="72" x2="380" y2="76" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="252.0" y="76" width="257.5" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="90" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Input Validation (length, encoding)</text>
+  <line x1="380" y1="98" x2="380" y2="102" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="213.0" y="102" width="335.5" height="22" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="380" y="116" text-anchor="middle" font-size="9.5" font-weight="500" fill="#991b1b">Prompt Injection Classifier → BLOCK if detected</text>
+  <line x1="380" y1="124" x2="380" y2="128" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="248.0" y="128" width="264.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="142" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">RAG Retrieval (query knowledge base)</text>
+  <line x1="380" y1="150" x2="380" y2="154" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="190.0" y="154" width="381.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="168" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Model Inference (system prompt + context + user query)</text>
+  <line x1="380" y1="176" x2="380" y2="180" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="229.0" y="180" width="303.0" height="22" rx="4" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+  <text x="380" y="194" text-anchor="middle" font-size="9.5" font-weight="500" fill="#854d0e">PII Output Filter → REDACT if PII detected</text>
+  <line x1="380" y1="202" x2="380" y2="206" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="300.0" y="206" width="160.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="220" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Topic / Scope Filter</text>
+  <line x1="380" y1="228" x2="380" y2="232" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="248.0" y="232" width="264.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="246" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Disclosure Injection (if applicable)</text>
+  <line x1="380" y1="254" x2="380" y2="258" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="268.0" y="258" width="225.0" height="22" rx="4" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="380" y="272" text-anchor="middle" font-size="9.5" font-weight="500" fill="#166534">Response delivered to customer</text>
+  <line x1="380" y1="280" x2="380" y2="284" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="317.0" y="284" width="127.5" height="22" rx="4" fill="#fff7ed" stroke="#fdba74" stroke-width="1"/>
+  <text x="380" y="298" text-anchor="middle" font-size="9.5" font-weight="500" fill="#b45309">Log interaction</text>
+  <line x1="380" y1="306" x2="380" y2="310" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="235.0" y="310" width="290.0" height="22" rx="4" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="380" y="324" text-anchor="middle" font-size="9.5" font-weight="500" fill="#7c3aed">25% sampled for Judge evaluation (async)</text>
+  <line x1="380" y1="332" x2="380" y2="336" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="141.0" y="336" width="478.5" height="22" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="380" y="350" text-anchor="middle" font-size="9.5" font-weight="500" fill="#1e40af">High/Critical findings → Escalate to human reviewer → IR if warranted</text>
+  <line x1="380" y1="358" x2="380" y2="362" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="213.0" y="362" width="335.5" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="376" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Medium/Low findings → Queue for periodic review</text>
+</svg>

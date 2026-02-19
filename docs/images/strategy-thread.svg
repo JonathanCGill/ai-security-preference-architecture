@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680">
+  <defs>
+    <marker id="tFwd" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+    <marker id="tRet" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="680" fill="#f8fafc"/>
+
+  <text x="450" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">The Thread</text>
+  <text x="450" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Strategy &#x2192; Definition &#x2192; Classification &#x2192; Implementation &#x2192; Monitoring &#x2192; Return Loop</text>
+
+  <!-- PHASE 1: Strategy -->
+  <rect x="40" y="90" width="160" height="120" rx="12" fill="#10b981" opacity="0.9"/>
+  <text x="120" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Phase 1</text>
+  <text x="120" y="138" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">STRATEGY</text>
+  <line x1="60" y1="148" x2="180" y2="148" stroke="white" stroke-width="0.5" opacity="0.5"/>
+  <text x="120" y="168" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Business Alignment</text>
+  <text x="120" y="183" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Use Case Filter</text>
+  <text x="120" y="198" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Is AI right?</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="200" y1="150" x2="250" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#tFwd)"/>
+
+  <!-- PHASE 2: Definition -->
+  <rect x="260" y="90" width="160" height="120" rx="12" fill="#0ea5e9" opacity="0.9"/>
+  <text x="340" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Phase 2</text>
+  <text x="340" y="138" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">DEFINITION</text>
+  <line x1="280" y1="148" x2="400" y2="148" stroke="white" stroke-width="0.5" opacity="0.5"/>
+  <text x="340" y="168" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Ten Questions</text>
+  <text x="340" y="183" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Data Reality</text>
+  <text x="340" y="198" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Human Factors</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="420" y1="150" x2="470" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#tFwd)"/>
+
+  <!-- PHASE 3: Classification -->
+  <rect x="480" y="90" width="160" height="120" rx="12" fill="#f59e0b" opacity="0.9"/>
+  <text x="560" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Phase 3</text>
+  <text x="560" y="138" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">CLASSIFICATION</text>
+  <line x1="500" y1="148" x2="620" y2="148" stroke="#1e293b" stroke-width="0.5" opacity="0.3"/>
+  <text x="560" y="168" font-family="Arial, sans-serif" font-size="10" fill="#1e293b" text-anchor="middle">Risk Tiers</text>
+  <text x="560" y="183" font-family="Arial, sans-serif" font-size="10" fill="#1e293b" text-anchor="middle">Control Design</text>
+  <text x="560" y="198" font-family="Arial, sans-serif" font-size="10" fill="#1e293b" text-anchor="middle">PACE Resilience</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="640" y1="150" x2="690" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#tFwd)"/>
+
+  <!-- PHASE 4: Implementation -->
+  <rect x="700" y="90" width="160" height="120" rx="12" fill="#6366f1" opacity="0.9"/>
+  <text x="780" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Phase 4</text>
+  <text x="780" y="138" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">IMPLEMENTATION</text>
+  <line x1="720" y1="148" x2="840" y2="148" stroke="white" stroke-width="0.5" opacity="0.5"/>
+  <text x="780" y="168" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Build + Controls</text>
+  <text x="780" y="183" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Test + Deploy</text>
+  <text x="780" y="198" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Establish Baselines</text>
+
+  <!-- Arrow 4→5 (down) -->
+  <line x1="780" y1="210" x2="780" y2="268" stroke="#475569" stroke-width="2" marker-end="url(#tFwd)"/>
+
+  <!-- PHASE 5: Monitoring -->
+  <rect x="530" y="275" width="410" height="100" rx="12" fill="#7c3aed" opacity="0.9"/>
+  <text x="735" y="303" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Phase 5: CONTINUOUS MONITORING</text>
+  <line x1="550" y1="313" x2="920" y2="313" stroke="white" stroke-width="0.5" opacity="0.3"/>
+  <text x="620" y="333" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Quality Metrics</text>
+  <text x="620" y="350" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" opacity="0.8">Hallucination, Judge findings</text>
+  <text x="740" y="333" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Security Metrics</text>
+  <text x="740" y="350" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" opacity="0.8">Blocks, attacks, violations</text>
+  <text x="860" y="333" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Assurance Metrics</text>
+  <text x="860" y="350" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" opacity="0.8">HITL SLA, PACE readiness</text>
+
+  <!-- Return Loop Banner -->
+  <rect x="40" y="420" width="820" height="40" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="450" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">THE RETURN LOOP &#x2014; Monitoring Signals Trigger Reassessment</text>
+
+  <!-- Triage box -->
+  <rect x="310" y="490" width="280" height="50" rx="8" fill="#1e293b"/>
+  <text x="450" y="512" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">TRIAGE: Operational or Strategic?</text>
+  <text x="450" y="528" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Operational &#x2192; resolve in Phase 5</text>
+
+  <!-- Arrow from monitoring to triage -->
+  <line x1="530" y1="375" x2="450" y2="418" stroke="#ef4444" stroke-width="2" stroke-dasharray="6" marker-end="url(#tRet)"/>
+
+  <!-- Arrow from triage down to return paths -->
+  <line x1="450" y1="540" x2="450" y2="570" stroke="#ef4444" stroke-width="2" marker-end="url(#tRet)"/>
+  <text x="462" y="562" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ef4444">Strategic</text>
+
+  <!-- Return path boxes -->
+  <rect x="40" y="580" width="180" height="60" rx="8" fill="white" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="130" y="603" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">Scope Changed</text>
+  <text x="130" y="620" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">&#x2192; Return to Phase 2</text>
+  <text x="130" y="633" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Update ten questions</text>
+
+  <rect x="250" y="580" width="180" height="60" rx="8" fill="white" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="340" y="603" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">Risk Profile Changed</text>
+  <text x="340" y="620" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">&#x2192; Return to Phase 3</text>
+  <text x="340" y="633" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Rescore dimensions</text>
+
+  <rect x="460" y="580" width="180" height="60" rx="8" fill="white" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="550" y="603" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">Controls Inadequate</text>
+  <text x="550" y="620" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">&#x2192; Return to Phase 3</text>
+  <text x="550" y="633" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Redesign controls</text>
+
+  <rect x="670" y="580" width="180" height="60" rx="8" fill="white" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="760" y="603" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">Technology Mismatch</text>
+  <text x="760" y="620" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">&#x2192; Return to Phase 1</text>
+  <text x="760" y="633" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Rerun the filter</text>
+
+  <!-- Connector lines from triage to boxes -->
+  <line x1="380" y1="570" x2="130" y2="580" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="420" y1="570" x2="340" y2="580" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="480" y1="570" x2="550" y2="580" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="520" y1="570" x2="760" y2="580" stroke="#ef4444" stroke-width="1.5"/>
+
+  <!-- Return arrows from boxes back to phases -->
+  <path d="M 130 580 C 130 520, 40 400, 40 310 C 40 260, 120 240, 120 210" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="5" marker-end="url(#tRet)"/>
+  <path d="M 340 580 C 340 530, 240 450, 240 350 C 240 280, 340 240, 340 210" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="5" marker-end="url(#tRet)"/>
+  <path d="M 550 580 C 550 530, 500 450, 500 350 C 500 280, 560 240, 560 210" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="5" marker-end="url(#tRet)"/>
+  <path d="M 760 580 C 760 560, 40 530, 40 400 C 40 300, 80 240, 95 210" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="5" marker-end="url(#tRet)"/>
+
+  <!-- Legend -->
+  <rect x="40" y="660" width="820" height="4" rx="2" fill="#e2e8f0"/>
+  <line x1="60" y1="660" x2="120" y2="660" stroke="#475569" stroke-width="2" marker-end="url(#tFwd)"/>
+  <text x="130" y="663" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Forward flow</text>
+  <line x1="240" y1="660" x2="300" y2="660" stroke="#ef4444" stroke-width="2" stroke-dasharray="5" marker-end="url(#tRet)"/>
+  <text x="310" y="663" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Return loop</text>
+</svg>

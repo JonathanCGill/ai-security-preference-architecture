@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d97706"/>
+    </marker>
+  </defs>
+  
+  <style>
+    .title { font: bold 16px system-ui, sans-serif; fill: #1e293b; }
+    .label { font: 600 13px system-ui, sans-serif; fill: #1e293b; }
+    .sublabel { font: 11px system-ui, sans-serif; fill: #64748b; }
+    .box { stroke-width: 2; }
+  </style>
+  
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" class="title">AI Security Control Pattern</text>
+  
+  <!-- Main flow boxes -->
+  <!-- User Input -->
+  <rect x="30" y="70" width="100" height="50" rx="6" fill="#e0f2fe" stroke="#0284c7" class="box"/>
+  <text x="80" y="100" text-anchor="middle" class="label">User Input</text>
+  
+  <!-- Input Guardrails -->
+  <rect x="180" y="70" width="120" height="50" rx="6" fill="#fef3c7" stroke="#d97706" class="box"/>
+  <text x="240" y="95" text-anchor="middle" class="label">Input</text>
+  <text x="240" y="110" text-anchor="middle" class="label">Guardrails</text>
+  
+  <!-- LLM -->
+  <rect x="350" y="70" width="100" height="50" rx="6" fill="#ddd6fe" stroke="#7c3aed" class="box"/>
+  <text x="400" y="100" text-anchor="middle" class="label">LLM</text>
+  
+  <!-- Output Guardrails -->
+  <rect x="500" y="70" width="120" height="50" rx="6" fill="#fef3c7" stroke="#d97706" class="box"/>
+  <text x="560" y="95" text-anchor="middle" class="label">Output</text>
+  <text x="560" y="110" text-anchor="middle" class="label">Guardrails</text>
+  
+  <!-- Response -->
+  <rect x="670" y="70" width="100" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" class="box"/>
+  <text x="720" y="100" text-anchor="middle" class="label">Response</text>
+  
+  <!-- Main flow arrows -->
+  <line x1="130" y1="95" x2="175" y2="95" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="300" y1="95" x2="345" y2="95" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="95" x2="495" y2="95" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="620" y1="95" x2="665" y2="95" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Block box (under Input Guardrails) -->
+  <rect x="200" y="170" width="80" height="40" rx="6" fill="#fee2e2" stroke="#dc2626" class="box"/>
+  <text x="240" y="195" text-anchor="middle" class="label">Block</text>
+  
+  <!-- Arrow down to Block -->
+  <line x1="240" y1="120" x2="240" y2="165" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+  
+  <!-- Judge Queue box (under Output Guardrails) -->
+  <rect x="510" y="170" width="100" height="40" rx="6" fill="#fef3c7" stroke="#d97706" class="box"/>
+  <text x="560" y="195" text-anchor="middle" class="label">Judge Queue</text>
+  
+  <!-- Arrow down to Judge Queue -->
+  <line x1="560" y1="120" x2="560" y2="165" stroke="#d97706" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  
+  <!-- Human Review box -->
+  <rect x="510" y="250" width="100" height="40" rx="6" fill="#e0f2fe" stroke="#0284c7" class="box"/>
+  <text x="560" y="275" text-anchor="middle" class="label">Human Review</text>
+  
+  <!-- Arrow down to Human Review -->
+  <line x1="560" y1="210" x2="560" y2="245" stroke="#d97706" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  
+  <!-- Legend -->
+  <rect x="30" y="260" width="12" height="12" fill="#475569"/>
+  <text x="48" y="271" class="sublabel">Normal flow</text>
+  
+  <rect x="120" y="260" width="12" height="12" fill="#dc2626"/>
+  <text x="138" y="271" class="sublabel">Blocked</text>
+  
+  <rect x="190" y="260" width="12" height="12" fill="#d97706"/>
+  <text x="208" y="271" class="sublabel">Review path</text>
+</svg>

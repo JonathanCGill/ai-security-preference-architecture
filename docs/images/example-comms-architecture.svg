@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" width="1100" height="700">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowhead-amber" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  
+  <style>
+    .title { font: bold 18px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .subtitle { font: 12px Inter, system-ui, sans-serif; fill: #64748b; }
+    .band-title { font: bold 14px Inter, system-ui, sans-serif; fill: white; }
+    .band-timing { font: 11px Inter, system-ui, sans-serif; fill: white; opacity: 0.9; }
+    .component { font: bold 11px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .component-detail { font: 10px Inter, system-ui, sans-serif; fill: #64748b; }
+    .label { font: 10px Inter, system-ui, sans-serif; fill: #64748b; }
+    .decision { font: bold 10px Inter, system-ui, sans-serif; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="1100" height="700" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="550" y="35" text-anchor="middle" class="title">High-Volume Customer Communications: Three Time Bands</text>
+  <text x="550" y="55" text-anchor="middle" class="subtitle">Control timing matched to reversibility windows</text>
+  
+  <!-- =========================================== -->
+  <!-- BAND A: INLINE (Green) -->
+  <!-- =========================================== -->
+  <rect x="30" y="80" width="1040" height="180" rx="8" fill="#22c55e" opacity="0.1"/>
+  <rect x="30" y="80" width="180" height="40" rx="8" fill="#22c55e"/>
+  <text x="120" y="105" text-anchor="middle" class="band-title">BAND A: INLINE</text>
+  <text x="120" y="118" text-anchor="middle" class="band-timing">~100ms budget</text>
+  
+  <!-- Inline flow -->
+  <rect x="60" y="140" width="100" height="50" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="110" y="162" text-anchor="middle" class="component">Request</text>
+  <text x="110" y="175" text-anchor="middle" class="component-detail">Customer msg</text>
+  
+  <line x1="160" y1="165" x2="190" y2="165" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <rect x="200" y="140" width="100" height="50" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="250" y="162" text-anchor="middle" class="component">Rate Limit</text>
+  <text x="250" y="175" text-anchor="middle" class="component-detail">~1ms</text>
+  
+  <line x1="300" y1="165" x2="330" y2="165" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <rect x="340" y="140" width="100" height="50" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="390" y="162" text-anchor="middle" class="component">Guardrails</text>
+  <text x="390" y="175" text-anchor="middle" class="component-detail">~50ms</text>
+  
+  <line x1="440" y1="165" x2="470" y2="165" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <rect x="480" y="140" width="100" height="50" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="530" y="162" text-anchor="middle" class="component">Generate</text>
+  <text x="530" y="175" text-anchor="middle" class="component-detail">~800ms</text>
+  
+  <line x1="580" y1="165" x2="610" y2="165" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <rect x="620" y="140" width="100" height="50" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="670" y="162" text-anchor="middle" class="component">Output Check</text>
+  <text x="670" y="175" text-anchor="middle" class="component-detail">~50ms</text>
+  
+  <line x1="720" y1="165" x2="750" y2="165" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- Decision diamond -->
+  <polygon points="800,165 840,140 880,165 840,190" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="840" y="162" text-anchor="middle" class="component">Auto</text>
+  <text x="840" y="174" text-anchor="middle" class="component">Send?</text>
+  
+  <!-- Yes path -->
+  <line x1="880" y1="165" x2="920" y2="165" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  <text x="900" y="158" text-anchor="middle" class="label">YES</text>
+  
+  <rect x="930" y="140" width="100" height="50" rx="6" fill="#22c55e" stroke="#22c55e" stroke-width="2"/>
+  <text x="980" y="162" text-anchor="middle" class="band-title" style="font-size: 11px;">SEND</text>
+  <text x="980" y="175" text-anchor="middle" class="band-timing" style="font-size: 9px;">Delivered</text>
+  
+  <!-- No path -->
+  <line x1="840" y1="190" x2="840" y2="220" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead-amber)"/>
+  <text x="855" y="208" class="label">NO</text>
+  
+  <rect x="790" y="220" width="100" height="30" rx="6" fill="#f59e0b"/>
+  <text x="840" y="240" text-anchor="middle" class="band-title" style="font-size: 10px;">DRAFT QUEUE</text>
+  
+  <!-- Block path from guardrails -->
+  <line x1="390" y1="190" x2="390" y2="220" stroke="#dc2626" stroke-width="2"/>
+  <rect x="340" y="220" width="100" height="30" rx="6" fill="#dc2626"/>
+  <text x="390" y="240" text-anchor="middle" class="band-title" style="font-size: 10px;">BLOCKED</text>
+  
+  <!-- =========================================== -->
+  <!-- BAND B: NEAR-REAL-TIME (Amber) -->
+  <!-- =========================================== -->
+  <rect x="30" y="280" width="1040" height="160" rx="8" fill="#f59e0b" opacity="0.1"/>
+  <rect x="30" y="280" width="180" height="40" rx="8" fill="#f59e0b"/>
+  <text x="120" y="305" text-anchor="middle" class="band-title">BAND B: NEAR-REAL-TIME</text>
+  <text x="120" y="318" text-anchor="middle" class="band-timing">5-30 seconds</text>
+  
+  <!-- Event stream from Band A -->
+  <line x1="530" y1="190" x2="530" y2="310" stroke="#64748b" stroke-width="1" stroke-dasharray="4"/>
+  <text x="545" y="250" class="label">Events</text>
+  
+  <rect x="60" y="340" width="120" height="50" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="120" y="362" text-anchor="middle" class="component">Event Stream</text>
+  <text x="120" y="375" text-anchor="middle" class="component-detail">Kinesis</text>
+  
+  <line x1="180" y1="365" x2="220" y2="365" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead-amber)"/>
+  
+  <rect x="230" y="340" width="120" height="50" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="290" y="362" text-anchor="middle" class="component">Aggregator</text>
+  <text x="290" y="375" text-anchor="middle" class="component-detail">Sessionize, correlate</text>
+  
+  <line x1="350" y1="365" x2="390" y2="365" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead-amber)"/>
+  
+  <rect x="400" y="340" width="120" height="50" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="460" y="362" text-anchor="middle" class="component">Alert Rules</text>
+  <text x="460" y="375" text-anchor="middle" class="component-detail">Thresholds</text>
+  
+  <line x1="520" y1="365" x2="560" y2="365" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead-amber)"/>
+  
+  <!-- Circuit breaker -->
+  <rect x="570" y="330" width="140" height="70" rx="6" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="640" y="355" text-anchor="middle" class="band-title" style="font-size: 11px;">CIRCUIT BREAKER</text>
+  <text x="640" y="372" text-anchor="middle" class="band-timing" style="font-size: 9px;">• Pause auto-send</text>
+  <text x="640" y="385" text-anchor="middle" class="band-timing" style="font-size: 9px;">• Tighten policy</text>
+  <text x="640" y="398" text-anchor="middle" class="band-timing" style="font-size: 9px;">• Rollback prompt</text>
+  
+  <!-- Feedback to Band A -->
+  <path d="M 640 330 L 640 300 L 840 300 L 840 250" stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arrowhead-amber)"/>
+  <text x="740" y="293" class="label">Feeds back to auto-send decision</text>
+  
+  <!-- Ops alert -->
+  <line x1="710" y1="365" x2="750" y2="365" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead-amber)"/>
+  <rect x="760" y="340" width="100" height="50" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="810" y="362" text-anchor="middle" class="component">Ops Alert</text>
+  <text x="810" y="375" text-anchor="middle" class="component-detail">PagerDuty</text>
+  
+  <!-- =========================================== -->
+  <!-- BAND C: NEARLINE (Blue) -->
+  <!-- =========================================== -->
+  <rect x="30" y="460" width="1040" height="160" rx="8" fill="#3b82f6" opacity="0.1"/>
+  <rect x="30" y="460" width="180" height="40" rx="8" fill="#3b82f6"/>
+  <text x="120" y="485" text-anchor="middle" class="band-title">BAND C: NEARLINE</text>
+  <text x="120" y="498" text-anchor="middle" class="band-timing">Minutes to hours</text>
+  
+  <!-- Message log from Band A -->
+  <line x1="980" y1="190" x2="980" y2="520" stroke="#64748b" stroke-width="1" stroke-dasharray="4"/>
+  <text x="995" y="350" class="label" transform="rotate(90 995 350)">Message log</text>
+  
+  <rect x="60" y="520" width="120" height="50" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <text x="120" y="542" text-anchor="middle" class="component">Message Store</text>
+  <text x="120" y="555" text-anchor="middle" class="component-detail">S3</text>
+  
+  <line x1="180" y1="545" x2="220" y2="545" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+  
+  <rect x="230" y="520" width="120" height="50" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <text x="290" y="542" text-anchor="middle" class="component">Sample</text>
+  <text x="290" y="555" text-anchor="middle" class="component-detail">10% for Tier 4</text>
+  
+  <line x1="350" y1="545" x2="390" y2="545" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+  
+  <rect x="400" y="520" width="120" height="50" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <text x="460" y="542" text-anchor="middle" class="component">LLM-as-Judge</text>
+  <text x="460" y="555" text-anchor="middle" class="component-detail">Quality eval</text>
+  
+  <line x1="520" y1="545" x2="560" y2="545" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+  
+  <rect x="570" y="520" width="120" height="50" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <text x="630" y="542" text-anchor="middle" class="component">Drift Analysis</text>
+  <text x="630" y="555" text-anchor="middle" class="component-detail">ML anomaly</text>
+  
+  <line x1="690" y1="545" x2="730" y2="545" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+  
+  <!-- Outputs -->
+  <rect x="740" y="510" width="100" height="30" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <text x="790" y="530" text-anchor="middle" class="component">Dashboard</text>
+  
+  <rect x="740" y="550" width="100" height="30" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <text x="790" y="570" text-anchor="middle" class="component">Findings</text>
+  
+  <!-- Policy update feedback -->
+  <rect x="860" y="520" width="140" height="50" rx="6" fill="#3b82f6"/>
+  <text x="930" y="542" text-anchor="middle" class="band-title" style="font-size: 11px;">POLICY UPDATES</text>
+  <text x="930" y="558" text-anchor="middle" class="band-timing" style="font-size: 9px;">Guardrails, prompts</text>
+  
+  <!-- Feedback arrow to Band A -->
+  <path d="M 930 520 L 930 90 L 390 90 L 390 130" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)" stroke-dasharray="6"/>
+  <text x="660" y="82" text-anchor="middle" class="label">Improves inline controls over time</text>
+  
+  <!-- =========================================== -->
+  <!-- TIMING LEGEND -->
+  <!-- =========================================== -->
+  <rect x="30" y="640" width="1040" height="50" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <circle cx="60" cy="665" r="8" fill="#22c55e"/>
+  <text x="75" y="669" class="component">Inline: Prevents known-bad before send</text>
+  
+  <circle cx="350" cy="665" r="8" fill="#f59e0b"/>
+  <text x="365" y="669" class="component">Near-RT: Detects drift before scale</text>
+  
+  <circle cx="620" cy="665" r="8" fill="#3b82f6"/>
+  <text x="635" y="669" class="component">Nearline: Improves system over time</text>
+  
+  <circle cx="880" cy="665" r="8" fill="#dc2626"/>
+  <text x="895" y="669" class="component">Blocked: Hard stop</text>
+</svg>

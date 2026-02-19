@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460">
+  <defs>
+    <linearGradient id="ucCenterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="460" fill="#f8fafc"/>
+
+  <text x="450" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Use Case Definition Model</text>
+  <text x="450" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Ten questions &#x2014; each directly determines a control requirement</text>
+
+  <!-- Central box -->
+  <rect x="325" y="160" width="250" height="140" rx="12" fill="url(#ucCenterGrad)"/>
+  <text x="450" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Use Case</text>
+  <text x="450" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Definition</text>
+  <text x="450" y="245" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Drives risk tier</text>
+  <text x="450" y="262" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Drives control selection</text>
+  <text x="450" y="279" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Drives operating model</text>
+
+  <!-- Q1-Q5: Left column -->
+  <rect x="20" y="78" width="260" height="32" rx="6" fill="#6366f1"/>
+  <text x="150" y="99" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">1. What does it do?</text>
+  <line x1="280" y1="94" x2="325" y2="180" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="20" y="120" width="260" height="32" rx="6" fill="#4f46e5"/>
+  <text x="150" y="141" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">2. What decisions does it influence?</text>
+  <line x1="280" y1="136" x2="325" y2="200" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="20" y="162" width="260" height="32" rx="6" fill="#0ea5e9"/>
+  <text x="150" y="183" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">3. What data does it access?</text>
+  <line x1="280" y1="178" x2="325" y2="215" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="20" y="204" width="260" height="32" rx="6" fill="#0284c7"/>
+  <text x="150" y="225" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">4. Who are the users?</text>
+  <line x1="280" y1="220" x2="325" y2="230" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="20" y="246" width="260" height="32" rx="6" fill="#059669"/>
+  <text x="150" y="267" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">5. What happens when it's wrong?</text>
+  <line x1="280" y1="262" x2="325" y2="250" stroke="#059669" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <!-- Q6-Q10: Right column -->
+  <rect x="620" y="78" width="260" height="32" rx="6" fill="#f59e0b"/>
+  <text x="750" y="99" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">6. What's the expected volume?</text>
+  <line x1="620" y1="94" x2="575" y2="180" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="620" y="120" width="260" height="32" rx="6" fill="#d97706"/>
+  <text x="750" y="141" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">7. What regulatory context applies?</text>
+  <line x1="620" y1="136" x2="575" y2="200" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="620" y="162" width="260" height="32" rx="6" fill="#ef4444"/>
+  <text x="750" y="183" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">8. What tools/actions can it take?</text>
+  <line x1="620" y1="178" x2="575" y2="215" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="620" y="204" width="260" height="32" rx="6" fill="#dc2626"/>
+  <text x="750" y="225" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">9. Where in the business process?</text>
+  <line x1="620" y1="220" x2="575" y2="230" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <rect x="620" y="246" width="260" height="32" rx="6" fill="#7c3aed"/>
+  <text x="750" y="267" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">10. Who is accountable?</text>
+  <line x1="620" y1="262" x2="575" y2="250" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <!-- Outputs arrow -->
+  <line x1="450" y1="300" x2="450" y2="340" stroke="#1e293b" stroke-width="2"/>
+  <polygon points="443 340, 450 352, 457 340" fill="#1e293b"/>
+
+  <!-- Outputs -->
+  <rect x="175" y="360" width="160" height="70" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="255" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Risk Tier</text>
+  <text x="255" y="405" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">LOW &#x2192; CRITICAL</text>
+  <text x="255" y="420" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Scored from answers</text>
+
+  <rect x="370" y="360" width="160" height="70" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="450" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Control Set</text>
+  <text x="450" y="405" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Guardrails, Judge, HITL</text>
+  <text x="450" y="420" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Matched to tier</text>
+
+  <rect x="565" y="360" width="160" height="70" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="645" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Operating Model</text>
+  <text x="645" y="405" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Staffing, SLAs, PACE</text>
+  <text x="645" y="420" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Sized from volume</text>
+</svg>

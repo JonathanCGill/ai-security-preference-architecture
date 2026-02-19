@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="380" viewBox="0 0 800 380">
+  <defs>
+    <linearGradient id="reqGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="ctrlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="implGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="evidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="380" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Regulatory Mapping Method</text>
+  
+  <!-- Left side: Requirement → Control Mapping -->
+  <text x="180" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle">Requirement → Control</text>
+  
+  <!-- Requirement box -->
+  <g>
+    <rect x="60" y="80" width="240" height="50" rx="8" fill="url(#reqGrad)"/>
+    <text x="180" y="100" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">REQUIREMENT</text>
+    <text x="180" y="118" font-family="Arial, sans-serif" font-size="10" fill="#e9d5ff" text-anchor="middle">[Standard] Article X.X</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <line x1="180" y1="130" x2="180" y2="155" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Control box -->
+  <g>
+    <rect x="60" y="165" width="240" height="50" rx="8" fill="url(#ctrlGrad)"/>
+    <text x="180" y="185" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">CONTROL</text>
+    <text x="180" y="203" font-family="Arial, sans-serif" font-size="10" fill="#dbeafe" text-anchor="middle">AI.X.X Control Name</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <line x1="180" y1="215" x2="180" y2="240" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Implementation box -->
+  <g>
+    <rect x="60" y="250" width="240" height="50" rx="8" fill="url(#implGrad)"/>
+    <text x="180" y="270" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">IMPLEMENTATION</text>
+    <text x="180" y="288" font-family="Arial, sans-serif" font-size="10" fill="#d1fae5" text-anchor="middle">How control satisfies requirement</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <line x1="180" y1="300" x2="180" y2="325" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Evidence box -->
+  <g>
+    <rect x="60" y="335" width="240" height="40" rx="8" fill="url(#evidGrad)"/>
+    <text x="180" y="360" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">EVIDENCE</text>
+  </g>
+  
+  <!-- Right side: Control → Requirements Mapping -->
+  <text x="580" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle">Control → Requirements</text>
+  
+  <!-- Control box (source) -->
+  <g>
+    <rect x="460" y="80" width="240" height="50" rx="8" fill="url(#ctrlGrad)"/>
+    <text x="580" y="100" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">CONTROL</text>
+    <text x="580" y="118" font-family="Arial, sans-serif" font-size="10" fill="#dbeafe" text-anchor="middle">AI.X.X Control Name</text>
+  </g>
+  
+  <!-- Branching lines -->
+  <line x1="580" y1="130" x2="580" y2="165" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Branch to EU AI Act -->
+  <line x1="580" y1="165" x2="480" y2="165" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="480" y1="165" x2="480" y2="195" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Branch to DORA -->
+  <line x1="580" y1="165" x2="580" y2="195" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Branch to SR 11-7 -->
+  <line x1="580" y1="165" x2="680" y2="165" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="680" y1="165" x2="680" y2="195" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Requirement boxes -->
+  <g>
+    <rect x="420" y="205" width="120" height="55" rx="6" fill="url(#reqGrad)"/>
+    <text x="480" y="225" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">EU AI Act</text>
+    <text x="480" y="240" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Article 9</text>
+    <text x="480" y="253" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Risk Management</text>
+  </g>
+  
+  <g>
+    <rect x="520" y="275" width="120" height="55" rx="6" fill="url(#reqGrad)"/>
+    <text x="580" y="295" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">DORA</text>
+    <text x="580" y="310" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Article 5</text>
+    <text x="580" y="323" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">ICT Risk Framework</text>
+  </g>
+  
+  <g>
+    <rect x="620" y="205" width="120" height="55" rx="6" fill="url(#reqGrad)"/>
+    <text x="680" y="225" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">SR 11-7</text>
+    <text x="680" y="240" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Model Risk</text>
+    <text x="680" y="253" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Management</text>
+  </g>
+  
+  <!-- Additional branch lines -->
+  <line x1="580" y1="260" x2="580" y2="275" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Benefit callout -->
+  <rect x="460" y="340" width="280" height="35" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="600" y="362" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">✓ One control → Multiple requirements satisfied</text>
+</svg>

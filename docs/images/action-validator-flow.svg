@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="550" viewBox="0 0 700 550">
+  <defs>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="validatorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="allowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">Action Validator Flow</text>
+  <text x="350" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Validate every action independently — don't trust agent reasoning</text>
+  
+  <!-- Agent request -->
+  <rect x="200" y="70" width="300" height="60" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="350" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Agent: "I need to delete this file</text>
+  <text x="350" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">because &lt;reasoning&gt;"</text>
+  
+  <!-- Arrow down -->
+  <line x1="350" y1="130" x2="350" y2="160" stroke="#64748b" stroke-width="2" marker-end="url(#arrowGray)"/>
+  
+  <!-- Validator box -->
+  <rect x="100" y="170" width="500" height="250" rx="10" fill="url(#validatorGrad)" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">ACTION VALIDATOR (independent of agent)</text>
+  
+  <!-- Validation checks -->
+  <rect x="130" y="215" width="440" height="35" rx="6" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="160" y="237" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">1.</text>
+  <text x="180" y="237" font-family="Arial, sans-serif" font-size="11" fill="#334155">Is "delete file" in this agent's action whitelist?</text>
+  
+  <rect x="130" y="260" width="440" height="35" rx="6" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="160" y="282" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">2.</text>
+  <text x="180" y="282" font-family="Arial, sans-serif" font-size="11" fill="#334155">Is this file in the agent's authorised scope?</text>
+  
+  <rect x="130" y="305" width="440" height="35" rx="6" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="160" y="327" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">3.</text>
+  <text x="180" y="327" font-family="Arial, sans-serif" font-size="11" fill="#334155">Does this action require approval? If yes, is it approved?</text>
+  
+  <rect x="130" y="350" width="440" height="35" rx="6" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="160" y="372" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">4.</text>
+  <text x="180" y="372" font-family="Arial, sans-serif" font-size="11" fill="#334155">Does this action exceed any circuit breaker thresholds?</text>
+  
+  <rect x="130" y="395" width="440" height="20" rx="4" fill="#fef3c7"/>
+  <text x="350" y="409" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#92400e">5. Log action attempt regardless of outcome</text>
+  
+  <!-- Decision split -->
+  <line x1="350" y1="420" x2="350" y2="450" stroke="#64748b" stroke-width="2"/>
+  <line x1="200" y1="450" x2="500" y2="450" stroke="#64748b" stroke-width="2"/>
+  <line x1="200" y1="450" x2="200" y2="470" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="500" y1="450" x2="500" y2="470" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowRed)"/>
+  
+  <!-- Allow path -->
+  <rect x="120" y="480" width="160" height="50" rx="8" fill="url(#allowGrad)" filter="url(#shadow)"/>
+  <text x="200" y="505" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Allow</text>
+  <text x="200" y="520" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#bbf7d0">Execute action</text>
+  
+  <!-- Block path -->
+  <rect x="420" y="480" width="160" height="50" rx="8" fill="url(#blockGrad)" filter="url(#shadow)"/>
+  <text x="500" y="505" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Block</text>
+  <text x="500" y="520" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#fecaca">Log &amp; alert</text>
+  
+  <!-- Labels -->
+  <text x="200" y="465" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#16a34a">All checks pass</text>
+  <text x="500" y="465" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">Any check fails</text>
+  
+</svg>

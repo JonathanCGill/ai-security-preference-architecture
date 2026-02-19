@@ -1,0 +1,591 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1350" viewBox="0 0 1800 1350" font-family="'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', Helvetica, Arial, sans-serif">
+  <title>AI Runtime Behaviour Security — Complete Tube Map</title>
+  <defs>
+    <!-- Line colors
+      Getting Started (Teal/DLR): #00A4A7
+      Insights (Blue/Piccadilly): #003688
+      Emerging (Green/District): #00782A
+      Runtime Controls (Red/Central): #E32017
+      Testing (Pink/Hammersmith): #CC0066
+      MASO Controls (Orange/Overground): #EE7C0E
+      MASO Tiers (Magenta/Elizabeth): #6950A1
+      Threat Intel (Dark Red/Bakerloo): #B36305
+      Pipeline (Purple/Metropolitan): #9B0056
+      Operations (Yellow/Circle): #FFD300 / #B36305
+      Regulatory (Silver/Jubilee): #A0A5A9
+      Integration (Brown): #834D18
+      PACE (Slate sidebar): #1e293b
+    -->
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1.5" flood-opacity="0.08"/>
+    </filter>
+    <circle id="stn" r="5" fill="white" stroke-width="2.5"/>
+    <circle id="ix" r="8" fill="white" stroke="#000" stroke-width="2.5"/>
+    <g id="new-badge">
+      <rect x="-14" y="-8" width="28" height="14" rx="3" fill="#E32017"/>
+      <text x="0" y="3" text-anchor="middle" font-size="7.5" font-weight="bold" fill="white">NEW</text>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1350" fill="#F4F1EA"/>
+
+  <!-- ============================================================ -->
+  <!-- TITLE -->
+  <!-- ============================================================ -->
+  <g transform="translate(60,48)">
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#E32017" stroke-width="6"/>
+    <rect x="-24" y="-7" width="48" height="14" fill="#003688" rx="1"/>
+    <text x="0" y="4" text-anchor="middle" font-size="10" fill="white" font-weight="bold">AI</text>
+    <text x="36" y="-4" font-size="20" font-weight="bold" fill="#003688">AI Runtime Behaviour Security</text>
+    <text x="36" y="14" font-size="11" fill="#555">Guardrails prevent · Judge detects · Humans decide · Circuit breakers contain</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- ZONE LABELS -->
+  <!-- ============================================================ -->
+  <text x="200" y="90" font-size="11" fill="#003688" font-weight="bold" opacity="0.4" letter-spacing="1">UNDERSTAND</text>
+  <text x="780" y="90" font-size="11" fill="#E32017" font-weight="bold" opacity="0.4" letter-spacing="1" text-anchor="middle">IMPLEMENT</text>
+  <text x="1400" y="90" font-size="11" fill="#B36305" font-weight="bold" opacity="0.4" letter-spacing="1" text-anchor="end">OPERATE</text>
+
+  <!-- ============================================================ -->
+  <!-- SECTION LABELS -->
+  <!-- ============================================================ -->
+  <rect x="1620" y="100" width="140" height="22" rx="4" fill="#003688" opacity="0.08"/>
+  <text x="1690" y="116" text-anchor="middle" font-size="9" fill="#003688" font-weight="bold" letter-spacing="1">FOUNDATION</text>
+  <rect x="1620" y="560" width="140" height="22" rx="4" fill="#EE7C0E" opacity="0.1"/>
+  <text x="1690" y="576" text-anchor="middle" font-size="9" fill="#EE7C0E" font-weight="bold" letter-spacing="1">MASO</text>
+
+  <!-- ============================================================ -->
+  <!-- LINE: GETTING STARTED (Teal #00A4A7) -->
+  <!-- ============================================================ -->
+  <g id="line-getting-started">
+    <polyline points="180,130 380,130 560,130" fill="none" stroke="#00A4A7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="280,130 280,370" fill="none" stroke="#00A4A7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="480,130 480,370" fill="none" stroke="#00A4A7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <use href="#stn" x="180" y="130" stroke="#00A4A7"/>
+    <text x="180" y="118" text-anchor="middle" font-size="9.5" fill="#333">Quick Start</text>
+
+    <use href="#stn" x="380" y="130" stroke="#00A4A7"/>
+    <text x="380" y="118" text-anchor="middle" font-size="9.5" fill="#333">Implementation</text>
+    <text x="380" y="107" text-anchor="middle" font-size="9.5" fill="#333">Guide</text>
+
+    <use href="#stn" x="560" y="130" stroke="#00A4A7"/>
+    <text x="560" y="118" text-anchor="middle" font-size="9.5" fill="#333">Fast Lane</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: INSIGHTS (Blue #003688) -->
+  <!-- ============================================================ -->
+  <g id="line-insights">
+    <polyline points="140,210 340,210 540,210 740,210 940,210 1140,210"
+              fill="none" stroke="#003688" stroke-width="7" stroke-linecap="round"/>
+
+    <use href="#stn" x="140" y="210" stroke="#003688"/>
+    <text x="140" y="196" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#003688">The First</text>
+    <text x="140" y="185" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#003688">Control</text>
+
+    <use href="#stn" x="340" y="210" stroke="#003688"/>
+    <text x="340" y="196" text-anchor="middle" font-size="9" fill="#333">Why Guardrails</text>
+    <text x="340" y="185" text-anchor="middle" font-size="9" fill="#333">Aren't Enough</text>
+
+    <use href="#stn" x="540" y="210" stroke="#003688"/>
+    <text x="540" y="196" text-anchor="middle" font-size="9" fill="#333">Judge Detects.</text>
+    <text x="540" y="185" text-anchor="middle" font-size="9" fill="#333">It Doesn't Decide.</text>
+
+    <use href="#stn" x="740" y="210" stroke="#003688"/>
+    <text x="740" y="196" text-anchor="middle" font-size="9" fill="#333">Infrastructure</text>
+    <text x="740" y="185" text-anchor="middle" font-size="9" fill="#333">Beats Instructions</text>
+
+    <use href="#stn" x="940" y="210" stroke="#003688"/>
+    <text x="940" y="196" text-anchor="middle" font-size="9" fill="#333">Risk Tier Is</text>
+    <text x="940" y="185" text-anchor="middle" font-size="9" fill="#333">Use Case</text>
+
+    <use href="#stn" x="1140" y="210" stroke="#003688"/>
+    <text x="1140" y="196" text-anchor="middle" font-size="9" fill="#333">Humans Remain</text>
+    <text x="1140" y="185" text-anchor="middle" font-size="9" fill="#333">Accountable</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: EMERGING CHALLENGES (Green #00782A) -->
+  <!-- ============================================================ -->
+  <g id="line-emerging">
+    <polyline points="280,290 430,290 580,290 730,290 880,290 1030,290 1180,290"
+              fill="none" stroke="#00782A" stroke-width="7" stroke-linecap="round"/>
+
+    <use href="#stn" x="280" y="290" stroke="#00782A"/>
+    <text x="280" y="280" text-anchor="middle" font-size="9" fill="#333">Verification</text>
+    <text x="280" y="269" text-anchor="middle" font-size="9" fill="#333">Gap</text>
+
+    <use href="#stn" x="430" y="290" stroke="#00782A"/>
+    <text x="430" y="312" text-anchor="middle" font-size="9" fill="#333">Behavioral</text>
+    <text x="430" y="323" text-anchor="middle" font-size="9" fill="#333">Anomaly Detection</text>
+
+    <use href="#stn" x="580" y="290" stroke="#00782A"/>
+    <text x="580" y="280" text-anchor="middle" font-size="9" fill="#333">Multimodal Breaks</text>
+    <text x="580" y="269" text-anchor="middle" font-size="9" fill="#333">Guardrails</text>
+
+    <use href="#stn" x="730" y="290" stroke="#00782A"/>
+    <text x="730" y="312" text-anchor="middle" font-size="9" fill="#333">When AI Thinks</text>
+
+    <use href="#ix" x="880" y="290"/>
+    <text x="880" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#00782A">When Agents</text>
+    <text x="880" y="269" text-anchor="middle" font-size="9" font-weight="bold" fill="#00782A">Talk to Agents</text>
+
+    <use href="#stn" x="1030" y="290" stroke="#00782A"/>
+    <text x="1030" y="312" text-anchor="middle" font-size="9" fill="#333">The Memory</text>
+    <text x="1030" y="323" text-anchor="middle" font-size="9" fill="#333">Problem</text>
+
+    <use href="#stn" x="1180" y="290" stroke="#00782A"/>
+    <text x="1180" y="280" text-anchor="middle" font-size="9" fill="#333">Can't Validate</text>
+    <text x="1180" y="269" text-anchor="middle" font-size="9" fill="#333">What Hasn't Finished</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: RUNTIME CONTROLS (Red #E32017) — THE CENTRAL LINE -->
+  <!-- ============================================================ -->
+  <g id="line-runtime">
+    <polyline points="120,380 280,380 480,380 680,380 880,380 1080,380 1280,380 1440,380"
+              fill="none" stroke="#E32017" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Entry arrow -->
+    <line x1="80" y1="380" x2="120" y2="380" stroke="#E32017" stroke-width="10" stroke-linecap="round"/>
+    <polygon points="115,370 130,380 115,390" fill="#E32017"/>
+    <text x="60" y="384" text-anchor="end" font-size="8.5" fill="#E32017" font-weight="bold">INPUT</text>
+
+    <use href="#ix" x="280" y="380"/>
+    <text x="280" y="405" text-anchor="middle" font-size="11" font-weight="bold" fill="#E32017">Risk Tiers</text>
+
+    <use href="#ix" x="480" y="380"/>
+    <text x="480" y="405" text-anchor="middle" font-size="11" font-weight="bold" fill="#E32017">Guardrails</text>
+
+    <use href="#ix" x="680" y="380"/>
+    <text x="680" y="405" text-anchor="middle" font-size="11" font-weight="bold" fill="#E32017">Judge</text>
+
+    <use href="#ix" x="880" y="380"/>
+    <text x="880" y="405" text-anchor="middle" font-size="11" font-weight="bold" fill="#E32017">Judge Assurance</text>
+
+    <use href="#ix" x="1080" y="380"/>
+    <text x="1080" y="405" text-anchor="middle" font-size="11" font-weight="bold" fill="#E32017">Human Oversight</text>
+
+    <use href="#ix" x="1280" y="380"/>
+    <text x="1280" y="405" text-anchor="middle" font-size="11" font-weight="bold" fill="#E32017">Circuit Breaker</text>
+
+    <use href="#ix" x="1440" y="380"/>
+    <text x="1440" y="405" text-anchor="middle" font-size="11" font-weight="bold" fill="#E32017">Checklist</text>
+  </g>
+
+  <!-- Core pattern highlight -->
+  <rect x="430" y="358" width="710" height="44" rx="6" fill="none" stroke="#E32017" stroke-width="1.2" stroke-dasharray="8,4" opacity="0.25"/>
+  <text x="785" y="354" text-anchor="middle" font-size="7.5" fill="#E32017" font-weight="bold" letter-spacing="2" opacity="0.45">THE THREE-LAYER PATTERN</text>
+
+  <!-- ============================================================ -->
+  <!-- VERTICAL CONNECTORS: Insights ↔ Runtime (dashed) -->
+  <!-- ============================================================ -->
+  <g id="connectors-upper" stroke-dasharray="4,4" stroke-width="1.5" opacity="0.3">
+    <line x1="140" y1="218" x2="140" y2="372" stroke="#003688"/>
+    <line x1="340" y1="218" x2="480" y2="372" stroke="#003688"/>
+    <line x1="540" y1="218" x2="680" y2="372" stroke="#003688"/>
+    <line x1="940" y1="218" x2="880" y2="372" stroke="#003688"/>
+    <line x1="1140" y1="218" x2="1080" y2="372" stroke="#003688"/>
+    <line x1="280" y1="298" x2="880" y2="372" stroke="#00782A"/>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: TESTING & ASSURANCE (Pink #CC0066) -->
+  <!-- ============================================================ -->
+  <g id="line-testing">
+    <polyline points="280,388 280,440 160,490 160,560 160,630"
+              fill="none" stroke="#CC0066" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <use href="#stn" x="160" y="490" stroke="#CC0066"/>
+    <text x="145" y="480" text-anchor="end" font-size="9" font-weight="bold" fill="#CC0066">Threat Modelling</text>
+
+    <use href="#stn" x="160" y="560" stroke="#CC0066"/>
+    <text x="145" y="550" text-anchor="end" font-size="9" font-weight="bold" fill="#CC0066">Adversarial Testing</text>
+
+    <use href="#stn" x="160" y="630" stroke="#CC0066"/>
+    <text x="145" y="620" text-anchor="end" font-size="9" font-weight="bold" fill="#CC0066">Red Team</text>
+    <text x="145" y="631" text-anchor="end" font-size="9" font-weight="bold" fill="#CC0066">(Foundation)</text>
+
+    <!-- Feedback loop -->
+    <path d="M168,630 L260,630 Q290,630 290,600 L290,440 Q290,410 380,395 L480,388"
+          fill="none" stroke="#CC0066" stroke-width="2.5" stroke-dasharray="8,4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M480,388 L680,388 L880,388"
+          fill="none" stroke="#CC0066" stroke-width="2.5" stroke-dasharray="8,4" stroke-linecap="round" opacity="0.4"/>
+    <rect x="350" y="425" width="80" height="16" rx="3" fill="#CC0066" opacity="0.8"/>
+    <text x="390" y="437" text-anchor="middle" font-size="7" font-weight="bold" fill="white">FEEDBACK LOOP</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- FOUNDATION EXTENSIONS (grey branches) -->
+  <!-- ============================================================ -->
+  <g id="extensions-foundation">
+    <line x1="480" y1="380" x2="410" y2="435" stroke="#888" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="410" cy="435" r="3.5" fill="white" stroke="#888" stroke-width="2"/>
+    <text x="400" y="450" text-anchor="middle" font-size="8" fill="#666">Bypass Prevention</text>
+
+    <line x1="480" y1="380" x2="560" y2="435" stroke="#888" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="560" cy="435" r="3.5" fill="white" stroke="#888" stroke-width="2"/>
+    <text x="560" y="450" text-anchor="middle" font-size="8" fill="#666">Infrastructure</text>
+
+    <line x1="1440" y1="380" x2="1530" y2="435" stroke="#888" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="1530" cy="435" r="3.5" fill="white" stroke="#888" stroke-width="2"/>
+    <text x="1530" y="450" text-anchor="middle" font-size="8" fill="#666">Playbooks &amp;</text>
+    <text x="1530" y="460" text-anchor="middle" font-size="8" fill="#666">Templates</text>
+
+    <line x1="1080" y1="380" x2="1180" y2="435" stroke="#888" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="1180" cy="435" r="3.5" fill="white" stroke="#888" stroke-width="2"/>
+    <text x="1180" y="450" text-anchor="middle" font-size="8" fill="#666">Emerging Controls</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- DATA FLOW "RIVER" — TRUST BOUNDARY -->
+  <!-- ============================================================ -->
+  <path d="M0,500 Q150,488 320,498 Q500,510 680,492 Q860,476 1040,492 Q1220,510 1400,496 Q1550,484 1800,500 L1800,525 Q1550,509 1400,521 Q1220,535 1040,517 Q860,501 680,517 Q500,535 320,523 Q150,513 0,525 Z" fill="#DAEAF6" opacity="0.45"/>
+  <text x="80" y="517" font-size="8.5" fill="#5A94BD" font-style="italic" letter-spacing="3" font-weight="600">TRUST   BOUNDARY</text>
+  <text x="1710" y="517" text-anchor="end" font-size="7" fill="#5A94BD" font-style="italic">Single-agent above · Multi-agent below</text>
+
+  <!-- ============================================================ -->
+  <!-- BRIDGE: Agents Talk to Agents → MASO -->
+  <!-- ============================================================ -->
+  <g id="bridge">
+    <polyline points="880,298 880,380"
+              fill="none" stroke="#00782A" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+    <polyline points="880,388 880,510 880,580"
+              fill="none" stroke="#EE7C0E" stroke-width="5" stroke-linecap="round" stroke-dasharray="10,5" opacity="0.5"/>
+    <rect x="845" y="450" width="70" height="16" rx="3" fill="#EE7C0E" opacity="0.85"/>
+    <text x="880" y="461" text-anchor="middle" font-size="7" font-weight="bold" fill="white">→ MASO</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: MASO CONTROLS (Orange #EE7C0E) — MASO CENTRAL LINE -->
+  <!-- ============================================================ -->
+  <g id="line-maso">
+    <polyline points="280,600 480,600 680,600 880,600 1080,600 1280,600"
+              fill="none" stroke="#EE7C0E" stroke-width="10" stroke-linecap="round"/>
+
+    <use href="#ix" x="280" y="600"/>
+    <text x="280" y="590" text-anchor="middle" font-size="10" font-weight="bold" fill="#EE7C0E">Prompt, Goal &amp;</text>
+    <text x="280" y="578" text-anchor="middle" font-size="10" font-weight="bold" fill="#EE7C0E">Epistemic Integrity</text>
+
+    <use href="#ix" x="480" y="600"/>
+    <text x="480" y="625" text-anchor="middle" font-size="10" font-weight="bold" fill="#EE7C0E">Identity &amp; Access</text>
+
+    <use href="#ix" x="680" y="600"/>
+    <text x="680" y="590" text-anchor="middle" font-size="10" font-weight="bold" fill="#EE7C0E">Data Protection</text>
+
+    <use href="#ix" x="880" y="600"/>
+    <text x="880" y="625" text-anchor="middle" font-size="10" font-weight="bold" fill="#EE7C0E">Execution Control</text>
+
+    <use href="#ix" x="1080" y="600"/>
+    <text x="1080" y="590" text-anchor="middle" font-size="10" font-weight="bold" fill="#EE7C0E">Observability</text>
+
+    <use href="#ix" x="1280" y="600"/>
+    <text x="1280" y="625" text-anchor="middle" font-size="10" font-weight="bold" fill="#EE7C0E">Supply Chain</text>
+
+    <!-- Entry label -->
+    <line x1="180" y1="600" x2="272" y2="600" stroke="#EE7C0E" stroke-width="10" stroke-linecap="round"/>
+    <polygon points="195,590 180,600 195,610" fill="#EE7C0E"/>
+    <text x="170" y="604" text-anchor="end" font-size="8.5" fill="#EE7C0E" font-weight="bold">MASO</text>
+    <text x="170" y="614" text-anchor="end" font-size="7" fill="#EE7C0E">6 DOMAINS</text>
+    <text x="170" y="624" text-anchor="end" font-size="7" fill="#EE7C0E">93 CONTROLS</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- VERTICAL CONNECTORS: Runtime ↔ MASO (showing relationships) -->
+  <!-- ============================================================ -->
+  <g id="connectors-cross" stroke-dasharray="5,4" stroke-width="1.5" opacity="0.25">
+    <!-- Guardrails ↔ Prompt/Goal -->
+    <line x1="480" y1="388" x2="280" y2="592" stroke="#E32017"/>
+    <!-- Judge ↔ Execution Control (Judge gate) -->
+    <line x1="680" y1="388" x2="880" y2="592" stroke="#E32017"/>
+    <!-- Human Oversight ↔ Observability -->
+    <line x1="1080" y1="388" x2="1080" y2="592" stroke="#E32017"/>
+    <!-- Checklist ↔ Supply Chain -->
+    <line x1="1440" y1="388" x2="1280" y2="592" stroke="#E32017"/>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: MASO TIERS (Purple #6950A1) -->
+  <!-- ============================================================ -->
+  <g id="line-tiers">
+    <polyline points="380,700 680,700 1080,700"
+              fill="none" stroke="#6950A1" stroke-width="7" stroke-linecap="round"/>
+
+    <use href="#stn" x="380" y="700" stroke="#6950A1"/>
+    <text x="380" y="722" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#6950A1">Tier 1</text>
+    <text x="380" y="733" text-anchor="middle" font-size="8.5" fill="#6950A1">Supervised</text>
+
+    <use href="#stn" x="680" y="700" stroke="#6950A1"/>
+    <text x="680" y="722" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#6950A1">Tier 2</text>
+    <text x="680" y="733" text-anchor="middle" font-size="8.5" fill="#6950A1">Managed</text>
+
+    <use href="#stn" x="1080" y="700" stroke="#6950A1"/>
+    <text x="1080" y="722" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#6950A1">Tier 3</text>
+    <text x="1080" y="733" text-anchor="middle" font-size="8.5" fill="#6950A1">Autonomous</text>
+
+    <!-- Connect tiers to MASO line -->
+    <line x1="480" y1="608" x2="380" y2="692" stroke="#6950A1" stroke-width="3" stroke-dasharray="5,4" opacity="0.3"/>
+    <line x1="680" y1="608" x2="680" y2="692" stroke="#6950A1" stroke-width="3" stroke-dasharray="5,4" opacity="0.3"/>
+    <line x1="1080" y1="608" x2="1080" y2="692" stroke="#6950A1" stroke-width="3" stroke-dasharray="5,4" opacity="0.3"/>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: THREAT INTELLIGENCE (Dark Gold #B36305) -->
+  <!-- ============================================================ -->
+  <g id="line-threat-intel">
+    <polyline points="280,800 530,800 780,800"
+              fill="none" stroke="#B36305" stroke-width="7" stroke-linecap="round"/>
+
+    <use href="#stn" x="280" y="800" stroke="#B36305"/>
+    <text x="280" y="822" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#B36305">Incident Tracker</text>
+    <text x="280" y="833" text-anchor="middle" font-size="8" fill="#B36305">10 real-world incidents</text>
+
+    <use href="#stn" x="530" y="800" stroke="#B36305"/>
+    <text x="530" y="822" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#B36305">Emerging Threats</text>
+    <text x="530" y="833" text-anchor="middle" font-size="8" fill="#B36305">8 forward-looking</text>
+
+    <use href="#ix" x="780" y="800"/>
+    <text x="780" y="822" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#B36305">MASO Red Team</text>
+    <text x="780" y="833" text-anchor="middle" font-size="8" fill="#B36305">13 adversarial scenarios</text>
+
+    <!-- Connect testing lines (foundation ↔ MASO red team) -->
+    <polyline points="160,638 160,800 272,800"
+              fill="none" stroke="#CC0066" stroke-width="4" stroke-dasharray="10,5" stroke-linecap="round" opacity="0.4"/>
+    <rect x="110" y="710" width="100" height="16" rx="3" fill="#CC0066" opacity="0.75"/>
+    <text x="160" y="721" text-anchor="middle" font-size="7" font-weight="bold" fill="white">TESTING BRIDGE</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: PIPELINE & DATA (Purple #9B0056) — crosses trust boundary -->
+  <!-- ============================================================ -->
+  <g id="line-pipeline">
+    <polyline points="340,440 340,600 340,700 540,900 740,900"
+              fill="none" stroke="#9B0056" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <use href="#stn" x="340" y="440" stroke="#9B0056"/>
+    <text x="325" y="432" text-anchor="end" font-size="9" font-weight="bold" fill="#9B0056">RAG Security</text>
+
+    <use href="#stn" x="540" y="900" stroke="#9B0056"/>
+    <text x="540" y="922" text-anchor="middle" font-size="9" font-weight="bold" fill="#9B0056">Supply Chain</text>
+    <text x="540" y="933" text-anchor="middle" font-size="9" font-weight="bold" fill="#9B0056">(Pipeline)</text>
+
+    <use href="#stn" x="740" y="900" stroke="#9B0056"/>
+    <text x="740" y="922" text-anchor="middle" font-size="9" font-weight="bold" fill="#9B0056">Memory &amp; Context</text>
+
+    <!-- Insight branches (dashed) -->
+    <polyline points="200,440 340,440" fill="none" stroke="#9B0056" stroke-width="3.5" stroke-dasharray="10,5" stroke-linecap="round"/>
+    <use href="#stn" x="200" y="440" stroke="#9B0056"/>
+    <text x="200" y="456" text-anchor="middle" font-size="8" fill="#9B0056">RAG Is Your Biggest</text>
+    <text x="200" y="466" text-anchor="middle" font-size="8" fill="#9B0056">Attack Surface</text>
+
+    <polyline points="200,500 340,500" fill="none" stroke="#9B0056" stroke-width="3.5" stroke-dasharray="10,5" stroke-linecap="round"/>
+    <line x1="200" y1="448" x2="200" y2="492" stroke="#9B0056" stroke-width="3.5" stroke-dasharray="10,5" stroke-linecap="round"/>
+    <use href="#stn" x="200" y="500" stroke="#9B0056"/>
+    <text x="200" y="516" text-anchor="middle" font-size="8" fill="#9B0056">The Supply Chain</text>
+    <text x="200" y="526" text-anchor="middle" font-size="8" fill="#9B0056">Problem</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: OPERATIONS (Yellow #FFD300) — crosses trust boundary -->
+  <!-- ============================================================ -->
+  <g id="line-ops">
+    <polyline points="680,440 680,500 680,700 680,900 880,900 1080,900 1280,900"
+              fill="none" stroke="#FFD300" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="680,440 680,500 680,700 680,900 880,900 1080,900 1280,900"
+              fill="none" stroke="#B36305" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.2"/>
+
+    <use href="#stn" x="680" y="900" stroke="#B36305"/>
+    <text x="680" y="922" text-anchor="middle" font-size="9" font-weight="bold" fill="#B36305">Metrics</text>
+
+    <use href="#stn" x="880" y="900" stroke="#B36305"/>
+    <text x="880" y="922" text-anchor="middle" font-size="9" font-weight="bold" fill="#B36305">SOC Integration</text>
+
+    <use href="#stn" x="1080" y="900" stroke="#B36305"/>
+    <text x="1080" y="922" text-anchor="middle" font-size="9" font-weight="bold" fill="#B36305">Anomaly Detection</text>
+    <text x="1080" y="933" text-anchor="middle" font-size="9" font-weight="bold" fill="#B36305">Ops</text>
+
+    <use href="#stn" x="1280" y="900" stroke="#B36305"/>
+    <text x="1280" y="922" text-anchor="middle" font-size="9" font-weight="bold" fill="#B36305">Cost &amp; Latency</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: INTEGRATION (Brown #834D18) -->
+  <!-- ============================================================ -->
+  <g id="line-integration">
+    <polyline points="1080,608 1080,800 1180,800 1330,800 1480,800"
+              fill="none" stroke="#834D18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <use href="#stn" x="1180" y="800" stroke="#834D18"/>
+    <text x="1180" y="790" text-anchor="middle" font-size="8.5" fill="#834D18">LangGraph</text>
+
+    <use href="#stn" x="1330" y="800" stroke="#834D18"/>
+    <text x="1330" y="790" text-anchor="middle" font-size="8.5" fill="#834D18">AutoGen / CrewAI</text>
+
+    <use href="#stn" x="1480" y="800" stroke="#834D18"/>
+    <text x="1480" y="790" text-anchor="middle" font-size="8.5" fill="#834D18">AWS Bedrock</text>
+
+    <!-- Worked Examples branch -->
+    <line x1="1480" y1="808" x2="1480" y2="860" stroke="#834D18" stroke-width="3" stroke-linecap="round"/>
+    <use href="#stn" x="1480" y="860" stroke="#834D18"/>
+    <text x="1480" y="878" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#834D18">Worked Examples</text>
+    <text x="1480" y="889" text-anchor="middle" font-size="7.5" fill="#834D18">Finance · Health · Energy</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LINE: REGULATORY (Silver #A0A5A9) — vertical, crosses both zones -->
+  <!-- ============================================================ -->
+  <g id="line-regulatory">
+    <polyline points="1540,160 1540,380 1540,600 1540,900 1440,388"
+              fill="none" stroke="#A0A5A9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <use href="#stn" x="1540" y="200" stroke="#A0A5A9"/>
+    <text x="1556" y="196" font-size="9" fill="#555">NIST AI RMF</text>
+
+    <use href="#stn" x="1540" y="290" stroke="#A0A5A9"/>
+    <text x="1556" y="286" font-size="9" fill="#555">NIST SP 800-218A</text>
+
+    <use href="#ix" x="1540" y="380"/>
+    <!-- connects to Checklist via short horizontal -->
+    <line x1="1448" y1="380" x2="1532" y2="380" stroke="#A0A5A9" stroke-width="7" stroke-linecap="round"/>
+
+    <use href="#stn" x="1540" y="480" stroke="#A0A5A9"/>
+    <text x="1556" y="476" font-size="9" fill="#555">ISO 42001</text>
+
+    <use href="#stn" x="1540" y="560" stroke="#A0A5A9"/>
+    <text x="1556" y="556" font-size="9" fill="#555">EU AI Act</text>
+
+    <use href="#stn" x="1540" y="680" stroke="#A0A5A9"/>
+    <text x="1556" y="676" font-size="9" fill="#555">OWASP LLM Top 10</text>
+
+    <use href="#stn" x="1540" y="760" stroke="#A0A5A9"/>
+    <text x="1556" y="756" font-size="9" fill="#555">OWASP Agentic Top 10</text>
+
+    <use href="#stn" x="1540" y="840" stroke="#A0A5A9"/>
+    <text x="1556" y="836" font-size="9" fill="#555">DORA</text>
+
+    <use href="#stn" x="1540" y="900" stroke="#A0A5A9"/>
+    <text x="1556" y="896" font-size="9" fill="#555">MITRE ATLAS</text>
+
+    <!-- Regulatory connector to MASO -->
+    <line x1="1540" y1="600" x2="1288" y2="600" stroke="#A0A5A9" stroke-width="4" stroke-dasharray="6,4" opacity="0.3"/>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- PACE RESILIENCE SIDEBAR -->
+  <!-- ============================================================ -->
+  <g id="pace-sidebar">
+    <rect x="1720" y="240" width="50" height="700" rx="6" fill="#1e293b"/>
+
+    <text x="1745" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#22c55e" transform="rotate(90,1745,320)">PRIMARY</text>
+    <line x1="1726" y1="388" x2="1764" y2="388" stroke="#475569" stroke-width="0.5"/>
+    <text x="1745" y="450" text-anchor="middle" font-size="12" font-weight="700" fill="#f59e0b" transform="rotate(90,1745,450)">ALTERNATE</text>
+    <line x1="1726" y1="510" x2="1764" y2="510" stroke="#475569" stroke-width="0.5"/>
+    <text x="1745" y="600" text-anchor="middle" font-size="12" font-weight="700" fill="#8b5cf6" transform="rotate(90,1745,600)">CONTINGENCY</text>
+    <line x1="1726" y1="680" x2="1764" y2="680" stroke="#475569" stroke-width="0.5"/>
+    <text x="1745" y="810" text-anchor="middle" font-size="12" font-weight="700" fill="#ef4444" transform="rotate(90,1745,810)">EMERGENCY</text>
+
+    <text x="1745" y="958" text-anchor="middle" font-size="8" fill="#64748b" font-weight="600">P A C E</text>
+    <text x="1745" y="220" text-anchor="middle" font-size="7.5" fill="#64748b" font-weight="600" letter-spacing="1">RESILIENCE</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- EMERGENT RISK REGISTER (branch off MASO) -->
+  <!-- ============================================================ -->
+  <g id="risk-register">
+    <line x1="280" y1="608" x2="280" y2="660" stroke="#EE7C0E" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="280" cy="660" r="3.5" fill="white" stroke="#EE7C0E" stroke-width="2"/>
+    <text x="280" y="676" text-anchor="middle" font-size="8" fill="#EE7C0E">Emergent Risk Register</text>
+    <text x="280" y="686" text-anchor="middle" font-size="7" fill="#EE7C0E">30 risks beyond OWASP</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LEGEND -->
+  <!-- ============================================================ -->
+  <g transform="translate(60, 1020)" filter="url(#shadow)">
+    <rect x="-20" y="-20" width="1680" height="105" rx="6" fill="white" stroke="#ddd" stroke-width="0.5"/>
+
+    <!-- Row 1: Foundation lines -->
+    <text x="0" y="-2" font-size="8" fill="#003688" font-weight="bold" letter-spacing="1">FOUNDATION</text>
+
+    <line x1="0" y1="16" x2="45" y2="16" stroke="#E32017" stroke-width="6" stroke-linecap="round"/>
+    <text x="52" y="20" font-size="9" fill="#333">Runtime Controls</text>
+
+    <line x1="180" y1="16" x2="225" y2="16" stroke="#003688" stroke-width="6" stroke-linecap="round"/>
+    <text x="232" y="20" font-size="9" fill="#333">Insights</text>
+
+    <line x1="310" y1="16" x2="355" y2="16" stroke="#00782A" stroke-width="6" stroke-linecap="round"/>
+    <text x="362" y="20" font-size="9" fill="#333">Emerging Challenges</text>
+
+    <line x1="510" y1="16" x2="555" y2="16" stroke="#00A4A7" stroke-width="6" stroke-linecap="round"/>
+    <text x="562" y="20" font-size="9" fill="#333">Getting Started</text>
+
+    <line x1="680" y1="16" x2="725" y2="16" stroke="#CC0066" stroke-width="6" stroke-linecap="round"/>
+    <text x="732" y="20" font-size="9" fill="#333">Testing &amp; Assurance</text>
+
+    <!-- Row 2: MASO lines -->
+    <text x="0" y="38" font-size="8" fill="#EE7C0E" font-weight="bold" letter-spacing="1">MASO</text>
+
+    <line x1="0" y1="54" x2="45" y2="54" stroke="#EE7C0E" stroke-width="6" stroke-linecap="round"/>
+    <text x="52" y="58" font-size="9" fill="#333">MASO Control Domains</text>
+
+    <line x1="210" y1="54" x2="255" y2="54" stroke="#6950A1" stroke-width="6" stroke-linecap="round"/>
+    <text x="262" y="58" font-size="9" fill="#333">Implementation Tiers</text>
+
+    <line x1="410" y1="54" x2="455" y2="54" stroke="#B36305" stroke-width="6" stroke-linecap="round"/>
+    <text x="462" y="58" font-size="9" fill="#333">Threat Intelligence</text>
+
+    <line x1="600" y1="54" x2="645" y2="54" stroke="#834D18" stroke-width="6" stroke-linecap="round"/>
+    <text x="652" y="58" font-size="9" fill="#333">Integration &amp; Examples</text>
+
+    <!-- Row 3: Cross-cutting lines -->
+    <text x="900" y="-2" font-size="8" fill="#555" font-weight="bold" letter-spacing="1">CROSS-CUTTING</text>
+
+    <line x1="900" y1="16" x2="945" y2="16" stroke="#9B0056" stroke-width="6" stroke-linecap="round"/>
+    <text x="952" y="20" font-size="9" fill="#333">Pipeline &amp; Data</text>
+
+    <line x1="1080" y1="16" x2="1125" y2="16" stroke="#FFD300" stroke-width="8" stroke-linecap="round"/>
+    <text x="1132" y="20" font-size="9" fill="#333">Operations</text>
+
+    <line x1="1230" y1="16" x2="1275" y2="16" stroke="#A0A5A9" stroke-width="6" stroke-linecap="round"/>
+    <text x="1282" y="20" font-size="9" fill="#333">Regulatory</text>
+
+    <rect x="1400" y="8" width="12" height="12" rx="2" fill="#1e293b"/>
+    <text x="1418" y="20" font-size="9" fill="#333">PACE Resilience</text>
+
+    <!-- Symbols -->
+    <circle cx="910" cy="54" r="5" fill="white" stroke="#333" stroke-width="2.5"/>
+    <text x="922" y="58" font-size="9" fill="#333">Station</text>
+
+    <circle cx="1000" cy="54" r="8" fill="white" stroke="#000" stroke-width="2.5"/>
+    <text x="1015" y="58" font-size="9" fill="#333">Interchange</text>
+
+    <line x1="1110" y1="54" x2="1155" y2="54" stroke="#888" stroke-width="3" stroke-dasharray="8,4" stroke-linecap="round"/>
+    <text x="1162" y="58" font-size="9" fill="#333">Connection</text>
+
+    <g transform="translate(1280,54)"><use href="#new-badge"/></g>
+    <text x="1302" y="58" font-size="9" fill="#333">New content</text>
+
+    <line x1="1400" y1="54" x2="1445" y2="54" stroke="#CC0066" stroke-width="3" stroke-dasharray="8,4" stroke-linecap="round" opacity="0.5"/>
+    <text x="1452" y="58" font-size="9" fill="#333">Feedback loop</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- STATISTICS -->
+  <!-- ============================================================ -->
+  <g transform="translate(60, 1150)">
+    <text x="0" y="0" font-size="10" fill="#555" font-weight="bold">Framework totals:</text>
+    <text x="0" y="18" font-size="9" fill="#777">Foundation: 80 infrastructure controls · 4 risk tiers · 3 control layers · PACE resilience</text>
+    <text x="0" y="33" font-size="9" fill="#777">MASO: 6 domains · 93 controls · 99 tests · 3 implementation tiers · 30 emergent risks · dual OWASP coverage</text>
+    <text x="0" y="48" font-size="9" fill="#777">12 lines · 50+ stations · 8 interchanges</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================================ -->
+  <text x="1700" y="1330" text-anchor="end" font-size="7.5" fill="#999">v3.0 — February 2026 — github.com/JonathanCGill/ai-runtime-behaviour-security</text>
+  <text x="100" y="1330" font-size="7.5" fill="#999">AI Runtime Behaviour Security · MIT License · Jonathan Gill</text>
+
+</svg>

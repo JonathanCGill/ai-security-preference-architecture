@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="680" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" letter-spacing="2">TIER 3 — AUTONOMOUS MULTI-AGENT ARCHITECTURE</text>
+  <text x="450" y="50" text-anchor="middle" fill="#c77dff" font-size="10" letter-spacing="1">HIGH AUTONOMY · EXCEPTION-BASED OVERSIGHT · ADVERSARIAL-TESTED</text>
+  <line x1="150" y1="60" x2="750" y2="60" stroke="#c77dff" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- Human Governance Layer -->
+  <rect x="220" y="75" width="460" height="50" rx="8" fill="#0d1225" stroke="#92fe9d" stroke-width="1.2"/>
+  <rect x="220" y="75" width="460" height="3" rx="2" fill="#92fe9d"/>
+  <text x="450" y="97" text-anchor="middle" fill="#92fe9d" font-size="12" font-weight="700">HUMAN GOVERNANCE LAYER</text>
+  <text x="450" y="113" text-anchor="middle" fill="#8899aa" font-size="9">Strategic review · Exception handling · Red team programme</text>
+
+  <!-- Escalation arrow -->
+  <line x1="450" y1="125" x2="450" y2="148" stroke="#92fe9d" stroke-width="1"/>
+  <polygon points="444,144 450,153 456,144" fill="#92fe9d"/>
+  <rect x="370" y="131" width="160" height="16" rx="8" fill="#0a0e1a" stroke="#92fe9d" stroke-width="0.6" opacity="0.7"/>
+  <text x="450" y="143" text-anchor="middle" fill="#92fe9d" font-size="7" font-weight="600">EXCEPTIONS + PERIODIC REVIEW</text>
+
+  <!-- Main system boundary -->
+  <rect x="40" y="155" width="820" height="440" rx="10" fill="none" stroke="#334" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="60" y="172" fill="#556" font-size="9" letter-spacing="1">AUTONOMOUS AGENT SYSTEM BOUNDARY</text>
+
+  <!-- Agent A -->
+  <rect x="70" y="185" width="200" height="105" rx="8" fill="#0d1225" stroke="#00c9ff" stroke-width="1.5"/>
+  <rect x="70" y="185" width="200" height="4" rx="2" fill="#00c9ff"/>
+  <text x="170" y="211" text-anchor="middle" fill="#00c9ff" font-size="12" font-weight="700">Agent A (NHI-A)</text>
+  <rect x="95" y="220" width="150" height="16" rx="4" fill="#0a1a2a" stroke="#00c9ff" stroke-width="0.5"/>
+  <text x="170" y="232" text-anchor="middle" fill="#00c9ff" font-size="7">Cert · Behavioural binding</text>
+  <text x="170" y="254" text-anchor="middle" fill="#667" font-size="8">15-min rotation (high priv)</text>
+  <text x="170" y="268" text-anchor="middle" fill="#667" font-size="8">Auto-revoke on anomaly (30s)</text>
+  <text x="170" y="282" text-anchor="middle" fill="#667" font-size="8">Delegation contracts</text>
+
+  <!-- Agent B -->
+  <rect x="630" y="185" width="200" height="105" rx="8" fill="#0d1225" stroke="#00c9ff" stroke-width="1.5"/>
+  <rect x="630" y="185" width="200" height="4" rx="2" fill="#00c9ff"/>
+  <text x="730" y="211" text-anchor="middle" fill="#00c9ff" font-size="12" font-weight="700">Agent B (NHI-B)</text>
+  <rect x="655" y="220" width="150" height="16" rx="4" fill="#0a1a2a" stroke="#00c9ff" stroke-width="0.5"/>
+  <text x="730" y="232" text-anchor="middle" fill="#00c9ff" font-size="7">Cert · Behavioural binding</text>
+  <text x="730" y="254" text-anchor="middle" fill="#667" font-size="8">15-min rotation (high priv)</text>
+  <text x="730" y="268" text-anchor="middle" fill="#667" font-size="8">Auto-revoke on anomaly (30s)</text>
+  <text x="730" y="282" text-anchor="middle" fill="#667" font-size="8">Delegation contracts</text>
+
+  <!-- Encrypted Signed Message Bus -->
+  <rect x="310" y="195" width="280" height="70" rx="8" fill="#0d1225" stroke="#ffd700" stroke-width="2"/>
+  <rect x="310" y="195" width="280" height="4" rx="2" fill="#ffd700"/>
+  <text x="450" y="220" text-anchor="middle" fill="#ffd700" font-size="12" font-weight="700">Encrypted Signed Bus</text>
+  <text x="450" y="237" text-anchor="middle" fill="#ffd700" font-size="9">E2E encryption · Mutual TLS</text>
+  <text x="450" y="253" text-anchor="middle" fill="#8899aa" font-size="8">DLP · Schema validation · Replay protection</text>
+
+  <!-- Connections to bus -->
+  <line x1="270" y1="237" x2="310" y2="237" stroke="#ffd700" stroke-width="1.2"/>
+  <polygon points="305,233 313,237 305,241" fill="#ffd700"/>
+  <polygon points="275,233 267,237 275,241" fill="#ffd700"/>
+  <line x1="590" y1="237" x2="630" y2="237" stroke="#ffd700" stroke-width="1.2"/>
+  <polygon points="625,233 633,237 625,241" fill="#ffd700"/>
+  <polygon points="595,233 587,237 595,241" fill="#ffd700"/>
+
+  <!-- Guardrails -->
+  <rect x="85" y="310" width="170" height="35" rx="6" fill="#0d1225" stroke="#f5576c" stroke-width="1"/>
+  <text x="170" y="328" text-anchor="middle" fill="#f5576c" font-size="9" font-weight="600">Guardrails (L1)</text>
+  <text x="170" y="340" text-anchor="middle" fill="#8899aa" font-size="7">Infrastructure-enforced</text>
+
+  <rect x="645" y="310" width="170" height="35" rx="6" fill="#0d1225" stroke="#f5576c" stroke-width="1"/>
+  <text x="730" y="328" text-anchor="middle" fill="#f5576c" font-size="9" font-weight="600">Guardrails (L1)</text>
+  <text x="730" y="340" text-anchor="middle" fill="#8899aa" font-size="7">Infrastructure-enforced</text>
+
+  <!-- LLM-as-Judge + Cross-validation -->
+  <rect x="290" y="305" width="320" height="50" rx="6" fill="#0d1225" stroke="#ff6b35" stroke-width="2"/>
+  <rect x="290" y="305" width="320" height="4" rx="2" fill="#ff6b35"/>
+  <text x="450" y="327" text-anchor="middle" fill="#ff6b35" font-size="11" font-weight="700">LLM-as-Judge (L2) + Cross-Validation</text>
+  <text x="450" y="345" text-anchor="middle" fill="#ff6b35" font-size="9">Multi-model validation for high-consequence actions</text>
+
+  <!-- Judge connection -->
+  <line x1="450" y1="265" x2="450" y2="305" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <!-- Autonomous Monitoring & Response Layer -->
+  <rect x="70" y="375" width="760" height="65" rx="6" fill="#0d1225" stroke="#c77dff" stroke-width="2"/>
+  <rect x="70" y="375" width="760" height="4" rx="2" fill="#c77dff"/>
+  <text x="450" y="398" text-anchor="middle" fill="#c77dff" font-size="11" font-weight="700">Autonomous Monitoring &amp; Response Layer</text>
+  <text x="450" y="414" text-anchor="middle" fill="#c77dff" font-size="9">Self-healing P↔A cycle · Long-window drift (30/90-day) · Causal chain reconstruction</text>
+  <text x="450" y="430" text-anchor="middle" fill="#8899aa" font-size="8">Escalation-only to human (C, E) · 3 self-heal cycles/24hr max · Automated compliance evidence</text>
+
+  <!-- Independent Observability Agent -->
+  <rect x="70" y="460" width="370" height="55" rx="6" fill="#0d1225" stroke="#00c9ff" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="255" y="482" text-anchor="middle" fill="#00c9ff" font-size="10" font-weight="600">Independent Observability Agent</text>
+  <text x="255" y="498" text-anchor="middle" fill="#8899aa" font-size="8">Separate infrastructure · Read-only · Cross-monitors primary system</text>
+  <text x="255" y="510" text-anchor="middle" fill="#667" font-size="7">Has kill switch authority (safety net)</text>
+
+  <!-- Blast Radius Enforcement -->
+  <rect x="460" y="460" width="370" height="55" rx="6" fill="#0d1225" stroke="#f5576c" stroke-width="1.5"/>
+  <text x="645" y="482" text-anchor="middle" fill="#f5576c" font-size="10" font-weight="600">Infrastructure Blast Radius Caps</text>
+  <text x="645" y="498" text-anchor="middle" fill="#8899aa" font-size="8">Platform-enforced · Cannot be overridden by agents</text>
+  <text x="645" y="510" text-anchor="middle" fill="#667" font-size="7">Per-agent + per-orchestration limits</text>
+
+  <!-- Kill Switch -->
+  <rect x="200" y="535" width="500" height="45" rx="8" fill="#1a0a0a" stroke="#f5576c" stroke-width="2.5"/>
+  <text x="450" y="556" text-anchor="middle" fill="#f5576c" font-size="12" font-weight="700" letter-spacing="1">PHYSICALLY ISOLATED KILL SWITCH</text>
+  <text x="450" y="572" text-anchor="middle" fill="#f5576c" font-size="9">Separate network path · Independent auth · Immutable audit log · Tested under load</text>
+
+  <!-- Footer -->
+  <rect x="40" y="605" width="820" height="60" rx="4" fill="#0a0e1a" stroke="#333" stroke-width="0.5"/>
+  <text x="450" y="622" text-anchor="middle" fill="#c77dff" font-size="9" font-weight="600">PACE: Full autonomous cycle · P↔A self-healing (no human) · C/E require human authority</text>
+  <text x="450" y="638" text-anchor="middle" fill="#556" font-size="8">Quarterly adversarial testing (10 attack categories) · Continuous automated probes · Model version pinning</text>
+  <text x="450" y="652" text-anchor="middle" fill="#445" font-size="8">Observability agent can trigger Emergency if no human responds within 5 minutes</text>
+</svg>

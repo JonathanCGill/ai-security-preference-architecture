@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <defs>
+    <linearGradient id="srcGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+    <linearGradient id="repoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="900" height="320" fill="#f8fafc"/>
+  
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Evidence Collection System</text>
+  
+  <!-- Source Systems -->
+  <g>
+    <rect x="30" y="60" width="200" height="220" rx="8" fill="url(#srcGrad)"/>
+    <text x="130" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">SOURCE SYSTEMS</text>
+    
+    <rect x="45" y="100" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="130" y="120" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Config Management</text>
+    
+    <rect x="45" y="140" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="130" y="160" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">SIEM / Logging</text>
+    
+    <rect x="45" y="180" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="130" y="200" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Monitoring Systems</text>
+    
+    <rect x="45" y="220" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="130" y="240" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">IAM / Access Logs</text>
+  </g>
+  
+  <!-- Arrows -->
+  <path d="M230 115 L300 155" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <path d="M230 155 L300 165" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <path d="M230 195 L300 175" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <path d="M230 235 L300 185" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  
+  <!-- Evidence Repository -->
+  <g>
+    <rect x="310" y="100" width="200" height="140" rx="8" fill="url(#repoGrad)"/>
+    <text x="410" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Evidence Repository</text>
+    <line x1="330" y1="145" x2="490" y2="145" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="410" y="168" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Automated Collection</text>
+    <text x="410" y="188" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Version Control</text>
+    <text x="410" y="208" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Integrity Verification</text>
+    <text x="410" y="228" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Retention Management</text>
+  </g>
+  
+  <!-- Arrows to outputs -->
+  <path d="M510 130 L580 95" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <path d="M510 170 L580 170" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <path d="M510 210 L580 245" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  
+  <!-- Outputs -->
+  <g>
+    <rect x="590" y="60" width="140" height="50" rx="6" fill="url(#outGrad)"/>
+    <text x="660" y="82" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Automated</text>
+    <text x="660" y="97" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Reports</text>
+  </g>
+  
+  <g>
+    <rect x="590" y="130" width="140" height="50" rx="6" fill="url(#outGrad)"/>
+    <text x="660" y="152" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Audit</text>
+    <text x="660" y="167" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Portal</text>
+  </g>
+  
+  <g>
+    <rect x="590" y="200" width="140" height="50" rx="6" fill="url(#outGrad)"/>
+    <text x="660" y="222" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Compliance</text>
+    <text x="660" y="237" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Dashboard</text>
+  </g>
+  
+  <!-- Users -->
+  <g>
+    <rect x="760" y="60" width="110" height="50" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="815" y="90" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Management</text>
+  </g>
+  
+  <g>
+    <rect x="760" y="130" width="110" height="50" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="815" y="160" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Auditors</text>
+  </g>
+  
+  <g>
+    <rect x="760" y="200" width="110" height="50" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="815" y="230" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Regulators</text>
+  </g>
+  
+  <path d="M730 85 L755 85" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <path d="M730 155 L755 155" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <path d="M730 225 L755 225" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+</svg>

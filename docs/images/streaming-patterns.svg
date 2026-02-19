@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="aw" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#586069"/>
+    </marker>
+    <marker id="awG" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22863A"/>
+    </marker>
+    <marker id="awR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#D73A49"/>
+    </marker>
+    <filter id="sf" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="500" rx="8" fill="#FAFBFC"/>
+  
+  <text x="500" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1B1F23">Streaming Control Patterns</text>
+  <text x="500" y="54" text-anchor="middle" font-size="11" fill="#6A737D">Three approaches to validating output that hasn't finished yet</text>
+
+  <!-- === PATTERN 1: BUFFER AND RELEASE === -->
+  <rect x="15" y="75" width="310" height="400" rx="8" fill="white" stroke="#34D058" stroke-width="2" filter="url(#sf)"/>
+  <text x="170" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#22863A">Buffer &amp; Release</text>
+  <text x="170" y="116" text-anchor="middle" font-size="10" fill="#22863A">Tier 2 — Balanced</text>
+
+  <!-- Flow -->
+  <rect x="40" y="135" width="100" height="32" rx="5" fill="#DBEDFF" stroke="#0366D6" stroke-width="1"/>
+  <text x="90" y="155" text-anchor="middle" font-size="9" font-weight="600" fill="#0366D6">LLM</text>
+
+  <line x1="140" y1="151" x2="170" y2="151" stroke="#586069" stroke-width="1.2" marker-end="url(#aw)"/>
+  <text x="155" y="143" text-anchor="middle" font-size="7" fill="#586069">tokens</text>
+
+  <rect x="170" y="130" width="130" height="42" rx="5" fill="#FFF5B1" stroke="#F9C513" stroke-width="1.5"/>
+  <text x="235" y="150" text-anchor="middle" font-size="9" font-weight="600" fill="#B08800">Buffer</text>
+  <text x="235" y="163" text-anchor="middle" font-size="8" fill="#B08800">50–100 tokens</text>
+
+  <!-- Check -->
+  <line x1="235" y1="172" x2="235" y2="195" stroke="#586069" stroke-width="1.2" marker-end="url(#aw)"/>
+  
+  <rect x="180" y="195" width="110" height="32" rx="5" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5"/>
+  <text x="235" y="215" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Guardrail Check</text>
+
+  <!-- Pass path -->
+  <line x1="235" y1="227" x2="235" y2="250" stroke="#22863A" stroke-width="1.2" marker-end="url(#awG)"/>
+  <text x="255" y="243" font-size="7" fill="#22863A">pass</text>
+
+  <rect x="185" y="250" width="100" height="32" rx="5" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1"/>
+  <text x="235" y="270" text-anchor="middle" font-size="9" font-weight="600" fill="#24292E">→ Client</text>
+
+  <!-- Fail path -->
+  <line x1="180" y1="211" x2="100" y2="211" stroke="#D73A49" stroke-width="1.2"/>
+  <line x1="100" y1="211" x2="100" y2="250" stroke="#D73A49" stroke-width="1.2" marker-end="url(#awR)"/>
+  <text x="140" y="205" text-anchor="middle" font-size="7" fill="#D73A49">fail</text>
+
+  <rect x="40" y="250" width="120" height="32" rx="5" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <text x="100" y="270" text-anchor="middle" font-size="9" font-weight="600" fill="#CB2431">[Filtered] → Client</text>
+
+  <!-- Timeline -->
+  <line x1="40" y1="310" x2="300" y2="310" stroke="#E1E4E8" stroke-width="1"/>
+  <text x="40" y="325" font-size="8" fill="#586069">0ms</text>
+  <text x="120" y="325" font-size="8" fill="#586069">~400ms</text>
+  <text x="220" y="325" font-size="8" fill="#586069">~600ms</text>
+  <rect x="40" y="330" width="80" height="8" rx="2" fill="#DBEDFF"/>
+  <text x="80" y="350" text-anchor="middle" font-size="7" fill="#586069">generate</text>
+  <rect x="120" y="330" width="60" height="8" rx="2" fill="#FFF5B1"/>
+  <text x="150" y="350" text-anchor="middle" font-size="7" fill="#586069">buffer</text>
+  <rect x="180" y="330" width="40" height="8" rx="2" fill="#DAFBE1"/>
+  <text x="200" y="350" text-anchor="middle" font-size="7" fill="#586069">check</text>
+  <rect x="220" y="330" width="60" height="8" rx="2" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="0.5"/>
+  <text x="250" y="350" text-anchor="middle" font-size="7" fill="#586069">user sees</text>
+
+  <!-- Pros/Cons -->
+  <text x="170" y="380" text-anchor="middle" font-size="9" fill="#22863A">✓ Pre-delivery check</text>
+  <text x="170" y="396" text-anchor="middle" font-size="9" fill="#22863A">✓ ~200–500ms added latency</text>
+  <text x="170" y="412" text-anchor="middle" font-size="9" fill="#D73A49">✗ Chunk-level only, not full-response</text>
+  <text x="170" y="428" text-anchor="middle" font-size="9" fill="#D73A49">✗ Context-dependent violations missed</text>
+  <rect x="85" y="440" width="170" height="20" rx="4" fill="#DAFBE1"/>
+  <text x="170" y="454" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Best for: Customer-facing Tier 2</text>
+
+  <!-- === PATTERN 2: STREAM + POST-HOC === -->
+  <rect x="345" y="75" width="310" height="400" rx="8" fill="white" stroke="#F9C513" stroke-width="2" filter="url(#sf)"/>
+  <text x="500" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#B08800">Stream + Post-Hoc</text>
+  <text x="500" y="116" text-anchor="middle" font-size="10" fill="#B08800">Tier 1–2 — Fast, audit-focused</text>
+
+  <!-- Flow - main path -->
+  <rect x="370" y="135" width="100" height="32" rx="5" fill="#DBEDFF" stroke="#0366D6" stroke-width="1"/>
+  <text x="420" y="155" text-anchor="middle" font-size="9" font-weight="600" fill="#0366D6">LLM</text>
+
+  <line x1="470" y1="145" x2="520" y2="145" stroke="#586069" stroke-width="1.2" marker-end="url(#aw)"/>
+  <text x="495" y="140" text-anchor="middle" font-size="7" fill="#586069">stream</text>
+  
+  <rect x="520" y="130" width="110" height="32" rx="5" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1"/>
+  <text x="575" y="150" text-anchor="middle" font-size="9" font-weight="600" fill="#24292E">→ Client (live)</text>
+
+  <!-- Parallel path -->
+  <line x1="420" y1="167" x2="420" y2="200" stroke="#586069" stroke-width="1.2" marker-end="url(#aw)"/>
+  <text x="440" y="190" font-size="7" fill="#586069">parallel</text>
+  
+  <rect x="370" y="200" width="260" height="32" rx="5" fill="#FFF5B1" stroke="#F9C513" stroke-width="1.5"/>
+  <text x="500" y="220" text-anchor="middle" font-size="9" font-weight="600" fill="#B08800">Complete Response → Judge Evaluation</text>
+
+  <!-- Judge result paths -->
+  <line x1="500" y1="232" x2="500" y2="260" stroke="#586069" stroke-width="1.2" marker-end="url(#aw)"/>
+  
+  <!-- Pass -->
+  <line x1="500" y1="260" x2="430" y2="280" stroke="#22863A" stroke-width="1.2" marker-end="url(#awG)"/>
+  <text x="450" y="275" font-size="7" fill="#22863A">pass</text>
+  <rect x="370" y="280" width="120" height="25" rx="5" fill="#DAFBE1" stroke="#34D058" stroke-width="1"/>
+  <text x="430" y="297" text-anchor="middle" font-size="8" font-weight="600" fill="#22863A">Log &amp; close</text>
+
+  <!-- Fail -->
+  <line x1="500" y1="260" x2="575" y2="280" stroke="#D73A49" stroke-width="1.2" marker-end="url(#awR)"/>
+  <text x="550" y="275" font-size="7" fill="#D73A49">flag</text>
+  <rect x="520" y="280" width="120" height="25" rx="5" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <text x="580" y="297" text-anchor="middle" font-size="8" font-weight="600" fill="#CB2431">Retract / Warn ⚠</text>
+
+  <!-- Timeline -->
+  <line x1="370" y1="330" x2="630" y2="330" stroke="#E1E4E8" stroke-width="1"/>
+  <text x="370" y="345" font-size="8" fill="#586069">0ms</text>
+  <text x="430" y="345" font-size="8" fill="#586069">~100ms</text>
+  <text x="560" y="345" font-size="8" fill="#D73A49">3–35s</text>
+  <rect x="370" y="350" width="60" height="8" rx="2" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="0.5"/>
+  <text x="400" y="370" text-anchor="middle" font-size="7" fill="#586069">user sees</text>
+  <rect x="430" y="350" width="130" height="8" rx="2" fill="#FFF5B1"/>
+  <text x="495" y="370" text-anchor="middle" font-size="7" fill="#586069">judge evaluates (async)</text>
+  <rect x="560" y="350" width="60" height="8" rx="2" fill="#FFEEF0"/>
+  <text x="590" y="370" text-anchor="middle" font-size="7" fill="#D73A49">retract?</text>
+
+  <!-- Pros/Cons -->
+  <text x="500" y="396" text-anchor="middle" font-size="9" fill="#22863A">✓ Zero added latency for user</text>
+  <text x="500" y="412" text-anchor="middle" font-size="9" fill="#22863A">✓ Full-response evaluation</text>
+  <text x="500" y="428" text-anchor="middle" font-size="9" fill="#D73A49">✗ User sees content before check</text>
+  <text x="500" y="444" text-anchor="middle" font-size="9" fill="#D73A49">✗ Retraction ≠ prevention</text>
+  <rect x="415" y="452" width="170" height="20" rx="4" fill="#FFF5B1"/>
+  <text x="500" y="466" text-anchor="middle" font-size="9" font-weight="600" fill="#B08800">Best for: Internal tools, Tier 1</text>
+
+  <!-- === PATTERN 3: NON-STREAMING === -->
+  <rect x="675" y="75" width="310" height="400" rx="8" fill="white" stroke="#D73A49" stroke-width="2" filter="url(#sf)"/>
+  <text x="830" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#CB2431">Non-Streaming</text>
+  <text x="830" y="116" text-anchor="middle" font-size="10" fill="#CB2431">Tier 3 — Maximum safety</text>
+
+  <!-- Flow -->
+  <rect x="700" y="135" width="100" height="32" rx="5" fill="#DBEDFF" stroke="#0366D6" stroke-width="1"/>
+  <text x="750" y="155" text-anchor="middle" font-size="9" font-weight="600" fill="#0366D6">LLM</text>
+
+  <line x1="750" y1="167" x2="750" y2="195" stroke="#586069" stroke-width="1.2" marker-end="url(#aw)"/>
+  <text x="770" y="185" font-size="7" fill="#586069">complete</text>
+
+  <rect x="700" y="195" width="130" height="32" rx="5" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5"/>
+  <text x="765" y="215" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Guardrails</text>
+
+  <line x1="765" y1="227" x2="765" y2="250" stroke="#586069" stroke-width="1.2" marker-end="url(#aw)"/>
+
+  <rect x="700" y="250" width="130" height="32" rx="5" fill="#FFF5B1" stroke="#F9C513" stroke-width="1.5"/>
+  <text x="765" y="270" text-anchor="middle" font-size="9" font-weight="600" fill="#B08800">Judge</text>
+
+  <!-- Pass -->
+  <line x1="765" y1="282" x2="765" y2="308" stroke="#22863A" stroke-width="1.2" marker-end="url(#awG)"/>
+  <text x="785" y="298" font-size="7" fill="#22863A">pass</text>
+  <rect x="715" y="308" width="100" height="32" rx="5" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1"/>
+  <text x="765" y="328" text-anchor="middle" font-size="9" font-weight="600" fill="#24292E">→ Client</text>
+
+  <!-- Fail -->
+  <line x1="830" y1="266" x2="880" y2="266" stroke="#D73A49" stroke-width="1.2"/>
+  <line x1="880" y1="266" x2="880" y2="308" stroke="#D73A49" stroke-width="1.2" marker-end="url(#awR)"/>
+  <text x="860" y="260" font-size="7" fill="#D73A49">fail</text>
+  <rect x="840" y="308" width="120" height="32" rx="5" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <text x="900" y="328" text-anchor="middle" font-size="9" font-weight="600" fill="#CB2431">Block / Regen</text>
+
+  <!-- Timeline -->
+  <line x1="700" y1="365" x2="960" y2="365" stroke="#E1E4E8" stroke-width="1"/>
+  <text x="700" y="380" font-size="8" fill="#586069">0ms</text>
+  <text x="870" y="380" font-size="8" fill="#586069">3–30s</text>
+  <rect x="700" y="385" width="170" height="8" rx="2" fill="#E1E4E8"/>
+  <text x="785" y="405" text-anchor="middle" font-size="7" fill="#586069">user waits (loading...)</text>
+  <rect x="870" y="385" width="60" height="8" rx="2" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="0.5"/>
+  <text x="900" y="405" text-anchor="middle" font-size="7" fill="#586069">user sees</text>
+
+  <!-- Pros/Cons -->
+  <text x="830" y="426" text-anchor="middle" font-size="9" fill="#22863A">✓ Full evaluation before delivery</text>
+  <text x="830" y="442" text-anchor="middle" font-size="9" fill="#22863A">✓ Deterministic safety</text>
+  <text x="830" y="458" text-anchor="middle" font-size="9" fill="#D73A49">✗ 3–30s wait, no incremental feedback</text>
+  <rect x="745" y="465" width="170" height="20" rx="4" fill="#FFEEF0"/>
+  <text x="830" y="479" text-anchor="middle" font-size="9" font-weight="600" fill="#CB2431">Best for: Regulated, Tier 3</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#f8fafc"/>
+  
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Three Independent Decision Authorities</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">AI is one voice, not the final word</text>
+
+  <rect x="40" y="80" width="210" height="170" rx="12" fill="#3b82f6"/>
+  <text x="145" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">FRAUD ENGINES</text>
+  <text x="145" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" opacity="0.9">Deterministic Risk Signals</text>
+  <rect x="55" y="140" width="180" height="75" rx="6" fill="white" opacity="0.15"/>
+  <text x="65" y="162" font-family="Arial, sans-serif" font-size="10" fill="white">Rules engines</text>
+  <text x="65" y="180" font-family="Arial, sans-serif" font-size="10" fill="white">Behavioural analytics</text>
+  <text x="65" y="198" font-family="Arial, sans-serif" font-size="10" fill="white">Sanctions screening</text>
+  <rect x="80" y="225" width="130" height="20" rx="4" fill="#1e40af"/>
+  <text x="145" y="239" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">INLINE (ms)</text>
+
+  <line x1="250" y1="165" x2="285" y2="165" stroke="#64748b" stroke-width="2"/>
+  <polygon points="285,165 278,161 278,169" fill="#64748b"/>
+  <text x="268" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">signals</text>
+
+  <rect x="295" y="80" width="210" height="170" rx="12" fill="#8b5cf6"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">AGENTIC AI</text>
+  <text x="400" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" opacity="0.9">Analysis and Recommendations</text>
+  <rect x="310" y="140" width="180" height="75" rx="6" fill="white" opacity="0.15"/>
+  <text x="320" y="162" font-family="Arial, sans-serif" font-size="10" fill="white">Context aggregation</text>
+  <text x="320" y="180" font-family="Arial, sans-serif" font-size="10" fill="white">Narrative generation</text>
+  <text x="320" y="198" font-family="Arial, sans-serif" font-size="10" fill="white">Triage recommendation</text>
+  <rect x="335" y="225" width="130" height="20" rx="4" fill="#5b21b6"/>
+  <text x="400" y="239" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">NEAR-RT (sec)</text>
+
+  <line x1="505" y1="165" x2="540" y2="165" stroke="#64748b" stroke-width="2"/>
+  <polygon points="540,165 533,161 533,169" fill="#64748b"/>
+  <text x="523" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">recommends</text>
+
+  <rect x="550" y="80" width="210" height="170" rx="12" fill="#f59e0b"/>
+  <text x="655" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">HUMAN ANALYST</text>
+  <text x="655" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" opacity="0.9">Final Arbitration</text>
+  <rect x="565" y="140" width="180" height="75" rx="6" fill="white" opacity="0.15"/>
+  <text x="575" y="162" font-family="Arial, sans-serif" font-size="10" fill="white">Review all evidence</text>
+  <text x="575" y="180" font-family="Arial, sans-serif" font-size="10" fill="white">Override AI if needed</text>
+  <text x="575" y="198" font-family="Arial, sans-serif" font-size="10" fill="white">Final decision authority</text>
+  <rect x="590" y="225" width="130" height="20" rx="4" fill="#b45309"/>
+  <text x="655" y="239" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">MINUTES+</text>
+
+  <rect x="40" y="275" width="720" height="50" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="400" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">All stages emit telemetry, correlated by:</text>
+  <text x="400" y="315" text-anchor="middle" font-family="monospace" font-size="11" fill="#475569">transaction_id + case_id</text>
+
+  <rect x="150" y="345" width="500" height="38" rx="6" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="400" y="369" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">AI proposes interpretation. Fraud engines enforce. Humans arbitrate.</text>
+</svg>

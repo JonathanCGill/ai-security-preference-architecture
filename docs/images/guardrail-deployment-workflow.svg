@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-indigo" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="28" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Guardrail Deployment Workflow</text>
+
+  <!-- ==================== STEP 1 ==================== -->
+  <circle cx="70" cy="65" r="14" fill="#1e293b"/>
+  <text x="70" y="70" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+
+  <rect x="95" y="50" width="660" height="32" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="110" y="71" font-size="11" font-weight="bold" fill="#4338ca">AGO defines / updates pattern in central library</text>
+  <text x="470" y="71" font-size="9" fill="#94a3b8" font-style="italic">Policy &amp; Standards team</text>
+
+  <!-- Arrow step 1 → step 2 -->
+  <line x1="400" y1="82" x2="400" y2="105" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 2 ==================== -->
+  <circle cx="70" cy="125" r="14" fill="#1e293b"/>
+  <text x="70" y="130" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+
+  <rect x="95" y="110" width="660" height="32" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="110" y="131" font-size="11" font-weight="bold" fill="#4338ca">AGO Technical triggers deployment pipeline</text>
+  <text x="450" y="131" font-size="9" fill="#94a3b8" font-style="italic">Platform &amp; Tooling team</text>
+
+  <!-- Fan-out arrows from step 2 to step 3 -->
+  <line x1="240" y1="142" x2="175" y2="182" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="400" y1="142" x2="400" y2="182" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="560" y1="142" x2="625" y2="182" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 3: THREE PLATFORM BOXES ==================== -->
+  <circle cx="70" cy="210" r="14" fill="#1e293b"/>
+  <text x="70" y="215" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+
+  <rect x="95" y="187" width="200" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="195" y="210" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Bedrock Guardrail</text>
+  <text x="195" y="226" font-size="10" fill="#92400e" text-anchor="middle">Update</text>
+
+  <rect x="305" y="187" width="200" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="405" y="210" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Databricks AI Gateway</text>
+  <text x="405" y="226" font-size="10" fill="#92400e" text-anchor="middle">Update</text>
+
+  <rect x="515" y="187" width="200" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="615" y="210" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Foundry Config</text>
+  <text x="615" y="226" font-size="10" fill="#92400e" text-anchor="middle">Update</text>
+
+  <!-- Converging arrows from step 3 to step 4 -->
+  <line x1="195" y1="237" x2="195" y2="270" stroke="#475569" stroke-width="1.5"/>
+  <line x1="405" y1="237" x2="405" y2="270" stroke="#475569" stroke-width="1.5"/>
+  <line x1="615" y1="237" x2="615" y2="270" stroke="#475569" stroke-width="1.5"/>
+  <line x1="195" y1="270" x2="400" y2="270" stroke="#475569" stroke-width="1.5"/>
+  <line x1="615" y1="270" x2="400" y2="270" stroke="#475569" stroke-width="1.5"/>
+  <line x1="400" y1="270" x2="400" y2="293" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 4 ==================== -->
+  <circle cx="70" cy="313" r="14" fill="#1e293b"/>
+  <text x="70" y="318" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+
+  <rect x="95" y="298" width="660" height="32" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="130" y="319" font-size="14" fill="#166534">&#x2713;</text>
+  <text x="150" y="319" font-size="11" font-weight="bold" fill="#166534">Verification tests run on each platform</text>
+  <text x="475" y="319" font-size="9" fill="#94a3b8" font-style="italic">Automated test suites per adapter</text>
+
+  <!-- Arrow step 4 → step 5 -->
+  <line x1="400" y1="330" x2="400" y2="353" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 5 ==================== -->
+  <circle cx="70" cy="373" r="14" fill="#1e293b"/>
+  <text x="70" y="378" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+
+  <rect x="95" y="358" width="660" height="32" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="130" y="379" font-size="14" fill="#166534">&#x2713;</text>
+  <text x="150" y="379" font-size="11" font-weight="bold" fill="#166534">Metrics flow to central dashboard</text>
+  <text x="445" y="379" font-size="9" fill="#94a3b8" font-style="italic">Aggregated governance reporting</text>
+
+  <!-- Footer -->
+  <text x="400" y="412" font-size="10" fill="#94a3b8" text-anchor="middle">Single definition — multi-platform deployment — unified verification</text>
+</svg>

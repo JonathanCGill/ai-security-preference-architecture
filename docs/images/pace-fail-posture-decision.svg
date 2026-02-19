@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="520" viewBox="0 0 820 520" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5d6d7e"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="520" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Fail Posture Decision: When a Control Layer Degrades</text>
+  <text x="410" y="46" text-anchor="middle" font-size="10" fill="#7f8c8d">The most important resilience decision an architect makes for each control at each tier</text>
+
+  <!-- Start diamond -->
+  <polygon points="410,70 530,120 410,170 290,120" fill="#fff" stroke="#2c3e50" stroke-width="2" filter="url(#shadow)"/>
+  <text x="410" y="116" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">Control layer</text>
+  <text x="410" y="130" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">degraded or down</text>
+
+  <!-- Left branch: Can uncontrolled output cause harm? -->
+  <line x1="290" y1="120" x2="180" y2="120" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="530" y1="120" x2="640" y2="120" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Question 1: Left side -->
+  <polygon points="120,80 175,120 120,160 65,120" fill="#fff" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="120" y="115" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">Customer</text>
+  <text x="120" y="127" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">facing?</text>
+
+  <!-- Question 1: Right side -->
+  <polygon points="700,80 755,120 700,160 645,120" fill="#fff" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="700" y="115" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">Regulated</text>
+  <text x="700" y="127" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">decision?</text>
+
+  <!-- Left: No path → Fail-open -->
+  <line x1="65" y1="120" x2="30" y2="120" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <text x="48" y="113" font-size="8" fill="#27ae60" font-weight="bold">No</text>
+  <line x1="30" y1="120" x2="30" y2="220" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="30" y1="220" x2="130" y2="220" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Left: Yes path down -->
+  <line x1="120" y1="160" x2="120" y2="200" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="130" y="185" font-size="8" fill="#e74c3c" font-weight="bold">Yes</text>
+
+  <!-- Right: Yes path → Fail-closed always -->
+  <line x1="755" y1="120" x2="790" y2="120" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <text x="768" y="113" font-size="8" fill="#e74c3c" font-weight="bold">Yes</text>
+  <line x1="790" y1="120" x2="790" y2="310" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="790" y1="310" x2="690" y2="310" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right: No path down -->
+  <line x1="700" y1="160" x2="700" y2="200" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="710" y="185" font-size="8" fill="#27ae60" font-weight="bold">No</text>
+
+  <!-- Middle question: Can output cause direct harm? -->
+  <polygon points="120,200 210,240 120,280 30,240" fill="#fff" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="120" y="233" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">Direct harm</text>
+  <text x="120" y="245" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">possible?</text>
+
+  <!-- Right middle: Agent with write access? -->
+  <polygon points="700,200 790,240 700,280 610,240" fill="#fff" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="700" y="233" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">Agent with</text>
+  <text x="700" y="245" text-anchor="middle" font-size="8" font-weight="bold" fill="#e67e22">write access?</text>
+
+  <!-- Left middle: No → Fail-open with logging -->
+  <line x1="30" y1="240" x2="30" y2="340" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <text x="18" y="280" font-size="8" fill="#27ae60" font-weight="bold">No</text>
+  <line x1="30" y1="340" x2="130" y2="340" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Left middle: Yes → Fail-closed -->
+  <line x1="120" y1="280" x2="120" y2="290" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="130" y="287" font-size="8" fill="#e74c3c" font-weight="bold">Yes</text>
+
+  <!-- Right middle: Yes → Fail-closed -->
+  <line x1="700" y1="280" x2="700" y2="290" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="710" y="287" font-size="8" fill="#e74c3c" font-weight="bold">Yes</text>
+
+  <!-- Right middle: No → Fail-open with logging -->
+  <line x1="610" y1="240" x2="560" y2="240" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <text x="576" y="233" font-size="8" fill="#27ae60" font-weight="bold">No</text>
+  <line x1="560" y1="240" x2="560" y2="340" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="560" y1="340" x2="490" y2="340" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- OUTCOME BOXES -->
+  <!-- Fail-Open (top left) -->
+  <rect x="133" y="198" width="210" height="62" rx="5" fill="#eafaf1" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="238" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e8449">FAIL-OPEN</text>
+  <text x="238" y="233" text-anchor="middle" font-size="9" fill="#2c3e50">Pass traffic. Log everything.</text>
+  <text x="238" y="247" text-anchor="middle" font-size="9" fill="#2c3e50">Rely on remaining layers to catch issues.</text>
+
+  <!-- Fail-Open with enhanced logging (mid left) -->
+  <rect x="133" y="318" width="210" height="62" rx="5" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="238" y="338" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e8449">FAIL-OPEN + MONITOR</text>
+  <text x="238" y="353" text-anchor="middle" font-size="9" fill="#2c3e50">Pass traffic. Enhanced logging.</text>
+  <text x="238" y="367" text-anchor="middle" font-size="9" fill="#2c3e50">Alert team. Increase Judge sampling.</text>
+
+  <!-- Fail-Closed (mid center) -->
+  <rect x="120" y="290" width="1" height="1" fill="none"/>
+  <rect x="80" y="290" width="210" height="1" fill="none"/>
+
+  <!-- Fail-Closed box for left "Yes" -->
+  <rect x="295" y="290" width="210" height="62" rx="5" fill="#fdedec" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="400" y="310" text-anchor="middle" font-size="11" font-weight="bold" fill="#922b21">FAIL-CLOSED</text>
+  <text x="400" y="325" text-anchor="middle" font-size="9" fill="#2c3e50">Block all AI traffic through this layer.</text>
+  <text x="400" y="339" text-anchor="middle" font-size="9" fill="#2c3e50">Route to fallback. Alert immediately.</text>
+
+  <!-- Connect left Yes to fail-closed -->
+  <line x1="120" y1="290" x2="120" y2="320" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="120" y1="320" x2="295" y2="320" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Connect right Yes to fail-closed -->
+  <line x1="700" y1="290" x2="700" y2="320" stroke="#5d6d7e" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="700" y1="320" x2="505" y2="320" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Fail-Open with logging (right) -->
+  <rect x="385" y="318" width="210" height="62" rx="5" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="490" y="338" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e8449">FAIL-OPEN + CONSTRAIN</text>
+  <text x="490" y="353" text-anchor="middle" font-size="9" fill="#2c3e50">Pass traffic. Narrow agent scope.</text>
+  <text x="490" y="367" text-anchor="middle" font-size="9" fill="#2c3e50">Revoke write. Read-only until restored.</text>
+
+  <!-- Fail-Closed Always (right) -->
+  <rect x="630" y="290" width="210" height="62" rx="5" fill="#f5b7b1" stroke="#922b21" stroke-width="2" filter="url(#shadow)"/>
+  <text x="735" y="310" text-anchor="middle" font-size="11" font-weight="bold" fill="#922b21">FAIL-CLOSED ALWAYS</text>
+  <text x="735" y="325" text-anchor="middle" font-size="9" fill="#2c3e50">No exceptions. Block immediately.</text>
+  <text x="735" y="339" text-anchor="middle" font-size="9" fill="#2c3e50">Activate non-AI path. Notify regulator.</text>
+
+  <!-- Summary tier mapping -->
+  <rect x="60" y="410" width="700" height="85" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="410" y="432" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">Default Fail Posture by Tier</text>
+  <line x1="80" y1="440" x2="740" y2="440" stroke="#d5dbdb" stroke-width="1"/>
+  <text x="80" y="460" font-size="10" fill="#2980b9" font-weight="bold">Tier 1:</text>
+  <text x="130" y="460" font-size="10" fill="#2c3e50">Fail-open. Log. Fix next business day. The manual process is the fallback.</text>
+  <text x="80" y="478" font-size="10" fill="#f39c12" font-weight="bold">Tier 2:</text>
+  <text x="130" y="478" font-size="10" fill="#2c3e50">Fail-closed by default. Automated switchover to rule-based fallback. Fix within SLA.</text>
+  <text x="80" y="496" font-size="10" fill="#e74c3c" font-weight="bold">Tier 3:</text>
+  <text x="130" y="496" font-size="10" fill="#2c3e50">Fail-closed always. No AI traffic passes a degraded control. Immediate escalation.</text>
+
+  <text x="410" y="515" text-anchor="middle" font-size="9" fill="#95a5a6">AI Runtime Behaviour Security — Fail Posture Decision Tree © Jonathan Gill 2025</text>
+</svg>

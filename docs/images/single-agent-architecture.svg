@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1e293b">Single-Agent Security Architecture</text>
+  <text x="450" y="56" text-anchor="middle" font-size="12" fill="#64748b">Three-Layer Defence Model with PACE Resilience</text>
+
+  <!-- Flow arrow background -->
+  <rect x="60" y="75" width="780" height="360" rx="12" fill="url(#flowGrad)" stroke="#cbd5e1" stroke-width="0.5"/>
+
+  <!-- === LAYER 1: GUARDRAILS === -->
+  <rect x="80" y="90" width="740" height="80" rx="8" fill="#ffffff" filter="url(#shadow)" stroke="#22c55e" stroke-width="2"/>
+  <rect x="80" y="90" width="6" height="80" rx="3" fill="#22c55e"/>
+
+  <text x="108" y="115" font-size="14" font-weight="700" fill="#15803d">Layer 1 — Guardrails</text>
+  <text x="750" y="115" text-anchor="end" font-size="11" fill="#22c55e" font-weight="600">~10ms</text>
+
+  <text x="108" y="136" font-size="11" fill="#475569">Input validation</text>
+  <text x="245" y="136" font-size="11" fill="#475569">Output sanitisation</text>
+  <text x="410" y="136" font-size="11" fill="#475569">Content filtering</text>
+  <text x="555" y="136" font-size="11" fill="#475569">PII/secrets detection</text>
+  <text x="720" y="136" font-size="11" fill="#475569">Rate limiting</text>
+
+  <text x="108" y="157" font-size="10" fill="#94a3b8" font-style="italic">Deterministic. Blocks known-bad at machine speed. Every request passes through.</text>
+
+  <!-- Down arrow -->
+  <path d="M450,175 L450,195 M444,189 L450,195 L456,189" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <text x="470" y="189" font-size="9" fill="#94a3b8">pass</text>
+
+  <!-- === LAYER 2: LLM-AS-JUDGE === -->
+  <rect x="80" y="200" width="740" height="80" rx="8" fill="#ffffff" filter="url(#shadow)" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="80" y="200" width="6" height="80" rx="3" fill="#f59e0b"/>
+
+  <text x="108" y="225" font-size="14" font-weight="700" fill="#b45309">Layer 2 — LLM-as-Judge</text>
+  <text x="750" y="225" text-anchor="end" font-size="11" fill="#f59e0b" font-weight="600">~500ms–5s</text>
+
+  <text x="108" y="246" font-size="11" fill="#475569">Policy compliance</text>
+  <text x="245" y="246" font-size="11" fill="#475569">Hallucination detection</text>
+  <text x="420" y="246" font-size="11" fill="#475569">Tone &amp; safety</text>
+  <text x="555" y="246" font-size="11" fill="#475569">Factual grounding</text>
+  <text x="700" y="246" font-size="11" fill="#475569">Quality scoring</text>
+
+  <text x="108" y="267" font-size="10" fill="#94a3b8" font-style="italic">Independent model evaluates outputs. Catches what guardrails can't pattern-match.</text>
+
+  <!-- Down arrow -->
+  <path d="M450,285 L450,305 M444,299 L450,305 L456,299" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <text x="470" y="299" font-size="9" fill="#94a3b8">pass</text>
+
+  <!-- === LAYER 3: HUMAN OVERSIGHT === -->
+  <rect x="80" y="310" width="740" height="80" rx="8" fill="#ffffff" filter="url(#shadow)" stroke="#8b5cf6" stroke-width="2"/>
+  <rect x="80" y="310" width="6" height="80" rx="3" fill="#8b5cf6"/>
+
+  <text x="108" y="335" font-size="14" font-weight="700" fill="#6d28d9">Layer 3 — Human Oversight</text>
+  <text x="750" y="335" text-anchor="end" font-size="11" fill="#8b5cf6" font-weight="600">As needed</text>
+
+  <text x="108" y="356" font-size="11" fill="#475569">Edge case decisions</text>
+  <text x="268" y="356" font-size="11" fill="#475569">Escalation review</text>
+  <text x="420" y="356" font-size="11" fill="#475569">Accountability</text>
+  <text x="555" y="356" font-size="11" fill="#475569">Audit &amp; governance</text>
+  <text x="710" y="356" font-size="11" fill="#475569">Override</text>
+
+  <text x="108" y="377" font-size="10" fill="#94a3b8" font-style="italic">Scope scales with risk tier. Low-risk: spot checks. High-risk: approve before commit.</text>
+
+  <!-- === CIRCUIT BREAKER === -->
+  <rect x="80" y="410" width="740" height="40" rx="8" fill="#fef2f2" filter="url(#shadow)" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="450" y="435" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">Circuit Breaker — stops AI traffic, activates non-AI fallback when any layer fails</text>
+
+  <!-- === PACE sidebar === -->
+  <rect x="835" y="85" width="50" height="365" rx="6" fill="#1e293b"/>
+
+  <text x="860" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#22c55e" transform="rotate(90,860,135)">PRIMARY</text>
+  <line x1="840" y1="185" x2="880" y2="185" stroke="#475569" stroke-width="0.5"/>
+  <text x="860" y="225" text-anchor="middle" font-size="13" font-weight="700" fill="#f59e0b" transform="rotate(90,860,225)">ALTERNATE</text>
+  <line x1="840" y1="275" x2="880" y2="275" stroke="#475569" stroke-width="0.5"/>
+  <text x="860" y="325" text-anchor="middle" font-size="13" font-weight="700" fill="#8b5cf6" transform="rotate(90,860,325)">CONTINGENCY</text>
+  <line x1="840" y1="370" x2="880" y2="370" stroke="#475569" stroke-width="0.5"/>
+  <text x="860" y="430" text-anchor="middle" font-size="13" font-weight="700" fill="#ef4444" transform="rotate(90,860,430)">EMERGENCY</text>
+
+  <!-- PACE label -->
+  <text x="860" y="475" text-anchor="middle" font-size="9" fill="#64748b" font-weight="600">P A C E</text>
+
+  <!-- Reject arrows from layers -->
+  <!-- Guardrails reject -->
+  <path d="M80,130 L50,130" stroke="#ef4444" stroke-width="1.5" fill="none" marker-end="none"/>
+  <text x="14" y="125" font-size="9" fill="#ef4444" font-weight="600">BLOCK</text>
+  <text x="18" y="136" font-size="8" fill="#94a3b8">known-bad</text>
+
+  <!-- Judge reject -->
+  <path d="M80,240 L50,240" stroke="#ef4444" stroke-width="1.5" fill="none"/>
+  <text x="10" y="235" font-size="9" fill="#ef4444" font-weight="600">REJECT</text>
+  <text x="6" y="246" font-size="8" fill="#94a3b8">unknown-bad</text>
+
+  <!-- Human reject -->
+  <path d="M80,350 L50,350" stroke="#ef4444" stroke-width="1.5" fill="none"/>
+  <text x="5" y="345" font-size="9" fill="#ef4444" font-weight="600">ESCALATE</text>
+  <text x="12" y="356" font-size="8" fill="#94a3b8">edge cases</text>
+
+  <!-- Bottom summary -->
+  <text x="450" y="498" text-anchor="middle" font-size="12" fill="#1e293b" font-weight="600">Guardrails prevent · Judge detects · Humans decide · Circuit breakers contain</text>
+  <text x="450" y="514" text-anchor="middle" font-size="10" fill="#64748b">AI Runtime Behaviour Security — foundations/</text>
+</svg>

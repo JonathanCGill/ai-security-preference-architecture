@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 550" width="750" height="550">
+  <style>
+    .title { font: bold 14px Arial, sans-serif; fill: #1e293b; }
+    .subtitle { font: 11px Arial, sans-serif; fill: #64748b; }
+    .label { font: bold 10px Arial, sans-serif; fill: #ffffff; }
+    .item { font: 9px Arial, sans-serif; fill: #1e293b; }
+    .item-light { font: 9px Arial, sans-serif; fill: #ffffff; }
+    .waterline { font: bold 12px Arial, sans-serif; fill: #0ea5e9; }
+    .header { font: bold 11px Arial, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="750" height="550" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="375" y="30" text-anchor="middle" class="title">AI RISK: WHAT PEOPLE SEE vs WHAT ACTUALLY BREAKS</text>
+
+  <!-- Sky / above water -->
+  <rect x="50" y="50" width="650" height="130" rx="0" fill="#e0f2fe"/>
+
+  <!-- Iceberg tip -->
+  <polygon points="375,60 300,175 450,175" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- AI-specific risks above waterline -->
+  <text x="375" y="90" text-anchor="middle" font-size="9" font-weight="bold" fill="#475569">AI-SPECIFIC RISKS</text>
+  <text x="375" y="108" text-anchor="middle" font-size="8" fill="#64748b">Prompt injection</text>
+  <text x="375" y="120" text-anchor="middle" font-size="8" fill="#64748b">Hallucination</text>
+  <text x="375" y="132" text-anchor="middle" font-size="8" fill="#64748b">Model manipulation</text>
+  <text x="375" y="144" text-anchor="middle" font-size="8" fill="#64748b">Bias</text>
+  <text x="375" y="156" text-anchor="middle" font-size="8" fill="#64748b">Data leakage</text>
+
+  <!-- Waterline -->
+  <rect x="50" y="175" width="650" height="8" fill="#0ea5e9" opacity="0.6"/>
+  <line x1="50" y1="180" x2="700" y2="180" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Water / below -->
+  <rect x="50" y="183" width="650" height="340" rx="0" fill="#1e3a5f"/>
+
+  <!-- Iceberg body -->
+  <polygon points="300,183 200,520 550,520 450,183" fill="#334155" stroke="#475569" stroke-width="1"/>
+
+  <!-- Support system risks below waterline -->
+  <text x="375" y="210" text-anchor="middle" font-size="10" font-weight="bold" fill="#f1f5f9">SUPPORT SYSTEM RISKS</text>
+
+  <text x="375" y="235" text-anchor="middle" class="item-light">SS.1 Infrastructure — cloud outage, compute, networking</text>
+  <text x="375" y="255" text-anchor="middle" class="item-light">SS.2 Model Providers — silent updates, deprecation, outage</text>
+  <text x="375" y="275" text-anchor="middle" class="item-light">SS.3 Data Supply Chain — stale RAG data, pipeline failure</text>
+  <text x="375" y="295" text-anchor="middle" class="item-light">SS.4 Identity &amp; Secrets — leaked API keys, rotation failure</text>
+  <text x="375" y="315" text-anchor="middle" class="item-light">SS.5 Configuration — bad prompt push, guardrail misconfig</text>
+  <text x="375" y="335" text-anchor="middle" class="item-light">SS.6 Observability — logging dies, nobody notices</text>
+  <text x="375" y="355" text-anchor="middle" class="item-light">SS.7 People — key-person risk, HITL fatigue, skills gap</text>
+  <text x="375" y="375" text-anchor="middle" class="item-light">SS.8 Vendor Concentration — correlated failure</text>
+  <text x="375" y="395" text-anchor="middle" class="item-light">SS.9 Financial — runaway costs, no budget alerts</text>
+  <text x="375" y="415" text-anchor="middle" class="item-light">SS.10 Change Management — silent model update, prompt regression</text>
+
+  <!-- Annotations -->
+  <!-- Above water label -->
+  <rect x="560" y="70" width="130" height="45" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="625" y="88" text-anchor="middle" font-size="9" font-weight="bold" fill="#dc2626">Low probability</text>
+  <text x="625" y="102" text-anchor="middle" font-size="9" font-weight="bold" fill="#dc2626">High visibility</text>
+
+  <!-- Below water label -->
+  <rect x="560" y="440" width="130" height="45" rx="4" fill="#1e293b" stroke="#475569"/>
+  <text x="625" y="458" text-anchor="middle" font-size="9" font-weight="bold" fill="#f59e0b">High probability</text>
+  <text x="625" y="472" text-anchor="middle" font-size="9" font-weight="bold" fill="#f59e0b">Low visibility</text>
+
+  <!-- Arrows -->
+  <line x1="625" y1="115" x2="470" y2="140" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="625" y1="440" x2="500" y2="400" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- Bottom line -->
+  <text x="375" y="535" text-anchor="middle" font-size="10" fill="#94a3b8">Secure the support systems. Then worry about prompt injection.</text>
+</svg>

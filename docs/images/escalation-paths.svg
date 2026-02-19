@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280">
+  <defs>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="riskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#b45309"/>
+    </linearGradient>
+    <linearGradient id="compGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#047857"/>
+    </linearGradient>
+    <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="280" fill="#f8fafc"/>
+  
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Escalation Paths</text>
+  
+  <!-- Technical Escalation -->
+  <g>
+    <rect x="30" y="55" width="740" height="45" rx="6" fill="url(#techGrad)"/>
+    <text x="50" y="83" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">TECHNICAL:</text>
+    <text x="145" y="83" font-family="Arial, sans-serif" font-size="10" fill="white">AI Operations</text>
+    <path d="M215 78 L245 78" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="260" y="83" font-family="Arial, sans-serif" font-size="10" fill="white">AI Security</text>
+    <path d="M330 78 L360 78" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="375" y="83" font-family="Arial, sans-serif" font-size="10" fill="white">Security Architecture</text>
+    <path d="M495 78 L525 78" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="540" y="83" font-family="Arial, sans-serif" font-size="10" fill="white">CISO</text>
+  </g>
+  
+  <!-- Risk Escalation -->
+  <g>
+    <rect x="30" y="110" width="740" height="45" rx="6" fill="url(#riskGrad)"/>
+    <text x="50" y="138" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">RISK:</text>
+    <text x="145" y="138" font-family="Arial, sans-serif" font-size="10" fill="white">AI Risk Manager</text>
+    <path d="M250 133 L280 133" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="295" y="138" font-family="Arial, sans-serif" font-size="10" fill="white">Enterprise Risk</text>
+    <path d="M395 133 L425 133" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="440" y="138" font-family="Arial, sans-serif" font-size="10" fill="white">CRO</text>
+    <path d="M475 133 L505 133" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="520" y="138" font-family="Arial, sans-serif" font-size="10" fill="white">Risk Committee</text>
+  </g>
+  
+  <!-- Compliance Escalation -->
+  <g>
+    <rect x="30" y="165" width="740" height="45" rx="6" fill="url(#compGrad)"/>
+    <text x="50" y="193" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">COMPLIANCE:</text>
+    <text x="145" y="193" font-family="Arial, sans-serif" font-size="10" fill="white">AI Compliance</text>
+    <path d="M240 188 L270 188" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="285" y="193" font-family="Arial, sans-serif" font-size="10" fill="white">Compliance Lead</text>
+    <path d="M395 188 L425 188" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="440" y="193" font-family="Arial, sans-serif" font-size="10" fill="white">CLO/CCO</text>
+    <path d="M510 188 L540 188" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="555" y="193" font-family="Arial, sans-serif" font-size="10" fill="white">Board</text>
+  </g>
+  
+  <!-- Business Escalation -->
+  <g>
+    <rect x="30" y="220" width="740" height="45" rx="6" fill="url(#busGrad)"/>
+    <text x="50" y="248" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">BUSINESS:</text>
+    <text x="145" y="248" font-family="Arial, sans-serif" font-size="10" fill="white">AI System Owner</text>
+    <path d="M260 243 L290 243" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="305" y="248" font-family="Arial, sans-serif" font-size="10" fill="white">Business Unit Head</text>
+    <path d="M430 243 L460 243" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="475" y="248" font-family="Arial, sans-serif" font-size="10" fill="white">Executive</text>
+    <path d="M545 243 L575 243" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="590" y="248" font-family="Arial, sans-serif" font-size="10" fill="white">CEO</text>
+  </g>
+</svg>

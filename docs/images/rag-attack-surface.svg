@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#586069"/>
+    </marker>
+    <marker id="arrRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#D73A49"/>
+    </marker>
+    <filter id="s" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="520" rx="8" fill="#FAFBFC"/>
+  
+  <text x="500" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1B1F23">RAG Pipeline — Attack Surface Map</text>
+  <text x="500" y="54" text-anchor="middle" font-size="11" fill="#6A737D">Red markers indicate attack vectors at each pipeline stage</text>
+
+  <!-- === PIPELINE BOXES === -->
+  
+  <!-- Source Documents -->
+  <rect x="30" y="90" width="150" height="60" rx="6" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1.5" filter="url(#s)"/>
+  <text x="105" y="116" text-anchor="middle" font-size="12" font-weight="600" fill="#24292E">Source</text>
+  <text x="105" y="132" text-anchor="middle" font-size="12" font-weight="600" fill="#24292E">Documents</text>
+  
+  <!-- Arrow -->
+  <line x1="180" y1="120" x2="220" y2="120" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+  
+  <!-- Ingestion -->
+  <rect x="220" y="90" width="150" height="60" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5" filter="url(#s)"/>
+  <text x="295" y="116" text-anchor="middle" font-size="12" font-weight="600" fill="#22863A">Ingestion</text>
+  <text x="295" y="132" text-anchor="middle" font-size="12" font-weight="600" fill="#22863A">Pipeline</text>
+  
+  <!-- Arrow -->
+  <line x1="370" y1="120" x2="410" y2="120" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+  
+  <!-- Embedding -->
+  <rect x="410" y="90" width="150" height="60" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="1.5" filter="url(#s)"/>
+  <text x="485" y="116" text-anchor="middle" font-size="12" font-weight="600" fill="#0366D6">Embedding</text>
+  <text x="485" y="132" text-anchor="middle" font-size="12" font-weight="600" fill="#0366D6">Model</text>
+  
+  <!-- Arrow -->
+  <line x1="560" y1="120" x2="600" y2="120" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+  
+  <!-- Vector Store -->
+  <rect x="600" y="90" width="150" height="60" rx="6" fill="#F1E5FF" stroke="#8B5CF6" stroke-width="1.5" filter="url(#s)"/>
+  <text x="675" y="116" text-anchor="middle" font-size="12" font-weight="600" fill="#6D28D9">Vector</text>
+  <text x="675" y="132" text-anchor="middle" font-size="12" font-weight="600" fill="#6D28D9">Store</text>
+
+  <!-- Arrow down from Vector Store -->
+  <line x1="675" y1="150" x2="675" y2="210" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- === QUERY PATH === -->
+  
+  <!-- User Query -->
+  <rect x="30" y="220" width="150" height="60" rx="6" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1.5" filter="url(#s)"/>
+  <text x="105" y="246" text-anchor="middle" font-size="12" font-weight="600" fill="#24292E">User</text>
+  <text x="105" y="262" text-anchor="middle" font-size="12" font-weight="600" fill="#24292E">Query</text>
+  
+  <!-- Arrow -->
+  <line x1="180" y1="250" x2="410" y2="250" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="295" y="242" text-anchor="middle" font-size="9" fill="#586069">embed query</text>
+  
+  <!-- Similarity Search -->
+  <rect x="410" y="220" width="150" height="60" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="1.5" filter="url(#s)"/>
+  <text x="485" y="246" text-anchor="middle" font-size="12" font-weight="600" fill="#0366D6">Similarity</text>
+  <text x="485" y="262" text-anchor="middle" font-size="12" font-weight="600" fill="#0366D6">Search</text>
+  
+  <!-- Arrow from vector store to search -->
+  <text x="590" y="195" text-anchor="middle" font-size="9" fill="#586069">search</text>
+  
+  <!-- Arrow -->
+  <line x1="560" y1="250" x2="600" y2="250" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Access Filter (CONTROL) -->
+  <rect x="600" y="220" width="150" height="60" rx="24" fill="#DAFBE1" stroke="#34D058" stroke-width="2" stroke-dasharray="6,3" filter="url(#s)"/>
+  <text x="675" y="246" text-anchor="middle" font-size="11" font-weight="600" fill="#22863A">Access</text>
+  <text x="675" y="262" text-anchor="middle" font-size="11" font-weight="600" fill="#22863A">Filter ⚙</text>
+  
+  <!-- Arrow -->
+  <line x1="750" y1="250" x2="790" y2="250" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+  
+  <!-- LLM -->
+  <rect x="790" y="198" width="170" height="84" rx="6" fill="#FFF5B1" stroke="#F9C513" stroke-width="1.5" filter="url(#s)"/>
+  <text x="875" y="228" text-anchor="middle" font-size="12" font-weight="600" fill="#B08800">LLM</text>
+  <text x="875" y="246" text-anchor="middle" font-size="10" fill="#B08800">Query + Retrieved</text>
+  <text x="875" y="262" text-anchor="middle" font-size="10" fill="#B08800">Chunks → Response</text>
+
+  <!-- Arrow down to response -->
+  <line x1="875" y1="282" x2="875" y2="320" stroke="#586069" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Response -->
+  <rect x="790" y="320" width="170" height="50" rx="6" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1.5" filter="url(#s)"/>
+  <text x="875" y="350" text-anchor="middle" font-size="12" font-weight="600" fill="#24292E">Response → User</text>
+
+  <!-- === ATTACK VECTORS (Red callouts) === -->
+  
+  <!-- Attack 1: Data poisoning at source -->
+  <rect x="20" y="170" width="175" height="36" rx="4" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <circle cx="34" cy="188" r="8" fill="#D73A49"/>
+  <text x="34" y="192" text-anchor="middle" font-size="10" font-weight="700" fill="white">1</text>
+  <text x="47" y="184" font-size="9" font-weight="600" fill="#CB2431">Data poisoning</text>
+  <text x="47" y="198" font-size="8" fill="#86181D">Corrupted or adversarial source docs</text>
+  <line x1="105" y1="150" x2="105" y2="170" stroke="#D73A49" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Attack 2: Ingestion injection -->
+  <rect x="210" y="170" width="175" height="36" rx="4" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <circle cx="224" cy="188" r="8" fill="#D73A49"/>
+  <text x="224" y="192" text-anchor="middle" font-size="10" font-weight="700" fill="white">2</text>
+  <text x="237" y="184" font-size="9" font-weight="600" fill="#CB2431">Instruction injection</text>
+  <text x="237" y="198" font-size="8" fill="#86181D">Adversarial text embedded in docs</text>
+  <line x1="295" y1="150" x2="295" y2="170" stroke="#D73A49" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Attack 3: Embedding model compromise -->
+  <rect x="400" y="30" width="175" height="36" rx="4" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <circle cx="414" cy="48" r="8" fill="#D73A49"/>
+  <text x="414" y="52" text-anchor="middle" font-size="10" font-weight="700" fill="white">3</text>
+  <text x="427" y="44" font-size="9" font-weight="600" fill="#CB2431">Model drift / compromise</text>
+  <text x="427" y="58" font-size="8" fill="#86181D">Embedding model updated silently</text>
+  <line x1="485" y1="66" x2="485" y2="90" stroke="#D73A49" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Attack 4: Unauthorised retrieval -->
+  <rect x="430" y="300" width="195" height="36" rx="4" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <circle cx="444" cy="318" r="8" fill="#D73A49"/>
+  <text x="444" y="322" text-anchor="middle" font-size="10" font-weight="700" fill="white">4</text>
+  <text x="457" y="314" font-size="9" font-weight="600" fill="#CB2431">Unauthorised retrieval</text>
+  <text x="457" y="328" font-size="8" fill="#86181D">User sees chunks they shouldn't access</text>
+  <line x1="530" y1="280" x2="530" y2="300" stroke="#D73A49" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Attack 5: Indirect prompt injection -->
+  <rect x="720" y="380" width="195" height="36" rx="4" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <circle cx="734" cy="398" r="8" fill="#D73A49"/>
+  <text x="734" y="402" text-anchor="middle" font-size="10" font-weight="700" fill="white">5</text>
+  <text x="747" y="394" font-size="9" font-weight="600" fill="#CB2431">Indirect prompt injection</text>
+  <text x="747" y="408" font-size="8" fill="#86181D">Retrieved content hijacks LLM behaviour</text>
+  <line x1="875" y1="370" x2="875" y2="380" stroke="#D73A49" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Attack 6: Vector store as target -->
+  <rect x="620" y="30" width="175" height="36" rx="4" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <circle cx="634" cy="48" r="8" fill="#D73A49"/>
+  <text x="634" y="52" text-anchor="middle" font-size="10" font-weight="700" fill="white">6</text>
+  <text x="647" y="44" font-size="9" font-weight="600" fill="#CB2431">Vector store breach</text>
+  <text x="647" y="58" font-size="8" fill="#86181D">Encoded proprietary data exfiltrated</text>
+  <line x1="675" y1="66" x2="675" y2="90" stroke="#D73A49" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- === LEGEND === -->
+  <rect x="30" y="450" width="940" height="50" rx="6" fill="#F6F8FA" stroke="#E1E4E8" stroke-width="1"/>
+  <rect x="50" y="465" width="16" height="16" rx="3" fill="#DAFBE1" stroke="#34D058" stroke-width="1"/>
+  <text x="72" y="477" font-size="10" fill="#24292E">Control point</text>
+  <rect x="160" y="465" width="16" height="16" rx="3" fill="#FFEEF0" stroke="#D73A49" stroke-width="1"/>
+  <text x="182" y="477" font-size="10" fill="#24292E">Attack vector</text>
+  <rect x="270" y="465" width="30" height="16" rx="8" fill="none" stroke="#34D058" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="306" y="477" font-size="10" fill="#24292E">Required control (dashed = often missing)</text>
+  <text x="570" y="477" font-size="10" fill="#6A737D">See: extensions/technical/rag-security.md</text>
+</svg>

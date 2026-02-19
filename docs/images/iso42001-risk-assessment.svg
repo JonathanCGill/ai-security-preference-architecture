@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Operational Risk Assessment</text>
+
+  <!-- Dashed vertical divider -->
+  <line x1="400" y1="50" x2="400" y2="385" stroke="#94a3b8" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- ===== LEFT COLUMN: PRE-DEPLOYMENT ===== -->
+  <text x="200" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">PRE-DEPLOYMENT</text>
+
+  <!-- Risk Classification box -->
+  <rect x="60" y="85" width="280" height="150" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="200" y="110" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">Risk Classification</text>
+  <line x1="80" y1="120" x2="320" y2="120" stroke="#a5b4fc" stroke-width="1"/>
+  <text x="90" y="143" font-family="Arial, sans-serif" font-size="10" fill="#4338ca">&#x2022; Impact assessment &amp; severity scoring</text>
+  <text x="90" y="163" font-family="Arial, sans-serif" font-size="10" fill="#4338ca">&#x2022; Data sensitivity &amp; classification</text>
+  <text x="90" y="183" font-family="Arial, sans-serif" font-size="10" fill="#4338ca">&#x2022; Autonomy level determination</text>
+  <text x="90" y="203" font-family="Arial, sans-serif" font-size="10" fill="#4338ca">&#x2022; Regulatory &amp; compliance scope</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="235" x2="200" y2="275" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Control Selection box -->
+  <rect x="60" y="280" width="280" height="55" rx="6" fill="#c7d2fe" stroke="#818cf8" stroke-width="2"/>
+  <text x="200" y="313" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">Control Selection</text>
+
+  <!-- ===== RIGHT COLUMN: IN-OPERATION ===== -->
+  <text x="600" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">IN-OPERATION</text>
+
+  <!-- Judge Monitoring box -->
+  <rect x="460" y="85" width="280" height="150" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="110" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">Judge Monitoring</text>
+  <line x1="480" y1="120" x2="720" y2="120" stroke="#fcd34d" stroke-width="1"/>
+  <text x="490" y="143" font-family="Arial, sans-serif" font-size="10" fill="#92400e">&#x2022; Quality &amp; accuracy scoring</text>
+  <text x="490" y="163" font-family="Arial, sans-serif" font-size="10" fill="#92400e">&#x2022; Policy compliance checks</text>
+  <text x="490" y="183" font-family="Arial, sans-serif" font-size="10" fill="#92400e">&#x2022; Anomaly &amp; drift detection</text>
+  <text x="490" y="203" font-family="Arial, sans-serif" font-size="10" fill="#92400e">&#x2022; Bias &amp; fairness monitoring</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="235" x2="600" y2="275" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- HITL Review box -->
+  <rect x="460" y="280" width="280" height="55" rx="6" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="313" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">HITL Review of Findings</text>
+</svg>

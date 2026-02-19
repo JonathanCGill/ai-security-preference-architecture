@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <text x="400" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Control Tier Decision Tree</text>
+  <text x="400" y="46" text-anchor="middle" font-size="12" fill="#64748b">Quick reference — see tier determination diagram for full logic</text>
+  <polygon points="400,60 560,100 400,140 240,100" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="400" y="98" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Customer-facing?</text>
+  <text x="400" y="112" text-anchor="start" font-size="10" font-weight="400" fill="#334155"></text>
+  <text x="570" y="95" text-anchor="start" font-size="11" font-weight="600" fill="#16a34a">Yes</text>
+  <line x1="560" y1="100" x2="660" y2="100" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <rect x="665" y="82" width="110" height="36" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="720" y="104" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">Min: High tier</text>
+  <text x="395" y="150" text-anchor="middle" font-size="11" font-weight="600" fill="#dc2626">No</text>
+  <line x1="400" y1="140" x2="400" y2="175" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="400,180 580,220 400,260 220,220" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="400" y="216" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">PII, financial, or regulated data?</text>
+  <text x="590" y="215" text-anchor="start" font-size="11" font-weight="600" fill="#16a34a">Yes</text>
+  <line x1="580" y1="220" x2="660" y2="220" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <rect x="665" y="202" width="110" height="36" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="720" y="224" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">Min: High tier</text>
+  <text x="395" y="270" text-anchor="middle" font-size="11" font-weight="600" fill="#dc2626">No</text>
+  <line x1="400" y1="260" x2="400" y2="290" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="400,295 540,325 400,355 260,325" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="400" y="329" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Business impact decisions?</text>
+  <text x="550" y="320" text-anchor="start" font-size="11" font-weight="600" fill="#16a34a">Yes</text>
+  <line x1="540" y1="325" x2="620" y2="325" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <rect x="625" y="307" width="100" height="36" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="675" y="329" text-anchor="middle" font-size="11" font-weight="600" fill="#1e40af">Medium tier</text>
+  <text x="250" y="320" text-anchor="end" font-size="11" font-weight="600" fill="#dc2626">No</text>
+  <line x1="260" y1="325" x2="180" y2="325" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <rect x="75" y="307" width="100" height="36" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="125" y="329" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Low tier</text>
+  <line x1="720" y1="118" x2="720" y2="290" stroke="#334155" stroke-width="1.5"/>
+  <line x1="720" y1="238" x2="720" y2="290" stroke="#334155" stroke-width="1.5"/>
+  <line x1="720" y1="290" x2="720" y2="310" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="720,310 820,340 720,370 620,340" fill="#ffffff" stroke="#991b1b" stroke-width="1.5"/>
+  <text x="720" y="337" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Consequential?</text>
+  <text x="720" y="349" text-anchor="middle" font-size="8" font-weight="400" fill="#64748b">(financial, legal, safety)</text>
+  <text x="828" y="335" text-anchor="start" font-size="11" font-weight="600" fill="#dc2626">Yes</text>
+  <line x1="820" y1="340" x2="870" y2="340" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="625" y="375" width="90" height="32" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="670" y="395" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">Critical tier</text>
+  <rect x="735" y="375" width="80" height="32" rx="6" fill="#fff7ed" stroke="#fdba74" stroke-width="1"/>
+  <text x="775" y="395" text-anchor="middle" font-size="11" font-weight="700" fill="#b45309">High tier</text>
+  <line x1="700" y1="370" x2="670" y2="375" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <text x="740" y="368" text-anchor="start" font-size="11" font-weight="600" fill="#16a34a">No</text>
+  <line x1="740" y1="370" x2="775" y2="375" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <rect x="250" y="425" width="300" height="34" rx="6" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="400" y="440" text-anchor="middle" font-size="10" font-weight="600" fill="#7c3aed">Agentic system (multi-step, tool use)?</text>
+  <text x="400" y="453" text-anchor="middle" font-size="10" font-weight="400" fill="#a78bfa">Add AG.1–AG.4 to whatever tier above</text>
+</svg>

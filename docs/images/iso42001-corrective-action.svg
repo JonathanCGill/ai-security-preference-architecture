@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="400" viewBox="0 0 850 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="425" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Corrective Action Workflow</text>
+
+  <!-- Column headers -->
+  <rect x="60" y="48" width="210" height="28" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="165" y="67" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">DETECT</text>
+
+  <rect x="320" y="48" width="210" height="28" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="425" y="67" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">ANALYSE</text>
+
+  <rect x="580" y="48" width="210" height="28" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="685" y="67" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">CORRECT</text>
+
+  <!-- Vertical column separators (subtle dashed) -->
+  <line x1="290" y1="48" x2="290" y2="310" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="555" y1="48" x2="555" y2="310" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ===== ROW 1 ===== -->
+  <!-- Judge Finding (green) -->
+  <rect x="80" y="95" width="170" height="44" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="165" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Judge Finding</text>
+
+  <!-- Arrow -->
+  <line x1="250" y1="117" x2="330" y2="117" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Root Cause (slate) -->
+  <rect x="340" y="95" width="170" height="44" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="425" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Root Cause</text>
+
+  <!-- Arrow -->
+  <line x1="510" y1="117" x2="590" y2="117" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Update Guardrail (green) -->
+  <rect x="600" y="95" width="170" height="44" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="685" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Update Guardrail</text>
+
+  <!-- ===== ROW 2 ===== -->
+  <!-- HITL Review (blue) -->
+  <rect x="80" y="165" width="170" height="44" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="165" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">HITL Review</text>
+
+  <!-- Arrow -->
+  <line x1="250" y1="187" x2="330" y2="187" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Pattern Analysis (slate) -->
+  <rect x="340" y="165" width="170" height="44" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="425" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Pattern Analysis</text>
+
+  <!-- Arrow -->
+  <line x1="510" y1="187" x2="590" y2="187" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Update Judge (amber) -->
+  <rect x="600" y="165" width="170" height="44" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="685" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Update Judge</text>
+
+  <!-- ===== ROW 3 ===== -->
+  <!-- Audit Finding (amber) -->
+  <rect x="80" y="235" width="170" height="44" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="165" y="262" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Audit Finding</text>
+
+  <!-- Arrow -->
+  <line x1="250" y1="257" x2="330" y2="257" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Gap Analysis (slate) -->
+  <rect x="340" y="235" width="170" height="44" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="425" y="262" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Gap Analysis</text>
+
+  <!-- Arrow -->
+  <line x1="510" y1="257" x2="590" y2="257" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Update Process (indigo) -->
+  <rect x="600" y="235" width="170" height="44" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="685" y="262" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4338ca" text-anchor="middle">Update Process</text>
+
+  <!-- ===== CONVERGING ARROWS from CORRECT column down to VERIFY box ===== -->
+  <!-- Row 1: Update Guardrail down and right to merge point -->
+  <path d="M650 139 L650 325 L685 325" stroke="#475569" stroke-width="1.5" fill="none"/>
+  <!-- Row 2: Update Judge straight down to merge point -->
+  <line x1="685" y1="209" x2="685" y2="325" stroke="#475569" stroke-width="1.5"/>
+  <!-- Row 3: Update Process down and left to merge point -->
+  <path d="M720 279 L720 325 L685 325" stroke="#475569" stroke-width="1.5" fill="none"/>
+
+  <!-- Single arrow from merge point down to Verify box -->
+  <line x1="685" y1="325" x2="685" y2="347" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== VERIFY BOX (bottom centre) ===== -->
+  <rect x="560" y="352" width="250" height="42" rx="6" fill="#1e293b" stroke="#1e293b" stroke-width="2"/>
+  <text x="685" y="368" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#94a3b8" text-anchor="middle">VERIFY</text>
+  <text x="685" y="383" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Effectiveness Review</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="750" viewBox="0 0 1100 750" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="750" rx="8" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="550" y="38" text-anchor="middle" fill="#e6e6e6" font-size="22" font-weight="700">AI Agent IAM — Threat Landscape</text>
+  <text x="550" y="60" text-anchor="middle" fill="#8b949e" font-size="13">Identity-based threats against AI systems — current, emerging, and projected</text>
+
+  <!-- Row 1: Agent Identity Threats -->
+  <rect x="40" y="85" width="330" height="175" rx="6" fill="#3a1a1a" stroke="#e94560" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="110" fill="#e94560" font-size="14" font-weight="700">IDENTITY COMPROMISE</text>
+  <text x="340" y="110" fill="#8b949e" font-size="10" text-anchor="end">OWASP NHI2 · ASI03</text>
+  <text x="60" y="135" fill="#e6e6e6" font-size="11">Agent credential theft</text>
+  <text x="60" y="155" fill="#e6e6e6" font-size="11">Token replay across systems</text>
+  <text x="60" y="175" fill="#e6e6e6" font-size="11">Session hijacking via MCP</text>
+  <text x="60" y="195" fill="#e6e6e6" font-size="11">Workload identity spoofing</text>
+  <text x="60" y="215" fill="#e6e6e6" font-size="11">Synthetic identity fraud (KYC bypass)</text>
+  <text x="60" y="240" fill="#f0a500" font-size="10" font-weight="600">Defence: Short-lived tokens, DPoP, mTLS</text>
+
+  <!-- Row 1: Privilege Escalation -->
+  <rect x="390" y="85" width="330" height="175" rx="6" fill="#3a1a1a" stroke="#e94560" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="410" y="110" fill="#e94560" font-size="14" font-weight="700">PRIVILEGE ESCALATION</text>
+  <text x="690" y="110" fill="#8b949e" font-size="10" text-anchor="end">OWASP NHI5 · ASI02</text>
+  <text x="410" y="135" fill="#e6e6e6" font-size="11">Confused deputy via tool misuse</text>
+  <text x="410" y="155" fill="#e6e6e6" font-size="11">Dynamic role inheritance abuse</text>
+  <text x="410" y="175" fill="#e6e6e6" font-size="11">Agent as authorisation bypass path</text>
+  <text x="410" y="195" fill="#e6e6e6" font-size="11">Orchestrator compromise (cascade)</text>
+  <text x="410" y="215" fill="#e6e6e6" font-size="11">Cached credential cross-context leak</text>
+  <text x="410" y="240" fill="#f0a500" font-size="10" font-weight="600">Defence: Gateway enforcement, JIT, scope narrowing</text>
+
+  <!-- Row 1: Shadow AI -->
+  <rect x="740" y="85" width="330" height="175" rx="6" fill="#3a1a1a" stroke="#e94560" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="760" y="110" fill="#e94560" font-size="14" font-weight="700">SHADOW AI</text>
+  <text x="1040" y="110" fill="#8b949e" font-size="10" text-anchor="end">Emerging · 2025-2026</text>
+  <text x="760" y="135" fill="#e6e6e6" font-size="11">Ungoverned agent deployments</text>
+  <text x="760" y="155" fill="#e6e6e6" font-size="11">Business units bypassing IT</text>
+  <text x="760" y="175" fill="#e6e6e6" font-size="11">Personal AI with corporate data</text>
+  <text x="760" y="195" fill="#e6e6e6" font-size="11">External agents with internal access</text>
+  <text x="760" y="215" fill="#e6e6e6" font-size="11">No inventory, no governance, no audit</text>
+  <text x="760" y="240" fill="#f0a500" font-size="10" font-weight="600">Defence: Discovery, inventory, policy-as-code</text>
+
+  <!-- Row 2: Lifecycle Failures -->
+  <rect x="40" y="280" width="330" height="175" rx="6" fill="#2d1b4e" stroke="#c084fc" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="305" fill="#c084fc" font-size="14" font-weight="700">LIFECYCLE FAILURES</text>
+  <text x="340" y="305" fill="#8b949e" font-size="10" text-anchor="end">OWASP NHI1 · NHI7</text>
+  <text x="60" y="330" fill="#e6e6e6" font-size="11">Orphaned agent identities</text>
+  <text x="60" y="350" fill="#e6e6e6" font-size="11">Long-lived secrets never rotated</text>
+  <text x="60" y="370" fill="#e6e6e6" font-size="11">Deprovisioning delayed or forgotten</text>
+  <text x="60" y="390" fill="#e6e6e6" font-size="11">Sponsor departs, agent persists</text>
+  <text x="60" y="410" fill="#e6e6e6" font-size="11">47% of orgs have 90-day+ stale NHIs</text>
+  <text x="60" y="435" fill="#4ecca3" font-size="10" font-weight="600">Defence: Automated lifecycle, sponsor checks</text>
+
+  <!-- Row 2: Supply Chain Identity -->
+  <rect x="390" y="280" width="330" height="175" rx="6" fill="#2d1b4e" stroke="#c084fc" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="410" y="305" fill="#c084fc" font-size="14" font-weight="700">SUPPLY CHAIN IDENTITY</text>
+  <text x="690" y="305" fill="#8b949e" font-size="10" text-anchor="end">OWASP NHI3 · ASI09</text>
+  <text x="410" y="330" fill="#e6e6e6" font-size="11">Compromised MCP server credentials</text>
+  <text x="410" y="350" fill="#e6e6e6" font-size="11">Malicious tool metadata injection</text>
+  <text x="410" y="370" fill="#e6e6e6" font-size="11">Third-party agent identity trust</text>
+  <text x="410" y="390" fill="#e6e6e6" font-size="11">Model provider credential exposure</text>
+  <text x="410" y="410" fill="#e6e6e6" font-size="11">13,000+ unvetted MCP servers (2025)</text>
+  <text x="410" y="435" fill="#4ecca3" font-size="10" font-weight="600">Defence: Provenance verification, allowlists</text>
+
+  <!-- Row 2: Delegation Attacks -->
+  <rect x="740" y="280" width="330" height="175" rx="6" fill="#2d1b4e" stroke="#c084fc" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="760" y="305" fill="#c084fc" font-size="14" font-weight="700">DELEGATION ATTACKS</text>
+  <text x="1040" y="305" fill="#8b949e" font-size="10" text-anchor="end">DEL-01-05 · ASI08</text>
+  <text x="760" y="330" fill="#e6e6e6" font-size="11">Transitive permission inheritance</text>
+  <text x="760" y="350" fill="#e6e6e6" font-size="11">Identity loss mid-chain</text>
+  <text x="760" y="370" fill="#e6e6e6" font-size="11">Silent scope expansion at hop</text>
+  <text x="760" y="390" fill="#e6e6e6" font-size="11">Cascading compromise (87% in 4hrs)</text>
+  <text x="760" y="410" fill="#e6e6e6" font-size="11">Forged delegation contracts</text>
+  <text x="760" y="435" fill="#4ecca3" font-size="10" font-weight="600">Defence: Signed contracts, depth limits, audit</text>
+
+  <!-- Three-layer response -->
+  <rect x="40" y="480" width="1030" height="135" rx="6" fill="#0f3460" stroke="#1a6f9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="505" fill="#4ecca3" font-size="14" font-weight="700">THREE-LAYER RESPONSE TO IAM THREATS</text>
+
+  <!-- Guardrails -->
+  <rect x="60" y="520" width="310" height="75" rx="5" fill="#1a3a5c" stroke="#f0a500" stroke-width="1"/>
+  <text x="215" y="543" text-anchor="middle" fill="#f0a500" font-size="12" font-weight="700">Guardrails — PREVENT</text>
+  <text x="215" y="560" text-anchor="middle" fill="#e6e6e6" font-size="10">Identity validation at every boundary</text>
+  <text x="215" y="575" text-anchor="middle" fill="#e6e6e6" font-size="10">Token verification, rate limiting, tool allowlists</text>
+  <text x="215" y="588" text-anchor="middle" fill="#8b949e" font-size="9">Deterministic. Fail-closed. Gateway-enforced.</text>
+
+  <!-- Judge -->
+  <rect x="390" y="520" width="310" height="75" rx="5" fill="#1a3a5c" stroke="#c084fc" stroke-width="1"/>
+  <text x="545" y="543" text-anchor="middle" fill="#c084fc" font-size="12" font-weight="700">Judge — DETECT</text>
+  <text x="545" y="560" text-anchor="middle" fill="#e6e6e6" font-size="10">Behavioural anomaly detection on access</text>
+  <text x="545" y="575" text-anchor="middle" fill="#e6e6e6" font-size="10">Permission usage drift, credential misuse</text>
+  <text x="545" y="588" text-anchor="middle" fill="#8b949e" font-size="9">Probabilistic. Independent model. Async eval.</text>
+
+  <!-- Human Oversight -->
+  <rect x="720" y="520" width="330" height="75" rx="5" fill="#1a3a5c" stroke="#4ecca3" stroke-width="1"/>
+  <text x="885" y="543" text-anchor="middle" fill="#4ecca3" font-size="12" font-weight="700">Human Oversight — DECIDE</text>
+  <text x="885" y="560" text-anchor="middle" fill="#e6e6e6" font-size="10">Approve high-risk actions, sponsor reviews</text>
+  <text x="885" y="575" text-anchor="middle" fill="#e6e6e6" font-size="10">Access review sign-off, incident response</text>
+  <text x="885" y="588" text-anchor="middle" fill="#8b949e" font-size="9">Accountable. Auditable. SLA-bound.</text>
+
+  <!-- Key stats bar -->
+  <rect x="40" y="635" width="246" height="50" rx="5" fill="#1e1e3f" stroke="#30363d" stroke-width="1"/>
+  <text x="163" y="655" text-anchor="middle" fill="#e94560" font-size="18" font-weight="700">47%</text>
+  <text x="163" y="675" text-anchor="middle" fill="#8b949e" font-size="9">of orgs have stale NHIs (90d+)</text>
+
+  <rect x="306" y="635" width="246" height="50" rx="5" fill="#1e1e3f" stroke="#30363d" stroke-width="1"/>
+  <text x="429" y="655" text-anchor="middle" fill="#e94560" font-size="18" font-weight="700">44%</text>
+  <text x="429" y="675" text-anchor="middle" fill="#8b949e" font-size="9">of orgs deploy AI without IT</text>
+
+  <rect x="572" y="635" width="246" height="50" rx="5" fill="#1e1e3f" stroke="#30363d" stroke-width="1"/>
+  <text x="695" y="655" text-anchor="middle" fill="#e94560" font-size="18" font-weight="700">13,000+</text>
+  <text x="695" y="675" text-anchor="middle" fill="#8b949e" font-size="9">MCP servers on GitHub (2025)</text>
+
+  <rect x="838" y="635" width="232" height="50" rx="5" fill="#1e1e3f" stroke="#30363d" stroke-width="1"/>
+  <text x="954" y="655" text-anchor="middle" fill="#e94560" font-size="18" font-weight="700">87%</text>
+  <text x="954" y="675" text-anchor="middle" fill="#8b949e" font-size="9">cascade compromise in 4hrs (sim.)</text>
+
+  <!-- Footer -->
+  <text x="550" y="730" text-anchor="middle" fill="#484f58" font-size="10">AI Runtime Behaviour Security — IAM Governance · Threat Landscape · github.com/JonathanCGill</text>
+</svg>

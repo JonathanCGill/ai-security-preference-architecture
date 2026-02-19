@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
+  <defs>
+    <marker id="yesArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#10b981"/>
+    </marker>
+    <marker id="noArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="440" fill="#f8fafc"/>
+
+  <text x="450" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Tool Selection Decision Tree</text>
+  <text x="450" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Not everything needs AI &#x2014; follow the questions honestly</text>
+
+  <!-- Question 1 -->
+  <rect x="250" y="75" width="400" height="44" rx="8" fill="#1e293b"/>
+  <text x="450" y="102" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Can this be solved with deterministic rules?</text>
+
+  <!-- Yes: rules engine -->
+  <line x1="650" y1="97" x2="720" y2="97" stroke="#10b981" stroke-width="2" marker-end="url(#yesArrow)"/>
+  <text x="685" y="90" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">Yes</text>
+  <rect x="730" y="80" width="150" height="34" rx="6" fill="#f1f5f9" stroke="#10b981" stroke-width="1.5"/>
+  <text x="805" y="102" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Rules / automation</text>
+
+  <!-- No -->
+  <line x1="450" y1="119" x2="450" y2="148" stroke="#94a3b8" stroke-width="2" marker-end="url(#noArrow)"/>
+  <text x="462" y="138" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">No</text>
+
+  <!-- Question 2 -->
+  <rect x="250" y="150" width="400" height="44" rx="8" fill="#1e293b"/>
+  <text x="450" y="177" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Does it require understanding unstructured input?</text>
+
+  <line x1="650" y1="172" x2="720" y2="172" stroke="#10b981" stroke-width="2" marker-end="url(#yesArrow)"/>
+  <text x="685" y="165" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">Yes</text>
+  <rect x="730" y="155" width="150" height="34" rx="6" fill="#f1f5f9" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="805" y="177" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">AI likely appropriate</text>
+
+  <line x1="450" y1="194" x2="450" y2="223" stroke="#94a3b8" stroke-width="2" marker-end="url(#noArrow)"/>
+  <text x="462" y="213" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">No</text>
+
+  <!-- Question 3 -->
+  <rect x="250" y="225" width="400" height="44" rx="8" fill="#1e293b"/>
+  <text x="450" y="252" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Does it require pattern recognition across large datasets?</text>
+
+  <line x1="650" y1="247" x2="720" y2="247" stroke="#10b981" stroke-width="2" marker-end="url(#yesArrow)"/>
+  <text x="685" y="240" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">Yes</text>
+  <rect x="730" y="230" width="150" height="34" rx="6" fill="#f1f5f9" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="805" y="252" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">AI / ML appropriate</text>
+
+  <line x1="450" y1="269" x2="450" y2="298" stroke="#94a3b8" stroke-width="2" marker-end="url(#noArrow)"/>
+  <text x="462" y="288" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">No</text>
+
+  <!-- Question 4 -->
+  <rect x="250" y="300" width="400" height="44" rx="8" fill="#1e293b"/>
+  <text x="450" y="327" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Does it need to generate novel content or responses?</text>
+
+  <line x1="650" y1="322" x2="720" y2="322" stroke="#10b981" stroke-width="2" marker-end="url(#yesArrow)"/>
+  <text x="685" y="315" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">Yes</text>
+  <rect x="730" y="305" width="150" height="34" rx="6" fill="#f1f5f9" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="805" y="327" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Generative AI</text>
+
+  <line x1="450" y1="344" x2="450" y2="373" stroke="#94a3b8" stroke-width="2" marker-end="url(#noArrow)"/>
+  <text x="462" y="363" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">No</text>
+
+  <!-- Question 5 -->
+  <rect x="250" y="375" width="400" height="44" rx="8" fill="#1e293b"/>
+  <text x="450" y="402" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Does it require real-time, non-deterministic reasoning?</text>
+
+  <line x1="650" y1="397" x2="720" y2="397" stroke="#10b981" stroke-width="2" marker-end="url(#yesArrow)"/>
+  <text x="685" y="390" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">Yes</text>
+  <rect x="730" y="380" width="150" height="34" rx="6" fill="#f1f5f9" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="805" y="402" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">LLM-based AI</text>
+
+  <!-- No: traditional -->
+  <line x1="250" y1="397" x2="165" y2="397" stroke="#94a3b8" stroke-width="2" marker-end="url(#noArrow)"/>
+  <text x="210" y="390" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">No</text>
+  <rect x="15" y="380" width="150" height="34" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="90" y="402" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Traditional ML</text>
+</svg>

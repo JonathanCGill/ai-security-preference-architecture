@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a5276;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="alternateGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e8449;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="contingencyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b7950b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1c40f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="emergencyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#922b21;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">PACE Resilience Model for AI Security Controls</text>
+  <text x="450" y="55" text-anchor="middle" font-size="11" fill="#7f8c8d">Four layers of defence — each on a different failure domain</text>
+
+  <!-- Left column: PACE labels -->
+  <!-- P - Primary -->
+  <rect x="30" y="80" width="120" height="90" rx="6" fill="url(#primaryGrad)" filter="url(#shadow)"/>
+  <text x="90" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">P</text>
+  <text x="90" y="125" text-anchor="middle" font-size="11" fill="#d4e6f1">PRIMARY</text>
+  <text x="90" y="145" text-anchor="middle" font-size="9" fill="#d4e6f1">Always active</text>
+  <text x="90" y="158" text-anchor="middle" font-size="9" fill="#d4e6f1">~10ms</text>
+
+  <!-- A - Alternate -->
+  <rect x="30" y="185" width="120" height="90" rx="6" fill="url(#alternateGrad)" filter="url(#shadow)"/>
+  <text x="90" y="213" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">A</text>
+  <text x="90" y="230" text-anchor="middle" font-size="11" fill="#d5f5e3">ALTERNATE</text>
+  <text x="90" y="250" text-anchor="middle" font-size="9" fill="#d5f5e3">Continuous parallel</text>
+  <text x="90" y="263" text-anchor="middle" font-size="9" fill="#d5f5e3">~500ms–5s</text>
+
+  <!-- C - Contingency -->
+  <rect x="30" y="290" width="120" height="90" rx="6" fill="url(#contingencyGrad)" filter="url(#shadow)"/>
+  <text x="90" y="318" text-anchor="middle" font-size="13" font-weight="bold" fill="#7d6608">C</text>
+  <text x="90" y="335" text-anchor="middle" font-size="11" fill="#7d6608">CONTINGENCY</text>
+  <text x="90" y="355" text-anchor="middle" font-size="9" fill="#7d6608">On escalation</text>
+  <text x="90" y="368" text-anchor="middle" font-size="9" fill="#7d6608">Minutes–hours</text>
+
+  <!-- E - Emergency -->
+  <rect x="30" y="395" width="120" height="90" rx="6" fill="url(#emergencyGrad)" filter="url(#shadow)"/>
+  <text x="90" y="423" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">E</text>
+  <text x="90" y="440" text-anchor="middle" font-size="11" fill="#fadbd8">EMERGENCY</text>
+  <text x="90" y="460" text-anchor="middle" font-size="9" fill="#fadbd8">System-level</text>
+  <text x="90" y="473" text-anchor="middle" font-size="9" fill="#fadbd8">Immediate</text>
+
+  <!-- Right column: Control mapping -->
+  <!-- P detail -->
+  <rect x="175" y="80" width="700" height="90" rx="6" fill="#fff" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="195" y="105" font-size="13" font-weight="bold" fill="#1a5276">Guardrails — Real-time Enforcement</text>
+  <text x="195" y="123" font-size="10" fill="#2c3e50">Deterministic pattern matching blocks known-bad inputs and outputs at the API boundary.</text>
+  <text x="195" y="140" font-size="10" fill="#2c3e50">Content filters, schema validation, PII redaction, topic blocklists, token limits.</text>
+  <text x="195" y="157" font-size="10" fill="#7f8c8d">Failure mode: Bypassed by novel attacks, adversarial inputs outside known patterns.</text>
+
+  <!-- A detail -->
+  <rect x="175" y="185" width="700" height="90" rx="6" fill="#fff" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="195" y="210" font-size="13" font-weight="bold" fill="#1e8449">LLM-as-Judge — Async Detection</text>
+  <text x="195" y="228" font-size="10" fill="#2c3e50">Independent LLM evaluates outputs for policy compliance, hallucination, tone, and safety.</text>
+  <text x="195" y="245" font-size="10" fill="#2c3e50">Catches unknown-bad that guardrails miss. Different model, different failure domain.</text>
+  <text x="195" y="262" font-size="10" fill="#7f8c8d">Failure mode: Model error, shared blind spots, latency under load, adversarial evasion.</text>
+
+  <!-- C detail -->
+  <rect x="175" y="290" width="700" height="90" rx="6" fill="#fff" stroke="#f1c40f" stroke-width="2" filter="url(#shadow)"/>
+  <text x="195" y="315" font-size="13" font-weight="bold" fill="#7d6608">Human Oversight — Decision Authority</text>
+  <text x="195" y="333" font-size="10" fill="#2c3e50">Humans review flagged outputs, decide edge cases, maintain accountability for regulated actions.</text>
+  <text x="195" y="350" font-size="10" fill="#2c3e50">Queue-based review for high-risk decisions. Escalation triggers from Judge confidence scores.</text>
+  <text x="195" y="367" font-size="10" fill="#7f8c8d">Failure mode: Fatigue, unavailability, overwhelmed by volume, insufficient context.</text>
+
+  <!-- E detail -->
+  <rect x="175" y="395" width="700" height="90" rx="6" fill="#fff" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="195" y="420" font-size="13" font-weight="bold" fill="#922b21">Circuit Breaker — System-Level Fallback</text>
+  <text x="195" y="438" font-size="10" fill="#2c3e50">Kill switches, traffic rerouting, graceful degradation to non-AI path, rollback to last known good.</text>
+  <text x="195" y="455" font-size="10" fill="#2c3e50">Pre-configured for each risk tier. Automated triggers or manual invocation.</text>
+  <text x="195" y="472" font-size="10" fill="#7f8c8d">Failure mode: Last resort. If this fails, the process should already be stopped.</text>
+
+  <!-- Connecting arrows showing concurrent operation -->
+  <line x1="150" y1="125" x2="175" y2="125" stroke="#2980b9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="150" y1="230" x2="175" y2="230" stroke="#27ae60" stroke-width="2"/>
+  <line x1="150" y1="335" x2="175" y2="335" stroke="#f1c40f" stroke-width="2"/>
+  <line x1="150" y1="440" x2="175" y2="440" stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- Footer -->
+  <text x="450" y="510" text-anchor="middle" font-size="9" fill="#95a5a6">AI Runtime Behaviour Security — PACE Resilience Overlay © Jonathan Gill 2025</text>
+</svg>

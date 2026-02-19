@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="900" height="420" fill="#ffffff"/>
+  <text x="450" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">System Onboarding Flow</text>
+  <text x="450" y="46" text-anchor="middle" font-size="12" fill="#64748b">From Intent Declaration to production</text>
+  <rect x="350" y="55" width="200" height="44" rx="6" fill="#ffffff" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="450" y="72" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Developer fills in</text>
+  <text x="450" y="86" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Intent Declaration</text>
+  <text x="560" y="77" text-anchor="start" font-size="9" font-weight="400" fill="#94a3b8">Web form or YAML</text>
+  <line x1="450" y1="99" x2="450" y2="107" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="350" y="107" width="200" height="44" rx="6" fill="#ffffff" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="450" y="124" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Platform validates</text>
+  <text x="450" y="138" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">completeness</text>
+  <text x="560" y="129" text-anchor="start" font-size="9" font-weight="400" fill="#94a3b8">Schema + completeness checks</text>
+  <line x1="450" y1="151" x2="450" y2="159" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="350" y="159" width="200" height="44" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tier calculated</text>
+  <text x="450" y="190" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">automatically</text>
+  <text x="560" y="181" text-anchor="start" font-size="9" font-weight="400" fill="#94a3b8">From declaration fields</text>
+  <line x1="450" y1="203" x2="450" y2="216" stroke="#334155" stroke-width="1.5"/>
+  <line x1="290" y1="216" x2="610" y2="216" stroke="#334155" stroke-width="1.5"/>
+  <line x1="290" y1="216" x2="290" y2="236" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="195" y="236" width="190" height="28" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="290" y="255" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">Low / Medium</text>
+  <text x="205" y="276" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ Auto-approved</text>
+  <text x="205" y="294" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ Guardrails configured from declaration</text>
+  <text x="205" y="312" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ System ID issued → Developer integrates SDK</text>
+  <text x="205" y="330" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ Deploy → Guardrails active from first request</text>
+  <text x="205" y="348" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ Judge begins sampling after 7-day burn-in</text>
+  <line x1="610" y1="216" x2="610" y2="236" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="515" y="236" width="190" height="28" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+  <text x="610" y="255" text-anchor="middle" font-size="11" font-weight="700" fill="#854d0e">High / Critical</text>
+  <text x="525" y="276" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ Declaration forwarded to governance</text>
+  <text x="525" y="294" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ Governance reviews (48h SLA)</text>
+  <text x="525" y="312" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ If approved: guardrails configured, deploy</text>
+  <text x="525" y="330" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ If revision needed: feedback to developer</text>
+  <text x="525" y="348" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">→ Developer revises and resubmits</text>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="450" viewBox="0 0 750 450">
+  <defs>
+    <linearGradient id="canaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ca8a04;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a16207;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="testGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="375" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">Canary Testing Programme</text>
+  <text x="375" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Verify controls actually work by injecting known-bad cases</text>
+  
+  <!-- Main container -->
+  <rect x="30" y="65" width="690" height="370" rx="12" fill="url(#testGrad)" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <rect x="30" y="65" width="690" height="40" rx="12" fill="url(#canaryGrad)"/>
+  <rect x="30" y="90" width="690" height="15" fill="url(#canaryGrad)"/>
+  <text x="375" y="92" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">🐤 CANARY PROGRAMME</text>
+  
+  <!-- Guardrail Canaries -->
+  <rect x="50" y="120" width="200" height="150" rx="8" fill="white" stroke="#ca8a04" stroke-width="1"/>
+  <rect x="50" y="120" width="200" height="30" rx="8" fill="#ca8a04"/>
+  <rect x="50" y="140" width="200" height="10" fill="#ca8a04"/>
+  <text x="150" y="142" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Guardrail Canaries</text>
+  
+  <text x="70" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Inject known-bad inputs</text>
+  <text x="80" y="190" font-family="Arial, sans-serif" font-size="10" fill="#64748b">periodically</text>
+  <text x="70" y="210" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Verify guardrails block them</text>
+  <text x="70" y="230" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">• Alert if canary passes through</text>
+  
+  <rect x="70" y="245" width="160" height="18" rx="4" fill="#dcfce7"/>
+  <text x="150" y="258" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#166534">Expected: 100% blocked</text>
+  
+  <!-- Judge Canaries -->
+  <rect x="275" y="120" width="200" height="150" rx="8" fill="white" stroke="#ca8a04" stroke-width="1"/>
+  <rect x="275" y="120" width="200" height="30" rx="8" fill="#ca8a04"/>
+  <rect x="275" y="140" width="200" height="10" fill="#ca8a04"/>
+  <text x="375" y="142" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Judge Canaries</text>
+  
+  <text x="295" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Include known-bad outputs</text>
+  <text x="305" y="190" font-family="Arial, sans-serif" font-size="10" fill="#64748b">in Judge queue</text>
+  <text x="295" y="210" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Verify Judge flags them</text>
+  <text x="295" y="230" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">• Alert if Judge misses</text>
+  
+  <rect x="295" y="245" width="160" height="18" rx="4" fill="#dcfce7"/>
+  <text x="375" y="258" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#166534">Expected: 100% flagged</text>
+  
+  <!-- HITL Canaries -->
+  <rect x="500" y="120" width="200" height="150" rx="8" fill="white" stroke="#ca8a04" stroke-width="1"/>
+  <rect x="500" y="120" width="200" height="30" rx="8" fill="#ca8a04"/>
+  <rect x="500" y="140" width="200" height="10" fill="#ca8a04"/>
+  <text x="600" y="142" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">HITL Canaries</text>
+  
+  <text x="520" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Include obvious issues in</text>
+  <text x="530" y="190" font-family="Arial, sans-serif" font-size="10" fill="#64748b">HITL review queue</text>
+  <text x="520" y="210" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Verify reviewers catch them</text>
+  <text x="520" y="230" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">• Alert if reviewer approves</text>
+  
+  <rect x="520" y="245" width="160" height="18" rx="4" fill="#dcfce7"/>
+  <text x="600" y="258" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#166534">Expected: 95%+ caught</text>
+  
+  <!-- Frequency table -->
+  <rect x="50" y="290" width="650" height="130" rx="8" fill="white" stroke="#ca8a04" stroke-width="1"/>
+  <text x="375" y="315" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">Testing Frequency by Risk Tier</text>
+  
+  <!-- Table header -->
+  <rect x="70" y="330" width="130" height="25" fill="#fef3c7"/>
+  <rect x="200" y="330" width="120" height="25" fill="#fef3c7"/>
+  <rect x="320" y="330" width="120" height="25" fill="#fef3c7"/>
+  <rect x="440" y="330" width="120" height="25" fill="#fef3c7"/>
+  <rect x="560" y="330" width="120" height="25" fill="#fef3c7"/>
+  
+  <text x="135" y="347" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#92400e">Tier</text>
+  <text x="260" y="347" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#92400e">Guardrail</text>
+  <text x="380" y="347" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#92400e">Judge</text>
+  <text x="500" y="347" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#92400e">HITL</text>
+  <text x="620" y="347" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#92400e">Detection</text>
+  
+  <!-- Table rows -->
+  <rect x="70" y="355" width="130" height="25" fill="#fef2f2"/>
+  <text x="135" y="372" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#991b1b">CRITICAL</text>
+  <text x="260" y="372" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#334155">Daily</text>
+  <text x="380" y="372" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#334155">Daily</text>
+  <text x="500" y="372" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#334155">Weekly</text>
+  <text x="620" y="372" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#16a34a">100%</text>
+  
+  <rect x="70" y="380" width="130" height="25" fill="#fff7ed"/>
+  <text x="135" y="397" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#c2410c">HIGH</text>
+  <text x="260" y="397" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#334155">Weekly</text>
+  <text x="380" y="397" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#334155">Weekly</text>
+  <text x="500" y="397" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#334155">Monthly</text>
+  <text x="620" y="397" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#16a34a">95%</text>
+  
+</svg>

@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" width="1100" height="700">
+  <rect width="1100" height="700" fill="#f8fafc"/>
+  
+  <text x="550" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">AI-Assisted Fraud Analytics Architecture</text>
+  <text x="550" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Sentinel AI: Analyst amplifier within existing fraud control chain</text>
+
+  <!-- INLINE BAND -->
+  <rect x="30" y="70" width="200" height="290" rx="10" fill="#22c55e" opacity="0.1"/>
+  <rect x="30" y="70" width="200" height="45" rx="10" fill="#22c55e"/>
+  <text x="130" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">INLINE (ms)</text>
+  <text x="130" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.9">Fraud engines dominate</text>
+
+  <rect x="45" y="130" width="170" height="45" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="130" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Transaction</text>
+  <text x="130" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Payment / Card / Transfer</text>
+
+  <line x1="130" y1="175" x2="130" y2="195" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="130,195 126,188 134,188" fill="#22c55e"/>
+
+  <rect x="45" y="200" width="170" height="70" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="130" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Fraud Engines</text>
+  <text x="55" y="240" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Rules engine</text>
+  <text x="55" y="253" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Behavioural analytics</text>
+  <text x="55" y="266" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Sanctions screening</text>
+
+  <line x1="130" y1="270" x2="130" y2="290" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="130,290 126,283 134,283" fill="#22c55e"/>
+
+  <polygon points="130,300 165,330 130,360 95,330" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="130" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">Block?</text>
+
+  <!-- NEAR-RT BAND -->
+  <rect x="250" y="70" width="320" height="290" rx="10" fill="#8b5cf6" opacity="0.1"/>
+  <rect x="250" y="70" width="320" height="45" rx="10" fill="#8b5cf6"/>
+  <text x="410" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">NEAR-REAL-TIME (sec)</text>
+  <text x="410" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.9">AI enrichment and triage</text>
+
+  <line x1="165" y1="330" x2="265" y2="200" stroke="#64748b" stroke-width="2"/>
+  <polygon points="265,200 258,205 260,196" fill="#64748b"/>
+  <text x="215" y="255" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Case</text>
+
+  <rect x="270" y="130" width="145" height="110" rx="8" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="342" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#8b5cf6">SENTINEL AI</text>
+  <text x="280" y="172" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Context aggregation</text>
+  <text x="280" y="187" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Narrative generation</text>
+  <text x="280" y="202" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Triage recommendation</text>
+  <text x="280" y="225" font-family="Arial, sans-serif" font-size="9" fill="#64748b" font-style="italic">Recommends only</text>
+
+  <line x1="415" y1="185" x2="435" y2="185" stroke="#8b5cf6" stroke-width="2"/>
+  <polygon points="435,185 428,181 428,189" fill="#8b5cf6"/>
+
+  <rect x="440" y="130" width="115" height="110" rx="6" fill="white" stroke="#22c55e" stroke-width="2"/>
+  <text x="497" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Guardrails</text>
+  <text x="450" y="172" font-family="Arial, sans-serif" font-size="9" fill="#64748b">No fraud override</text>
+  <text x="450" y="187" font-family="Arial, sans-serif" font-size="9" fill="#64748b">No sanctions skip</text>
+  <text x="450" y="202" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Schema validation</text>
+  <text x="450" y="225" font-family="Arial, sans-serif" font-size="9" fill="#64748b" font-style="italic">Enforces policy</text>
+
+  <rect x="270" y="260" width="145" height="45" rx="6" fill="white" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="342" y="282" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">RAG Knowledge</text>
+  <text x="342" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Fraud typologies, history</text>
+  <line x1="342" y1="260" x2="342" y2="240" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4"/>
+
+  <rect x="440" y="260" width="115" height="45" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="497" y="282" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">Circuit Breaker</text>
+  <text x="497" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Auto-bypass if needed</text>
+  <line x1="497" y1="260" x2="497" y2="240" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <!-- HUMAN BAND -->
+  <rect x="590" y="70" width="220" height="290" rx="10" fill="#f59e0b" opacity="0.1"/>
+  <rect x="590" y="70" width="220" height="45" rx="10" fill="#f59e0b"/>
+  <text x="700" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">HUMAN REVIEW (min)</text>
+  <text x="700" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.9">Final arbitration</text>
+
+  <line x1="555" y1="185" x2="605" y2="185" stroke="#64748b" stroke-width="2"/>
+  <polygon points="605,185 598,181 598,189" fill="#64748b"/>
+
+  <rect x="610" y="130" width="180" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Analyst Dashboard</text>
+  <text x="620" y="172" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Fraud engine signals</text>
+  <text x="620" y="187" font-family="Arial, sans-serif" font-size="9" fill="#64748b">AI narrative</text>
+  <text x="620" y="202" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Behavioural timeline</text>
+  <text x="620" y="217" font-family="Arial, sans-serif" font-size="9" fill="#64748b">All alerts</text>
+  <text x="620" y="245" font-family="Arial, sans-serif" font-size="9" fill="#1e293b" font-weight="bold">Decision: Block / Allow / Escalate</text>
+
+  <line x1="700" y1="260" x2="700" y2="285" stroke="#f59e0b" stroke-width="2"/>
+  <polygon points="700,285 696,278 704,278" fill="#f59e0b"/>
+
+  <rect x="640" y="290" width="120" height="45" rx="6" fill="#f59e0b"/>
+  <text x="700" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">HUMAN</text>
+  <text x="700" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.9">DECIDES</text>
+
+  <!-- ENFORCEMENT BAND -->
+  <rect x="830" y="70" width="240" height="290" rx="10" fill="#64748b" opacity="0.1"/>
+  <rect x="830" y="70" width="240" height="45" rx="10" fill="#64748b"/>
+  <text x="950" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">ENFORCEMENT + NEARLINE</text>
+  <text x="950" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.9">Execute and learn</text>
+
+  <line x1="760" y1="312" x2="845" y2="180" stroke="#64748b" stroke-width="2"/>
+  <polygon points="845,180 838,185 840,176" fill="#64748b"/>
+
+  <rect x="850" y="130" width="100" height="70" rx="6" fill="white" stroke="#64748b" stroke-width="2"/>
+  <text x="900" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Enforce</text>
+  <text x="860" y="175" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Payment proc</text>
+  <text x="860" y="190" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Account ctrl</text>
+
+  <rect x="960" y="130" width="100" height="70" rx="6" fill="white" stroke="#0d9488" stroke-width="2"/>
+  <text x="1010" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Analyse</text>
+  <text x="970" y="175" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Judge eval</text>
+  <text x="970" y="190" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Drift detect</text>
+
+  <rect x="880" y="220" width="150" height="50" rx="6" fill="#0d9488"/>
+  <text x="955" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Policy Updates</text>
+  <text x="955" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white" opacity="0.9">Improve over time</text>
+
+  <path d="M 880 245 L 342 245 L 342 240" stroke="#0d9488" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="342,240 338,247 346,247" fill="#0d9488"/>
+
+  <!-- ALERT SPINE -->
+  <rect x="30" y="385" width="1040" height="110" rx="10" fill="#1e293b"/>
+  <text x="550" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">ALERT AGGREGATION SPINE</text>
+  <text x="550" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.85">All stages emit events, correlated by transaction_id + case_id</text>
+
+  <line x1="130" y1="360" x2="130" y2="385" stroke="#22c55e" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="342" y1="305" x2="342" y2="385" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="497" y1="305" x2="497" y2="385" stroke="#22c55e" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="700" y1="335" x2="700" y2="385" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="900" y1="200" x2="900" y2="385" stroke="#64748b" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="1010" y1="200" x2="1010" y2="385" stroke="#0d9488" stroke-width="2" stroke-dasharray="4"/>
+
+  <rect x="100" y="455" width="150" height="35" rx="6" fill="#3b82f6"/>
+  <text x="175" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Per-Case Timeline</text>
+
+  <rect x="290" y="455" width="150" height="35" rx="6" fill="#8b5cf6"/>
+  <text x="365" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Cross-Case Analytics</text>
+
+  <rect x="480" y="455" width="150" height="35" rx="6" fill="#0d9488"/>
+  <text x="555" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">ML Anomaly Detection</text>
+
+  <rect x="670" y="455" width="150" height="35" rx="6" fill="#f59e0b"/>
+  <text x="745" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Ops Dashboards</text>
+
+  <rect x="860" y="455" width="150" height="35" rx="6" fill="#dc2626"/>
+  <text x="935" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Circuit Breakers</text>
+
+  <!-- KEY PRINCIPLES -->
+  <rect x="30" y="515" width="1040" height="170" rx="10" fill="white" stroke="#e2e8f0"/>
+  <text x="550" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Key Principles</text>
+
+  <rect x="50" y="560" width="230" height="55" rx="6" fill="#dbeafe"/>
+  <text x="165" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">AI Recommends Only</text>
+  <text x="165" y="602" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Never bypasses fraud engine blocks</text>
+
+  <rect x="300" y="560" width="230" height="55" rx="6" fill="#fef3c7"/>
+  <text x="415" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Humans Arbitrate</text>
+  <text x="415" y="602" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Final decision authority always human</text>
+
+  <rect x="550" y="560" width="230" height="55" rx="6" fill="#dcfce7"/>
+  <text x="665" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Guardrails Enforce</text>
+  <text x="665" y="602" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Policy constraints are deterministic</text>
+
+  <rect x="800" y="560" width="230" height="55" rx="6" fill="#fee2e2"/>
+  <text x="915" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Circuit Breakers Protect</text>
+  <text x="915" y="602" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Auto-bypass AI if misbehaving</text>
+
+  <rect x="250" y="635" width="600" height="38" rx="6" fill="#f1f5f9" stroke="#64748b"/>
+  <text x="550" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Disagreements between AI and fraud engines are the most valuable signal</text>
+</svg>

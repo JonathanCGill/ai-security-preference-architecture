@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#586069"/>
+    </marker>
+    <filter id="sd" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="500" rx="8" fill="#FAFBFC"/>
+  
+  <text x="500" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1B1F23">SOC Integration — AI Alert Flow</text>
+  <text x="500" y="54" text-anchor="middle" font-size="11" fill="#6A737D">From AI telemetry sources through correlation to SOC response</text>
+
+  <!-- === TELEMETRY SOURCES (Left) === -->
+  <rect x="15" y="75" width="200" height="395" rx="6" fill="#F6F8FA" stroke="#E1E4E8" stroke-width="1"/>
+  <text x="115" y="97" text-anchor="middle" font-size="11" font-weight="700" fill="#24292E">AI Telemetry Sources</text>
+
+  <rect x="30" y="110" width="170" height="40" rx="5" fill="#DAFBE1" stroke="#34D058" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="115" y="130" text-anchor="middle" font-size="10" font-weight="600" fill="#22863A">Guardrail Events</text>
+  <text x="115" y="143" text-anchor="middle" font-size="8" fill="#22863A">blocks, passes, patterns</text>
+
+  <rect x="30" y="162" width="170" height="40" rx="5" fill="#DBEDFF" stroke="#0366D6" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="115" y="182" text-anchor="middle" font-size="10" font-weight="600" fill="#0366D6">Judge Evaluations</text>
+  <text x="115" y="195" text-anchor="middle" font-size="8" fill="#0366D6">scores, flags, verdicts</text>
+
+  <rect x="30" y="214" width="170" height="40" rx="5" fill="#FFE0B2" stroke="#E65100" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="115" y="234" text-anchor="middle" font-size="10" font-weight="600" fill="#BF360C">API Gateway Logs</text>
+  <text x="115" y="247" text-anchor="middle" font-size="8" fill="#BF360C">request_id, user_token, IP</text>
+
+  <rect x="30" y="266" width="170" height="40" rx="5" fill="#F1E5FF" stroke="#8B5CF6" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="115" y="286" text-anchor="middle" font-size="10" font-weight="600" fill="#6D28D9">LLM Provider Logs</text>
+  <text x="115" y="299" text-anchor="middle" font-size="8" fill="#6D28D9">Bedrock / Azure OpenAI / etc.</text>
+
+  <rect x="30" y="318" width="170" height="40" rx="5" fill="#FFF5B1" stroke="#F9C513" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="115" y="338" text-anchor="middle" font-size="10" font-weight="600" fill="#B08800">Application Logs</text>
+  <text x="115" y="351" text-anchor="middle" font-size="8" fill="#B08800">session_id, user_id, actions</text>
+
+  <rect x="30" y="370" width="170" height="40" rx="5" fill="#E0F2F1" stroke="#00897B" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="115" y="390" text-anchor="middle" font-size="10" font-weight="600" fill="#00695C">Agent Activity Logs</text>
+  <text x="115" y="403" text-anchor="middle" font-size="8" fill="#00695C">tool calls, delegations, scope</text>
+
+  <rect x="30" y="422" width="170" height="36" rx="5" fill="white" stroke="#D1D5DA" stroke-width="1.2"/>
+  <text x="115" y="444" text-anchor="middle" font-size="9" font-weight="600" fill="#586069">Anomaly Detection Alerts</text>
+
+  <!-- === CORRELATION ENGINE (Middle) === -->
+  <!-- Arrows from sources to correlation -->
+  <line x1="200" y1="130" x2="280" y2="200" stroke="#959DA5" stroke-width="1" marker-end="url(#ar)"/>
+  <line x1="200" y1="182" x2="280" y2="200" stroke="#959DA5" stroke-width="1" marker-end="url(#ar)"/>
+  <line x1="200" y1="234" x2="280" y2="215" stroke="#959DA5" stroke-width="1" marker-end="url(#ar)"/>
+  <line x1="200" y1="286" x2="280" y2="225" stroke="#959DA5" stroke-width="1" marker-end="url(#ar)"/>
+  <line x1="200" y1="338" x2="280" y2="235" stroke="#959DA5" stroke-width="1" marker-end="url(#ar)"/>
+  <line x1="200" y1="390" x2="280" y2="245" stroke="#959DA5" stroke-width="1" marker-end="url(#ar)"/>
+  <line x1="200" y1="440" x2="280" y2="255" stroke="#959DA5" stroke-width="1" marker-end="url(#ar)"/>
+
+  <!-- Correlation box -->
+  <rect x="280" y="160" width="180" height="120" rx="8" fill="white" stroke="#0366D6" stroke-width="2" filter="url(#sd)"/>
+  <text x="370" y="185" text-anchor="middle" font-size="12" font-weight="700" fill="#0366D6">Correlation</text>
+  <text x="370" y="202" text-anchor="middle" font-size="9" fill="#0366D6">Engine</text>
+  <line x1="300" y1="212" x2="440" y2="212" stroke="#DBEDFF" stroke-width="1"/>
+  <text x="370" y="230" text-anchor="middle" font-size="9" fill="#586069">Join on: request_id</text>
+  <text x="370" y="244" text-anchor="middle" font-size="9" fill="#586069">Resolve: user_id</text>
+  <text x="370" y="258" text-anchor="middle" font-size="9" fill="#586069">Enrich: risk_tier, model</text>
+  <text x="370" y="272" text-anchor="middle" font-size="9" fill="#586069">Classify: alert category</text>
+
+  <!-- SIEM -->
+  <line x1="460" y1="220" x2="510" y2="220" stroke="#586069" stroke-width="1.5" marker-end="url(#ar)"/>
+  
+  <rect x="510" y="170" width="160" height="100" rx="8" fill="#F6F8FA" stroke="#959DA5" stroke-width="2" filter="url(#sd)"/>
+  <text x="590" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#24292E">SIEM</text>
+  <text x="590" y="215" text-anchor="middle" font-size="9" fill="#586069">Splunk / Sentinel / Elastic</text>
+  <line x1="530" y1="225" x2="650" y2="225" stroke="#E1E4E8" stroke-width="1"/>
+  <text x="590" y="242" text-anchor="middle" font-size="9" fill="#586069">Detection rules</text>
+  <text x="590" y="256" text-anchor="middle" font-size="9" fill="#586069">Dashboards</text>
+
+  <!-- === SEVERITY ROUTING (Right) === -->
+  <!-- Low -->
+  <line x1="670" y1="190" x2="730" y2="115" stroke="#34D058" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="730" y="90" width="250" height="55" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="855" y="110" text-anchor="middle" font-size="11" font-weight="600" fill="#22863A">LOW — Log &amp; Aggregate</text>
+  <text x="855" y="125" text-anchor="middle" font-size="9" fill="#22863A">Weekly review · No SOC ticket</text>
+  <text x="855" y="138" text-anchor="middle" font-size="8" fill="#6A737D">Single guardrail blocks, routine flags</text>
+
+  <!-- Medium -->
+  <line x1="670" y1="210" x2="730" y2="195" stroke="#F9C513" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="730" y="165" width="250" height="55" rx="6" fill="#FFF5B1" stroke="#F9C513" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="855" y="185" text-anchor="middle" font-size="11" font-weight="600" fill="#B08800">MEDIUM — SOC L1 Triage</text>
+  <text x="855" y="200" text-anchor="middle" font-size="9" fill="#B08800">4-hour SLA · Auto-ticket</text>
+  <text x="855" y="213" text-anchor="middle" font-size="8" fill="#6A737D">Judge flags, single anomalies, patterns</text>
+
+  <!-- High -->
+  <line x1="670" y1="230" x2="730" y2="270" stroke="#E65100" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="730" y="240" width="250" height="55" rx="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="855" y="260" text-anchor="middle" font-size="11" font-weight="600" fill="#BF360C">HIGH — SOC L2 Investigation</text>
+  <text x="855" y="275" text-anchor="middle" font-size="9" fill="#BF360C">1-hour SLA · Incident created</text>
+  <text x="855" y="288" text-anchor="middle" font-size="8" fill="#6A737D">Attack patterns, data exfil signals, multi-metric</text>
+
+  <!-- Critical -->
+  <line x1="670" y1="250" x2="730" y2="345" stroke="#D73A49" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="730" y="315" width="250" height="55" rx="6" fill="#FFEEF0" stroke="#D73A49" stroke-width="1.2" filter="url(#sd)"/>
+  <text x="855" y="335" text-anchor="middle" font-size="11" font-weight="600" fill="#CB2431">CRITICAL — Immediate Response</text>
+  <text x="855" y="350" text-anchor="middle" font-size="9" fill="#CB2431">Auto-disable endpoint · Page on-call</text>
+  <text x="855" y="363" text-anchor="middle" font-size="8" fill="#6A737D">Confirmed breach, agent compromise, confirmed bypass</text>
+
+  <!-- === KEY PRINCIPLE === -->
+  <rect x="280" y="400" width="700" height="50" rx="6" fill="white" stroke="#0366D6" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="630" y="420" text-anchor="middle" font-size="10" font-weight="600" fill="#0366D6">Key requirement: Propagate a correlation ID (request_id) across every component.</text>
+  <text x="630" y="436" text-anchor="middle" font-size="10" fill="#586069">Without it, you cannot link AI alert → user identity → business impact.</text>
+
+  <!-- Connection label -->
+  <text x="370" y="150" text-anchor="middle" font-size="8" font-weight="600" fill="#959DA5">ALL SOURCES</text>
+</svg>

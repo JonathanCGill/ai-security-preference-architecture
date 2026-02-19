@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 400" width="650" height="400">
+  <rect width="650" height="400" fill="#f8fafc"/>
+  
+  <text x="325" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">RAG Document Ingestion Pipeline</text>
+  
+  <!-- Step 1: Source Identification -->
+  <rect x="52" y="47" width="180" height="55" rx="6" fill="#374151"/>
+  <rect x="50" y="45" width="180" height="55" rx="6" fill="#64748b"/>
+  <text x="140" y="68" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">1. Source Identification</text>
+  <text x="140" y="82" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Who created this?</text>
+  <text x="140" y="93" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Is source trusted?</text>
+  
+  <!-- Arrow -->
+  <line x1="230" y1="72" x2="265" y2="72" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="270,72 260,67 260,77" fill="#94a3b8"/>
+  
+  <!-- Step 2: Classification -->
+  <rect x="277" y="47" width="180" height="55" rx="6" fill="#1e40af"/>
+  <rect x="275" y="45" width="180" height="55" rx="6" fill="#3b82f6"/>
+  <text x="365" y="68" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">2. Classification</text>
+  <text x="365" y="82" font-family="Arial, sans-serif" font-size="8" fill="#dbeafe" text-anchor="middle">Sensitivity level?</text>
+  <text x="365" y="93" font-family="Arial, sans-serif" font-size="8" fill="#dbeafe" text-anchor="middle">Access restrictions?</text>
+  
+  <!-- Arrow -->
+  <line x1="455" y1="72" x2="490" y2="72" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="495,72 485,67 485,77" fill="#94a3b8"/>
+  
+  <!-- Step 3: Content Review -->
+  <rect x="502" y="47" width="130" height="55" rx="6" fill="#047857"/>
+  <rect x="500" y="45" width="130" height="55" rx="6" fill="#10b981"/>
+  <text x="565" y="68" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">3. Content Review</text>
+  <text x="565" y="82" font-family="Arial, sans-serif" font-size="8" fill="#d1fae5" text-anchor="middle">Policy scan</text>
+  <text x="565" y="93" font-family="Arial, sans-serif" font-size="8" fill="#d1fae5" text-anchor="middle">Manual if high-risk</text>
+  
+  <!-- Arrow down -->
+  <line x1="565" y1="100" x2="565" y2="135" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="565,140 560,130 570,130" fill="#94a3b8"/>
+  
+  <!-- Decision: Pass/Fail -->
+  <rect x="502" y="147" width="130" height="40" rx="6" fill="#5b21b6"/>
+  <rect x="500" y="145" width="130" height="40" rx="6" fill="#8b5cf6"/>
+  <text x="565" y="170" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Policy Check</text>
+  
+  <!-- Pass arrow -->
+  <line x1="500" y1="165" x2="420" y2="165" stroke="#10b981" stroke-width="2"/>
+  <line x1="420" y1="165" x2="420" y2="220" stroke="#10b981" stroke-width="2"/>
+  <polygon points="420,225 415,215 425,215" fill="#10b981"/>
+  <text x="460" y="158" font-family="Arial, sans-serif" font-size="8" fill="#10b981">PASS</text>
+  
+  <!-- Fail arrow -->
+  <line x1="565" y1="185" x2="565" y2="220" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="565,225 560,215 570,215" fill="#ef4444"/>
+  <text x="580" y="205" font-family="Arial, sans-serif" font-size="8" fill="#ef4444">FAIL</text>
+  
+  <!-- Reject box -->
+  <rect x="502" y="232" width="130" height="35" rx="6" fill="#b91c1c"/>
+  <rect x="500" y="230" width="130" height="35" rx="6" fill="#ef4444"/>
+  <text x="565" y="252" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Reject + Log</text>
+  
+  <!-- Step 4: Ingestion -->
+  <rect x="327" y="232" width="180" height="55" rx="6" fill="#b45309"/>
+  <rect x="325" y="230" width="180" height="55" rx="6" fill="#f59e0b"/>
+  <text x="415" y="253" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">4. Ingestion</text>
+  <text x="415" y="267" font-family="Arial, sans-serif" font-size="8" fill="#fef3c7" text-anchor="middle">Add to vector store</text>
+  <text x="415" y="278" font-family="Arial, sans-serif" font-size="8" fill="#fef3c7" text-anchor="middle">Log with metadata</text>
+  
+  <!-- Arrow -->
+  <line x1="325" y1="257" x2="230" y2="257" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="225,257 235,252 235,262" fill="#94a3b8"/>
+  
+  <!-- Step 5: Monitoring -->
+  <rect x="52" y="232" width="170" height="55" rx="6" fill="#0f2744"/>
+  <rect x="50" y="230" width="170" height="55" rx="6" fill="#1e3a5f"/>
+  <text x="135" y="253" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">5. Monitoring</text>
+  <text x="135" y="267" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Track retrieval patterns</text>
+  <text x="135" y="278" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Alert on anomalies</text>
+  
+  <!-- Feedback loop -->
+  <line x1="50" y1="257" x2="30" y2="257" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="30" y1="257" x2="30" y2="72" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="30" y1="72" x2="45" y2="72" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2"/>
+  <polygon points="50,72 40,67 40,77" fill="#64748b"/>
+  <text x="35" y="170" font-family="Arial, sans-serif" font-size="7" fill="#64748b" transform="rotate(-90 35,170)">Feedback loop</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="320" width="580" height="70" rx="4" fill="#f1f5f9"/>
+  <text x="70" y="340" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">Key Controls:</text>
+  <text x="70" y="358" font-family="Arial, sans-serif" font-size="8" fill="#475569">Source validation prevents untrusted content</text>
+  <text x="70" y="372" font-family="Arial, sans-serif" font-size="8" fill="#475569">Classification ensures proper handling</text>
+  <text x="320" y="358" font-family="Arial, sans-serif" font-size="8" fill="#475569">Policy scan catches violations before ingestion</text>
+  <text x="320" y="372" font-family="Arial, sans-serif" font-size="8" fill="#475569">Monitoring detects poisoning attempts</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+  </defs>
+  
+  <rect width="800" height="500" fill="#f8fafc"/>
+  
+  <text x="400" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">ISO 42001 PDCA Cycle — Framework Mapping</text>
+  
+  <!-- Center circle -->
+  <circle cx="400" cy="260" r="60" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">Context</text>
+  <text x="400" y="265" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(Clause 4)</text>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Leadership</text>
+  <text x="400" y="292" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(Clause 5)</text>
+  
+  <!-- PLAN - Top -->
+  <rect x="280" y="55" width="240" height="110" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">PLAN</text>
+  <text x="400" y="98" font-family="Arial, sans-serif" font-size="11" fill="#1e40af" text-anchor="middle">Clause 6: Planning</text>
+  <line x1="300" y1="108" x2="500" y2="108" stroke="#93c5fd" stroke-width="1"/>
+  <text x="400" y="125" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• AI.2 Risk Management</text>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Risk classification &amp; assessment</text>
+  <text x="400" y="155" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Control selection by tier</text>
+  
+  <!-- DO - Right -->
+  <rect x="540" y="185" width="240" height="150" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="660" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#166534" text-anchor="middle">DO</text>
+  <text x="660" y="228" font-family="Arial, sans-serif" font-size="11" fill="#166534" text-anchor="middle">Clause 8: Operation</text>
+  <line x1="560" y1="238" x2="760" y2="238" stroke="#86efac" stroke-width="1"/>
+  <text x="660" y="258" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• AI.4 Development Security</text>
+  <text x="660" y="273" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• AI.7 Guardrails (inline)</text>
+  <text x="660" y="288" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• AI.8 Judge (async)</text>
+  <text x="660" y="303" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• AI.9 Human Oversight</text>
+  <text x="660" y="318" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• AI.11 Logging</text>
+  
+  <!-- CHECK - Bottom -->
+  <rect x="280" y="355" width="240" height="110" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">CHECK</text>
+  <text x="400" y="398" font-family="Arial, sans-serif" font-size="11" fill="#b45309" text-anchor="middle">Clause 9: Performance Evaluation</text>
+  <line x1="300" y1="408" x2="500" y2="408" stroke="#fcd34d" stroke-width="1"/>
+  <text x="400" y="428" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Metrics &amp; monitoring</text>
+  <text x="400" y="443" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Internal audit</text>
+  <text x="400" y="458" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Management review</text>
+  
+  <!-- ACT - Left -->
+  <rect x="20" y="185" width="240" height="150" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="140" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#b91c1c" text-anchor="middle">ACT</text>
+  <text x="140" y="228" font-family="Arial, sans-serif" font-size="11" fill="#b91c1c" text-anchor="middle">Clause 10: Improvement</text>
+  <line x1="40" y1="238" x2="240" y2="238" stroke="#fca5a5" stroke-width="1"/>
+  <text x="140" y="258" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">• Corrective actions</text>
+  <text x="140" y="273" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">• Judge → Guardrail updates</text>
+  <text x="140" y="288" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">• HITL → Judge calibration</text>
+  <text x="140" y="303" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">• Incident → Process fix</text>
+  <text x="140" y="318" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">• Continual improvement</text>
+  
+  <!-- Arrows connecting quadrants -->
+  <!-- Plan to Do -->
+  <path d="M 520 130 Q 560 150 560 180" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Do to Check -->
+  <path d="M 660 340 Q 660 370 520 400" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Check to Act -->
+  <path d="M 280 410 Q 240 390 240 340" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Act to Plan -->
+  <path d="M 140 180 Q 140 150 280 110" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Support box - Clause 7 -->
+  <rect x="600" y="420" width="180" height="70" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="690" y="445" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">SUPPORT (Clause 7)</text>
+  <text x="690" y="465" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">Resources • Competence</text>
+  <text x="690" y="480" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">Awareness • Documentation</text>
+  
+  <!-- Dashed lines from Support to all quadrants -->
+  <line x1="600" y1="455" x2="520" y2="410" stroke="#6366f1" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="690" y1="420" x2="660" y2="340" stroke="#6366f1" stroke-width="1" stroke-dasharray="4,2"/>
+</svg>

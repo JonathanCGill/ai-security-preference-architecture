@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="550" viewBox="0 0 900 550">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1"/>
+    </marker>
+  </defs>
+  
+  <rect width="900" height="550" fill="#f8fafc"/>
+  
+  <text x="450" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Centralised AI Governance — Multi-Platform Integration</text>
+  
+  <!-- AGO Control Plane -->
+  <rect x="50" y="50" width="800" height="140" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="80" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4338ca">AGO CONTROL PLANE</text>
+  
+  <!-- Standards boxes -->
+  <rect x="70" y="90" width="170" height="85" rx="4" fill="#c7d2fe" stroke="#818cf8" stroke-width="1"/>
+  <text x="155" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#4338ca" text-anchor="middle">Universal Standards</text>
+  <text x="155" y="128" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Risk classification</text>
+  <text x="155" y="141" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Guardrail patterns</text>
+  <text x="155" y="154" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Judge criteria</text>
+  <text x="155" y="167" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• HITL requirements</text>
+  
+  <rect x="260" y="90" width="170" height="85" rx="4" fill="#c7d2fe" stroke="#818cf8" stroke-width="1"/>
+  <text x="345" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#4338ca" text-anchor="middle">AGO Judge Service</text>
+  <text x="345" y="128" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Evaluation prompts</text>
+  <text x="345" y="141" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Sampling logic</text>
+  <text x="345" y="154" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Finding classification</text>
+  <text x="345" y="167" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• (for platforms w/o native)</text>
+  
+  <rect x="450" y="90" width="170" height="85" rx="4" fill="#c7d2fe" stroke="#818cf8" stroke-width="1"/>
+  <text x="535" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#4338ca" text-anchor="middle">Unified HITL</text>
+  <text x="535" y="128" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Central queue system</text>
+  <text x="535" y="141" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Finding router</text>
+  <text x="535" y="154" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• SLA tracking</text>
+  <text x="535" y="167" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Decision capture</text>
+  
+  <rect x="640" y="90" width="190" height="85" rx="4" fill="#c7d2fe" stroke="#818cf8" stroke-width="1"/>
+  <text x="735" y="110" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#4338ca" text-anchor="middle">Aggregated Visibility</text>
+  <text x="735" y="128" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Central log lake</text>
+  <text x="735" y="141" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Cross-platform dashboards</text>
+  <text x="735" y="154" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Unified risk view</text>
+  <text x="735" y="167" font-family="Arial, sans-serif" font-size="8" fill="#4338ca" text-anchor="middle">• Compliance reporting</text>
+  
+  <!-- Arrows down to adapters -->
+  <line x1="155" y1="175" x2="155" y2="205" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+  <line x1="345" y1="175" x2="345" y2="205" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+  <line x1="535" y1="175" x2="535" y2="205" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+  <line x1="735" y1="175" x2="735" y2="205" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+  
+  <!-- Platform Adapters -->
+  <rect x="50" y="210" width="800" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="450" y="235" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">PLATFORM ADAPTERS — Translate AGO Standards to Platform-Native Controls</text>
+  <text x="450" y="250" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">Configuration APIs • Log exporters • Finding normalisation • Workflow integration</text>
+  
+  <!-- Arrows down to platforms -->
+  <line x1="175" y1="260" x2="175" y2="290" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="260" x2="450" y2="290" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="725" y1="260" x2="725" y2="290" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Platforms -->
+  <!-- AWS Bedrock -->
+  <rect x="50" y="295" width="250" height="180" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="175" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c" text-anchor="middle">AWS BEDROCK</text>
+  
+  <rect x="65" y="335" width="105" height="55" rx="4" fill="#ffedd5" stroke="#fdba74" stroke-width="1"/>
+  <text x="117" y="353" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c2410c" text-anchor="middle">Guardrails</text>
+  <text x="117" y="368" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">✅ Native</text>
+  <text x="117" y="381" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">Content + PII + Topics</text>
+  
+  <rect x="180" y="335" width="105" height="55" rx="4" fill="#ffedd5" stroke="#fdba74" stroke-width="1"/>
+  <text x="232" y="353" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c2410c" text-anchor="middle">Judge</text>
+  <text x="232" y="368" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">⚠️ AGO-operated</text>
+  <text x="232" y="381" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">Lambda + Bedrock</text>
+  
+  <rect x="65" y="400" width="105" height="55" rx="4" fill="#ffedd5" stroke="#fdba74" stroke-width="1"/>
+  <text x="117" y="418" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c2410c" text-anchor="middle">HITL</text>
+  <text x="117" y="433" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">❌ Build</text>
+  <text x="117" y="446" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">SQS → AGO Queue</text>
+  
+  <rect x="180" y="400" width="105" height="55" rx="4" fill="#ffedd5" stroke="#fdba74" stroke-width="1"/>
+  <text x="232" y="418" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c2410c" text-anchor="middle">Logging</text>
+  <text x="232" y="433" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">✅ CloudWatch</text>
+  <text x="232" y="446" font-family="Arial, sans-serif" font-size="8" fill="#c2410c" text-anchor="middle">→ Central Lake</text>
+  
+  <!-- Databricks -->
+  <rect x="325" y="295" width="250" height="180" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="450" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">DATABRICKS</text>
+  
+  <rect x="340" y="335" width="105" height="55" rx="4" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="392" y="353" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">Guardrails</text>
+  <text x="392" y="368" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">✅ AI Gateway</text>
+  <text x="392" y="381" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">Safety + PII + Custom</text>
+  
+  <rect x="455" y="335" width="105" height="55" rx="4" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="507" y="353" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">Judge</text>
+  <text x="507" y="368" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">✅ MLflow 3.0</text>
+  <text x="507" y="381" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">LLM Judges</text>
+  
+  <rect x="340" y="400" width="105" height="55" rx="4" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="392" y="418" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">HITL</text>
+  <text x="392" y="433" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">✅ Review App</text>
+  <text x="392" y="446" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">+ Deployment Jobs</text>
+  
+  <rect x="455" y="400" width="105" height="55" rx="4" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="507" y="418" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">Logging</text>
+  <text x="507" y="433" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">✅ Unity Catalog</text>
+  <text x="507" y="446" font-family="Arial, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">→ Central Lake</text>
+  
+  <!-- Palantir Foundry -->
+  <rect x="600" y="295" width="250" height="180" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="725" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">PALANTIR FOUNDRY</text>
+  
+  <rect x="615" y="335" width="105" height="55" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="667" y="353" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">Guardrails</text>
+  <text x="667" y="368" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">✅ AIP Governance</text>
+  <text x="667" y="381" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Built-in controls</text>
+  
+  <rect x="730" y="335" width="105" height="55" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="782" y="353" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">Judge</text>
+  <text x="782" y="368" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">✅ AIP Evals</text>
+  <text x="782" y="381" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Continuous eval</text>
+  
+  <rect x="615" y="400" width="105" height="55" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="667" y="418" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">HITL</text>
+  <text x="667" y="433" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">✅ Ontology</text>
+  <text x="667" y="446" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Workflows</text>
+  
+  <rect x="730" y="400" width="105" height="55" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="782" y="418" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">Logging</text>
+  <text x="782" y="433" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">✅ Audit Logs</text>
+  <text x="782" y="446" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">→ Central Lake</text>
+  
+  <!-- Feedback arrows -->
+  <path d="M 175 475 L 175 510 L 735 510 L 735 475" stroke="#94a3b8" stroke-width="1" fill="none" stroke-dasharray="4,2"/>
+  <line x1="450" y1="510" x2="450" y2="530" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="450" y="545" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Logs aggregate to AGO Control Plane for unified visibility</text>
+</svg>

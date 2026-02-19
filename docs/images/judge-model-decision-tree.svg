@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 420" width="750" height="420">
+  <style>
+    .title { font: bold 16px Arial, sans-serif; fill: #1e293b; }
+    .question { font: bold 11px Arial, sans-serif; fill: #1e40af; }
+    .answer { font: bold 10px Arial, sans-serif; }
+    .detail { font: 9px Arial, sans-serif; fill: #64748b; }
+    .yes { fill: #166534; }
+    .no { fill: #b91c1c; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="750" height="420" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="375" y="25" text-anchor="middle" class="title">Judge Model Selection Decision Tree</text>
+  
+  <!-- Question 1: CRITICAL? -->
+  <rect x="250" y="45" width="250" height="45" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="375" y="72" text-anchor="middle" class="question">Is this a CRITICAL tier system?</text>
+  
+  <!-- YES branch from Q1 -->
+  <line x1="375" y1="90" x2="375" y2="110" stroke="#22c55e" stroke-width="2"/>
+  <line x1="375" y1="110" x2="150" y2="110" stroke="#22c55e" stroke-width="2"/>
+  <line x1="150" y1="110" x2="150" y2="140" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="150,140 145,130 155,130" fill="#22c55e"/>
+  <text x="260" y="105" class="answer yes">YES</text>
+  
+  <!-- CRITICAL answer -->
+  <rect x="50" y="145" width="200" height="55" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="150" y="167" text-anchor="middle" class="answer yes">Two-tier with reasoning</text>
+  <text x="150" y="182" text-anchor="middle" class="detail">Tier 2 = o1 / Claude thinking</text>
+  <text x="150" y="194" text-anchor="middle" class="detail">100% sampling required</text>
+  
+  <!-- NO branch from Q1 -->
+  <line x1="500" y1="67" x2="530" y2="67" stroke="#ef4444" stroke-width="2"/>
+  <line x1="530" y1="67" x2="530" y2="130" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="530,130 525,120 535,120" fill="#ef4444"/>
+  <text x="515" y="62" class="answer no">NO</text>
+  
+  <!-- Question 2: HIGH? -->
+  <rect x="405" y="135" width="250" height="45" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="530" y="162" text-anchor="middle" class="question">Is it HIGH tier?</text>
+  
+  <!-- YES branch from Q2 -->
+  <line x1="530" y1="180" x2="530" y2="200" stroke="#22c55e" stroke-width="2"/>
+  <line x1="530" y1="200" x2="350" y2="200" stroke="#22c55e" stroke-width="2"/>
+  <line x1="350" y1="200" x2="350" y2="230" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="350,230 345,220 355,220" fill="#22c55e"/>
+  <text x="440" y="195" class="answer yes">YES</text>
+  
+  <!-- HIGH answer -->
+  <rect x="250" y="235" width="200" height="55" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="350" y="257" text-anchor="middle" class="answer yes">Two-tier, reasoning optional</text>
+  <text x="350" y="272" text-anchor="middle" class="detail">Use reasoning for bias/hallucination</text>
+  <text x="350" y="284" text-anchor="middle" class="detail">20-50% sampling</text>
+  
+  <!-- NO branch from Q2 -->
+  <line x1="655" y1="157" x2="685" y2="157" stroke="#ef4444" stroke-width="2"/>
+  <line x1="685" y1="157" x2="685" y2="220" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="685,220 680,210 690,210" fill="#ef4444"/>
+  <text x="670" y="152" class="answer no">NO</text>
+  
+  <!-- Question 3: MEDIUM? -->
+  <rect x="560" y="225" width="250" height="45" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="685" y="252" text-anchor="middle" class="question">Is it MEDIUM tier?</text>
+  
+  <!-- YES branch from Q3 -->
+  <line x1="685" y1="270" x2="685" y2="290" stroke="#22c55e" stroke-width="2"/>
+  <line x1="685" y1="290" x2="550" y2="290" stroke="#22c55e" stroke-width="2"/>
+  <line x1="550" y1="290" x2="550" y2="320" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="550,320 545,310 555,310" fill="#22c55e"/>
+  <text x="615" y="285" class="answer yes">YES</text>
+  
+  <!-- MEDIUM answer -->
+  <rect x="450" y="325" width="200" height="55" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="550" y="347" text-anchor="middle" class="answer" fill="#b45309">Single-tier, standard model</text>
+  <text x="550" y="362" text-anchor="middle" class="detail">Haiku / GPT-4o-mini</text>
+  <text x="550" y="374" text-anchor="middle" class="detail">5-10% sampling</text>
+  
+  <!-- NO branch from Q3 (LOW) -->
+  <line x1="685" y1="270" x2="685" y2="320" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="685,320 680,310 690,310" fill="#ef4444"/>
+  <text x="695" y="295" class="answer no">NO</text>
+  
+  <!-- LOW answer -->
+  <rect x="585" y="325" width="200" height="55" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="685" y="347" text-anchor="middle" class="answer" fill="#475569">Optional Judge</text>
+  <text x="685" y="362" text-anchor="middle" class="detail">Cheapest model if used</text>
+  <text x="685" y="374" text-anchor="middle" class="detail">1-5% or triggered only</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="360" width="180" height="50" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="60" y="378" class="detail" font-weight="bold" fill="#475569">Legend</text>
+  <line x1="60" y1="392" x2="80" y2="392" stroke="#22c55e" stroke-width="2"/>
+  <text x="85" y="396" class="detail">YES path</text>
+  <line x1="120" y1="392" x2="140" y2="392" stroke="#ef4444" stroke-width="2"/>
+  <text x="145" y="396" class="detail">NO path</text>
+</svg>

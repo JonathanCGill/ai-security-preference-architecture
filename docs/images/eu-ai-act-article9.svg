@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="340" viewBox="0 0 850 340">
+  <defs>
+    <marker id="arrow-h" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-down" markerWidth="10" markerHeight="10" refX="3" refY="9" orient="auto">
+      <path d="M0,0 L6,0 L3,9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="340" fill="#f8fafc"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="850" height="44" rx="0" fill="#1e293b"/>
+  <text x="425" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">EU AI Act Article 9 — Risk Management System</text>
+
+  <!-- Top row: Lifecycle stages -->
+  <!-- 1. Design -->
+  <rect x="30" y="70" width="130" height="44" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="95" y="96" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">Design</text>
+
+  <!-- Arrow Design -> Development -->
+  <line x1="160" y1="92" x2="190" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arrow-h)"/>
+
+  <!-- 2. Development -->
+  <rect x="200" y="70" width="130" height="44" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="265" y="96" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">Development</text>
+
+  <!-- Arrow Development -> Deployment -->
+  <line x1="330" y1="92" x2="360" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arrow-h)"/>
+
+  <!-- 3. Deployment -->
+  <rect x="370" y="70" width="130" height="44" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="435" y="96" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">Deployment</text>
+
+  <!-- Arrow Deployment -> Operation -->
+  <line x1="500" y1="92" x2="530" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arrow-h)"/>
+
+  <!-- 4. Operation -->
+  <rect x="540" y="70" width="130" height="44" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="605" y="96" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">Operation</text>
+
+  <!-- Arrow Operation -> Improvement -->
+  <line x1="670" y1="92" x2="700" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arrow-h)"/>
+
+  <!-- 5. Improvement -->
+  <rect x="710" y="70" width="120" height="44" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="770" y="96" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">Improvement</text>
+
+  <!-- Downward arrows from each stage to controls -->
+  <line x1="95" y1="114" x2="95" y2="152" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+  <line x1="265" y1="114" x2="265" y2="152" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+  <line x1="435" y1="114" x2="435" y2="152" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+  <line x1="605" y1="114" x2="605" y2="152" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+  <line x1="770" y1="114" x2="770" y2="152" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+  <!-- "Framework Controls" label -->
+  <text x="425" y="148" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b" text-anchor="middle">FRAMEWORK CONTROLS</text>
+
+  <!-- Bottom row: Framework controls -->
+  <!-- 1. Design controls -->
+  <rect x="20" y="162" width="150" height="60" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+  <text x="95" y="183" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">Risk classification,</text>
+  <text x="95" y="197" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">control selection</text>
+
+  <!-- 2. Development controls -->
+  <rect x="190" y="162" width="150" height="60" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+  <text x="265" y="183" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">Secure development,</text>
+  <text x="265" y="197" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">testing</text>
+
+  <!-- 3. Deployment controls -->
+  <rect x="360" y="162" width="150" height="60" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+  <text x="435" y="183" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">Guardrails</text>
+  <text x="435" y="197" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(inline protection)</text>
+
+  <!-- 4. Operation controls -->
+  <rect x="530" y="162" width="150" height="60" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+  <text x="605" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">Judge (monitoring)</text>
+  <text x="605" y="194" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">HITL (oversight)</text>
+  <text x="605" y="208" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">Logging (audit)</text>
+
+  <!-- 5. Improvement controls -->
+  <rect x="700" y="162" width="140" height="60" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+  <text x="770" y="183" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">Feedback loops</text>
+  <text x="770" y="197" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(HITL → guardrails)</text>
+
+  <!-- Lifecycle progression label -->
+  <rect x="20" y="248" width="820" height="2" rx="1" fill="#e2e8f0"/>
+
+  <!-- Legend / colour key -->
+  <rect x="20" y="266" width="820" height="56" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="70" y="286" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569">Stage colours:</text>
+
+  <rect x="160" y="275" width="14" height="14" rx="3" fill="#e0e7ff" stroke="#6366f1" stroke-width="1"/>
+  <text x="180" y="286" font-family="Arial, sans-serif" font-size="10" fill="#4338ca">Design &amp; Development</text>
+
+  <rect x="330" y="275" width="14" height="14" rx="3" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="350" y="286" font-family="Arial, sans-serif" font-size="10" fill="#166534">Deployment</text>
+
+  <rect x="440" y="275" width="14" height="14" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="460" y="286" font-family="Arial, sans-serif" font-size="10" fill="#b45309">Operation</text>
+
+  <rect x="540" y="275" width="14" height="14" rx="3" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="560" y="286" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">Improvement</text>
+
+  <text x="425" y="310" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Art. 9(1): Continuous iterative process throughout the entire lifecycle of a high-risk AI system</text>
+</svg>

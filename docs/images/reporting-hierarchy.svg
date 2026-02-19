@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="380" viewBox="0 0 700 380">
+  <defs>
+    <linearGradient id="boardGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="execGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="govGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="opsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="700" height="380" fill="#f8fafc"/>
+  
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Reporting Hierarchy</text>
+  
+  <!-- Board Level -->
+  <g>
+    <rect x="150" y="55" width="400" height="65" rx="8" fill="url(#boardGrad2)"/>
+    <text x="350" y="82" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">BOARD LEVEL</text>
+    <text x="350" y="100" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Strategic risk • Material incidents • Quarterly</text>
+  </g>
+  
+  <!-- Executive Level -->
+  <g>
+    <rect x="150" y="135" width="400" height="65" rx="8" fill="url(#execGrad2)"/>
+    <text x="350" y="162" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">EXECUTIVE LEVEL</text>
+    <text x="350" y="180" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Program status • Key metrics • Trends • Monthly</text>
+  </g>
+  
+  <!-- Governance Committee -->
+  <g>
+    <rect x="150" y="215" width="400" height="65" rx="8" fill="url(#govGrad2)"/>
+    <text x="350" y="242" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">GOVERNANCE COMMITTEE</text>
+    <text x="350" y="260" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Detailed metrics • Incidents • Compliance • Monthly</text>
+  </g>
+  
+  <!-- Operational -->
+  <g>
+    <rect x="150" y="295" width="400" height="65" rx="8" fill="url(#opsGrad)"/>
+    <text x="350" y="322" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">OPERATIONAL</text>
+    <text x="350" y="340" font-family="Arial, sans-serif" font-size="10" fill="#d1fae5" text-anchor="middle">Daily metrics • Alerts • Issues • Daily/Weekly</text>
+  </g>
+  
+  <!-- Connecting lines -->
+  <line x1="350" y1="120" x2="350" y2="135" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="350" y1="200" x2="350" y2="215" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="350" y1="280" x2="350" y2="295" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Side labels -->
+  <text x="580" y="90" font-family="Arial, sans-serif" font-size="9" fill="#64748b">2-3 pages max</text>
+  <text x="580" y="170" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Dashboard + summary</text>
+  <text x="580" y="250" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Full detail + attachments</text>
+  <text x="580" y="330" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Real-time dashboards</text>
+</svg>

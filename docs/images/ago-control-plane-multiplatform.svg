@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="500" viewBox="0 0 850 500" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-indigo" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="500" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="425" y="28" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">AGO Control Plane — Multi-Platform Governance</text>
+
+  <!-- ==================== CONTAINER: AGO CONTROL PLANE ==================== -->
+  <rect x="40" y="45" width="770" height="310" rx="8" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3" opacity="0.4"/>
+  <text x="60" y="66" font-size="10" font-weight="bold" fill="#6366f1" letter-spacing="1" opacity="0.6">AGO CONTROL PLANE</text>
+
+  <!-- ==================== TOP SECTION: GOVERNANCE STANDARDS ==================== -->
+  <rect x="80" y="80" width="690" height="140" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="425" y="105" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">GOVERNANCE STANDARDS</text>
+  <line x1="100" y1="115" x2="750" y2="115" stroke="#a5b4fc" stroke-width="1"/>
+
+  <!-- Bullet items -->
+  <circle cx="120" cy="137" r="3" fill="#6366f1"/>
+  <text x="130" y="141" font-size="10" fill="#4338ca">Risk classification methodology</text>
+  <text x="345" y="141" font-size="9" fill="#94a3b8" font-style="italic">(universal)</text>
+
+  <circle cx="120" cy="157" r="3" fill="#6366f1"/>
+  <text x="130" y="161" font-size="10" fill="#4338ca">Guardrail pattern library</text>
+  <text x="290" y="161" font-size="9" fill="#94a3b8" font-style="italic">(universal)</text>
+
+  <circle cx="120" cy="177" r="3" fill="#6366f1"/>
+  <text x="130" y="181" font-size="10" fill="#4338ca">Judge evaluation criteria</text>
+  <text x="290" y="181" font-size="9" fill="#94a3b8" font-style="italic">(universal)</text>
+
+  <circle cx="430" cy="137" r="3" fill="#6366f1"/>
+  <text x="440" y="141" font-size="10" fill="#4338ca">HITL requirements by tier</text>
+  <text x="603" y="141" font-size="9" fill="#94a3b8" font-style="italic">(universal)</text>
+
+  <circle cx="430" cy="157" r="3" fill="#6366f1"/>
+  <text x="440" y="161" font-size="10" fill="#4338ca">Logging standards</text>
+  <text x="560" y="161" font-size="9" fill="#94a3b8" font-style="italic">(universal)</text>
+
+  <!-- ==================== ARROWS: GOVERNANCE TO ADAPTERS ==================== -->
+  <line x1="215" y1="220" x2="215" y2="260" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="425" y1="220" x2="425" y2="260" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="635" y1="220" x2="635" y2="260" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== MIDDLE SECTION: ADAPTERS ==================== -->
+  <rect x="110" y="265" width="210" height="60" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="215" y="293" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Bedrock Adapter</text>
+  <text x="215" y="310" font-size="9" fill="#64748b" text-anchor="middle">Translates standards → Bedrock API</text>
+
+  <rect x="320" y="265" width="210" height="60" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="425" y="293" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Databricks Adapter</text>
+  <text x="425" y="310" font-size="9" fill="#64748b" text-anchor="middle">Translates standards → AI Gateway</text>
+
+  <rect x="530" y="265" width="210" height="60" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="635" y="293" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Foundry Adapter</text>
+  <text x="635" y="310" font-size="9" fill="#64748b" text-anchor="middle">Translates standards → AIP config</text>
+
+  <!-- ==================== ARROWS: ADAPTERS TO PLATFORMS ==================== -->
+  <line x1="215" y1="325" x2="215" y2="395" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="425" y1="325" x2="425" y2="395" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="635" y1="325" x2="635" y2="395" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Dashed line label showing boundary -->
+  <text x="425" y="380" font-size="9" fill="#94a3b8" text-anchor="middle" font-style="italic">— control plane boundary —</text>
+
+  <!-- ==================== BOTTOM SECTION: EXTERNAL PLATFORMS ==================== -->
+  <rect x="110" y="400" width="210" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="215" y="428" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">AWS Bedrock Platform</text>
+  <text x="215" y="445" font-size="9" fill="#92400e" text-anchor="middle">Guardrails &amp; inference</text>
+
+  <rect x="320" y="400" width="210" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="425" y="428" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Databricks Platform</text>
+  <text x="425" y="445" font-size="9" fill="#92400e" text-anchor="middle">AI Gateway &amp; Unity Catalog</text>
+
+  <rect x="530" y="400" width="210" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="635" y="428" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Palantir Foundry Platform</text>
+  <text x="635" y="445" font-size="9" fill="#92400e" text-anchor="middle">AIP &amp; Ontology controls</text>
+
+  <!-- Footer -->
+  <text x="425" y="490" font-size="10" fill="#94a3b8" text-anchor="middle">Universal governance standards — platform-specific adapters — consistent control enforcement</text>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="350" viewBox="0 0 900 350">
+  <defs>
+    <linearGradient id="collectGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="applyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="900" height="350" fill="#f8fafc"/>
+  
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Feedback Loop Architecture</text>
+  
+  <!-- Collection Stage -->
+  <g>
+    <rect x="30" y="60" width="250" height="230" rx="10" fill="url(#collectGrad)"/>
+    <text x="155" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">COLLECTION</text>
+    
+    <rect x="50" y="105" width="100" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="100" y="127" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">User Ratings</text>
+    
+    <rect x="160" y="105" width="100" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="210" y="127" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Issue Reports</text>
+    
+    <rect x="50" y="150" width="100" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="100" y="172" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Retry Patterns</text>
+    
+    <rect x="160" y="150" width="100" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="210" y="172" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Abandonment</text>
+    
+    <rect x="50" y="195" width="100" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="100" y="217" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">App Errors</text>
+    
+    <rect x="160" y="195" width="100" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="210" y="217" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">HITL Decisions</text>
+    
+    <rect x="50" y="240" width="210" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="155" y="262" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Downstream System Flags</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M280 175 L320 175" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Processing Stage -->
+  <g>
+    <rect x="330" y="60" width="250" height="230" rx="10" fill="url(#processGrad)"/>
+    <text x="455" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">PROCESSING</text>
+    
+    <rect x="350" y="105" width="210" height="40" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="455" y="122" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Categorize</text>
+    <text x="455" y="137" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Safety • Accuracy • Policy • FP</text>
+    
+    <rect x="350" y="155" width="210" height="40" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="455" y="172" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Correlate</text>
+    <text x="455" y="187" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Link to Judge decisions</text>
+    
+    <rect x="350" y="205" width="210" height="40" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="455" y="222" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Pattern Detection</text>
+    <text x="455" y="237" font-family="Arial, sans-serif" font-size="9" fill="#e9d5ff" text-anchor="middle">Emerging issues, trends</text>
+    
+    <rect x="350" y="255" width="210" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="455" y="272" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Prioritize by Impact</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M580 175 L620 175" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Application Stage -->
+  <g>
+    <rect x="630" y="60" width="250" height="230" rx="10" fill="url(#applyGrad)"/>
+    <text x="755" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">APPLICATION</text>
+    
+    <rect x="650" y="105" width="210" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="755" y="127" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Judge Calibration</text>
+    
+    <rect x="650" y="150" width="210" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="755" y="172" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Threshold Tuning</text>
+    
+    <rect x="650" y="195" width="210" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="755" y="217" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">New Detection Rules</text>
+    
+    <rect x="650" y="240" width="210" height="35" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="755" y="262" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Golden Set Updates</text>
+  </g>
+  
+  <!-- Feedback loop arrow -->
+  <path d="M755 290 L755 320 L155 320 L155 290" stroke="#f59e0b" stroke-width="2" fill="none" stroke-dasharray="6"/>
+  <text x="455" y="338" font-family="Arial, sans-serif" font-size="11" fill="#d97706" text-anchor="middle">Continuous Improvement Loop</text>
+</svg>

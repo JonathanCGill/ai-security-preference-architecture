@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="1060" viewBox="0 0 1060 1060" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1060" height="1060" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="530" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">CI/CD Pipeline Integration</text>
+  <text x="530" y="56" text-anchor="middle" font-size="13" fill="#64748b">Declaration as code · Governance in the pipeline · Guardrails on deploy</text>
+
+  <!-- ==================== TRIGGER ==================== -->
+  <rect x="380" y="76" width="300" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="530" y="98" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Code change or declaration change</text>
+  <line x1="530" y1="116" x2="530" y2="142" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STAGE 1: VALIDATE ==================== -->
+  <rect x="100" y="142" width="860" height="130" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <path d="M108,142 L952,142 Q960,142 960,150 L960,170 L100,170 L100,150 Q100,142 108,142 Z" fill="#1e40af"/>
+  <text x="120" y="161" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1">STAGE 1 · VALIDATE DECLARATION</text>
+  <text x="940" y="161" text-anchor="end" font-size="10" fill="#bfdbfe">CI · ~3 seconds</text>
+
+  <!-- Validation step boxes -->
+  <rect x="120" y="182" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="210" y="197" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Schema Validation</text>
+  <text x="210" y="210" text-anchor="middle" font-size="9" fill="#64748b">Required fields + types</text>
+
+  <rect x="316" y="182" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="406" y="197" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Completeness Check</text>
+  <text x="406" y="210" text-anchor="middle" font-size="9" fill="#64748b">Purpose + boundaries</text>
+
+  <rect x="512" y="182" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="602" y="197" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Tier Calculation</text>
+  <text x="602" y="210" text-anchor="middle" font-size="9" fill="#64748b">Auto from declaration</text>
+
+  <rect x="708" y="182" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="798" y="197" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Change Detection</text>
+  <text x="798" y="210" text-anchor="middle" font-size="9" fill="#64748b">Material vs non-material</text>
+
+  <!-- PR comment line -->
+  <rect x="120" y="228" width="768" height="32" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="135" y="248" font-size="10" fill="#475569">→ PR comment: <tspan font-weight="600">Tier: High</tspan> · Guardrails + Judge 25% + HITL · Non-material change (model version)</text>
+
+  <!-- Fail badge inside box -->
+  <rect x="900" y="228" width="48" height="32" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="924" y="243" text-anchor="middle" font-size="9" font-weight="700" fill="#dc2626">FAIL</text>
+  <text x="924" y="255" text-anchor="middle" font-size="7" fill="#dc2626">blocks</text>
+
+  <!-- Pass -->
+  <line x1="530" y1="272" x2="530" y2="296" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <text x="540" y="288" font-size="9" font-weight="600" fill="#16a34a">Pass</text>
+
+  <!-- ==================== STAGE 2: TEST ==================== -->
+  <rect x="100" y="296" width="860" height="118" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <path d="M108,296 L952,296 Q960,296 960,304 L960,324 L100,324 L100,304 Q100,296 108,296 Z" fill="#166534"/>
+  <text x="120" y="315" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1">STAGE 2 · PRE-DEPLOYMENT TESTING</text>
+  <text x="940" y="315" text-anchor="end" font-size="10" fill="#bbf7d0">CI · ~60 seconds</text>
+
+  <rect x="120" y="336" width="186" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="213" y="351" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">Guardrail Tests</text>
+  <text x="213" y="364" text-anchor="middle" font-size="9" fill="#64748b">Known-bad inputs blocked?</text>
+
+  <rect x="322" y="336" width="186" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="415" y="351" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">Scope Tests</text>
+  <text x="415" y="364" text-anchor="middle" font-size="9" fill="#64748b">Out-of-scope refused?</text>
+
+  <rect x="524" y="336" width="186" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="617" y="351" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">Regression Tests</text>
+  <text x="617" y="364" text-anchor="middle" font-size="9" fill="#64748b">Known good still correct?</text>
+
+  <rect x="726" y="336" width="122" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="787" y="351" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">Schema Tests</text>
+  <text x="787" y="364" text-anchor="middle" font-size="9" fill="#64748b">Output format?</text>
+
+  <!-- Required note + fail badge -->
+  <rect x="120" y="382" width="728" height="22" rx="3" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="135" y="397" font-size="9" fill="#475569">High + Critical: required, blocks deploy. Low + Medium: recommended, warns only.</text>
+
+  <rect x="860" y="336" width="88" height="68" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="904" y="362" text-anchor="middle" font-size="9" font-weight="700" fill="#dc2626">FAIL</text>
+  <text x="904" y="375" text-anchor="middle" font-size="8" fill="#dc2626">blocks deploy</text>
+  <text x="904" y="387" text-anchor="middle" font-size="8" fill="#dc2626">(High/Critical)</text>
+  <text x="904" y="399" text-anchor="middle" font-size="8" fill="#d97706">warns only</text>
+
+  <!-- Pass -->
+  <line x1="530" y1="414" x2="530" y2="440" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <text x="540" y="432" font-size="9" font-weight="600" fill="#16a34a">Pass</text>
+
+  <!-- ==================== STAGE 3: GOVERNANCE GATE ==================== -->
+  <rect x="100" y="440" width="860" height="148" rx="8" fill="#fefce8" stroke="#fde047" stroke-width="1.5"/>
+  <path d="M108,440 L952,440 Q960,440 960,448 L960,468 L100,468 L100,448 Q100,440 108,440 Z" fill="#854d0e"/>
+  <text x="120" y="459" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1">STAGE 3 · GOVERNANCE GATE</text>
+  <text x="940" y="459" text-anchor="end" font-size="10" fill="#fef3c7">CI/CD boundary</text>
+
+  <!-- Two clear paths side by side -->
+  <!-- LEFT: Auto-approve path -->
+  <rect x="120" y="480" width="370" height="96" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="305" y="500" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Auto-Approve</text>
+  <text x="305" y="516" text-anchor="middle" font-size="10" fill="#15803d">No human review needed</text>
+  <text x="140" y="538" font-size="9" fill="#64748b">• Low or Medium tier</text>
+  <text x="140" y="552" font-size="9" fill="#64748b">• Non-material changes (model version, prompt tweak)</text>
+  <text x="140" y="566" font-size="9" fill="#64748b">• No new guardrail exceptions</text>
+
+  <!-- RIGHT: Review required path -->
+  <rect x="510" y="480" width="370" height="96" rx="6" fill="#fefce8" stroke="#fde047" stroke-width="1.5"/>
+  <text x="695" y="500" text-anchor="middle" font-size="12" font-weight="700" fill="#854d0e">Async Review · 48h SLA</text>
+  <text x="695" y="516" text-anchor="middle" font-size="10" fill="#a16207">Governance reviewer in the PR</text>
+  <text x="530" y="538" font-size="9" fill="#64748b">• New High or Critical tier system</text>
+  <text x="530" y="552" font-size="9" fill="#64748b">• Material change (scope, data, users, tools)</text>
+  <text x="530" y="566" font-size="9" fill="#64748b">• New guardrail exception requested</text>
+
+  <!-- Both converge -->
+  <line x1="305" y1="576" x2="305" y2="600" stroke="#16a34a" stroke-width="1"/>
+  <line x1="695" y1="576" x2="695" y2="600" stroke="#16a34a" stroke-width="1"/>
+  <line x1="305" y1="600" x2="695" y2="600" stroke="#16a34a" stroke-width="1"/>
+  <line x1="530" y1="600" x2="530" y2="620" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <text x="540" y="614" font-size="9" font-weight="600" fill="#16a34a">Approved</text>
+
+  <!-- ==================== STAGE 4: DEPLOY ==================== -->
+  <rect x="100" y="620" width="860" height="108" rx="8" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <path d="M108,620 L952,620 Q960,620 960,628 L960,648 L100,648 L100,628 Q100,620 108,620 Z" fill="#6d28d9"/>
+  <text x="120" y="639" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1">STAGE 4 · DEPLOY WITH GUARDRAILS</text>
+  <text x="940" y="639" text-anchor="end" font-size="10" fill="#e9d5ff">CD · automated</text>
+
+  <!-- Deploy steps as horizontal flow -->
+  <rect x="120" y="660" width="120" height="36" rx="4" fill="#ffffff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="180" y="676" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">Register</text>
+  <text x="180" y="689" text-anchor="middle" font-size="8" fill="#64748b">Declaration</text>
+
+  <line x1="240" y1="678" x2="260" y2="678" stroke="#334155" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="260" y="660" width="120" height="36" rx="4" fill="#ffffff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="320" y="676" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">Configure</text>
+  <text x="320" y="689" text-anchor="middle" font-size="8" fill="#64748b">Guardrails</text>
+
+  <line x1="380" y1="678" x2="400" y2="678" stroke="#334155" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="400" y="660" width="120" height="36" rx="4" fill="#ffffff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="460" y="676" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">Deploy</text>
+  <text x="460" y="689" text-anchor="middle" font-size="8" fill="#64748b">Application</text>
+
+  <line x1="520" y1="678" x2="540" y2="678" stroke="#334155" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="540" y="660" width="120" height="36" rx="4" fill="#ffffff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="600" y="676" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">Start Judge</text>
+  <text x="600" y="689" text-anchor="middle" font-size="8" fill="#64748b">Sampling</text>
+
+  <line x1="660" y1="678" x2="680" y2="678" stroke="#334155" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="680" y="660" width="120" height="36" rx="4" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="740" y="676" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">Smoke Test</text>
+  <text x="740" y="689" text-anchor="middle" font-size="8" fill="#15803d">Verify controls</text>
+
+  <!-- Key note -->
+  <text x="120" y="718" font-size="10" font-weight="600" fill="#6d28d9">Guardrails active from the first production request. No monitoring-only period.</text>
+
+  <!-- Arrow to Stage 5 -->
+  <line x1="530" y1="728" x2="530" y2="752" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STAGE 5: MONITOR ==================== -->
+  <rect x="100" y="752" width="860" height="126" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <path d="M108,752 L952,752 Q960,752 960,760 L960,780 L100,780 L100,760 Q100,752 108,752 Z" fill="#991b1b"/>
+  <text x="120" y="771" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1">STAGE 5 · PRODUCTION MONITORING</text>
+  <text x="940" y="771" text-anchor="end" font-size="10" fill="#fecaca">Continuous</text>
+
+  <rect x="120" y="792" width="186" height="40" rx="4" fill="#ffffff" stroke="#fca5a5" stroke-width="1"/>
+  <text x="213" y="809" text-anchor="middle" font-size="10" font-weight="600" fill="#991b1b">Judge Evaluation</text>
+  <text x="213" y="823" text-anchor="middle" font-size="9" fill="#64748b">Async quality checks</text>
+
+  <rect x="322" y="792" width="186" height="40" rx="4" fill="#ffffff" stroke="#fca5a5" stroke-width="1"/>
+  <text x="415" y="809" text-anchor="middle" font-size="10" font-weight="600" fill="#991b1b">Findings Dashboard</text>
+  <text x="415" y="823" text-anchor="middle" font-size="9" fill="#64748b">Developer + governance</text>
+
+  <rect x="524" y="792" width="186" height="40" rx="4" fill="#ffffff" stroke="#fca5a5" stroke-width="1"/>
+  <text x="617" y="809" text-anchor="middle" font-size="10" font-weight="600" fill="#991b1b">Scheduled Regression</text>
+  <text x="617" y="823" text-anchor="middle" font-size="9" fill="#64748b">Nightly/weekly CI job</text>
+
+  <rect x="726" y="792" width="160" height="40" rx="4" fill="#ffffff" stroke="#fca5a5" stroke-width="1"/>
+  <text x="806" y="809" text-anchor="middle" font-size="10" font-weight="600" fill="#991b1b">Quality Gate</text>
+  <text x="806" y="823" text-anchor="middle" font-size="9" fill="#64748b">Blocks next deploy</text>
+
+  <!-- Feedback loop -->
+  <rect x="120" y="844" width="766" height="24" rx="4" fill="#fff1f2" stroke="#fecdd3" stroke-width="1"/>
+  <text x="503" y="860" text-anchor="middle" font-size="10" fill="#991b1b">↻ Finding rate &gt; 5% → next deployment blocked until findings resolved</text>
+
+  <!-- ==================== TIMELINE BAR ==================== -->
+  <rect x="100" y="908" width="860" height="64" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="120" y="929" font-size="11" font-weight="700" fill="#334155">Typical Timeline</text>
+
+  <rect x="120" y="940" width="80" height="12" rx="3" fill="#93c5fd"/>
+  <text x="120" y="964" font-size="9" font-weight="600" fill="#1e40af">Validate</text>
+  <text x="176" y="964" font-size="8" fill="#64748b">3s</text>
+
+  <rect x="210" y="940" width="100" height="12" rx="3" fill="#86efac"/>
+  <text x="210" y="964" font-size="9" font-weight="600" fill="#166534">Test</text>
+  <text x="288" y="964" font-size="8" fill="#64748b">60s</text>
+
+  <rect x="320" y="940" width="200" height="12" rx="3" fill="#fde047"/>
+  <text x="320" y="964" font-size="9" font-weight="600" fill="#854d0e">Governance</text>
+  <text x="490" y="964" font-size="8" fill="#64748b">auto or 48h</text>
+
+  <rect x="530" y="940" width="80" height="12" rx="3" fill="#c4b5fd"/>
+  <text x="530" y="964" font-size="9" font-weight="600" fill="#6d28d9">Deploy</text>
+  <text x="590" y="964" font-size="8" fill="#64748b">~5m</text>
+
+  <rect x="620" y="940" width="270" height="12" rx="3" fill="#fca5a5"/>
+  <text x="620" y="964" font-size="9" font-weight="600" fill="#991b1b">Monitor</text>
+  <text x="860" y="964" font-size="8" fill="#64748b">continuous</text>
+
+  <text x="930" y="940" font-size="9" fill="#475569">Low/Medium: same day</text>
+  <text x="930" y="955" font-size="9" fill="#475569">High/Critical: 2–5 days</text>
+
+  <!-- Footer -->
+  <text x="530" y="1040" text-anchor="middle" font-size="11" fill="#94a3b8">AI Security Reference Architecture — CI/CD Pipeline Integration</text>
+
+</svg>

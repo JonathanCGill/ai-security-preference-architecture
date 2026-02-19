@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="620" rx="8" fill="#FAFBFC"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#1B1F23">AI Runtime Behaviour Security — Control Architecture</text>
+  <text x="500" y="60" text-anchor="middle" font-size="11" fill="#6A737D">Runtime monitoring + pipeline controls + supply chain verification</text>
+
+  <!-- === COLUMN 1: RUNTIME (The Three-Layer Pattern) === -->
+  <text x="185" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#24292E">Runtime Controls</text>
+  <line x1="105" y1="102" x2="265" y2="102" stroke="#E1E4E8" stroke-width="1"/>
+  
+  <!-- Guardrails -->
+  <rect x="60" y="115" width="250" height="70" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="185" y="140" text-anchor="middle" font-size="13" font-weight="600" fill="#22863A">Guardrails</text>
+  <text x="185" y="157" text-anchor="middle" font-size="10" fill="#22863A">Prevent known-bad · ~10ms</text>
+  <text x="185" y="173" text-anchor="middle" font-size="9" fill="#6A737D">Input + output · Rules + ML classifiers</text>
+  
+  <!-- Arrow -->
+  <line x1="185" y1="185" x2="185" y2="205" stroke="#959DA5" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Judge -->
+  <rect x="60" y="205" width="250" height="70" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="185" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#0366D6">LLM-as-Judge</text>
+  <text x="185" y="247" text-anchor="middle" font-size="10" fill="#0366D6">Detect unknown-bad · ~500ms–5s</text>
+  <text x="185" y="263" text-anchor="middle" font-size="9" fill="#6A737D">Async evaluation · Different model family</text>
+  
+  <!-- Arrow -->
+  <line x1="185" y1="275" x2="185" y2="295" stroke="#959DA5" stroke-width="1.5"/>
+  
+  <!-- Human Oversight -->
+  <rect x="60" y="295" width="250" height="70" rx="6" fill="#FFF5B1" stroke="#F9C513" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="185" y="320" text-anchor="middle" font-size="13" font-weight="600" fill="#B08800">Human Oversight</text>
+  <text x="185" y="337" text-anchor="middle" font-size="10" fill="#B08800">Decide edge cases · As needed</text>
+  <text x="185" y="353" text-anchor="middle" font-size="9" fill="#6A737D">Accountability · Calibration · Escalation</text>
+
+  <!-- Arrow -->
+  <line x1="185" y1="365" x2="185" y2="385" stroke="#959DA5" stroke-width="1.5"/>
+
+  <!-- Judge Assurance (NEW) -->
+  <rect x="60" y="385" width="250" height="60" rx="6" fill="#F1E5FF" stroke="#8B5CF6" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="262" y="385" width="46" height="16" rx="3" fill="#8B5CF6"/>
+  <text x="285" y="395" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="185" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#6D28D9">Judge Assurance</text>
+  <text x="185" y="425" text-anchor="middle" font-size="10" fill="#6D28D9">Verify the judge · Continuous</text>
+  <text x="185" y="438" text-anchor="middle" font-size="9" fill="#6A737D">Ground truth · Calibration · Adversarial testing</text>
+
+  <!-- === COLUMN 2: PIPELINE CONTROLS (NEW) === -->
+  <text x="555" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#24292E">Pipeline Controls</text>
+  <line x1="435" y1="102" x2="675" y2="102" stroke="#E1E4E8" stroke-width="1"/>
+
+  <!-- RAG Security -->
+  <rect x="430" y="115" width="250" height="70" rx="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="632" y="115" width="46" height="16" rx="3" fill="#E65100"/>
+  <text x="655" y="125" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="555" y="140" text-anchor="middle" font-size="13" font-weight="600" fill="#BF360C">RAG Security</text>
+  <text x="555" y="157" text-anchor="middle" font-size="10" fill="#BF360C">Access control · Ingestion validation</text>
+  <text x="555" y="173" text-anchor="middle" font-size="9" fill="#6A737D">Retrieval filtering · Indirect injection mitigation</text>
+  
+  <!-- Memory & Context -->
+  <rect x="430" y="205" width="250" height="70" rx="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="632" y="205" width="46" height="16" rx="3" fill="#E65100"/>
+  <text x="655" y="215" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="555" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#BF360C">Memory &amp; Context</text>
+  <text x="555" y="247" text-anchor="middle" font-size="10" fill="#BF360C">Session isolation · Context hygiene</text>
+  <text x="555" y="263" text-anchor="middle" font-size="9" fill="#6A737D">Persistent memory controls · Accumulation risks</text>
+  
+  <!-- Streaming -->
+  <rect x="430" y="295" width="250" height="70" rx="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="632" y="295" width="46" height="16" rx="3" fill="#E65100"/>
+  <text x="655" y="305" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="555" y="320" text-anchor="middle" font-size="13" font-weight="600" fill="#BF360C">Streaming Controls</text>
+  <text x="555" y="337" text-anchor="middle" font-size="10" fill="#BF360C">Buffer · Post-hoc · Non-streaming</text>
+  <text x="555" y="353" text-anchor="middle" font-size="9" fill="#6A737D">Validation before delivery vs. retraction</text>
+  
+  <!-- Multimodal -->
+  <rect x="430" y="385" width="250" height="60" rx="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="632" y="385" width="46" height="16" rx="3" fill="#E65100"/>
+  <text x="655" y="395" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="555" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#BF360C">Multimodal Controls</text>
+  <text x="555" y="425" text-anchor="middle" font-size="10" fill="#BF360C">Image · Audio · Document</text>
+  <text x="555" y="438" text-anchor="middle" font-size="9" fill="#6A737D">Cross-modal attacks · Modality-specific guardrails</text>
+
+  <!-- === COLUMN 3: SUPPLY CHAIN + OPS (NEW) === -->
+  <text x="870" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#24292E">Assurance &amp; Ops</text>
+  <line x1="750" y1="102" x2="990" y2="102" stroke="#E1E4E8" stroke-width="1"/>
+
+  <!-- Supply Chain -->
+  <rect x="745" y="115" width="250" height="70" rx="6" fill="#E0F2F1" stroke="#00897B" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="947" y="115" width="46" height="16" rx="3" fill="#00897B"/>
+  <text x="970" y="125" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="870" y="140" text-anchor="middle" font-size="13" font-weight="600" fill="#00695C">Supply Chain</text>
+  <text x="870" y="157" text-anchor="middle" font-size="10" fill="#00695C">Model provenance · Dependencies · AI-BOM</text>
+  <text x="870" y="173" text-anchor="middle" font-size="9" fill="#6A737D">Pre-deployment + continuous verification</text>
+  
+  <!-- NHI Lifecycle -->
+  <rect x="745" y="205" width="250" height="70" rx="6" fill="#E0F2F1" stroke="#00897B" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="947" y="205" width="46" height="16" rx="3" fill="#00897B"/>
+  <text x="970" y="215" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="870" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#00695C">NHI Lifecycle</text>
+  <text x="870" y="247" text-anchor="middle" font-size="10" fill="#00695C">Agent identity · Credentials · Access review</text>
+  <text x="870" y="263" text-anchor="middle" font-size="9" fill="#6A737D">Provision → Authenticate → Authorise → Deprovision</text>
+  
+  <!-- SOC Integration -->
+  <rect x="745" y="295" width="250" height="70" rx="6" fill="#E0F2F1" stroke="#00897B" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="947" y="295" width="46" height="16" rx="3" fill="#00897B"/>
+  <text x="970" y="305" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="870" y="320" text-anchor="middle" font-size="13" font-weight="600" fill="#00695C">SOC Integration</text>
+  <text x="870" y="337" text-anchor="middle" font-size="10" fill="#00695C">Alert taxonomy · Identity correlation · SIEM</text>
+  <text x="870" y="353" text-anchor="middle" font-size="9" fill="#6A737D">Escalation triggers · Triage procedures</text>
+
+  <!-- Cost & Latency -->
+  <rect x="745" y="385" width="250" height="60" rx="6" fill="#E0F2F1" stroke="#00897B" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="947" y="385" width="46" height="16" rx="3" fill="#00897B"/>
+  <text x="970" y="395" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="870" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#00695C">Cost &amp; Latency</text>
+  <text x="870" y="425" text-anchor="middle" font-size="10" fill="#00695C">Sampling · Tiered evaluation · Budgets</text>
+  <text x="870" y="438" text-anchor="middle" font-size="9" fill="#6A737D">Making the pattern affordable at scale</text>
+
+  <!-- === CROSS-CUTTING: Multi-Agent + Agentic === -->
+  <rect x="60" y="470" width="935" height="55" rx="6" fill="#FFF0F0" stroke="#D73A49" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="947" y="470" width="46" height="16" rx="3" fill="#D73A49"/>
+  <text x="970" y="480" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="500" y="493" text-anchor="middle" font-size="13" font-weight="600" fill="#CB2431">Multi-Agent Controls</text>
+  <text x="500" y="510" text-anchor="middle" font-size="10" fill="#CB2431">Delegation policies · Identity propagation · Inter-agent guardrails · Circuit breakers · Outcome attribution</text>
+  
+  <!-- === FOUNDATION: Anomaly Detection === -->
+  <rect x="60" y="540" width="935" height="55" rx="6" fill="#F6F8FA" stroke="#959DA5" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="947" y="540" width="46" height="16" rx="3" fill="#959DA5"/>
+  <text x="970" y="550" text-anchor="middle" font-size="8" font-weight="600" fill="white">NEW</text>
+  <text x="500" y="563" text-anchor="middle" font-size="13" font-weight="600" fill="#586069">Behavioral Anomaly Detection</text>
+  <text x="500" y="580" text-anchor="middle" font-size="10" fill="#586069">Baselines · Statistical detection · Alert routing · False positive management · Continuous calibration</text>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#959DA5"/>
+    </marker>
+  </defs>
+</svg>

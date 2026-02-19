@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="asc" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#586069"/>
+    </marker>
+    <filter id="sc" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="380" rx="8" fill="#FAFBFC"/>
+  
+  <text x="500" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1B1F23">AI Supply Chain — Control Boundaries</text>
+
+  <!-- === YOU DON'T CONTROL (Left zone) === -->
+  <rect x="15" y="60" width="380" height="290" rx="8" fill="#FFEEF0" stroke="#D73A49" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="205" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#CB2431">YOU DON'T CONTROL</text>
+  <text x="205" y="96" text-anchor="middle" font-size="9" fill="#86181D">Contractual + behavioural controls only</text>
+
+  <!-- Provider -->
+  <rect x="35" y="110" width="160" height="55" rx="6" fill="white" stroke="#D73A49" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="115" y="132" text-anchor="middle" font-size="10" font-weight="600" fill="#CB2431">Model Provider</text>
+  <text x="115" y="146" text-anchor="middle" font-size="8" fill="#86181D">Weights · Training data</text>
+  <text x="115" y="158" text-anchor="middle" font-size="8" fill="#86181D">Safety training · Updates</text>
+
+  <!-- Open source -->
+  <rect x="215" y="110" width="160" height="55" rx="6" fill="white" stroke="#D73A49" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="295" y="132" text-anchor="middle" font-size="10" font-weight="600" fill="#CB2431">Open Source Models</text>
+  <text x="295" y="146" text-anchor="middle" font-size="8" fill="#86181D">Hugging Face · Ollama</text>
+  <text x="295" y="158" text-anchor="middle" font-size="8" fill="#86181D">Pickle exploits · Tampering</text>
+
+  <!-- Framework deps -->
+  <rect x="35" y="180" width="160" height="55" rx="6" fill="white" stroke="#D73A49" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="115" y="202" text-anchor="middle" font-size="10" font-weight="600" fill="#CB2431">Framework Deps</text>
+  <text x="115" y="216" text-anchor="middle" font-size="8" fill="#86181D">LangChain · LlamaIndex</text>
+  <text x="115" y="228" text-anchor="middle" font-size="8" fill="#86181D">CVEs · Breaking changes</text>
+
+  <!-- Embedding provider -->
+  <rect x="215" y="180" width="160" height="55" rx="6" fill="white" stroke="#D73A49" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="295" y="202" text-anchor="middle" font-size="10" font-weight="600" fill="#CB2431">Embedding Models</text>
+  <text x="295" y="216" text-anchor="middle" font-size="8" fill="#86181D">Silent version updates</text>
+  <text x="295" y="228" text-anchor="middle" font-size="8" fill="#86181D">Entire RAG pipeline affected</text>
+
+  <!-- Controls for left zone -->
+  <rect x="35" y="250" width="340" height="85" rx="6" fill="white" stroke="#959DA5" stroke-width="1"/>
+  <text x="205" y="268" text-anchor="middle" font-size="9" font-weight="700" fill="#24292E">YOUR CONTROLS FOR THIS ZONE</text>
+  <text x="205" y="285" text-anchor="middle" font-size="9" fill="#586069">☐ Model version pinning</text>
+  <text x="205" y="300" text-anchor="middle" font-size="9" fill="#586069">☐ Dependency scanning + pinning</text>
+  <text x="205" y="315" text-anchor="middle" font-size="9" fill="#586069">☐ Behavioral baseline + drift detection</text>
+  <text x="205" y="330" text-anchor="middle" font-size="9" fill="#586069">☐ Hash verification (self-hosted models)</text>
+
+  <!-- === TRUST BOUNDARY === -->
+  <line x1="410" y1="60" x2="410" y2="350" stroke="#586069" stroke-width="2" stroke-dasharray="8,4"/>
+  <rect x="395" y="55" width="30" height="300" rx="4" fill="#F6F8FA" opacity="0.8"/>
+  <text x="410" y="200" text-anchor="middle" font-size="10" font-weight="700" fill="#586069" transform="rotate(-90 410 200)">TRUST BOUNDARY</text>
+
+  <!-- === YOU CONTROL (Right zone) === -->
+  <rect x="430" y="60" width="555" height="290" rx="8" fill="#DAFBE1" stroke="#34D058" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="707" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#22863A">YOU CONTROL</text>
+  <text x="707" y="96" text-anchor="middle" font-size="9" fill="#22863A">Full control — infrastructure-enforced</text>
+
+  <!-- Your app -->
+  <rect x="450" y="110" width="145" height="55" rx="6" fill="white" stroke="#34D058" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="522" y="132" text-anchor="middle" font-size="10" font-weight="600" fill="#22863A">Your Application</text>
+  <text x="522" y="146" text-anchor="middle" font-size="8" fill="#22863A">Prompts · RAG pipeline</text>
+  <text x="522" y="158" text-anchor="middle" font-size="8" fill="#22863A">Business logic</text>
+
+  <!-- Vector store -->
+  <rect x="615" y="110" width="145" height="55" rx="6" fill="white" stroke="#34D058" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="687" y="132" text-anchor="middle" font-size="10" font-weight="600" fill="#22863A">Vector Store</text>
+  <text x="687" y="146" text-anchor="middle" font-size="8" fill="#22863A">Your embeddings</text>
+  <text x="687" y="158" text-anchor="middle" font-size="8" fill="#22863A">Access control · Encryption</text>
+
+  <!-- Runtime controls -->
+  <rect x="780" y="110" width="185" height="55" rx="6" fill="white" stroke="#34D058" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="872" y="132" text-anchor="middle" font-size="10" font-weight="600" fill="#22863A">Runtime Controls</text>
+  <text x="872" y="146" text-anchor="middle" font-size="8" fill="#22863A">Guardrails · Judge · Oversight</text>
+  <text x="872" y="158" text-anchor="middle" font-size="8" fill="#22863A">The three-layer pattern</text>
+
+  <!-- Data sources -->
+  <rect x="450" y="180" width="145" height="55" rx="6" fill="white" stroke="#34D058" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="522" y="202" text-anchor="middle" font-size="10" font-weight="600" fill="#22863A">Data Sources</text>
+  <text x="522" y="216" text-anchor="middle" font-size="8" fill="#22863A">Ingestion pipeline</text>
+  <text x="522" y="228" text-anchor="middle" font-size="8" fill="#22863A">Classification · Lineage</text>
+
+  <!-- Identity -->
+  <rect x="615" y="180" width="145" height="55" rx="6" fill="white" stroke="#34D058" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="687" y="202" text-anchor="middle" font-size="10" font-weight="600" fill="#22863A">Identity &amp; Access</text>
+  <text x="687" y="216" text-anchor="middle" font-size="8" fill="#22863A">User auth · Agent NHI</text>
+  <text x="687" y="228" text-anchor="middle" font-size="8" fill="#22863A">RBAC · Audit trail</text>
+
+  <!-- Monitoring -->
+  <rect x="780" y="180" width="185" height="55" rx="6" fill="white" stroke="#34D058" stroke-width="1.2" filter="url(#sc)"/>
+  <text x="872" y="202" text-anchor="middle" font-size="10" font-weight="600" fill="#22863A">Monitoring &amp; SOC</text>
+  <text x="872" y="216" text-anchor="middle" font-size="8" fill="#22863A">Anomaly detection</text>
+  <text x="872" y="228" text-anchor="middle" font-size="8" fill="#22863A">Alert routing · Incident response</text>
+
+  <!-- Key doc ref -->
+  <rect x="450" y="250" width="515" height="85" rx="6" fill="white" stroke="#959DA5" stroke-width="1"/>
+  <text x="707" y="268" text-anchor="middle" font-size="9" font-weight="700" fill="#24292E">AI-BOM: DOCUMENT EVERYTHING</text>
+  <text x="707" y="285" text-anchor="middle" font-size="9" fill="#586069">Models (provider, version, last evaluated) · Frameworks (version, last scanned)</text>
+  <text x="707" y="300" text-anchor="middle" font-size="9" fill="#586069">Data sources (classification, last ingested) · Guardrails (rules version)</text>
+  <text x="707" y="315" text-anchor="middle" font-size="9" fill="#586069">Judge (model, criteria version, last calibrated)</text>
+  <text x="707" y="330" text-anchor="middle" font-size="8" font-weight="600" fill="#6A737D">See: extensions/technical/supply-chain.md — AI-BOM template</text>
+
+  <!-- Arrows crossing trust boundary -->
+  <line x1="195" y1="137" x2="440" y2="137" stroke="#586069" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#asc)"/>
+  <line x1="295" y1="207" x2="440" y2="207" stroke="#586069" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#asc)"/>
+</svg>

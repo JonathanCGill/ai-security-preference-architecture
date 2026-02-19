@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="340" fill="url(#bg)"/>
+
+  <text x="400" y="28" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" letter-spacing="1">TIER 2 — COST INDICATORS (ANNUAL)</text>
+  <text x="400" y="44" text-anchor="middle" fill="#00c9ff" font-size="9">MIXED LABOUR + INFRASTRUCTURE · THROUGHPUT JUSTIFIES INVESTMENT</text>
+
+  <rect x="30" y="58" width="740" height="24" rx="4" fill="#151a30"/>
+  <text x="50" y="74" fill="#fff" font-size="9" font-weight="700">CATEGORY</text>
+  <text x="400" y="74" fill="#fff" font-size="9" font-weight="700">ESTIMATE</text>
+  <text x="560" y="74" fill="#fff" font-size="9" font-weight="700">NOTES</text>
+
+  <rect x="30" y="84" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="100" fill="#8899aa" font-size="9">Agent Supervisor</text>
+  <text x="400" y="100" fill="#92fe9d" font-size="9" font-weight="600">$80K–$150K</text>
+  <text x="560" y="100" fill="#667" font-size="9">Efficiency gain over Tier 1 operator</text>
+
+  <rect x="30" y="108" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="124" fill="#8899aa" font-size="9">AI Security Engineer (0.5–1 FTE)</text>
+  <text x="400" y="124" fill="#92fe9d" font-size="9" font-weight="600">$75K–$175K</text>
+  <text x="560" y="124" fill="#667" font-size="9">New role or upskill from existing team</text>
+
+  <rect x="30" y="132" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="148" fill="#8899aa" font-size="9">Platform Engineer (0.5 FTE)</text>
+  <text x="400" y="148" fill="#92fe9d" font-size="9" font-weight="600">$50K–$75K</text>
+  <text x="560" y="148" fill="#667" font-size="9">NHI/sandbox management</text>
+
+  <rect x="30" y="156" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="172" fill="#8899aa" font-size="9">LLM-as-Judge Model Costs</text>
+  <text x="400" y="172" fill="#92fe9d" font-size="9" font-weight="600">$10K–$80K</text>
+  <text x="560" y="172" fill="#667" font-size="9">Separate from task agent costs</text>
+
+  <rect x="30" y="180" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="196" fill="#8899aa" font-size="9">Task Agent Model API Costs</text>
+  <text x="400" y="196" fill="#92fe9d" font-size="9" font-weight="600">$20K–$200K</text>
+  <text x="560" y="196" fill="#667" font-size="9">Increases with autonomy and volume</text>
+
+  <rect x="30" y="204" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="220" fill="#8899aa" font-size="9">Infrastructure (NHI, signing, monitoring, SIEM)</text>
+  <text x="400" y="220" fill="#92fe9d" font-size="9" font-weight="600">$30K–$80K</text>
+  <text x="560" y="220" fill="#667" font-size="9">Significant increase over Tier 1</text>
+
+  <rect x="30" y="228" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="244" fill="#8899aa" font-size="9">Tooling (anomaly detection, drift scoring)</text>
+  <text x="400" y="244" fill="#92fe9d" font-size="9" font-weight="600">$15K–$40K</text>
+  <text x="560" y="244" fill="#667" font-size="9">Build or buy</text>
+
+  <!-- Total -->
+  <rect x="30" y="258" width="740" height="28" rx="4" fill="#0d1528" stroke="#00c9ff" stroke-width="1"/>
+  <text x="50" y="277" fill="#00c9ff" font-size="10" font-weight="700">TOTAL (single agent system)</text>
+  <text x="400" y="277" fill="#00c9ff" font-size="10" font-weight="700">$280K–$800K</text>
+  <text x="560" y="277" fill="#8899aa" font-size="9">Wide range reflects complexity/volume</text>
+
+  <rect x="30" y="298" width="740" height="30" rx="4" fill="#0a0e1a" stroke="#334" stroke-width="0.5"/>
+  <text x="400" y="314" text-anchor="middle" fill="#667" font-size="8">Cost increase from Tier 1 is justified by 5–20x throughput gain. Agents process work without per-action human gating.</text>
+  <text x="400" y="325" text-anchor="middle" fill="#667" font-size="8">Shift from predominantly labour (Tier 1) to mixed labour + technical infrastructure.</text>
+</svg>

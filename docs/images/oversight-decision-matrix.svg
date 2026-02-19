@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgG2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="540" rx="12" fill="url(#bgG2)"/>
+
+  <!-- Title -->
+  <text x="360" y="36" text-anchor="middle" fill="#e2e8f0" font-size="17" font-weight="600">Oversight Decision Matrix — When Humans Must Be In The Loop</text>
+
+  <!-- Axes -->
+  <line x1="120" y1="65" x2="120" y2="440" stroke="#475569" stroke-width="1.5"/>
+  <line x1="120" y1="440" x2="680" y2="440" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Y axis -->
+  <text x="30" y="255" text-anchor="middle" fill="#94a3b8" font-size="12" transform="rotate(-90 30 255)">Consequence Severity</text>
+  <text x="108" y="82" text-anchor="end" fill="#64748b" font-size="10">Catastrophic</text>
+  <text x="108" y="175" text-anchor="end" fill="#64748b" font-size="10">Hazardous</text>
+  <text x="108" y="268" text-anchor="end" fill="#64748b" font-size="10">Major</text>
+  <text x="108" y="360" text-anchor="end" fill="#64748b" font-size="10">Minor</text>
+  <text x="108" y="435" text-anchor="end" fill="#64748b" font-size="10">Negligible</text>
+
+  <!-- Grid lines horizontal -->
+  <line x1="120" y1="128" x2="680" y2="128" stroke="#334155" stroke-width="0.5" stroke-dasharray="4,6"/>
+  <line x1="120" y1="222" x2="680" y2="222" stroke="#334155" stroke-width="0.5" stroke-dasharray="4,6"/>
+  <line x1="120" y1="315" x2="680" y2="315" stroke="#334155" stroke-width="0.5" stroke-dasharray="4,6"/>
+  <line x1="120" y1="408" x2="680" y2="408" stroke="#334155" stroke-width="0.5" stroke-dasharray="4,6"/>
+
+  <!-- X axis -->
+  <text x="400" y="475" text-anchor="middle" fill="#94a3b8" font-size="12">Failure Novelty / Ambiguity →</text>
+  <text x="180" y="458" text-anchor="middle" fill="#64748b" font-size="10">Predictable</text>
+  <text x="400" y="458" text-anchor="middle" fill="#64748b" font-size="10">Partially Novel</text>
+  <text x="620" y="458" text-anchor="middle" fill="#64748b" font-size="10">Unprecedented</text>
+
+  <!-- Grid lines vertical -->
+  <line x1="260" y1="65" x2="260" y2="440" stroke="#334155" stroke-width="0.5" stroke-dasharray="4,6"/>
+  <line x1="400" y1="65" x2="400" y2="440" stroke="#334155" stroke-width="0.5" stroke-dasharray="4,6"/>
+  <line x1="540" y1="65" x2="540" y2="440" stroke="#334155" stroke-width="0.5" stroke-dasharray="4,6"/>
+
+  <!-- Zone 1: Automatic degradation (bottom-left) — green -->
+  <rect x="121" y="316" width="278" height="123" fill="#22c55e" opacity="0.08" rx="4"/>
+  <rect x="130" y="326" width="130" height="44" rx="6" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="195" y="345" text-anchor="middle" fill="#86efac" font-size="11" font-weight="600">AUTOMATIC</text>
+  <text x="195" y="360" text-anchor="middle" fill="#86efac" font-size="9">Degradation</text>
+
+  <!-- Zone 1 examples -->
+  <text x="290" y="345" fill="#6ee7b7" font-size="9">• Rate limiting fallback</text>
+  <text x="290" y="360" fill="#6ee7b7" font-size="9">• Model version rollback</text>
+  <text x="290" y="375" fill="#6ee7b7" font-size="9">• Cache-only mode</text>
+  <text x="135" y="400" fill="#4ade80" font-size="8" opacity="0.7">Log + notify • No human gate required</text>
+
+  <!-- Zone 2: Active oversight required (top-right) — red -->
+  <rect x="401" y="66" width="278" height="248" fill="#ef4444" opacity="0.08" rx="4"/>
+  <rect x="420" y="78" width="150" height="44" rx="6" fill="#ef4444" fill-opacity="0.2" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="495" y="97" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="600">ACTIVE HUMAN</text>
+  <text x="495" y="112" text-anchor="middle" fill="#fca5a5" font-size="9">Oversight Required</text>
+
+  <!-- Zone 2 examples -->
+  <text x="420" y="145" fill="#fca5a5" font-size="9">• Novel adversarial input patterns</text>
+  <text x="420" y="160" fill="#fca5a5" font-size="9">• Regulatory-impacting decisions</text>
+  <text x="420" y="175" fill="#fca5a5" font-size="9">• Cross-system cascade risk</text>
+  <text x="420" y="190" fill="#fca5a5" font-size="9">• Customer-facing high-value actions</text>
+  <text x="420" y="218" fill="#f87171" font-size="8" opacity="0.7">System BLOCKS until human decides</text>
+
+  <!-- Zone 3: Hybrid — time-bounded (middle) — amber -->
+  <rect x="121" y="128" width="278" height="186" fill="#f59e0b" opacity="0.06" rx="4"/>
+  <rect x="401" y="316" width="278" height="123" fill="#f59e0b" opacity="0.06" rx="4"/>
+  <rect x="140" y="140" width="150" height="44" rx="6" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="215" y="159" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="600">TIME-BOUNDED</text>
+  <text x="215" y="174" text-anchor="middle" fill="#fcd34d" font-size="9">Hybrid Oversight</text>
+
+  <!-- Zone 3 examples -->
+  <text x="140" y="207" fill="#fcd34d" font-size="9">• Auto-degrade immediately</text>
+  <text x="140" y="222" fill="#fcd34d" font-size="9">• Escalate to human in parallel</text>
+  <text x="140" y="237" fill="#fcd34d" font-size="9">• Human can override within window</text>
+  <text x="140" y="252" fill="#fcd34d" font-size="9">• Revert to safe state if no response</text>
+  <text x="140" y="280" fill="#fbbf24" font-size="8" opacity="0.7">Fail-safe default + async human review</text>
+
+  <!-- Diagonal boundary line -->
+  <line x1="120" y1="128" x2="680" y2="440" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+
+  <!-- Legend -->
+  <rect x="120" y="492" width="560" height="38" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="135" y="504" width="14" height="14" rx="3" fill="#22c55e" opacity="0.3"/>
+  <text x="155" y="515" fill="#86efac" font-size="10">Automatic OK</text>
+  <rect x="265" y="504" width="14" height="14" rx="3" fill="#f59e0b" opacity="0.3"/>
+  <text x="285" y="515" fill="#fcd34d" font-size="10">Time-bounded hybrid</text>
+  <rect x="440" y="504" width="14" height="14" rx="3" fill="#ef4444" opacity="0.3"/>
+  <text x="460" y="515" fill="#fca5a5" font-size="10">Human must decide before proceeding</text>
+</svg>

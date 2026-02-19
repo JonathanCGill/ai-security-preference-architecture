@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="620" viewBox="0 0 780 620" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="invariantGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="pdpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="zoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="zoneAGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="zoneBGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="zoneCGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="identityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9f1239"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+    <linearGradient id="auditGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a5568"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <!-- Divider line pattern -->
+    <pattern id="dividerDots" x="0" y="0" width="8" height="2" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#475569"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="780" height="620" rx="10" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="390" y="32" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700" letter-spacing="0.5">The Emerging Scalable Architecture</text>
+  <text x="390" y="50" text-anchor="middle" fill="#64748b" font-size="11">Zero-trust principles applied to AI agent governance</text>
+
+  <!-- Bracket annotation left side -->
+  <line x1="30" y1="70" x2="30" y2="570" stroke="#475569" stroke-width="1.5"/>
+  <line x1="30" y1="70" x2="38" y2="70" stroke="#475569" stroke-width="1.5"/>
+  <line x1="30" y1="570" x2="38" y2="570" stroke="#475569" stroke-width="1.5"/>
+  <text x="22" y="330" text-anchor="middle" fill="#475569" font-size="10" font-weight="600" transform="rotate(-90, 22, 330)">DEFENCE IN DEPTH — EACH LAYER CATCHES WHAT LAYERS ABOVE MISS</text>
+
+  <!-- ============================================ -->
+  <!-- LAYER 1: SYSTEM INVARIANTS -->
+  <!-- ============================================ -->
+  <rect x="50" y="65" width="680" height="80" rx="8" fill="url(#invariantGrad)" filter="url(#shadow)"/>
+  <text x="390" y="90" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">SYSTEM INVARIANTS</text>
+  <text x="390" y="110" text-anchor="middle" fill="#e9d5ff" font-size="11">Budget caps · Data classification rules · Action scope limits · Compliance constraints</text>
+  <text x="390" y="130" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="600">O(1) — constant cost regardless of agent count</text>
+
+  <!-- ============================================ -->
+  <!-- LAYER 2: POLICY DECISION POINT -->
+  <!-- ============================================ -->
+  <rect x="50" y="155" width="680" height="80" rx="8" fill="url(#pdpGrad)" filter="url(#shadow)"/>
+  <text x="390" y="180" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">POLICY DECISION POINT</text>
+  <text x="390" y="200" text-anchor="middle" fill="#bfdbfe" font-size="11">Centralised, real-time action evaluation</text>
+  <text x="390" y="216" text-anchor="middle" fill="#93c5fd" font-size="10">Every tool call · Every zone crossing · Every credential request · Every escalation</text>
+  <text x="390" y="230" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600">O(1) per decision</text>
+
+  <!-- ============================================ -->
+  <!-- LAYER 3: TRUST ZONES -->
+  <!-- ============================================ -->
+  <rect x="50" y="245" width="680" height="160" rx="8" fill="url(#zoneGrad)" stroke="#475569" stroke-width="1"/>
+  <text x="390" y="270" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="800">TRUST ZONES</text>
+
+  <!-- Zone A -->
+  <rect x="75" y="282" width="195" height="85" rx="6" fill="url(#zoneAGrad)" filter="url(#shadow)"/>
+  <text x="172" y="306" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Zone A</text>
+  <text x="172" y="323" text-anchor="middle" fill="#a7f3d0" font-size="10">Agents 1–5</text>
+  <text x="172" y="339" text-anchor="middle" fill="#6ee7b7" font-size="10" font-weight="600">Low risk</text>
+  <text x="172" y="356" text-anchor="middle" fill="#a7f3d0" font-size="9">Free flow within</text>
+
+  <!-- Zone B -->
+  <rect x="290" y="282" width="195" height="85" rx="6" fill="url(#zoneBGrad)" filter="url(#shadow)"/>
+  <text x="387" y="306" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Zone B</text>
+  <text x="387" y="323" text-anchor="middle" fill="#fde68a" font-size="10">Agents 6–9</text>
+  <text x="387" y="339" text-anchor="middle" fill="#fbbf24" font-size="10" font-weight="600">Medium risk</text>
+  <text x="387" y="356" text-anchor="middle" fill="#fde68a" font-size="9">Controlled boundaries</text>
+
+  <!-- Zone C -->
+  <rect x="505" y="282" width="205" height="85" rx="6" fill="url(#zoneCGrad)" filter="url(#shadow)"/>
+  <text x="607" y="306" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Zone C</text>
+  <text x="607" y="323" text-anchor="middle" fill="#fecaca" font-size="10">Agents 10–15</text>
+  <text x="607" y="339" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">High risk</text>
+  <text x="607" y="356" text-anchor="middle" fill="#fecaca" font-size="9">Restricted + human gates</text>
+
+  <!-- Boundary arrows between zones -->
+  <line x1="270" y1="324" x2="290" y2="324" stroke="#fbbf24" stroke-width="2"/>
+  <rect x="274" y="318" width="12" height="12" rx="2" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+  <text x="280" y="327" text-anchor="middle" fill="#fbbf24" font-size="8" font-weight="700">⇌</text>
+
+  <line x1="485" y1="324" x2="505" y2="324" stroke="#f87171" stroke-width="2"/>
+  <rect x="489" y="318" width="12" height="12" rx="2" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="495" y="327" text-anchor="middle" fill="#f87171" font-size="8" font-weight="700">⇌</text>
+
+  <!-- Scaling note -->
+  <text x="390" y="393" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">O(Z²) where Z « N — secure boundaries, not every agent pair</text>
+
+  <!-- ============================================ -->
+  <!-- LAYER 4: CRYPTOGRAPHIC IDENTITY -->
+  <!-- ============================================ -->
+  <rect x="50" y="415" width="680" height="70" rx="8" fill="url(#identityGrad)" filter="url(#shadow)"/>
+  <text x="390" y="440" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">CRYPTOGRAPHIC IDENTITY</text>
+  <text x="390" y="458" text-anchor="middle" fill="#cffafe" font-size="11">Per-agent DIDs · Signed messages · Delegation chains · Short-lived scoped credentials</text>
+  <text x="390" y="476" text-anchor="middle" fill="#a5f3fc" font-size="11" font-weight="600">O(N) — linear with agent count</text>
+
+  <!-- ============================================ -->
+  <!-- LAYER 5: CIRCUIT BREAKERS -->
+  <!-- ============================================ -->
+  <rect x="50" y="495" width="330" height="70" rx="8" fill="url(#circuitGrad)" filter="url(#shadow)"/>
+  <text x="215" y="520" text-anchor="middle" fill="#fff" font-size="13" font-weight="800">CIRCUIT BREAKERS</text>
+  <text x="215" y="536" text-anchor="middle" fill="#fecdd3" font-size="10">Per-zone halt · Budget enforcement</text>
+  <text x="215" y="552" text-anchor="middle" fill="#fda4af" font-size="10">Anomaly triggers · Physically isolated</text>
+  <!-- Kill switch icon -->
+  <rect x="340" y="500" width="28" height="28" rx="4" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1"/>
+  <text x="354" y="519" text-anchor="middle" fill="#fca5a5" font-size="14" font-weight="900">⏻</text>
+  <text x="215" y="562" text-anchor="middle" fill="#fda4af" font-size="10" font-weight="600">O(1) per zone</text>
+
+  <!-- LAYER 6: AUDIT LOG -->
+  <rect x="400" y="495" width="330" height="70" rx="8" fill="url(#auditGrad)" filter="url(#shadow)"/>
+  <text x="565" y="520" text-anchor="middle" fill="#fff" font-size="13" font-weight="800">APPEND-ONLY AUDIT LOG</text>
+  <text x="565" y="536" text-anchor="middle" fill="#e2e8f0" font-size="10">Every action · Every message</text>
+  <text x="565" y="550" text-anchor="middle" fill="#cbd5e1" font-size="10">Every credential use · Immutable · Queryable</text>
+  <text x="565" y="562" text-anchor="middle" fill="#e2e8f0" font-size="10" font-weight="600">O(N) volume, cheap per-unit</text>
+
+  <!-- ============================================ -->
+  <!-- Bottom annotation -->
+  <!-- ============================================ -->
+  <text x="390" y="595" text-anchor="middle" fill="#475569" font-size="10" font-style="italic">This is zero-trust network architecture applied to AI agents.</text>
+  <text x="390" y="610" text-anchor="middle" fill="#475569" font-size="10" font-style="italic">Trust zones are VLANs · PDP is a next-gen firewall · Identity is PKI · Circuit breakers are IDS/IPS · Audit logs are SIEM</text>
+</svg>

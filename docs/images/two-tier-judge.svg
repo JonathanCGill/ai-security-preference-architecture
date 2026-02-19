@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" width="700" height="600">
+  <!-- Background -->
+  <rect width="700" height="600" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="350" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">Two-Tier Judge Interaction Flow</text>
+  
+  <!-- Interaction input -->
+  <rect x="275" y="45" width="150" height="40" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="350" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4338ca">Interaction</text>
+  
+  <!-- Arrow to Tier 1 -->
+  <line x1="350" y1="85" x2="350" y2="115" stroke="#475569" stroke-width="2"/>
+  <polygon points="350,120 345,110 355,110" fill="#475569"/>
+  
+  <!-- Tier 1 box -->
+  <rect x="225" y="125" width="250" height="90" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="350" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af">TIER 1: SCREEN</text>
+  <text x="350" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">(Standard Model)</text>
+  <line x1="245" y1="180" x2="455" y2="180" stroke="#93c5fd" stroke-width="1"/>
+  <text x="350" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">Fast • Cheap • Volume screening</text>
+  <text x="350" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Catches obvious issues • Scores confidence</text>
+  
+  <!-- Branch point -->
+  <line x1="350" y1="215" x2="350" y2="245" stroke="#475569" stroke-width="2"/>
+  <circle cx="350" cy="250" r="6" fill="#475569"/>
+  
+  <!-- Three branches -->
+  <!-- Left: Clear Pass -->
+  <line x1="344" y1="250" x2="100" y2="250" stroke="#22c55e" stroke-width="2"/>
+  <line x1="100" y1="250" x2="100" y2="290" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="100,295 95,285 105,285" fill="#22c55e"/>
+  
+  <rect x="170" y="235" width="90" height="20" rx="3" fill="#dcfce7"/>
+  <text x="215" y="249" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534">CLEAR PASS</text>
+  
+  <rect x="25" y="300" width="150" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="100" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534">Log only</text>
+  <text x="100" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#166534">No further action</text>
+  
+  <!-- Right: Clear Fail -->
+  <line x1="356" y1="250" x2="600" y2="250" stroke="#ef4444" stroke-width="2"/>
+  <line x1="600" y1="250" x2="600" y2="290" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="600,295 595,285 605,285" fill="#ef4444"/>
+  
+  <rect x="440" y="235" width="90" height="20" rx="3" fill="#fee2e2"/>
+  <text x="485" y="249" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#b91c1c">CLEAR FAIL</text>
+  
+  <rect x="525" y="300" width="150" height="50" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="600" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c">Route to HITL</text>
+  <text x="600" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c">Immediate queue</text>
+  
+  <!-- Center: Uncertain/Risky -->
+  <line x1="350" y1="256" x2="350" y2="290" stroke="#f59e0b" stroke-width="2"/>
+  <polygon points="350,295 345,285 355,285" fill="#f59e0b"/>
+  
+  <rect x="280" y="265" width="140" height="20" rx="3" fill="#fef3c7"/>
+  <text x="350" y="279" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#b45309">UNCLEAR / RISKY</text>
+  
+  <!-- Tier 2 box -->
+  <rect x="225" y="300" width="250" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="350" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309">TIER 2: DEEP EVAL</text>
+  <text x="350" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#b45309">(Reasoning Model)</text>
+  <line x1="245" y1="355" x2="455" y2="355" stroke="#fcd34d" stroke-width="1"/>
+  <text x="350" y="373" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">Complex judgment • Chain-of-thought</text>
+  <text x="350" y="388" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">o1 / Claude thinking • Explainable reasoning</text>
+  
+  <!-- Tier 2 branch point -->
+  <line x1="350" y1="400" x2="350" y2="430" stroke="#475569" stroke-width="2"/>
+  <circle cx="350" cy="435" r="6" fill="#475569"/>
+  
+  <!-- Tier 2 Pass -->
+  <line x1="344" y1="435" x2="200" y2="435" stroke="#22c55e" stroke-width="2"/>
+  <line x1="200" y1="435" x2="200" y2="475" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="200,480 195,470 205,470" fill="#22c55e"/>
+  
+  <text x="270" y="428" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534">PASS</text>
+  
+  <rect x="125" y="485" width="150" height="55" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="200" y="507" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534">Log with reasoning</text>
+  <text x="200" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#166534">Audit trail captured</text>
+  
+  <!-- Tier 2 Fail -->
+  <line x1="356" y1="435" x2="500" y2="435" stroke="#ef4444" stroke-width="2"/>
+  <line x1="500" y1="435" x2="500" y2="475" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="500,480 495,470 505,470" fill="#ef4444"/>
+  
+  <text x="430" y="428" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#b91c1c">FAIL</text>
+  
+  <rect x="425" y="485" width="150" height="55" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="500" y="507" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c">Route to HITL</text>
+  <text x="500" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c">With full reasoning chain</text>
+  
+  <!-- Stats/Legend box -->
+  <rect x="25" y="420" width="150" height="120" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="100" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569">Typical Distribution</text>
+  <line x1="40" y1="450" x2="160" y2="450" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <circle cx="50" cy="470" r="5" fill="#22c55e"/>
+  <text x="60" y="474" font-family="Arial, sans-serif" font-size="9" fill="#166534">Clear Pass: 60-70%</text>
+  
+  <circle cx="50" cy="490" r="5" fill="#ef4444"/>
+  <text x="60" y="494" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c">Clear Fail: 5-10%</text>
+  
+  <circle cx="50" cy="510" r="5" fill="#f59e0b"/>
+  <text x="60" y="514" font-family="Arial, sans-serif" font-size="9" fill="#b45309">Escalate: 15-25%</text>
+  
+  <text x="50" y="532" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Cost savings: 50-70%</text>
+  
+  <!-- Key message -->
+  <rect x="175" y="560" width="350" height="30" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="350" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569">Standard model screens • Reasoning model judges complex cases</text>
+</svg>

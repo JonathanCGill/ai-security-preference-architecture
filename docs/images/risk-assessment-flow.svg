@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Risk Assessment Flow</text>
+
+  <!-- Top Row: 3 Boxes with arrows -->
+
+  <!-- Box 1: 1st Line Proposes (green) -->
+  <rect x="40" y="60" width="200" height="80" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="140" y="92" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">1st Line Proposes</text>
+  <text x="140" y="115" font-family="Arial, sans-serif" font-size="11" fill="#166534" text-anchor="middle">AI system</text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="240" y1="100" x2="288" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: AGO Risk Reviews (indigo) -->
+  <rect x="300" y="60" width="200" height="80" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="400" y="92" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">AGO Risk Reviews</text>
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="11" fill="#4338ca" text-anchor="middle">Risk classification, assigns controls</text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="500" y1="100" x2="548" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: Committee Approves (dark) -->
+  <rect x="560" y="60" width="200" height="80" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+  <text x="660" y="92" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Committee Approves</text>
+  <text x="660" y="115" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">CRITICAL systems</text>
+
+  <!-- Arrow down from centre box (AGO) -->
+  <line x1="400" y1="140" x2="400" y2="188" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Control Requirements by Tier (amber) -->
+  <rect x="225" y="200" width="350" height="65" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="228" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">Control Requirements by Tier</text>
+  <text x="400" y="248" font-family="Arial, sans-serif" font-size="11" fill="#92400e" text-anchor="middle">Mapped controls per risk classification</text>
+
+  <!-- Arrow down from amber box -->
+  <line x1="400" y1="265" x2="400" y2="308" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Three small boxes at bottom: Guardrails, Judge, HITL -->
+
+  <!-- Guardrails (green) -->
+  <rect x="155" y="320" width="150" height="70" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="230" y="350" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">Guardrails</text>
+  <text x="230" y="370" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">Layer 1: Prevent</text>
+
+  <!-- Judge (amber) -->
+  <rect x="325" y="320" width="150" height="70" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">Judge</text>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">Layer 2: Detect</text>
+
+  <!-- HITL (blue) -->
+  <rect x="495" y="320" width="150" height="70" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="570" y="350" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">HITL</text>
+  <text x="570" y="370" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">Layer 3: Decide</text>
+
+  <!-- Connecting lines from arrow point to three boxes -->
+  <line x1="400" y1="310" x2="230" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="400" y1="310" x2="400" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="400" y1="310" x2="570" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+</svg>

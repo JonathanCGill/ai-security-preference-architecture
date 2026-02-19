@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 550" width="950" height="550">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-white" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ffffff"/>
+    </marker>
+  </defs>
+  
+  <style>
+    .title { font: bold 16px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .subtitle { font: 11px Inter, system-ui, sans-serif; fill: #64748b; }
+    .source-title { font: bold 10px Inter, system-ui, sans-serif; fill: white; }
+    .source-detail { font: 9px Inter, system-ui, sans-serif; fill: rgba(255,255,255,0.85); }
+    .box-title { font: bold 11px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .box-detail { font: 9px Inter, system-ui, sans-serif; fill: #64748b; }
+    .output-title { font: bold 10px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .code { font: 9px monospace; fill: #475569; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="950" height="550" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" text-anchor="middle" class="title">Alert Aggregation Architecture</text>
+  <text x="475" y="48" text-anchor="middle" class="subtitle">All systems emit structured events into shared telemetry spine</text>
+  
+  <!-- Event Sources -->
+  <text x="100" y="80" text-anchor="middle" class="box-title">EVENT SOURCES</text>
+  
+  <!-- Source 1: Fraud Engines -->
+  <rect x="30" y="95" width="140" height="55" rx="6" fill="#3b82f6"/>
+  <text x="100" y="115" text-anchor="middle" class="source-title">FRAUD_ENGINE</text>
+  <text x="100" y="130" text-anchor="middle" class="source-detail">Score, rules, sanctions</text>
+  <text x="100" y="143" text-anchor="middle" class="source-detail">~ms latency</text>
+  
+  <!-- Source 2: AI Analysis -->
+  <rect x="30" y="160" width="140" height="55" rx="6" fill="#8b5cf6"/>
+  <text x="100" y="180" text-anchor="middle" class="source-title">AI_ANALYSIS</text>
+  <text x="100" y="195" text-anchor="middle" class="source-detail">Uncertainty, conflicts</text>
+  <text x="100" y="208" text-anchor="middle" class="source-detail">~sec latency</text>
+  
+  <!-- Source 3: Guardrails -->
+  <rect x="30" y="225" width="140" height="55" rx="6" fill="#22c55e"/>
+  <text x="100" y="245" text-anchor="middle" class="source-title">GUARDRAIL</text>
+  <text x="100" y="260" text-anchor="middle" class="source-detail">Override attempts</text>
+  <text x="100" y="273" text-anchor="middle" class="source-detail">Policy violations</text>
+  
+  <!-- Source 4: Human -->
+  <rect x="30" y="290" width="140" height="55" rx="6" fill="#f59e0b"/>
+  <text x="100" y="310" text-anchor="middle" class="source-title">HUMAN_DECISION</text>
+  <text x="100" y="325" text-anchor="middle" class="source-detail">Approve, block, override</text>
+  <text x="100" y="338" text-anchor="middle" class="source-detail">~min latency</text>
+  
+  <!-- Source 5: Downstream -->
+  <rect x="30" y="355" width="140" height="55" rx="6" fill="#64748b"/>
+  <text x="100" y="375" text-anchor="middle" class="source-title">DOWNSTREAM</text>
+  <text x="100" y="390" text-anchor="middle" class="source-detail">Enforcement results</text>
+  <text x="100" y="403" text-anchor="middle" class="source-detail">Reconciliation</text>
+  
+  <!-- Arrows to aggregation -->
+  <line x1="170" y1="122" x2="230" y2="200" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="170" y1="187" x2="230" y2="200" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="170" y1="252" x2="230" y2="230" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="170" y1="317" x2="230" y2="260" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="170" y1="382" x2="230" y2="290" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Central Aggregation -->
+  <rect x="240" y="130" width="200" height="200" rx="10" fill="#1e293b"/>
+  <text x="340" y="160" text-anchor="middle" class="source-title" style="font-size:13px">TELEMETRY SPINE</text>
+  
+  <rect x="255" y="175" width="170" height="35" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="340" y="197" text-anchor="middle" class="source-detail">Correlate by:</text>
+  <text x="340" y="205" text-anchor="middle" class="code" style="fill:white">transaction_id + case_id</text>
+  
+  <rect x="255" y="220" width="170" height="45" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="340" y="240" text-anchor="middle" class="source-detail">Sessionize</text>
+  <text x="340" y="253" text-anchor="middle" class="source-detail">Enrich context</text>
+  <text x="340" y="266" text-anchor="middle" class="source-detail">Compute rolling stats</text>
+  
+  <rect x="255" y="275" width="170" height="40" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="340" y="295" text-anchor="middle" class="source-detail">Time-series storage</text>
+  <text x="340" y="308" text-anchor="middle" class="source-detail">Fast aggregation queries</text>
+  
+  <!-- Arrows to outputs -->
+  <line x1="440" y1="180" x2="490" y2="140" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="440" y1="230" x2="490" y2="230" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="440" y1="280" x2="490" y2="320" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Output 1: Per-Case Timeline -->
+  <rect x="500" y="95" width="180" height="90" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <text x="590" y="115" text-anchor="middle" class="box-title">Per-Case Timeline</text>
+  <text x="515" y="135" class="box-detail">14:32:01 Velocity alert</text>
+  <text x="515" y="148" class="box-detail">14:32:05 AI conflict</text>
+  <text x="515" y="161" class="box-detail">14:35:42 Analyst override</text>
+  <text x="515" y="174" class="box-detail">14:35:45 Block enforced</text>
+  
+  <!-- Output 2: Cross-Case Analytics -->
+  <rect x="500" y="195" width="180" height="70" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="590" y="215" text-anchor="middle" class="box-title">Cross-Case Analytics</text>
+  <text x="515" y="235" class="box-detail">• AI/fraud disagreement clusters</text>
+  <text x="515" y="248" class="box-detail">• Escalation hotspots</text>
+  <text x="515" y="261" class="box-detail">• Emerging typologies</text>
+  
+  <!-- Output 3: ML Detection -->
+  <rect x="500" y="280" width="180" height="80" rx="8" fill="white" stroke="#0d9488" stroke-width="2"/>
+  <text x="590" y="300" text-anchor="middle" class="box-title">ML Anomaly Detection</text>
+  <text x="515" y="320" class="box-detail">• Baseline modelling</text>
+  <text x="515" y="333" class="box-detail">• Drift detection</text>
+  <text x="515" y="346" class="box-detail">• Pattern clustering</text>
+  
+  <!-- Arrows to actions -->
+  <line x1="680" y1="140" x2="730" y2="140" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="680" y1="230" x2="730" y2="230" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="680" y1="320" x2="730" y2="320" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Action 1: Dashboards -->
+  <rect x="740" y="110" width="170" height="60" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="825" y="135" text-anchor="middle" class="output-title">Analyst Dashboard</text>
+  <text x="825" y="152" text-anchor="middle" class="box-detail">Full case context</text>
+  <text x="825" y="165" text-anchor="middle" class="box-detail">Decision support</text>
+  
+  <!-- Action 2: Alerts -->
+  <rect x="740" y="200" width="170" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="825" y="225" text-anchor="middle" class="output-title">Real-Time Alerts</text>
+  <text x="825" y="242" text-anchor="middle" class="box-detail">PagerDuty integration</text>
+  <text x="825" y="255" text-anchor="middle" class="box-detail">Threshold breaches</text>
+  
+  <!-- Action 3: Circuit Breakers -->
+  <rect x="740" y="290" width="170" height="60" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="825" y="315" text-anchor="middle" class="output-title">Circuit Breakers</text>
+  <text x="825" y="332" text-anchor="middle" class="box-detail">Auto-bypass AI</text>
+  <text x="825" y="345" text-anchor="middle" class="box-detail">Force human review</text>
+  
+  <!-- Event schema example -->
+  <rect x="240" y="380" width="470" height="110" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="475" y="400" text-anchor="middle" class="box-title">Event Schema</text>
+  <text x="260" y="420" class="code">{</text>
+  <text x="275" y="435" class="code">"transaction_id": "txn_xyz789",</text>
+  <text x="275" y="450" class="code">"case_id": "case_456",</text>
+  <text x="275" y="465" class="code">"category": "AI_ANALYSIS_ALERT",</text>
+  <text x="275" y="480" class="code">"alert_type": "decision_conflict",</text>
+  <text x="260" y="485" class="code">}</text>
+  
+  <!-- Feedback loop -->
+  <path d="M 825 350 L 825 400 L 100 400 L 100 355" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="475" y="418" text-anchor="middle" class="box-detail" style="font-style:italic;fill:#dc2626">Circuit breaker feedback to event sources</text>
+  
+  <!-- Key insight -->
+  <rect x="240" y="505" width="470" height="35" rx="6" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="475" y="528" text-anchor="middle" class="box-detail" style="font-weight:bold">Aggregation reveals patterns invisible to any single stage</text>
+</svg>

@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="790" viewBox="0 0 1100 790" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="790" fill="url(#bg)"/>
+
+  <text x="550" y="30" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" letter-spacing="1">TIER 2 — OWASP RISK COVERAGE</text>
+  <text x="550" y="46" text-anchor="middle" fill="#ff6b35" font-size="9" letter-spacing="1">MANAGED MULTI-AGENT · NHI · SIGNED BUS · LLM-AS-JUDGE · CONTINUOUS MONITORING</text>
+
+  <circle cx="320" cy="62" r="5" fill="#92fe9d"/>
+  <text x="330" y="66" fill="#8899aa" font-size="9">Covered</text>
+  <circle cx="420" cy="62" r="5" fill="#ffd700"/>
+  <text x="430" y="66" fill="#8899aa" font-size="9">Partial</text>
+  <circle cx="510" cy="62" r="5" fill="#f5576c"/>
+  <text x="520" y="66" fill="#8899aa" font-size="9">Minimal</text>
+
+  <rect x="30" y="78" width="1040" height="28" rx="4" fill="#151a30"/>
+  <text x="50" y="97" fill="#fff" font-size="10" font-weight="700">RISK</text>
+  <text x="370" y="97" fill="#fff" font-size="10" font-weight="700">STATUS</text>
+  <text x="470" y="97" fill="#fff" font-size="10" font-weight="700">PRIMARY CONTROL</text>
+
+  <rect x="30" y="106" width="1040" height="20" rx="0" fill="#0d1528"/>
+  <text x="50" y="120" fill="#00c9ff" font-size="9" font-weight="700" letter-spacing="1">OWASP TOP 10 FOR LLM APPLICATIONS (2025)</text>
+  <rect x="30" y="126" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="144" fill="#00c9ff" font-size="9" font-weight="600">LLM01</text>
+  <circle cx="380" cy="140" r="5" fill="#92fe9d"/>
+  <text x="395" y="144" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="144" fill="#c0c8d8" font-size="8">PG-2.1 Inter-agent injection detection (Judge) · PG-1.1 Input guardrails</text>
+  <rect x="30" y="154" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="172" fill="#00c9ff" font-size="9" font-weight="600">LLM02</text>
+  <circle cx="380" cy="168" r="5" fill="#92fe9d"/>
+  <text x="395" y="172" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="172" fill="#c0c8d8" font-size="8">DP-2.1 DLP on message bus · DP-2.3 Infrastructure data fencing</text>
+  <rect x="30" y="182" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="200" fill="#00c9ff" font-size="9" font-weight="600">LLM03</text>
+  <circle cx="380" cy="196" r="5" fill="#92fe9d"/>
+  <text x="395" y="200" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="200" fill="#c0c8d8" font-size="8">SC-2.1 AIBOM per agent · SC-2.2 Signed tool manifests · SC-2.3 MCP allow-list</text>
+  <rect x="30" y="210" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="228" fill="#00c9ff" font-size="9" font-weight="600">LLM04</text>
+  <circle cx="380" cy="224" r="5" fill="#92fe9d"/>
+  <text x="395" y="228" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="228" fill="#c0c8d8" font-size="8">DP-2.2 RAG integrity+freshness · PG-2.5 Claim provenance enforcement</text>
+  <rect x="30" y="238" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="256" fill="#00c9ff" font-size="9" font-weight="600">LLM05</text>
+  <circle cx="380" cy="252" r="5" fill="#92fe9d"/>
+  <text x="395" y="256" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="256" fill="#c0c8d8" font-size="8">EC-2.5 LLM-as-Judge gate · EC-2.1 Action classification engine</text>
+  <rect x="30" y="266" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="284" fill="#00c9ff" font-size="9" font-weight="600">LLM06</text>
+  <circle cx="380" cy="280" r="5" fill="#92fe9d"/>
+  <text x="395" y="284" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="284" fill="#c0c8d8" font-size="8">IA-2.4 No transitive permissions · IA-2.5 Orchestrator privilege separation</text>
+  <rect x="30" y="294" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="312" fill="#00c9ff" font-size="9" font-weight="600">LLM07</text>
+  <circle cx="380" cy="308" r="5" fill="#92fe9d"/>
+  <text x="395" y="312" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="312" fill="#c0c8d8" font-size="8">PG-2.3 Infrastructure prompt boundary enforcement · DLP pattern matching</text>
+  <rect x="30" y="322" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="340" fill="#00c9ff" font-size="9" font-weight="600">LLM08</text>
+  <circle cx="380" cy="336" r="5" fill="#92fe9d"/>
+  <text x="395" y="340" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="340" fill="#c0c8d8" font-size="8">DP-2.2 RAG integrity · DP-2.4 Per-agent memory isolation</text>
+  <rect x="30" y="350" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="368" fill="#00c9ff" font-size="9" font-weight="600">LLM09</text>
+  <circle cx="380" cy="364" r="5" fill="#92fe9d"/>
+  <text x="395" y="368" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="368" fill="#c0c8d8" font-size="8">PG-2.4 Consensus diversity gate · PG-2.6 Self-referential evidence prohibition</text>
+  <rect x="30" y="378" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="396" fill="#00c9ff" font-size="9" font-weight="600">LLM10</text>
+  <circle cx="380" cy="392" r="5" fill="#92fe9d"/>
+  <text x="395" y="396" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="396" fill="#c0c8d8" font-size="8">EC-2.4 Circuit breakers · OB-2.5 Cost monitoring · EC-1.5 Interaction timeout</text>
+  <rect x="30" y="410" width="1040" height="20" rx="0" fill="#0d1528"/>
+  <text x="50" y="424" fill="#ff6b35" font-size="9" font-weight="700" letter-spacing="1">OWASP TOP 10 FOR AGENTIC APPLICATIONS (2026)</text>
+  <rect x="30" y="430" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="448" fill="#ff6b35" font-size="9" font-weight="600">ASI01</text>
+  <circle cx="380" cy="444" r="5" fill="#92fe9d"/>
+  <text x="395" y="448" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="448" fill="#c0c8d8" font-size="8">PG-2.2 Goal integrity monitoring (continuous) · PG-2.1 Injection detection</text>
+  <rect x="30" y="458" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="476" fill="#ff6b35" font-size="9" font-weight="600">ASI02</text>
+  <circle cx="380" cy="472" r="5" fill="#92fe9d"/>
+  <text x="395" y="476" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="476" fill="#c0c8d8" font-size="8">EC-2.2 Sandboxed execution · EC-2.3 Blast radius caps · EC-2.8 Tool attestation</text>
+  <rect x="30" y="486" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="504" fill="#ff6b35" font-size="9" font-weight="600">ASI03</text>
+  <circle cx="380" cy="500" r="5" fill="#92fe9d"/>
+  <text x="395" y="504" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="504" fill="#c0c8d8" font-size="8">IA-2.1 NHI per agent · IA-2.2 Short-lived credentials · IA-2.3 Mutual auth</text>
+  <rect x="30" y="514" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="532" fill="#ff6b35" font-size="9" font-weight="600">ASI04</text>
+  <circle cx="380" cy="528" r="5" fill="#92fe9d"/>
+  <text x="395" y="532" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="532" fill="#c0c8d8" font-size="8">SC-2.2 Signed manifests · SC-2.3 MCP allow-list · SC-2.4 Runtime integrity</text>
+  <rect x="30" y="542" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="560" fill="#ff6b35" font-size="9" font-weight="600">ASI05</text>
+  <circle cx="380" cy="556" r="5" fill="#92fe9d"/>
+  <text x="395" y="560" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="560" fill="#c0c8d8" font-size="8">EC-2.2 Sandboxed execution (isolated per agent) · Time-boxing</text>
+  <rect x="30" y="570" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="588" fill="#ff6b35" font-size="9" font-weight="600">ASI06</text>
+  <circle cx="380" cy="584" r="5" fill="#92fe9d"/>
+  <text x="395" y="588" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="588" fill="#c0c8d8" font-size="8">DP-2.4 Per-agent memory isolation · PG-2.8 Assumption isolation</text>
+  <rect x="30" y="598" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="616" fill="#ff6b35" font-size="9" font-weight="600">ASI07</text>
+  <circle cx="380" cy="612" r="5" fill="#92fe9d"/>
+  <text x="395" y="616" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="616" fill="#c0c8d8" font-size="8">IA-2.3 Mutual authentication on signed message bus · Schema validation</text>
+  <rect x="30" y="626" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="644" fill="#ff6b35" font-size="9" font-weight="600">ASI08</text>
+  <circle cx="380" cy="640" r="5" fill="#92fe9d"/>
+  <text x="395" y="644" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="644" fill="#c0c8d8" font-size="8">EC-2.3 Blast radius caps · EC-2.4 Circuit breakers · PACE A/C configured</text>
+  <rect x="30" y="654" width="1040" height="28" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="672" fill="#ff6b35" font-size="9" font-weight="600">ASI09</text>
+  <circle cx="380" cy="668" r="5" fill="#92fe9d"/>
+  <text x="395" y="672" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="672" fill="#c0c8d8" font-size="8">PG-2.7 Uncertainty preservation · PG-2.4 Consensus diversity · OB-2.2 Anomaly scoring</text>
+  <rect x="30" y="682" width="1040" height="28" rx="0" fill="#0f1325"/>
+  <text x="50" y="700" fill="#ff6b35" font-size="9" font-weight="600">ASI10</text>
+  <circle cx="380" cy="696" r="5" fill="#92fe9d"/>
+  <text x="395" y="700" fill="#92fe9d" font-size="9">Covered</text>
+  <text x="470" y="700" fill="#c0c8d8" font-size="8">OB-2.3 Continuous drift detection · OB-2.2 Per-agent anomaly scoring</text>
+</svg>

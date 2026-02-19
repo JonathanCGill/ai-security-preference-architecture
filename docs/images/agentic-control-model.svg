@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" width="800" height="580">
+  <style>
+    .title { font: bold 16px Arial, sans-serif; fill: #1e293b; }
+    .phase-title { font: bold 12px Arial, sans-serif; fill: #ffffff; }
+    .heading { font: bold 11px Arial, sans-serif; }
+    .body { font: 10px Arial, sans-serif; }
+    .small { font: 9px Arial, sans-serif; fill: #64748b; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="800" height="580" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">Agentic AI Control Model</text>
+  
+  <!-- Phase 1: Planning -->
+  <rect x="50" y="50" width="700" height="130" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="50" y="50" width="700" height="28" rx="8" fill="#3b82f6"/>
+  <rect x="50" y="70" width="700" height="8" fill="#3b82f6"/>
+  <text x="400" y="68" text-anchor="middle" class="phase-title">PHASE 1: PLANNING</text>
+  
+  <!-- Planning flow -->
+  <rect x="80" y="95" width="120" height="50" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="140" y="117" text-anchor="middle" class="body" fill="#1e40af">Agent proposes</text>
+  <text x="140" y="132" text-anchor="middle" class="body" fill="#1e40af">plan</text>
+  
+  <line x1="200" y1="120" x2="240" y2="120" stroke="#475569" stroke-width="2"/>
+  <polygon points="240,120 230,115 230,125" fill="#475569"/>
+  
+  <rect x="245" y="95" width="120" height="50" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="305" y="117" text-anchor="middle" class="body" fill="#166534">Plan guardrails</text>
+  <text x="305" y="132" text-anchor="middle" class="small" fill="#166534">Policy check</text>
+  
+  <line x1="365" y1="120" x2="405" y2="120" stroke="#475569" stroke-width="2"/>
+  <polygon points="405,120 395,115 395,125" fill="#475569"/>
+  
+  <rect x="410" y="85" width="150" height="70" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="485" y="107" text-anchor="middle" class="heading" fill="#166534">Human Review</text>
+  <text x="485" y="125" text-anchor="middle" class="small">CRITICAL: All plans</text>
+  <text x="485" y="140" text-anchor="middle" class="small">HIGH: High-risk plans</text>
+  <text x="485" y="155" text-anchor="middle" class="small">MED/LOW: Auto-approve</text>
+  
+  <line x1="560" y1="120" x2="600" y2="120" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="600,120 590,115 590,125" fill="#22c55e"/>
+  
+  <rect x="605" y="95" width="120" height="50" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="665" y="117" text-anchor="middle" class="body" fill="#166534">Approved</text>
+  <text x="665" y="132" text-anchor="middle" class="body" fill="#166534">plan</text>
+  
+  <!-- Arrow to Phase 2 -->
+  <line x1="665" y1="145" x2="665" y2="195" stroke="#475569" stroke-width="2"/>
+  <polygon points="665,195 660,185 670,185" fill="#475569"/>
+  
+  <!-- Phase 2: Execution -->
+  <rect x="50" y="200" width="700" height="170" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="50" y="200" width="700" height="28" rx="8" fill="#f59e0b"/>
+  <rect x="50" y="220" width="700" height="8" fill="#f59e0b"/>
+  <text x="400" y="218" text-anchor="middle" class="phase-title">PHASE 2: EXECUTION</text>
+  
+  <!-- Execution loop -->
+  <rect x="80" y="245" width="100" height="45" rx="4" fill="#fefce8" stroke="#fcd34d" stroke-width="1.5"/>
+  <text x="130" y="265" text-anchor="middle" class="body" fill="#92400e">Action</text>
+  <text x="130" y="280" text-anchor="middle" class="body" fill="#92400e">intent</text>
+  
+  <line x1="180" y1="267" x2="220" y2="267" stroke="#475569" stroke-width="2"/>
+  <polygon points="220,267 210,262 210,272" fill="#475569"/>
+  
+  <rect x="225" y="245" width="100" height="45" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="275" y="265" text-anchor="middle" class="body" fill="#166534">Action</text>
+  <text x="275" y="280" text-anchor="middle" class="body" fill="#166534">guardrail</text>
+  
+  <line x1="325" y1="267" x2="365" y2="267" stroke="#475569" stroke-width="2"/>
+  <polygon points="365,267 355,262 355,272" fill="#475569"/>
+  
+  <rect x="370" y="245" width="100" height="45" rx="4" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="420" y="265" text-anchor="middle" class="body" fill="#4338ca">Execute</text>
+  <text x="420" y="280" text-anchor="middle" class="body" fill="#4338ca">action</text>
+  
+  <line x1="470" y1="267" x2="510" y2="267" stroke="#475569" stroke-width="2"/>
+  <polygon points="510,267 500,262 500,272" fill="#475569"/>
+  
+  <rect x="515" y="245" width="100" height="45" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="565" y="265" text-anchor="middle" class="body" fill="#475569">Log</text>
+  <text x="565" y="280" text-anchor="middle" class="body" fill="#475569">result</text>
+  
+  <!-- Loop back arrow -->
+  <path d="M 565 290 L 565 310 L 130 310 L 130 290" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
+  <polygon points="130,290 125,300 135,300" fill="#94a3b8"/>
+  <text x="350" y="325" text-anchor="middle" class="small">Next step</text>
+  
+  <!-- Circuit breakers box -->
+  <rect x="630" y="240" width="110" height="100" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="685" y="260" text-anchor="middle" class="heading" fill="#b91c1c">Circuit</text>
+  <text x="685" y="275" text-anchor="middle" class="heading" fill="#b91c1c">Breakers</text>
+  <text x="640" y="295" class="small" fill="#b91c1c">• Max steps</text>
+  <text x="640" y="310" class="small" fill="#b91c1c">• Max cost</text>
+  <text x="640" y="325" class="small" fill="#b91c1c">• Anomaly detect</text>
+  
+  <!-- Arrow from circuit breaker -->
+  <line x1="625" y1="340" x2="580" y2="340" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="600" y="355" class="small" fill="#ef4444">HALT</text>
+  
+  <!-- Arrow to Phase 3 -->
+  <line x1="400" y1="370" x2="400" y2="405" stroke="#475569" stroke-width="2"/>
+  <polygon points="400,405 395,395 405,395" fill="#475569"/>
+  
+  <!-- Phase 3: Assurance -->
+  <rect x="50" y="410" width="700" height="150" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <rect x="50" y="410" width="700" height="28" rx="8" fill="#6366f1"/>
+  <rect x="50" y="430" width="700" height="8" fill="#6366f1"/>
+  <text x="400" y="428" text-anchor="middle" class="phase-title">PHASE 3: ASSURANCE</text>
+  
+  <!-- Assurance components -->
+  <rect x="80" y="455" width="180" height="85" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="170" y="478" text-anchor="middle" class="heading" fill="#1e40af">Trajectory Judge</text>
+  <text x="90" y="498" class="small" fill="#1e40af">• Full execution path</text>
+  <text x="90" y="513" class="small" fill="#1e40af">• Cumulative effects</text>
+  <text x="90" y="528" class="small" fill="#1e40af">• Plan vs actual</text>
+  
+  <line x1="260" y1="497" x2="300" y2="497" stroke="#475569" stroke-width="2"/>
+  <polygon points="300,497 290,492 290,502" fill="#475569"/>
+  
+  <rect x="305" y="455" width="180" height="85" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="395" y="478" text-anchor="middle" class="heading" fill="#166534">Human Review</text>
+  <text x="315" y="498" class="small" fill="#166534">• Completed trajectories</text>
+  <text x="315" y="513" class="small" fill="#166534">• Circuit breaker triggers</text>
+  <text x="315" y="528" class="small" fill="#166534">• Flagged findings</text>
+  
+  <line x1="485" y1="497" x2="525" y2="497" stroke="#475569" stroke-width="2"/>
+  <polygon points="525,497 515,492 515,502" fill="#475569"/>
+  
+  <rect x="530" y="455" width="180" height="85" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="620" y="478" text-anchor="middle" class="heading" fill="#475569">Actions</text>
+  <text x="540" y="498" class="small" fill="#475569">• Update guardrails</text>
+  <text x="540" y="513" class="small" fill="#475569">• Tune circuit breakers</text>
+  <text x="540" y="528" class="small" fill="#475569">• Remediate issues</text>
+  
+  <!-- Feedback arrow -->
+  <path d="M 710 497 L 740 497 L 740 120 L 725 120" stroke="#22c55e" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
+  <polygon points="725,120 735,115 735,125" fill="#22c55e"/>
+  <text x="755" y="300" text-anchor="middle" class="small" fill="#22c55e" transform="rotate(90, 755, 300)">Feedback loop</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
+  <defs>
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+    <linearGradient id="judgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="llmGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="280" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">LLM as a Judge — Request Flow</text>
+  
+  <!-- User Input -->
+  <g>
+    <rect x="30" y="90" width="100" height="60" rx="8" fill="url(#inputGrad)"/>
+    <text x="80" y="115" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">User</text>
+    <text x="80" y="132" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Input</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M130 120 L170 120" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Pre-Judge -->
+  <g>
+    <rect x="180" y="70" width="140" height="100" rx="8" fill="url(#judgeGrad)"/>
+    <text x="250" y="100" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">PRE-JUDGE</text>
+    <line x1="200" y1="115" x2="300" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="250" y="135" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Allow</text>
+    <text x="250" y="150" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Block</text>
+    <text x="250" y="165" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Flag for Review</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M320 120 L360 120" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Primary LLM -->
+  <g>
+    <rect x="370" y="80" width="140" height="80" rx="8" fill="url(#llmGrad)"/>
+    <text x="440" y="110" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">PRIMARY</text>
+    <text x="440" y="128" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">LLM</text>
+    <text x="440" y="148" font-family="Arial, sans-serif" font-size="10" fill="#e9d5ff" text-anchor="middle">Generation</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M510 120 L550 120" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Post-Judge -->
+  <g>
+    <rect x="560" y="70" width="140" height="100" rx="8" fill="url(#judgeGrad)"/>
+    <text x="630" y="100" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">POST-JUDGE</text>
+    <line x1="580" y1="115" x2="680" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="630" y="135" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Allow</text>
+    <text x="630" y="150" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Redact / Block</text>
+    <text x="630" y="165" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Flag for Review</text>
+  </g>
+  
+  <!-- Arrow 4 -->
+  <path d="M700 120 L740 120" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Output -->
+  <g>
+    <rect x="750" y="90" width="100" height="60" rx="8" fill="url(#outputGrad)"/>
+    <text x="800" y="115" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Safe</text>
+    <text x="800" y="132" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Output</text>
+  </g>
+  
+  <!-- Block paths -->
+  <path d="M250 170 L250 220" stroke="#ef4444" stroke-width="2" fill="none"/>
+  <rect x="200" y="220" width="100" height="35" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="250" y="242" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Blocked</text>
+  
+  <path d="M630 170 L630 220" stroke="#ef4444" stroke-width="2" fill="none"/>
+  <rect x="580" y="220" width="100" height="35" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="630" y="242" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Blocked</text>
+</svg>

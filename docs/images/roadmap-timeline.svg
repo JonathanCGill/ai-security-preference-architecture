@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="q1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="q2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="q3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="q4Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="900" height="300" fill="#f8fafc"/>
+  
+  <text x="450" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Implementation Roadmap — Year 1</text>
+  
+  <!-- Timeline bar -->
+  <rect x="50" y="55" width="800" height="8" rx="4" fill="#e2e8f0"/>
+  
+  <!-- Q1 -->
+  <g>
+    <rect x="50" y="50" width="200" height="18" rx="4" fill="url(#q1Grad)"/>
+    <rect x="50" y="80" width="200" height="140" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="150" y="100" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Q1: FOUNDATION</text>
+    <text x="70" y="125" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M1: Discovery</text>
+    <text x="70" y="145" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M2: Visibility</text>
+    <text x="70" y="165" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M3: Pilot prep</text>
+    <text x="150" y="200" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6" text-anchor="middle">Level 2: Developing</text>
+  </g>
+  
+  <!-- Q2 -->
+  <g>
+    <rect x="260" y="50" width="200" height="18" rx="4" fill="url(#q2Grad)"/>
+    <rect x="260" y="80" width="200" height="140" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="360" y="100" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Q2: PILOT</text>
+    <text x="280" y="125" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M4: Shadow mode</text>
+    <text x="280" y="145" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M5: Soft enforcement</text>
+    <text x="280" y="165" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M6: Full enforcement</text>
+    <text x="360" y="200" font-family="Arial, sans-serif" font-size="9" fill="#8b5cf6" text-anchor="middle">Judge deployed</text>
+  </g>
+  
+  <!-- Q3 -->
+  <g>
+    <rect x="470" y="50" width="200" height="18" rx="4" fill="url(#q3Grad)"/>
+    <rect x="470" y="80" width="200" height="140" rx="8" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="570" y="100" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Q3: EXPAND</text>
+    <text x="490" y="125" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M7: High-risk rollout</text>
+    <text x="490" y="145" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M8: Operations</text>
+    <text x="490" y="165" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M9: Compliance</text>
+    <text x="570" y="200" font-family="Arial, sans-serif" font-size="9" fill="#f59e0b" text-anchor="middle">Level 3: Defined</text>
+  </g>
+  
+  <!-- Q4 -->
+  <g>
+    <rect x="680" y="50" width="170" height="18" rx="4" fill="url(#q4Grad)"/>
+    <rect x="680" y="80" width="170" height="140" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="765" y="100" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Q4: OPTIMIZE</text>
+    <text x="700" y="125" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M10: Metrics</text>
+    <text x="700" y="145" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M11: Red team</text>
+    <text x="700" y="165" font-family="Arial, sans-serif" font-size="10" fill="#64748b">M12: Review</text>
+    <text x="765" y="200" font-family="Arial, sans-serif" font-size="9" fill="#10b981" text-anchor="middle">Stable operations</text>
+  </g>
+  
+  <!-- Future years -->
+  <rect x="50" y="240" width="800" height="45" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="250" y="265" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Year 2: Level 4 (Managed)</text>
+  <text x="550" y="265" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Year 3: Level 5 (Optimizing)</text>
+  <text x="750" y="265" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Aspirational</text>
+</svg>

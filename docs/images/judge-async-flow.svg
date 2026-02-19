@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="500" viewBox="0 0 650 500">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="650" height="500" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="325" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">The Judge Detects. It Doesn't Decide.</text>
+  <text x="325" y="50" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Async evaluation flow — transaction completes before Judge evaluates</text>
+  
+  <!-- Divider line between inline and async -->
+  <line x1="50" y1="300" x2="600" y2="300" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="55" y="290" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">INLINE (real-time)</text>
+  <text x="55" y="320" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">ASYNC (background)</text>
+  
+  <!-- Step 1: Transaction occurs -->
+  <rect x="50" y="75" width="140" height="50" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="120" y="100" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Transaction</text>
+  <text x="120" y="115" font-family="Arial, sans-serif" font-size="11" fill="#4338ca" text-anchor="middle">Occurs</text>
+  
+  <!-- Arrow -->
+  <line x1="190" y1="100" x2="230" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: Guardrails check -->
+  <rect x="240" y="75" width="140" height="50" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="310" y="100" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">Guardrails</text>
+  <text x="310" y="115" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">(inline check)</text>
+  
+  <!-- Branch: Block if obvious -->
+  <line x1="380" y1="90" x2="420" y2="90" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="420" y1="90" x2="420" y2="75" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="400" y="55" width="80" height="20" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+  <text x="440" y="69" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">Block if bad</text>
+  
+  <!-- Arrow to AI executes -->
+  <line x1="310" y1="125" x2="310" y2="145" stroke="#22c55e" stroke-width="2" marker-end="url(#arrow-green)"/>
+  
+  <!-- Step 3: AI executes -->
+  <rect x="240" y="155" width="140" height="50" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="310" y="180" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">AI Executes</text>
+  
+  <!-- Arrow -->
+  <line x1="310" y1="205" x2="310" y2="225" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 4: Response delivered -->
+  <rect x="240" y="235" width="140" height="50" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="310" y="255" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Response</text>
+  <text x="310" y="270" font-family="Arial, sans-serif" font-size="11" fill="#4338ca" text-anchor="middle">Delivered ✓</text>
+  
+  <!-- Arrow down to logging -->
+  <line x1="310" y1="285" x2="310" y2="335" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 5: Interaction logged -->
+  <rect x="240" y="345" width="140" height="45" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="310" y="372" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Logged</text>
+  
+  <!-- Arrow to Judge -->
+  <line x1="380" y1="367" x2="420" y2="367" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  
+  <!-- Step 6: Judge evaluates -->
+  <rect x="430" y="340" width="160" height="55" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="510" y="365" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Judge Evaluates</text>
+  <text x="510" y="382" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">(async, thorough)</text>
+  
+  <!-- Arrow to Human -->
+  <line x1="510" y1="395" x2="510" y2="425" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  
+  <!-- Step 7: Human reviews -->
+  <rect x="430" y="435" width="160" height="50" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+  <text x="510" y="455" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#be185d" text-anchor="middle">Human Reviews</text>
+  <text x="510" y="472" font-family="Arial, sans-serif" font-size="10" fill="#9d174d" text-anchor="middle">Decide and Act</text>
+  
+  <!-- Side annotations -->
+  <rect x="50" y="155" width="130" height="90" rx="6" fill="#fefce8" stroke="#eab308" stroke-width="1"/>
+  <text x="115" y="175" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#a16207" text-anchor="middle">Key Point:</text>
+  <text x="115" y="190" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">User gets response</text>
+  <text x="115" y="203" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">BEFORE Judge runs.</text>
+  <text x="115" y="220" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">No latency impact.</text>
+  <text x="115" y="233" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">No false positive blocks.</text>
+  
+  <!-- Judge benefits box -->
+  <rect x="50" y="380" width="170" height="100" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="135" y="400" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">Judge Can:</text>
+  <text x="60" y="418" font-family="Arial, sans-serif" font-size="9" fill="#166534">• Take its time</text>
+  <text x="60" y="433" font-family="Arial, sans-serif" font-size="9" fill="#166534">• Consider full context</text>
+  <text x="60" y="448" font-family="Arial, sans-serif" font-size="9" fill="#166534">• Be conservative (over-flag)</text>
+  <text x="60" y="463" font-family="Arial, sans-serif" font-size="9" fill="#166534">• Learn from human feedback</text>
+</svg>

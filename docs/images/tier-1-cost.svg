@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#bg)"/>
+
+  <text x="400" y="28" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" letter-spacing="1">TIER 1 — COST INDICATORS (ANNUAL)</text>
+  <text x="400" y="44" text-anchor="middle" fill="#ff6b35" font-size="9">DOMINATED BY HUMAN LABOUR · MINIMAL INFRASTRUCTURE</text>
+
+  <!-- Header -->
+  <rect x="30" y="58" width="740" height="24" rx="4" fill="#151a30"/>
+  <text x="50" y="74" fill="#fff" font-size="9" font-weight="700">CATEGORY</text>
+  <text x="400" y="74" fill="#fff" font-size="9" font-weight="700">ESTIMATE</text>
+  <text x="560" y="74" fill="#fff" font-size="9" font-weight="700">NOTES</text>
+
+  <rect x="30" y="84" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="100" fill="#8899aa" font-size="9">Agent Operator</text>
+  <text x="400" y="100" fill="#92fe9d" font-size="9" font-weight="600">$80K–$150K</text>
+  <text x="560" y="100" fill="#667" font-size="9">Per operator; varies by jurisdiction</text>
+
+  <rect x="30" y="108" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="124" fill="#8899aa" font-size="9">AI Security Lead (0.25 FTE)</text>
+  <text x="400" y="124" fill="#92fe9d" font-size="9" font-weight="600">$30K–$50K</text>
+  <text x="560" y="124" fill="#667" font-size="9">Portion of existing security role</text>
+
+  <rect x="30" y="132" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="148" fill="#8899aa" font-size="9">Platform Engineer (0.25 FTE)</text>
+  <text x="400" y="148" fill="#92fe9d" font-size="9" font-weight="600">$30K–$50K</text>
+  <text x="560" y="148" fill="#667" font-size="9">Portion of existing platform role</text>
+
+  <rect x="30" y="156" width="740" height="24" rx="0" fill="#0d1225"/>
+  <text x="50" y="172" fill="#8899aa" font-size="9">Model API Costs</text>
+  <text x="400" y="172" fill="#92fe9d" font-size="9" font-weight="600">$5K–$50K</text>
+  <text x="560" y="172" fill="#667" font-size="9">Low volume at Tier 1</text>
+
+  <rect x="30" y="180" width="740" height="24" rx="0" fill="#0a0e1a"/>
+  <text x="50" y="196" fill="#8899aa" font-size="9">Infrastructure (logging, message bus)</text>
+  <text x="400" y="196" fill="#92fe9d" font-size="9" font-weight="600">$5K–$15K</text>
+  <text x="560" y="196" fill="#667" font-size="9">Cloud-based; minimal at Tier 1</text>
+
+  <!-- Total -->
+  <rect x="30" y="210" width="740" height="28" rx="4" fill="#0d1528" stroke="#ff6b35" stroke-width="1"/>
+  <text x="50" y="229" fill="#ff6b35" font-size="10" font-weight="700">TOTAL (single agent system)</text>
+  <text x="400" y="229" fill="#ff6b35" font-size="10" font-weight="700">$150K–$315K</text>
+  <text x="560" y="229" fill="#8899aa" font-size="9">First year; reduces as processes mature</text>
+
+  <!-- Note -->
+  <rect x="30" y="250" width="740" height="35" rx="4" fill="#0a0e1a" stroke="#334" stroke-width="0.5"/>
+  <text x="400" y="267" text-anchor="middle" fill="#667" font-size="8">Dominant cost is the Agent Operator. This is the intentional trade-off: human oversight in exchange for lower technical complexity.</text>
+  <text x="400" y="279" text-anchor="middle" fill="#667" font-size="8">As the system matures to Tier 2, the operator role shifts from approving every action to managing exceptions.</text>
+</svg>

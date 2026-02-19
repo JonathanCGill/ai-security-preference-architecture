@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="500" viewBox="0 0 720 500" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgG3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="500" rx="12" fill="url(#bgG3)"/>
+
+  <!-- Title -->
+  <text x="360" y="36" text-anchor="middle" fill="#e2e8f0" font-size="17" font-weight="600">Oversight Health Indicators — Detecting Process Degradation</text>
+  <text x="360" y="56" text-anchor="middle" fill="#64748b" font-size="11">Leading indicators that human oversight is failing before a real incident proves it</text>
+
+  <!-- Column headers -->
+  <rect x="30" y="75" width="210" height="32" rx="6" fill="#ef4444" opacity="0.15"/>
+  <text x="135" y="96" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="600">RED — Intervene Now</text>
+
+  <rect x="255" y="75" width="210" height="32" rx="6" fill="#f59e0b" opacity="0.15"/>
+  <text x="360" y="96" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="600">AMBER — Investigate</text>
+
+  <rect x="480" y="75" width="210" height="32" rx="6" fill="#22c55e" opacity="0.15"/>
+  <text x="585" y="96" text-anchor="middle" fill="#86efac" font-size="12" font-weight="600">GREEN — Healthy</text>
+
+  <!-- RED indicators -->
+  <rect x="30" y="118" width="210" height="360" rx="6" fill="#ef4444" fill-opacity="0.04" stroke="#ef4444" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <text x="45" y="142" fill="#f87171" font-size="10" font-weight="600">Response Time</text>
+  <text x="45" y="157" fill="#fca5a5" font-size="9">Median review time &lt; 3 seconds</text>
+  <text x="45" y="170" fill="#fca5a5" font-size="9">(rubber-stamping)</text>
+
+  <line x1="45" y1="182" x2="225" y2="182" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="45" y="200" fill="#f87171" font-size="10" font-weight="600">Probe Detection</text>
+  <text x="45" y="215" fill="#fca5a5" font-size="9">Synthetic challenge miss rate</text>
+  <text x="45" y="228" fill="#fca5a5" font-size="9">&gt; 30%</text>
+
+  <line x1="45" y1="240" x2="225" y2="240" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="45" y="258" fill="#f87171" font-size="10" font-weight="600">Approval Rate</text>
+  <text x="45" y="273" fill="#fca5a5" font-size="9">Approval rate &gt; 98% over any</text>
+  <text x="45" y="286" fill="#fca5a5" font-size="9">rolling 7-day window</text>
+
+  <line x1="45" y1="298" x2="225" y2="298" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="45" y="316" fill="#f87171" font-size="10" font-weight="600">Justification Quality</text>
+  <text x="45" y="331" fill="#fca5a5" font-size="9">Reviewer justifications are</text>
+  <text x="45" y="344" fill="#fca5a5" font-size="9">copy-paste or single-word</text>
+
+  <line x1="45" y1="356" x2="225" y2="356" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="45" y="374" fill="#f87171" font-size="10" font-weight="600">Inter-Reviewer Agreement</text>
+  <text x="45" y="389" fill="#fca5a5" font-size="9">Same cases scored by different</text>
+  <text x="45" y="402" fill="#fca5a5" font-size="9">reviewers diverge &gt; 40%</text>
+
+  <line x1="45" y1="414" x2="225" y2="414" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="45" y="432" fill="#f87171" font-size="10" font-weight="600">Override Pattern</text>
+  <text x="45" y="447" fill="#fca5a5" font-size="9">Zero overrides of AI decisions</text>
+  <text x="45" y="460" fill="#fca5a5" font-size="9">over extended period</text>
+
+  <!-- AMBER indicators -->
+  <rect x="255" y="118" width="210" height="360" rx="6" fill="#f59e0b" fill-opacity="0.04" stroke="#f59e0b" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <text x="270" y="142" fill="#f59e0b" font-size="10" font-weight="600">Response Time</text>
+  <text x="270" y="157" fill="#fcd34d" font-size="9">Median review time trending</text>
+  <text x="270" y="170" fill="#fcd34d" font-size="9">downward over 2+ weeks</text>
+
+  <line x1="270" y1="182" x2="450" y2="182" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="270" y="200" fill="#f59e0b" font-size="10" font-weight="600">Probe Detection</text>
+  <text x="270" y="215" fill="#fcd34d" font-size="9">Synthetic challenge miss rate</text>
+  <text x="270" y="228" fill="#fcd34d" font-size="9">15–30%</text>
+
+  <line x1="270" y1="240" x2="450" y2="240" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="270" y="258" fill="#f59e0b" font-size="10" font-weight="600">Session Duration</text>
+  <text x="270" y="273" fill="#fcd34d" font-size="9">Reviewers exceeding 4hr</text>
+  <text x="270" y="286" fill="#fcd34d" font-size="9">continuous review sessions</text>
+
+  <line x1="270" y1="298" x2="450" y2="298" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="270" y="316" fill="#f59e0b" font-size="10" font-weight="600">Escalation Volume</text>
+  <text x="270" y="331" fill="#fcd34d" font-size="9">Escalation queue depth</text>
+  <text x="270" y="344" fill="#fcd34d" font-size="9">exceeding SLA capacity</text>
+
+  <line x1="270" y1="356" x2="450" y2="356" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="270" y="374" fill="#f59e0b" font-size="10" font-weight="600">Feedback Loop Lag</text>
+  <text x="270" y="389" fill="#fcd34d" font-size="9">Outcome feedback not reaching</text>
+  <text x="270" y="402" fill="#fcd34d" font-size="9">reviewers within 48 hours</text>
+
+  <line x1="270" y1="414" x2="450" y2="414" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="270" y="432" fill="#f59e0b" font-size="10" font-weight="600">Rotation Gaps</text>
+  <text x="270" y="447" fill="#fcd34d" font-size="9">Single reviewer covering &gt;60%</text>
+  <text x="270" y="460" fill="#fcd34d" font-size="9">of all escalations</text>
+
+  <!-- GREEN indicators -->
+  <rect x="480" y="118" width="210" height="360" rx="6" fill="#22c55e" fill-opacity="0.04" stroke="#22c55e" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <text x="495" y="142" fill="#22c55e" font-size="10" font-weight="600">Response Time</text>
+  <text x="495" y="157" fill="#86efac" font-size="9">Median 30s–5min depending</text>
+  <text x="495" y="170" fill="#86efac" font-size="9">on risk tier, stable trend</text>
+
+  <line x1="495" y1="182" x2="675" y2="182" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="495" y="200" fill="#22c55e" font-size="10" font-weight="600">Probe Detection</text>
+  <text x="495" y="215" fill="#86efac" font-size="9">Synthetic challenge miss rate</text>
+  <text x="495" y="228" fill="#86efac" font-size="9">&lt; 15%</text>
+
+  <line x1="495" y1="240" x2="675" y2="240" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="495" y="258" fill="#22c55e" font-size="10" font-weight="600">Decision Distribution</text>
+  <text x="495" y="273" fill="#86efac" font-size="9">Approval/rejection ratio reflects</text>
+  <text x="495" y="286" fill="#86efac" font-size="9">known base rate (±10%)</text>
+
+  <line x1="495" y1="298" x2="675" y2="298" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="495" y="316" fill="#22c55e" font-size="10" font-weight="600">Justification Depth</text>
+  <text x="495" y="331" fill="#86efac" font-size="9">Reviewers articulate specific</text>
+  <text x="495" y="344" fill="#86efac" font-size="9">risk factors in decisions</text>
+
+  <line x1="495" y1="356" x2="675" y2="356" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="495" y="374" fill="#22c55e" font-size="10" font-weight="600">Override Rate</text>
+  <text x="495" y="389" fill="#86efac" font-size="9">Non-zero override rate that</text>
+  <text x="495" y="402" fill="#86efac" font-size="9">tracks with system changes</text>
+
+  <line x1="495" y1="414" x2="675" y2="414" stroke="#334155" stroke-width="0.5"/>
+
+  <text x="495" y="432" fill="#22c55e" font-size="10" font-weight="600">Rotation Compliance</text>
+  <text x="495" y="447" fill="#86efac" font-size="9">Multiple reviewers active,</text>
+  <text x="495" y="460" fill="#86efac" font-size="9">max 4hr continuous sessions</text>
+</svg>

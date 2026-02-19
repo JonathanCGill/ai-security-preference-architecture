@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+  </defs>
+  
+  <style>
+    .title { font: bold 16px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .subtitle { font: 11px Inter, system-ui, sans-serif; fill: #64748b; }
+    .band-title { font: bold 13px Inter, system-ui, sans-serif; fill: white; }
+    .band-time { font: 11px Inter, system-ui, sans-serif; fill: rgba(255,255,255,0.9); }
+    .control { font: 10px Inter, system-ui, sans-serif; fill: #1e293b; }
+    .timing { font: bold 10px Inter, system-ui, sans-serif; fill: #64748b; }
+    .note { font: 9px Inter, system-ui, sans-serif; fill: #64748b; font-style: italic; }
+    .highlight { font: bold 10px Inter, system-ui, sans-serif; fill: #dc2626; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="900" height="450" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">Fraud Timing Model</text>
+  <text x="450" y="48" text-anchor="middle" class="subtitle">AI fits within fraud timing bands, never slows critical path</text>
+  
+  <!-- Timeline arrow -->
+  <line x1="50" y1="80" x2="850" y2="80" stroke="#e2e8f0" stroke-width="3"/>
+  <polygon points="850,80 840,75 840,85" fill="#e2e8f0"/>
+  <text x="870" y="84" class="timing">Time →</text>
+  
+  <!-- Inline Band -->
+  <rect x="50" y="100" width="250" height="140" rx="10" fill="url(#greenGrad)"/>
+  <text x="175" y="125" text-anchor="middle" class="band-title">INLINE</text>
+  <text x="175" y="142" text-anchor="middle" class="band-time">Milliseconds</text>
+  
+  <rect x="65" y="155" width="220" height="70" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="175" y="175" text-anchor="middle" class="control" style="font-weight:bold">Fraud engines dominate</text>
+  <text x="80" y="195" class="control">• Hard blocks (~50ms)</text>
+  <text x="80" y="210" class="control">• Sanctions screening (~100ms)</text>
+  
+  <text x="175" y="255" text-anchor="middle" class="highlight">AI NOT REQUIRED HERE</text>
+  
+  <!-- Near-RT Band -->
+  <rect x="320" y="100" width="260" height="140" rx="10" fill="url(#purpleGrad)"/>
+  <text x="450" y="125" text-anchor="middle" class="band-title">NEAR-REAL-TIME</text>
+  <text x="450" y="142" text-anchor="middle" class="band-time">Seconds</text>
+  
+  <rect x="335" y="155" width="230" height="70" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="450" y="175" text-anchor="middle" class="control" style="font-weight:bold">AI triage runs here</text>
+  <text x="350" y="195" class="control">• Context retrieval (~200ms)</text>
+  <text x="350" y="210" class="control">• AI analysis (~2-5s)</text>
+  
+  <text x="450" y="255" text-anchor="middle" class="note">If delayed: transaction held, safe default</text>
+  
+  <!-- Nearline Band -->
+  <rect x="600" y="100" width="250" height="140" rx="10" fill="url(#amberGrad)"/>
+  <text x="725" y="125" text-anchor="middle" class="band-title">NEARLINE</text>
+  <text x="725" y="142" text-anchor="middle" class="band-time">Minutes to Hours</text>
+  
+  <rect x="615" y="155" width="220" height="70" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="725" y="175" text-anchor="middle" class="control" style="font-weight:bold">Pattern analysis</text>
+  <text x="630" y="195" class="control">• Drift detection (hourly)</text>
+  <text x="630" y="210" class="control">• Typology evolution (weekly)</text>
+  
+  <text x="725" y="255" text-anchor="middle" class="note">Doesn't affect immediate decisions</text>
+  
+  <!-- Transaction flow -->
+  <rect x="50" y="290" width="800" height="100" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="450" y="315" text-anchor="middle" class="control" style="font-weight:bold;font-size:12px">Transaction Flow</text>
+  
+  <!-- Flow boxes -->
+  <rect x="70" y="330" width="100" height="40" rx="4" fill="#dcfce7" stroke="#22c55e"/>
+  <text x="120" y="355" text-anchor="middle" class="control">Fraud Check</text>
+  
+  <line x1="170" y1="350" x2="190" y2="350" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="200" y="330" width="100" height="40" rx="4" fill="#dcfce7" stroke="#22c55e"/>
+  <text x="250" y="355" text-anchor="middle" class="control">Block/Hold</text>
+  
+  <line x1="300" y1="350" x2="320" y2="350" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="330" y="330" width="100" height="40" rx="4" fill="#ede9fe" stroke="#8b5cf6"/>
+  <text x="380" y="355" text-anchor="middle" class="control">AI Enrich</text>
+  
+  <line x1="430" y1="350" x2="450" y2="350" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="460" y="330" width="100" height="40" rx="4" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="510" y="355" text-anchor="middle" class="control">Human Review</text>
+  
+  <line x1="560" y1="350" x2="580" y2="350" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="590" y="330" width="100" height="40" rx="4" fill="#f1f5f9" stroke="#64748b"/>
+  <text x="640" y="355" text-anchor="middle" class="control">Enforce</text>
+  
+  <line x1="690" y1="350" x2="710" y2="350" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="720" y="330" width="100" height="40" rx="4" fill="#ccfbf1" stroke="#0d9488"/>
+  <text x="770" y="355" text-anchor="middle" class="control">Analyse</text>
+  
+  <!-- Key insight -->
+  <rect x="200" y="405" width="500" height="35" rx="6" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="450" y="428" text-anchor="middle" class="control" style="font-weight:bold">Fraud engines remain inline authority. AI never bypasses block states.</text>
+</svg>

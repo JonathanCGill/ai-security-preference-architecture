@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#586069"/>
+    </marker>
+    <marker id="aBi" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8 0, 0 3, 8 6" fill="#586069"/>
+    </marker>
+    <filter id="sh" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="440" rx="8" fill="#FAFBFC"/>
+  
+  <text x="500" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1B1F23">Multi-Agent Trust Topologies</text>
+  <text x="500" y="54" text-anchor="middle" font-size="11" fill="#6A737D">Each topology has different control requirements and risk profiles</text>
+
+  <!-- === TOPOLOGY 1: ORCHESTRATOR === -->
+  <rect x="15" y="75" width="310" height="340" rx="8" fill="white" stroke="#E1E4E8" stroke-width="1" filter="url(#sh)"/>
+  <text x="170" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292E">Orchestrator</text>
+  <rect x="100" y="107" width="140" height="18" rx="4" fill="#FFF5B1"/>
+  <text x="170" y="120" text-anchor="middle" font-size="9" font-weight="600" fill="#B08800">MODERATE RISK</text>
+  
+  <!-- Human -->
+  <rect x="130" y="140" width="80" height="35" rx="6" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1.5"/>
+  <text x="170" y="162" text-anchor="middle" font-size="10" font-weight="600" fill="#24292E">Human</text>
+  
+  <line x1="170" y1="175" x2="170" y2="195" stroke="#586069" stroke-width="1.5" marker-end="url(#a)"/>
+  
+  <!-- Orchestrator Agent -->
+  <rect x="110" y="195" width="120" height="40" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="2"/>
+  <text x="170" y="213" text-anchor="middle" font-size="10" font-weight="600" fill="#0366D6">Orchestrator</text>
+  <text x="170" y="227" text-anchor="middle" font-size="8" fill="#0366D6">Single point of control</text>
+  
+  <!-- Worker agents -->
+  <line x1="130" y1="235" x2="70" y2="270" stroke="#586069" stroke-width="1.2" marker-end="url(#a)"/>
+  <line x1="170" y1="235" x2="170" y2="270" stroke="#586069" stroke-width="1.2" marker-end="url(#a)"/>
+  <line x1="210" y1="235" x2="270" y2="270" stroke="#586069" stroke-width="1.2" marker-end="url(#a)"/>
+  
+  <rect x="30" y="270" width="80" height="35" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5"/>
+  <text x="70" y="292" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Agent A</text>
+  
+  <rect x="130" y="270" width="80" height="35" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5"/>
+  <text x="170" y="292" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Agent B</text>
+  
+  <rect x="230" y="270" width="80" height="35" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5"/>
+  <text x="270" y="292" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Agent C</text>
+
+  <!-- Properties -->
+  <text x="170" y="330" text-anchor="middle" font-size="9" fill="#586069">✓ Central authority</text>
+  <text x="170" y="345" text-anchor="middle" font-size="9" fill="#586069">✓ Easier to audit</text>
+  <text x="170" y="360" text-anchor="middle" font-size="9" fill="#D73A49">✗ Single point of failure</text>
+  <text x="170" y="375" text-anchor="middle" font-size="9" fill="#D73A49">✗ Bottleneck at scale</text>
+  <text x="170" y="398" text-anchor="middle" font-size="8" font-weight="600" fill="#6A737D">Control: Enforce at orchestrator</text>
+
+  <!-- === TOPOLOGY 2: PEER-TO-PEER === -->
+  <rect x="345" y="75" width="310" height="340" rx="8" fill="white" stroke="#E1E4E8" stroke-width="1" filter="url(#sh)"/>
+  <text x="500" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292E">Peer-to-Peer</text>
+  <rect x="430" y="107" width="140" height="18" rx="4" fill="#FFEEF0"/>
+  <text x="500" y="120" text-anchor="middle" font-size="9" font-weight="600" fill="#CB2431">HIGH RISK</text>
+
+  <!-- Human -->
+  <rect x="460" y="140" width="80" height="35" rx="6" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1.5"/>
+  <text x="500" y="162" text-anchor="middle" font-size="10" font-weight="600" fill="#24292E">Human</text>
+  
+  <line x1="500" y1="175" x2="500" y2="195" stroke="#586069" stroke-width="1.2" marker-end="url(#a)"/>
+
+  <!-- Peer agents in triangle -->
+  <rect x="380" y="195" width="80" height="40" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="1.5"/>
+  <text x="420" y="219" text-anchor="middle" font-size="9" font-weight="600" fill="#0366D6">Agent A</text>
+  
+  <rect x="540" y="195" width="80" height="40" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="1.5"/>
+  <text x="580" y="219" text-anchor="middle" font-size="9" font-weight="600" fill="#0366D6">Agent B</text>
+  
+  <rect x="460" y="275" width="80" height="40" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="1.5"/>
+  <text x="500" y="299" text-anchor="middle" font-size="9" font-weight="600" fill="#0366D6">Agent C</text>
+  
+  <!-- Bidirectional connections -->
+  <line x1="460" y1="215" x2="540" y2="215" stroke="#D73A49" stroke-width="1.5" marker-end="url(#a)" marker-start="url(#aBi)"/>
+  <line x1="410" y1="235" x2="470" y2="275" stroke="#D73A49" stroke-width="1.5" marker-end="url(#a)" marker-start="url(#aBi)"/>
+  <line x1="530" y1="275" x2="590" y2="235" stroke="#D73A49" stroke-width="1.5" marker-end="url(#a)" marker-start="url(#aBi)"/>
+
+  <!-- Properties -->
+  <text x="500" y="338" text-anchor="middle" font-size="9" fill="#D73A49">✗ No central authority</text>
+  <text x="500" y="353" text-anchor="middle" font-size="9" fill="#D73A49">✗ Lateral movement risk</text>
+  <text x="500" y="368" text-anchor="middle" font-size="9" fill="#D73A49">✗ Hard to attribute outcomes</text>
+  <text x="500" y="383" text-anchor="middle" font-size="9" fill="#586069">✓ No single bottleneck</text>
+  <text x="500" y="398" text-anchor="middle" font-size="8" font-weight="600" fill="#6A737D">Control: Zero trust at every agent</text>
+
+  <!-- === TOPOLOGY 3: HIERARCHICAL === -->
+  <rect x="675" y="75" width="310" height="340" rx="8" fill="white" stroke="#E1E4E8" stroke-width="1" filter="url(#sh)"/>
+  <text x="830" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292E">Hierarchical</text>
+  <rect x="760" y="107" width="140" height="18" rx="4" fill="#FFEEF0"/>
+  <text x="830" y="120" text-anchor="middle" font-size="9" font-weight="600" fill="#CB2431">HIGH RISK</text>
+
+  <!-- Human -->
+  <rect x="790" y="140" width="80" height="35" rx="6" fill="#F6F8FA" stroke="#D1D5DA" stroke-width="1.5"/>
+  <text x="830" y="162" text-anchor="middle" font-size="10" font-weight="600" fill="#24292E">Human</text>
+  
+  <line x1="830" y1="175" x2="830" y2="195" stroke="#586069" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Level 1 -->
+  <rect x="790" y="195" width="80" height="35" rx="6" fill="#DBEDFF" stroke="#0366D6" stroke-width="2"/>
+  <text x="830" y="216" text-anchor="middle" font-size="9" font-weight="600" fill="#0366D6">Manager</text>
+  
+  <!-- Level 2 -->
+  <line x1="810" y1="230" x2="770" y2="255" stroke="#586069" stroke-width="1.2" marker-end="url(#a)"/>
+  <line x1="850" y1="230" x2="890" y2="255" stroke="#586069" stroke-width="1.2" marker-end="url(#a)"/>
+  
+  <rect x="730" y="255" width="80" height="35" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5"/>
+  <text x="770" y="276" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Worker A</text>
+  
+  <rect x="850" y="255" width="80" height="35" rx="6" fill="#DAFBE1" stroke="#34D058" stroke-width="1.5"/>
+  <text x="890" y="276" text-anchor="middle" font-size="9" font-weight="600" fill="#22863A">Worker B</text>
+
+  <!-- Level 3 -->
+  <line x1="890" y1="290" x2="890" y2="310" stroke="#586069" stroke-width="1.2" marker-end="url(#a)"/>
+  <rect x="850" y="310" width="80" height="35" rx="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5"/>
+  <text x="890" y="332" text-anchor="middle" font-size="9" font-weight="600" fill="#BF360C">Sub-agent</text>
+
+  <!-- Properties -->
+  <text x="830" y="368" text-anchor="middle" font-size="9" fill="#D73A49">✗ Privilege can accumulate</text>
+  <text x="830" y="383" text-anchor="middle" font-size="9" fill="#D73A49">✗ Deep chains lose context</text>
+  <text x="830" y="398" text-anchor="middle" font-size="8" font-weight="600" fill="#6A737D">Control: Depth limits + scope inheritance</text>
+</svg>

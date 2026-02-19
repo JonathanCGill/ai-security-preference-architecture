@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="880" viewBox="0 0 920 880">
+  <defs>
+    <marker id="seqFwd" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+    <marker id="seqRet" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="880" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="460" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">From Strategy to Production</text>
+  <text x="460" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">The full sequence &#x2014; four phases, ten articles, gates between each phase</text>
+
+  <!-- ════════ PHASE 1 ════════ -->
+  <rect x="40" y="80" width="840" height="148" rx="12" fill="#10b981" opacity="0.08" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="40" y="80" width="840" height="32" rx="12" fill="#10b981"/>
+  <rect x="40" y="100" width="840" height="12" fill="#10b981"/>
+  <text x="60" y="101" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Phase 1: Is This the Right Problem &#x2014; and the Right Solution?</text>
+
+  <!-- Article 1 -->
+  <rect x="70" y="126" width="370" height="40" rx="8" fill="white" stroke="#10b981" stroke-width="1.5"/>
+  <text x="86" y="141" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#10b981">1</text>
+  <text x="104" y="141" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Business Alignment</text>
+  <text x="104" y="158" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Confirmed problem + success criteria</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="440" y1="146" x2="475" y2="146" stroke="#475569" stroke-width="1.5" marker-end="url(#seqFwd)"/>
+
+  <!-- Article 2 -->
+  <rect x="485" y="126" width="370" height="40" rx="8" fill="white" stroke="#10b981" stroke-width="1.5"/>
+  <text x="501" y="141" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#10b981">2</text>
+  <text x="519" y="141" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Use Case Filter</text>
+  <text x="519" y="158" font-family="Arial, sans-serif" font-size="10" fill="#64748b">AI confirmed (or exit to non-AI)</text>
+
+  <!-- Non-AI exit -->
+  <rect x="700" y="178" width="155" height="24" rx="5" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="777" y="195" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Not AI &#x2192; standard SDLC</text>
+  <line x1="777" y1="166" x2="777" y2="178" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- Gate 1 -->
+  <rect x="370" y="210" width="180" height="26" rx="6" fill="#10b981"/>
+  <text x="460" y="228" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">GATE: Problem + AI confirmed</text>
+
+  <!-- Arrow between phases -->
+  <line x1="460" y1="236" x2="460" y2="260" stroke="#475569" stroke-width="2" marker-end="url(#seqFwd)"/>
+
+  <!-- ════════ PHASE 2 ════════ -->
+  <rect x="40" y="266" width="840" height="196" rx="12" fill="#0ea5e9" opacity="0.08" stroke="#0ea5e9" stroke-width="1.5"/>
+  <rect x="40" y="266" width="840" height="32" rx="12" fill="#0ea5e9"/>
+  <rect x="40" y="286" width="840" height="12" fill="#0ea5e9"/>
+  <text x="60" y="287" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Phase 2: Can We Actually Build and Run This?</text>
+
+  <!-- Article 3 -->
+  <rect x="70" y="312" width="370" height="40" rx="8" fill="white" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="86" y="327" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0ea5e9">3</text>
+  <text x="104" y="327" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Platform and Patterns</text>
+  <text x="104" y="344" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Approved platform, model, pattern</text>
+
+  <!-- Article 4 -->
+  <rect x="485" y="312" width="370" height="40" rx="8" fill="white" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="501" y="327" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0ea5e9">4</text>
+  <text x="519" y="327" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Data Reality</text>
+  <text x="519" y="344" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Data readiness confirmed</text>
+
+  <!-- Article 5 -->
+  <rect x="70" y="366" width="370" height="40" rx="8" fill="white" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="86" y="381" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0ea5e9">5</text>
+  <text x="104" y="381" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Human Factors</text>
+  <text x="104" y="398" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Skills + oversight capacity confirmed</text>
+
+  <!-- Article 6 -->
+  <rect x="485" y="366" width="370" height="40" rx="8" fill="white" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="501" y="381" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0ea5e9">6</text>
+  <text x="519" y="381" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Progression</text>
+  <text x="519" y="398" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Maturity supports this deployment</text>
+
+  <!-- Gate 2 -->
+  <rect x="320" y="424" width="280" height="26" rx="6" fill="#0ea5e9"/>
+  <text x="460" y="442" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">GATE: Platform, data, skills, maturity confirmed</text>
+
+  <!-- Arrow between phases -->
+  <line x1="460" y1="450" x2="460" y2="478" stroke="#475569" stroke-width="2" marker-end="url(#seqFwd)"/>
+
+  <!-- ════════ PHASE 3 ════════ -->
+  <rect x="40" y="484" width="840" height="148" rx="12" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="40" y="484" width="840" height="32" rx="12" fill="#f59e0b"/>
+  <rect x="40" y="504" width="840" height="12" fill="#f59e0b"/>
+  <text x="60" y="505" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Phase 3: What Exactly Are We Building &#x2014; and What Are the Risks?</text>
+
+  <!-- Article 7 -->
+  <rect x="70" y="530" width="370" height="40" rx="8" fill="white" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="86" y="545" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#f59e0b">7</text>
+  <text x="104" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Framework Tensions</text>
+  <text x="104" y="562" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Constraints understood</text>
+
+  <!-- Arrow 7→8 -->
+  <line x1="440" y1="550" x2="475" y2="550" stroke="#475569" stroke-width="1.5" marker-end="url(#seqFwd)"/>
+
+  <!-- Article 8 -->
+  <rect x="485" y="530" width="370" height="40" rx="8" fill="white" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="501" y="545" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#f59e0b">8</text>
+  <text x="519" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Use Case Definition</text>
+  <text x="519" y="562" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Ten questions &#x2192; risk tier assigned</text>
+
+  <!-- Gate 3 -->
+  <rect x="300" y="588" width="320" height="26" rx="6" fill="#f59e0b"/>
+  <text x="460" y="606" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">GATE: Complete definition, risk tier, control spec</text>
+
+  <!-- Arrow between phases -->
+  <line x1="460" y1="614" x2="460" y2="642" stroke="#475569" stroke-width="2" marker-end="url(#seqFwd)"/>
+
+  <!-- ════════ PHASE 4 ════════ -->
+  <rect x="40" y="648" width="840" height="148" rx="12" fill="#7c3aed" opacity="0.08" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="40" y="648" width="840" height="32" rx="12" fill="#7c3aed"/>
+  <rect x="40" y="668" width="840" height="12" fill="#7c3aed"/>
+  <text x="60" y="669" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Phase 4: Build, Deploy, Govern &#x2014; and Keep Governing</text>
+
+  <!-- Article 9 -->
+  <rect x="70" y="694" width="370" height="40" rx="8" fill="white" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="86" y="709" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#7c3aed">9</text>
+  <text x="104" y="709" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">From Idea to Production</text>
+  <text x="104" y="726" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Control design &#x2192; deploy &#x2192; govern</text>
+
+  <!-- Arrow 9→10 -->
+  <line x1="440" y1="714" x2="475" y2="714" stroke="#475569" stroke-width="1.5" marker-end="url(#seqFwd)"/>
+
+  <!-- Article 10 -->
+  <rect x="485" y="694" width="370" height="40" rx="8" fill="white" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="501" y="709" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#7c3aed">10</text>
+  <text x="523" y="709" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">The Thread</text>
+  <text x="523" y="726" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Return loop: monitoring &#x2192; reassessment</text>
+
+  <!-- No final gate label -->
+  <rect x="300" y="752" width="320" height="26" rx="6" fill="#7c3aed"/>
+  <text x="460" y="770" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">NO FINAL GATE &#x2014; Ongoing governance is continuous</text>
+
+  <!-- ════════ RETURN LOOP ════════ -->
+  <!-- Arrow down from Phase 4 to return label -->
+  <line x1="460" y1="778" x2="460" y2="810" stroke="#ef4444" stroke-width="2" stroke-dasharray="6" marker-end="url(#seqRet)"/>
+
+  <!-- Return loop bar -->
+  <rect x="120" y="816" width="680" height="30" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="460" y="836" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">RETURN LOOP: Monitoring signals trigger reassessment at Phase 1, 2, or 3</text>
+
+  <!-- Return arrows -->
+  <path d="M 120 831 L 30 831 L 30 155 L 40 155" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="6" marker-end="url(#seqRet)"/>
+  <text x="22" y="500" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle" transform="rotate(-90 22 500)">RETURN LOOP</text>
+
+  <!-- Return labels on the left path -->
+  <rect x="5" y="200" width="50" height="16" rx="3" fill="#fef2f2"/>
+  <text x="30" y="212" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#ef4444" text-anchor="middle">Phase 1</text>
+  <rect x="5" y="400" width="50" height="16" rx="3" fill="#fef2f2"/>
+  <text x="30" y="412" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#ef4444" text-anchor="middle">Phase 2</text>
+  <rect x="5" y="580" width="50" height="16" rx="3" fill="#fef2f2"/>
+  <text x="30" y="592" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#ef4444" text-anchor="middle">Phase 3</text>
+
+  <!-- Branch ticks from left path to each phase -->
+  <line x1="30" y1="208" x2="40" y2="208" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4"/>
+  <line x1="30" y1="408" x2="40" y2="408" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4"/>
+  <line x1="30" y1="588" x2="40" y2="588" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <!-- Legend -->
+  <line x1="140" y1="864" x2="190" y2="864" stroke="#475569" stroke-width="2" marker-end="url(#seqFwd)"/>
+  <text x="200" y="868" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Forward flow</text>
+  <line x1="320" y1="864" x2="370" y2="864" stroke="#ef4444" stroke-width="2" stroke-dasharray="6" marker-end="url(#seqRet)"/>
+  <text x="380" y="868" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Return loop (monitoring signals)</text>
+  <rect x="550" y="856" width="16" height="16" rx="4" fill="#10b981"/>
+  <rect x="570" y="856" width="16" height="16" rx="4" fill="#0ea5e9"/>
+  <rect x="590" y="856" width="16" height="16" rx="4" fill="#f59e0b"/>
+  <rect x="610" y="856" width="16" height="16" rx="4" fill="#7c3aed"/>
+  <text x="636" y="868" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Phase colours match gates</text>
+</svg>

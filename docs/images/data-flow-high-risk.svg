@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" font-family="Arial, Helvetica, sans-serif">
+  <title>Data Flow: High Risk Tier</title>
+  <desc>Data flow diagram showing how a request moves through the three control layers for a High risk tier AI system.</desc>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arrowhead-amber" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d97706"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="680" fill="#f8fafc" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">Data Flow: High Risk Tier</text>
+  <text x="450" y="55" text-anchor="middle" font-size="12" fill="#64748b">Guardrails inline | Judge async (20-50% sampling) | HITL on escalation</text>
+
+  <!-- Layer labels (left side) -->
+  <rect x="15" y="80" width="100" height="195" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="65" y="175" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af" transform="rotate(-90 65 175)">GUARDRAILS</text>
+
+  <rect x="15" y="360" width="100" height="130" rx="6" fill="#fef3c7" stroke="#fcd34d" stroke-width="1"/>
+  <text x="65" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e" transform="rotate(-90 65 425)">JUDGE (ASYNC)</text>
+
+  <rect x="15" y="530" width="100" height="120" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="65" y="590" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534" transform="rotate(-90 65 590)">HUMAN</text>
+
+  <!-- User Input -->
+  <rect x="155" y="80" width="140" height="40" rx="6" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="225" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">User Input</text>
+
+  <!-- Input Validation -->
+  <rect x="155" y="145" width="140" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="225" y="170" text-anchor="middle" font-size="11" fill="#1e40af">Input Validation</text>
+
+  <!-- Prompt Injection Detection -->
+  <rect x="355" y="145" width="170" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="440" y="170" text-anchor="middle" font-size="11" fill="#1e40af">Injection Detection</text>
+
+  <!-- BLOCK box -->
+  <rect x="610" y="100" width="100" height="35" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="660" y="122" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">BLOCK</text>
+
+  <!-- Model Inference -->
+  <rect x="355" y="210" width="170" height="45" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="440" y="228" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">Model Inference</text>
+  <text x="440" y="244" text-anchor="middle" font-size="10" fill="#64748b">(+ RAG retrieval)</text>
+
+  <!-- Output Filtering -->
+  <rect x="580" y="210" width="140" height="45" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="650" y="228" text-anchor="middle" font-size="11" fill="#1e40af">Output Filtering</text>
+  <text x="650" y="244" text-anchor="middle" font-size="10" fill="#1e40af">(PII, topic, scope)</text>
+
+  <!-- Response Delivered -->
+  <rect x="580" y="290" width="140" height="40" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="650" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Response Out</text>
+
+  <!-- Log -->
+  <rect x="355" y="290" width="170" height="40" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="440" y="315" text-anchor="middle" font-size="11" fill="#475569">Log Interaction</text>
+
+  <!-- Sampling Decision -->
+  <polygon points="440,380 490,405 440,430 390,405" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="440" y="409" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">Sample?</text>
+
+  <!-- Judge Evaluation -->
+  <rect x="540" y="385" width="160" height="40" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="620" y="410" text-anchor="middle" font-size="11" fill="#92400e">Judge Evaluation</text>
+
+  <!-- Not Sampled -->
+  <rect x="220" y="390" width="120" height="30" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="280" y="410" text-anchor="middle" font-size="10" fill="#64748b">Not sampled</text>
+
+  <!-- Triage -->
+  <polygon points="620,470 670,495 620,520 570,495" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="620" y="499" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">Severity?</text>
+
+  <!-- Low/Medium findings -->
+  <rect x="730" y="480" width="130" height="30" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="795" y="500" text-anchor="middle" font-size="10" fill="#64748b">Periodic Review</text>
+
+  <!-- Human Review -->
+  <rect x="490" y="545" width="160" height="40" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="570" y="570" text-anchor="middle" font-size="11" fill="#166534">Human Review</text>
+
+  <!-- IR Escalation -->
+  <rect x="490" y="610" width="160" height="40" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="570" y="635" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">IR Escalation</text>
+
+  <!-- Feedback Loop -->
+  <rect x="200" y="610" width="160" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="280" y="635" text-anchor="middle" font-size="11" fill="#1e40af">Update Guardrails</text>
+
+  <!-- Arrows -->
+  <!-- Input to Validation -->
+  <line x1="225" y1="120" x2="225" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <!-- Validation to Injection -->
+  <line x1="295" y1="165" x2="355" y2="165" stroke="#475569" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <!-- Injection to Block -->
+  <line x1="525" y1="155" x2="610" y2="120" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrowhead-red)"/>
+  <text x="575" y="130" font-size="9" fill="#dc2626">Detected</text>
+  <!-- Injection to Model -->
+  <line x1="440" y1="185" x2="440" y2="210" stroke="#475569" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="455" y="200" font-size="9" fill="#64748b">Pass</text>
+  <!-- Model to Output Filter -->
+  <line x1="525" y1="232" x2="580" y2="232" stroke="#475569" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <!-- Output Filter to Block -->
+  <line x1="700" y1="210" x2="700" y2="135" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="700" y1="135" x2="710" y2="135" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrowhead-red)"/>
+  <text x="735" y="175" font-size="9" fill="#dc2626">PII/</text>
+  <text x="735" y="185" font-size="9" fill="#dc2626">Block</text>
+  <!-- Output Filter to Response -->
+  <line x1="650" y1="255" x2="650" y2="290" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrowhead-green)"/>
+  <!-- Output Filter to Log -->
+  <line x1="580" y1="252" x2="525" y2="300" stroke="#475569" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <!-- Log to Sampling -->
+  <line x1="440" y1="330" x2="440" y2="380" stroke="#475569" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <!-- Sampling to Not Sampled -->
+  <line x1="390" y1="405" x2="340" y2="405" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="365" y="398" font-size="9" fill="#64748b">75%</text>
+  <!-- Sampling to Judge -->
+  <line x1="490" y1="405" x2="540" y2="405" stroke="#d97706" stroke-width="1.5" marker-end="url(#arrowhead-amber)"/>
+  <text x="515" y="398" font-size="9" fill="#d97706">25%</text>
+  <!-- Judge to Triage -->
+  <line x1="620" y1="425" x2="620" y2="470" stroke="#d97706" stroke-width="1.5" marker-end="url(#arrowhead-amber)"/>
+  <!-- Triage to Periodic Review -->
+  <line x1="670" y1="495" x2="730" y2="495" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="700" y="488" font-size="9" fill="#64748b">Low</text>
+  <!-- Triage to Human -->
+  <line x1="600" y1="520" x2="575" y2="545" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrowhead-green)"/>
+  <text x="575" y="537" font-size="9" fill="#166534">High</text>
+  <!-- Human to IR -->
+  <line x1="570" y1="585" x2="570" y2="610" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrowhead-red)"/>
+  <text x="590" y="602" font-size="9" fill="#dc2626">Critical</text>
+  <!-- Feedback loop -->
+  <line x1="490" y1="630" x2="360" y2="630" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <line x1="280" y1="610" x2="280" y2="185" stroke="#3b82f6" stroke-width="1" stroke-dasharray="6,3"/>
+  <line x1="280" y1="185" x2="355" y2="165" stroke="#3b82f6" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="300" viewBox="0 0 780 300" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="780" height="300" fill="#ffffff"/>
+  <text x="390" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Finding Triage Flow</text>
+  <text x="390" y="46" text-anchor="middle" font-size="12" fill="#64748b">How Judge findings route to action</text>
+  <rect x="20" y="70" width="120" height="36" rx="6" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="80" y="93" text-anchor="middle" font-size="11" font-weight="600" fill="#7c3aed">Judge Finding</text>
+  <line x1="140" y1="88" x2="190" y2="88" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="195" y="55" width="140" height="66" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="265" y="73" text-anchor="middle" font-size="10" font-weight="600" fill="#0f172a">Automated Triage</text>
+  <text x="265" y="88" text-anchor="middle" font-size="9" font-weight="400" fill="#94a3b8">(severity + confidence)</text>
+  <text x="265" y="103" text-anchor="middle" font-size="9" font-weight="400" fill="#94a3b8">scoring</text>
+  <line x1="335" y1="88" x2="380" y2="88" stroke="#334155" stroke-width="1.5"/>
+  <line x1="380" y1="88" x2="410" y2="50" stroke="#64748b" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <rect x="415" y="36" width="340" height="28" rx="4" fill="#ffffff" stroke="#64748b" stroke-width="1"/>
+  <text x="425" y="51" text-anchor="start" font-size="10" font-weight="600" fill="#64748b">Low / Low:</text>
+  <text x="499" y="51" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">Queue for periodic review</text>
+  <line x1="335" y1="88" x2="380" y2="88" stroke="#334155" stroke-width="1.5"/>
+  <line x1="380" y1="88" x2="410" y2="110" stroke="#b45309" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <rect x="415" y="96" width="340" height="28" rx="4" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+  <text x="425" y="111" text-anchor="start" font-size="10" font-weight="600" fill="#b45309">Med / Med:</text>
+  <text x="499" y="111" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">Route to AI security reviewer</text>
+  <line x1="335" y1="88" x2="380" y2="88" stroke="#334155" stroke-width="1.5"/>
+  <line x1="380" y1="88" x2="410" y2="170" stroke="#dc2626" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <rect x="415" y="156" width="340" height="28" rx="4" fill="#ffffff" stroke="#dc2626" stroke-width="1"/>
+  <text x="425" y="171" text-anchor="start" font-size="10" font-weight="600" fill="#dc2626">High / High:</text>
+  <text x="511" y="171" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">Create IR ticket; notify on-call</text>
+  <line x1="335" y1="88" x2="380" y2="88" stroke="#334155" stroke-width="1.5"/>
+  <line x1="380" y1="88" x2="410" y2="230" stroke="#991b1b" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <rect x="415" y="216" width="340" height="28" rx="4" fill="#ffffff" stroke="#991b1b" stroke-width="1"/>
+  <text x="425" y="231" text-anchor="start" font-size="10" font-weight="600" fill="#991b1b">Critical:</text>
+  <text x="493" y="231" text-anchor="start" font-size="10" font-weight="400" fill="#64748b">IR ticket; page on-call; consider system pause</text>
+</svg>

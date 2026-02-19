@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1050" width="1500" height="1050">
+  <defs>
+    <!-- Data flow arrowhead -->
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0,0 L 8,3 L 0,6 Z" fill="#475569"/>
+    </marker>
+    <!-- Attack path arrowhead -->
+    <marker id="atk-arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <path d="M 0,0 L 10,3.5 L 0,7 Z" fill="#dc2626"/>
+    </marker>
+    <!-- Return flow arrowhead -->
+    <marker id="ret-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0,0 L 8,3 L 0,6 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  
+  <style>
+    .title { font: bold 22px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #1e293b; }
+    .subtitle { font: 12px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #64748b; }
+    .tb-label { font: bold 10px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #374151; letter-spacing: 1px; }
+    .tb-sub { font: 9px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #6b7280; }
+    .actor-label { font: bold 11px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #1e293b; }
+    .actor-sub { font: 9px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #6b7280; }
+    .proc-label { font: bold 10px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #1e293b; }
+    .proc-sub { font: 8.5px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #6b7280; }
+    .store-label { font: bold 9.5px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #1e293b; }
+    .store-sub { font: 8px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #6b7280; }
+    .flow-label { font: 8px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #475569; }
+    .atk-label { font: bold 8.5px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #dc2626; }
+    .atk-desc { font: italic 7.5px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #ef4444; }
+    .atk-id { font: bold 11px Arial, sans-serif; fill: #ffffff; }
+    .legend-text { font: 9.5px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #1e293b; }
+    .legend-head { font: bold 10px 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; fill: #1e293b; }
+  </style>
+  
+  <rect width="1500" height="1050" fill="#fafaf8"/>
+  
+  <!-- Title -->
+  <text x="750" y="32" text-anchor="middle" class="title">AI SOLUTION — DATA FLOW THREAT MODEL</text>
+  <text x="750" y="50" text-anchor="middle" class="subtitle">Trust boundaries, data flows, and attack paths for enterprise AI deployments</text>
+
+  <!-- ================================================================ -->
+  <!-- TRUST BOUNDARY 0: INTERNET (untrusted)                          -->
+  <!-- ================================================================ -->
+  <rect x="20" y="70" width="170" height="620" rx="8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="105" y="90" text-anchor="middle" class="tb-label">TB0: INTERNET</text>
+  <text x="105" y="103" text-anchor="middle" class="tb-sub">Untrusted</text>
+
+  <!-- Customer actor -->
+  <rect x="45" y="200" width="120" height="70" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="105" y="225" text-anchor="middle" class="actor-label">Customer</text>
+  <text x="105" y="240" text-anchor="middle" class="actor-sub">Web browser</text>
+  <text x="105" y="253" text-anchor="middle" class="actor-sub">Mobile app</text>
+  
+  <!-- Attacker actor (overlaid on same boundary) -->
+  <rect x="45" y="440" width="120" height="70" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="105" y="465" text-anchor="middle" class="actor-label" fill="#dc2626">Cyber Actor</text>
+  <text x="105" y="480" text-anchor="middle" class="actor-sub" fill="#b91c1c">External threat</text>
+  <text x="105" y="493" text-anchor="middle" class="actor-sub" fill="#b91c1c">Automated / targeted</text>
+  
+  <!-- Supply chain threat (separate entry) -->
+  <rect x="45" y="570" width="120" height="55" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="105" y="593" text-anchor="middle" class="actor-label" fill="#dc2626">Supply Chain</text>
+  <text x="105" y="607" text-anchor="middle" class="actor-sub" fill="#b91c1c">Poisoned models/data</text>
+
+  <!-- ================================================================ -->
+  <!-- TRUST BOUNDARY 1: DMZ / API GATEWAY                             -->
+  <!-- ================================================================ -->
+  <rect x="210" y="70" width="140" height="620" rx="8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="280" y="90" text-anchor="middle" class="tb-label">TB1: DMZ</text>
+  <text x="280" y="103" text-anchor="middle" class="tb-sub">Perimeter</text>
+  
+  <!-- WAF / API Gateway process -->
+  <rect x="232" y="195" width="96" height="80" rx="6" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <circle cx="280" cy="218" r="14" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="280" y="222" text-anchor="middle" class="proc-label" font-size="9">P1</text>
+  <text x="280" y="245" text-anchor="middle" class="proc-label">WAF / API</text>
+  <text x="280" y="258" text-anchor="middle" class="proc-label">Gateway</text>
+  <text x="280" y="271" text-anchor="middle" class="proc-sub">Auth, rate limit, TLS</text>
+
+  <!-- ================================================================ -->
+  <!-- TRUST BOUNDARY 2: AI PROCESSING ZONE                            -->
+  <!-- ================================================================ -->
+  <rect x="370" y="70" width="400" height="620" rx="8" fill="#f0fdf4" fill-opacity="0.4" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="570" y="90" text-anchor="middle" class="tb-label">TB2: AI PROCESSING ZONE</text>
+  <text x="570" y="103" text-anchor="middle" class="tb-sub">Guardrails → LLM → Judge</text>
+  
+  <!-- Input Guardrails -->
+  <rect x="392" y="180" width="106" height="75" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="445" cy="200" r="14" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="445" y="204" text-anchor="middle" class="proc-label" font-size="9">P2</text>
+  <text x="445" y="224" text-anchor="middle" class="proc-label">Input</text>
+  <text x="445" y="237" text-anchor="middle" class="proc-label">Guardrails</text>
+  <text x="445" y="250" text-anchor="middle" class="proc-sub">Injection detection</text>
+  
+  <!-- LLM Engine (central, larger) -->
+  <rect x="520" y="290" width="120" height="90" rx="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2.5"/>
+  <circle cx="580" cy="314" r="16" fill="#c7d2fe" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="580" y="319" text-anchor="middle" class="proc-label">P3</text>
+  <text x="580" y="343" text-anchor="middle" class="proc-label">LLM Engine</text>
+  <text x="580" y="358" text-anchor="middle" class="proc-sub">Inference</text>
+  <text x="580" y="370" text-anchor="middle" class="proc-sub">System prompt + context</text>
+  
+  <!-- Output Guardrails -->
+  <rect x="392" y="420" width="106" height="75" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="445" cy="440" r="14" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="445" y="444" text-anchor="middle" class="proc-label" font-size="9">P4</text>
+  <text x="445" y="464" text-anchor="middle" class="proc-label">Output</text>
+  <text x="445" y="477" text-anchor="middle" class="proc-label">Guardrails</text>
+  <text x="445" y="490" text-anchor="middle" class="proc-sub">PII, hallucination</text>
+  
+  <!-- LLM-as-Judge -->
+  <rect x="550" y="500" width="110" height="75" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <circle cx="605" cy="520" r="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="605" y="524" text-anchor="middle" class="proc-label" font-size="9">P5</text>
+  <text x="605" y="544" text-anchor="middle" class="proc-label">LLM-as-Judge</text>
+  <text x="605" y="557" text-anchor="middle" class="proc-sub">Post-hoc evaluation</text>
+  <text x="605" y="569" text-anchor="middle" class="proc-sub">Async scoring</text>
+  
+  <!-- RAG Retrieval -->
+  <rect x="660" y="180" width="96" height="75" rx="6" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
+  <circle cx="708" cy="200" r="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="708" y="204" text-anchor="middle" class="proc-label" font-size="9">P6</text>
+  <text x="708" y="224" text-anchor="middle" class="proc-label">RAG</text>
+  <text x="708" y="237" text-anchor="middle" class="proc-label">Retrieval</text>
+  <text x="708" y="250" text-anchor="middle" class="proc-sub">Vector search</text>
+
+  <!-- ================================================================ -->
+  <!-- TRUST BOUNDARY 3: DATA ZONE                                     -->
+  <!-- ================================================================ -->
+  <rect x="790" y="70" width="280" height="400" rx="8" fill="#fffbeb" fill-opacity="0.3" stroke="#d97706" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="930" y="90" text-anchor="middle" class="tb-label">TB3: DATA ZONE</text>
+  <text x="930" y="103" text-anchor="middle" class="tb-sub">Knowledge, embeddings, logs</text>
+  
+  <!-- Product Data / Knowledge Base (data store — parallel lines) -->
+  <line x1="815" y1="140" x2="945" y2="140" stroke="#92400e" stroke-width="2"/>
+  <rect x="815" y="142" width="130" height="48" fill="#fef3c7" stroke="none"/>
+  <line x1="815" y1="190" x2="945" y2="190" stroke="#92400e" stroke-width="2"/>
+  <text x="880" y="160" text-anchor="middle" class="store-label">D1: Product Data</text>
+  <text x="880" y="174" text-anchor="middle" class="store-sub">Knowledge base (source)</text>
+  <text x="880" y="186" text-anchor="middle" class="store-sub">Product docs, policies, FAQs</text>
+  
+  <!-- Vector Store -->
+  <line x1="815" y1="220" x2="945" y2="220" stroke="#92400e" stroke-width="2"/>
+  <rect x="815" y="222" width="130" height="42" fill="#fef3c7" stroke="none"/>
+  <line x1="815" y1="264" x2="945" y2="264" stroke="#92400e" stroke-width="2"/>
+  <text x="880" y="240" text-anchor="middle" class="store-label">D2: Vector Store</text>
+  <text x="880" y="254" text-anchor="middle" class="store-sub">Embeddings index</text>
+  
+  <!-- Conversation Logs -->
+  <line x1="815" y1="300" x2="945" y2="300" stroke="#92400e" stroke-width="2"/>
+  <rect x="815" y="302" width="130" height="42" fill="#fef3c7" stroke="none"/>
+  <line x1="815" y1="344" x2="945" y2="344" stroke="#92400e" stroke-width="2"/>
+  <text x="880" y="320" text-anchor="middle" class="store-label">D3: Conversation Logs</text>
+  <text x="880" y="334" text-anchor="middle" class="store-sub">Prompts, responses, telemetry</text>
+  
+  <!-- Alert Store -->
+  <line x1="815" y1="376" x2="945" y2="376" stroke="#92400e" stroke-width="2"/>
+  <rect x="815" y="378" width="130" height="42" fill="#fef3c7" stroke="none"/>
+  <line x1="815" y1="420" x2="945" y2="420" stroke="#92400e" stroke-width="2"/>
+  <text x="880" y="396" text-anchor="middle" class="store-label">D4: Alert Store</text>
+  <text x="880" y="410" text-anchor="middle" class="store-sub">Judge findings, triggers</text>
+  
+  <!-- Ingestion pipeline arrow: D1 → D2 -->
+  <line x1="880" y1="190" x2="880" y2="218" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="894" y="208" class="flow-label">ingest</text>
+
+  <!-- ================================================================ -->
+  <!-- TRUST BOUNDARY 4: INTERNAL NETWORK                              -->
+  <!-- ================================================================ -->
+  <rect x="790" y="490" width="280" height="200" rx="8" fill="#f0f9ff" fill-opacity="0.3" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="930" y="510" text-anchor="middle" class="tb-label">TB4: INTERNAL NETWORK</text>
+  <text x="930" y="523" text-anchor="middle" class="tb-sub">Staff, monitoring, model ops</text>
+  
+  <!-- SOC Analyst -->
+  <rect x="808" y="540" width="104" height="55" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="860" y="562" text-anchor="middle" class="actor-label" font-size="10">SOC Analyst</text>
+  <text x="860" y="576" text-anchor="middle" class="actor-sub">Monitors, escalates</text>
+  
+  <!-- Support Staff -->
+  <rect x="808" y="610" width="104" height="55" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="860" y="632" text-anchor="middle" class="actor-label" font-size="10">Support Staff</text>
+  <text x="860" y="646" text-anchor="middle" class="actor-sub">Views conversations</text>
+  
+  <!-- Model Ops -->
+  <rect x="940" y="540" width="115" height="125" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="998" y="562" text-anchor="middle" class="actor-label" font-size="10">Model Ops /</text>
+  <text x="998" y="576" text-anchor="middle" class="actor-label" font-size="10">AI Engineer</text>
+  <text x="998" y="594" text-anchor="middle" class="actor-sub">RAG updates</text>
+  <text x="998" y="607" text-anchor="middle" class="actor-sub">Model config</text>
+  <text x="998" y="620" text-anchor="middle" class="actor-sub">Fine-tuning</text>
+  <text x="998" y="633" text-anchor="middle" class="actor-sub">Guardrail tuning</text>
+
+  <!-- ================================================================ -->
+  <!-- TRUST BOUNDARY 5: DOWNSTREAM SYSTEMS                            -->
+  <!-- ================================================================ -->
+  <rect x="1090" y="70" width="200" height="620" rx="8" fill="#fef2f2" fill-opacity="0.2" stroke="#9333ea" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="1190" y="90" text-anchor="middle" class="tb-label">TB5: DOWNSTREAM</text>
+  <text x="1190" y="103" text-anchor="middle" class="tb-sub">Post-AI actions</text>
+  
+  <!-- Product Update System -->
+  <rect x="1112" y="175" width="155" height="65" rx="8" fill="#fae8ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="1190" y="200" text-anchor="middle" class="proc-label">Product Update</text>
+  <text x="1190" y="213" text-anchor="middle" class="proc-label">System</text>
+  <text x="1190" y="228" text-anchor="middle" class="proc-sub">Config changes, triggers</text>
+  
+  <!-- CRM / Ticketing -->
+  <rect x="1112" y="270" width="155" height="55" rx="8" fill="#fae8ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="1190" y="293" text-anchor="middle" class="proc-label">CRM / Ticketing</text>
+  <text x="1190" y="308" text-anchor="middle" class="proc-sub">Interaction records</text>
+  
+  <!-- SIEM / SOC Dashboard -->
+  <rect x="1112" y="370" width="155" height="55" rx="8" fill="#fae8ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="1190" y="393" text-anchor="middle" class="proc-label">SIEM / SOC</text>
+  <text x="1190" y="408" text-anchor="middle" class="proc-sub">Dashboard, alerting</text>
+  
+  <!-- External API / Third Party -->
+  <rect x="1112" y="465" width="155" height="55" rx="8" fill="#fae8ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="1190" y="488" text-anchor="middle" class="proc-label">External APIs</text>
+  <text x="1190" y="503" text-anchor="middle" class="proc-sub">Third-party integrations</text>
+
+  <!-- ================================================================ -->
+  <!-- DATA FLOWS (grey arrows, labelled)                              -->
+  <!-- ================================================================ -->
+  
+  <!-- DF1: Customer → Gateway -->
+  <line x1="165" y1="225" x2="230" y2="225" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="197" y="218" text-anchor="middle" class="flow-label">HTTPS</text>
+  <text x="197" y="228" text-anchor="middle" class="flow-label">prompt</text>
+  
+  <!-- DF10: Gateway → Customer (response, offset below) -->
+  <line x1="230" y1="248" x2="165" y2="248" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ret-arrow)"/>
+  <text x="197" y="260" text-anchor="middle" class="flow-label" fill="#7c3aed">response</text>
+  
+  <!-- DF2: Gateway → Input Guardrails -->
+  <line x1="328" y1="218" x2="390" y2="218" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="359" y="211" text-anchor="middle" class="flow-label">auth'd</text>
+  <text x="359" y="221" text-anchor="middle" class="flow-label">request</text>
+  
+  <!-- DF3: Input Guardrails → LLM -->
+  <line x1="470" y1="255" x2="540" y2="305" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="490" y="272" class="flow-label">sanitised</text>
+  
+  <!-- DF4: LLM → RAG -->
+  <line x1="630" y1="305" x2="660" y2="240" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="655" y="275" text-anchor="end" class="flow-label">context</text>
+  <text x="655" y="285" text-anchor="end" class="flow-label">request</text>
+  
+  <!-- DF5: RAG → Vector Store -->
+  <line x1="756" y1="218" x2="813" y2="240" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="785" y="222" text-anchor="middle" class="flow-label">query</text>
+  
+  <!-- DF7: RAG → LLM (return context) -->
+  <line x1="660" y1="230" x2="625" y2="290" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ret-arrow)"/>
+  <text x="635" y="262" class="flow-label" fill="#7c3aed">context</text>
+  
+  <!-- DF8: LLM → Output Guardrails -->
+  <line x1="540" y1="370" x2="470" y2="420" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="515" y="403" text-anchor="end" class="flow-label">raw</text>
+  <text x="515" y="413" text-anchor="end" class="flow-label">response</text>
+  
+  <!-- DF9: Output Guardrails → Gateway -->
+  <line x1="392" y1="455" x2="310" y2="275" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ret-arrow)"/>
+  <text x="340" y="370" class="flow-label" fill="#7c3aed">filtered</text>
+  
+  <!-- DF11: Output Guardrails → Judge (async) -->
+  <line x1="498" y1="480" x2="555" y2="510" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="5,3"/>
+  <text x="520" y="504" class="flow-label">async</text>
+  
+  <!-- DF12: Judge → Alert Store -->
+  <line x1="660" y1="540" x2="813" y2="398" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="740" y="460" class="flow-label">findings</text>
+  
+  <!-- DF13: Alert Store → SIEM -->
+  <line x1="945" y1="398" x2="1110" y2="393" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1030" y="388" text-anchor="middle" class="flow-label">alerts</text>
+  
+  <!-- DF14: Processing → Conversation Logs (telemetry) -->
+  <line x1="640" y1="345" x2="813" y2="322" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+  <text x="725" y="325" class="flow-label">telemetry</text>
+  
+  <!-- DF15: Support Staff → Conversation Logs -->
+  <line x1="860" y1="610" x2="880" y2="346" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="865" y="490" class="flow-label">read</text>
+  
+  <!-- DF16: Model Ops → Product Data -->
+  <line x1="970" y1="540" x2="910" y2="192" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="948" y="370" class="flow-label">update</text>
+  <text x="948" y="382" class="flow-label">knowledge</text>
+  
+  <!-- DF17: LLM → Product Update System (agentic action) -->
+  <line x1="640" y1="320" x2="1110" y2="205" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="6,3"/>
+  <text x="870" y="248" class="flow-label">agentic action (if enabled)</text>
+  
+  <!-- DF18: SOC → Alert Store -->
+  <line x1="840" y1="540" x2="860" y2="422" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="838" y="488" class="flow-label">review</text>
+  
+  <!-- DF19: Model Ops → LLM (config) -->
+  <path d="M 940,590 Q 780,590 660,370" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <text x="780" y="510" class="flow-label">model updates</text>
+  <text x="780" y="522" class="flow-label">config, prompts</text>
+  
+  <!-- DF: Output → CRM -->
+  <path d="M 328,265 Q 370,320 1110,290" stroke="#475569" stroke-width="1" fill="none" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+  <text x="700" y="310" class="flow-label">interaction record</text>
+
+  <!-- ================================================================ -->
+  <!-- ATTACK PATHS (red dashed, numbered badges)                      -->
+  <!-- ================================================================ -->
+  
+  <!-- A1: PROMPT INJECTION (direct) -->
+  <path d="M 150,475 Q 200,440 250,350 Q 310,260 440,195" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-dasharray="8,4" marker-end="url(#atk-arrow)"/>
+  <circle cx="150" cy="475" r="11" fill="#dc2626"/>
+  <text x="150" y="479" text-anchor="middle" class="atk-id">1</text>
+  <text x="265" y="325" class="atk-label">A1: Prompt Injection</text>
+  <text x="265" y="337" class="atk-desc">Crafted input bypasses guardrails</text>
+  <text x="265" y="349" class="atk-desc">manipulates LLM behaviour</text>
+  
+  <!-- A2: INDIRECT INJECTION (via RAG) -->
+  <path d="M 110,570 Q 400,540 850,200" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-dasharray="8,4" marker-end="url(#atk-arrow)"/>
+  <circle cx="110" cy="570" r="11" fill="#dc2626"/>
+  <text x="110" y="574" text-anchor="middle" class="atk-id">2</text>
+  <!-- Arrow from D1 through RAG to LLM -->
+  <path d="M 850,175 L 710,195" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="6,3" marker-end="url(#atk-arrow)"/>
+  <path d="M 695,230 L 610,290" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="6,3" marker-end="url(#atk-arrow)"/>
+  <text x="575" y="160" class="atk-label">A2: Indirect Injection</text>
+  <text x="575" y="172" class="atk-desc">Poisoned data in knowledge base</text>
+  <text x="575" y="184" class="atk-desc">retrieved via RAG, injected into context</text>
+  
+  <!-- A3: DATA EXFILTRATION (outbound) -->
+  <path d="M 580,375 Q 350,430 170,280" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#atk-arrow)"/>
+  <circle cx="580" cy="380" r="11" fill="#dc2626"/>
+  <text x="580" y="384" text-anchor="middle" class="atk-id">3</text>
+  <text x="300" y="418" class="atk-label">A3: Data Exfiltration</text>
+  <text x="300" y="430" class="atk-desc">LLM leaks RAG data, system</text>
+  <text x="300" y="442" class="atk-desc">prompts, or other user data</text>
+  
+  <!-- A4: RAG POISONING (insider) -->
+  <path d="M 1020,640 Q 1020,200 945,175" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#atk-arrow)"/>
+  <circle cx="1020" cy="648" r="11" fill="#dc2626"/>
+  <text x="1020" y="652" text-anchor="middle" class="atk-id">4</text>
+  <text x="1035" y="460" class="atk-label">A4: RAG Poisoning</text>
+  <text x="1035" y="472" class="atk-desc">Insider or compromised</text>
+  <text x="1035" y="484" class="atk-desc">pipeline poisons D1/D2</text>
+  
+  <!-- A5: DOWNSTREAM EXPLOITATION -->
+  <path d="M 140,453 Q 500,200 1110,200" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#atk-arrow)"/>
+  <circle cx="140" cy="453" r="11" fill="#dc2626"/>
+  <text x="140" y="457" text-anchor="middle" class="atk-id">5</text>
+  <text x="1112" y="250" class="atk-label">A5: Downstream</text>
+  <text x="1112" y="262" class="atk-desc">Crafted input triggers</text>
+  <text x="1112" y="274" class="atk-desc">harmful product changes</text>
+
+  <!-- A6: JUDGE/GUARDRAIL BYPASS -->
+  <circle cx="505" cy="398" r="11" fill="#dc2626"/>
+  <text x="505" y="402" text-anchor="middle" class="atk-id">6</text>
+  <text x="524" y="395" class="atk-label">A6: Bypass</text>
+  <text x="524" y="407" class="atk-desc">Evades both guardrails AND judge</text>
+  
+  <!-- A7: SESSION/CONTEXT MANIPULATION -->
+  <path d="M 155,460 C 155,330 280,290 280,230" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <path d="M 280,262 C 280,290 155,330 155,460" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="4,3" marker-end="url(#atk-arrow)"/>
+  <circle cx="220" cy="300" r="11" fill="#dc2626"/>
+  <text x="220" y="304" text-anchor="middle" class="atk-id">7</text>
+  <text x="185" y="300" text-anchor="end" class="atk-label">A7: Multi-turn</text>
+  <text x="185" y="312" text-anchor="end" class="atk-desc">Gradual context shift</text>
+  <text x="185" y="324" text-anchor="end" class="atk-desc">across sessions</text>
+  
+  <!-- A8: INSIDER THREAT -->
+  <path d="M 860,655 Q 860,660 880,345" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#atk-arrow)"/>
+  <circle cx="860" cy="665" r="11" fill="#dc2626"/>
+  <text x="860" y="669" text-anchor="middle" class="atk-id">8</text>
+  <text x="808" y="680" class="atk-label">A8: Insider</text>
+  <text x="808" y="692" class="atk-desc">Support extracts</text>
+  <text x="808" y="704" class="atk-desc">customer PII from logs</text>
+  
+  <!-- A9: TELEMETRY TAMPERING -->
+  <circle cx="960" cy="322" r="11" fill="#dc2626"/>
+  <text x="960" y="326" text-anchor="middle" class="atk-id">9</text>
+  <text x="975" y="330" class="atk-label">A9: Log Tampering</text>
+  <text x="975" y="342" class="atk-desc">Erase evidence of attack</text>
+
+  <!-- ================================================================ -->
+  <!-- LEGEND                                                           -->
+  <!-- ================================================================ -->
+  <rect x="20" y="720" width="1470" height="320" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  
+  <!-- Col 1: Symbols -->
+  <text x="40" y="745" class="legend-head">SYMBOLS</text>
+  
+  <rect x="40" y="755" width="40" height="25" rx="5" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <circle cx="60" cy="768" r="6" fill="#c7d2fe" stroke="#4f46e5" stroke-width="1"/>
+  <text x="88" y="772" class="legend-text">Process (numbered)</text>
+  
+  <line x1="40" y1="795" x2="80" y2="795" stroke="#92400e" stroke-width="2"/>
+  <rect x="40" y="797" width="40" height="15" fill="#fef3c7" stroke="none"/>
+  <line x1="40" y1="812" x2="80" y2="812" stroke="#92400e" stroke-width="2"/>
+  <text x="88" y="808" class="legend-text">Data store</text>
+  
+  <rect x="40" y="822" width="40" height="20" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="88" y="837" class="legend-text">Actor (person / role)</text>
+  
+  <rect x="40" y="852" width="40" height="20" rx="6" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="88" y="867" class="legend-text">Trust boundary</text>
+  
+  <!-- Col 2: Flows -->
+  <line x1="240" y1="730" x2="240" y2="880" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="260" y="745" class="legend-head">DATA FLOWS</text>
+  
+  <line x1="260" y1="762" x2="310" y2="762" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="318" y="766" class="legend-text">Data flow (request direction)</text>
+  
+  <line x1="260" y1="785" x2="310" y2="785" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ret-arrow)"/>
+  <text x="318" y="789" class="legend-text">Return flow (response)</text>
+  
+  <line x1="260" y1="808" x2="310" y2="808" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="318" y="812" class="legend-text">Async / optional flow</text>
+  
+  <line x1="260" y1="831" x2="310" y2="831" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#atk-arrow)"/>
+  <text x="318" y="835" class="legend-text">Attack path</text>
+  
+  <circle cx="270" cy="855" r="9" fill="#dc2626"/>
+  <text x="270" y="859" text-anchor="middle" font-size="8" font-weight="bold" fill="#fff" font-family="Arial">N</text>
+  <text x="288" y="859" class="legend-text">Attack path number (A1–A9)</text>
+  
+  <!-- Col 3: Trust boundaries -->
+  <line x1="500" y1="730" x2="500" y2="880" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="520" y="745" class="legend-head">TRUST BOUNDARIES</text>
+  
+  <line x1="520" y1="760" x2="550" y2="760" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="558" y="764" class="legend-text">TB0: Internet — untrusted, all external traffic</text>
+  
+  <line x1="520" y1="780" x2="550" y2="780" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="558" y="784" class="legend-text">TB1: DMZ — perimeter controls, authentication</text>
+  
+  <line x1="520" y1="800" x2="550" y2="800" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="558" y="804" class="legend-text">TB2: AI Processing — guardrails, LLM, judge (the framework scope)</text>
+  
+  <line x1="520" y1="820" x2="550" y2="820" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="558" y="824" class="legend-text">TB3: Data Zone — knowledge base, vectors, logs, alerts</text>
+  
+  <line x1="520" y1="840" x2="550" y2="840" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="558" y="844" class="legend-text">TB4: Internal — SOC, support, model ops (privileged users)</text>
+  
+  <line x1="520" y1="860" x2="550" y2="860" stroke="#9333ea" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="558" y="864" class="legend-text">TB5: Downstream — systems that act on AI output</text>
+  
+  <!-- Col 4: Attack paths summary -->
+  <line x1="960" y1="730" x2="960" y2="880" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="980" y="745" class="legend-head">ATTACK PATHS</text>
+  
+  <text x="980" y="762" class="legend-text" fill="#dc2626" font-weight="bold">A1</text>
+  <text x="1000" y="762" class="legend-text">Direct prompt injection (TB0→TB2)</text>
+  
+  <text x="980" y="778" class="legend-text" fill="#dc2626" font-weight="bold">A2</text>
+  <text x="1000" y="778" class="legend-text">Indirect injection via RAG (TB3→TB2)</text>
+  
+  <text x="980" y="794" class="legend-text" fill="#dc2626" font-weight="bold">A3</text>
+  <text x="1000" y="794" class="legend-text">Data exfiltration via response (TB2→TB0)</text>
+  
+  <text x="980" y="810" class="legend-text" fill="#dc2626" font-weight="bold">A4</text>
+  <text x="1000" y="810" class="legend-text">RAG poisoning — insider/supply chain (TB4→TB3)</text>
+  
+  <text x="980" y="826" class="legend-text" fill="#dc2626" font-weight="bold">A5</text>
+  <text x="1000" y="826" class="legend-text">Downstream exploitation (TB0→TB5 via LLM)</text>
+  
+  <text x="980" y="842" class="legend-text" fill="#dc2626" font-weight="bold">A6</text>
+  <text x="1000" y="842" class="legend-text">Judge/guardrail bypass (within TB2)</text>
+  
+  <text x="980" y="858" class="legend-text" fill="#dc2626" font-weight="bold">A7</text>
+  <text x="1000" y="858" class="legend-text">Multi-turn context manipulation (TB0↔TB1)</text>
+  
+  <text x="980" y="874" class="legend-text" fill="#dc2626" font-weight="bold">A8</text>
+  <text x="1000" y="874" class="legend-text">Insider threat — support/ops (TB4→TB3)</text>
+  
+  <text x="980" y="890" class="legend-text" fill="#dc2626" font-weight="bold">A9</text>
+  <text x="1000" y="890" class="legend-text">Telemetry/log tampering (within TB3)</text>
+
+  <!-- Key insight box -->
+  <rect x="40" y="895" width="1430" height="40" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="60" y="915" class="legend-head" fill="#991b1b">KEY INSIGHT</text>
+  <text x="155" y="915" class="legend-text">Every trust boundary crossing is an attack surface. The AI Processing Zone (TB2) is unique: it processes untrusted input with a non-deterministic engine.</text>
+  <text x="155" y="929" class="legend-text">Traditional controls assume deterministic behavior. A1–A3 exploit the gap between what guardrails check and what the LLM actually does.</text>
+
+  <!-- Cross-reference to tube map -->
+  <rect x="40" y="943" width="1430" height="48" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="60" y="962" class="legend-head" fill="#166534">FRAMEWORK MAPPING</text>
+  <text x="200" y="962" class="legend-text">TB2 maps to the Runtime line (green) on the AI Security Reference Architecture tube map.</text>
+  <text x="200" y="976" class="legend-text">Controls: Input Guardrails → Output Guardrails → Judge → HITL. The three-layer pattern (guardrails prevent, judge detects, humans decide) addresses A1, A3, A6.</text>
+  <text x="200" y="990" class="legend-text">A2 (indirect injection) and A4 (RAG poisoning) require Data Zone controls — mapped to the Monitoring line (teal) and Verification line (cyan).</text>
+</svg>

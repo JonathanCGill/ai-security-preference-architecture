@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="454" viewBox="0 0 760 454" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e40af"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="760" height="454" fill="#ffffff"/>
+  <text x="380" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Agentic Code Assistant — Data Flow</text>
+  <text x="380" y="46" text-anchor="middle" font-size="12" fill="#64748b">High tier · Internal · Source code</text>
+  <rect x="229.0" y="50" width="303.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="64" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Agent Planning (decompose task into steps)</text>
+  <line x1="380" y1="72" x2="380" y2="76" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="183.0" y="76" width="394.0" height="22" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="380" y="90" text-anchor="middle" font-size="9.5" font-weight="500" fill="#991b1b">Tool Selection → Allowlist check → REJECT if not allowed</text>
+  <line x1="380" y1="98" x2="380" y2="102" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="180.0" y="102" width="400.5" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="116" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Parameter Validation (file path, command, network checks)</text>
+  <line x1="380" y1="124" x2="380" y2="128" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="281.0" y="128" width="199.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="142" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Tool Execution (sandboxed)</text>
+  <line x1="380" y1="150" x2="380" y2="154" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="187.0" y="154" width="387.5" height="22" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="380" y="168" text-anchor="middle" font-size="9.5" font-weight="500" fill="#991b1b">Output Capture + Secret Scan → BLOCK if secret detected</text>
+  <line x1="380" y1="176" x2="380" y2="180" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="154.0" y="180" width="452.5" height="22" rx="4" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+  <text x="380" y="194" text-anchor="middle" font-size="9.5" font-weight="500" fill="#854d0e">Step Counter Check → Mandatory human checkpoint if budget reached</text>
+  <line x1="380" y1="202" x2="380" y2="206" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="177.0" y="206" width="407.0" height="22" rx="4" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="380" y="220" text-anchor="middle" font-size="9.5" font-weight="500" fill="#7c3aed">Pre-Commit Gate (inline Judge) → BLOCK if critical finding</text>
+  <line x1="380" y1="228" x2="380" y2="232" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="183.0" y="232" width="394.0" height="22" rx="4" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="380" y="246" text-anchor="middle" font-size="9.5" font-weight="500" fill="#7c3aed">Pre-PR Gate (inline Judge) → BLOCK if scope exceeds task</text>
+  <line x1="380" y1="254" x2="380" y2="258" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="300.0" y="258" width="160.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="272" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Pull Request Created</text>
+  <line x1="380" y1="280" x2="380" y2="284" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="203.0" y="284" width="355.0" height="22" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="380" y="298" text-anchor="middle" font-size="9.5" font-weight="500" fill="#1e40af">Standard Code Review Process (existing human gate)</text>
+  <line x1="380" y1="306" x2="380" y2="310" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="193.0" y="310" width="374.5" height="22" rx="4" fill="#fff7ed" stroke="#fdba74" stroke-width="1"/>
+  <text x="380" y="324" text-anchor="middle" font-size="9.5" font-weight="500" fill="#b45309">Log full session (all tool calls, outputs, decisions)</text>
+  <line x1="380" y1="332" x2="380" y2="336" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="180.0" y="336" width="400.5" height="22" rx="4" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="380" y="350" text-anchor="middle" font-size="9.5" font-weight="500" fill="#7c3aed">40% sampled for trajectory-level Judge evaluation (async)</text>
+  <line x1="380" y1="358" x2="380" y2="362" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="229.0" y="362" width="303.0" height="22" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="380" y="376" text-anchor="middle" font-size="9.5" font-weight="500" fill="#1e40af">High → Security reviewer → IR if warranted</text>
+  <line x1="380" y1="384" x2="380" y2="388" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="261.0" y="388" width="238.0" height="22" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="380" y="402" text-anchor="middle" font-size="9.5" font-weight="500" fill="#334155">Medium → Queue for weekly review</text>
+</svg>

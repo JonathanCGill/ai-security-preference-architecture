@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="520" viewBox="0 0 850 520">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="850" height="520" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="425" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Judge Model Selection Principles</text>
+  <text x="425" y="50" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Different, conservative, fast — in that order of priority</text>
+  
+  <!-- Principle 1: Different Model -->
+  <rect x="30" y="70" width="250" height="200" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="30" y="70" width="250" height="35" rx="8" fill="#3b82f6"/>
+  <text x="155" y="93" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">1. Different Model</text>
+  
+  <text x="155" y="125" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Avoid shared blind spots</text>
+  
+  <!-- Primary vs Judge boxes -->
+  <rect x="50" y="145" width="90" height="45" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="95" y="165" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Primary AI</text>
+  <text x="95" y="180" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">(Task model)</text>
+  
+  <text x="155" y="168" font-family="Arial, sans-serif" font-size="20" fill="#ef4444" text-anchor="middle">≠</text>
+  
+  <rect x="170" y="145" width="90" height="45" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="215" y="165" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">Judge</text>
+  <text x="215" y="180" font-family="Arial, sans-serif" font-size="9" fill="#b45309" text-anchor="middle">(Evaluator)</text>
+  
+  <text x="155" y="210" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Same model = same failures</text>
+  <text x="155" y="225" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Same family = self-preference bias</text>
+  <text x="155" y="240" font-family="Arial, sans-serif" font-size="9" fill="#166534" font-weight="bold" text-anchor="middle">✓ Different provider preferred</text>
+  <text x="155" y="255" font-family="Arial, sans-serif" font-size="9" fill="#166534" font-weight="bold" text-anchor="middle">✓ Different architecture ideal</text>
+  
+  <!-- Principle 2: Conservative -->
+  <rect x="300" y="70" width="250" height="200" rx="8" fill="#ffffff" stroke="#22c55e" stroke-width="2"/>
+  <rect x="300" y="70" width="250" height="35" rx="8" fill="#22c55e"/>
+  <text x="425" y="93" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">2. Conservative Stance</text>
+  
+  <text x="425" y="125" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Err toward flagging, not passing</text>
+  
+  <!-- Spectrum bar -->
+  <rect x="320" y="145" width="210" height="25" rx="4" fill="#dcfce7"/>
+  <rect x="320" y="145" width="70" height="25" rx="4" fill="#22c55e"/>
+  <text x="355" y="162" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold" text-anchor="middle">FLAG</text>
+  <text x="460" y="162" font-family="Arial, sans-serif" font-size="10" fill="#166534" text-anchor="middle">PASS</text>
+  
+  <!-- Arrow pointing left -->
+  <text x="425" y="190" font-family="Arial, sans-serif" font-size="16" fill="#22c55e" text-anchor="middle">← Prefer this side</text>
+  
+  <text x="425" y="215" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">False positive → human reviews OK item</text>
+  <text x="425" y="230" font-family="Arial, sans-serif" font-size="9" fill="#ef4444" text-anchor="middle">False negative → bad item reaches user</text>
+  
+  <text x="425" y="255" font-family="Arial, sans-serif" font-size="9" fill="#166534" font-weight="bold" text-anchor="middle">Humans catch false positives.</text>
+  <text x="425" y="268" font-family="Arial, sans-serif" font-size="9" fill="#166534" font-weight="bold" text-anchor="middle">Nobody catches false negatives.</text>
+  
+  <!-- Principle 3: Fast Enough -->
+  <rect x="570" y="70" width="250" height="200" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="570" y="70" width="250" height="35" rx="8" fill="#f59e0b"/>
+  <text x="695" y="93" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">3. Fast Enough</text>
+  
+  <text x="695" y="125" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Don't create backlogs</text>
+  
+  <!-- Speed indicators -->
+  <rect x="590" y="140" width="190" height="28" rx="4" fill="#dcfce7"/>
+  <text x="610" y="159" font-family="Arial, sans-serif" font-size="9" fill="#166534">Guardrails:</text>
+  <text x="755" y="159" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534" text-anchor="end">&lt;100ms inline</text>
+  
+  <rect x="590" y="173" width="190" height="28" rx="4" fill="#fef3c7"/>
+  <text x="610" y="192" font-family="Arial, sans-serif" font-size="9" fill="#b45309">Judge Tier 1:</text>
+  <text x="755" y="192" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#b45309" text-anchor="end">1-5 sec async</text>
+  
+  <rect x="590" y="206" width="190" height="28" rx="4" fill="#fef9c3"/>
+  <text x="610" y="225" font-family="Arial, sans-serif" font-size="9" fill="#a16207">Judge Tier 2:</text>
+  <text x="755" y="225" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207" text-anchor="end">5-30 sec thorough</text>
+  
+  <text x="695" y="255" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Judge throughput ≥ transaction rate</text>
+  <text x="695" y="268" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(or sampling reduces volume)</text>
+  
+  <!-- Model Selection Matrix -->
+  <rect x="30" y="290" width="790" height="210" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="425" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Model Selection Trade-offs</text>
+  
+  <!-- Table header -->
+  <line x1="50" y1="330" x2="800" y2="330" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="50" y="335" width="150" height="30" fill="#f1f5f9"/>
+  <rect x="200" y="335" width="150" height="30" fill="#f1f5f9"/>
+  <rect x="350" y="335" width="150" height="30" fill="#f1f5f9"/>
+  <rect x="500" y="335" width="150" height="30" fill="#f1f5f9"/>
+  <rect x="650" y="335" width="150" height="30" fill="#f1f5f9"/>
+  
+  <text x="125" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Factor</text>
+  <text x="275" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Small/Fast Model</text>
+  <text x="425" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Large/Capable Model</text>
+  <text x="575" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Ensemble (Jury)</text>
+  <text x="725" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Recommendation</text>
+  
+  <!-- Row 1: Speed -->
+  <line x1="50" y1="365" x2="800" y2="365" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="125" y="385" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Speed</text>
+  <text x="275" y="385" font-family="Arial, sans-serif" font-size="10" fill="#22c55e" text-anchor="middle">✓ Fastest</text>
+  <text x="425" y="385" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">✗ Slowest</text>
+  <text x="575" y="385" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">✗ Slowest (multiple)</text>
+  <text x="725" y="385" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Small for Tier 1</text>
+  
+  <!-- Row 2: Nuance -->
+  <line x1="50" y1="400" x2="800" y2="400" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="125" y="420" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Nuance</text>
+  <text x="275" y="420" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">✗ Limited</text>
+  <text x="425" y="420" font-family="Arial, sans-serif" font-size="10" fill="#22c55e" text-anchor="middle">✓ Best</text>
+  <text x="575" y="420" font-family="Arial, sans-serif" font-size="10" fill="#22c55e" text-anchor="middle">✓ Diverse perspectives</text>
+  <text x="725" y="420" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Large for Tier 2</text>
+  
+  <!-- Row 3: Cost -->
+  <line x1="50" y1="435" x2="800" y2="435" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="125" y="455" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Cost</text>
+  <text x="275" y="455" font-family="Arial, sans-serif" font-size="10" fill="#22c55e" text-anchor="middle">✓ Cheapest</text>
+  <text x="425" y="455" font-family="Arial, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">○ Expensive</text>
+  <text x="575" y="455" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">✗ Most expensive</text>
+  <text x="725" y="455" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Sample to control</text>
+  
+  <!-- Row 4: Best for -->
+  <line x1="50" y1="470" x2="800" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="125" y="490" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Best for</text>
+  <text x="275" y="490" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">High volume, clear criteria</text>
+  <text x="425" y="490" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Complex, nuanced eval</text>
+  <text x="575" y="490" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">HIGH/CRITICAL tier</text>
+  <text x="725" y="490" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Match tier to approach</text>
+</svg>

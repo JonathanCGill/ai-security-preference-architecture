@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  
+  <rect width="900" height="650" fill="#f8fafc"/>
+  
+  <text x="450" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">AI Governance Operating Model — ISO 42001 Aligned</text>
+  
+  <!-- Three Lines Header -->
+  <text x="150" y="55" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">3RD LINE</text>
+  <text x="450" y="55" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">2ND LINE</text>
+  <text x="750" y="55" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">1ST LINE</text>
+  
+  <!-- Board/ExCo -->
+  <rect x="300" y="70" width="300" height="50" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Board / Executive Committee</text>
+  
+  <!-- Three columns -->
+  <!-- 3rd Line - Internal Audit -->
+  <rect x="30" y="140" width="220" height="480" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="140" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">Internal Audit</text>
+  
+  <rect x="50" y="185" width="180" height="60" rx="4" fill="#fefce8" stroke="#fcd34d" stroke-width="1"/>
+  <text x="140" y="210" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">AIMS Audit</text>
+  <text x="140" y="225" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">Annual full scope</text>
+  
+  <rect x="50" y="260" width="180" height="60" rx="4" fill="#fefce8" stroke="#fcd34d" stroke-width="1"/>
+  <text x="140" y="285" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Control Testing</text>
+  <text x="140" y="300" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">Technical control effectiveness</text>
+  
+  <rect x="50" y="335" width="180" height="60" rx="4" fill="#fefce8" stroke="#fcd34d" stroke-width="1"/>
+  <text x="140" y="360" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">CRITICAL Reviews</text>
+  <text x="140" y="375" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">Deep dive per system</text>
+  
+  <rect x="50" y="420" width="180" height="180" rx="4" fill="#fefce8" stroke="#fcd34d" stroke-width="1"/>
+  <text x="140" y="445" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Reports To</text>
+  <text x="140" y="470" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Board Audit Committee</text>
+  <text x="140" y="490" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Regulators (as required)</text>
+  <text x="140" y="520" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Independence</text>
+  <text x="140" y="545" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Separate from 1st/2nd line</text>
+  <text x="140" y="565" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Objective assurance</text>
+  <text x="140" y="585" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Validates AIMS effectiveness</text>
+  
+  <!-- 2nd Line - AI Governance Function -->
+  <rect x="270" y="140" width="360" height="480" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="450" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">AI Governance Function (Centralised)</text>
+  
+  <!-- AI Governance Committee -->
+  <rect x="290" y="185" width="320" height="55" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="450" y="207" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">AI Governance Committee</text>
+  <text x="450" y="225" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">Approves CRITICAL • Reviews risk posture • Quarterly</text>
+  
+  <!-- Core Functions -->
+  <rect x="290" y="255" width="155" height="80" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="367" y="275" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Policy &amp; Standards</text>
+  <text x="367" y="295" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• AI Policy</text>
+  <text x="367" y="310" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Control standards</text>
+  <text x="367" y="325" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Risk methodology</text>
+  
+  <rect x="455" y="255" width="155" height="80" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="532" y="275" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Risk &amp; Ethics</text>
+  <text x="532" y="295" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Risk assessments</text>
+  <text x="532" y="310" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Ethics review</text>
+  <text x="532" y="325" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Bias monitoring</text>
+  
+  <rect x="290" y="345" width="155" height="80" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="367" y="365" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Oversight</text>
+  <text x="367" y="385" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Portfolio monitoring</text>
+  <text x="367" y="400" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Judge governance</text>
+  <text x="367" y="415" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• HITL oversight</text>
+  
+  <rect x="455" y="345" width="155" height="80" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="532" y="365" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Reporting</text>
+  <text x="532" y="385" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Metrics dashboard</text>
+  <text x="532" y="400" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Committee reporting</text>
+  <text x="532" y="415" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">• Regulatory reporting</text>
+  
+  <!-- Platform Governance -->
+  <rect x="290" y="440" width="320" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="450" y="462" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">Platform Governance</text>
+  <text x="450" y="482" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Guardrail standards • Judge criteria • HITL requirements</text>
+  <text x="450" y="497" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Bedrock | Databricks | Foundry configuration</text>
+  
+  <!-- Aggregated Assurance -->
+  <rect x="290" y="520" width="320" height="85" rx="4" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="450" y="545" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">Aggregated Assurance</text>
+  <text x="370" y="570" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Judge findings</text>
+  <text x="450" y="570" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">→</text>
+  <text x="530" y="570" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Central analysis</text>
+  <text x="370" y="590" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">HITL findings</text>
+  <text x="450" y="590" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">→</text>
+  <text x="530" y="590" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">Trend reporting</text>
+  
+  <!-- 1st Line - Business Units -->
+  <rect x="650" y="140" width="220" height="480" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="760" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">Business Units (Federated)</text>
+  
+  <rect x="670" y="185" width="180" height="70" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="760" y="210" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">AI System Owners</text>
+  <text x="760" y="230" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Accountable for AI systems</text>
+  <text x="760" y="245" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Execute risk assessments</text>
+  
+  <rect x="670" y="265" width="180" height="70" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="760" y="290" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Engineering Teams</text>
+  <text x="760" y="310" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Build AI systems</text>
+  <text x="760" y="325" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Implement controls</text>
+  
+  <rect x="670" y="345" width="180" height="70" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="760" y="370" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Operations Teams</text>
+  <text x="760" y="390" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Run AI systems</text>
+  <text x="760" y="405" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Operate HITL processes</text>
+  
+  <rect x="670" y="425" width="180" height="90" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="760" y="450" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">Platform Usage</text>
+  <text x="760" y="475" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• Deploy guardrails</text>
+  <text x="760" y="490" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• Enable Judge</text>
+  <text x="760" y="505" font-family="Arial, sans-serif" font-size="9" fill="#166534" text-anchor="middle">• Staff HITL queues</text>
+  
+  <rect x="670" y="525" width="180" height="80" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="760" y="550" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Reports To 2nd Line</text>
+  <text x="760" y="575" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">• Metrics</text>
+  <text x="760" y="590" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">• Incidents</text>
+  
+  <!-- Arrows -->
+  <!-- Board to Governance -->
+  <line x1="450" y1="120" x2="450" y2="140" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- 2nd line to 1st line -->
+  <line x1="630" y1="300" x2="665" y2="300" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <text x="647" y="295" font-family="Arial, sans-serif" font-size="8" fill="#3b82f6">policy</text>
+  
+  <!-- 1st line to 2nd line -->
+  <line x1="665" y1="400" x2="630" y2="400" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="647" y="415" font-family="Arial, sans-serif" font-size="8" fill="#64748b">data</text>
+  
+  <!-- 3rd line arrows -->
+  <line x1="250" y1="300" x2="285" y2="300" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="267" y="295" font-family="Arial, sans-serif" font-size="8" fill="#b45309">audit</text>
+  
+  <!-- Key message -->
+  <rect x="250" y="625" width="400" height="20" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="450" y="639" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle" font-weight="bold">Centralised policy • Federated execution • Unified assurance</text>
+</svg>

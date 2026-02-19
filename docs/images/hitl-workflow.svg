@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="450" viewBox="0 0 850 450">
+  <defs>
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+    <linearGradient id="evalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="humanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="proceedGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="850" height="450" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="425" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Human-in-the-Loop (HITL) Workflow</text>
+  <text x="425" y="55" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Risk-Stratified Human Oversight</text>
+  
+  <!-- Input -->
+  <g>
+    <rect x="50" y="100" width="100" height="60" rx="8" fill="url(#inputGrad)"/>
+    <text x="100" y="135" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">AI Request</text>
+  </g>
+  
+  <!-- Arrow to Judge -->
+  <path d="M150 130 L190 130" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Judge Evaluation -->
+  <g>
+    <rect x="200" y="85" width="140" height="90" rx="8" fill="url(#evalGrad)"/>
+    <text x="270" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Judge</text>
+    <text x="270" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Evaluation</text>
+    <text x="270" y="155" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle">Confidence Score</text>
+  </g>
+  
+  <!-- Decision Diamond -->
+  <g>
+    <polygon points="420,130 480,80 540,130 480,180" fill="white" stroke="#94a3b8" stroke-width="2"/>
+    <text x="480" y="125" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Confidence</text>
+    <text x="480" y="140" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Level?</text>
+  </g>
+  
+  <!-- Arrow from Judge to Diamond -->
+  <path d="M340 130 L410 130" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- High Confidence - Direct Proceed -->
+  <path d="M540 105 L600 105 L600 200" stroke="#22c55e" stroke-width="2" fill="none"/>
+  <text x="570" y="95" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">HIGH</text>
+  <text x="570" y="107" font-family="Arial, sans-serif" font-size="9" fill="#22c55e">>90%</text>
+  
+  <!-- Medium Confidence - Sample Review -->
+  <path d="M480 180 L480 230" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  <text x="510" y="205" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">MEDIUM</text>
+  <text x="510" y="217" font-family="Arial, sans-serif" font-size="9" fill="#f59e0b">70-90%</text>
+  
+  <!-- Low Confidence - Mandatory Review -->
+  <path d="M420 155 L350 155 L350 250" stroke="#ef4444" stroke-width="2" fill="none"/>
+  <text x="385" y="175" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">LOW</text>
+  <text x="385" y="187" font-family="Arial, sans-serif" font-size="9" fill="#ef4444">&lt;70%</text>
+  
+  <!-- Sample Review Box -->
+  <g>
+    <rect x="410" y="240" width="140" height="70" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="480" y="268" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">Sample Review</text>
+    <text x="480" y="285" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">Statistical sampling</text>
+    <text x="480" y="298" font-family="Arial, sans-serif" font-size="9" fill="#a16207" text-anchor="middle">1-5% reviewed</text>
+  </g>
+  
+  <!-- Mandatory Review Box -->
+  <g>
+    <rect x="280" y="240" width="120" height="70" rx="8" fill="url(#humanGrad)"/>
+    <text x="340" y="268" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Human</text>
+    <text x="340" y="283" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Review</text>
+    <text x="340" y="300" font-family="Arial, sans-serif" font-size="9" fill="#d1fae5" text-anchor="middle">100% reviewed</text>
+  </g>
+  
+  <!-- Review Decision -->
+  <g>
+    <polygon points="340,350 390,320 440,350 390,380" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="390" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">Decision</text>
+  </g>
+  
+  <!-- Arrows to Review Decision -->
+  <path d="M340 310 L340 340" stroke="#10b981" stroke-width="2" fill="none"/>
+  <path d="M480 310 L480 350 L440 350" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  
+  <!-- Approve path -->
+  <path d="M440 350 L520 350 L520 200 L560 200" stroke="#22c55e" stroke-width="2" fill="none"/>
+  <text x="470" y="340" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">Approve</text>
+  
+  <!-- Reject path -->
+  <path d="M390 380 L390 410 L680 410" stroke="#ef4444" stroke-width="2" fill="none"/>
+  <text x="420" y="400" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">Reject</text>
+  
+  <!-- Proceed Box -->
+  <g>
+    <rect x="570" y="170" width="110" height="60" rx="8" fill="url(#proceedGrad)"/>
+    <text x="625" y="200" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">PROCEED</text>
+    <text x="625" y="218" font-family="Arial, sans-serif" font-size="10" fill="#dcfce7" text-anchor="middle">Execute AI</text>
+  </g>
+  
+  <!-- Block Box -->
+  <g>
+    <rect x="690" y="380" width="110" height="60" rx="8" fill="url(#blockGrad)"/>
+    <text x="745" y="410" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">BLOCKED</text>
+    <text x="745" y="428" font-family="Arial, sans-serif" font-size="10" fill="#fecaca" text-anchor="middle">Safe Response</text>
+  </g>
+  
+  <!-- Arrow to Output -->
+  <path d="M680 200 L740 200" stroke="#22c55e" stroke-width="2" fill="none"/>
+  
+  <!-- Output -->
+  <g>
+    <rect x="750" y="170" width="80" height="60" rx="8" fill="url(#inputGrad)"/>
+    <text x="790" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Output</text>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="50" y="350" width="200" height="85" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="150" y="372" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">HITL Thresholds by Risk</text>
+  <text x="70" y="392" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Critical:</text>
+  <text x="130" y="392" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">100% review</text>
+  <text x="70" y="407" font-family="Arial, sans-serif" font-size="9" fill="#64748b">High:</text>
+  <text x="130" y="407" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#f59e0b">5-15% review</text>
+  <text x="70" y="422" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Medium:</text>
+  <text x="130" y="422" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#3b82f6">1-5% sample</text>
+</svg>

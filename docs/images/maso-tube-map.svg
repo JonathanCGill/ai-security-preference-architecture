@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1020" viewBox="0 0 1600 1020" font-family="'Gill Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c9ff" stop-opacity="0"/>
+      <stop offset="10%" stop-color="#00c9ff" stop-opacity="0.15"/>
+      <stop offset="90%" stop-color="#00c9ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00c9ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="1020" fill="url(#bg)"/>
+  <rect x="0" y="85" width="483" height="850" fill="#0d1225" opacity="0.5" rx="0"/>
+  <rect x="483" y="85" width="587" height="850" fill="#0f1530" opacity="0.3" rx="0"/>
+  <rect x="1070" y="85" width="530" height="850" fill="#0d1225" opacity="0.5" rx="0"/>
+  <line x1="483" y1="90" x2="483" y2="935" stroke="#1a2040" stroke-width="1.5" stroke-dasharray="8,6"/>
+  <line x1="1070" y1="90" x2="1070" y2="935" stroke="#1a2040" stroke-width="1.5" stroke-dasharray="8,6"/>
+  <text x="250" y="105" text-anchor="middle" fill="#6a7a8a" font-size="10" letter-spacing="2" font-weight="600">TIER 1 · SUPERVISED</text>
+  <text x="776" y="105" text-anchor="middle" fill="#6a7a8a" font-size="10" letter-spacing="2" font-weight="600">TIER 2 · MANAGED</text>
+  <text x="1300" y="105" text-anchor="middle" fill="#6a7a8a" font-size="10" letter-spacing="2" font-weight="600">TIER 3 · AUTONOMOUS</text>
+  <circle cx="58" cy="42" r="26" fill="none" stroke="#E32017" stroke-width="8"/>
+  <rect x="28" y="34" width="60" height="16" fill="#003688" rx="2"/>
+  <text x="58" y="47" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" letter-spacing="2">MASO</text>
+  <text x="800" y="36" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" letter-spacing="1.5">MULTI-AGENT SECURITY OPERATIONS</text>
+  <text x="800" y="56" text-anchor="middle" fill="#ff6b35" font-size="9" letter-spacing="1">CONTROL MAP · 6 DOMAINS · 93 CONTROLS · 3 IMPLEMENTATION TIERS</text>
+  <path d="M 40,470 C 200,450 400,490 600,470 S 1000,450 1200,470 S 1450,485 1560,470" fill="none" stroke="url(#river)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 40,470 C 200,450 400,490 600,470 S 1000,450 1200,470 S 1450,485 1560,470" fill="none" stroke="#00c9ff" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4,8"/>
+  <circle cx="250" cy="470" r="14" fill="#0a0e1a" stroke="#00c9ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="250" y="474" text-anchor="middle" fill="#00c9ff" font-size="11" font-weight="700" opacity="0.7">P</text>
+  <text x="250" y="496" text-anchor="middle" fill="#00c9ff" font-size="6" opacity="0.4" letter-spacing="0.5">PRIMARY</text>
+  <circle cx="650" cy="470" r="14" fill="#0a0e1a" stroke="#00c9ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="650" y="474" text-anchor="middle" fill="#00c9ff" font-size="11" font-weight="700" opacity="0.7">A</text>
+  <text x="650" y="496" text-anchor="middle" fill="#00c9ff" font-size="6" opacity="0.4" letter-spacing="0.5">ALTERNATE</text>
+  <circle cx="1060" cy="470" r="14" fill="#0a0e1a" stroke="#00c9ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="1060" y="474" text-anchor="middle" fill="#00c9ff" font-size="11" font-weight="700" opacity="0.7">C</text>
+  <text x="1060" y="496" text-anchor="middle" fill="#00c9ff" font-size="6" opacity="0.4" letter-spacing="0.5">CONTINGENCY</text>
+  <circle cx="1400" cy="470" r="14" fill="#0a0e1a" stroke="#00c9ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="1400" y="474" text-anchor="middle" fill="#00c9ff" font-size="11" font-weight="700" opacity="0.7">E</text>
+  <text x="1400" y="496" text-anchor="middle" fill="#00c9ff" font-size="6" opacity="0.4" letter-spacing="0.5">EMERGENCY</text>
+  <text x="1540" y="474" text-anchor="end" fill="#00c9ff" font-size="7" opacity="0.35" font-style="italic">River PACE</text>
+  <line x1="80" y1="155" x2="1520" y2="155" stroke="#E32017" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="80" y1="275" x2="1520" y2="275" stroke="#4488FF" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="80" y1="395" x2="1520" y2="395" stroke="#00B551" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="80" y1="545" x2="1520" y2="545" stroke="#EE7C0E" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="80" y1="680" x2="1520" y2="680" stroke="#CC3388" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="80" y1="810" x2="1520" y2="810" stroke="#FFD300" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="845" y1="155" x2="845" y2="545" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)" opacity="0.6"/>
+  <text x="859" y="346" text-anchor="start" fill="#fff" font-size="7" font-weight="600" opacity="0.7">JUDGE GATE</text>
+  <rect x="841" y="342" width="8" height="8" fill="#fff" opacity="0.5" transform="rotate(45,845,346)"/>
+  <line x1="990" y1="545" x2="990" y2="680" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)" opacity="0.6"/>
+  <text x="1004" y="608" text-anchor="start" fill="#fff" font-size="7" font-weight="600" opacity="0.7">PACE BRIDGE</text>
+  <rect x="986" y="604" width="8" height="8" fill="#fff" opacity="0.5" transform="rotate(45,990,608)"/>
+  <line x1="555" y1="275" x2="555" y2="810" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)" opacity="0.6"/>
+  <text x="541" y="538" text-anchor="end" fill="#fff" font-size="7" font-weight="600" opacity="0.7">AGENT REGISTRY</text>
+  <rect x="551" y="534" width="8" height="8" fill="#fff" opacity="0.5" transform="rotate(45,555,538)"/>
+  <circle cx="130" cy="155" r="6" fill="#fff" stroke="#E32017" stroke-width="2.5"/>
+  <text x="130" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Input Guards</text>
+  <circle cx="270" cy="155" r="4.5" fill="#fff" stroke="#E32017" stroke-width="2"/>
+  <text x="270" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Prompt Isolate</text>
+  <circle cx="410" cy="155" r="4.5" fill="#fff" stroke="#E32017" stroke-width="2"/>
+  <text x="410" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Source Tags</text>
+  <circle cx="555" cy="155" r="4.5" fill="#fff" stroke="#E32017" stroke-width="2"/>
+  <text x="555" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Inject Detect</text>
+  <circle cx="700" cy="155" r="4.5" fill="#fff" stroke="#E32017" stroke-width="2"/>
+  <text x="700" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Goal Monitor</text>
+  <circle cx="845" cy="155" r="7" fill="#fff" stroke="#E32017" stroke-width="2.5"/>
+  <circle cx="845" cy="155" r="3" fill="#E32017"/>
+  <text x="845" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Consensus Gate</text>
+  <circle cx="990" cy="155" r="4.5" fill="#fff" stroke="#E32017" stroke-width="2"/>
+  <text x="990" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Provenance</text>
+  <circle cx="1150" cy="155" r="4.5" fill="#fff" stroke="#E32017" stroke-width="2"/>
+  <text x="1150" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Canary Agent</text>
+  <circle cx="1310" cy="155" r="4.5" fill="#fff" stroke="#E32017" stroke-width="2"/>
+  <text x="1310" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Hash Chain</text>
+  <circle cx="1470" cy="155" r="6" fill="#fff" stroke="#E32017" stroke-width="2.5"/>
+  <text x="1470" y="143" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Challenger</text>
+  <circle cx="130" cy="275" r="6" fill="#fff" stroke="#4488FF" stroke-width="2.5"/>
+  <text x="130" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Agent IDs</text>
+  <circle cx="270" cy="275" r="4.5" fill="#fff" stroke="#4488FF" stroke-width="2"/>
+  <text x="270" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">No Share Creds</text>
+  <circle cx="410" cy="275" r="4.5" fill="#fff" stroke="#4488FF" stroke-width="2"/>
+  <text x="410" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Scoped Perms</text>
+  <circle cx="555" cy="275" r="7" fill="#fff" stroke="#4488FF" stroke-width="2.5"/>
+  <circle cx="555" cy="275" r="3" fill="#4488FF"/>
+  <text x="555" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">NHI / Agent</text>
+  <circle cx="700" cy="275" r="4.5" fill="#fff" stroke="#4488FF" stroke-width="2"/>
+  <text x="700" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Mutual Auth</text>
+  <circle cx="845" cy="275" r="4.5" fill="#fff" stroke="#4488FF" stroke-width="2"/>
+  <text x="845" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Secrets Vault</text>
+  <circle cx="990" cy="275" r="4.5" fill="#fff" stroke="#4488FF" stroke-width="2"/>
+  <text x="990" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Priv Separate</text>
+  <circle cx="1150" cy="275" r="4.5" fill="#fff" stroke="#4488FF" stroke-width="2"/>
+  <text x="1150" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Fast Rotation</text>
+  <circle cx="1310" cy="275" r="4.5" fill="#fff" stroke="#4488FF" stroke-width="2"/>
+  <text x="1310" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Behav Binding</text>
+  <circle cx="1470" cy="275" r="6" fill="#fff" stroke="#4488FF" stroke-width="2.5"/>
+  <text x="1470" y="293" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Auto Revoke</text>
+  <circle cx="130" cy="395" r="6" fill="#fff" stroke="#00B551" stroke-width="2.5"/>
+  <text x="130" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Classify Data</text>
+  <circle cx="270" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="270" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Separation</text>
+  <circle cx="410" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="410" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">RAG Inventory</text>
+  <circle cx="555" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="555" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">DLP on Bus</text>
+  <circle cx="700" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="700" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">RAG Integrity</text>
+  <circle cx="845" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="845" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Memory Isolate</text>
+  <circle cx="990" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="990" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Data Fence</text>
+  <circle cx="1150" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="1150" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Realtime RAG</text>
+  <circle cx="1310" cy="395" r="4.5" fill="#fff" stroke="#00B551" stroke-width="2"/>
+  <text x="1310" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Memory Decay</text>
+  <circle cx="1470" cy="395" r="6" fill="#fff" stroke="#00B551" stroke-width="2.5"/>
+  <text x="1470" y="383" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Provenance</text>
+  <circle cx="130" cy="545" r="6" fill="#fff" stroke="#EE7C0E" stroke-width="2.5"/>
+  <text x="130" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Human Gate</text>
+  <circle cx="270" cy="545" r="4.5" fill="#fff" stroke="#EE7C0E" stroke-width="2"/>
+  <text x="270" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Tool Allow</text>
+  <circle cx="410" cy="545" r="4.5" fill="#fff" stroke="#EE7C0E" stroke-width="2"/>
+  <text x="410" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Rate Limits</text>
+  <circle cx="555" cy="545" r="4.5" fill="#fff" stroke="#EE7C0E" stroke-width="2"/>
+  <text x="555" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Action Engine</text>
+  <circle cx="700" cy="545" r="4.5" fill="#fff" stroke="#EE7C0E" stroke-width="2"/>
+  <text x="700" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Sandbox</text>
+  <circle cx="845" cy="545" r="7" fill="#fff" stroke="#EE7C0E" stroke-width="2.5"/>
+  <circle cx="845" cy="545" r="3" fill="#EE7C0E"/>
+  <text x="845" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Judge Gate</text>
+  <circle cx="990" cy="545" r="7" fill="#fff" stroke="#EE7C0E" stroke-width="2.5"/>
+  <circle cx="990" cy="545" r="3" fill="#EE7C0E"/>
+  <text x="990" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Breakers</text>
+  <circle cx="1150" cy="545" r="4.5" fill="#fff" stroke="#EE7C0E" stroke-width="2"/>
+  <text x="1150" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Blast Radius</text>
+  <circle cx="1310" cy="545" r="4.5" fill="#fff" stroke="#EE7C0E" stroke-width="2"/>
+  <text x="1310" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Self-Healing</text>
+  <circle cx="1470" cy="545" r="6" fill="#fff" stroke="#EE7C0E" stroke-width="2.5"/>
+  <text x="1470" y="563" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Multi-Model</text>
+  <circle cx="130" cy="680" r="6" fill="#fff" stroke="#CC3388" stroke-width="2.5"/>
+  <text x="130" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Audit Log</text>
+  <circle cx="270" cy="680" r="4.5" fill="#fff" stroke="#CC3388" stroke-width="2"/>
+  <text x="270" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Message Log</text>
+  <circle cx="410" cy="680" r="4.5" fill="#fff" stroke="#CC3388" stroke-width="2"/>
+  <text x="410" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Manual Review</text>
+  <circle cx="555" cy="680" r="4.5" fill="#fff" stroke="#CC3388" stroke-width="2"/>
+  <text x="555" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Decision Chain</text>
+  <circle cx="700" cy="680" r="4.5" fill="#fff" stroke="#CC3388" stroke-width="2"/>
+  <text x="700" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Anomaly Score</text>
+  <circle cx="845" cy="680" r="4.5" fill="#fff" stroke="#CC3388" stroke-width="2"/>
+  <text x="845" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Drift Detect</text>
+  <circle cx="990" cy="680" r="7" fill="#fff" stroke="#CC3388" stroke-width="2.5"/>
+  <circle cx="990" cy="680" r="3" fill="#CC3388"/>
+  <text x="990" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">PACE Trigger</text>
+  <circle cx="1150" cy="680" r="4.5" fill="#fff" stroke="#CC3388" stroke-width="2"/>
+  <text x="1150" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Long Window</text>
+  <circle cx="1310" cy="680" r="4.5" fill="#fff" stroke="#CC3388" stroke-width="2"/>
+  <text x="1310" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Obs Agent</text>
+  <circle cx="1470" cy="680" r="6" fill="#fff" stroke="#CC3388" stroke-width="2.5"/>
+  <text x="1470" y="668" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Decision Trace</text>
+  <circle cx="130" cy="810" r="6" fill="#fff" stroke="#FFD300" stroke-width="2.5"/>
+  <text x="130" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Model Registry</text>
+  <circle cx="270" cy="810" r="4.5" fill="#fff" stroke="#FFD300" stroke-width="2"/>
+  <text x="270" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Tool Registry</text>
+  <circle cx="410" cy="810" r="4.5" fill="#fff" stroke="#FFD300" stroke-width="2"/>
+  <text x="410" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Fixed Tools</text>
+  <circle cx="555" cy="810" r="7" fill="#fff" stroke="#FFD300" stroke-width="2.5"/>
+  <circle cx="555" cy="810" r="3" fill="#FFD300"/>
+  <text x="555" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">AIBOM</text>
+  <circle cx="700" cy="810" r="4.5" fill="#fff" stroke="#FFD300" stroke-width="2"/>
+  <text x="700" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Signed Manifest</text>
+  <circle cx="845" cy="810" r="4.5" fill="#fff" stroke="#FFD300" stroke-width="2"/>
+  <text x="845" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">MCP Vetting</text>
+  <circle cx="990" cy="810" r="4.5" fill="#fff" stroke="#FFD300" stroke-width="2"/>
+  <text x="990" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Runtime Check</text>
+  <circle cx="1150" cy="810" r="4.5" fill="#fff" stroke="#FFD300" stroke-width="2"/>
+  <text x="1150" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Version Pin</text>
+  <circle cx="1310" cy="810" r="4.5" fill="#fff" stroke="#FFD300" stroke-width="2"/>
+  <text x="1310" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">Auto Rollback</text>
+  <circle cx="1470" cy="810" r="6" fill="#fff" stroke="#FFD300" stroke-width="2.5"/>
+  <text x="1470" y="828" text-anchor="middle" fill="#c0c8d8" font-size="7" font-weight="400">A2A Trust</text>
+  <rect x="30" y="885" width="1540" height="100" rx="6" fill="#0d1225" opacity="0.7"/>
+  <text x="60" y="905" fill="#fff" font-size="10" font-weight="700" letter-spacing="1">LINES</text>
+  <line x1="60" y1="925" x2="90" y2="925" stroke="#E32017" stroke-width="5" stroke-linecap="round"/>
+  <text x="100" y="929" fill="#c0c8d8" font-size="8.5">Prompt, Goal &amp; Epistemic Integrity</text>
+  <line x1="310" y1="925" x2="340" y2="925" stroke="#4488FF" stroke-width="5" stroke-linecap="round"/>
+  <text x="350" y="929" fill="#c0c8d8" font-size="8.5">Identity &amp; Access</text>
+  <line x1="560" y1="925" x2="590" y2="925" stroke="#00B551" stroke-width="5" stroke-linecap="round"/>
+  <text x="600" y="929" fill="#c0c8d8" font-size="8.5">Data Protection</text>
+  <line x1="60" y1="947" x2="90" y2="947" stroke="#EE7C0E" stroke-width="5" stroke-linecap="round"/>
+  <text x="100" y="951" fill="#c0c8d8" font-size="8.5">Execution Control</text>
+  <line x1="310" y1="947" x2="340" y2="947" stroke="#CC3388" stroke-width="5" stroke-linecap="round"/>
+  <text x="350" y="951" fill="#c0c8d8" font-size="8.5">Observability</text>
+  <line x1="560" y1="947" x2="590" y2="947" stroke="#FFD300" stroke-width="5" stroke-linecap="round"/>
+  <text x="600" y="951" fill="#c0c8d8" font-size="8.5">Supply Chain</text>
+  <text x="830" y="905" fill="#fff" font-size="10" font-weight="700" letter-spacing="1">SYMBOLS</text>
+  <circle cx="840" cy="927" r="4.5" fill="#fff" stroke="#6a7a8a" stroke-width="2"/>
+  <text x="855" y="931" fill="#c0c8d8" font-size="8">Control station</text>
+  <circle cx="840" cy="947" r="6" fill="#fff" stroke="#6a7a8a" stroke-width="2.5"/>
+  <circle cx="840" cy="947" r="2.5" fill="#6a7a8a"/>
+  <text x="855" y="951" fill="#c0c8d8" font-size="8">Cross-domain interchange</text>
+  <circle cx="840" cy="967" r="5.5" fill="#fff" stroke="#6a7a8a" stroke-width="2.5"/>
+  <text x="855" y="971" fill="#c0c8d8" font-size="8">Domain terminus</text>
+  <line x1="1000" y1="927" x2="1030" y2="927" stroke="#00c9ff" stroke-width="3" stroke-opacity="0.5"/>
+  <text x="1040" y="931" fill="#c0c8d8" font-size="8">PACE resilience methodology</text>
+  <line x1="1000" y1="942" x2="1000" y2="956" stroke="#1a2040" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1040" y="951" fill="#c0c8d8" font-size="8">Tier boundary</text>
+  <line x1="1015" y1="962" x2="1015" y2="976" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <circle cx="1015" cy="962" r="3" fill="#fff" opacity="0.6"/>
+  <circle cx="1015" cy="976" r="3" fill="#fff" opacity="0.6"/>
+  <text x="1040" y="973" fill="#c0c8d8" font-size="8">Shared control point</text>
+  <text x="800" y="1010" text-anchor="middle" fill="#6a7a8a" font-size="7">Major control stations shown · Full specifications in control domain documents · Part of the AI Runtime Behaviour Security</text>
+  <rect x="1525" y="147" width="22" height="16" rx="3" fill="#E32017"/>
+  <text x="1536" y="159" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">PG</text>
+  <rect x="1525" y="267" width="22" height="16" rx="3" fill="#4488FF"/>
+  <text x="1536" y="279" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">IA</text>
+  <rect x="1525" y="387" width="22" height="16" rx="3" fill="#00B551"/>
+  <text x="1536" y="399" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">DP</text>
+  <rect x="1525" y="537" width="22" height="16" rx="3" fill="#EE7C0E"/>
+  <text x="1536" y="549" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">EC</text>
+  <rect x="1525" y="672" width="22" height="16" rx="3" fill="#CC3388"/>
+  <text x="1536" y="684" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">OB</text>
+  <rect x="1525" y="802" width="22" height="16" rx="3" fill="#FFD300"/>
+  <text x="1536" y="814" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">SC</text>
+</svg>

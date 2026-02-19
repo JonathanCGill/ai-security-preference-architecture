@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="intentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="guardrailGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="judgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="superJudgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="humanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="auditGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a5568"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </linearGradient>
+    <linearGradient id="zoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrowWhite" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#059669"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#d97706"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="900" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="550" y="38" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700" letter-spacing="0.5">Multi-Agent Security Architecture</text>
+  <text x="550" y="58" text-anchor="middle" fill="#64748b" font-size="12">Guardrails → Inline Judges → Post-Execution Super Judge → Human Oversight</text>
+
+  <!-- ================================================================ -->
+  <!-- LAYER 1: INTENT SPECIFICATION (top) -->
+  <!-- ================================================================ -->
+  <rect x="60" y="75" width="280" height="60" rx="8" fill="url(#intentGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="200" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">INTENT SPECIFICATION</text>
+  <text x="200" y="117" text-anchor="middle" fill="#e9d5ff" font-size="10">Goal + Constraints + Success Criteria</text>
+
+  <!-- ================================================================ -->
+  <!-- LAYER 2: HUMAN OVERSIGHT (top right) -->
+  <!-- ================================================================ -->
+  <rect x="760" y="75" width="280" height="60" rx="8" fill="url(#humanGrad)" filter="url(#shadow)" opacity="0.95"/>
+  <text x="900" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">HUMAN OVERSIGHT</text>
+  <text x="900" y="117" text-anchor="middle" fill="#cffafe" font-size="10">Sampled review · Escalations · Judge calibration</text>
+
+  <!-- ================================================================ -->
+  <!-- TRUST ZONE background -->
+  <!-- ================================================================ -->
+  <rect x="40" y="155" width="1020" height="370" rx="12" fill="url(#zoneGrad)" stroke="#475569" stroke-width="1" stroke-dasharray="6 3"/>
+  <text x="60" y="178" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">TRUST ZONE — EXECUTION ENVIRONMENT</text>
+
+  <!-- ================================================================ -->
+  <!-- AGENT 1: Data Retrieval -->
+  <!-- ================================================================ -->
+  <g transform="translate(75, 200)">
+    <!-- Guardrail wrapper -->
+    <rect x="-10" y="-10" width="200" height="150" rx="10" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="5 3" opacity="0.7"/>
+    <text x="85" y="-18" text-anchor="middle" fill="#fbbf24" font-size="9" font-weight="600">GUARDRAILS</text>
+    <!-- Agent box -->
+    <rect x="10" y="10" width="160" height="80" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+    <text x="90" y="42" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Agent A</text>
+    <text x="90" y="58" text-anchor="middle" fill="#93c5fd" font-size="10">Data Retrieval</text>
+    <text x="90" y="73" text-anchor="middle" fill="#64748b" font-size="9">Market data · APIs</text>
+    <!-- Inline judge -->
+    <rect x="30" y="100" width="120" height="28" rx="5" fill="url(#judgeGrad)" filter="url(#shadow)"/>
+    <text x="90" y="118" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Inline Judge</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- AGENT 2: Sentiment Analysis -->
+  <!-- ================================================================ -->
+  <g transform="translate(315, 200)">
+    <rect x="-10" y="-10" width="200" height="150" rx="10" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="5 3" opacity="0.7"/>
+    <text x="85" y="-18" text-anchor="middle" fill="#fbbf24" font-size="9" font-weight="600">GUARDRAILS</text>
+    <rect x="10" y="10" width="160" height="80" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+    <text x="90" y="42" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Agent B</text>
+    <text x="90" y="58" text-anchor="middle" fill="#93c5fd" font-size="10">Sentiment Analysis</text>
+    <text x="90" y="73" text-anchor="middle" fill="#64748b" font-size="9">News · Social feeds</text>
+    <rect x="30" y="100" width="120" height="28" rx="5" fill="url(#judgeGrad)" filter="url(#shadow)"/>
+    <text x="90" y="118" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Inline Judge</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- AGENT 3: Risk Assessment -->
+  <!-- ================================================================ -->
+  <g transform="translate(555, 200)">
+    <rect x="-10" y="-10" width="200" height="150" rx="10" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="5 3" opacity="0.7"/>
+    <text x="85" y="-18" text-anchor="middle" fill="#fbbf24" font-size="9" font-weight="600">GUARDRAILS</text>
+    <rect x="10" y="10" width="160" height="80" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+    <text x="90" y="42" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Agent C</text>
+    <text x="90" y="58" text-anchor="middle" fill="#93c5fd" font-size="10">Risk Assessment</text>
+    <text x="90" y="73" text-anchor="middle" fill="#64748b" font-size="9">Combines A + B</text>
+    <rect x="30" y="100" width="120" height="28" rx="5" fill="url(#judgeGrad)" filter="url(#shadow)"/>
+    <text x="90" y="118" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Inline Judge</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- AGENT 4: Recommendation -->
+  <!-- ================================================================ -->
+  <g transform="translate(795, 200)">
+    <rect x="-10" y="-10" width="200" height="150" rx="10" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="5 3" opacity="0.7"/>
+    <text x="85" y="-18" text-anchor="middle" fill="#fbbf24" font-size="9" font-weight="600">GUARDRAILS</text>
+    <rect x="10" y="10" width="160" height="80" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+    <text x="90" y="42" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Agent D</text>
+    <text x="90" y="58" text-anchor="middle" fill="#93c5fd" font-size="10">Recommendation</text>
+    <text x="90" y="73" text-anchor="middle" fill="#64748b" font-size="9">Drafts output</text>
+    <rect x="30" y="100" width="120" height="28" rx="5" fill="url(#judgeGrad)" filter="url(#shadow)"/>
+    <text x="90" y="118" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Inline Judge</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- INTER-AGENT COMMUNICATION ARROWS -->
+  <!-- ================================================================ -->
+  <!-- A → B -->
+  <line x1="255" y1="260" x2="315" y2="260" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowWhite)" opacity="0.6"/>
+  <!-- A → C -->
+  <path d="M 255 270 Q 420 310 555 270" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowWhite)" opacity="0.4"/>
+  <!-- B → C -->
+  <line x1="495" y1="260" x2="555" y2="260" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowWhite)" opacity="0.6"/>
+  <!-- C → D -->
+  <line x1="735" y1="260" x2="795" y2="260" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowWhite)" opacity="0.6"/>
+  <!-- B → D (indirect influence) -->
+  <path d="M 495 275 Q 660 330 795 275" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrowWhite)" opacity="0.3"/>
+
+  <!-- ================================================================ -->
+  <!-- SYSTEM INVARIANTS BAR (inside trust zone, bottom) -->
+  <!-- ================================================================ -->
+  <rect x="60" y="380" width="465" height="44" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="292" y="400" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="700">SYSTEM INVARIANTS</text>
+  <text x="292" y="414" text-anchor="middle" fill="#64748b" font-size="9">Budget caps · Data classification · Action scope · Compliance — O(1)</text>
+
+  <!-- CIRCUIT BREAKER -->
+  <rect x="545" y="380" width="200" height="44" rx="6" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="645" y="400" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="700">CIRCUIT BREAKERS</text>
+  <text x="645" y="414" text-anchor="middle" fill="#f87171" font-size="9">Kill switches · Halt on anomaly</text>
+
+  <!-- CRYPTO IDENTITY -->
+  <rect x="765" y="380" width="275" height="44" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="902" y="400" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="700">CRYPTOGRAPHIC IDENTITY</text>
+  <text x="902" y="414" text-anchor="middle" fill="#64748b" font-size="9">DIDs · Signed messages · Delegation chains — O(N)</text>
+
+  <!-- ================================================================ -->
+  <!-- ALL ACTIONS → AUDIT LOG -->
+  <!-- ================================================================ -->
+  <rect x="60" y="443" width="980" height="52" rx="6" fill="url(#auditGrad)" filter="url(#shadow)" opacity="0.9"/>
+  <text x="550" y="466" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">APPEND-ONLY AUDIT LOG</text>
+  <text x="550" y="481" text-anchor="middle" fill="#e2e8f0" font-size="10">Every action · Every tool call · Every inter-agent message · Every credential use · Immutable · Tamper-evident</text>
+
+  <!-- Arrows from agents down to audit log -->
+  <line x1="165" y1="340" x2="165" y2="380" stroke="#718096" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+  <line x1="405" y1="340" x2="405" y2="380" stroke="#718096" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+  <line x1="645" y1="340" x2="645" y2="380" stroke="#718096" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+  <line x1="885" y1="340" x2="885" y2="380" stroke="#718096" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+
+  <!-- ================================================================ -->
+  <!-- AUDIT LOG SUMMARISER -->
+  <!-- ================================================================ -->
+  <rect x="320" y="520" width="460" height="45" rx="6" fill="#334155" stroke="#64748b" stroke-width="1" filter="url(#shadow)"/>
+  <text x="550" y="541" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="600">AUDIT LOG SUMMARISER</text>
+  <text x="550" y="555" text-anchor="middle" fill="#94a3b8" font-size="9">Structured extraction: decisions · data lineage · role adherence · anomalies</text>
+
+  <!-- Arrow from audit log to summariser -->
+  <line x1="550" y1="495" x2="550" y2="520" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowWhite)"/>
+
+  <!-- ================================================================ -->
+  <!-- POST-EXECUTION SUPER JUDGE -->
+  <!-- ================================================================ -->
+  <rect x="255" y="590" width="590" height="90" rx="10" fill="url(#superJudgeGrad)" filter="url(#shadow)"/>
+  <rect x="258" y="593" width="584" height="84" rx="8" fill="none" stroke="#fca5a5" stroke-width="1" opacity="0.3"/>
+  <text x="550" y="618" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">POST-EXECUTION SUPER JUDGE</text>
+  <text x="550" y="638" text-anchor="middle" fill="#fecaca" font-size="10" font-weight="600">Different model · Separate trust zone · Read-only access</text>
+  <text x="550" y="655" text-anchor="middle" fill="#fca5a5" font-size="10">Intent alignment · Reasoning coherence · Source traceability · Role adherence · Adversarial patterns</text>
+  <text x="550" y="670" text-anchor="middle" fill="#fecaca" font-size="10" font-weight="600">Evaluates at O(W) — per workflow, not per agent</text>
+
+  <!-- Arrow from summariser to super judge -->
+  <line x1="550" y1="565" x2="550" y2="590" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Intent spec arrow down to super judge -->
+  <path d="M 200 135 L 200 590 Q 200 610 220 620 L 255 635" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="6 3" marker-end="url(#arrowPurple)"/>
+  <text x="188" y="400" fill="#a78bfa" font-size="9" font-weight="600" transform="rotate(-90, 188, 400)">Intent feeds to judge</text>
+
+  <!-- Agent D output arrow to super judge -->
+  <path d="M 960 290 Q 980 290 980 450 Q 980 640 845 640" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowWhite)"/>
+  <text x="988" y="460" fill="#94a3b8" font-size="9" font-weight="600" transform="rotate(90, 988, 460)">Final output</text>
+
+  <!-- ================================================================ -->
+  <!-- VERDICT -->
+  <!-- ================================================================ -->
+  <!-- Pass path -->
+  <rect x="180" y="720" width="160" height="42" rx="6" fill="#065f46" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="260" y="740" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="700">✓ PASS</text>
+  <text x="260" y="753" text-anchor="middle" fill="#a7f3d0" font-size="9">Release output · Log</text>
+
+  <!-- Flag path -->
+  <rect x="470" y="720" width="160" height="42" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="550" y="740" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="700">⚠ FLAG</text>
+  <text x="550" y="753" text-anchor="middle" fill="#fde68a" font-size="9">Quarantine · Escalate</text>
+
+  <!-- Fail path -->
+  <rect x="760" y="720" width="160" height="42" rx="6" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="840" y="740" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="700">✗ FAIL</text>
+  <text x="840" y="753" text-anchor="middle" fill="#fecaca" font-size="9">Block · Alert · Review</text>
+
+  <!-- Arrows from super judge to verdicts -->
+  <path d="M 420 680 L 310 720" fill="none" stroke="#059669" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="550" y1="680" x2="550" y2="720" stroke="#d97706" stroke-width="1.5" marker-end="url(#arrowAmber)"/>
+  <path d="M 680 680 L 790 720" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+
+  <!-- ================================================================ -->
+  <!-- HUMAN OVERSIGHT connections -->
+  <!-- ================================================================ -->
+  <!-- Flag/Fail → Human -->
+  <path d="M 630 741 Q 750 790 900 790 Q 1020 790 1020 400 Q 1020 130 1040 105 L 1040 105" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowCyan)"/>
+  <text x="1035" y="460" fill="#22d3ee" font-size="9" font-weight="600" transform="rotate(90, 1035, 460)">Escalations to human</text>
+
+  <!-- Human → feedback to invariants -->
+  <path d="M 760 105 Q 550 105 550 155 Q 410 155 292 370" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrowCyan)" opacity="0.5"/>
+
+  <!-- ================================================================ -->
+  <!-- FEEDBACK LOOP -->
+  <!-- ================================================================ -->
+  <rect x="60" y="790" width="980" height="48" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1" opacity="0.8"/>
+  <text x="550" y="812" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="700">FEEDBACK LOOP</text>
+  <text x="550" y="828" text-anchor="middle" fill="#64748b" font-size="10">Judge patterns → Updated invariants · Revised guardrails · Agent prompt improvements · Specification refinement</text>
+
+  <!-- Arrow from verdicts down to feedback -->
+  <line x1="550" y1="762" x2="550" y2="790" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arrowWhite)" opacity="0.5"/>
+
+  <!-- Feedback arrow back up to trust zone (loop) -->
+  <path d="M 60 814 Q 30 814 30 500 Q 30 200 60 200" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowWhite)" opacity="0.4"/>
+  <text x="18" y="510" fill="#94a3b8" font-size="9" font-weight="600" transform="rotate(-90, 18, 510)">Continuous improvement</text>
+
+  <!-- ================================================================ -->
+  <!-- LEGEND -->
+  <!-- ================================================================ -->
+  <g transform="translate(60, 855)">
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#1d4ed8"/>
+    <text x="18" y="10" fill="#94a3b8" font-size="9">Agent</text>
+    <rect x="75" y="0" width="12" height="12" rx="2" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="93" y="10" fill="#94a3b8" font-size="9">Guardrail</text>
+    <rect x="165" y="0" width="12" height="12" rx="2" fill="#059669"/>
+    <text x="183" y="10" fill="#94a3b8" font-size="9">Inline Judge</text>
+    <rect x="265" y="0" width="12" height="12" rx="2" fill="#dc2626"/>
+    <text x="283" y="10" fill="#94a3b8" font-size="9">Super Judge</text>
+    <rect x="370" y="0" width="12" height="12" rx="2" fill="#0891b2"/>
+    <text x="388" y="10" fill="#94a3b8" font-size="9">Human</text>
+    <rect x="445" y="0" width="12" height="12" rx="2" fill="#4a5568"/>
+    <text x="463" y="10" fill="#94a3b8" font-size="9">Audit Log</text>
+    <rect x="540" y="0" width="12" height="12" rx="2" fill="#7c3aed"/>
+    <text x="558" y="10" fill="#94a3b8" font-size="9">Intent Spec</text>
+
+    <line x1="640" y1="6" x2="670" y2="6" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="678" y="10" fill="#94a3b8" font-size="9">Data flow</text>
+    <line x1="740" y1="6" x2="770" y2="6" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text x="778" y="10" fill="#94a3b8" font-size="9">Feedback / Async</text>
+
+    <text x="900" y="10" fill="#475569" font-size="8">© 2026 AI Runtime Behaviour Security</text>
+  </g>
+</svg>

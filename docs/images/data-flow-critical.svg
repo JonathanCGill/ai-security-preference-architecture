@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" font-family="Arial, Helvetica, sans-serif">
+  <title>Data Flow: Critical Risk Tier</title>
+  <desc>Data flow diagram showing how a request moves through the three control layers for a Critical risk tier AI system. The Judge operates inline (synchronous) and HITL is required on all decisions.</desc>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arr-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arr-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+    <marker id="arr-amber" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d97706"/>
+    </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="#f8fafc" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">Data Flow: Critical Risk Tier</text>
+  <text x="450" y="55" text-anchor="middle" font-size="12" fill="#64748b">Guardrails inline | Judge INLINE (100%) | HITL on ALL decisions</text>
+
+  <!-- Layer labels -->
+  <rect x="15" y="80" width="100" height="175" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="65" y="168" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af" transform="rotate(-90 65 168)">GUARDRAILS</text>
+
+  <rect x="15" y="280" width="100" height="195" rx="6" fill="#fef3c7" stroke="#fcd34d" stroke-width="1"/>
+  <text x="65" y="378" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e" transform="rotate(-90 65 378)">JUDGE (INLINE)</text>
+
+  <rect x="15" y="500" width="100" height="170" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="65" y="585" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534" transform="rotate(-90 65 585)">HUMAN OVERSIGHT</text>
+
+  <!-- CRITICAL banner -->
+  <rect x="760" y="75" width="110" height="25" rx="4" fill="#dc2626"/>
+  <text x="815" y="92" text-anchor="middle" font-size="11" font-weight="bold" fill="white">CRITICAL TIER</text>
+
+  <!-- User Input -->
+  <rect x="160" y="85" width="140" height="40" rx="6" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="230" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">User Input</text>
+
+  <!-- Input Validation -->
+  <rect x="160" y="150" width="140" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="230" y="175" text-anchor="middle" font-size="11" fill="#1e40af">Input Validation</text>
+
+  <!-- Prompt Injection Detection -->
+  <rect x="355" y="150" width="170" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="440" y="175" text-anchor="middle" font-size="11" fill="#1e40af">Injection Detection</text>
+
+  <!-- BLOCK box (guardrail) -->
+  <rect x="625" y="100" width="100" height="35" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="675" y="122" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">BLOCK</text>
+
+  <!-- Model Inference -->
+  <rect x="355" y="215" width="170" height="40" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="440" y="240" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">Model Inference</text>
+
+  <!-- Output Filtering -->
+  <rect x="580" y="215" width="140" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="650" y="240" text-anchor="middle" font-size="11" fill="#1e40af">Output Filtering</text>
+
+  <!-- Judge Evaluation (INLINE - prominent) -->
+  <rect x="315" y="295" width="260" height="55" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="445" y="318" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">Judge Evaluation</text>
+  <text x="445" y="338" text-anchor="middle" font-size="11" fill="#92400e">100% — Synchronous — Inline</text>
+
+  <!-- Judge Decision -->
+  <polygon points="445,395 505,425 445,455 385,425" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="445" y="429" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">Pass?</text>
+
+  <!-- BLOCK box (judge) -->
+  <rect x="250" y="410" width="100" height="35" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="300" y="432" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">BLOCK</text>
+
+  <!-- Flag for Review -->
+  <rect x="580" y="410" width="150" height="35" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="655" y="432" text-anchor="middle" font-size="11" fill="#92400e">Flag for Review</text>
+
+  <!-- Human Review (HITL on all decisions) -->
+  <rect x="355" y="510" width="180" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="445" y="533" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Human Review</text>
+  <text x="445" y="550" text-anchor="middle" font-size="10" fill="#166534">(ALL decisions)</text>
+
+  <!-- Approved -->
+  <rect x="580" y="520" width="130" height="40" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="645" y="545" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Approved</text>
+
+  <!-- Response Out -->
+  <rect x="580" y="590" width="130" height="40" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="645" y="615" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Response Out</text>
+
+  <!-- Rejected / IR -->
+  <rect x="215" y="520" width="100" height="40" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="265" y="545" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">Rejected</text>
+
+  <!-- IR Escalation -->
+  <rect x="190" y="590" width="150" height="40" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="265" y="615" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">IR Escalation</text>
+
+  <!-- Feedback loop label -->
+  <rect x="160" y="660" width="160" height="25" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="240" y="677" text-anchor="middle" font-size="10" fill="#1e40af">Update Guardrails + Judge</text>
+
+  <!-- Log -->
+  <rect x="760" y="295" width="110" height="35" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="815" y="317" text-anchor="middle" font-size="10" fill="#475569">Log (full audit)</text>
+
+  <!-- ===== Arrows ===== -->
+  <!-- Input to Validation -->
+  <line x1="230" y1="125" x2="230" y2="150" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Validation to Injection -->
+  <line x1="300" y1="170" x2="355" y2="170" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Injection to Block -->
+  <line x1="525" y1="160" x2="625" y2="120" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-red)"/>
+  <text x="580" y="133" font-size="9" fill="#dc2626">Detected</text>
+  <!-- Injection to Model -->
+  <line x1="440" y1="190" x2="440" y2="215" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="455" y="207" font-size="9" fill="#64748b">Pass</text>
+  <!-- Model to Output Filter -->
+  <line x1="525" y1="235" x2="580" y2="235" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Output Filter to Block -->
+  <line x1="720" y1="225" x2="725" y2="120" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-red)"/>
+  <!-- Output Filter to Judge (key difference: goes to Judge, not response) -->
+  <line x1="650" y1="255" x2="560" y2="295" stroke="#d97706" stroke-width="2" marker-end="url(#arr-amber)"/>
+  <text x="620" y="278" font-size="9" font-weight="bold" fill="#d97706">To Judge</text>
+  <!-- To Log -->
+  <line x1="575" y1="310" x2="760" y2="310" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Judge to Decision -->
+  <line x1="445" y1="350" x2="445" y2="395" stroke="#d97706" stroke-width="1.5" marker-end="url(#arr-amber)"/>
+  <!-- Decision to Block -->
+  <line x1="385" y1="425" x2="350" y2="425" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-red)"/>
+  <text x="368" y="418" font-size="9" fill="#dc2626">Fail</text>
+  <!-- Decision to Flag -->
+  <line x1="505" y1="425" x2="580" y2="425" stroke="#d97706" stroke-width="1.5" marker-end="url(#arr-amber)"/>
+  <text x="543" y="418" font-size="9" fill="#d97706">Uncertain</text>
+  <!-- Decision to Human (pass) -->
+  <line x1="445" y1="455" x2="445" y2="510" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <text x="460" y="485" font-size="9" fill="#16a34a">Pass</text>
+  <!-- Flag to Human -->
+  <line x1="655" y1="445" x2="530" y2="520" stroke="#d97706" stroke-width="1.5" marker-end="url(#arr-amber)"/>
+  <!-- Human to Approved -->
+  <line x1="535" y1="535" x2="580" y2="535" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <!-- Approved to Response -->
+  <line x1="645" y1="560" x2="645" y2="590" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <!-- Human to Rejected -->
+  <line x1="355" y1="540" x2="315" y2="540" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-red)"/>
+  <!-- Rejected to IR -->
+  <line x1="265" y1="560" x2="265" y2="590" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-red)"/>
+  <!-- IR to Feedback -->
+  <line x1="265" y1="630" x2="265" y2="660" stroke="#3b82f6" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-blue)"/>
+
+  <!-- Key difference callout -->
+  <rect x="140" y="295" width="145" height="55" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="212" y="315" text-anchor="middle" font-size="10" font-weight="bold" fill="#9a3412">Key difference:</text>
+  <text x="212" y="330" text-anchor="middle" font-size="10" fill="#9a3412">Judge is INLINE.</text>
+  <text x="212" y="345" text-anchor="middle" font-size="10" fill="#9a3412">No output without it.</text>
+
+</svg>

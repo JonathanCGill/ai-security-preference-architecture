@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  
+  <rect width="900" height="650" fill="#f8fafc"/>
+  
+  <text x="450" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">AI Governance Architecture — ISO 42001 Aligned</text>
+  
+  <!-- Three Lines labels -->
+  <rect x="15" y="50" width="80" height="590" rx="4" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="55" y="350" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle" transform="rotate(-90, 55, 350)">THREE LINES MODEL</text>
+  
+  <!-- Board level -->
+  <rect x="110" y="50" width="770" height="60" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+  <text x="495" y="75" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">BOARD / AUDIT COMMITTEE</text>
+  <text x="495" y="95" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Ultimate accountability • Quarterly AI risk reporting • Material decisions</text>
+  
+  <!-- 3rd Line -->
+  <rect x="110" y="125" width="180" height="80" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">3RD LINE</text>
+  <text x="200" y="168" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">Internal Audit</text>
+  <text x="200" y="183" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• ISO 42001 audit</text>
+  <text x="200" y="196" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">• Independent assurance</text>
+  
+  <!-- Governance Committee -->
+  <rect x="310" y="125" width="570" height="80" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="595" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">AI GOVERNANCE COMMITTEE</text>
+  <text x="595" y="168" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">CRO • CTO • CDO • CISO • Legal • Compliance • Ethics</text>
+  <text x="595" y="186" font-family="Arial, sans-serif" font-size="9" fill="#1e40af" text-anchor="middle">Monthly meetings • CRITICAL tier approvals • Policy approval • Risk oversight</text>
+  
+  <!-- 2nd Line - AGO -->
+  <rect x="110" y="220" width="770" height="180" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="130" y="245" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4338ca">2ND LINE: AI GOVERNANCE OFFICE (AGO)</text>
+  
+  <!-- AGO Teams -->
+  <rect x="130" y="260" width="230" height="120" rx="4" fill="#c7d2fe" stroke="#818cf8" stroke-width="1"/>
+  <text x="245" y="280" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4338ca" text-anchor="middle">Policy &amp; Standards</text>
+  <text x="245" y="298" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• AI policy framework</text>
+  <text x="245" y="313" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Control standards by tier</text>
+  <text x="245" y="328" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Guardrail specifications</text>
+  <text x="245" y="343" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Judge evaluation criteria</text>
+  <text x="245" y="358" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• HITL requirements</text>
+  <text x="245" y="373" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• ISO 42001 documentation</text>
+  
+  <rect x="380" y="260" width="230" height="120" rx="4" fill="#c7d2fe" stroke="#818cf8" stroke-width="1"/>
+  <text x="495" y="280" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4338ca" text-anchor="middle">Risk &amp; Oversight</text>
+  <text x="495" y="298" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Risk classification review</text>
+  <text x="495" y="313" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• AI risk assessments</text>
+  <text x="495" y="328" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Judge escalation review</text>
+  <text x="495" y="343" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Incident investigation</text>
+  <text x="495" y="358" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Aggregated risk reporting</text>
+  <text x="495" y="373" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Regulatory engagement</text>
+  
+  <rect x="630" y="260" width="230" height="120" rx="4" fill="#c7d2fe" stroke="#818cf8" stroke-width="1"/>
+  <text x="745" y="280" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4338ca" text-anchor="middle">Technical Operations</text>
+  <text x="745" y="298" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Judge infrastructure</text>
+  <text x="745" y="313" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Guardrail pattern library</text>
+  <text x="745" y="328" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Platform configuration</text>
+  <text x="745" y="343" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Control monitoring</text>
+  <text x="745" y="358" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• AI system inventory</text>
+  <text x="745" y="373" font-family="Arial, sans-serif" font-size="9" fill="#4338ca" text-anchor="middle">• Tool automation</text>
+  
+  <!-- 1st Line -->
+  <rect x="110" y="415" width="770" height="110" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="130" y="440" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534">1ST LINE: BUSINESS UNITS</text>
+  
+  <rect x="130" y="455" width="170" height="55" rx="4" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="215" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">BU A — AI System Owner</text>
+  <text x="215" y="492" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Own systems • Operate HITL</text>
+  <text x="215" y="504" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Accountable for outcomes</text>
+  
+  <rect x="320" y="455" width="170" height="55" rx="4" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="405" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">BU B — AI System Owner</text>
+  <text x="405" y="492" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Own systems • Operate HITL</text>
+  <text x="405" y="504" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Accountable for outcomes</text>
+  
+  <rect x="510" y="455" width="170" height="55" rx="4" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="595" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">BU C — AI System Owner</text>
+  <text x="595" y="492" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Own systems • Operate HITL</text>
+  <text x="595" y="504" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Accountable for outcomes</text>
+  
+  <rect x="700" y="455" width="160" height="55" rx="4" fill="#bbf7d0" stroke="#86efac" stroke-width="1"/>
+  <text x="780" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">BU D — AI System Owner</text>
+  <text x="780" y="492" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Own systems • Operate HITL</text>
+  <text x="780" y="504" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Accountable for outcomes</text>
+  
+  <!-- Technical Controls Layer -->
+  <rect x="110" y="540" width="770" height="95" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="130" y="560" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">TECHNICAL CONTROLS (Configured by AGO, Operated by Platform)</text>
+  
+  <rect x="130" y="575" width="180" height="45" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="220" y="595" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">Guardrails</text>
+  <text x="220" y="610" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">Inline • Blocks • Real-time</text>
+  
+  <rect x="330" y="575" width="180" height="45" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="420" y="595" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">LLM-as-Judge</text>
+  <text x="420" y="610" font-family="Arial, sans-serif" font-size="8" fill="#92400e" text-anchor="middle">Async • Detects • Assurance</text>
+  
+  <rect x="530" y="575" width="180" height="45" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="620" y="595" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">HITL Workflows</text>
+  <text x="620" y="610" font-family="Arial, sans-serif" font-size="8" fill="#1e40af" text-anchor="middle">Review • Decide • Accountable</text>
+  
+  <rect x="730" y="575" width="130" height="45" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="795" y="595" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">Logging</text>
+  <text x="795" y="610" font-family="Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Audit • Evidence</text>
+  
+  <!-- Arrows showing flows -->
+  <line x1="595" y1="205" x2="595" y2="220" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <line x1="495" y1="400" x2="495" y2="415" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <line x1="495" y1="525" x2="495" y2="540" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Feedback arrow -->
+  <path d="M 860 580 L 880 580 L 880 340 L 860 340" stroke="#6366f1" stroke-width="1.5" fill="none" stroke-dasharray="4,2" marker-end="url(#arrow-blue)"/>
+  <text x="870" y="460" font-family="Arial, sans-serif" font-size="8" fill="#6366f1" transform="rotate(90, 870, 460)">Findings → Standards</text>
+  
+  <!-- ISO 42001 badge -->
+  <rect x="720" y="55" width="140" height="45" rx="4" fill="#ffffff" stroke="#22c55e" stroke-width="2"/>
+  <text x="790" y="73" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">ISO/IEC 42001</text>
+  <text x="790" y="88" font-family="Arial, sans-serif" font-size="8" fill="#166534" text-anchor="middle">AI Management System</text>
+</svg>

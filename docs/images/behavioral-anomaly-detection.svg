@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="750" viewBox="0 0 950 750">
+  <defs>
+    <linearGradient id="alertGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+    <linearGradient id="mlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ddd6fe"/>
+      <stop offset="100%" style="stop-color:#c4b5fd"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5"/>
+      <stop offset="100%" style="stop-color:#a7f3d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b5cf6"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="750" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">Behavioral Anomaly Detection</text>
+  <text x="475" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Aggregating safety signals to detect behavioral drift and unknown attack patterns</text>
+  
+  <!-- SECTION 1: Alert Sources -->
+  <text x="50" y="90" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#1e293b">Alert Sources</text>
+  
+  <!-- Row 1: LLM-Dependent Sources -->
+  <g transform="translate(50, 105)">
+    <!-- Guardrails -->
+    <rect x="0" y="0" width="130" height="70" rx="8" fill="#fff" stroke="#f87171" stroke-width="2" filter="url(#shadow)"/>
+    <text x="65" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Guardrails</text>
+    <text x="65" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Block events</text>
+    <text x="65" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">Pattern matches</text>
+    <text x="65" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">Confidence scores</text>
+    
+    <!-- LLM-as-Judge -->
+    <rect x="145" y="0" width="130" height="70" rx="8" fill="#fff" stroke="#f87171" stroke-width="2" filter="url(#shadow)"/>
+    <text x="210" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">LLM-as-Judge</text>
+    <text x="210" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Flag events</text>
+    <text x="210" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">Policy violations</text>
+    <text x="210" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dc2626">Quality scores</text>
+    
+    <!-- Token Detection -->
+    <rect x="290" y="0" width="130" height="70" rx="8" fill="#fff" stroke="#fbbf24" stroke-width="2" filter="url(#shadow)"/>
+    <text x="355" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Token Detection</text>
+    <text x="355" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Uncertainty signals</text>
+    <text x="355" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">Attention patterns</text>
+    <text x="355" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#d97706">Probability scores</text>
+  </g>
+  
+  <!-- Row 2: Independent Sources -->
+  <g transform="translate(50, 185)">
+    <!-- Formal Verification -->
+    <rect x="0" y="0" width="130" height="70" rx="8" fill="#fff" stroke="#34d399" stroke-width="2" filter="url(#shadow)"/>
+    <text x="65" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Formal Verify</text>
+    <text x="65" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Validation results</text>
+    <text x="65" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#059669">Rule violations</text>
+    <text x="65" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#059669">Proof traces</text>
+    
+    <!-- Knowledge Graph -->
+    <rect x="145" y="0" width="130" height="70" rx="8" fill="#fff" stroke="#34d399" stroke-width="2" filter="url(#shadow)"/>
+    <text x="210" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Knowledge Graph</text>
+    <text x="210" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Fact mismatches</text>
+    <text x="210" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#059669">Entity errors</text>
+    <text x="210" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#059669">Relation failures</text>
+    
+    <!-- Human Review -->
+    <rect x="290" y="0" width="130" height="70" rx="8" fill="#fff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="355" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Human Review</text>
+    <text x="355" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Escalation outcomes</text>
+    <text x="355" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#2563eb">Override decisions</text>
+    <text x="355" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#2563eb">False positive tags</text>
+  </g>
+  
+  <!-- Arrows from sources to aggregator -->
+  <g stroke="#64748b" stroke-width="1.5" fill="none">
+    <path d="M 115 175 L 115 290 L 460 290" marker-end="url(#arrowhead)"/>
+    <path d="M 260 175 L 260 280 L 460 280" marker-end="url(#arrowhead)"/>
+    <path d="M 405 175 L 405 270 L 460 270" marker-end="url(#arrowhead)"/>
+    <path d="M 115 255 L 115 300 L 460 300" marker-end="url(#arrowhead)"/>
+    <path d="M 260 255 L 260 310 L 460 310" marker-end="url(#arrowhead)"/>
+    <path d="M 405 255 L 405 320 L 460 320" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- SECTION 2: Aggregation Layer -->
+  <rect x="460" y="250" width="200" height="90" rx="12" fill="url(#alertGrad)" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="560" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#92400e">Alert Aggregator</text>
+  <text x="560" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#78350f">• Sessionize by request/user</text>
+  <text x="560" y="308" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#78350f">• Correlate across layers</text>
+  <text x="560" y="321" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#78350f">• Enrich with context</text>
+  <text x="560" y="334" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#78350f">• Store time-series</text>
+  
+  <!-- Arrow to ML -->
+  <path d="M 560 340 L 560 380" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- SECTION 3: ML Anomaly Detection -->
+  <rect x="430" y="385" width="260" height="130" rx="12" fill="url(#mlGrad)" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="560" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#5b21b6">ML Anomaly Detection</text>
+  
+  <text x="450" y="435" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#6d28d9">Baseline Learning</text>
+  <text x="450" y="450" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• Normal alert rates</text>
+  <text x="450" y="462" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• Typical patterns</text>
+  <text x="450" y="474" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• User cohorts</text>
+  
+  <text x="590" y="435" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#6d28d9">Anomaly Signals</text>
+  <text x="590" y="450" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• Volume spikes</text>
+  <text x="590" y="462" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• New patterns</text>
+  <text x="590" y="474" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• Correlation shifts</text>
+  <text x="590" y="486" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• User outliers</text>
+  <text x="590" y="498" font-family="system-ui, sans-serif" font-size="8" fill="#7c3aed">• Temporal anomalies</text>
+  
+  <!-- Arrows to outputs -->
+  <path d="M 480 515 L 480 560 L 200 560 L 200 595" stroke="#8b5cf6" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+  <path d="M 560 515 L 560 595" stroke="#8b5cf6" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+  <path d="M 640 515 L 640 560 L 850 560 L 850 595" stroke="#8b5cf6" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+  
+  <!-- SECTION 4: Outputs -->
+  <g transform="translate(50, 600)">
+    <!-- Dashboards -->
+    <rect x="80" y="0" width="180" height="90" rx="8" fill="url(#outputGrad)" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+    <text x="170" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#166534">Dashboards</text>
+    <text x="170" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#047857">Real-time alert rates</text>
+    <text x="170" y="54" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#047857">Layer effectiveness</text>
+    <text x="170" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#047857">User behavior trends</text>
+    <text x="170" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#047857">Model version comparison</text>
+    
+    <!-- Alerts -->
+    <rect x="360" y="0" width="180" height="90" rx="8" fill="#fff" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+    <text x="450" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#dc2626">Automated Alerts</text>
+    <text x="450" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#b91c1c">Drift threshold breached</text>
+    <text x="450" y="54" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#b91c1c">New attack signature</text>
+    <text x="450" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#b91c1c">User anomaly detected</text>
+    <text x="450" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#b91c1c">Correlated failure spike</text>
+    
+    <!-- Pattern Discovery -->
+    <rect x="640" y="0" width="180" height="90" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+    <text x="730" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#7c3aed">Pattern Discovery</text>
+    <text x="730" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6d28d9">Unknown attack clusters</text>
+    <text x="730" y="54" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6d28d9">Emerging vulnerabilities</text>
+    <text x="730" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6d28d9">Coverage gaps</text>
+    <text x="730" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6d28d9">Guardrail update candidates</text>
+  </g>
+  
+  <!-- Right side: Example Detections Panel -->
+  <rect x="700" y="100" width="220" height="190" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="810" y="122" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Example Detections</text>
+  <line x1="710" y1="132" x2="910" y2="132" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <g transform="translate(710, 145)">
+    <rect x="0" y="0" width="200" height="32" rx="4" fill="#fee2e2"/>
+    <text x="10" y="13" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#991b1b">Volume Spike</text>
+    <text x="10" y="25" font-family="system-ui, sans-serif" font-size="7" fill="#b91c1c">3x guardrail blocks in 1 hour</text>
+    
+    <rect x="0" y="38" width="200" height="32" rx="4" fill="#fef3c7"/>
+    <text x="10" y="51" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#92400e">New Pattern</text>
+    <text x="10" y="63" font-family="system-ui, sans-serif" font-size="7" fill="#a16207">Unknown prompt structure triggering judge</text>
+    
+    <rect x="0" y="76" width="200" height="32" rx="4" fill="#dbeafe"/>
+    <text x="10" y="89" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#1e40af">User Outlier</text>
+    <text x="10" y="101" font-family="system-ui, sans-serif" font-size="7" fill="#2563eb">One user: 40% of all flags</text>
+    
+    <rect x="0" y="114" width="200" height="32" rx="4" fill="#f3e8ff"/>
+    <text x="10" y="127" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#7c3aed">Correlation Shift</text>
+    <text x="10" y="139" font-family="system-ui, sans-serif" font-size="7" fill="#9333ea">KG + Judge now correlate (new topic drift)</text>
+  </g>
+  
+  <!-- Bottom: Key Insight -->
+  <rect x="50" y="710" width="850" height="30" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="475" y="730" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#0369a1">
+    <tspan font-weight="600">Key Insight:</tspan> Individual alerts catch specific issues. Aggregated patterns reveal behavioral drift and unknown attack vectors.
+  </text>
+  
+  <!-- Legend for source types -->
+  <g transform="translate(700, 300)">
+    <rect x="0" y="0" width="220" height="65" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="110" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#64748b">Source Independence</text>
+    <rect x="10" y="25" width="12" height="12" rx="2" fill="#fff" stroke="#f87171" stroke-width="2"/>
+    <text x="28" y="35" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">LLM-dependent</text>
+    <rect x="110" y="25" width="12" height="12" rx="2" fill="#fff" stroke="#fbbf24" stroke-width="2"/>
+    <text x="128" y="35" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">Partial</text>
+    <rect x="10" y="45" width="12" height="12" rx="2" fill="#fff" stroke="#34d399" stroke-width="2"/>
+    <text x="28" y="55" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">Independent</text>
+    <rect x="110" y="45" width="12" height="12" rx="2" fill="#fff" stroke="#3b82f6" stroke-width="2"/>
+    <text x="128" y="55" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">Human</text>
+  </g>
+</svg>

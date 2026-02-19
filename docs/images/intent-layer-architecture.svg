@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="620" viewBox="0 0 650 620" font-family="Arial, sans-serif">
+
+  <defs>
+    <marker id="arrowDown" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto">
+      <path d="M0,0 L8,0 L4,6 Z" fill="#475569"/>
+    </marker>
+    <marker id="arrowDownGreen" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto">
+      <path d="M0,0 L8,0 L4,6 Z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowDownRed" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto">
+      <path d="M0,0 L8,0 L4,6 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="650" height="620" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="325" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">The Intent Layer &#x2014; Post-Execution Evaluation</text>
+
+  <!-- ==================== STAGE 1: INTENT SPECIFICATION ==================== -->
+  <rect x="150" y="52" width="350" height="88" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="325" y="74" text-anchor="middle" font-size="13" font-weight="bold" fill="#4338ca">INTENT SPECIFICATION</text>
+  <line x1="170" y1="82" x2="480" y2="82" stroke="#6366f1" stroke-width="0.5" opacity="0.4"/>
+  <text x="180" y="100" font-size="11" fill="#475569">&#x2022; Goal</text>
+  <text x="180" y="116" font-size="11" fill="#475569">&#x2022; Constraints</text>
+  <text x="180" y="132" font-size="11" fill="#475569">&#x2022; Success criteria</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="325" y1="140" x2="325" y2="178" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <!-- Annotation 1→2 -->
+  <text x="340" y="163" font-size="9" font-style="italic" fill="#94a3b8">declared before execution</text>
+
+  <!-- ==================== STAGE 2: MULTI-AGENT EXECUTION ==================== -->
+  <rect x="150" y="186" width="350" height="76" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="325" y="208" text-anchor="middle" font-size="13" font-weight="bold" fill="#b45309">MULTI-AGENT EXECUTION</text>
+  <line x1="170" y1="216" x2="480" y2="216" stroke="#f59e0b" stroke-width="0.5" opacity="0.4"/>
+  <text x="180" y="234" font-size="11" fill="#475569">&#x2022; Technical controls active</text>
+  <text x="180" y="250" font-size="11" fill="#475569">&#x2022; All actions &#x2192; audit log</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="325" y1="262" x2="325" y2="300" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <!-- Annotation 2→3 -->
+  <text x="340" y="285" font-size="9" font-style="italic" fill="#94a3b8">workflow completes</text>
+
+  <!-- ==================== STAGE 3: AUDIT LOG SUMMARISER ==================== -->
+  <rect x="150" y="308" width="350" height="100" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="325" y="330" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">AUDIT LOG SUMMARISER</text>
+  <line x1="170" y1="338" x2="480" y2="338" stroke="#94a3b8" stroke-width="0.5" opacity="0.4"/>
+  <text x="180" y="356" font-size="11" fill="#475569">&#x2022; Key decisions</text>
+  <text x="180" y="372" font-size="11" fill="#475569">&#x2022; Data lineage</text>
+  <text x="380" y="356" font-size="11" fill="#475569">&#x2022; Role adherence</text>
+  <text x="380" y="372" font-size="11" fill="#475569">&#x2022; Anomalous patterns</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="325" y1="408" x2="325" y2="446" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <!-- Annotation 3→4 -->
+  <text x="340" y="431" font-size="9" font-style="italic" fill="#94a3b8">summary + intent + outputs</text>
+
+  <!-- ==================== STAGE 4: POST-EXECUTION JUDGE ==================== -->
+  <rect x="150" y="454" width="350" height="88" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="325" y="476" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">POST-EXECUTION JUDGE</text>
+  <line x1="170" y1="484" x2="480" y2="484" stroke="#3b82f6" stroke-width="0.5" opacity="0.4"/>
+  <text x="180" y="502" font-size="11" fill="#475569">&#x2022; Different model from operational agents</text>
+  <text x="180" y="518" font-size="11" fill="#475569">&#x2022; Read-only access</text>
+  <text x="180" y="534" font-size="11" fill="#475569">&#x2022; Separate trust zone</text>
+
+  <!-- Arrow 4→5 (fork) -->
+  <line x1="325" y1="542" x2="325" y2="560" stroke="#475569" stroke-width="2"/>
+  <!-- Annotation 4→5 -->
+  <text x="340" y="556" font-size="9" font-style="italic" fill="#94a3b8">verdict</text>
+  <!-- Horizontal fork line -->
+  <line x1="190" y1="560" x2="460" y2="560" stroke="#475569" stroke-width="2"/>
+
+  <!-- Left branch to PASS -->
+  <line x1="190" y1="560" x2="190" y2="578" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowDownGreen)"/>
+  <!-- Right branch to FLAG / FAIL -->
+  <line x1="460" y1="560" x2="460" y2="578" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowDownRed)"/>
+
+  <!-- ==================== STAGE 5a: PASS ==================== -->
+  <rect x="115" y="582" width="150" height="36" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="190" y="599" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">PASS</text>
+  <text x="190" y="613" text-anchor="middle" font-size="9" fill="#166534">log + learn</text>
+
+  <!-- ==================== STAGE 5b: FLAG / FAIL ==================== -->
+  <rect x="385" y="582" width="150" height="36" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="460" y="599" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">FLAG / FAIL</text>
+  <text x="460" y="613" text-anchor="middle" font-size="9" fill="#dc2626">quarantine, alert, human review</text>
+
+</svg>

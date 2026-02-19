@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="550" viewBox="0 0 900 550">
+  <defs>
+    <linearGradient id="cat1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cat2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c2410c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cat3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ca8a04;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a16207;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cat4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cat5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1e293b">Bypass Taxonomy</text>
+  <text x="450" y="55" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Five categories of control circumvention</text>
+  
+  <!-- Category 1: Guardrail Bypasses -->
+  <rect x="30" y="80" width="165" height="200" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="30" y="80" width="165" height="35" rx="10" fill="url(#cat1)"/>
+  <rect x="30" y="105" width="165" height="10" fill="url(#cat1)"/>
+  <text x="112" y="103" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">1. GUARDRAIL</text>
+  
+  <text x="45" y="135" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Encoding tricks</text>
+  <text x="45" y="150" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Semantic rephrasing</text>
+  <text x="45" y="165" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Language switching</text>
+  <text x="45" y="180" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Fragmentation</text>
+  <text x="45" y="195" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Role-play attacks</text>
+  <text x="45" y="210" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Jailbreaks</text>
+  <text x="45" y="225" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Indirect injection</text>
+  
+  <rect x="40" y="250" width="145" height="20" rx="4" fill="#fee2e2"/>
+  <text x="112" y="264" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#991b1b">Defence: Multi-layer + ML</text>
+  
+  <!-- Category 2: Intent Declaration -->
+  <rect x="205" y="80" width="165" height="200" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="205" y="80" width="165" height="35" rx="10" fill="url(#cat2)"/>
+  <rect x="205" y="105" width="165" height="10" fill="url(#cat2)"/>
+  <text x="287" y="103" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">2. INTENT</text>
+  
+  <text x="220" y="135" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Lying about purpose</text>
+  <text x="220" y="150" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Vague declarations</text>
+  <text x="220" y="165" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Scope creep</text>
+  <text x="220" y="180" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Social engineering</text>
+  <text x="220" y="195" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Credential misuse</text>
+  
+  <rect x="215" y="250" width="145" height="20" rx="4" fill="#fed7aa"/>
+  <text x="287" y="264" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#9a3412">Defence: Audit + Consequences</text>
+  
+  <!-- Category 3: Agentic -->
+  <rect x="380" y="80" width="165" height="200" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="380" y="80" width="165" height="35" rx="10" fill="url(#cat3)"/>
+  <rect x="380" y="105" width="165" height="10" fill="url(#cat3)"/>
+  <text x="462" y="103" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">3. AGENTIC</text>
+  
+  <text x="395" y="135" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Loophole exploitation</text>
+  <text x="395" y="150" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Tool chaining</text>
+  <text x="395" y="165" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Goal hijacking</text>
+  <text x="395" y="180" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Approval manipulation</text>
+  <text x="395" y="195" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Resource exhaustion</text>
+  
+  <rect x="390" y="250" width="145" height="20" rx="4" fill="#fef08a"/>
+  <text x="462" y="264" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#854d0e">Defence: Infra Enforcement</text>
+  
+  <!-- Category 4: Architectural -->
+  <rect x="555" y="80" width="165" height="200" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="555" y="80" width="165" height="35" rx="10" fill="url(#cat4)"/>
+  <rect x="555" y="105" width="165" height="10" fill="url(#cat4)"/>
+  <text x="637" y="103" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">4. ARCHITECTURAL</text>
+  
+  <text x="570" y="135" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Shadow AI</text>
+  <text x="570" y="150" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Direct API access</text>
+  <text x="570" y="165" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Data exfil + external AI</text>
+  <text x="570" y="180" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Insider config change</text>
+  
+  <rect x="565" y="250" width="145" height="20" rx="4" fill="#bbf7d0"/>
+  <text x="637" y="264" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#166534">Defence: Network + DLP</text>
+  
+  <!-- Category 5: Process -->
+  <rect x="730" y="80" width="165" height="200" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="730" y="80" width="165" height="35" rx="10" fill="url(#cat5)"/>
+  <rect x="730" y="105" width="165" height="10" fill="url(#cat5)"/>
+  <text x="812" y="103" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">5. PROCESS</text>
+  
+  <text x="745" y="135" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• HITL fatigue</text>
+  <text x="745" y="150" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Rubber-stamp culture</text>
+  <text x="745" y="165" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Approval fragmentation</text>
+  <text x="745" y="180" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Emergency override abuse</text>
+  <text x="745" y="195" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• Privilege escalation</text>
+  
+  <rect x="740" y="250" width="145" height="20" rx="4" fill="#bfdbfe"/>
+  <text x="812" y="264" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#1e40af">Defence: Canary + Metrics</text>
+  
+  <!-- Bottom principle -->
+  <rect x="30" y="310" width="865" height="80" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">Key Principle: Layer Your Defences</text>
+  <text x="450" y="365" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">An attacker must bypass ALL layers to succeed. No single control is sufficient.</text>
+  <text x="450" y="380" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">Accept that some bypasses will succeed — focus on detection and response, not just prevention.</text>
+  
+  <!-- Control mapping -->
+  <rect x="30" y="410" width="865" height="120" rx="10" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="450" y="435" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">Technical Controls by Bypass Category</text>
+  
+  <text x="112" y="460" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#dc2626">WAF, Gateway</text>
+  <text x="112" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#dc2626">Guardrails, ML</text>
+  <text x="112" y="490" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#64748b">Judge detection</text>
+  
+  <text x="287" y="460" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#ea580c">Audit logging</text>
+  <text x="287" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#ea580c">Behaviour monitoring</text>
+  <text x="287" y="490" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#64748b">Attestation</text>
+  
+  <text x="462" y="460" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#ca8a04">Sandbox</text>
+  <text x="462" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#ca8a04">Action validator</text>
+  <text x="462" y="490" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#64748b">Circuit breakers</text>
+  
+  <text x="637" y="460" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#16a34a">DNS/Proxy block</text>
+  <text x="637" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#16a34a">DLP, CASB</text>
+  <text x="637" y="490" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#64748b">Endpoint EDR</text>
+  
+  <text x="812" y="460" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#2563eb">Canary testing</text>
+  <text x="812" y="475" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#2563eb">HITL metrics</text>
+  <text x="812" y="490" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#64748b">Config controls</text>
+  
+</svg>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <style>
+    .title { font: bold 15px Arial, sans-serif; fill: #1e293b; }
+    .feeder-label { font: bold 8px Arial, sans-serif; fill: #ffffff; }
+    .feeder-label-sm { font: 7px Arial, sans-serif; fill: #ffffff; }
+    .zone-label { font: bold 10px Arial, sans-serif; fill: #475569; }
+    .pipeline-label { font: bold 9px Arial, sans-serif; fill: #1e293b; }
+    .risk-tag { font: bold 7px Arial, sans-serif; fill: #ffffff; }
+    .note { font: italic 8px Arial, sans-serif; fill: #94a3b8; }
+  </style>
+
+  <rect width="900" height="520" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="450" y="28" text-anchor="middle" class="title">Banking AI Feeder Systems — Attack Surface</text>
+  <text x="450" y="44" text-anchor="middle" class="note">If a feeder is compromised, the AI inherits the compromise</text>
+
+  <!-- ============================================ -->
+  <!-- FEEDER SYSTEMS (Left) -->
+  <!-- ============================================ -->
+  <rect x="15" y="60" width="250" height="440" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="80" text-anchor="middle" class="zone-label">FEEDER SYSTEMS</text>
+
+  <!-- Critical feeders -->
+  <rect x="25" y="90" width="110" height="32" rx="4" fill="#dc2626"/>
+  <text x="80" y="105" text-anchor="middle" class="feeder-label">Core Banking</text>
+  <text x="80" y="115" text-anchor="middle" class="feeder-label-sm">Accounts, balances</text>
+
+  <rect x="145" y="90" width="110" height="32" rx="4" fill="#dc2626"/>
+  <text x="200" y="105" text-anchor="middle" class="feeder-label">Payment Systems</text>
+  <text x="200" y="115" text-anchor="middle" class="feeder-label-sm">SWIFT, SEPA, FPS</text>
+
+  <rect x="25" y="130" width="110" height="32" rx="4" fill="#dc2626"/>
+  <text x="80" y="145" text-anchor="middle" class="feeder-label">KYC / AML</text>
+  <text x="80" y="155" text-anchor="middle" class="feeder-label-sm">Identity, watchlists</text>
+
+  <!-- High feeders -->
+  <rect x="145" y="130" width="110" height="32" rx="4" fill="#f59e0b"/>
+  <text x="200" y="145" text-anchor="middle" class="feeder-label">CRM</text>
+  <text x="200" y="155" text-anchor="middle" class="feeder-label-sm">Customer profiles</text>
+
+  <rect x="25" y="170" width="110" height="32" rx="4" fill="#f59e0b"/>
+  <text x="80" y="185" text-anchor="middle" class="feeder-label">Credit Bureau</text>
+  <text x="80" y="195" text-anchor="middle" class="feeder-label-sm">Scores, history</text>
+
+  <rect x="145" y="170" width="110" height="32" rx="4" fill="#f59e0b"/>
+  <text x="200" y="185" text-anchor="middle" class="feeder-label">Market Data</text>
+  <text x="200" y="195" text-anchor="middle" class="feeder-label-sm">Prices, rates, indices</text>
+
+  <rect x="25" y="210" width="110" height="32" rx="4" fill="#f59e0b"/>
+  <text x="80" y="225" text-anchor="middle" class="feeder-label">Data Warehouse</text>
+  <text x="80" y="235" text-anchor="middle" class="feeder-label-sm">Historical, analytical</text>
+
+  <rect x="145" y="210" width="110" height="32" rx="4" fill="#f59e0b"/>
+  <text x="200" y="225" text-anchor="middle" class="feeder-label">Fraud Platform</text>
+  <text x="200" y="235" text-anchor="middle" class="feeder-label-sm">Alerts, rules, cases</text>
+
+  <rect x="25" y="250" width="110" height="32" rx="4" fill="#f59e0b"/>
+  <text x="80" y="265" text-anchor="middle" class="feeder-label">Web / Mobile</text>
+  <text x="80" y="275" text-anchor="middle" class="feeder-label-sm">Sessions, behaviour</text>
+
+  <rect x="145" y="250" width="110" height="32" rx="4" fill="#f59e0b"/>
+  <text x="200" y="265" text-anchor="middle" class="feeder-label">Regulatory</text>
+  <text x="200" y="275" text-anchor="middle" class="feeder-label-sm">Submissions, rules</text>
+
+  <!-- Medium feeders -->
+  <rect x="25" y="290" width="110" height="32" rx="4" fill="#3b82f6"/>
+  <text x="80" y="305" text-anchor="middle" class="feeder-label">Document Mgmt</text>
+  <text x="80" y="315" text-anchor="middle" class="feeder-label-sm">Contracts, scans</text>
+
+  <rect x="145" y="290" width="110" height="32" rx="4" fill="#3b82f6"/>
+  <text x="200" y="305" text-anchor="middle" class="feeder-label">Email / Comms</text>
+  <text x="200" y="315" text-anchor="middle" class="feeder-label-sm">Correspondence</text>
+
+  <rect x="25" y="330" width="110" height="32" rx="4" fill="#3b82f6"/>
+  <text x="80" y="345" text-anchor="middle" class="feeder-label">Call Centre / IVR</text>
+  <text x="80" y="355" text-anchor="middle" class="feeder-label-sm">Transcripts, voice</text>
+
+  <rect x="145" y="330" width="110" height="32" rx="4" fill="#3b82f6"/>
+  <text x="200" y="345" text-anchor="middle" class="feeder-label">HR Systems</text>
+  <text x="200" y="355" text-anchor="middle" class="feeder-label-sm">Employee data</text>
+
+  <rect x="85" y="370" width="110" height="32" rx="4" fill="#64748b"/>
+  <text x="140" y="385" text-anchor="middle" class="feeder-label">Third-Party Data</text>
+  <text x="140" y="395" text-anchor="middle" class="feeder-label-sm">Enrichment, geo</text>
+
+  <!-- Legend for feeders -->
+  <rect x="30" y="415" width="12" height="12" rx="2" fill="#dc2626"/>
+  <text x="47" y="425" font-size="8" fill="#475569">Critical</text>
+  <rect x="90" y="415" width="12" height="12" rx="2" fill="#f59e0b"/>
+  <text x="107" y="425" font-size="8" fill="#475569">High</text>
+  <rect x="140" y="415" width="12" height="12" rx="2" fill="#3b82f6"/>
+  <text x="157" y="425" font-size="8" fill="#475569">Medium</text>
+  <rect x="200" y="415" width="12" height="12" rx="2" fill="#64748b"/>
+  <text x="217" y="425" font-size="8" fill="#475569">External</text>
+
+  <!-- ============================================ -->
+  <!-- DATA PIPELINES (Middle) -->
+  <!-- ============================================ -->
+  <rect x="285" y="60" width="140" height="440" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="355" y="80" text-anchor="middle" class="zone-label">DATA PIPELINES</text>
+
+  <!-- Pipeline components -->
+  <rect x="295" y="95" width="120" height="28" rx="4" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="355" y="113" text-anchor="middle" class="pipeline-label">APIs</text>
+
+  <rect x="295" y="135" width="120" height="28" rx="4" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="355" y="153" text-anchor="middle" class="pipeline-label">ETL / ELT</text>
+
+  <rect x="295" y="175" width="120" height="28" rx="4" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="355" y="193" text-anchor="middle" class="pipeline-label">Streaming</text>
+
+  <rect x="295" y="215" width="120" height="28" rx="4" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="355" y="233" text-anchor="middle" class="pipeline-label">Embedding</text>
+
+  <rect x="295" y="255" width="120" height="28" rx="4" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="355" y="273" text-anchor="middle" class="pipeline-label">Vector Indexing</text>
+
+  <rect x="295" y="295" width="120" height="28" rx="4" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="355" y="313" text-anchor="middle" class="pipeline-label">File Ingestion</text>
+
+  <!-- Vulnerability callouts -->
+  <rect x="298" y="340" width="114" height="55" rx="4" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="355" y="355" text-anchor="middle" font-size="7" font-weight="bold" fill="#b91c1c">VULNERABLE TO:</text>
+  <text x="355" y="368" text-anchor="middle" font-size="7" fill="#b91c1c">• Schema changes</text>
+  <text x="355" y="380" text-anchor="middle" font-size="7" fill="#b91c1c">• Silent failures</text>
+  <text x="355" y="392" text-anchor="middle" font-size="7" fill="#b91c1c">• Data poisoning</text>
+
+  <!-- ============================================ -->
+  <!-- AI PROCESSING (Right) -->
+  <!-- ============================================ -->
+  <rect x="445" y="60" width="210" height="440" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="550" y="80" text-anchor="middle" class="zone-label">AI PROCESSING</text>
+
+  <rect x="460" y="95" width="180" height="32" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="550" y="110" text-anchor="middle" font-size="9" font-weight="bold" fill="#166534">Input Guardrails</text>
+  <text x="550" y="121" text-anchor="middle" font-size="7" fill="#166534">Validate, filter, block</text>
+
+  <rect x="460" y="140" width="180" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="550" y="155" text-anchor="middle" font-size="9" font-weight="bold" fill="#1d4ed8">RAG / Context</text>
+  <text x="550" y="166" text-anchor="middle" font-size="7" fill="#1d4ed8">Vector DB retrieval</text>
+
+  <rect x="460" y="185" width="180" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="550" y="200" text-anchor="middle" font-size="9" font-weight="bold" fill="#1d4ed8">LLM Inference</text>
+  <text x="550" y="211" text-anchor="middle" font-size="7" fill="#1d4ed8">Model processing</text>
+
+  <rect x="460" y="230" width="180" height="32" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="550" y="245" text-anchor="middle" font-size="9" font-weight="bold" fill="#166534">Output Guardrails</text>
+  <text x="550" y="256" text-anchor="middle" font-size="7" fill="#166534">PII filter, policy check</text>
+
+  <rect x="460" y="275" width="180" height="32" rx="4" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="550" y="290" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b21a8">Logging</text>
+  <text x="550" y="301" text-anchor="middle" font-size="7" fill="#6b21a8">Full interaction capture</text>
+
+  <rect x="460" y="320" width="180" height="32" rx="4" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="550" y="335" text-anchor="middle" font-size="9" font-weight="bold" fill="#4338ca">Judge</text>
+  <text x="550" y="346" text-anchor="middle" font-size="7" fill="#4338ca">Async evaluation</text>
+
+  <rect x="460" y="365" width="180" height="32" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="550" y="380" text-anchor="middle" font-size="9" font-weight="bold" fill="#92400e">HITL</text>
+  <text x="550" y="391" text-anchor="middle" font-size="7" fill="#92400e">Human review</text>
+
+  <!-- Key insight box -->
+  <rect x="460" y="410" width="180" height="40" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="550" y="427" text-anchor="middle" font-size="8" font-weight="bold" fill="#b91c1c">If feeders are compromised</text>
+  <text x="550" y="440" text-anchor="middle" font-size="8" fill="#b91c1c">AI is confidently wrong</text>
+
+  <!-- ============================================ -->
+  <!-- OUTPUTS (Far Right) -->
+  <!-- ============================================ -->
+  <rect x="675" y="60" width="210" height="440" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="780" y="80" text-anchor="middle" class="zone-label">AI OUTPUTS</text>
+
+  <rect x="690" y="95" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="113" text-anchor="middle" font-size="8" fill="#475569">Customer responses</text>
+
+  <rect x="690" y="130" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="148" text-anchor="middle" font-size="8" fill="#475569">Credit decisions</text>
+
+  <rect x="690" y="165" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="183" text-anchor="middle" font-size="8" fill="#475569">Fraud alerts</text>
+
+  <rect x="690" y="200" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="218" text-anchor="middle" font-size="8" fill="#475569">Trading signals</text>
+
+  <rect x="690" y="235" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="253" text-anchor="middle" font-size="8" fill="#475569">Compliance reports</text>
+
+  <rect x="690" y="270" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="288" text-anchor="middle" font-size="8" fill="#475569">Document summaries</text>
+
+  <rect x="690" y="305" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="323" text-anchor="middle" font-size="8" fill="#475569">Risk assessments</text>
+
+  <rect x="690" y="340" width="180" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="780" y="358" text-anchor="middle" font-size="8" fill="#475569">Agent actions</text>
+
+  <!-- Risk tags on outputs -->
+  <rect x="690" y="385" width="180" height="55" rx="4" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="780" y="400" text-anchor="middle" font-size="7" font-weight="bold" fill="#b91c1c">ALL OUTPUTS AFFECTED BY:</text>
+  <text x="780" y="413" text-anchor="middle" font-size="7" fill="#b91c1c">• Feeder data quality</text>
+  <text x="780" y="425" text-anchor="middle" font-size="7" fill="#b91c1c">• Feeder data freshness</text>
+  <text x="780" y="437" text-anchor="middle" font-size="7" fill="#b91c1c">• Feeder data integrity</text>
+
+  <!-- ============================================ -->
+  <!-- FLOW ARROWS -->
+  <!-- ============================================ -->
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrowred" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <!-- Feeder to Pipeline arrows -->
+  <line x1="265" y1="200" x2="290" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Pipeline to AI arrows -->
+  <line x1="425" y1="200" x2="455" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- AI to Output arrows -->
+  <line x1="655" y1="200" x2="685" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Compromise propagation arrow (red, bottom) -->
+  <path d="M 140 460 H 780" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowred)"/>
+  <text x="450" y="478" text-anchor="middle" font-size="9" font-weight="bold" fill="#ef4444">Compromise propagation →</text>
+  <text x="450" y="492" text-anchor="middle" font-size="8" fill="#ef4444">Poisoned data in = confidently wrong outputs out</text>
+</svg>

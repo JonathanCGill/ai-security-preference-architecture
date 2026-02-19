@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="800" viewBox="0 0 700 800">
+  <defs>
+    <linearGradient id="layer1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0e7490;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ca8a04;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a16207;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c2410c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#be185d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d174d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1e293b">Defence-in-Depth Architecture</text>
+  <text x="350" y="55" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Attacker must bypass ALL layers, not just one</text>
+  
+  <!-- Layer 1: Architectural Controls -->
+  <rect x="50" y="75" width="600" height="65" rx="8" fill="url(#layer1)" filter="url(#shadow)"/>
+  <text x="80" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">ARCHITECTURAL CONTROLS</text>
+  <text x="80" y="120" font-family="Arial, sans-serif" font-size="11" fill="#e9d5ff">Shadow AI detection, API gateway, network segmentation</text>
+  <text x="620" y="112" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#c4b5fd">Layer 1</text>
+  
+  <!-- Arrow -->
+  <path d="M350 140 L350 150 L345 150 L350 160 L355 150 L350 150" fill="#7c3aed"/>
+  
+  <!-- Layer 2: Intent Declaration -->
+  <rect x="50" y="165" width="600" height="65" rx="8" fill="url(#layer2)" filter="url(#shadow)"/>
+  <text x="80" y="190" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">INTENT DECLARATION</text>
+  <text x="80" y="210" font-family="Arial, sans-serif" font-size="11" fill="#bfdbfe">Purpose registration, access justification, audit trail</text>
+  <text x="620" y="202" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#93c5fd">Layer 2</text>
+  
+  <!-- Arrow -->
+  <path d="M350 230 L350 240 L345 240 L350 250 L355 240 L350 240" fill="#2563eb"/>
+  
+  <!-- Layer 3: Input Guardrails -->
+  <rect x="50" y="255" width="600" height="65" rx="8" fill="url(#layer3)" filter="url(#shadow)"/>
+  <text x="80" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">INPUT GUARDRAILS</text>
+  <text x="80" y="300" font-family="Arial, sans-serif" font-size="11" fill="#a5f3fc">Pattern matching, classifiers, semantic analysis</text>
+  <text x="620" y="292" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#67e8f9">Layer 3</text>
+  
+  <!-- Arrow -->
+  <path d="M350 320 L350 330 L345 330 L350 340 L355 330 L350 330" fill="#0891b2"/>
+  
+  <!-- Layer 4: AI Model -->
+  <rect x="50" y="345" width="600" height="65" rx="8" fill="url(#layer4)" filter="url(#shadow)"/>
+  <text x="80" y="370" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">AI MODEL</text>
+  <text x="80" y="390" font-family="Arial, sans-serif" font-size="11" fill="#a7f3d0">System prompt, model-level safety training</text>
+  <text x="620" y="382" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#6ee7b7">Layer 4</text>
+  
+  <!-- Arrow -->
+  <path d="M350 410 L350 420 L345 420 L350 430 L355 420 L350 420" fill="#059669"/>
+  
+  <!-- Layer 5: Output Guardrails -->
+  <rect x="50" y="435" width="600" height="65" rx="8" fill="url(#layer5)" filter="url(#shadow)"/>
+  <text x="80" y="460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">OUTPUT GUARDRAILS</text>
+  <text x="80" y="480" font-family="Arial, sans-serif" font-size="11" fill="#fef3c7">Content filtering, PII detection, grounding checks</text>
+  <text x="620" y="472" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#fde68a">Layer 5</text>
+  
+  <!-- Arrow -->
+  <path d="M350 500 L350 510 L345 510 L350 520 L355 510 L350 510" fill="#ca8a04"/>
+  
+  <!-- Layer 6: Action Controls -->
+  <rect x="50" y="525" width="600" height="65" rx="8" fill="url(#layer6)" filter="url(#shadow)"/>
+  <text x="80" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">ACTION CONTROLS</text>
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="11" fill="#fed7aa">Whitelists, approval workflows, circuit breakers</text>
+  <text x="620" y="562" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#fdba74">Layer 6</text>
+  
+  <!-- Arrow -->
+  <path d="M350 590 L350 600 L345 600 L350 610 L355 600 L350 600" fill="#ea580c"/>
+  
+  <!-- Layer 7: Judge Evaluation -->
+  <rect x="50" y="615" width="600" height="65" rx="8" fill="url(#layer7)" filter="url(#shadow)"/>
+  <text x="80" y="640" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">JUDGE EVALUATION</text>
+  <text x="80" y="660" font-family="Arial, sans-serif" font-size="11" fill="#fecaca">Async review, anomaly detection, policy compliance</text>
+  <text x="620" y="652" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#fca5a5">Layer 7</text>
+  
+  <!-- Arrow -->
+  <path d="M350 680 L350 690 L345 690 L350 700 L355 690 L350 690" fill="#dc2626"/>
+  
+  <!-- Layer 8: Human Oversight -->
+  <rect x="50" y="705" width="600" height="65" rx="8" fill="url(#layer8)" filter="url(#shadow)"/>
+  <text x="80" y="730" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">HUMAN OVERSIGHT</text>
+  <text x="80" y="750" font-family="Arial, sans-serif" font-size="11" fill="#fbcfe8">HITL review, escalation, override capability</text>
+  <text x="620" y="742" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#f9a8d4">Layer 8</text>
+  
+  <!-- Side annotation -->
+  <rect x="665" y="75" width="25" height="695" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="677" y="430" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#475569" transform="rotate(-90, 677, 430)">LOGGING &amp; DETECTION (All Layers)</text>
+  
+</svg>

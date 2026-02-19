@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="guardrailGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="llmGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="judgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="humanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrowGrey" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="280" rx="8" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="480" y="30" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600" letter-spacing="0.5">THE THREE-LAYER PATTERN — SINGLE AGENT, REQUEST-RESPONSE</text>
+
+  <!-- ============================================ -->
+  <!-- Main flow — horizontal, y=100 centre line -->
+  <!-- ============================================ -->
+
+  <!-- User Input -->
+  <rect x="20" y="72" width="110" height="56" rx="8" fill="url(#userGrad)" filter="url(#shadow)"/>
+  <text x="75" y="97" text-anchor="middle" fill="#f1f5f9" font-size="12" font-weight="700">User Input</text>
+  <text x="75" y="113" text-anchor="middle" fill="#cbd5e1" font-size="9">Untrusted</text>
+
+  <!-- Arrow → -->
+  <line x1="130" y1="100" x2="158" y2="100" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowGrey)"/>
+
+  <!-- Input Guardrails -->
+  <rect x="160" y="72" width="120" height="56" rx="8" fill="url(#guardrailGrad)" filter="url(#shadow)"/>
+  <text x="220" y="95" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Guardrails</text>
+  <text x="220" y="110" text-anchor="middle" fill="#fef3c7" font-size="9">Input filtering</text>
+  <text x="220" y="122" text-anchor="middle" fill="#fde68a" font-size="8">Block known-bad</text>
+
+  <!-- Arrow → -->
+  <line x1="280" y1="100" x2="308" y2="100" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowGrey)"/>
+
+  <!-- LLM -->
+  <rect x="310" y="65" width="120" height="70" rx="10" fill="url(#llmGrad)" filter="url(#shadow)"/>
+  <text x="370" y="95" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">LLM</text>
+  <text x="370" y="112" text-anchor="middle" fill="#93c5fd" font-size="9">Generation</text>
+
+  <!-- Arrow → -->
+  <line x1="430" y1="100" x2="458" y2="100" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowGrey)"/>
+
+  <!-- Output Guardrails -->
+  <rect x="460" y="72" width="120" height="56" rx="8" fill="url(#guardrailGrad)" filter="url(#shadow)"/>
+  <text x="520" y="95" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Guardrails</text>
+  <text x="520" y="110" text-anchor="middle" fill="#fef3c7" font-size="9">Output filtering</text>
+  <text x="520" y="122" text-anchor="middle" fill="#fde68a" font-size="8">Block known-bad</text>
+
+  <!-- Arrow → -->
+  <line x1="580" y1="100" x2="608" y2="100" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowGrey)"/>
+
+  <!-- Judge (async) -->
+  <rect x="610" y="72" width="130" height="56" rx="8" fill="url(#judgeGrad)" filter="url(#shadow)"/>
+  <text x="675" y="95" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Judge</text>
+  <text x="675" y="110" text-anchor="middle" fill="#a7f3d0" font-size="9">Async evaluation</text>
+  <text x="675" y="122" text-anchor="middle" fill="#6ee7b7" font-size="8">Detect unknown-bad</text>
+
+  <!-- Arrow → -->
+  <line x1="740" y1="100" x2="768" y2="100" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowGrey)"/>
+
+  <!-- Output -->
+  <rect x="770" y="72" width="170" height="56" rx="8" fill="url(#outputGrad)" filter="url(#shadow)"/>
+  <text x="855" y="97" text-anchor="middle" fill="#f1f5f9" font-size="12" font-weight="700">Output</text>
+  <text x="855" y="113" text-anchor="middle" fill="#cbd5e1" font-size="9">Delivered to user</text>
+
+  <!-- ============================================ -->
+  <!-- Branch down from Judge to Human Review -->
+  <!-- ============================================ -->
+
+  <!-- Arrow ↓ from judge -->
+  <line x1="675" y1="128" x2="675" y2="168" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowCyan)"/>
+
+  <!-- "if flagged" label on the arrow -->
+  <text x="700" y="155" fill="#67e8f9" font-size="9" font-style="italic">if flagged</text>
+
+  <!-- Human Review box -->
+  <rect x="585" y="170" width="180" height="56" rx="8" fill="url(#humanGrad)" filter="url(#shadow)"/>
+  <text x="675" y="195" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Human Review</text>
+  <text x="675" y="211" text-anchor="middle" fill="#cffafe" font-size="9">Approve · Reject · Escalate</text>
+
+  <!-- Arrow from Human back up to Output (approved) -->
+  <path d="M 765 198 Q 790 198 810 170 Q 830 145 855 128" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrowCyan)" opacity="0.6"/>
+  <text x="815" y="162" fill="#67e8f9" font-size="8" font-style="italic">approved</text>
+
+  <!-- Arrow from Human down to Block -->
+  <line x1="675" y1="226" x2="675" y2="253" stroke="#f87171" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="675" y="266" text-anchor="middle" fill="#f87171" font-size="9" font-weight="600">or blocked</text>
+
+  <!-- ============================================ -->
+  <!-- Layer labels along the bottom -->
+  <!-- ============================================ -->
+  <rect x="160" y="245" width="120" height="20" rx="3" fill="#78350f" opacity="0.5"/>
+  <text x="220" y="259" text-anchor="middle" fill="#fbbf24" font-size="8" font-weight="600">LAYER 1: PREVENT</text>
+
+  <rect x="460" y="245" width="120" height="20" rx="3" fill="#78350f" opacity="0.5"/>
+  <text x="520" y="259" text-anchor="middle" fill="#fbbf24" font-size="8" font-weight="600">LAYER 1: PREVENT</text>
+
+  <rect x="610" y="245" width="130" height="20" rx="3" fill="#064e3b" opacity="0.5"/>
+  <text x="675" y="259" text-anchor="middle" fill="#6ee7b7" font-size="8" font-weight="600">LAYER 2: DETECT</text>
+
+  <rect x="585" y="245" width="20" height="20" rx="3" fill="none"/>
+  <!-- spacer -->
+
+  <!-- Legend -->
+  <g transform="translate(20, 250)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#d97706"/>
+    <text x="14" y="9" fill="#94a3b8" font-size="8">Guardrails</text>
+    <rect x="70" y="0" width="10" height="10" rx="2" fill="#059669"/>
+    <text x="84" y="9" fill="#94a3b8" font-size="8">Judge</text>
+    <rect x="120" y="0" width="10" height="10" rx="2" fill="#06b6d4"/>
+    <text x="134" y="9" fill="#94a3b8" font-size="8">Human</text>
+  </g>
+
+  <!-- One input. One model. One output. annotation -->
+  <text x="370" y="52" text-anchor="middle" fill="#475569" font-size="10" font-style="italic">One input · One model · One output · Clear trust boundaries</text>
+</svg>
