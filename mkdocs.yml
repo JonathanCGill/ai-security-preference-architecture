@@ -163,12 +163,14 @@ nav:
   - Strategy:
     - strategy/README.md
     - Business Alignment: strategy/business-alignment.md
+    - Use Case Filter: strategy/use-case-filter.md
     - Data Reality: strategy/data-reality.md
     - Human Factors: strategy/human-factors.md
     - Progression: strategy/progression.md
     - Framework Tensions: strategy/framework-tensions.md
     - Use Case Definition: strategy/use-case-definition.md
     - From Idea to Production: strategy/idea-to-production.md
+    - The Thread: strategy/the-thread.md
 
   - Insights:
     - insights/README.md
