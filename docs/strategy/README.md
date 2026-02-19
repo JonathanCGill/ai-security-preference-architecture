@@ -16,7 +16,7 @@ Ten articles, in order. Each one answers a specific question that must be resolv
 
 ## The Progression
 
-![AI Strategy Landscape](/images/strategy-landscape.svg)
+![AI Strategy Landscape](../../images/strategy-landscape.svg)
 
 ### Phase 1: Is This the Right Problem — and the Right Solution?
 
