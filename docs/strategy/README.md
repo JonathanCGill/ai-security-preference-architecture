@@ -92,29 +92,7 @@ Implement the system and its controls together, deploy with appropriate caution,
 
 ## The Full Sequence
 
-```
-PHASE 1: RIGHT PROBLEM, RIGHT SOLUTION
-  ├─ 1. Business Alignment    → Confirmed problem + success criteria
-  └─ 2. Use Case Filter       → AI confirmed (or exit to non-AI)
-         │
-PHASE 2: CAN WE DELIVER THIS SAFELY?
-  ├─ 3. Platform and Patterns  → Approved platform, model, pattern
-  ├─ 4. Data Reality           → Data readiness confirmed
-  ├─ 5. Human Factors          → Skills + oversight capacity confirmed
-  └─ 6. Progression            → Maturity position supports this deployment
-         │
-PHASE 3: DEFINE AND CLASSIFY
-  ├─ 7. Framework Tensions     → Constraints understood
-  └─ 8. Use Case Definition    → Ten questions answered → risk tier assigned
-         │
-PHASE 4: BUILD, DEPLOY, GOVERN
-  ├─ 9. Idea to Production     → Stages 5-8 (control design → deploy → govern)
-  └─ 10. The Thread            → Return loop: monitoring → reassessment
-         │
-         └──── loops back to Phase 1, 2, or 3 when monitoring
-               signals indicate the system has moved beyond
-               its original parameters
-```
+![From Strategy to Production — Full Sequence](../../images/strategy-full-sequence.svg)
 
 ---
 
