@@ -16,62 +16,14 @@ These pages tell you **what matters for your role**, **why you should care**, an
 
 ## Pick Your Role
 
-<table markdown="block">
-<tr>
-<td width="50%" markdown="block">
-
-### [Security Leaders](security-leaders.md)
-CISOs, Security Directors, Security Architects
-
-*You're accountable for AI risk but the threat model is different from anything you've secured before.*
-
-</td>
-<td width="50%" markdown="block">
-
-### [Risk & Governance](risk-and-governance.md)
-CROs, Risk Managers, GRC Teams
-
-*You need to quantify AI risk, set appetite, and prove to the board that controls are working.*
-
-</td>
-</tr>
-<tr>
-<td markdown="block">
-
-### [Enterprise Architects](enterprise-architects.md)
-Solution Architects, Platform Architects, Technical Leads
-
-*You're designing the pipeline. You need to know where controls go, what they cost, and how they fail.*
-
-</td>
-<td markdown="block">
-
-### [Product Owners](product-owners.md)
-Product Managers, Business Owners, Delivery Leads
-
-*You want to ship AI features. You need to know what controls are required and what they cost in time and money.*
-
-</td>
-</tr>
-<tr>
-<td markdown="block">
-
-### [AI Engineers](ai-engineers.md)
-ML Engineers, AI Developers, Data Scientists, Platform Engineers
-
-*You're building the system. You need implementation patterns, not governance theory.*
-
-</td>
-<td markdown="block">
-
-### [Compliance & Legal](compliance-and-legal.md)
-Compliance Officers, Legal Counsel, DPOs, Audit Teams
-
-*You need to demonstrate that AI deployments meet regulatory obligations — with evidence, not assertions.*
-
-</td>
-</tr>
-</table>
+| Role | Who It's For | Core Question |
+|---|---|---|
+| **[Security Leaders](security-leaders.md)** | CISOs, Security Directors, Security Architects | *How do I secure AI when the threat model is unlike anything I've secured before?* |
+| **[Risk & Governance](risk-and-governance.md)** | CROs, Risk Managers, GRC Teams | *How do I quantify AI risk and prove to the board that controls are working?* |
+| **[Enterprise Architects](enterprise-architects.md)** | Solution Architects, Platform Architects, Technical Leads | *Where do controls go in my pipeline, what do they cost, and how do they fail?* |
+| **[Product Owners](product-owners.md)** | Product Managers, Business Owners, Delivery Leads | *What controls are required to ship AI, and what do they cost in time and money?* |
+| **[AI Engineers](ai-engineers.md)** | ML Engineers, AI Developers, Data Scientists, Platform Engineers | *What do I actually build? Give me implementation patterns, not governance theory.* |
+| **[Compliance & Legal](compliance-and-legal.md)** | Compliance Officers, Legal Counsel, DPOs, Audit Teams | *How do I demonstrate that AI deployments meet regulatory obligations — with evidence?* |
 
 ---
 
