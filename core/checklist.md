@@ -164,10 +164,14 @@
 
 ---
 
-## Sign-Off
+## Verification
 
-| Phase | Completed | Signed Off By | Date |
-|-------|-----------|---------------|------|
+This checklist is most effective when automated — integrated into CI/CD pipelines and platform deployment workflows so that items are verified as part of the build, not signed off in a meeting. Where automation isn't feasible, the team that built the system verifies their own readiness.
+
+Organisations may choose to add formal sign-off gates for higher-risk tiers. That is a governance decision, not a framework requirement. The framework's requirement is that the checks are completed and the results are visible — not that a specific approver signs a document.
+
+| Phase | Completed | Verified By | Date |
+|-------|-----------|-------------|------|
 | Foundation | ☐ | | |
 | Logging | ☐ | | |
 | Guardrails | ☐ | | |
@@ -175,10 +179,6 @@
 | HITL | ☐ | | |
 | Operational | ☐ | | |
 | Agent Controls | ☐ | | |
-
-**System approved for production:** ☐
-
-**Approver:** __________________ **Date:** __________
 
 ---
 

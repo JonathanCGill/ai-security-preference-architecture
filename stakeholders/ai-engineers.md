@@ -135,7 +135,7 @@ The Judge doesn't have to be expensive. A smaller, faster model (Haiku-class) ru
 Correct — which is why the framework doesn't require human review of every transaction (except at CRITICAL tier). The Judge handles scale. Humans handle the edge cases the Judge flags and the random samples that keep the system honest. See [Humans Remain Accountable](../insights/humans-remain-accountable.md).
 
 **"This is security's job, not mine."**
-Security sets the requirements. You implement them. The framework gives you concrete patterns so you're not guessing. The [Controls](../core/controls.md) document tells you exactly what to build. The [Checklist](../core/checklist.md) tracks your progress. Security reviews the result, not the implementation approach.
+Security builds the platform. You deploy on it. On approved infrastructure, most controls — guardrails, logging, circuit breakers — are platform primitives that you inherit by deploying, not things you implement from scratch. The framework gives you concrete patterns for the use-case-specific configuration that sits on top. The [Controls](../core/controls.md) document tells you what each layer does. The [Checklist](../core/checklist.md) tracks your progress. If you're building controls from scratch, either the platform is missing a capability (flag it) or you're building something genuinely novel (in which case the framework guides your design).
 
 ---
 

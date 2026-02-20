@@ -84,7 +84,7 @@ Pre-built crosswalks to the standards your GRC team already tracks:
 
 | # | Document | Why You Need It |
 |---|---|---|
-| 1 | [Risk Tiers](../core/risk-tiers.md) | The classification scheme — six dimensions, four tiers, governance approval gates |
+| 1 | [Risk Tiers](../core/risk-tiers.md) | The classification scheme — six dimensions, four tiers, self-service with detection |
 | 2 | [Risk Assessment](../core/risk-assessment.md) | Quantitative methodology — worked examples at every tier, NIST AI RMF aligned |
 | 3 | [Controls](../core/controls.md) | What each control layer does, so you can evaluate whether they're implemented correctly |
 | 4 | [PACE Resilience](../PACE-RESILIENCE.md) | Operational resilience — defined fail postures and degradation paths |
@@ -114,7 +114,7 @@ Pre-built crosswalks to the standards your GRC team already tracks:
 Does it quantify residual risk per control layer? Does it define what happens when controls fail? Does it map to NIST AI RMF at the subcategory level? This framework isn't competing with your existing GRC tooling — it provides the AI-specific risk methodology that plugs into it.
 
 **"The AI team says the risk is low."**
-Risk classification is a governance function, not an engineering function. The six-dimension scoring is designed to be completed jointly by the AI team and the risk function. Engineers assess technical dimensions (reversibility, scale); risk assesses business dimensions (regulatory, data sensitivity, audience).
+Risk classification is the product owner's decision — they are accountable for the product's behaviour in production. The six-dimension scoring is designed to be self-service: the product owner answers the questions, the tier follows from the scores, and the controls auto-apply. Your role as a risk function is to ensure the scoring criteria are clear, the platform enforces the right controls per tier, and runtime monitoring detects misclassification. If a product owner underestimates their risk, the consequences are theirs — but the detection mechanisms should surface the misalignment quickly, not wait for a quarterly review.
 
 **"We can't measure AI control effectiveness."**
 You can. Guardrail effectiveness is measured through red team exercises. Judge accuracy is measured through labelled evaluation datasets. Human reviewer effectiveness is measured through agreement studies. The [Risk Assessment](../core/risk-assessment.md) methodology explains exactly how — and what to do with illustrative rates before you have measured ones.

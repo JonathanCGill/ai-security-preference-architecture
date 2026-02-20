@@ -162,7 +162,7 @@ The [MASO Framework](../maso/) also uses Tier 1/2/3 for multi-agent **autonomy l
 - 6+ months stable operation
 - No significant incidents
 - Reduced scope documented
-- Governance approval
+- Product owner decision (documented with risk acceptance)
 
 ---
 

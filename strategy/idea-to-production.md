@@ -173,9 +173,9 @@ The framework applies to the AI components. The risk tier is determined by what 
 
 ## Stage 4: Risk Classification
 
-**Owner:** Risk analyst (2nd line)
+**Owner:** Product owner (with risk function available for support)
 
-**Purpose:** Formally classify the risk tier using the framework's six-dimension scoring model.
+**Purpose:** Classify the risk tier using the framework's six-dimension scoring model.
 
 **Inputs:**
 - Completed use case definition (Stage 2)
@@ -201,11 +201,14 @@ The framework applies to the AI components. The risk tier is determined by what 
 | Regulatory | e.g., HIGH | PCI-DSS, banking regulations |
 | **Overall Tier** | **CRITICAL** | Data sensitivity drives the tier |
 
-**Guardrail:** Unclassified systems are visible in the use case registry — they stand out because they have no tier, no controls, and no monitoring baseline. For Fast Lane, teams self-certify. For MEDIUM, a risk analyst reviews. For HIGH/CRITICAL, the governance committee reviews. The classification process is lightweight enough that skipping it costs more than doing it.
+**Guardrail:** Unclassified systems are visible in the use case registry — they stand out because they have no tier, no controls, and no monitoring baseline. Classification is self-service: teams score the dimensions, the tier follows from the scores, and the corresponding controls auto-apply from the platform. The classification process is lightweight enough that skipping it costs more than doing it.
+
+If a team misclassifies — scores optimistically, underestimates data sensitivity, misjudges decision authority — the consequences fall on the product owner who signed off the classification. This is the accountability model described in [Security as Enablement](../insights/security-as-enablement.md): the product owner decides, accepts the risk, and accepts the consequences. The platform provides the controls; the product owner determines which ones apply.
+
+Organisations may choose to add governance review for higher-risk classifications. That is a governance decision. The framework's default is self-service classification with detection of misalignment through runtime monitoring.
 
 **What can go wrong here:**
-- Optimistic scoring → system under-controlled
-- No governance approval → classification has no authority
+- Optimistic scoring → system under-controlled → product owner accountable
 - Dimension ambiguity not investigated → hidden risk
 - Fast Lane self-certification when criteria aren't clearly met → under-governed system
 
@@ -213,9 +216,9 @@ The framework applies to the AI components. The risk tier is determined by what 
 
 ## Stage 5: Control Design
 
-**Owner:** Security architect + AI governance
+**Owner:** Engineering team (with security architecture support)
 
-**Purpose:** Translate the risk tier into a specific control specification for this system.
+**Purpose:** Translate the risk tier into a specific control specification for this system. On approved platforms, most of this is automatic — the platform inherits baseline controls per tier, and the team configures use-case-specific settings on top.
 
 **Inputs:**
 - Scored risk profile (Stage 4)
@@ -246,7 +249,7 @@ The framework applies to the AI components. The risk tier is determined by what 
 | **Monitoring** | Dashboards, alerts, anomaly thresholds |
 | **Incident response** | Playbook reference, severity mapping, notification requirements |
 
-**Guardrail:** Teams building on approved platforms inherit baseline controls automatically — logging, monitoring, and standard guardrails come with the platform. The control specification adds use-case-specific configuration on top. Review by security architect, governance, and business owner strengthens the design, but the platform defaults mean even a rushed deployment starts with basic protection.
+**Guardrail:** Teams building on approved platforms inherit baseline controls automatically — logging, monitoring, and standard guardrails come with the platform. The control specification adds use-case-specific configuration on top. The platform defaults mean even a rushed deployment starts with basic protection. Security architecture support is available to strengthen the design, particularly for novel use cases — but the platform does the heavy lifting, not a governance function.
 
 ---
 
@@ -274,21 +277,21 @@ The framework applies to the AI components. The risk tier is determined by what 
 
 | Check | Verified By | Status |
 |-------|------------|--------|
-| Use case definition matches implementation | Business owner | |
-| Risk tier is current (no scope changes during build) | Risk analyst | |
-| Input guardrails active and tested | Security | |
-| Output guardrails active and tested | Security | |
-| Judge evaluation configured and tested (shadow mode) | Security/QA | |
+| Use case definition matches implementation | Engineering | |
+| Risk tier is current (no scope changes during build) | Product owner | |
+| Input guardrails active and tested | Engineering | |
+| Output guardrails active and tested | Engineering | |
+| Judge evaluation configured and tested (shadow mode) | Engineering | |
 | HITL workflow functional; reviewers trained | Operations | |
 | PACE transitions tested (feature flag, fallback) | Engineering | |
 | Logging captures required data at required retention | Engineering | |
 | Monitoring dashboards and alerts configured | Operations | |
 | Incident response playbook exists and is known | Operations | |
-| Manual fallback process documented and tested | Business owner | |
+| Manual fallback process documented and tested | Product owner | |
 | Kill switch operational | Engineering | |
-| Regulatory/compliance sign-off obtained | Legal/Compliance | |
+| Regulatory/compliance requirements addressed | Product owner | |
 
-**Guardrail:** The pre-deployment checklist is a detective control — it surfaces gaps before they reach production. Items that aren't verified generate findings, not blockers. For HIGH/CRITICAL systems, the governance committee reviews before go-live. For lower tiers, the checklist serves as the team's own quality signal. The feature flag and PACE plan mean a deployment that discovers problems can be rolled back quickly.
+**Guardrail:** The pre-deployment checklist is a detective control — it surfaces gaps before they reach production. Ideally it is automated as part of the deployment pipeline, not performed as a manual review ceremony. Items that aren't verified generate findings, not blockers. The feature flag and PACE plan mean a deployment that discovers problems can be rolled back quickly. Organisations may choose to add governance review before go-live for higher-risk systems — that is a governance decision, not a framework requirement.
 
 **What can go wrong here:**
 - Controls implemented but not tested → false confidence
@@ -325,7 +328,7 @@ The framework applies to the AI components. The risk tier is determined by what 
 | LOW | Standard release | Basic monitoring sufficient |
 | MEDIUM | Canary or staged rollout | Monitor Judge findings before full traffic |
 | HIGH | Gradual rollout with enhanced monitoring | Watch for unexpected patterns at scale |
-| CRITICAL | Phased rollout with governance checkpoints | Each phase reviewed before expansion |
+| CRITICAL | Phased rollout with monitoring checkpoints | Each phase verified stable before expansion |
 
 **First 30 Days:**
 
@@ -388,9 +391,9 @@ The framework applies to the AI components. The risk tier is determined by what 
 | Judge accuracy drop | Recalibration or investigation | Technical ops |
 | HITL SLA breach | Root cause analysis | Governance |
 
-### The Governance Dashboard
+### The Operational Dashboard
 
-What the governance committee needs to see:
+What the team and any governance function needs to see (this data should be visible to the owning team first, not compiled into a governance report about them):
 
 | Metric | Source | Frequency | Target |
 |--------|--------|-----------|--------|

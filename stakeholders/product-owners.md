@@ -59,9 +59,11 @@ Controls aren't overhead — they're insurance with measurable ROI:
 
 The [Risk Assessment](../core/risk-assessment.md) has the full worked example: a customer-facing chatbot at 1M transactions/year drops from ~100,000 issues to ~10 per year with three-layer controls.
 
-### A classification you can do in 15 minutes
+### A classification you own
 
-The [Use Case Definition](../strategy/use-case-definition.md) provides ten questions that classify your AI system and determine exactly what controls are required. Complete it before your first security review. You'll arrive with answers instead of questions.
+The [Use Case Definition](../strategy/use-case-definition.md) provides ten questions that classify your AI system and determine exactly what controls are required. Complete it in 15 minutes. The classification is self-service — you answer the questions, the tier follows, and the platform auto-applies the corresponding controls. No security review is needed for Fast Lane. For higher tiers, the controls activate from the platform; you configure the use-case-specific settings on top.
+
+You own this classification. If you misalign your answers with reality — understate the data sensitivity, overstate the human oversight, misjudge the decision authority — the residual risk falls on you. The framework makes the secure path the easy path. Choosing to deviate from it is your prerogative, but the consequences are yours too.
 
 ---
 
@@ -83,7 +85,7 @@ The [Use Case Definition](../strategy/use-case-definition.md) provides ten quest
 
 1. **Classify your AI system** using the [Cheat Sheet](../CHEATSHEET.md). Can it go through the Fast Lane? If so, do that. If not, know your tier.
 
-2. **Complete the [Use Case Definition](../strategy/use-case-definition.md)** before requesting a security review. Ten questions, 15 minutes, and you arrive with a clear scope that security can approve faster.
+2. **Complete the [Use Case Definition](../strategy/use-case-definition.md).** Ten questions, 15 minutes, and you have a clear scope, a risk tier, and a control specification. This is self-service — no security review queue to wait in.
 
 3. **Budget for the evaluation layer** based on your tier. LOW tier = negligible. MEDIUM = modest (Judge on 10% sample). HIGH/CRITICAL = meaningful but proportionate. The [Cost & Latency](../extensions/technical/cost-and-latency.md) analysis has actual numbers.
 
