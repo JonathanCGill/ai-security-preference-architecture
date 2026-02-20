@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1340" viewBox="0 0 1100 1340" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5d6d7e"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2980b9"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d97706"/>
+    </marker>
+    <linearGradient id="fastLaneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d5f5e3"/>
+      <stop offset="100%" stop-color="#abebc6"/>
+    </linearGradient>
+    <linearGradient id="tier1Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d6eaf8"/>
+      <stop offset="100%" stop-color="#aed6f1"/>
+    </linearGradient>
+    <linearGradient id="tier2Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#fdebd0"/>
+    </linearGradient>
+    <linearGradient id="tier3Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdedec"/>
+      <stop offset="100%" stop-color="#fadbd8"/>
+    </linearGradient>
+    <linearGradient id="monitorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f6f7"/>
+      <stop offset="100%" stop-color="#eaecee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="1340" fill="#f8f9fa" rx="8"/>
+
+  <!-- ============================================ -->
+  <!-- TITLE -->
+  <!-- ============================================ -->
+  <text x="550" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">Automated Risk Tiering — From Classification to Continuous Monitoring</text>
+  <text x="550" y="52" text-anchor="middle" font-size="11" fill="#7f8c8d">Self-service classification. Auto-applied controls. Dynamic tier adjustment. No governance meetings required.</text>
+
+  <!-- ============================================ -->
+  <!-- PHASE 1: SELF-SERVICE CLASSIFICATION -->
+  <!-- ============================================ -->
+  <text x="30" y="82" font-size="12" font-weight="bold" fill="#2c3e50" letter-spacing="1">PHASE 1 — SELF-SERVICE CLASSIFICATION</text>
+  <line x1="30" y1="88" x2="1070" y2="88" stroke="#d5dbdb" stroke-width="1"/>
+
+  <!-- Start node -->
+  <rect x="430" y="100" width="240" height="36" rx="18" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="550" y="123" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">Team Starts New AI Deployment</text>
+
+  <line x1="550" y1="136" x2="550" y2="158" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Self-service form -->
+  <rect x="340" y="160" width="420" height="120" rx="6" fill="#fff" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="550" y="180" text-anchor="middle" font-size="11" font-weight="bold" fill="#1a5276">Six Questions — Self-Service Form (2 minutes)</text>
+  <line x1="360" y1="188" x2="740" y2="188" stroke="#d6eaf8" stroke-width="1"/>
+
+  <text x="370" y="206" font-size="9.5" fill="#2c3e50">Q1. Does the system make decisions, or inform them?</text>
+  <text x="370" y="220" font-size="9.5" fill="#2c3e50">Q2. Can errors be reversed? At what cost?</text>
+  <text x="370" y="234" font-size="9.5" fill="#2c3e50">Q3. What data does it access? (PII, financial, health, public)</text>
+  <text x="370" y="248" font-size="9.5" fill="#2c3e50">Q4. Who sees the output? (Internal experts → external public)</text>
+  <text x="370" y="262" font-size="9.5" fill="#2c3e50">Q5. How many people affected per day?</text>
+  <text x="370" y="276" font-size="9.5" fill="#2c3e50">Q6. Is the activity regulated?</text>
+
+  <line x1="550" y1="280" x2="550" y2="302" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Scoring engine -->
+  <rect x="380" y="304" width="340" height="50" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="550" y="325" text-anchor="middle" font-size="11" font-weight="bold" fill="#1a5276">Scoring Engine</text>
+  <text x="550" y="342" text-anchor="middle" font-size="9" fill="#5d6d7e">Each answer maps to a score. Highest dimension wins. Instant result.</text>
+
+  <!-- Arrows from scoring to four outcomes -->
+  <line x1="550" y1="354" x2="550" y2="376" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Fast Lane check first -->
+  <polygon points="550,378 680,413 550,448 420,413" fill="#fff" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="550" y="408" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e8449">Fast Lane eligible?</text>
+  <text x="550" y="422" text-anchor="middle" font-size="9" fill="#1e8449">All 4 criteria met?</text>
+
+  <!-- Fast Lane YES -->
+  <line x1="420" y1="413" x2="160" y2="413" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <text x="300" y="406" font-size="9" font-weight="bold" fill="#27ae60">Yes — all 4 pass</text>
+
+  <rect x="30" y="388" width="128" height="50" rx="6" fill="url(#fastLaneGrad)" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="94" y="408" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e8449">Fast Lane</text>
+  <text x="94" y="422" text-anchor="middle" font-size="8.5" fill="#1e8449">Self-certify. Deploy.</text>
+
+  <!-- No — score determines tier -->
+  <line x1="550" y1="448" x2="550" y2="470" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <text x="564" y="464" font-size="9" font-weight="bold" fill="#e74c3c">No</text>
+
+  <!-- Tier assignment -->
+  <rect x="370" y="472" width="360" height="36" rx="6" fill="#fff" stroke="#5d6d7e" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="550" y="494" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">Highest Score Assigns Tier → Controls Auto-Apply</text>
+
+  <!-- Three tier outputs -->
+  <line x1="440" y1="508" x2="200" y2="545" stroke="#2980b9" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <line x1="550" y1="508" x2="550" y2="545" stroke="#d97706" stroke-width="1.5" marker-end="url(#arrowAmber)"/>
+  <line x1="660" y1="508" x2="900" y2="545" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+
+  <!-- Tier 1 box -->
+  <rect x="80" y="547" width="240" height="100" rx="6" fill="url(#tier1Grad)" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="567" text-anchor="middle" font-size="11" font-weight="bold" fill="#1a5276">Tier 1 — LOW / MEDIUM</text>
+  <line x1="100" y1="573" x2="300" y2="573" stroke="#aed6f1" stroke-width="1"/>
+  <text x="110" y="590" font-size="9" fill="#2c3e50">✓ Basic guardrails auto-deployed</text>
+  <text x="110" y="604" font-size="9" fill="#2c3e50">✓ Judge at 5–10% sampling</text>
+  <text x="110" y="618" font-size="9" fill="#2c3e50">✓ Usage logging enabled</text>
+  <text x="110" y="632" font-size="9" fill="#2c3e50">✓ Feature flag provisioned</text>
+
+  <!-- Tier 2 box -->
+  <rect x="430" y="547" width="240" height="100" rx="6" fill="url(#tier2Grad)" stroke="#d97706" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="550" y="567" text-anchor="middle" font-size="11" font-weight="bold" fill="#935116">Tier 2 — HIGH</text>
+  <line x1="450" y1="573" x2="650" y2="573" stroke="#fdebd0" stroke-width="1"/>
+  <text x="452" y="590" font-size="9" fill="#2c3e50">✓ Enhanced guardrails + PII block</text>
+  <text x="452" y="604" font-size="9" fill="#2c3e50">✓ Judge at 20–50%, near real-time</text>
+  <text x="452" y="618" font-size="9" fill="#2c3e50">✓ Systematic human review queue</text>
+  <text x="452" y="632" font-size="9" fill="#2c3e50">✓ PACE A/C configured</text>
+
+  <!-- Tier 3 box -->
+  <rect x="780" y="547" width="240" height="100" rx="6" fill="url(#tier3Grad)" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="900" y="567" text-anchor="middle" font-size="11" font-weight="bold" fill="#922b21">Tier 3 — CRITICAL</text>
+  <line x1="800" y1="573" x2="1000" y2="573" stroke="#fadbd8" stroke-width="1"/>
+  <text x="802" y="590" font-size="9" fill="#2c3e50">✓ Multi-layer guardrails</text>
+  <text x="802" y="604" font-size="9" fill="#2c3e50">✓ Judge at 100%, real-time</text>
+  <text x="802" y="618" font-size="9" fill="#2c3e50">✓ Full human oversight + SLA</text>
+  <text x="802" y="632" font-size="9" fill="#2c3e50">✓ Full PACE + circuit breaker</text>
+
+  <!-- ============================================ -->
+  <!-- PHASE 2: CONTINUOUS MONITORING -->
+  <!-- ============================================ -->
+  <text x="30" y="690" font-size="12" font-weight="bold" fill="#2c3e50" letter-spacing="1">PHASE 2 — CONTINUOUS RISK MONITORING</text>
+  <line x1="30" y1="696" x2="1070" y2="696" stroke="#d5dbdb" stroke-width="1"/>
+
+  <!-- Monitoring pipeline -->
+  <rect x="60" y="710" width="980" height="180" rx="8" fill="url(#monitorGrad)" stroke="#aeb6bf" stroke-width="1" filter="url(#shadow)"/>
+  <text x="550" y="732" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">Seven Signal Aggregation — Continuous Anomaly Scoring</text>
+
+  <!-- Seven signals as small boxes -->
+  <rect x="80" y="745" width="120" height="40" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="140" y="762" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#922b21">Guardrail Blocks</text>
+  <text x="140" y="776" text-anchor="middle" font-size="8" fill="#922b21">weight 0.15</text>
+
+  <rect x="215" y="745" width="120" height="40" rx="4" fill="#fef9e7" stroke="#d97706" stroke-width="1"/>
+  <text x="275" y="762" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#935116">Judge Flags</text>
+  <text x="275" y="776" text-anchor="middle" font-size="8" fill="#935116">weight 0.25</text>
+
+  <rect x="350" y="745" width="120" height="40" rx="4" fill="#d6eaf8" stroke="#2980b9" stroke-width="1"/>
+  <text x="410" y="762" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#1a5276">Output Quality</text>
+  <text x="410" y="776" text-anchor="middle" font-size="8" fill="#1a5276">weight 0.20</text>
+
+  <rect x="485" y="745" width="120" height="40" rx="4" fill="#e8daef" stroke="#7d3c98" stroke-width="1"/>
+  <text x="545" y="762" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#6c3483">Content Drift</text>
+  <text x="545" y="776" text-anchor="middle" font-size="8" fill="#6c3483">weight 0.15</text>
+
+  <rect x="620" y="745" width="120" height="40" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="680" y="762" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#1e8449">Tool Usage</text>
+  <text x="680" y="776" text-anchor="middle" font-size="8" fill="#1e8449">weight 0.10</text>
+
+  <rect x="755" y="745" width="120" height="40" rx="4" fill="#fdf2e9" stroke="#e67e22" stroke-width="1"/>
+  <text x="815" y="762" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#a04000">Error Rate</text>
+  <text x="815" y="776" text-anchor="middle" font-size="8" fill="#a04000">weight 0.10</text>
+
+  <rect x="890" y="745" width="120" height="40" rx="4" fill="#eaf2f8" stroke="#5dade2" stroke-width="1"/>
+  <text x="950" y="762" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#1a5276">Cost Trajectory</text>
+  <text x="950" y="776" text-anchor="middle" font-size="8" fill="#1a5276">weight 0.05</text>
+
+  <!-- Arrows converging to composite score -->
+  <line x1="140" y1="785" x2="500" y2="815" stroke="#aeb6bf" stroke-width="1"/>
+  <line x1="275" y1="785" x2="500" y2="815" stroke="#aeb6bf" stroke-width="1"/>
+  <line x1="410" y1="785" x2="510" y2="815" stroke="#aeb6bf" stroke-width="1"/>
+  <line x1="545" y1="785" x2="540" y2="815" stroke="#aeb6bf" stroke-width="1"/>
+  <line x1="680" y1="785" x2="570" y2="815" stroke="#aeb6bf" stroke-width="1"/>
+  <line x1="815" y1="785" x2="590" y2="815" stroke="#aeb6bf" stroke-width="1"/>
+  <line x1="950" y1="785" x2="610" y2="815" stroke="#aeb6bf" stroke-width="1"/>
+
+  <!-- Composite score -->
+  <rect x="430" y="815" width="240" height="38" rx="6" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="550" y="833" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">Composite Anomaly Score (0–100)</text>
+  <text x="550" y="847" text-anchor="middle" font-size="8.5" fill="#aeb6bf">7-day rolling baseline. Deviation triggers action.</text>
+
+  <!-- Score bands -->
+  <rect x="100" y="862" width="200" height="24" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="200" y="879" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e8449">0–40  Normal</text>
+
+  <rect x="320" y="862" width="200" height="24" rx="4" fill="#fef9e7" stroke="#d97706" stroke-width="1"/>
+  <text x="420" y="879" text-anchor="middle" font-size="9" font-weight="bold" fill="#935116">40–60  Elevated</text>
+
+  <rect x="540" y="862" width="200" height="24" rx="4" fill="#fdf2e9" stroke="#e67e22" stroke-width="1"/>
+  <text x="640" y="879" text-anchor="middle" font-size="9" font-weight="bold" fill="#a04000">60–80  High</text>
+
+  <rect x="760" y="862" width="200" height="24" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="860" y="879" text-anchor="middle" font-size="9" font-weight="bold" fill="#922b21">80–100  Critical</text>
+
+  <!-- ============================================ -->
+  <!-- PHASE 3: DYNAMIC TIER ADJUSTMENT -->
+  <!-- ============================================ -->
+  <text x="30" y="920" font-size="12" font-weight="bold" fill="#2c3e50" letter-spacing="1">PHASE 3 — DYNAMIC TIER ADJUSTMENT</text>
+  <line x1="30" y1="926" x2="1070" y2="926" stroke="#d5dbdb" stroke-width="1"/>
+
+  <!-- Escalation path (left side) -->
+  <rect x="60" y="942" width="480" height="220" rx="8" fill="#fff" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="300" y="964" text-anchor="middle" font-size="12" font-weight="bold" fill="#922b21">Automated Escalation (Tier Up)</text>
+  <text x="300" y="980" text-anchor="middle" font-size="9" fill="#7f8c8d">System detects risk increase → controls tighten automatically</text>
+  <line x1="80" y1="988" x2="520" y2="988" stroke="#fadbd8" stroke-width="1"/>
+
+  <!-- Escalation triggers -->
+  <text x="80" y="1008" font-size="9.5" font-weight="bold" fill="#2c3e50">Triggers (any one is sufficient):</text>
+  <text x="100" y="1026" font-size="9" fill="#2c3e50">• Anomaly score exceeds 60 for 24+ hours</text>
+  <text x="100" y="1042" font-size="9" fill="#2c3e50">• Guardrail block rate &gt;3σ from 7-day baseline</text>
+  <text x="100" y="1058" font-size="9" fill="#2c3e50">• Judge flag rate doubles in 48-hour window</text>
+  <text x="100" y="1074" font-size="9" fill="#2c3e50">• PII detected in output (any instance)</text>
+  <text x="100" y="1090" font-size="9" fill="#2c3e50">• Scope change detected (new data source, new audience)</text>
+
+  <text x="80" y="1114" font-size="9.5" font-weight="bold" fill="#2c3e50">Automated response:</text>
+  <text x="100" y="1132" font-size="9" fill="#2c3e50">1. Increase Judge coverage to next tier level</text>
+  <text x="100" y="1148" font-size="9" fill="#2c3e50">2. Enable human review queue if not active</text>
+
+  <!-- De-escalation path (right side) -->
+  <rect x="560" y="942" width="480" height="220" rx="8" fill="#fff" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="800" y="964" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e8449">Automated De-escalation (Tier Down)</text>
+  <text x="800" y="980" text-anchor="middle" font-size="9" fill="#7f8c8d">Sustained low risk → controls relax. Product owner confirms.</text>
+  <line x1="580" y1="988" x2="1020" y2="988" stroke="#abebc6" stroke-width="1"/>
+
+  <!-- De-escalation criteria -->
+  <text x="580" y="1008" font-size="9.5" font-weight="bold" fill="#2c3e50">Criteria (all must be true):</text>
+  <text x="600" y="1026" font-size="9" fill="#2c3e50">• Anomaly score &lt;40 for 6+ consecutive months</text>
+  <text x="600" y="1042" font-size="9" fill="#2c3e50">• Zero security incidents in period</text>
+  <text x="600" y="1058" font-size="9" fill="#2c3e50">• No scope changes detected</text>
+  <text x="600" y="1074" font-size="9" fill="#2c3e50">• Judge findings stable or declining</text>
+  <text x="600" y="1090" font-size="9" fill="#2c3e50">• Human review override rate &lt;2%</text>
+
+  <text x="580" y="1114" font-size="9.5" font-weight="bold" fill="#2c3e50">Process:</text>
+  <text x="600" y="1132" font-size="9" fill="#2c3e50">1. System proposes tier reduction with evidence</text>
+  <text x="600" y="1148" font-size="9" fill="#2c3e50">2. Product owner accepts (their decision, their risk)</text>
+
+  <!-- The flaw callout -->
+  <rect x="60" y="1178" width="980" height="70" rx="6" fill="#fef9e7" stroke="#d97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="80" y="1198" font-size="11" font-weight="bold" fill="#935116">⚠  The Flaw: Classification Is Only as Good as the Answers</text>
+  <text x="80" y="1216" font-size="9.5" fill="#2c3e50">The self-service form assumes the person completing it knows their system's data flows, audience reach, and regulatory status. In practice, teams understate risk —</text>
+  <text x="80" y="1232" font-size="9.5" fill="#2c3e50">not maliciously, but because they classify intent rather than actual behaviour. Continuous monitoring exists to catch this gap: the system you described is not the</text>
+  <text x="80" y="1248" font-size="9.5" fill="#1a5276; font-weight: bold">system that shipped. Runtime signals are the corrective layer. Classification starts the conversation. Monitoring finishes it.</text>
+
+  <!-- Bottom insight strip -->
+  <rect x="60" y="1270" width="980" height="46" rx="6" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="550" y="1290" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#fff">Classify in 2 minutes. Deploy with controls inherited. Monitor continuously. Adjust automatically.</text>
+  <text x="550" y="1306" text-anchor="middle" font-size="9" fill="#aeb6bf">No governance meetings. No maturity assessments. No spreadsheets. Infrastructure does the work.</text>
+
+</svg>

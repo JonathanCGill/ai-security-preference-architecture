@@ -214,6 +214,7 @@ nav:
       - Open-Weight Models: insights/open-weight-models-shift-the-burden.md
       - PACE Resilience: insights/PACE-RESILIENCE.md
       - Security as Enablement: insights/security-as-enablement.md
+      - Automated Risk Tiering: insights/automated-risk-tiering.md
 
   - Extensions:
     - Regulatory:
