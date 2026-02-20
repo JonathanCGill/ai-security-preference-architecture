@@ -91,6 +91,7 @@ nav:
     - Core:
       - core/README.md
       - Risk Tiers: core/risk-tiers.md
+      - Risk Assessment: core/risk-assessment.md
       - Controls: core/controls.md
       - Implementation Checklist: core/checklist.md
       - Judge Assurance: core/judge-assurance.md

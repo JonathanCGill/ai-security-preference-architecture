@@ -12,11 +12,12 @@ Start with the essentials, then branch into specialised topics based on your dep
 
 **Essential (read in order):**
 1. [Risk Tiers](risk-tiers.md) — classify your system
-2. [Controls](controls.md) — implement the three-layer pattern
-3. [Agentic](agentic.md) — add controls if your agent has tool access
-4. [IAM Governance](iam-governance.md) — identity, lifecycle, delegation
-5. [Judge Assurance](judge-assurance.md) — measure and calibrate the Judge
-6. [Checklist](checklist.md) — track implementation progress
+2. [Risk Assessment](risk-assessment.md) — quantify control effectiveness and residual risk per tier
+3. [Controls](controls.md) — implement the three-layer pattern
+4. [Agentic](agentic.md) — add controls if your agent has tool access
+5. [IAM Governance](iam-governance.md) — identity, lifecycle, delegation
+6. [Judge Assurance](judge-assurance.md) — measure and calibrate the Judge
+7. [Checklist](checklist.md) — track implementation progress
 
 **Specialised (read based on your deployment type):**
 
@@ -124,6 +125,7 @@ What's been missing: clear guidance on *why* this pattern is necessary and *how*
 | Document | Purpose |
 |----------|---------|
 | [Risk Tiers](risk-tiers.md) | Classification criteria, control mapping |
+| [Risk Assessment](risk-assessment.md) | Quantitative control effectiveness, residual risk analysis, worked examples per tier |
 | [Controls](controls.md) | Guardrails, Judge, HITL implementation |
 | [Agentic](agentic.md) | Additional controls for agents |
 | [IAM Governance](iam-governance.md) | Identity governance, agent lifecycle, delegation, threats |

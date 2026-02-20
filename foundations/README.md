@@ -106,6 +106,7 @@ Even at the lowest risk tier, there's a fallback plan. At the highest, there's a
 | [Decision Poster](../DECISION-POSTER.md) | Visual one-page reference |
 | [Fast Lane](../FAST-LANE.md) | Pre-approved minimal controls for low-risk AI |
 | [Risk Tiers](../core/risk-tiers.md) | Classify your system, determine control and resilience requirements |
+| [Risk Assessment](../core/risk-assessment.md) | Quantitative control effectiveness, residual risk per tier, NIST AI RMF aligned |
 | [Controls](../core/controls.md) | Guardrails, Judge, and Human Oversight implementation with per-layer fail postures |
 | [Agentic](../core/agentic.md) | Controls for single autonomous AI agents including graceful degradation path |
 | [PACE Resilience](../PACE-RESILIENCE.md) | What happens when controls fail |
