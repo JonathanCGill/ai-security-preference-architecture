@@ -77,6 +77,7 @@ Deeper examinations of where the framework meets production reality — what wor
 | [Open-Weight Models Shift the Burden](open-weight-models-shift-the-burden.md) | Self-hosted models inherit the provider's control responsibilities |
 | [PACE Resilience](PACE-RESILIENCE.md) | How the three-layer architecture achieves operational resilience through layered, independent control redundancy |
 | [Security as Enablement, Not Commentary](security-as-enablement.md) | Security frameworks create value when delivered as platform infrastructure, not as narrative that diagnoses teams from the sidelines |
+| [Automated Risk Tiering](automated-risk-tiering.md) | Classification should take two minutes, produce an immediate result, and auto-apply the controls that make the risk manageable |
 
 ---
 
